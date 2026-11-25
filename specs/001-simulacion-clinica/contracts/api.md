@@ -1,18 +1,47 @@
 # Contrato HTTP previsto para el módulo 01
 
-La interfaz llama a `/api` en su propio origen. El proxy reenvía a Axum. El servidor establece una sesión de demostración con cookie HttpOnly y comprueba rol, propietario, actividad y fase en cada operación protegida. Las identidades se preparan localmente. Cada escritura reintentable recibe `Idempotency-Key`.
+La interfaz llama a `/api` en su propio origen. El servicio frontend reenvía a Axum por la red de Compose. La API intercambia JSON y mantiene una sesión local mediante una cookie HttpOnly. La identidad ficticia, el rol, la asignación docente y el propietario efectivo proceden de la sesión. El ensayo independiente del hito 1 podrá usar HTTP directo al backend. El chat extraído en el hito 2 usará el mismo contrato. Los controles se aplican antes de devolver un recurso, un acuse previo o datos para inferencia. [Modelo de datos](../data-model.md)
 
-| Operación | Petición y resultado esperado |
-|---|---|
-| `POST /api/sesiones` y `GET /api/actividades` | Seleccionar una identidad ficticia preconfigurada y listar sus actividades. La lista anterior al pre omite datos clínicos. |
-| `POST /api/intentos` y `GET /api/intentos/{id}` | Iniciar con una actividad asignada o recuperar la vista autorizada, su revisión y el estado del pre/post. |
-| `GET/PUT /api/intentos/{id}/encuestas/{momento}` | Leer la forma asignada y confirmar respuestas u omisión. El pre tardío se rechaza. Un reenvío recupera el mismo registro. |
-| `POST /api/intentos/{id}/turnos` | Enviar texto y, si procede, ID de sugerencia. Devuelve turno y tipo de respuesta. La sugerencia editada sigue la ruta de texto libre. La traza de procedencia completa queda para el revisor autorizado. |
-| `POST /api/intentos/{id}/mediciones` y `POST /api/intentos/{id}/ordenes` | Recibir instrumento/gesto confirmado u orden. El servidor resuelve valor, unidad y fase. Confirmar el ECG inicial devuelve la referencia de su informe textual. Un apunte carece de ese efecto. |
-| `PUT /api/intentos/{id}/razonamiento` | Guardar apuntes, hipótesis, alternativa, evidencia y revisión esperada. Rechazar referencias a otro intento o una revisión obsoleta. |
-| `POST /api/intentos/{id}/entrega` | Congelar el intento y responder con el mismo acuse en los reenvíos, incluso con Ollama caído. Estado inicial de evaluación pendiente. |
-| `GET /api/intentos/{id}/devolucion` | Estudiante titular con post cerrado recibe la versión publicada. El estado visible puede indicar que espera revisión docente. |
-| `GET/PATCH /api/evaluaciones/{id}` y `POST /api/evaluaciones/{id}/publicacion` | Docente asignado consulta, corrige con motivo y publica la revisión elegida. La API valida las citas por criterio y conserva el historial. |
-| `GET /api/actividades/{id}/resultados-educativos` | Docente asignado consulta invitados, pares completos, faltantes, percepción por ítem y razonamiento por forma y orden. |
+## Operaciones
 
-Usar 401 para sesión ausente, 403 para acceso denegado, 409 para conflicto de estado y 422 para entradas inválidas. Un fallo temporal de inferencia produce 503 con un mensaje recuperable. Una evaluación pendiente se comunica en el acuse de entrega. La API de diagnóstico distingue disponibilidad de persistencia e inferencia.
+| Operación | Petición y resultado observable |
+| --- | --- |
+| `POST /api/sesiones` · `GET /api/actividades` | Seleccionar una identidad ficticia preconfigurada. Listar solo sus actividades habilitadas y el estado necesario para «En curso → Continuar». Antes del pre, la tarjeta de LR carece de introducción, ficha y hechos clínicos. |
+| `POST /api/intentos` · `GET /api/intentos/{id}` | La actividad clínica asignada solo admite nuevas altas con sus versiones aprobadas y cargadas. El intento fija su rúbrica al abrirse. La respuesta devuelve fase, revisión y estado de las encuestas. Tras cerrar el pre, la vista autorizada expone introducción, ficha, indicaciones, ayuda, turnos, apuntes y evidencias disponibles. La ayuda indica su origen docente. |
+| `GET` y `PUT /api/intentos/{id}/encuestas/{momento}` | `momento` vale `pre` o `post`. Leer la forma asignada y confirmar respuestas u omisión. La respuesta incluye acuse, versión y momento. Se rechaza un pre tardío, un post anterior a la entrega y un cambio retroactivo. Los ítems llegan sin claves. |
+| `POST /api/intentos/{id}/turnos` | Enviar texto y, si procede, identificador de sugerencia. El servidor coteja la sugerencia con la ficha de la versión del intento. Una pregunta propia o una sugerencia editada pasa al agente de LR en P01 y requiere una llamada a Qwen local. Devuelve el turno, hablante y tipo de respuesta. Un hecho de otro caso, fase o hablante se descarta. La traza docente no forma parte del turno público. |
+| `POST /api/intentos/{id}/mediciones` · `GET /api/intentos/{id}/mediciones` | Confirmar una toma completa o consultar el histórico del instrumento. El servidor autoriza propietario y fase, valida la acción y calcula el valor desde la versión del caso. Devuelve identificador, valor o hallazgo, unidad, momento y estado de registro. Una cancelación previa a la toma completa no genera lectura. |
+| `PUT /api/intentos/{id}/mediciones/{medicion}/ficha` | Registrar en ficha una lectura existente del propio intento. La lectura conserva su identificador, el histórico conserva una fila y los reenvíos recuperan el mismo estado. |
+| `POST /api/intentos/{id}/ordenes` · `GET /api/intentos/{id}/ordenes/{orden}` | Confirmar una orden del ECG inicial habilita el informe textual «taquicardia sinusal». Un apunte o una orden sin confirmar mantiene el informe reservado. La orden confirmada es citable y su reenvío recupera el mismo identificador. |
+| `PUT /api/intentos/{id}/razonamiento` | Guardar apuntes, hipótesis principal, alternativas, explicación, vínculos a registros y revisión esperada. Una evidencia de otro intento o una revisión obsoleta se rechazan. Admite guardar razonamientos parciales. |
+| `POST /api/intentos/{id}/entrega` | Confirmar la revisión visible y congelar el trabajo con el identificador, la versión y la huella de la rúbrica del intento. Responde con el acuse y el estado de evaluación pendiente aunque Qwen esté caído. El post queda disponible. |
+| `GET /api/intentos/{id}/devolucion` | El titular ve el estado permitido y, una vez resuelto el post, el contenido de la revisión publicada. Una devolución ya publicada sigue reservada mientras el post esté pendiente. |
+| `GET /api/actividades/{id}/entregas` · `GET/PATCH /api/evaluaciones/{id}` · `POST /api/evaluaciones/{id}/publicacion` | El docente asignado puede leer la versión y huella de la rúbrica congelada, el desglose y las observaciones por criterio. Puede rectificar la evaluación con motivo y revisión esperada y publicar la revisión elegida cuando se resuelvan los criterios pendientes. Se conservan las revisiones anteriores. |
+| `GET /api/evaluaciones/{id}/criterios/{criterio}/traza` · `GET /api/intentos/{id}/turnos/{turno}/traza` | El revisor autorizado obtiene la cadena desde la cita hasta el evento y la versión de la fuente, el agente y la regresión asociada. Una incidencia indica qué evidencia se esperaba y permite localizar su registro técnico. |
+| `GET /api/actividades/{id}/resultados-educativos` | El docente asignado recibe invitados, pares completos, faltantes, percepción por ítem y razonamiento por forma, secuencia y momento. Las ponderaciones de la nota clínica proceden exclusivamente de la rúbrica. |
+| `GET /api/estado` | Comunica por separado disponibilidad de la base y del modelo, junto con una indicación comprensible de recuperación. El servicio mantiene las operaciones respaldadas por SQLite durante un fallo de inferencia. |
+
+## Pregunta libre por HTTP y desde el chat
+
+Con sesión ficticia, caso P01 y pre cerrado, el ensayo enviará a `POST /api/intentos/{id}/turnos` un cuerpo como `{"texto":"¿Cuándo empezaste a notar que te faltaba el aire?"}`, sin identificador de sugerencia y con `Idempotency-Key` nueva. Se espera un turno de ese intento, atribuido a LR en primera persona, que sitúe el inicio hace dos días. El revisor correlacionará la operación, la llamada completada a Ollama, el modelo y el hecho con su versión y pasaje. La vista estudiantil mostrará la pregunta, la respuesta autorizada y el hablante. El detalle de la invocación quedará en la traza restringida. [Ensayo de avance técnico](../quickstart.md#conversación-libre-con-lr-por-http)
+
+Durante la caída, repetir el mismo texto como **otra operación**, con clave nueva, debe devolver 503 y dejar intacto el historial confirmado. El acuse de una operación ya completada seguiría disponible por idempotencia. Al reintentar la operación fallida tras la recuperación, su clave deberá producir un solo turno. Esta regla se aplica tanto a la petición directa como al chat.
+
+## Medición de referencia
+
+Para una toma de presión completa del intento ficticio `i1`, el cliente envía `{"instrumento":"presion","accion":"toma_completa"}` con una clave de operación. En la versión de valoración inicial acordada, la respuesta contiene, entre otros campos, `{"medicion_id":"m1","intento_id":"i1","valor":{"sistolica":148,"diastolica":85},"unidad":"mmHg","en_ficha":false}`. La acción «Registrar en ficha» cambia `en_ficha` a verdadero sobre `m1`. El pulso de 102/min corresponde a la vista de pulso. El docente debe poder llegar a `m1` desde una observación que cite esa medición. Los identificadores del ejemplo son ficticios.
+
+## Confirmación y errores
+
+Las mutaciones académicas reintentables llevan `Idempotency-Key`. La misma intención conserva la clave al perder la respuesta, mientras una nueva toma deliberada recibe otra. Tras verificar el acceso actual, la API revisa la clave antes de rechazar por cambio de fase o revisión. Repetir una operación ya confirmada devuelve el mismo acuse e identificadores. Una operación todavía en curso devuelve su estado y una referencia para consultarlo o reintentarlo, sin iniciarla por segunda vez.
+
+| Situación | Respuesta prevista |
+| --- | --- |
+| Creación confirmada · 201 | Acuse con identificadores y revisión. Una repetición ya confirmada puede responder 200 con los mismos identificadores. La entrega se confirma aunque el cálculo de su evaluación siga pendiente. |
+| Solicitud en curso · 202 | Indica procesamiento pendiente. La interfaz muestra éxito solo al recibir el acuse de confirmación. |
+| Sesión ausente o permiso insuficiente · 401/403 | Indica cómo volver al acceso disponible. La respuesta omite datos del recurso ajeno. |
+| Estado incompatible, clave con otro contenido o revisión obsoleta · 409 | Indica la operación en conflicto y permite recargar la vista autorizada. La entrega y sus evidencias ya confirmadas se conservan. |
+| Entrada inválida · 422 | Identifica el campo o el gesto que requiere corrección sin guardar un evento inválido. |
+| Fallo temporal del diálogo libre · 503 | Informa indisponibilidad y opción de reintento. Una selección no válida del modelo no se convierte en un hecho clínico. Una solicitud fallida puede recuperarse sin duplicar el turno. |
+
+La pregunta ambigua da lugar a una aclaración de la paciente. El desconocimiento familiar de LR se expresa en primera persona y el dato ausente genera un aviso del escenario. Son resultados válidos de entrevista, distinguibles de un error técnico. [E03 a E06](../spec.md#historia-2--entrevistar-a-lr-e-interpretar-los-límites-de-su-relato-p1)
