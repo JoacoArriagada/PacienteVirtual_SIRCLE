@@ -1,0 +1,3 @@
+# Medication Reminder Card – Gina Babkins
+
+<table><tr><td rowspan=1 colspan=1>Daily Medicines</td><td rowspan=1 colspan=1>Daily Medicines</td></tr><tr><td rowspan=1 colspan=1>Aspirin</td><td rowspan=1 colspan=1>Aspirin 325 mg breakfast</td></tr><tr><td rowspan=1 colspan=1>Amlodipine</td><td rowspan=1 colspan=1>Amlodipine 10 mg breakfast</td></tr><tr><td rowspan=1 colspan=1>Furosemide</td><td rowspan=1 colspan=1>Furosemide 40 mg breakfast</td></tr><tr><td rowspan=1 colspan=1>Lisinopril</td><td rowspan=1 colspan=1>Lisinopril 40 mg breakfast</td></tr><tr><td rowspan=1 colspan=1>Atorvastatin</td><td rowspan=1 colspan=1> Atorvastatin 40 mg bedtime</td></tr></table>

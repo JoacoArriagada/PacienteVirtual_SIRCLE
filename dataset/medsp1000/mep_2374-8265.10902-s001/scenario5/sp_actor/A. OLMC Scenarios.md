@@ -1,0 +1,32 @@
+| **Appendix A: OLMC Scenarios – Case 5**  **SIMULATION CASE TITLE: EMS OLMC – Pediatric Refusal of Care**  **AUTHORS: Jose V. Nable, MD and Frank Tift, MD**  **LEARNER AUDIENCE: Emergency Medicine residents and medical students** | |
+| **PATIENT NAME: N/A (patient names are not given over the radio)**  **PATIENT AGE: 15**  **CHIEF COMPLAINT: shortness of breath**  **PHYSICAL SETTING: Learner is working in an Emergency Department that provides online medical control to EMS units when he/she is contacted (by radio) by an EMS unit requesting orders.** | |
+|  | |
+| **Brief narrative description of case** | In this scenario, a prehospital provider is requesting orders from the learner over a radio to allow a patient to refuse further care and not be transported to the hospital. However, this patient is a minor, and thus he is not legally allowed to refuse care. His parents are not available to make decisions, and the EMS crew is requesting whether the patient may refuse transport. |
+
+| Radio report | | | |
+| **Overall Setting and Appearance** | No specific setting is required other than ensuring that the learner and facilitator are in separate rooms and able to communicate via a two-way radio | | |
+| **Confederates (e.g., standardized participants) and their roles in the room at case start** | No additional personnel are required. | | |
+| **Facilitator script for opening radio statement** | “Medic 5 to [OLMC]” *(feel free to insert an appropriate callsign for your local institution/area)*  After the learner acknowledges transmission:  “This is Medic 5. I’m on scene with a 15-year-old male who is having an asthma attack. He used his own inhaler prior to our arrival, and he states he feels a little better. He still has some wheezing on exam, but he states he does not wish to go to the ER. I am requesting permission to obtain a patient refusal.”  All information below must be specifically requested by the learner | | |
+| **Initial vital signs** | HR: 108, BP: 114/84, Resp: 20, Sats: 96% on RA | | |
+| **Past Medical/Surgical History** | **Medications** | **Allergies** | **Family History** |
+| Asthma | Albuterol as needed | NKDA | asthma |
+| **Physical Examination** | | | |
+| **General** | Awake, alert, and in no acute distress | | |
+| **HEENT** | Normocephalic, atraumatic | | |
+| **Neck** | Supple, full range of motion, no tenderness | | |
+| **Lungs** | Non-labored breathing, mild diffuse expiratory wheeze | | |
+| **Cardiovascular** | Normal S1/S2, regular rhythm, no murmurs | | |
+| **Abdomen** | Soft, non-distended, non-tender | | |
+| **Neurological** | Alert, cranial nerves grossly intact, no gross focal deficits | | |
+| **Skin** | Warm, dry, no obvious rash | | |
+| **GU** | *(Not examined)* | | |
+| **Psychiatric** | Answering questions appropriately with normal insight and judgement | | |
+
+|  |  |
+| --- | --- |
+
+| **Intervention / Time point** | **Change in Case** |
+| *If the learner asks whether a parent or guardian is available* | “No. He is attending a concert in the park with some friends. His parents are not with him.” |
+| *After learning that the patient’s parents are not available* | If asked whether the parents can be contacted: “No. He says they are out of town, and he is staying with his friend. He has already tried to call them, and they did not answer.” |
+| *After learning that the patient’s parents are unavailable and cannot be contacted* | If the learner instructs transport to the ER, continue the scenario. |
+| *After the learner instructs transport to the ER* | “Sir/Ma’am, he has become rather angry and is yelling at us that he will not go and that he is going to sue us. What should we do?” If the learner engages law enforcement, the patient calms down and agrees to go to the hospital. |

@@ -1,0 +1,3 @@
+**Case Study 3:**
+
+KJ is a 46-year old female who presents to the health department clinic for an initial appointment, requesting treatment for a herpes outbreak lasting for one month. She appears ill and is distraught. In the interview, she discloses she is an injection heroin user. She does not work, and instead admits to exchanging sexual activities for drugs to support her addiction. When asked about her use of protection, she reports her dealers will not provide her with drugs if she asks they use a condom. She does not have family or support in the community, and has been sleeping at the homes of her drug dealers or friends. KJ is uninsured and does not see a PCP regularly.

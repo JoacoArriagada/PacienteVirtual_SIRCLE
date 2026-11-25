@@ -1,0 +1,1 @@
+![http://www.virtualpediatrichospital.org/providers/PAP/NeonatalChestImages/NormNNTandL01CXRPA.jpg](data:image/jpeg;base64...)

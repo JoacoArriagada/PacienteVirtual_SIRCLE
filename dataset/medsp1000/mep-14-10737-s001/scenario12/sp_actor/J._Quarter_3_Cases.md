@@ -1,0 +1,1 @@
+1. You are a 55-year-old man with chest pain. Chewable aspirin was given. There are no concerning ECG features. A chest X-ray is unremarkable. Serial cardiac enzymes are undetectable. You are being discharged home.

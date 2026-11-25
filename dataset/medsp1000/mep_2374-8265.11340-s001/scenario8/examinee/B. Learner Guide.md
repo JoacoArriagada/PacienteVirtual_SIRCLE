@@ -1,0 +1,1 @@
+**Neurology Case 4 (Group 4):** A 5 month old boy is being evaluated for growth failure, severe muscle weakness, delayed motor development, and global hypotonia. He was developing normally until 2 months of age. He is not dysmorphic and has tongue fasciculations.

@@ -9,6 +9,7 @@ Propuesta del módulo 01 para discutir con el profesor. El repositorio reúne el
 | Constitución, especificación, aclaración, plan, tareas y análisis | [Prompts para Spec Kit en Codex](docs/modulo-01/prompts-spec-kit.md) |
 | Interfaz de referencia | [HTML de Semana 5](docs/referencias/html-semana5/Paciente_Virtual.html) y [wireframes e instrumentos](docs/referencias/interfaz/) |
 | Imágenes de los tres pacientes, escenas, instrumentos, iconos, paleta, tipografía y licencias | [Recursos audiovisuales](recursos-audiovisuales/) |
+| Catálogo completo de MedSP1000, incluido al clonar | [Guía del dataset](dataset/README.md) · [Índice de escenarios](dataset/medsp1000/scenario_index.json) |
 | Material del actor, estudiante, entorno y evaluador | [LR · P01](datos/medsp1000/mededportal_10181/scenario1/) · [Nannu · P02](datos/medsp1000/mep_2374-8265.10924-s001/scenario3/) · [Dan Sparks · P03](datos/medsp1000/mededportal_3171/scenario1/) · [Ficha del dataset](datos/medsp1000/README.md) |
 | Traducción y decisiones de adaptación de LR | [Adaptación de la entrevista](datos/adaptaciones/lr/) |
 | Requisitos, diagramas y pruebas de aceptación | [Documento de requisitos](<docs/requisitos/Documento de requerimientos - Paciente virtual en SIRCLE.md>) |

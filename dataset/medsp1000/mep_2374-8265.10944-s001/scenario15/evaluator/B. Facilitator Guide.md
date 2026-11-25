@@ -1,0 +1,8 @@
+**Cross-Cover Curriculum Facilitator's Guide**
+
+1. **Page 15: Jackson having some itching after starting antibiotics earlier today. Can she get something?**
+
+Acuity: High
+
+Cross-cover to see patient: Yes
+This could be anything from the very benign (just localized itching) to the potentially severe (allergic reaction to the antibiotics). Given the potential that this could be something serious, the patient should be seen promptly. Generally, pruritis can be managed with oral diphenhydramine and acetaminophen. Hydroxyzine or topical creams can also be useful. With more severe cases, corticosteroids can be used as well. If you see red flag signs, such as facial swelling, hypotension, or shock, intramuscular epinephrine should be used for anaphylactic reaction. If you are concerned for anaphylaxis, you should make the ICU and/or anesthesia aware of the patient, as they may need to be intubated for airway protection.

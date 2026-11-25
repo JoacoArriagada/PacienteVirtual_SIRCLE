@@ -1,0 +1,1 @@
+**Case 2:** Your patient is a 21-year-old woman who was seen earlier at an urgent care clinic to rule out meningitis. She has had fever, myalgias, and neck soreness for 2 days. She is accompanied by her mother who has asked about how to diagnose meningitis.

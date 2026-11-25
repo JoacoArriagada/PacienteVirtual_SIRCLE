@@ -1,0 +1,18 @@
+**Interprofessional Standardized Patient Exercise (ISPE):
+Faculty Facilitator Guide**
+
+**Overview:** This is an interprofessional standardized patient exercise (ISPE) that is intended to provide health professional students with a structured learning experience in working as an interdisciplinary health care team. The specific **student learning objectives** are:
+
+1. Students will demonstrate the ability to effectively communicate and collaborate with other healthcare professionals.
+2. Students will demonstrate the ability to efficiently interview and assess a patient with chronic illness, showing empathy, and sensitivity to a patient’s cultural and personal needs.
+3. Students will develop a comprehensive care plan to meet the patient’s healthcare needs in collaboration with other healthcare professionals
+4. Students will describe the role of other healthcare professionals in caring for a patient with chronic illness.
+
+A student team will consist of 4-5 students, with one student from the various health professions (medical, nursing, pharmacy, dentistry, or physical therapy). On some dates, there may not be a full complement of students on each team. Student teams will meet for 20 minutes after the orientation to determine how they want to approach the patient and in what order they will interview the patient. During this meeting, they will have access to the patient’s presenting information (which is on page 5). Subsequently, each team member will individually interview the standardized patient and perform a focused history and physical, and provide a preliminary assessment and plan to the patient, along with any patient education the student deems appropriate. Each student will have 15 minutes for the patient encounter; the other students in the team will observe their colleagues’ encounters on a monitor in the main control room. While all the students are in their second or third year, please keep in mind that the students have varying levels of experience working with standardized patients and direct patient care.
+
+You will be provided with a complete copy of the case on the day of the ISPE. You will observe the students and patient encounters in the control room during the exam through real-time video. The standardized patient will evaluate each student on their communication and interprofessional skills (see attached Patient/Provider Interaction Form).  At the end of the case, the student team meets for 20 minutes to develop their team plan (you will not be part of this).  **Subsequently, you will facilitate a 45 minute debriefing session with 2 student teams together**. This is a formative exercise and students are not graded. They will receive the evaluation by the standardized patient and a DVD of their ISPE patient encounter.  We encourage students to review their DVDs with a faculty mentor for additional feedback on their encounter.
+
+- As health professional students *and as health professionals in the future*, they all will practice as members of an interprofessional health care team. **(Note: It may help to bring in your own experiences working as part of an interprofessional health care team)**
+- For patients with chronic illnesses, use of interprofessional teams is advocated to improve the care of these patients.
+- The interprofessional team achieves its purpose through the collaborative learning and working and the application the collective knowledge and skills of all team members.
+- A well functioning interprofessional team involves members who respect and value each other and have an awareness of each others’ shared and unique skills and scopes of practice.

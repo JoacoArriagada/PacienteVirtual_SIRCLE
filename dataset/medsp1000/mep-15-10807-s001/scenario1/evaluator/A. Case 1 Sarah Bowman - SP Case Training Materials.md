@@ -1,0 +1,134 @@
+**Appendix A: Case #1 Sarah Bowman- SP Case Training Materials**
+
+Name of Case**:** Nancy Bowman
+
+Name of educational and or assessment activity: Pediatric Motivational Interviewing Encounter
+
+Patient Name: Sarah Bowman
+
+Chief Complaint: 14 month old presents to ED with recurrent respiratory issues. (Both parents smoke)
+
+Most likely Diagnosis and Differential with rationale from history and/or physical exam:
+
+* Respiratory difficulty possibly due to exposure to second hand smoke.
+* Bronchiolitis
+
+Challenge question:
+
+Domains: Check all that apply
+
+* Professionalism
+* Communication and Interpersonal skills
+* Medical History
+* Physical exam
+* Shared Decision Making
+* Patient Education
+* Clinical Reasoning
+* Documentation
+* Handoff
+* Presentation
+
+X Other: Motivational Interviewing
+
+Type and level of learner:
+
+Case Objectives: please list specific objectives for each of the domains you have checked above:
+
+1. The learner will practice motivational interviewing communication skills.
+
+2. The learner will perform an appropriate interview for tobacco use in a parent of pediatric patient.
+
+3. The learner will self-evaluate their performance using motivational interviewing skills with a tobacco
+
+using parent.
+
+|  |  |
+| --- | --- |
+| SETTING: outpatient, in patient, ED, home, nursing home, rehab, group etc. | Hospital Emergency Room |
+| PATIENT PROFILE: Information about the “patient” that helps select an SP and helps the learner get an understanding of them as a person. SP will know more information about the patient than learner will ever ask but allows SP to portray a fully developed patient personality. If none of the items below are particulars for the case please write “all may be used.” | |
+| Age range | 25 - 35 |
+| Religious/spiritual background | Any |
+| Sex (e.g., male, female, intersex, transwoman, transman) | Female |
+| Sexual Orientation (e.g., heterosexual, lesbian, gay, bisexual, pansexual, queer, asexual) | Heterosexual |
+| Gender expression (e.g., man, woman, gender queer) | Woman |
+| Race/ethnicity: | Any |
+| Physical description (e.g., BMI, height range) | Any |
+| Physical limitations | None |
+| Patient appearance (e.g., disheveled, hospital gown, business casual, casual) | Dressed casually |
+| Moulage + location (e.g., none, bruises, scars, body piercing, tattoos) | None |
+| Affect (e.g., pleasant, cooperative) | Pleasant/cooperative |
+| Family group (e.g., who is family, who they live with) | Wife/Husband/Child  (Nancy/Tom/Sarah) |
+| Education | College |
+| Level of health literacy | Intermediate to Proficient |
+| Employment, if any - present and past, noting any current stresses | Nancy: Administrative assistant in the Development Office of a Local college  Tom: Manager at Target |
+| Home/homeless - type of dwelling, number of stories, owned or rented | Rented apartment, live on 2nd floor |
+| Financial situation- any current stresses | No financial concerns / + stress about child’s repeated respiratory illness |
+| Insurance Status (e.g., un/under/insured, public/private, HMO/PPO) | Insured |
+| Habits (i.e., diet, exercise, caffeine, smoking, alcohol, drugs) | Diet: Regular  Exercise: None  Caffeine: 2 cups of coffee each morning  Smoking: 1 pack per day  Alcohol: Occasional (rare) beer or cocktail on weekend  Drugs: Tried marijuana in high school, but didn’t like it |
+| Activities (i.e., hobbies, sports, clubs, friends) | Movies, video games |
+| Typical day - what is the usual daily routine | Gets up at 0630, eats breakfast, drops Sarah off at daycare, goes to work, picks Sarah up from daycare, goes home, dinner, goes to bed at 1030pm. |
+
+|  |  |
+| --- | --- |
+| CASE INFORMATION | |
+| Chief Concern: What the patient will say when greeted by the student. The patient’s primary reason for seeking medical care often stated in his/own words. | “I hope someone can help us figure out why Sarah is sick so often” |
+| Additional Concerns: Other, if any, concerns the patient has today (i.e., symptoms, requests, expectations, etc.) that will become part of set agenda. | Parent concerned about child’s recurrent respiratory difficulties.  Guilt feelings about not taking Sarah to the doctor sooner.  Worries about working full time, and Sarah being in day care.  \*\*\*Parent does not realize child’s respiratory problems may be  related to their smoking.  You are an administrative assistant in the Development Office of a local college. Your job there is busy and sometimes stressful, but generally, you enjoy working. You have wondered, however, whether you should cut back to working part time so you can be home with Sarah more, and if that would decrease how often she gets sick. Sarah likes day care, though, and you are happy about that. You are however, worried about day care, and want to know the Trainee’s thoughts on whether you should cut back on the time that Sarah spends there. You feel guilty that Sarah keeps getting sick, and wonder if Sarah should have been taken to the pediatrician sooner. You have not thought about smoking as a contributing factor in Sarah’s current illness, though you do expect the trainee to mention it (they always do!). You are actually craving a cigarette right now, since it is the one thing that calms you down when you get stressed. |
+|  | |
+| THE PATIENT STORY: The SP will be asked to tell their symptom story and the personal and emotion impact for each of their concerns. You will want to write this is the patient voice. The symptom story should be able to answer this question: “Tell me more about [chief concern/additional concern], starting at the beginning and bringing me up to now.”  The personal context should be able to answer questions concerning the broader personal/psychosocial context of symptoms, especially the patient beliefs/attributions.  The emotional context should be able to ask how are you doing with this, how does this make you feel, how has this affected you emotionally? IMPACT: How has this affected your life? How has this been for your family? | You are Nancy Bowman, the mother of 14 month-old Sarah. You have brought your daughter to the ED. The toddler has been sick for 3 days, and her cough has been getting worse. Last night you became concerned that Sarah was having trouble breathing. (Sarah had been sick with similar symptoms a month ago, and was seen in the ED at that time, but was not admitted to the hospital).  You are a first time mother, and you have smoked almost half of your life. You know smoking is bad for you, and you have tried to quit before. In the past, you have cut back a little, but are now back to 1 PPD. The last time you significantly cut down was when you were pregnant with Sarah (it was easier at this time, because you were more motivated and your husband (Tom) was more motivated as well. Your husband is also a smoker and has also tried to quit before, but never cut back that much.  Today Sarah is brought to the ED with a worsening cough x three days, and trouble breathing, with tachypnea (increased respiratory rate) and mildly hypoxic (low oxygen, 91% on room air). Sarah has been sick often, since starting day care at six months of age, when you went back to work. |
+| HISTORY OF PRESENT ILLNESS: Although some of the HPI will be given in the patient’s symptom story, the learners will expand the story during the direct question section. Below describe the detailed history, usually about the chief concern, which the student must develop in order to make a useful assessment of the problem: | |
+|  | |
+| Onset (when; gradual or sudden) | Gradual onset of recurrent respiratory issues at age 6 months  (Cough, rapid breathing and difficulty catching her breath) |
+| Setting (what was going on or where was patient when symptoms first noticed?) | Home |
+| Duration (how long) | Three days (this occurrence) |
+| Time relationships (frequency, constant or intermittent) | Intermittent. Sarah was brought to Emergency Department one month ago with similar symptoms (was not admitted to the hospital at that time) |
+| Location |  |
+| Radiation |  |
+| Quality |  |
+| Amount |  |
+| Aggravated by what |  |
+| Relieved by what |  |
+| Associated with what |  |
+| Attitude (what does the patient think is the problem, and how does he/she feel about it) | Parent is concerned for the child, because of recurrent respiratory problems. Parent does not make a connection that the causation of the illness could be related to both parents smoking and child’s exposure to secondhand and third hand smoke. |
+| Overall course |  |
+|  |  |
+| REVIEW OF SYSTEMS: Significant positives and negatives | |
+|  | Positives: Frequent cough  Difficult breathing (labored)  Rapid respirations |
+|  | Negatives: No sputum production  No fever |
+| Past medical history | Daughter, Sarah – 14 month old, last MD visit two months ago |
+| Medication allergies (Name and reaction) | No known drug allergies |
+| Environmental allergies (Name and reaction) | No known environmental allergies |
+| Illnesses | Recurrent respiratory issues (cough, tachypnea, dyspnea) |
+| Vaccinations | Up to date |
+| Surgeries | None |
+| Accidents/ injuries/ trauma | None |
+| Hospitalization | Child had ED visit (one month prior) for similar symptoms (not admitted) |
+|  | |
+| Inclusive sexual and reproductive history | |
+| Sexual practices  Sexual partners  Protection: Use of safer sex practices  Use of birth control if appropriate  Risk of intimate partner violence | Non-contributory |
+| Ob/GYN HISTORY | Age of onset of menses N/A  Age of menopause N/A  Number of pregnancies Ø  Number of live births Ø  Number of miscarriages Ø  Number of abortions Ø |
+| Medications | Prescription/dose/reason None  Over the counter/dose/reason None  Herbs/supplements/dose/reason None  Other: |
+| Immunizations | * Tetanus * Flu   X Hepatitis (HepB first and second dose)   * Pneumovax * HPV   X Other: TDaP, HIB, IPV, PCV, RV |
+| Tobacco products:  X Cigarettes   * Cigar * Pipe * Chew * E-cigarettes | Nancy and Tom (parents)   * Never   X Past- year started/year quit  Nancy (began at age 16 – has tried to quit, but failed)  Tom (began at age 15 – has cut back in past, but not quit  X Current   * + Quantity: Both smoke one PPD currently, but   they did cut down significantly  when Nancy was pregnant with  Sarah.   * + # of years Nancy: 14 years   Tom: 17 years |
+| Alcohol  X Beer   * Wine * Liquor   X Other cocktail | * Never * Past- year started/year quit   X Current   * + Quantity (occasional – rare: one beer or cocktail)   + # of years five |
+| Drugs  X Weed (Nancy only)   * Cocaine * Heroin * Meth * Other * IV * Inhalants * Other | 🞎 Never  X Past- year started/year quit  (Nancy: tried marijuana in high school, then quit )  X Current (None – either Nancy or Tom)   * + Quantity * # of years |
+| Diet (describe) | Sarah is well nourished and has a normal diet |
+| Exercise (describe) | None |
+| List any other important social history or information important to this case | \*\*\*Please note: Nancy has both the motivation to quit and resistance to quitting.)  You have both been smoking since high school (you started at 16, Tom started at 15). You both cut back while you were pregnant with Sarah, but you have noticed that you’ve both been smoking more in the past six months.  Tom is a manager at Target. He is also busy and sometimes stressed at work, but otherwise seems happy with his career and home life. You have been talking about trying to get pregnant again. You met Tom while in college. Neither of you smokes in the house or in the car. |
+| Family history | Mother: (Nancy- baby Sarah’s mother) 30 year old – High blood pressure and gestational diabetes when pregnant with Sarah, +smoker  Father: (Tom- baby Sarah’s father) 32 year old – no significant  PMH  + smoker  Siblings: none  Children: none |
+| Mother, Father, Siblings, Grandparents, and other significant findings. | Maternal grandmother: (57) +smoker (2PPD)  Aunt: (61) Adult onset diabetes (non-smoker)  3 children… 2 healthy, 1 died of childhood leukemia  Great grandparents: deceased (cause of death unknown),  both + smokers |
+|  |  |
+| Physical Exam- List exam maneuvers expected for this case and any abnormal findings that SP will simulate. (tenderness, hyper-hypo reflex, rebound, weakness etc. ) | |
+| PHYSICAL EXAM FINDINGS | There is no physical exam in this case |
+| 1. Written in layman’s terms |  |
+| 1. General appearance- affect, appearance, position of patient at opening (i.e. sitting, laying down, holding abdomen etc.) |  |
+| 1. Vital signs |  |
+| 1. Specific findings and affect |  |
+| 1. Response to certain physical movements |  |
+|  |  |
+| DIAGNOSIS AND DIFFERENTIAL |  |
+| Diagnosis with support from positive and negative history and PE findings |  |
+| Differential with support from positive and negative history and PE findings |  |
+|  |  |
+| MANAGEMENT OR DIAGNOSITIC PLAN | The trainee may explain to you that smoking, even outside (meaning third hand smoke) can effect Sarah, and may be responsible for her getting sick, or not getting better. They may tell you statistics like, “children exposed to second and third hand smoke are more likely to have to go to the emergency room when they get sick, and children with bronchiolitis and/or asthma who are exposed to second and third hand smoke have over two times the odds of being admitted to the hospital. Be open to this information… it is new to you. If the trainee is accusatory in tone, be defensive. If they are empathetic and you feel a good rapport, be open to the information and more inspired to quit.  The trainee may offer to provide information on the Quitline.  You should agree to the referral to the Quitline if the trainee has completed at least four of the following items:   * Asked you if they could speak to you about smoking/referral for the quitline. * Asked you to tell them about your smoking – how much, & what are triggers (e.g., stress), that make you want to smoke? * Empathized with difficulty of quitting. * Shown you reflective listening – that is, for example: if you say “quitting smoking was just too hard for me while I was pregnant”, the trainee states “quitting smoking is hard” or “I imagine quitting smoking was hard, while you were pregnant.” * Supported you for cutting down (not been judgmental because you didn’t fully quit). * Assessed your readiness to quit (on a scale from 1 – 10). * Explain some of the impact of second hand and third hand smoke for children, including asthma, pneumonia, sudden infant death syndrome, ear infections, hospitalization, respiratory infections. * Summarize where they feel you are – either ready to make a change and consider referral to the Quitline, or not.   You should refuse referral to the Quitline if the trainee has not completed four items from the above list.  If you refuse referral, the trainee should leave the conversation open to restarting at a later time. |
+|  |  |
+| PROFESSIONALISM ISSUES OR CHALLENGES: | **If the trainee asks you if they can discuss smoking, you respond,**  *“I know smoking is bad for me, but it’s really hard to quit…I should know, I’ve tried many times before.”*  **If you are asked about your family history of smoking, you may provide them with the information**:  *“My mother smoked two packs/day. I was told my grandparents were both smokers, but they died when I was very young, and I’m not sure of what.”*  **If you are asked if you have thought about quitting, you say,**  *“I tried to quit when I was in college, and then I ended up smoking more. I cut back after graduation for a year or so. I cut**back the**most when I was pregnant – which was a little easier than the other times, since my husband did it with me.”*  **If they ask if you would like to quit right now, you reply**  *“Not really* ***–*** *I just don’t think it’s the right time.”*  **If you are asked if there is anything that “triggers” your need to smoke, reply with** *“stressful situations.”*  **If you are offered information on the Quitline, say**  *“Yeah – I think I called them once, but I didn’t end up quitting at that time.”*  **\*\*\*The trainee should try to assess your motivation at this point. They may ask/state any of the following:**  **If asked about when you were able to cut down on smoking, you will reply** *“When I was pregnant, my OB doctor was very direct and scared me. My husband cut back also, and I felt supported.”*  **If asked about your level of motivation, using a numeric scale from 0 – 10 (0 having no motivation and 10 being highly motivated), you would reply** *“My motivation is a 2 or 3.”*  **If asked what would increase your motivational level, you would reply** *“Decreasing the stress in my life…work, Sarah’s illness, day care.”*  **Note: Do not accept e-cigarettes as an alternative to smoking. You can say:** *“I thought I read somewhere that those are also bad for you.”* |

@@ -1,0 +1,5 @@
+METABOLIC PANEL
+
+REFERENCE RANGE   
+
+<table><tr><td rowspan=1 colspan=1>Na+</td><td rowspan=1 colspan=1>140</td><td rowspan=1 colspan=1>135-145 mMol/L</td></tr><tr><td rowspan=1 colspan=1>K+</td><td rowspan=1 colspan=1>5.3</td><td rowspan=1 colspan=1> 3.5-5.2 mMol/L</td></tr><tr><td rowspan=1 colspan=1>C1</td><td rowspan=1 colspan=1>104</td><td rowspan=1 colspan=1>95-107 mMol/L</td></tr><tr><td rowspan=1 colspan=1>HCO3</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1>22-30 mMol/L</td></tr><tr><td rowspan=1 colspan=1>BUN</td><td rowspan=1 colspan=1>18</td><td rowspan=1 colspan=1>7-20 mMol/L</td></tr><tr><td rowspan=1 colspan=1>Cr</td><td rowspan=1 colspan=1>0.8</td><td rowspan=1 colspan=1>0.5-1.4 mMol/L</td></tr><tr><td rowspan=1 colspan=1>Glucose</td><td rowspan=1 colspan=1>95</td><td rowspan=1 colspan=1>60-110 mMol/L</td></tr><tr><td rowspan=1 colspan=1>Magnesium</td><td rowspan=1 colspan=1>1.9</td><td rowspan=1 colspan=1>1.7-2.2 mg/dL</td></tr><tr><td rowspan=1 colspan=1>IonizedCalcium</td><td rowspan=1 colspan=1>1.1</td><td rowspan=1 colspan=1>1.1-1.3 mmol/L</td></tr></table>

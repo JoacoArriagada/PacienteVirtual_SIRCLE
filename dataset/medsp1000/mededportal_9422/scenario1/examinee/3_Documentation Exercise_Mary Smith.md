@@ -1,0 +1,5 @@
+Standardized Patient Lab
+
+# DOCUMENTATION EXERCISE
+
+<table><tr><td rowspan=1 colspan=1>EXAMINEE</td><td rowspan=1 colspan=2>DATE</td><td rowspan=1 colspan=1>PATIENT NAME</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2></td><td rowspan=1 colspan=1>MARY SMITH</td></tr><tr><td rowspan=1 colspan=4>HISTORICAL FINDINGS: Based on ALLavailable clinical information, LISTthe MOST significant positive and negativehistoricalfindings that youuncovered during your interactionwiththepatientthatwillalowyoutomakeclinicaldecisions.</td></tr><tr><td rowspan=1 colspan=4></td></tr><tr><td rowspan=1 colspan=2> ASSESSMENT: List your clinical assessment(s) of the patient&#x27;s condition.</td><td rowspan=1 colspan=2>DIAGNOSTIC WORK-UP &amp; TREATMENT PLAN: List your INITIAL management plan including diagnostic, therapeutic and patient education plans (be as specific aspossible):</td></tr><tr><td rowspan=1 colspan=2></td><td rowspan=1 colspan=2></td></tr></table>

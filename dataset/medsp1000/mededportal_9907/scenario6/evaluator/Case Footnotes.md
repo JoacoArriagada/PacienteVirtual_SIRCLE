@@ -1,0 +1,5 @@
+**Case Footnotes**
+
+**High Risk Case 2**
+
+The goal of this standardized patient scenario is to assess the ability of the learner to manage a patient with chronic pain who is at high risk for prescription drug abuse. This is a common chronic pain management scenario where opioids can be helpful and increase the patient’s ability to function at a more normal level, but there is also risk for abuse, overdose and diversion. There are number of stereotypes in this scenario including a previous motorcycle accident, prior heroin use, single, male and unemployed that can affect a physician’s ability to care for such patients in a non-judgmental manner. Treatment contracts, regular toxicology tests and communication with partners/clinic staff are critical to ensure safe and effective use of opioids. While referral to a methadone/suboxone management program or detoxification is an option, the SP is designed to teach the physician how to manage similar patients in general medical or pain clinic setting.

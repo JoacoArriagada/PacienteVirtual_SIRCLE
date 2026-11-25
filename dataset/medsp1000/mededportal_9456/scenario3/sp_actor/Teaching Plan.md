@@ -1,0 +1,5 @@
+# Scripted Role Play 2
+
+Student Role playing the Adolescent
+
+You are Cary Smith, a 13-year-old adolescent going to Colorado Middle School. You are in the $7 ^ { \mathrm { t h } }$ grade and do well in school. Your favorite subject is science. You are not sure what you want to be when you are older. You are a twin who lives at home with your parents, your twin and your younger brother who is in $3 ^ { \mathsf { r d } }$ grade. You get along well with your parents and your siblings. You play soccer for fun and recently have joined the basketball team at school. You have many friends and they all live in your neighborhood which is safe. You are attracted to the opposite sex and have never had sex. You have not been physically or sexually abused and feel safe at home. You can talk to your father if you have any problems at school. You have not experimented or tried any drugs, cigarettes or alcohol. You are happy and do not feel any stressors in your life. You have never had any suicidal or homicidal thoughts. You have breakfast, lunch and dinner. You drink milk and eat adequate amounts of fruits and vegetables.

@@ -1,0 +1,14 @@
+**Slides 39-42**(20 min)
+
+Application of the GetINBurnOUT method in the clinical learning environment through practice cases
+
+* Assign one case to each group. Each case represented a different “type” of learner at risk of or suffering from burnout: a previously high-performing learner who performance is impacted by burnout, a high-performing learner at risk of burnout whose performance is not impacted, and a learner in difficulty whose competency cannot be directly attributed to burnout.
+* For each case, participants should answer the following questions:
+  + What behaviors seem consistent or inconsistent with burnout?
+  + Is burnout affecting the learner’s performance?
+  + How can you use the GetINBurnOUT method with them?
+* Case 3 explores an experience with a resident who endorses burnout when given critical feedback about his performance and medical knowledge.
+  + It can be discussed that it is often difficult to separate if poor performance is due to burnout or if burnout is due to self-awareness of poor performance. Likely, it is a positive feedback loop and trainees who have underlying competency issues are at high risk of burnout (as well as depression or other mental health issues.)
+  + In this case, the trainee demonstrates behaviors that are consistent with burnout including relying on upper level to fill in (decreased personal accomplishment) or rejection of feedback (emotional exhaustion). The literature (Baer TE et al, slide 24) also describes not fully answering patient’s questions as a specific burnout behavior. He also readily identifies/admits to feeling burnout during his feedback session and attributes his poor performance to such.
+  + However, the observation of consistent suboptimal performance including inability to explain thought process demonstrates likely lack of medical knowledge and reasoning that cannot be explained by emotional exhaustion, depersonalization, or decreased personal accomplishment. This is why it is important for an educator in the CLE to take opportunities for trainees to demonstrate competency via different methods, like asking them to explain their reasoning. (It may be appropriate for facilitators to address with participants that difficulty processing may be a sign of depression.)
+  + The GetINBurnOUT method is particularly useful in this case to empower the educator to empathize with the learner, but to ensure that feedback on the specific behaviors/competency issues is delivered. The educator should feel empowered to completely move on from the topic of burnout to do so, while making a plan to address competency issues beyond the resident excusing them based on their own feelings of burnout. The intervention for this trainee is especially important to refer the trainee to leadership (and disclose an intention to reach out to leadership on their behalf).

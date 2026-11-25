@@ -1,0 +1,62 @@
+Appendix A:
+
+**Date:** 2017-2018
+
+**Name of Case:** Taylor Nichols (establishing primary care)
+
+**Patient Name:** Taylor Nichols
+
+**Chief Complaint:** Establishing primary care
+
+|  |  |
+| --- | --- |
+| SETTING: outpatient, in patient, ED, home, nursing home, rehab, group etc. | You are meeting a new patient today in this outpatient clinic. |
+| PATIENT PROFILE: Information about the “patient” that helps select an SP and helps the learner get an understanding of them as a person. SP will know more information about the patient than learner will ever ask but allows SP to portray a fully developed patient personality. SP will know more information about the patient than learner will ever ask but allows SP to portray a fully developed patient personality. | |
+| Age range | 32 |
+| Religious/spiritual background | None |
+| Sex (e.g., male, female, intersex, transwoman, transman) | Cisgender man (male SAAB). Gender identity and sex assigned at birth are revealed only upon being directly asked by the student. |
+| Sexual Orientation (e.g., heterosexual, lesbian, gay, bisexual, pansexual, queer, asexual) | Sexual orientation is revealed only upon being directly asked by the student for your preferred sexual orientation descriptor (otherwise, only describe sexual partners). Respond: “I’m straight.” |
+| Gender expression (e.g., man, woman, gender queer) | Cisgender man, expresses as man |
+| Race/ethnicity: | All races and ethnicities are welcome |
+| Physical description (e.g., BMI, height range) | All physicalities are welcome |
+| Physical limitations | No physical limitations are indicated. If SP does not have use of legs, the reason for establishing primary care may be adapted (for SPs who have use of their legs, they are establishing primary care after visiting urgent care for stepping on a nail.) |
+| Patient appearance (e.g., disheveled, hospital gown, business casual, casual) | Casual clothing. Expressing as SP would in everyday life. |
+| Moulage + location (e.g., none, bruises, scars, body piercing, tattoos) | None |
+| Affect (e.g., pleasant, cooperative) | Patient begins encounter with open communication and continues throughout being open. |
+| Family group (e.g., who is family, who they live with) | Patient lives alone. You have no children. You initially had problems in family relationships when you lived with a partner outside of marriage. You now “get along OK” with your mom, dad, and siblings and see them for major holidays. You don’t see the rest of the family much. If student asks you more about social supports or family, you can then talk about yourself openly with the student (improvise). You lost some of your friends when you moved to the local area, but have gradually made new friends via social activities and meet ups and have a growing support system. Relationship status: Exclusive relationship for 6 months |
+| Education | Associate degree in computer science |
+| Level of health literacy | Able to understand and follow recommendations when presented in lay terminology. Interested in cancer prevention. |
+| Employment, if any - present and past, noting any current stresses | Librarian at community college for two years. Good working environment and relationships with colleagues at work. |
+| Home/homeless - type of dwelling, number of stories, owned or rented | Apartment in mixed income neighborhood. |
+| Financial situation- any current stresses | Financially stable. |
+| Insurance Status (e.g., un/under/insured, public/private, HMO/PPO) | Insured through work. |
+| Habits (i.e., diet, exercise, caffeine, smoking, alcohol, drugs) | Could be healthier, and, “I know I need to eat better.” You eat a lot of fast food and drink soda (1 regular soda/day). You are mildly active but do get some activity each day when you walk or bike to work. Used cannabis a few times a month (edible form since smoking aggravates asthma). You stopped using cannabis two years ago when you started a job that had drug screenings. No tobacco use (smoking aggravates asthma). You drink once or twice a week when out with friends, about 3-4 drinks a night. You have no concerns about your drinking. Answer “no” to alcohol screening questions (binging, blackouts, trouble cutting back, drinking with drugs, etc.). |
+| Activities (i.e., hobbies, sports, clubs, friends) | Community theater, reading |
+| Typical day - what is the usual daily routine | Bike to work at community college library, work 8 hours at circulation desk, bike home, socialize with friends |
+
+|  |  |
+| --- | --- |
+| CASE INFORMATION | |
+| Chief Concern: What the patient will say when greeted by the student. The patient’s primary reason for seeking medical care often stated in his/own words. | “I got a tetanus shot after I stepped on a nail. The urgent care center said I should find a primary care doctor.” (If student pursues this: happened on a sidewalk near a construction site. “I’m fine now—that was 8 weeks ago, so it’s healed up.”) |
+| Additional Concerns: Other, if any, concerns the patient has today (i.e., symptoms, requests, expectations, etc.) that will become part of set agenda. | “No current complaints.” If asked whether you have a symptom not in the script, answer “no” or “no issue.” |
+| THE PATIENT STORY | Establishing care / no chief complaint |
+| Past medical history | 1. You last saw a doctor age 21 in a student health clinic in college when you had the flu. 2. When asked about general medical history: Asthma as a child. Stopped seeing a doctor for asthma when you went to college. When asked any more specific questions about any current symptoms or for other details about this: You sometimes get short of breath when you exercise. You cough at night a lot and sometimes have trouble sleeping because of coughing. You have never been hospitalized for asthma, but a couple of times a year your coughing and wheezing get really bad, and you have to take several days off work to rest until it gradually gets better. You have never used an inhaler. 3. Only when asked if hospitalized or about mental illness history: You were hospitalized for a suicide attempt at 16 after experiencing bullying in school that ended in physical assault and changing schools. You took a bottle of Tylenol. It’s been so long you don’t really remember if that caused medical problems. You saw a counselor until the end of high school and took antidepressants for a few years. You stopped going to therapy and taking antidepressants in college because you found a peer support group. If specifically asked by the student about your current state: you are currently satisfied with your life and are NOT feeling suicidal, depressed, hopeless, or anxious. 4. You have no allergies, no pregnancies, no surgeries, no prior sexual trauma. 5. You have never had a colonoscopy or any other cancer screening. 6. Male sex assigned at birth patients: you do not perform a testicular self-exam. No prior rectal exam. |
+| Medication allergies (Name and reaction) | None |
+| Environmental allergies (Name and reaction) | None |
+| Illnesses | Childhood asthma but does not recognize continuing asthma symptoms |
+| Vaccinations | You were caught up with all of your vaccines at the start of college in 2003, no shots since (except the tetanus shot). |
+| Surgeries | No surgery, ever |
+| Accidents/ injuries/ trauma | Stepped on a nail 8 weeks ago when walking near a construction site. |
+| Hospitalization | None |
+| Inclusive sexual and reproductive history | Relationship Status: Exclusive relationship for 6 months. In response to general questions about sexual behavior or partners, respond: “sleeping with a woman right now.” (partner pronouns: she/her/hers, assigned female at birth). In response to more specific questions about past/lifetime partners: “I’ve always slept with women.” You have been with current partner for six months. You have only had sex with each other since the beginning. You have had 15 other partners. If asked directly, all previous partners were cisgender. Sexual orientation is revealed only upon being directly asked by the student for your preferred sexual orientation descriptor. Respond: “I’m straight.” The student must specifically ask about what kind of sex you are having to reveal the following information. Asking can be done two ways: open-ended question or close-ended questions. If close-ended questions are used, only answer the question(s) asked. If open-ended questions are used, please give all of the information below. Penis in vagina, giving oral sex, receiving oral sex, genital-hand contact. No toys. You are not receiving penis in rectum sex. Would very much like to avoid pregnancy (as applicable in your current/future relationships). |
+| Medications | Prescription/dose/reason: None. Over the counter/dose/reason: None. Herbs/supplements/dose/reason: None. Other: When asked about medication use: “I take hormones.” If asked follow-up questions about hormone use, reveal: You have been buying hormones on the internet for about two years. You have switched brands and websites several times based on what you hear from friends. If asked follow-up questions about how you get hormones: You do not have a prescription for this medication; you didn’t always have insurance, so you weren’t going to a doctor regularly. Testosterone/testosterone analogue (Androderm patch—1/day). Desired effects: Trying to increase energy, muscle mass: “My friend has been using testosterone for weightlifting and he really bulked up, so I started using it to build muscle.” If asked directly by student: no side effects. If asked about the results of your hormone use: “Would a prescription give me better results?” If asked directly by student what “better” means to you, answer: “safer and more reliable results.” |
+| Immunizations | You were caught up with all of your vaccines at the start of college in 2003, no shots since (except the tetanus shot). |
+| Tobacco products | No tobacco use (smoking aggravates asthma) |
+| Alcohol | You drink once or twice a week when out with friends, about 3-4 drinks a night. You have no concerns about your drinking. Answer “no” to alcohol screening questions (binging, blackouts, trouble cutting back, drinking with drugs, etc.). |
+| Drugs | Used cannabis a few times a month (edible form since smoking aggravates asthma). You stopped using cannabis two years ago when you started a job that had drug screenings. |
+| Diet (describe) | Could be healthier, and, “I know I need to eat better.” You eat a lot of fast food and drink soda (1 regular soda/day). |
+| Exercise (describe) | You are mildly active but do get some activity each day when you walk or bike to work |
+| Family history | Dad (age 66) has high blood pressure and heart disease from smoking. Mom (age 66) is a type II diabetic and has osteoporosis. Uncle (at age 70) – colon cancer. Aunt (at age 55) – breast cancer. Uncle (at age 60) – prostate cancer. Cousin died at 17 from leukemia. If asked: uncles/aunt above are still alive, and maternal/paternal side of the family does not matter. Ages are important. You have one sibling with no history of illness, still living, age/gender does not matter. |
+| Physical Exam- List exam maneuvers expected for this case and any abnormal findings that SP will simulate. | **This case does not include physical exam.** |
+| PHYSICAL EXAM FINDINGS | **This case does not include physical exam.** |
+| Vital signs | Temp 98.7\*F, Heart Rate 77, Blood Pressure 105/75 |

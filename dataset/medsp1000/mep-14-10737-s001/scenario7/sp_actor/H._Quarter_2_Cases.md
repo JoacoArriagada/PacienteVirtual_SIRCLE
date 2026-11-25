@@ -1,0 +1,1 @@
+**Case 2:** You are a 21-year-old woman who was seen earlier at an urgent care clinic to rule out meningitis. You have had fever, myalgias, and neck soreness for 2 days. Your WBC count at the clinic was 14.2. Your mother is with you and asks about how meningitis is diagnosed.

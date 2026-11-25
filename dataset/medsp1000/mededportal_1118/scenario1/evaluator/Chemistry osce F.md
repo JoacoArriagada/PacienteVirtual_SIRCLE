@@ -1,0 +1,3 @@
+<table><tr><td><p><strong>Chemistry:</strong></p></td></tr></table>
+
+<table><tr><td><p>Urea: 39mg/dl(5-20) </p></td></tr><tr><td><p>Creatinine:1.2mg/dl(0.5-1.2)</p></td></tr><tr><td><p>Glucose:110 mg/dl</p></td></tr><tr><td><p>K: 5 mmol/L(3.5-5)</p></td></tr><tr><td><p>Na:137 mmol/L(136-145)</p></td></tr><tr><td><p>Albumin:3.2g/dl(3.5-5)</p></td></tr><tr><td><p>ALT:25(0-35)</p></td></tr><tr><td><p>AST:20 (8-20)</p></td></tr><tr><td><p>S.Protein:6g/dl(6-8)</p></td></tr><tr><td><p>Bilirubin:0.9mg/dl(0.3-1)</p></td></tr><tr><td><p>LDH:208 U/L(&lt;230)</p></td></tr><tr><td><p>Cl:107 mmol/L(97-107)</p></td></tr></table>

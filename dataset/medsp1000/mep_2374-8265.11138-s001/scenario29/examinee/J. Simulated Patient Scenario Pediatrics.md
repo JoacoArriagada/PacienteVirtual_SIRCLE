@@ -1,0 +1,5 @@
+| **PATIENT NAME**: April Rivera    **PATIENT AGE**: 3 weeks    **CHIEF COMPLAINT**: Neonatal fever    **PHYSICAL SETTING**: Pediatric inpatient room and hallway | |
+|  | |
+| **Brief narrative description of case** | April is a 3-week-old ex-35-week twin female admitted to the pediatric service with neonatal fever. April’s parent returns to the hospital after being home for several hours and asks to speak with the team to discuss care concerns. The parent becomes increasingly agitated, and the nurse calls the team because the parent is threatening to take April home against medical advice, requiring a face-to-face interaction. |
+| **Initial vital signs** | No vital signs in this case, normal if asked | | |
+| **Overall Setting and Appearance** | Setting is in a hallway outside the patient’s designated pediatric hospital room. The standardized participant playing the parent is holding an infant manikin swaddled in a blanket. The infant can be represented with a high-fidelity manikin, low-fidelity manikin, or other proxy for an infant such as a doll. The parent is yelling just outside the room. | | |

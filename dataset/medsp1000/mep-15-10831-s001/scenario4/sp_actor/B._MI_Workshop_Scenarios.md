@@ -1,0 +1,3 @@
+**Scenario # 4**
+
+You are Andrew’s father. Andrew is an 8 year-old boy admitted to the hospital with mild intermittent asthma. He had been on a controller medication several years ago, but his pediatrician had discontinued it because his asthma was so well controlled. He has never been admitted to the hospital before. On initial exam he is mildly hypoxic (P02 91%), with RR = 36. He is able to speak in full sentences. Physical exam is significant for a generally well appearing boy with subcostal retractions, scattered wheezes and a prolonged expiratory phase. As he is taking his Albuterol, the clinician suspects that you are a smoker because of the smell in the room.

@@ -1,0 +1,7 @@
+**Case 3B. A 5-year-old girl presents to her PCP with muscle weakness and developmental delay. Her school is concerned about possible malnutrition, as she sits around, has trouble rising from the floor for which she needs to use her arms, has thin limbs and lacks energy.  She is seen by a neurologist who is concerned for possible muscular dystrophy and orders a creatine kinase (CK) level which later comes back as significantly elevated (10x normal). On the same day, she is seen in genetics clinic where she undergoes a microarray that shows approximately 12% regions of homozygosity, including much of the X chromosome. Her mother is now 19. Having 12% regions of homozygosity raises concern for consanguinity. The mother eventually reveals that the father of the child is her maternal uncle who had Duchenne muscular dystrophy (DMD) and passed away early.**
+
+●      Assign one person to play the role of the physician and one to play to role of the mother of the affected little girl. Role play delivery of the information to the family.
+
+* + *Did she have any sense that there might be a genetic condition in the family? Or that it could affect her or her offspring?*
+  + *How does this patient view the health of her relatives and their quality of life?*
+  + *Concerns for her own health risks and sense of guilt that she passed this condition on to her child after an underage, consanguineous relationship with her uncle.*

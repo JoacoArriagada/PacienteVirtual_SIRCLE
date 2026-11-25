@@ -1,0 +1,64 @@
+|  |  |
+| --- | --- |
+| **Appendix A: MedEdPORTAL Simulation Case**  **SIMULATION CASE TITLE:**  **Development of a Hybrid Simulated Patient Experience to Practice Care of the Dying Older Adult** | |
+| **PATIENT NAME: Barney Smith**  **PATIENT AGE: 70**  **CHIEF COMPLAINT: Pain and restlessness per wife** | |
+|  | |
+| **Brief narrative description of case** | Mr. Smith was diagnosed with multiple myeloma 8 years ago and has progressively worsened. He is enrolled in home hospice and has a signed DNAR form. The hospice nurse saw Mr. Smith at home yesterday morning and there were no changes in his status at that time. By the afternoon and evening, his wife reports he became groggy and unable to speak coherently. He did not eat or take his medications. During the night he kept moaning and thrashing and seemed very uncomfortable. She also reports that he pushed her away when she attempts to move him. She called 911 and he is now presenting to the Emergency Department in distress. The wife is clear that she wants the patient to be made comfortable. |
+| **Learner Preparation** | You are on your ER rotation. You are to see Mr. Smith who was brought in by EMS this AM for pain and restlessness. He is in the exam room with his wife.  PMH: Multiple Myeloma x 8 years, on hospice.  Your task is to:   1. Obtain history 2. Assess and treat symptoms 3. Provide support to wife during encounter.   Mr. Smith is a mannequin today. The mannequin is a SimMan who is breathing, has pulses and heart and lung sounds for auscultation. He has an IV and vital signs are displayed on the monitor at the bedside. Treat the mannequin as you would a patient. You have a nurse in the room and she can respond to medication orders or other requests that you might have.  Phone Note 1  17 months ago  From: Hospice  Met with patient and wife today for initial hospice evaluation. Signed DNAR. Started prn morphine for pain.  Phone Note 2  9 months ago  From: Hospice  Needs increased pain medications. Using frequent doses of morphine. Added long acting morphine sulfate 30 mg morning and evening.  Phone Note 3  Current month  From: Wife, Mrs. Smith  Mr. Smith is getting more restless. Talked to hospice. They will evaluate. |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Initial vital signs** | BP 90/54, P 110, R 32, O2 sat 90% on 2 liters by nasal cannula, T 98.0 | | |
+| **Overall Appearance** | Patient (Laerdal SimMan 3G) in a hospital gown with gray wig and make up to make him look chronically ill. He is in hospital bed with oxygen on by nasal cannula, IV in arm, DNAR and name bands on. Wife is anxiously standing by him and talking to him. He is moaning and breathing hard and not able to speak. | | |
+| **Actors and roles in the room at case start** | 1. Wife, standardized patient  2. Primary Nurse, standardized | | |
+| **HPI** | 70 y/o male with multiple myeloma for 8 years on home hospice presents to the Emergency Department with his wife with restlessness, agitation and pain. | | |
+| **Past Medical/Surgical History** | **Medications** | **Allergies** | **Family History** |
+| Multiple Myeloma x 8 years  No Surgical history | * Morphine Sulfate controlled release tablets 30mg twice daily, * Morphine Sulfate immediate release oral concentrate 20mg/ml, 10 mg (0.5 ml) every hour as needed, * Lorazepam tablets 1mg every 2 hours as needed, * Sennasides 8.6 mg 2 tablets daily, * Docusate sodium tablets 100 mg twice daily, * Polyethylene Glycol 3350 powder for solution 17 gm daily as needed for constipation. | NKDA | Unable to obtain |
+| **Physical Examination** | | | |
+| **General** | Mannequin made to look gray | | |
+| **HEENT** | Eyes half open but not making eye contact or blinking. Blue light in mouth to appear cyanotic | | |
+| **Neck** | Mannequin- nothing remarkable | | |
+| **Lungs** | Crackles bilaterally, respirations 32. | | |
+| **Cardiovascular** | Tachycardic, RRR | | |
+| **Abdomen** | Mannequin- nothing remarkable | | |
+| **Neurological** | Moaning but not speaking words at all and no meaningful response to questioning | | |
+| **Skin** | Mannequin- nothing remarkable | | |
+| **GU** | Mannequin- nothing remarkable | | |
+| **Psychiatric** | Moaning but not speaking words at all and no meaningful response to questioning | | |
+
+|  |  |  |
+| --- | --- | --- |
+| Instructor Notes - Changes and CASE Branch Points | | |
+| **Intervention / Time point** | **Change in Case** | **Additional Information** |
+| **Scenario Start** | Vital Signs to be set on monitor:   * BP 90/54 * HR 110 * RR 32 * Sound: initial presentation 32   + Start looping, click initial presentation, loop, and then play. | RN:  *As learner is assessing situation:*   * "Excuse me. He is hypotensive & tachycardic and his sat is down to 89%." * "Do you want to do any tests or labs?" * If the learner is ordering tests that the wife doesn't recognize, the nurse may say things to get her to recognize tests are being ordered.   Wife:  If the learner does not immediately order pain medication, the wife and nurse should give hints about how he looks uncomfortable. "Can't you please just make sure he is comfortable?"  Gives a consistent message that she wants her husband to be comfortable. She does NOT want additional testing. She wants to take her husband home. |
+| **After medication given** | Vital Signs:   * BP same   Trend over 40sec - 1 min.   * HR 90 * RR 26 * Sound: resp 26 (2-5 minutes) change to 16   O2 sat 85% *when learner offers pain/anxiety meds* | RN:  The order is more appropriate than the actual medication or dose but if the dose is very high, the nurse will suggest a more appropriate dose. "Can we start with part of that and see how he responds?"  If the learner expresses concern that worsening VS are due to opioid administration, they may try to order Naloxone. At this point, the nurse should repeat back the order in a way to cue the wife that the pain medication is being reversed so she can jump in and say, "I just want him to be comfortable!" She may also say, "He takes his pain medicine twice a day every day but missed it yesterday because he was out of sorts. I think he needs the pain medication." |
+| 8-10 Minutes | Vital Signs:   * Trend slowly based on faculty feedback regarding learner telling wife that he may be dying * Typically plateau at: * BP 78/40, P 56, R 8 (no apnea), O2 84% * Sound: change breathing when each milestone reached to new sounds * Cycle BP more towards end.   *Make sure learner has enough time to tell the wife he appears to be dying. Take VS down some, but don't go all the way until this happens.* | *The patient is declining but the wife does not see it, she is talking about taking him home and going to the lake this weekend. The learner must recognize that the patient appears to be DYING and let the wife know.*  Wife:  If the learner is trying to tell her he is declining but is talking in language she would not be expected to understand including medical terminology, she should *not* make acknowledgement that he is declining. If the learner says his blood pressure is low, she should say, "Oh, that's great, it's good to have low blood pressure." If he or she says that the patient is not doing well, she should say, "I know he has not been doing well for a long time."  RN:  If the learner is not communicating in clear, non-medical terms, the nurse may say, "I am not sure Mrs. Smith understands what you are trying to say." |
+| **After Learner Identifies Dying Process**  Trend over  2 - 3 min. | Vital Signs (will trend as needed according to what learner does):   * Trend to no HR using 2 minute trend option * Sound: Respiratory rate 4 * Sound: Respiratory rate 2 * O2 Sat down | RN:  May offer to call family/chaplain if learner has not done that.  Wife:  Focuses on talking to husband, crying, saying good bye |
+| **12 - 15 minutes** | Death  Sound: Last breath option: 3, stop looping  Close Eyes / No Pupil Dilation  Heart Running Rhythm: Asystole | Learner:   * Pronounces death * Informs Mrs. Smith that her husband has died   Wife:  Is crying and expresses appreciation to learner. |
+
+Ideal Scenario Flow
+
+Prior to entering the "ED" room, the learner reviews the patient's medical history, several brief communications between hospice and PCP; and Advance Directive and Out of Hospital Do Not Resuscitate orders. The learner then enters the room to find the patient lying in bed. His wife is hovering over him, holding his hand, and trying to get him to respond. The learner introduces him or herself and gathers a history from the wife after assessing the patient's inability to talk. A nurse is in the room checking the patient. The patient is moaning, breathing loudly, eyes are partially opened but he is not responsive to verbal stimuli. The wife will verbalize that she wants him to be more comfortable. Upon learning from his wife that the patient has not had any pain medication for the last 24 hours and from the nurse that there are no labs or tests available, the learner will order pain medication. The patient will appear more comfortable with slower and quieter breathing and slower pulse after pain medication or other medication for restlessness (e.g. lorazepam) is given. The wife will continue to talk about future plans as she is not recognizing that her husband is actively dying. The learner will recognize that the patient is actively dying and continue to focus care on comfort only. They will clearly and compassionately tell the wife that he is actively dying. He or she will ask the wife to sit, make good eye contact, and appear comfortable when he or she is telling her that her husband is dying. He or she should offer tissues when she is crying and should either gently touch her arm or back and be next to her with warm body language. After the student tells the wife the patient is dying, the operator puts the patient's vital signs into a decline mode until he "dies." The nurse or wife will suggest calling their son or a chaplain or pastor. The learner will give the wife time to say goodbye and will offer supportive comments. The wife will be tearful, but her anxiety will decrease tremendously as soon as she gets good clear communication from the learner about what is happening. The learner will continue to be very comforting. When the wife is ready, at that time the learner will quietly do an examination of the patient including checking for breath sounds, pulses and then tell the wife that "He has died." The learner will quietly declare time of death to the nurse and leave the room so that the wife can have some time alone with her husband.
+
+Anticipated Management Mistakes
+
+Learner may order tests or treatments that are not palliative and the wife does not want.
+
+If the student is pushing back and telling her how important it is to get tests, the wife must strongly try to guide the student that their goals are to ensure that he is comfortable only. If the student uses terms in ordering that are not obvious to the wife (e.g., get an ABG), the nurse may make it more obvious to the wife that these are tests so that she can resist.
+
+The learner may be slow in order pain medications.
+
+The wife and nurse should tell the doctor how uncomfortable he appears.
+
+The learner may order an inappropriate amount of pain medication.
+
+(The order is more important than the actual medication or dose but if the dose is very high, the nurse will suggest a more appropriate dose. If it is low, the nurse will suggest that the learner will want to reassess shortly.)
+
+The learner may express concern that the pain medication is contributing to the patient's death.
+
+The wife should emphasize how he takes pain medication twice a day everyday but missed it yesterday and she thinks he needs the pain medications. She can also reiterate how much pain he is in.
+
+The learner may be communicating in language the wife would not understand
+
+The nurse can gently ask the learner to rephrase the communication so the wife can understand better.

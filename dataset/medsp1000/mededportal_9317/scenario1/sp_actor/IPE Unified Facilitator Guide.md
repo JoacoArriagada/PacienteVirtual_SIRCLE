@@ -1,0 +1,169 @@
+**General set-up:**
+
+* Refer to Table 1 for details of how these small group sessions will proceed.
+* Each small group will have approximately 8 students from several disciplines represented. This means some disciplines will have more than one student representative.
+* All students will have received the case prior to the session. The case presents what occurred on Pat Martin’s first visit to a community based clinic. The IPE session will focus on Pat returning for a follow-up visit aimed specifically at addressing issues related to obesity. To prepare students, faculty from each discipline will have discussed the main information and issues their discipline would want to pursue during this return visit prior to the session.
+
+**Table 1. Plan for small group simulated patient sessions**
+
+|  |  |
+| --- | --- |
+| TIME/ WHO | WHAT |
+| 0:0-:15 minutes  Pre-briefing: Facilitator-guided student discussion | * Facilitator presents case saying that Pat Martin is being seen for a follow-up visit. * **Facilitator should note that simulated patient may not appear the age or weight stated in case – use your imagination!** |
+| :15-:50 (up to 35 minutes) Simulated Patient (SP) interview/  Student-SP interactions | * SP will be waiting outside small group room for when group is ready. Set up two chairs at head of room to simulate clinic room. * Each discipline representative will ask appropriate questions to gain additional information and address issues that arise. * After each discipline interview, SP makes notes to guide subsequent feedback after all interviews completed. |
+
+**Examples of Questions and Answers**
+
+**that various health professionals may answer**
+
+**and corresponding possible answers**
+
+**Dental Questions & Answers for SP**
+
+1. **Do you have any pain or bad taste in the mouth or pain on biting/chewing?**
+   1. *No, I don’t really have any pain, but I do notice a bad taste once in a while. It kind of comes and goes. Sometimes my teeth are kind of sensitive. I had some pain in the upper right a while ago, but it went away.*
+2. **How often do you brush and floss?**
+   1. *I try to brush in the morning, but a lot of times I forget. I don’t really floss. I can’t fit my hands back there very well.*
+3. **Do your notice that your gums bleed when you brush or floss?**
+   1. *Yeah, I do notice that I get some bleeding when I brush. I don’t want to hurt anything, so I kind of back off my brushing.*
+4. **Do you have regular dental visits? If so, when was your last visit?**
+   1. *I haven’t been in a long time. I used to go when I had a problem. But I don’t get dental insurance at my job.*
+5. **Do you drink sugared beverages like pop, juice, energy drinks, tea, etc. and if so, can you estimate how much and how often?**
+   * *Yeah, I love Mountain Dew! And I drink a lot of energy drinks during the day to help keep me going. I don’t sleep real well all the time, so I’m tired a lot at work.*
+
+**Pharmacy Questions & Answers for SP**
+
+**Question 1: Any adverse effects from the use of the analgesics?**
+
+*Patient can say that they do suffer from heartburn but really haven’t noticed that it is associated with their pain medication. SP can say that they have never tried something for the constipation or the heartburn, particularly if asked about OTC drugs.*
+
+**Question 2: Follow up on the alcohol use.**
+
+*The use of alcohol is probably an average of 2-3 a day with more on days off and sometimes to help get some sleep. Answer would be just beer.*
+
+**Question 3: What exactly is the dose of ibuprofen that is used?**
+
+*The patient usually takes two tablets (400 mg) but on occasion will take three tablets (600 mg).*
+
+**Question 4: Does the ibuprofen and or acetaminophen actually relieve the pain?**
+
+*The SP says that they never get complete relief from either of the two but that 3 ibuprofen tablets will usually control most of the pain. Acetaminophen and lower doses of ibuprofen work less well.*
+
+**Question 5: Do you have insurance that would help cover the cost of prescription medications?**
+
+*The answer is NO.*
+
+**Question 6: Have you ever taken over the counter or prescription medication to help you lose weight**?
+
+*They do not claim a history of any prescription drug use in the written history. It might be easiest for them to just deny it.*
+
+**Physical Therapy Questions & Answers for the SP**
+
+**1. How much is your back pain limiting your daily activities? (work, household, hobbies, social or recreational)**
+
+*I am still working, but some days I have to call in sick.  I am having difficulty around the house (putting dishes away, taking out the trash).  It hurts to be on my feet for extended periods of time, or sit for extended periods of time, so have to keep changing positions.  I am not able to enjoy my kids’ activities as well as I would like (sitting at softball games, band concerts) and am not able to lift them to hold them at all.*
+
+**2. What do you find makes your pain worse?  Better? (E.g. Sitting, standing, certain activities)**
+
+*Lifting makes it worse, bending forward hurts, either standing or sitting for extended periods...*
+
+**3. How have you been doing with the home exercise program you were given a month ago?  Any problems?  Doing it?**
+
+*I admit I tried it a few times but haven't been very good about it.  I am not sure I see how these exercises will help? (Exercises included: knee to chest stretches, abdominal crunches, and instructions to use my knees more for lifting objects).  My knees hurt when I try to lift with my legs, so that isn't very easy to do.*
+
+**4. Are you able to sleep at night?  In your bed (vs a recliner?)**
+
+*Sometimes, but not very well.  I do find I sleep better in a recliner, but I hate not sleeping in my regular bed with my spouse.*
+
+**5. Are you getting any regular exercise?  What do you most enjoy?  What limits you most?**
+
+*I get some exercise at work lifting boxes.  I walk a little but I admit I don't do as much as I should.  When I was younger I enjoyed playing softball myself and swimming, but really can't do that much anymore.*
+
+**Nursing Questions & Answers for the SP:**
+
+**1. On a scale of 0-10, please rate your pain level with 0 being no pain and 10 being the worst pain you have ever felt.**
+
+*Answer: “My pain is a six or seven right now.”*
+
+**2. Please describe the pain you are having.**
+
+*Answer: “I have a constant ache in my back that sometimes turns to a stabbing pain.”*
+
+**3. Is there anything that makes the pain worsen?**
+
+*Answer: “It seems to be worse when I am working or have been lying down or sitting.”*
+
+**4. What has been helpful in relieving the pain?**
+
+*Answer: “I try Ibuprofen, but it only helps a little.”*
+
+**5. What is an acceptable level of pain for you?**
+
+*Answer: “I would like it to be down to a 2 or 3 at least.”*
+
+**1. Have you completed a diet journal?**
+
+*Answer: “I tried, but it is hard to remember to write things down.”*
+
+**2. Can you tell me what you have eaten so far today and yesterday?**
+
+*Answer: “I didn’t have breakfast, because I was running late. Yesterday I ate lunch at work and we ordered pizza and then grabbed some take out on the way home for supper.”*
+
+**3. Has anyone ever talked to you about healthy food portions or how to read food labels for nutrition content?”**
+
+*Answer: Not really. I know I probably eat out too much.*
+
+**Question: Do you have any financial concerns related to your medical care?**
+
+*Answer: “I am working, but I don’t have any insurance. My spouse was recently laid off and had our insurance coverage.”*
+
+**Question: How do you cope with stress at home? Do you have a support system?**
+
+*Answer: “I usually watch TV and maybe have a couple of beers.” “My spouse tries, but is laid off right now.”*
+
+
+**Physician/PA Questions & answers for the SP**
+
+**Question: How long have you had a problem with obesity?**
+
+*Answer: Ever since I can remember*
+
+**Question: Have you been obese all of your life?**
+
+*Answer: Yes, not so much when I was younger, but from the teenage years on I was always bigger than the other kids and then as an adult it just progressively worse and worse*
+
+**Question: How many calories do you eat in a day?**
+
+*Answer: I’m not sure. Don’t have any idea*
+
+**Question: Have you ever counted calories?**
+
+*Answer: I tried once a long time ago, but it was too heard and it took too much time*
+
+**Question: Tell me about a typical day of eating for you?**
+
+*Answer: Well, I really don’t think I eat than much. I usually skip breakfast. Figure I don’t need the extra calories. For lunch I either take it to work or buy something from the food trucks that come by for workers at noon. For dinner, that’s where I probably fall down the most. I love pizza, chicken pot pies, and hot pockets.*
+
+**Question: Do you snack in between meals?**
+
+*Answer: Yes, I have a snack in the morning at work, at afternoon break, and at night I usually have some cake or pie with milk before I go to bed*
+
+**Question: How much soda pop do you drink?**
+
+*Answer: I usually have 2-3 colas at work every day. I don’t drink them at night because I don’t want to have the caffeine keep me up and interfere with my sleep*
+
+**Question: How much sleep do you get each night?**
+
+*Answer: I probably get 6-7 hours of sleep each night*
+
+**Question: Do you eat when you are feeling stressed?**
+
+*Answer: I like to have sweets if I am feeling stressed.*
+
+**Question: Do you understand the long-term complications that come from carrying so much weight?**
+
+*Answer: I know from television and the newspapers that being fat like I am is not good for my health. I guess the biggest problem I’ve heard about is the connection between obesity and diabetes.*
+
+**Question: Do you have morning headaches or daytime sleepiness?**
+
+*Answer: No.*

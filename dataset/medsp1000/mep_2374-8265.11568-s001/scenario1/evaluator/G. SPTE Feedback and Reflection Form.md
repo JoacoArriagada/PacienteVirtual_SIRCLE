@@ -1,0 +1,47 @@
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| **Standardized Patient Teaching Experience Observation & Feedback Guide** | | | | | |
+| **Lead Facilitator Name:** | | | | **Co-Facilitator Name:** | |
+| **Date, Team Number & Time Period:** | | | | | |
+| **Instructions for Facilitators and Student:** | | | | | |
+| During the SPTE, the lead facilitator guides the students through the experience and makes notes as time allows on this form. The co-facilitator's main role during the encounter is to observe and complete the form recording qualitative comments that are consistent with the oral feedback students receive during the debrief session. During the feedback portion of the experience, both the lead facilitator and the co-facilitator offer feedback to the students. Students should use the form to self-reflect on their team’s interactions with the SP and each other. To best use the form, facilitators should consider how team members worked together to develop the plan. Circle or highlight the TDM1 criteria for which you observed specific behaviors of team members. In the team strengths and challenges columns, record discreet behaviors/observations and summarize strengths and challenges, using the TDM criteria as a guide. The facilitator debrief question prompts may be useful to guide the discussion, particularly regarding the TDM criteria that were not demonstrated. | | | | | |
+| **Program Goal: Communicate** | | **Facilitator Observed Behaviors and Examples of Team Strengths** | **Facilitator Observed Behaviors and Examples of Team Challenges** | | **Facilitator Debrief Question Prompts** |
+| **SPTE Objective(s)**  Employ effective communication skills to ensure common understanding of interprofessional team goals and plans *(e.g., use of lay terms instead of medical jargon and abbreviations specific to one profession).* | |  |  | | What words or phrases would you use to describe your team’s communication? Explain your rationale or provide examples from your work that demonstrate this. What were the characteristics and responses of others that allowed each of you to speak freely? Did you encounter any barriers to effective communication? Why did these occur and how did you attempt to address these barriers? |
+| **TDM Criteria** |
+| 9. All team members feel free to share their ideas with the team |
+| 10. All team members feel free to express their feelings with the team |
+| 11/15. Team members say what they really think and mean |
+| 16. Regardless of the topic, communication between the people on this team is direct, truthful, respectful and positive |
+| 19. Team members talk about each other with respect, even when team members are not present |
+| 26/28. There is clarity about the work that the team should be doing and how to accomplish the work of the team |
+
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| **Program Goal: Roles & Responsibilities** | | **Facilitator Observed Behaviors and Examples of Team Strengths** | **Facilitator Observed Behaviors and Examples of Team Challenges** | **Facilitator Debrief Question Prompts** |
+| **SPTE Objective(s)**  Utilize the appropriate interprofessional team members in shared decision making or problem solving *(e.g., bringing up ideas outside of one’s discipline, and team members respond positively without an attitude of “that is my territory”).* | |  |  | Based on what you have learned and discussed thus far in this experience, what are some unique roles and responsibilities of each team member’s profession? Followed by, what are some similarities of roles and responsibilities? In what ways did the unique roles and expertise of all team members contribute to the process and quality of the plan? Provide examples. |
+| **TDM Criteria** |
+| 3. I am allowed to use my unique personal skills and abilities for the benefit of the team |
+| 20. I have a clear understanding of what other team members expect of me as a team member |
+| 22. Roles and responsibilities of individual team members are clearly understood by all members of the team |
+
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| **Program Goal: Leadership & Teamwork Skills** | | **Facilitator Observed Behaviors and Examples of Team Strengths** | **Facilitator Observed Behaviors and Examples of Team Challenges** | **Facilitator Debrief Question Prompts** |
+| **SPTE Objective(s)**  Utilize the appropriate interprofessional team members in shared decision making or problem solving  Assess team strengths and areas of improvement | |  |  | Identify behaviors of the team as a whole that contributed (either positively or negatively) to the effectiveness of completing the task. What might you do differently next time? How well did you participate and how well did you encourage others to participate? What are ways that you could improve active participation from all in future team-based activities? How well did team members participate and encourage one another to participate? |
+| **TDM Criteria** |
+| 4. The work I do on this team is valued by the other team members |
+| 5. On this team, members support and encourage each other |
+| 14. Information that is important for the team to have is openly shared by and with all team members |
+| 21. On this team the person who takes the lead differs depending on who is best suited for the task |
+| 23. Team members follow the leadership of other team members |
+| 27. The goals of the team are clearly understood by all team members |
+| 17. The team openly discusses decisions that affect the work of the team before they are made |
+| 18. Team members participate in making decisions about the work of the team |
+| 30. The team has agreed upon clear criteria for evaluating the outcomes of the team’s effort |
+
+| **Program Goal: Values/Ethics** | | **Facilitator Observed Behaviors and Examples of Team Strengths** | **Facilitator Observed Behaviors and Examples of Team Challenges** | **Facilitator Debrief Question Prompts** |
+| **SPTE Objective(s)**  Demonstrate respect and professionalism in an interprofessional team  Establish an environment of collaboration, trust, and appreciation for diversity and differing opinions in an interprofessional team | |  |  | As you worked collaboratively with individuals that you just met, what were some teammate characteristics/actions that helped instill respect and trust for your teammates? Did your team encounter any ethical dilemmas during the session? If so, what were the circumstances, how would you describe the dilemma(s) in terms of the principles of medical ethics, and how did you address these considerations? What actions served to include the patient as a collaborating member of your team? |
+| **TDM Criteria** |
+| 6. The team practices tolerance, flexibility and appreciation of the unique differences between team members |
+| 7. In the team, there is more of a WE feeling than a ME feeling |
+| 29. Team members define the goals of the team as more important than their own personal goals |

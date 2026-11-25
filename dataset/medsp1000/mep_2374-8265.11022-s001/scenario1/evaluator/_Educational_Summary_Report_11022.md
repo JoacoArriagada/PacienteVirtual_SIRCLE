@@ -1,0 +1,14 @@
+# Educational Objectives
+
+By the end of this activity, learners will be able to:
+
+1. Examine their own beliefs and values related to bias and discrimination directed at health care professionals.
+2. Describe the impact of racial bias and racial discrimination on health care professionals.
+3. Appraise the relationships between law, policy, and institutional culture around diversity and inclusion.
+4. Apply knowledge of law, policy, and institutional culture, as well as practiced communication skills, in the adaptation of forum theater to promote a culture of diversity and inclusion in the workplace.
+
+The grand rounds and invited workshops in the IM and EM departments then called for audience participation in the reenactment of a prefilmed scenario, in which a health care team was confronted with a patient expressing explicit religious bias. This prefilmed scenario was based on an actual experience by a URMC health care professional. The purpose of using a prefilmed scenario in these sessions was to utilize the limited time efficiently while still providing audience members with direct exposure to the modified version of forum theater.
+
+In addition, audience members were given an opportunity to playact the scene, and spect-actors were asked to generate and demonstrate alternative solutions to the problem of oppression.
+
+Ms. Brown is a 50-year-old white female with an exacerbation of chronic lung disease admitted to the hospital. Although she has a cough and is mildly short of breath, she is otherwise medically stable. Two residents enter Ms. Brown’s room: Dr. Khan, a second-year female resident who is Muslim and wears a hijab, and Dr. Jensen, a first-year male resident who appears white. Dr. Khan extends her hand to greet Ms. Brown. Refusing to shake her hand, Ms. Brown folds her arms and looks away. Dr. Khan introduces herself and informs Ms. Brown that she and Dr. Jensen will be caring for her while she is in the hospital. Ms. Brown eventually states that she does not want a Muslim woman for a doctor. She insists that Dr. Jensen be her doctor and demands that Dr. Khan leave the room. Dr. Jensen remains silent.

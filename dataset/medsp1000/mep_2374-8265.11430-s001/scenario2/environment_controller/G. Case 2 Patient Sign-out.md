@@ -1,0 +1,6 @@
+**Appendix G.** **Instructions:** Provide patient hand-off information to learners before simulation case begins.
+
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| **FLOOR – 6NE** | **VITALS-LABS** | **Ins/Outs – Cultures** | **MEDS** | **COMMENTS/TASKS** |
+| BLACK, DEBORAH  1234  DOB: 2/15/59, 72 F  6234-01  **Code: Full Code**  **Allergy:** NKDA  Prob/Proc   * DMT2 * Hyperglycemia * Hypertension * Hyperlipidemia * P Afib * GLF | T 36.5 p78 NIBP 124/74 Art/ r18 sat 98% on RA  WBC 5.1 K/uL,  Hct 31 %,  Plts 273 K/uL  Na 136 mEq/L,  K 3.7 mEq/L,  Cl 99 mEq/L,  HCO3 19 mEq/L,  BUN 21 mg/dL,  Cr 0.7 mg/dL,  Glucose 172 mg/dL | **-** | SCH MEDS  Lisinopril 20 mg daily  Atorvastatin 40 mg daily  Metoprolol succinate 75 mg daily  Apixaban 5 mg BID  Melatonin 3 mg daily  Cholecalciferol 600 units daily  Senna 17.2 mg daily  Polyethylene glycol 17 grams daily PRN  PRN  Acetaminophen 650 mg q6h PRN | Stable/Full code  72 y/o F with PMH of A fib, HTN, HLD, and DMT2 p/w GLF. Work up negative plan for dc in AM.  Today:  Worked with PT/OT. No arrythmia on tele. Orthostatic negative, likely dc in AM after TTE is obtained  XC: NTD |

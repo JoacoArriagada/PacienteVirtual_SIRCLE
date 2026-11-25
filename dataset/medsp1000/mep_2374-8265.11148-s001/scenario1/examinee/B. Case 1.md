@@ -1,0 +1,1 @@
+INTRODUCTION: I’m a 58-year-old male (married to my husband with whom I’ve been with for 25 years) you’ve seen in your practice for 10 years for actinic keratoses, etc., but now I have **several weeks of redness and irritation under my foreskin.**

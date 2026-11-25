@@ -1,0 +1,5 @@
+You are on call with Dr. Newby, a first year resident on night float in August of his intern year. You’ve never worked with Dr. Newby before. It’s 10:30PM when you bridge an admission from the ED. The patient is an 83 year old female resident of a local nursing home. She fell getting up from the table after dinner. She has sustained a hip fracture and the orthopedic service plans for a repair tomorrow. Because of her age and complicated medical history, ortho requested family medicine service admit her.
+
+* The patient has a history of mild dementia, osteoarthritis with multiple joint replacements, diabetes type 2 with peripheral neuropathy, hypertension, Coronary artery disease, depression, CKD, and anemia of chronic disease. She’s on about 15 drugs.
+* The ED resident reports that she is comfortable and stable and is good for the floor.
+* The senior resident needs to stay in Labor and delivery due to an actively laboring patient.

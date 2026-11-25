@@ -1,0 +1,9 @@
+# Interprofessional Geriatric Assessment Course
+
+# WRITTEN TEAM PLAN CONTENT AND SCORING
+
+<table><tr><td rowspan=1 colspan=1>Content</td><td rowspan=1 colspan=1>Possiblepoints</td><td rowspan=1 colspan=1>Actualpoints</td></tr><tr><td rowspan=1 colspan=1>Patient name, date, and description of initial situation including presentingconcern are included</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Names and professions of team members involved are listed,and types of assessments used are described</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1> Subjective data (S) clearly reflects patient perspective</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Objective data (O) clearly reflects involvement of each representedprofession on the team</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Assessment (A) builds on (S) and (O),and reflects involvement of eachrepresented profession on the team</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>An interprofessional intervention plan (P) flows logically from (A) andreflects involvement of each represented profession on the team in an integrated manner</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Quality of writing including grammar, clarity, spelling and professionalappearance</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>TOTAL</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td></tr></table>
+
+Note: (S) subjective data: reflects patient perspective; (O) objective data: reflects findings from observation and examination; (A)assessment: reflects your interpretation and analysis of the data; (P) plan is based on assessment of patient needs
+
+# COMMENTS:

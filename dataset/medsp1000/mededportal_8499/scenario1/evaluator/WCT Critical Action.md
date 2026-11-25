@@ -1,0 +1,9 @@
+# Critical Action List – Wide Complex Tachycardia
+
+<table><tr><td colspan="3">Resident Name:</td></tr><tr><td></td><td></td><td></td></tr><tr><td>YES</td><td>NO</td><td>Partially</td></tr><tr><td>(10pts)</td><td>(0pts)</td><td>(5pts)</td></tr></table>
+
+<table><tr><td rowspan=1 colspan=1>Primary Survey:Assess airway, IV, O2 Monitor, Vital Signs</td></tr><tr><td rowspan=1 colspan=1>Recognize Wide Complex Tachycardia</td></tr><tr><td rowspan=1 colspan=1>Physical Exam</td></tr><tr><td rowspan=1 colspan=1>Order Ancillary Data(EKG,labs, CBC,Coags,Panel 7)</td></tr><tr><td rowspan=1 colspan=1>Obtain Detailed History</td></tr><tr><td rowspan=1 colspan=1>Initiate Pharmacologic Treatment of WCT</td></tr><tr><td rowspan=1 colspan=1>Initiate 2&quot;d Pharmacologic Treatment of WCT</td></tr><tr><td rowspan=1 colspan=1>Critical Care Disposition</td></tr><tr><td rowspan=1 colspan=1>Sedation Prior to Electrical Cardioversion</td></tr><tr><td rowspan=1 colspan=1>Successfully deliver Cardioversion</td></tr></table>
+
+# General Simulation Participation Evaluation
+
+<table><tr><td rowspan=4 colspan=1>Resident was aneffective Team LeaderResident utilizedclosed loopcommunicationResident suspendeddisbelief in simulationparticipationTeam Leaderincorporated teammembers in case</td><td rowspan=1 colspan=1>Agree</td><td rowspan=1 colspan=1>SomewhatAgree</td><td rowspan=1 colspan=1>SomewhatDisagree</td><td rowspan=1 colspan=1>Disagree</td></tr><tr><td rowspan=1 colspan=1>Agree</td><td rowspan=1 colspan=1>SomewhatAgree</td><td rowspan=1 colspan=1>SomewhatDisagree</td><td rowspan=1 colspan=1>Disagree</td></tr><tr><td rowspan=1 colspan=1>Agree</td><td rowspan=1 colspan=1>SomewhatAgree</td><td rowspan=1 colspan=1>SomewhatDisagree</td><td rowspan=1 colspan=1>Disagree</td></tr><tr><td rowspan=1 colspan=1>Agree</td><td rowspan=1 colspan=1>SomewhatAgree</td><td rowspan=1 colspan=1>SomewhatDisagree</td><td rowspan=1 colspan=1>Disagree</td></tr></table>

@@ -1,0 +1,1 @@
+1. You are a 38-year-old woman with chronic abdominal pain and multiple specialist evaluations. You are about to be discharged from the ED and you ask, “Have you figured out what is causing my pain? What am I going to do if I keep hurting?”

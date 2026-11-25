@@ -1,0 +1,7 @@
+# Interprofessional Geriatric Assessment Course
+
+# TEAM PRESENTATION CONTENT AND SCORING
+
+<table><tr><td rowspan=1 colspan=1>Content</td><td rowspan=1 colspan=1>Possiblepoints</td><td rowspan=1 colspan=1>Actualpoints</td></tr><tr><td rowspan=1 colspan=1>Introduction of team members and description of OSCE assessmentprocess</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Brief report from Occupational Therapy including main findings</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Brief report from Physical Therapy including main findings</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Brief report from Pharmacy including main findings</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Brief report from Nutrition including main findings</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Team plan (recommendations)</td><td rowspan=1 colspan=1>30</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Presentation is integrated and involves all team members</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Presentation is clear, concise,and uses time well</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>TOTAL</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td></tr></table>
+
+COMMENTS:

@@ -1,0 +1,12 @@
+|  |  |
+| --- | --- |
+| **Appendix A: MedEdPORTAL Simulation Case Template**  **SIMULATION CASE TITLE:** Managing the Complex Issues of Pediatric Non-accidental Trauma: a simulation-based case of a critically injured child.  **AUTHORS:** Matthew Ryan, Peggy White, Sean Kiley, Heather Reed and Chris Giordano | |
+| **PATIENT NAME:** Pat  **PATIENT AGE:** 16 months  **CHIEF COMPLAINT:** Non-responsive | |
+| **Learner Preparation** | Learners should be 4th year medical students or residents. No specific pre-requisites are needed otherwise. The learners should be informed of the resources at their disposal throughout the simulation. This includes human resources such as nursing staff, as well as a full set of medicines, equipment, and diagnostic testing capabilities. |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Initial vital signs** | Heart rate 145, Blood Pressure 70/40, Respiratory Rate = BVM rate, SpO2 90% while being bagged, Temperature 33.5 C | | |
+| **Overall Appearance** | The patient is on a stretcher with EMS standing by. The patient is being bagged with increased difficulty to maintain an oxygen saturation of greater than 90%. EMS was called by the mother when she found the child unconscious on the kitchen floor. EMS could not intubate the patient. The patient is not wearing a cervical-collar as EMS did not have an age-appropriate. The patient however was transported to the hospital on a backboard. The patient arrives with a GCS 6. En route, EMS noted tachycardia and an initial blood pressure (BP) of 70/40. EMS also notes rapid shallow respirations (base rate of 50) and stated the patient feels cold. EMS was able to place an intravenous catheter in the right antecubital fossa and initiated a normal saline bolus. | | |
+| **HPI** | The patient is a 16-month-old child who was found unresponsive on the kitchen floor by her mother who just came home from work. The mother then called EMS. The patient currently has a GCS = 6. EMS was unable to intubate the patient at the scene and brought the patient to the ED with a laryngeal mask airway (or some other adjunct) in place and noted the patient was getting more difficult to oxygenate using an ambubag. En route, EMS noted tachycardia and an initial blood pressure (BP) of 70/40. EMS also notes rapid shallow respirations and that the patient feels cold. EMS was able to place an intravenous catheter in the right antecubital fossa and started to administer a normal saline bolus. The cause of the injuries is currently unknown. | | |

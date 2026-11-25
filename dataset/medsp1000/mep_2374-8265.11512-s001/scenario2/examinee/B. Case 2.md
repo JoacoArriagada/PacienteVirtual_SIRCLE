@@ -1,0 +1,3 @@
+**Small-Group Case 2**
+
+**Cory is a 34-year-old nonbinary patient (assigned female sex at birth, uses they/their/them pronouns) whom you are seeing for the first time. They present to you, their new PCP, because they have been experiencing irregular and heavy menstrual bleeding for 5 months now. Menstrual cramps are typical for them, but they are worsening. Though they have not been to a doctor since they were age 21 years, their periods have gotten to the point that they feel tired and need to do something about it. They do not report any other medical issues. Cory currently works in the food industry. Their only medication is ibuprofen as needed for cramps, but no hormonal therapy. They smoke about 1/2ppd and drink about 5 nights a week.**

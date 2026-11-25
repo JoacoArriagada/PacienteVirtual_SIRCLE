@@ -1,0 +1,1 @@
+**Facilitator (to learner)**: You are seeing Mary on a follow up visit after her third cycle of chemotherapy. She is handing the therapy well, but despite Cold Cap there is major alopecia. After doing her physical examination and checking her CBC, you think to assess how the illness and treatment are affecting her relationship with Peter.

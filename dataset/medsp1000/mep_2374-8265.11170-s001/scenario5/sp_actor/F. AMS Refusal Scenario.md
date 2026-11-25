@@ -1,0 +1,33 @@
+|  |  |
+| --- | --- |
+| **Appendix F: MedEdPORTAL Simulation Case Template**  **SIMULATION CASE TITLE: Patient refusing Transport after Treatment for Hypoglycemia.** | |
+| **PATIENT NAME: Sam Fields**  **PATIENT AGE: 62**  **CHIEF COMPLAINT: Altered mental status**  **PHYSICAL SETTING: Patient’s kitchen table** | |
+|  | |
+| **Brief narrative description of case** | *In this simulation 2 learners playing the role of EMS providers, will evaluate a patient with diabetes mellitus (DM) after being called by their adult child for altered mental status. The patient will be hypoglycemic, provided glucose, and regain mentation. After this the patient will refuse transport to the hospital.* |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Overall Setting and Appearance** | *Patient is seated at a kitchen table slumped over in their chair, head on table. There is untouched breakfast on the table.* | | |
+| **Confederates (e.g., standardized participants) and their roles in the room at case start** | *The patient’s son/daughter is present*  Medical control – via telephone | | |
+| **HPI** | *As learners enter family member states: “Thank goodness you are here! I came to check on my Mom before work and found her like this. I spoke with her 30 minutes earlier to say I was on my way over and she sounded fine. I don’t know what happened, but she is not making any sense and looks really bad!”*  *If prompted by learners:*  *There was no known trauma*  *They were last seen yesterday evening and had no complaints*  *No history of illicit drug use* | | |
+| **Past Medical/Surgical History** | **Medications** | **Allergies** | **Family History** |
+| Type 1 Diabetes | Insulin (long acting 10U before bed and regular insulin three times daily before meals, dose depends on pre-prandial glucose) | Bees  Shellfish | Their mother had a stroke at 70  Their father suffered from alcoholism |
+| **Physical Examination** | | | |
+| **General** | Somnolent, but tolerating secretions, NAD. *Patient is able to mumble, say a few words, knows her name but is unable to answer more questions.* | | |
+| **HEENT** | No facial droop | | |
+| **Neck** | Normal | | |
+| **Lungs** | Clear | | |
+| **Cardiovascular** | Regular rate and rhythm | | |
+| **Abdomen** | Soft, non-tender | | |
+| **Neurological** | Alert to voice, AO x 1 | | |
+| **Skin** | Cool, pale, diaphoretic | | |
+| **GU** | deferred | | |
+| **Psychiatric** | deferred | | |
+
+|  |  |  |
+| --- | --- | --- |
+| Instructor Notes - Changes and CASE Branch Points | | |
+| **Intervention / Time point** | **Change in Case** | **Additional Information** |
+| Glucose provided | Patient becomes more alert | Patient is groggy, but coherent. Patient asks who everyone in the room is and acts embarrassed. She states she gave herself insulin and then got busy and must not have eaten. The patient states, “Thank you for your help, but I am ok. I don’t want to go to the hospital” |
+| Learners performs capacity assessment, including ability to ambulate independently | Patient has capacity for decision making | Patient is A&O x 4 now, states they forgot breakfast. They will call their primary care doctor. They’ve had DM for 20 years and knows the risks of hypoglycemia, and wants to stay home. Adult child states they have to go to work and can’t stay with their parent, who has done this before. They think the parent needs to go to a “facility” but they continually refuse. |

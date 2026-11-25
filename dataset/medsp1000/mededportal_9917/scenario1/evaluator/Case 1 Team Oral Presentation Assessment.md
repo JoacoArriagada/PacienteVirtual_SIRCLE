@@ -1,0 +1,9 @@
+# Interprofessional Geriatric Assessment Course
+
+# TEAM PRESENTATION CONTENT AND SCORING
+
+<table><tr><td rowspan=1 colspan=1>Content</td><td rowspan=1 colspan=1>Possiblepoints</td><td rowspan=1 colspan=1> Actualpoints</td></tr><tr><td rowspan=1 colspan=1>Introduction of team members and description of OSCE assessmentprocess</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Brief report of (S) includes main findings from all professional teammembers</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Brief report of (O) includes main findings from all professional teammembers</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Brief report of (A) includes main findings from all professional teammembers</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Team plan (recommendations) reflects entire team</td><td rowspan=1 colspan=1>20</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Presentation is integrated and involves all team members</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Presentation is clear, concise,and uses time well</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>TOTAL</td><td rowspan=1 colspan=1>100</td><td rowspan=1 colspan=1></td></tr></table>
+
+Note: (S) subjective data: reflects patient perspective; (O) objective data: reflects findings from observation and examination; (A)assessment: reflects your interpretation and analysis of the data; (P) plan is based on assessment of patient needs
+
+# COMMENTS:

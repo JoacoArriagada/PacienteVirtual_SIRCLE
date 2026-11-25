@@ -1,0 +1,10 @@
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| **Case: Adult Cardiac Arrest** | Wife/Partner | | Anticipated Physician | |
+|  | Verbal | Non-Verbal | Verbal | Non-Verbal |
+| 1. Entrance and short statement of events | * Simple hello | * Serious demeanor * Smiles * Expecting serious, not devastating news * Standing/Pacing | * Introduction * Less than 1 minute short statement of circumstance ‘Your husband was at work and collapsed,..” * Asks survivor to sit | * Appears serious not jovial * MUST SIT DOWN * Makes Eye Contact |
+| 2. Delivers a warning shot | * Silence | * Serious/blank stare * No emotions obvious | * “I am afraid that I have bad news” * Speaks without medical jargon | * Serious, yet open posture |
+| 3. Physician discloses death | * You can’t be serious? * “I would like to go in and just talk to him now…” * Are you telling me that my husband is dead? | * Begins to laugh * News not sinking in * As physician re-iterates death, patient begins to become hysterical * Begins to talk about how she just spoke to him | * Uses word ‘dead’ * Uses patients name | * Sits/waits * Posture appropriate * Touch if comfortable * Interprets verbal and non-verbal cues to ensure spouse comprehends the loss. |
+| 4. Transition to tell of events | * How could this be? | * Begins to sob uncontrollably and be “unavailable” to MD briefly. | * “ I would like to tell you more about what we did for \_\_\_\_ and what happened” * Statement about little/no suffering | * Reflect empathy with body language (e.g., - nods appropriately, uses gentle touch of hand or shoulder if comfortable) |
+| 5. Information gathering | Able to answer all medical questions by script | * Tears but able to speak clearly and coherently | * “To better understand what may have happened, I need to ask you some more questions” | * Gives space and time to regain composure, avoiding these questions if not appropriate. |
+| 6. Conclusion | “What do I do now?” | * Crying softly/sniffling | * Offer viewing of body * “I will be available to speak with you at any time….” * “I’m sorry…” * Excuses himself sensitively * Offer to assist patient in some way | * Expression of sympathy |

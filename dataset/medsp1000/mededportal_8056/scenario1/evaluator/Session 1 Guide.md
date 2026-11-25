@@ -1,0 +1,31 @@
+<table><tr><td><p><strong><em>Cognitive Objectives</em></strong></p></td></tr><tr><td><table><tr><td rowspan="4"><p><strong>Hypoxia</strong></p><ol><li>Define hypoxia</li><li>Recognize clinical signs of hypoxia, including mental status changes</li><li>Generate differential diagnosis for hypoxic postoperative patients</li><li>List the alterations to the normal respiratory physiology in a postoperative patient due to general anesthesia, laparotomy, and other conditions</li></ol><p><strong>Hypotension</strong></p><ol><li>Define hypotension and distinguish from shock</li><li>Recognize clinical signs of hypotension and shock</li><li>Generate differential diagnosis for hypotensive postoperative patients</li><li>List the alterations to the cardiovascular physiology in a postoperative patient due to meds, comorbid conditions, blood loss, and other events.</li></ol></td></tr><tr></tr><tr></tr><tr></tr><tr><td></td></tr><tr><td><p><strong>Glucose and Electrolyte Abnormalities</strong></p><ol><li>Define hyper / hypoglycemia</li><li>Recognize clinical signs of hyper/hypoglycemia</li><li>Generate a differential diagnosis for etiology of glucose abnormality</li><li>Define hyper/hypokalemia</li><li>Recognize clinical signs of hyper/hypokalemia</li><li>Generate a differential diagnosis for etiology of hyperkalemia</li><li>Define hypocalcemia</li><li>Recognize clinical signs of hypocalcemia</li><li>Describe common etiologies of the surgical patient with metabolic alkalosis</li><li>List etiologies of metabolic acidosis</li></ol></td></tr><tr><td><p><strong>Acute Mental Status Changes</strong></p><ol><li>Generate a differential diagnosis for acute mental status change in the postoperative patient, including hypoxia, shock, glucose and electrolyte abnormalities, medications, and others.</li><li>Discuss workup and management of the patient with acute mental status changes.</li></ol></td></tr></table></td></tr></table>
+**Leak after Esophagectomy**
+
+1. **Patient Information and History**
+    1. HPI: 65 yr old male POD 5 s/p minimally-invasive esophagectomy
+    2. Past Medical History:  GERD, HTN, CAD, former smoker
+    3. Meds: Prilosec, metoprolol, albuterol, TPN
+
+1. **Setting the Scene**
+    1. The charge nurse calls:  Pt c/o heavy chest, does not feel well, “just doesn’t look right”
+    2. Vitals:  HR 118 , BP 96/64 , SpO2 92%, RR 26
+
+1. Evaluation and Resuscitation sequences
+
+<table><tr><td colspan="2"><p><strong>Operator Action</strong></p></td><td><p><strong>Resident Action</strong></p></td></tr><tr><td rowspan="2"><p>1</p></td><td colspan="2"><p>Initial Evaluation and Response</p></td></tr><tr><td><p>Airway Patent</p><p>Breathing Tachypneic, shallow</p><p>Circulation +pulses, clammy (if able to simulate)</p><ol><li>EKG sinus tachycardia with artifact</li></ol><p>Exam</p><p>Lab: WBC 13.2, Hgb: 12.0, Plt 400, </p></td><td><ul><li>VS</li><li>Examine patient</li><li>Examine incision</li><li>Develop differential diagnosis</li><li>Order labs, EKG, CXR</li><li>Ask for results</li></ul></td></tr><tr><td rowspan="2"><p>2</p></td><td colspan="2"><p>Subsequent Events </p></td></tr><tr><td><p>Sats improved.  </p><p>CXR: Right sided effusion, difficult to make out cardiac silhouette. Right chest tube in place</p><p>Labs back: Na 132, K 6.0, HCO3 16, </p></td><td><ul><li>Order Esophagram </li><li>Transfer to SICU</li><li>Ensure chest tube patency</li><li>Start broad-spectrum antiobiotics</li><li>Call Fellow/Attending</li><li>Book OR as instructed</li></ul></td></tr><tr><td rowspan="2"><p>2</p></td><td colspan="2"><p>Subsequent Events </p></td></tr><tr><td><p>Resident Returns,</p><p>RR now 41</p><p>EKG: now shows peaked T-waves</p><p>K+ 6.8</p><p>If resident fails to manage potassium. EKG progresses to sine wavedeath.</p><p>If the do manage K: Normalization of potassium, EKG</p></td><td><ul><li>Manage hyperkalemia:</li><li>Insulin/sugar</li><li>Lasix</li><li>NS IVF</li></ul></td></tr><tr><td rowspan="2"><p>3</p></td><td colspan="2"><p>Subsequent Event </p></td></tr><tr><td><p>Respiratory Status</p><p>If they don’t transfer to ICU: RR60, SPo2trend to 0%.  Death.</p></td><td><ul><li>Transfer to ICU</li><li>Intubate</li><li>Notify up the chain of command</li><li>ACLS</li></ul></td></tr><tr><td rowspan="2"><p>4</p></td><td colspan="2"><p>Care Plan </p></td></tr><tr><td></td><td><ul><li>Follow electrolytes</li><li>To OR for definitive procedure </li></ul></td></tr></table>
+
+Red = operator actions following an item category Blue = anticipated resident action, or assessment goal
+
+**Score Sheets for G1 Critical Skills Simulations**
+
+**Leak after Esophagectomy**:     Group \_\_\_\_\_\_\_\_\_\_\_\_\_   Rater \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+*(Write number, 1-6)               (Print name)*
+
+*Instructions: For each criterion, check only one box on the line to the right.*
+
+<table><tr><td><p><strong>Criterion</strong></p></td><td><p>Did not do</p><p>0 (zero)</p></td><td><p>Did poorly</p><p>or out of sequence</p><p>1</p></td><td><p>Did appropriately</p><p>  2</p></td></tr><tr><td><ol><li>Requests updated vital signs</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Performs/requests pulse exam</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Listens for breath sounds</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Places on telemetry</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Monitors BP</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Orders appropriate labs and/or imaging</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Identifies critical diagnoses (hyperkalemia, shock, hypoxia)</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Initiates appropriate treatment</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Communicates with other team members </li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Delegates tasks/requests help</li></ol></td><td></td><td></td><td></td></tr><tr><td><ol><li>Communicates with upper level resident/staff</li></ol></td><td></td><td></td><td></td></tr><tr><td colspan="2"><p>Score</p></td><td><p>Number checked x 1 =</p></td><td><p>Number checked x 2 =</p></td></tr></table>
+
+**Deductions:** -1 for one prompt; -2 for 1-3 prompts; -3 for more than 3 prompts
+
+**Total Score**: \_\_\_\_\_\_\_\_\_\_\_

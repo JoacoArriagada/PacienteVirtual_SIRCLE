@@ -1,0 +1,8 @@
+| PATIENT NAME: Corinne Johnson    PATIENT AGE: 67 years    CHIEF COMPLAINT: Left-sided hemiplegia    PHYSICAL SETTING: Adult inpatient room | |
+|  | |
+| Brief narrative description of case | Corinne is a 67-year-old female with a history of hypertension admitted to the neurology service approximately 40 hours ago with a right middle cerebral artery stroke. She underwent ICU monitoring earlier in the admission and was transferred to the floor earlier today. Just prior to the events of this case, the patient develops a worsening headache and left-sided weakness. On evaluation, the patient has worsening of her pre-existing neurologic deficits, with new left-sided hemiplegia and altered mental status. |
+| Initial vital signs | T 98F, HR 70 bpm, BP 170/80 mm Hg, RR 14, SpO2 98% RA | | |
+| Overall Setting and Appearance | The patient is in an adult inpatient room, dressed in an inpatient gown. | | |
+| Patient portrayal | The patient appears confused, with sparse, lethargic answers. She will provide correct yes/no answers but will be incapable of engaging in complex conversation. She may inappropriately answer some questions by saying “Hello?” or repeating her name. Speech is slurred or dysarthric. Some scripted statements may include: “Hello.” “My head hurts.” “What’s that?” “I can’t move my arm.” |
+| Background available to the patient side | The patient has a history of hypertension and diabetes. Her current medications are aspirin, labetalol as needed, and insulin lispro sliding scale. She has a sulfa allergy. |
+| Portrayal boundary | The patient will not be able to provide coherent responses to most questions, though she will correctly answer yes/no questions. |

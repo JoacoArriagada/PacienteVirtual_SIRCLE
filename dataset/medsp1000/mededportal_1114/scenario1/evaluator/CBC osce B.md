@@ -1,0 +1,3 @@
+<table><tr><td><p><strong>CBC: </strong></p></td></tr></table>
+
+<table><tr><td><p>WBC:5,000 cells/mm3(4500-11,000)</p></td></tr><tr><td><p>RBC:4.8X106/microL(4.7-5.4)</p></td></tr><tr><td><p>Hb:13g/dl(13-17)</p></td></tr><tr><td><p>Hematocrit:44%(42-49)</p></td></tr><tr><td><p>MCV:80fL(76-96)</p></td></tr><tr><td><p>MCH:27pg(27-31)</p></td></tr><tr><td><p>MCHC:34g/dl(33-37)</p></td></tr><tr><td><p>RDW:12(11.5-14.5)</p></td></tr><tr><td><p>Platelet:280x103/microL(150-400)</p></td></tr></table>

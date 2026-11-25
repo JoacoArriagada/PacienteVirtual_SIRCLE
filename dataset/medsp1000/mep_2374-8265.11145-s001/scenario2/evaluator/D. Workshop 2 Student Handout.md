@@ -1,0 +1,13 @@
+**CASE DISCUSSION #2: Physician Values and Clinical Decision Making**
+
+Karl is a relatively new patient in Dr. Breck’s practice. Dr. Breck knows that Karl, who is 20 years old, moved to the city from his rural hometown just over a year ago. Karl has been waiting tables and has talked about pursuing a college degree. He comes to Dr. Breck’s office complaining of a burning sensation when he urinates, but seems uncomfortable speaking about his chief symptoms.
+
+During the course of the history, Dr. Breck asks Karl about his sexual interactions. Karl is very hesitant to speak about this, but eventually admits that he has had several unprotected homosexual encounters in the past year. Dr. Breck also asks Karl about his obvious anxiety, and Karl eventually opens up about how he left home soon after telling his family that he was homosexual. Karl states that his family was not at all supportive and that he immediately felt ostracized by his friends. He admits that much of their rejection was based on religious ideology. “I just couldn’t take their constant judgment anymore, so I decided to leave,” he says.
+
+The physical examination leads Dr. Breck to suspect an infection, possibly a form of gonorrhea. He takes a few samples for culture to confirm his clinical suspicion and places Karl on a course of ceftriaxone and azithromycin as initial therapy. Dr. Breck schedules Karl for a follow-up visit to go over the lab results and “talk about some of the issues that might be affecting your physical, emotional, and spiritual health.”
+
+When the results of the cultures return, Dr. Breck finds that Karl did have a gonoccocal infection with a strain that is responsive to the antibiotic therapy he prescribed. Nonetheless, Dr. Breck has his office staff confirm the follow-up appointment with Karl.
+
+At that next appointment, Karl is relieved that his symptoms are resolving. At that point, Dr. Breck brings up his concerns about Karl’s sexual behavior and speaks about blood testing for HIV and hepatitis C. Karl seems hesitant to have any blood tests, stating that “no one I have been with would have any of those diseases.”
+
+Dr. Breck then brings up the issue of Karl’s family and their response to his sexuality. “I understand that your experimentation with homosexuality has caused a major rift between you and your family,” Dr. Breck says, suggesting that his parents’ reaction was most likely “one of shock at seeing a child lose his way.” Dr. Breck then recommends that Karl see Dr. Talbert, a local psychotherapist and personal friend of Dr. Breck’s, well known for his work in “conversion therapy”—counseling interventions focused on eliminating homosexual thoughts and behaviors.

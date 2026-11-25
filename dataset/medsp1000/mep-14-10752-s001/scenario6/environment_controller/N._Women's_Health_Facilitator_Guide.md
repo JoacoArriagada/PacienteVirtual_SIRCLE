@@ -1,0 +1,3 @@
+You are a third-year medical student on rotation in the emergency department. Your resident asks you to go speak with patient Sue Smith down the hall: “Pain case,” he mutters with mild annoyance.
+
+Mrs. Smith is a petite, well-dressed 49-year-old woman who has been struggling with pain from an autoimmune disorder. At home she has been taking medication for her pain, but today it has not helped. She is timid and quiet, but clearly in extraordinary discomfort. She explains that the pain got out of hand last night and became “unbearable, a 10/10 pain.” If the examinee reports this back to the resident and remarks on how distressed she looks, the resident responds, “Just give her a sedative for anxiety and send her home.”

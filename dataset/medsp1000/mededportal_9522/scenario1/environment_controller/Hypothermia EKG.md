@@ -1,0 +1,1 @@
+![](data:image/x-emf;base64...)

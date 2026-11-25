@@ -1,0 +1,5 @@
+**Case Footnotes**
+
+**Low Risk Case 1**
+
+The station is designed to help learners develop the skills need to help low risk patients manage their pain. The patient sustained multiple fractures of the right femur and a crushed right tibia in a work-related accident one year ago. Reparative surgery was successfully performed, followed by extensive physical therapy. He has taken long acting morphine since the accident. Patient reports improved mobility and moderate pain reduction. The patient has minimal aberrant behaviors, no history of addiction or mental health problems and works full time. While he has privacy concerns about the urine toxicology test, he is willing to work with you. It is important to create trust, demonstrate your interest in working with him but also communicate the importance of safety issues and potential side effects of opioids and other treatments that may minimize the need for chronic opioids. The interaction of opioids with marijuana should also be discussed. Discontinuing marijuana while on opioids is one option before agreeing to increase or continue opioid therapy.

@@ -1,0 +1,3 @@
+**Educator scenario**
+
+You have just finished giving Grand Rounds during your weekly didactic conference and noticed that something was clearly amiss with one of your interns.  During the audience participation portion of your talk, he was clearly “checked out,” not saying a word when asked to contribute his thoughts and paying attention to anything but the lecture.  S/He has never been the most talkative member of your residency, but others in the audience, including the chair of the department, clearly noticed this behavior. You pull him aside to chat with him/her about this...

@@ -1,0 +1,2 @@
+1. **Case Narrative (VERSION B)**
+   1. **General Synopsis:** You are an anesthesiologist at a large community hospital taking in-house call. The trauma surgeon is booking an emergent exploratory laparotomy. The patient, Ernest Milford, is a 79 year old retired farmer who presented to the emergency room (ER) after having been kicked by a steer and falling on a cattle prodding rod. He was brought to the ER by ambulance with the rod in place. He has been prepped and brought to the operating room (OR) where you meet your team.

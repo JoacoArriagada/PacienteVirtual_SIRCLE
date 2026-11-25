@@ -1,0 +1,17 @@
+|  |  |
+| --- | --- |
+| **Appendix B: MedEdPORTAL Simulation Case**  **SIMULATION CASE TITLE: Status Asthmaticus**  **AUTHORS: James Metz, MD and Rebekah Burns, MD** | |
+| **PATIENT NAME: Eli Lui**  **PATIENT AGE: 2 years**  **CHIEF COMPLAINT: Difficulty Breathing** | |
+|  | |
+| **Brief narrative description of case** | A 2 year old boy “Eli” with history of eczema and reactive airway disease presents to the emergency department with respiratory distress. The patient’s signs and symptoms are consistent with lower airway obstruction. The team will evaluate the patient, develop a differential diagnosis and proceed with treatment of an acute reactive airway exacerbation. The team will be required to provide multiple medications in order to stabilize the child. |
+| **Primary Learning Objectives** | After participation in this simulation and debrief (Scenario 1), learners will be able to:   * Demonstrate ability to assess and emergently manage airway, breathing and circulation * Identify lower airway obstruction and respiratory distress * Formulate a list of possible diagnosis and prioritize elements of evaluation * Manage respiratory distress from presumed reactive airway disease * Construct a disposition plan after stabilization in the emergency department * Demonstrate constructive team dynamics and direct, closed-loop communication with the medical team. |
+| **Critical Actions** | * Perform the primary survey throughout the simulation case and interpret the findings to develop a differential diagnosis. * Implement a treatment plan for reactive airway disease including administration of bronchodilators, steroids and (optionally) magnesium sulfate. * Reassess the patient after interventions and address the need for further intervention. * Develop contingency plans should the initial interventions not produce the expected results. |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Initial vital signs** | HR 110 BP 85/50 RR 50 O2 95% on room air Temp 37.5C | | |
+| **Overall Appearance** | The child is sitting up in bed looking around room. He is not crying and breathing quickly. He looks frightened. | | |
+| **HPI** | Volunteered by parent: "Eli has had a cough and runny nose for 3 days but started having a hard time breathing last night. I noticed him using his chest muscles more and breathing more quickly yesterday. We started giving him his albuterol that we got previously from our pediatrician yesterday afternoon, but this morning it seemed like it wasn't helping anymore. Every time he gets a cold, we seem to end up in the clinic or emergency department."  If asked:   * He has not had any fever, emesis diarrhea, rash, sore throat or ear pain. * He was taking 2 puffs every 6 hours yesterday. This morning he used it at 6AM, 8AM and 8:30 without relief. * He has not been using a spacer. * He has night time cough usually once per week. His mother has identified URIs as a trigger for his attacks. * The whole family has been sick with a cold for the past week. * He was not noted to choke on anything at home prior to developing distress.   Social history: Lives with parents and 10 year old brother. He is preschool. They have 2 cats and a dog. The father smokes outside. | | |
+| **Past Medical/Surgical History** | **Medications** | **Medication Allergies** | **Family History** |
+| * Eczema * Reactive airway disease/asthma | * Albuterol as needed * Hydrocortisone 1% ointment to eczema BID | None | Father and brother with asthma |

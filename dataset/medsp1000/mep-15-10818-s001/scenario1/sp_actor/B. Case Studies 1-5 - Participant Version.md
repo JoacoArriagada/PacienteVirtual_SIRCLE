@@ -1,0 +1,3 @@
+**Case Study 1**:
+
+AS is a 20-year old male undergraduate student. He immigrated to the United States from Malaysia for school. He comes to your clinic for a routine check-up before the school year starts. His vitals are normal, and a CBC, CMP, LFT, Lipid Panel, and Vitamin D level are normal as well. No other blood work was done. AS tells you that homosexual activities are illegal in Malaysia, and as such he has lied to his previous doctors in Malaysia about having intercourse with other men for fear of getting arrested. He admits to having intercourse with multiple men in high school in Malaysia, but has been in a stable, monogamous, sexually active relationship for 2 years now. He has private insurance through his college, although his medication copay is high.

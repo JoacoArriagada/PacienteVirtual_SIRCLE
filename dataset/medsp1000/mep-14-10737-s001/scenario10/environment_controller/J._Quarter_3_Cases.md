@@ -1,0 +1,1 @@
+1. A 38-year-old woman with chronic abdominal pain and multiple specialist evaluations has a negative ED workup including labs, urine, pelvic exam and CT. You see no need for admission or emergent consultation. You are about to discharge her and she asks, “Have you figured out what is causing my pain? What am I going to do if I keep hurting?”

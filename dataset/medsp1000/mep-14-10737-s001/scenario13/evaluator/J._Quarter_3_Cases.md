@@ -1,0 +1,3 @@
+1. A wife brings her 76-year-old husband in for “not acting right.” He is alert and oriented to person, place and time. His Glasgow Coma Scale is 15. He has no focal neurologic exam findings. His laboratory results include sodium 157, blood urea nitrogen 30, serum creatinine 2.3 up from 0.7 last month. Otherwise, his workup is unremarkable. The patient is requesting to leave because he feels fine and neither he nor his wife wants to stay in the hospital overnight. How do you approach this?
+
+Facilitators: After the role play, discuss how to navigate communicating admission to patients who feel it is not necessary. Explain how family members, caretakers or other guests of the patient may play a role in securing a patient’s disposition.

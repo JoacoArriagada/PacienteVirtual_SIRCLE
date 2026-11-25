@@ -1,0 +1,5 @@
+Appendix C: Faculty OSCE Checklist
+
+|  |
+| --- |
+| **EPA 13-Identify System Failures and contributes to a culture of safety and improvement**  Did the student use 2 patient identifier when labelling the blood tube?  No  Yes  Did the student recognize the error?  No  Yes  **Disclosing an error**  Did the student explore the patient’s understanding of what happened?  No  Yes  Did the student disclose the error using clear language?  No  Yes  Did the student discuss steps being taken to manage the event?  No  Yes  Did the student express regret/offered an apology?  No  Yes  Did the student discuss future steps to avoid a similar event?  No  Yes  Did the student utilize the micro-skills of empathy during the encounter?  No  Yes  **Please rate the student’s ability to disclose an error using the following entrustability scale:**  Can only observe someone doing it  Can do it if supervisor talks them through it  Can do it with supervisor is in room to direct them from time to time  Can do it with supervisor available just in case  Can do it without supervisor in the room |

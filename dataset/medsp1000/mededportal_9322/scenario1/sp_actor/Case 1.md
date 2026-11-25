@@ -1,0 +1,32 @@
+1. Case 1: Low risk chest pain with an overbearing family member
+
+1. Environment
+   1. Actor set up: An actor portraying the patient and family member arrive at the emergency department (ED) triage area. The patient is initially fully clothed.
+
+2. Actors
+   1. Roles: Physician, Nurses, medical technician, patient, patient’s wife
+   2. Who May Play Them: Medical staff are played by themselves. Trained actors play the patient and his wife.
+   3. Action Role: The medical staff are involved in the care of the patient and addressing the concerns of the wife. The wife is overbearing and answers all the questions for her husband.
+
+3. Case Narrative
+   1. Scenario Background: The patient and his wife are sitting in an emergency department triage area. The first person to enter is an emergency department technician who gets a brief history, asks the patient to get into a gown and performs an EKG. A nurse then enters and performs an assessment, starts an IV. The physician is next to enter the room and performs a history and physical exam.
+      1. Throughout these encounters the patient’s wife answers first for the patient with every question asked. Feeling insecure and worried for her spouse, she is intrusive and expresses skepticism of the medical care. The patient is more passive and never answers for himself unless the caregiver specifically directs the wife to permit the patient to answer.
+   2. Initial Scenario Conditions: note all this information is from the wife who does almost all the talking to the providers.
+      1. HPI: 50 year old male with chest pain that started earlier in the day, is gone now. It was left sided, sharp without radiation. His wife drove him to the hospital. There was slight nausea during the episode which lasted 30 minutes. Review of symptoms is otherwise negative.
+      2. PMH: Hypertension, well controlled
+      3. Meds: None
+      4. Allergies: None
+      5. Social: Purported non-smoker: patient admits, to wife’s amazement and dismay, that he occasionally has a cigarette. Drinks socially on the weekends
+   3. Scenario Play and Branch Points
+      1. The wife will answer first for the patient with every question asked.
+      2. The patient will not answer for himself unless the caregiver specifically directs the wife to permit the patient to answer.
+      3. The wife will question the plan proposed. The physician will have to answer the concerns and negotiate the final decision with the patient and wife.
+
+4. Instructor’s Notes
+   1. Tips to keep the scenario moving
+      1. This case is a series of patient and staff interactions. The actor playing the wife of the patient should always answer first and hinder the provider from getting answers directly from the patient, unless specifically directed to allow the patient to answer.
+      2. Even if directed, after 1-2 more questions, the wife begins again to answer for the patient again, and continues to do so until and unless her fears and concern are addressed.
+      3. If staff does not introduce themselves to the wife, she becomes more obtrusive and difficult.
+      4. If the staff acknowledges the wife, and shows empathy, eventually the patient himself will add additional pieces of information of the history.
+      5. When presenting the plan and gaining agreement staff should acknowledge the patient and his wife.
+      6. If the principles of the SPE are utilized, the wife and the patient are more amenable to the treatment plan.

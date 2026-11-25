@@ -1,0 +1,14 @@
+|  |  |
+| --- | --- |
+| **Appendix G: MedEdPORTAL Simulation Case Template**  SIMULATION CASE TITLE: Teaching Patient Handoffs to Medical Students in Obstetrics and Gynecology: A Simulation Curriculum and Assessment Tool  **AUTHORS: Celeste Royce, MD, Monica Mendiola MD, Hope Ricciotti MD, Katharyn Atkins MD** | |
+| **PATIENT NAME: Susan Quinn**  **CHIEF COMPLAINT: “bleeding since getting up this morning”** | |
+|  | |
+| **Brief narrative description of case**  *Include the presenting patient chief complaint and overall learner goals for this case* | The learner has the role of the OBGYN intern and is expected to manage the patient during the simulation. |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Initial vital signs** | Initial Vital signs:  Blood Pressure 120/70; Heart Rate100; Respirations 18; Temp 37.0; O2 saturation 99% | | |
+| **Overall Appearance**  *What do learners see when they first enter the room?* | The learner walks into the simulation room with the New Hire Nurse, who explains s/he is new, and would like to hear everything the learner says, “to learn more”. The New Hire Nurse introduces the learner to patient, Susan Quinn, a G2P0 SAB1 female who presented this morning with vaginal bleeding, and who is 10 weeks pregnant. The New Hire Nurse informs the Intern that the New Hire Nurse started an IV and drew “some blood”. There are accurate, real-time vital signs present on the bedside monitor. There is an IV set up, O2 available, and a code cart. The learner can write down history and findings on paper, electronic device or wallboard. | | |
+| **Actors and roles in the room at case start**  *Who is present at the beginning and what is their role? Who may play them?* | A. Roles and who plays them:   * + 1. New Hire Nurse. Provides initial history and explains, “ I am new here so I don't know very much”.     2. Attending physician. The learner later gives handoff to the attending physician.     3. Patient. The patient responds to questions from the learner and provides history. | | |
+| **HPI**  *Please specify what info here and below must be asked vs what is volunteered by patient or other participants* | Scenario Background Given to Participants  1. Chief complaint: given to the Intern by the New Hire Nurse as they enter the room.  “Susan is a G2P0SAb1 female with LMP 10 weeks ago, came in this morning complaining of bright red bleeding. She has no drug allergies and takes prenatal vitamins and iron.  “She was brought in by her boyfriend, who left and seemed angry. I don't have much more history than that.  “I think she has lost a lot of blood, she has gone through 2 pads since she got here. I brought her right in.  “I started an IV and drew a set of labs. I wasn't sure what you might want sent.  “Do you have any questions for me?” | | |

@@ -1,0 +1,1 @@
+**Partner Role Play Peer-Debriefs:** In this scenario, you role-play the use of the peer-debriefing model as the debrief leader in conversation with a distressed resident. The distressed resident is using a hypothetical patient care scenario as the basis for discussion.

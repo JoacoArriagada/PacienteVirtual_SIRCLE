@@ -1,0 +1,1 @@
+**Case 3:** You are a 26-year-old man with a nailbed crush injury and underlying fracture sustained at work. Your finger has been washed, repaired and dressed in the ED. The wound was caused by industrial machinery.

@@ -1,0 +1,7 @@
+| **Appendix A: OLMC Scenarios – Case 8**  **SIMULATION CASE TITLE: EMS OLMC – Trauma Clearance**  **AUTHORS: Frank Tift, MD and Jose V. Nable, MD**  **LEARNER AUDIENCE: Emergency Medicine residents and medical students** | |
+| **PATIENT AGE: 27**  **CHIEF COMPLAINT: motor vehicle collision**  **PHYSICAL SETTING: Learner is working in an Emergency Department that provides online medical control to EMS units when he/she is contacted (by radio) by an EMS unit requesting orders.** | |
+|  | |
+| **Learner Preparation or Prework** | The learner is an attending physician on duty in the ED of an academic, Level 1 trauma center.  Hospital B is a large community hospital with most specialty services, but it is not designated as a trauma center. |
+
+| Radio report | | | |
+| **Facilitator script for opening radio statement** | “Medic 8 to [OLMC]” *(feel free to insert an appropriate callsign for your local institution/area)*  After the learner acknowledges transmission:  “This is Medic 8. I’m on scene with a 27 year-old-male who was the restrained driver involved in a rollover MVC. He swerved to miss a deer in the road, hit the guardrail, and his car rolled over 2 times. He self-extricated and was ambulatory on arrival, but there is about a foot and a half of intrusion into the patient compartment. He is requesting to go to Hospital B. I am calling for trauma clearance to take him to a non-trauma center.”  All information below must be specifically requested by the learner | | |

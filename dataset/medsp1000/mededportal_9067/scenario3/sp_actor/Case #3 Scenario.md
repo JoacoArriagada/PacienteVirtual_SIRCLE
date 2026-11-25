@@ -1,0 +1,9 @@
+Monica Jones and her family have just moved to the Area from Upper Peninsula of Michigan due to a job change for her husband Larry (he works within the helicopter industry). Most of Monica’s extended family and her husband Larry’s family is from Northern Michigan as well. Monica’s mother passed away about 8 years ago, so Monica’s father moved with them to spend the winter. He still maintains his cabin in Northern Michigan for the other seasons.
+
+Monica has brought her 11-year old son in to meet the new pediatrician to have a physical before spring sports begin. Jacob would like to try baseball. Monica has left Jacob in the waiting room playing a video game, while she meets the new doctor. Monica’s son, Jacob, is a happy well-adjusted child and before moving, spent a good deal of time fishing with his grandpa, Joe. This is also one of the reasons for his grandpa to move with the family, so that he could take his grandson ice-fishing this winter.
+
+Jacob and his grandpa have fished together almost every weekend and he has spent his summer vacations fishing the inland lakes of Michigan. They fish for all kinds of fish – blue gills, trout, bass, crappy, perch, whitefish and even smelt dipping in the early spring. His grandpa has taught Jacob not only to catch the fish, but to also clean, cook and eat all the fish that they catch. It is a staple for the family.
+
+Jacob is the right height and weight for his age. He is a good eater and doesn’t get much “junk” food or pop. He has cake or candy for special occasions, and the family rarely eats at fast food places except when traveling. He drinks lots of milk- at least 4 glasses/day.
+
+Jacob does not take any prescription medications. He is up-to-date on all his immunizations. He has made several new friends in the neighborhood and at school. He is not allergic to anything that Monica knows of.

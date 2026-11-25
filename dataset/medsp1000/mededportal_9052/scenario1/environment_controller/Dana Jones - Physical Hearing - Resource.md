@@ -1,0 +1,23 @@
+**SP Training Notes:  Physical Exam and Hearing Exam**
+
+<table><tr><td><h1>Case Name</h1></td><td><p>Dana Jones</p></td></tr><tr><td><p><strong>Age</strong></p></td><td><p>30-55 yrs</p></td></tr><tr><td><p><strong>Presenting Situation</strong></p></td><td><p>You come for a “work physical”</p></td></tr><tr><td><p><strong>Psychosocial Profile</strong></p></td><td><ul><li>Smiling</li><li>Cooperative</li><li>Neat in appearance</li><li>Wearing a gown (physical exam)</li></ul></td></tr><tr><td><p><strong>Opening Statement</strong></p></td><td><ul><li>I am here for a work physical</li></ul></td></tr><tr><td><p><strong>History of Present Illness</strong></p></td><td><ul><li>You want to be a substitute teacher – mathematics and science – middle school</li><li>You just moved in to town to live with your mother</li><li>You like the weather here very much </li></ul><p>Your vital signs are:</p><ul><li>Temp. 36.7C</li><li>Respirations 14/min</li><li>BP 118/72</li><li>HR 78 bpm</li></ul></td></tr><tr><td><p><strong>Past Medical Hx</strong></p></td><td><ul><li>You are generally healthy</li><li>No hospitalizations</li><li>All immunizations done</li><li>You regularly walk 2 miles in the mornings</li><li>If asked about any symptoms – you do NOT have it!</li><li>If asked about a scar on your body – you have this since childhood; you do not remember exactly what it was, but has never bothered you/never had pain</li></ul></td></tr><tr><td><p><strong>Social Hx</strong></p></td><td><ul><li>No smoking</li><li>No drinking</li><li>No recreational drug use</li><li>You are not married</li><li>You have no children</li><li>You are an only child</li><li>Your father has divorced your mother 10 years ago and you do not keep contact with him</li><li>Your mother lives in town, and you moved here last month to live with her</li><li>You have been a substitute teacher on-and-off, now you are planning to get your certification within the next year and start teaching as a career/profession</li></ul></td></tr><tr><td><p><strong>Family Medical Hx</strong></p></td><td><ul><li>You do not know about any chronic disease running in your family; your mother is healthy</li></ul></td></tr><tr><td><p><strong>Physical Exam Findings:</strong></p></td><td><p>After the student starts the physical exam, sometime during the chest exam, you tell the student:<br/></p><p>“I forgot to tell you that recently I do not hear the door bell ringing and sometimes I do not hear my cell phone ringing. Also, sometimes I miss words from the conversation, especially if many people are in the room. Can you check my hearing, please?”</p><p>You will be trained on hearing tests (left ear sensorineural):</p><ul><li>Whispered voice test – you miss 2 out of 3 words in left ear</li><li>Weber – buzz is louder in right year (healthy ear)</li><li>Rinne - AC&gt;BC both ears</li></ul></td></tr><tr><td><p><strong>Special Instructions:</strong></p></td><td><ul><li>You are very cooperative and will answer every question the student has; however, you are healthy and you have no complaints. </li><li>If asked in the beginning of the exam about your hearing, you will say “it is fine” and will tell the student about the problem with the door bell when they are listening to your chest. Ask the student to check your hearing.</li><li>If the student forgets to do the hearing exam, please ask them a second time to check your hearing, at least 5 minutes before the end of the session. </li><li>You will be trained how exactly to time the hearing exam with the tuning fork</li><li>If the student asks more questions about your hearing, you may tell them that you play the radio in your vehicle too loud, and friends have told you that you have your TV too loud when they were visiting with you. You may also tell the student that women’s and children’s voices sometimes sound “muffled.”</li></ul></td></tr></table>
+
+**Paul L. Foster SOM** 
+
+**Standardized Patient Program**
+
+# 2. **PRESENTING SITUATION:**  
+
+**Patient Name**:	Dana Jones
+
+**Setting:**		Outpatient clinic
+
+**Vitals**:			Temp.	 36.7 C
+
+RR 	14/min
+
+BP	118/72
+
+HR	78 bpm
+
+**Complaint**:	New patient coming in for a work physical exam

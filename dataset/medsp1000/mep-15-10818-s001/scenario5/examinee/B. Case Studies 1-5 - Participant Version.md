@@ -1,0 +1,3 @@
+**Case Study 5**:
+
+TW is a 37 year-old male who presents to the employee health clinic for possible communicable disease exposure. He is a maintenance/cleaning employee at a local hospital. The patient explains that he was cleaning out the garbage yesterday in a patient room, felt a sharp pain in his right middle finger, and saw that he was bleeding through his glove. The patient was not sure if it was a blade or needle, but believed it was a sharp item inappropriately placed in the garbage instead of the sharps container. TW is asymptomatic. This visit and any prescriptions and follow up testing are completely cost-free because the incident happened at work.

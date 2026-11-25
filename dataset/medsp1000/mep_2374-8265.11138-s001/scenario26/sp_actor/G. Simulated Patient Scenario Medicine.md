@@ -1,0 +1,9 @@
+| PATIENT NAME: Mark Breton    PATIENT AGE: 58 years    CHIEF COMPLAINT: Abdominal pain    PHYSICAL SETTING: Adult inpatient room | |
+|  | |
+| Brief narrative description of case | Mark is a 58-year-old male who initially presented with three days of fever, left lower quadrant abdominal pain, and bloody diarrhea. He was admitted with ongoing abdominal pain. Just prior to the events of this case, the patient develops worsening nausea, vomiting, and abdominal pain. On evaluation, the patient exhibits fever, tachycardia, low blood pressure, and a firm, distended abdomen. |
+| Initial vital signs | T 101.3, HR 118, BP 96/55, RR 22, SpO2 99% on RA | | |
+| Overall Setting and Appearance | The patient is in an adult inpatient room, dressed in an inpatient gown, moaning in pain and expressing discomfort frequently. | | |
+| Patient portrayal | The patient is sufficiently alert and oriented to provide coherent history. He is moaning in pain and asking for help throughout the case. Some scripted statements may include: “Please help me doc, something is really wrong.” “My pain was never this bad before. I feel like I’m dying.” “I feel lightheaded.” “I can’t take this pain anymore. Can’t you give me more pain medication?” |
+| Answerable history if asked | The patient can provide the following information if asked: his abdominal pain became markedly worse about an hour ago, with worsening nausea. His pain was initially localized to the left lower quadrant, but now it is diffuse and worse with movement. Hydromorphone did not help as much as it previously had. He has no prior surgeries and no prior episodes of diverticulitis. |
+| Background | Past history: none. Medications: ciprofloxacin, metronidazole, acetaminophen, ketorolac, hydromorphone, ondansetron. Allergies: none. |
+| Response boundary | If the learners do not verbalize their thought process, the patient may ask what is going on or whether he is okay. |

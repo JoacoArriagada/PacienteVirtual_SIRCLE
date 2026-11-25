@@ -1,0 +1,11 @@
+|  |  |
+| --- | --- |
+| **PATIENT NAME: Mr. Moreland**  **PATIENT AGE: 68**  **CHIEF COMPLAINT: Shortness of breath**  **PHYSICAL SETTING: Surgical ward** | |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Initial vital signs** | HR: 120  BP: 90/55  RR: 18/min  O2sat: 94% on 2L  Rhythm: Sinus tach  Temp: 36.8 | | |
+| **Overall Setting and Appearance** | Prior to beginning the case, the learner is provided the following prompt:  “You (the learner) are the resident on the hematology service and are called by the orthopedic resident on call to see a 68-year-old male (Mr. Moreland) who has a new pulmonary embolism. The patients post-operative course has been uncomplicated except for slower than expected rehabilitation. He has declined DVT prophylaxis for the last 7 days due to a fear of needles. Unfortunately, the orthopedic resident had to return to the OR but is available by phone if needed. The patient has been transferred to the Step Up Unit on the surgical ward. Anticoagulation has not been started yet as the orthopedic resident is waiting for your advice.  Additional patient information is as follows:  PMHx:  1) Hypertension  2) Dyslipidemia  3) Osteoarthritis  Medications:  1) Enoxaparin 40 mg SQ daily (not taking)  2) Perindopril 4 mg po daily  3) Atorvastatin 10 mg po daily  4) ASA 81 mg po daily  Vitals:  BP 140/80 HR 80 S02 99% RA T 37.6 RR 16 (Yesterday)  The scenario occurs on the orthopedic floor of a hospital; upon entering the room learners will see a patient (computerized manakin) as well as embedded participants who will be part of the scenario. | | |
+| **Embedded participants(e.g., standardized participants) and their roles in the room at case start** | 1. Orthopedic surgery resident: Is available for phone consultation with the learner. 2. Bedside nurse: Is available at the bedside to assist resident in gaining collateral information, obtaining vitals, administering medications. 3. ICU nurse/resident: Is not initially in the room but is will come to assess the patient if requested by the learner. | | |
+| **HPI** | 68 year old male with one day of worsening shortness of breath at rest. This is associated with pleuritic chest pain as well as right calf tenderness. | | |

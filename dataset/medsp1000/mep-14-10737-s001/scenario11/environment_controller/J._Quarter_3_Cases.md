@@ -1,0 +1,1 @@
+1. A mom brings her 8-month-old son in for fever and cough. The child does not go to daycare but your clinical suspicion is viral upper respiratory infection. Mom says the fever has not improved with ibuprofen or acetaminophen at home, “So it can’t just be a virus.” She is requesting antibiotics. A chest X-ray is negative and shows “peribronchial thickening.”

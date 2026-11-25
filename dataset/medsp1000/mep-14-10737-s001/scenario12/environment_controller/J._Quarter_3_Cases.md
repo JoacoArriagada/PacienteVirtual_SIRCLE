@@ -1,0 +1,1 @@
+1. A 55-year-old man presents with chest pain. He is determined to be low risk for acute coronary syndrome. Chewable aspirin is given. There are no concerning ECG features. A chest X-ray is unremarkable. Serial cardiac enzymes are undetectable. You are discharging him home.

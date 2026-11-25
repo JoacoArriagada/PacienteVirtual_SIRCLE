@@ -1,0 +1,3 @@
+# Example of a scenario.
+
+Susan, 58 years old, sees you because two days ago she caught a cold. Last night she couldn’t get to sleep because of some shortness of breath. She had to use three pillows. She has had several episodes of bronchial asthma and heart failure in the past but these were well controlled with medication that she takes three times a day. You are thinking of possible asthma or congestive heart failure secondary (CHF; class 3) to ischemic coronary artery disease (ICAD). In anticipation of your physical exam of the chest, list the positive sign(s) associated with each diagnostic hypothesis.

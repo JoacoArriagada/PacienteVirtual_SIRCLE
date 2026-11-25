@@ -1,0 +1,1 @@
+1. A wife brings her 76-year-old husband in for “not acting right.” He is alert and oriented to person, place and time. He has no focal neurologic exam findings. Otherwise, his workup is unremarkable. The patient is requesting to leave because he feels fine and neither he nor his wife wants to stay in the hospital overnight.

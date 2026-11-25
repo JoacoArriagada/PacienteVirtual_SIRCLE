@@ -1,0 +1,5 @@
+**"Session 2, Part A"**
+
+Evelyn Smith is a nurse practitioner working in evening clinic in student health services at Georgia State University.  She is about to see an 18 year old freshman named Bryan.  The encounter form lists “skin infection – possible abscess” as the reason for the visit.  She pulls up his chart while waiting for him to check in and sees that he is enrolled in the health center’s chronic disease registry because he has Type 1 diabetes.  She clicks on the health summary that his primary medical home submitted when he enrolled last fall and begins reading.
+
+“Wow,” Evelyn thinks to herself.  “After being diagnosed at age 15, his diabetes control was initially poor with a HbA1c of 11%.  However, after regular visits with the clinic’s mental health team to address his situational depression and regular visits with the clinic nutritionist to help him establish a regular eating schedule, his HbA1c improved to 7.5% and stayed between 7-8% until he graduated high school.  That’s a pretty remarkable transformation.”  Evelyn notes this is Bryan’s first visit to the health center and there is no HbA1c recorded here.
