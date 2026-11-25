@@ -62,7 +62,32 @@ Entrega historias priorizadas y escenarios Dado–Cuando–Entonces vinculados a
 ```text
 $speckit-clarify
 
-Prioriza decisiones que modifican el aprendizaje o la evidencia. Confirma con el docente el triaje de LR, la fase evaluable, la prueba adicional habilitada y su condición de disponibilidad. Revisa las formas A/B del instrumento, el momento del post, las claves y qué se puede acreditar en la rúbrica. Para dimensionamiento aclara el equipo disponible, el escenario de uso de 100 estudiantes y la espera tolerable. Registra qué está resuelto y qué queda abierto. Mantén los materiales ausentes del dataset identificados.
+Aclara en español el alcance del módulo 01 de Paciente Virtual SIRCLE. Trabaja sobre specs/001-simulacion-clinica/spec.md y contrasta cada aclaración con la constitución vigente, el diseño del módulo, las fuentes clínicas y el instrumento pre/post. El resultado de esta sesión es una especificación con decisiones registradas y criterios de aceptación verificables. La creación de directorios, la extracción del HTML y el código corresponden a la implementación.
+
+Conserva el alcance acordado. LR es el primer recorrido completo: identidad ficticia, pre de cinco preguntas, entrevista, valoración, examen adicional, hipótesis con evidencias, entrega, post de siete preguntas y devolución publicada por el docente. Ambos cuestionarios pueden omitirse. Nannu y Dan Sparks permiten comprobar aislamiento entre casos y atribución al hablante. Mantén registrada para revisión constitucional la precisión que permite justificar una decisión por el recorrido de LR o por otro requisito aprobado del módulo.
+
+Deja explícitas las bases de arquitectura. El monorrepositorio tendrá frontend/ y backend/ independientes, organizados por funcionalidad. El frontend usará HTML, CSS y TypeScript. El backend usará Rust con Axum y una API REST con JSON. SQLite conservará las fuentes versionadas de los tres casos y los registros por intento. Cuatro trabajadores independientes compartirán el motor local Ollama con qwen3.5:4b. Docker Compose arrancará sin credenciales, con frontend, backend e inferencia permanentes y sqlite-init temporal para preparar el volumen.
+
+Para la interfaz, exige que la implementación empiece con una copia exacta de docs/referencias/html-semana5/Paciente_Virtual.html y su carpeta recursos/ dentro del área de trabajo del frontend. Verifica la copia inicial por rutas y huellas. Después conserva el marcado y los gestos, extrae los estilos a CSS y distribuye el comportamiento en TypeScript por funcionalidad. Comprueba a igual resolución la selección, el chat, el brazo ampliado y la medición desde la colocación del brazalete hasta su histórico. La versión pública debe excluir claves, rúbricas y datos clínicos reservados.
+
+Haz localizable cada decisión de los agentes. Define cuatro directorios bajo backend/src/agentes/: lr/, nannu/, dan_sparks/ y evaluador/. Dentro de cada uno prevé estos ocho subdirectorios con nombres estables:
+
+01_rol_objetivo_modelo/
+02_fuentes_recuperacion_memoria/
+03_herramientas_mcp/
+04_identidad_acceso/
+05_controles_entrada_contexto_salida/
+06_cache/
+07_enrutamiento/
+08_observabilidad_regresion/
+
+Para cada combinación de agente y núcleo, exige que su README.md identifique propósito, justificación, fuentes autorizadas, comportamiento esperado, archivo que lo implementa y prueba que lo verifica. En esta fase distingue rutas previstas de archivos existentes. Cuando varios agentes usen una implementación común, cada núcleo enlazará al archivo compartido y documentará su regla propia. Si un agente prescinde de caché o de MCP, registra cómo resuelve la necesidad con la ficha o las operaciones internas. La observabilidad debe permitir seguir un fallo desde el turno o criterio hasta el agente, versión, fuente y prueba de regresión.
+
+Aclara la exigencia del evaluador conforme a la rúbrica aprobada para el nivel formativo. Debe revisar entrevista, valoración, decisiones, uso de evidencias e hipótesis según lo que la actividad permitió demostrar. Para cada criterio, indica qué hizo el estudiante, qué evidencia lo muestra, qué esperaba la rúbrica, por qué hay un acierto u omisión y qué acción concreta podría mejorar el siguiente intento. Distingue una decisión equivocada, una acción omitida y un registro técnico ausente. Este último requiere revisión docente. Incluye dos entregas de calibración: en una con tres de cuatro hipótesis justificadas, reconoce los tres aciertos y explica cómo revisar la cuarta. En otra con un solo acierto, identifica las tres brechas y prioriza la corrección más importante. Cuatro hipótesis es un ejemplo de prueba. La ponderación y la publicación corresponden al docente.
+
+Refuerza E17 con dos preguntas simultáneas a LR desde intentos distintos. En E22 exige registrar una medición nueva y confirmar una entrega durante la caída de Qwen, y recuperar una sola evaluación al volver el servicio. Conserva la diferencia entre cien sesiones abiertas y cien preguntas simultáneas.
+
+Pregunta una cosa por vez, hasta cinco preguntas. Prioriza las decisiones aún abiertas que cambian la práctica: triaje y fase de LR, examen adicional, nivel y evidencias de la rúbrica, equivalencia de las formas pre/post y umbrales del equipo. Integra cada respuesta aceptada donde cambie un requisito o una prueba. Cierra indicando qué quedó resuelto, qué requiere decisión docente y qué puede pasar al plan técnico.
 ```
 
 ## 4. Plan técnico
