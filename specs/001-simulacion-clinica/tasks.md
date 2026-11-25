@@ -181,9 +181,16 @@ Partir de T020 y de la copia privada verificada en T021. En la migración se con
 
   **Datos** [`Turno.entrada literal o libre`](data-model.md#actividad-e-intento).
 
-- [ ] T026 [US2] Conectar el chat al mismo endpoint de turnos verificado por HTTP en T015. **Ruta** `frontend/src/modules/entrevista/chat.ts`.
+- [ ] T026 [US2] Conectar el chat al mismo endpoint de turnos verificado por HTTP en T015 y entregar el arranque integrado del hito 2. **Rutas** `frontend/src/modules/entrevista/chat.ts` · `frontend/package.json` · `frontend/scripts/dev-integrado.mjs` · `backend/src/bin/sircle.rs`.
 
-  **Depende de** T025, T016, T020. **Referencias** FR-004, FR-010, FR-012 · E02, E06, E07 · SC-001, SC-003. **Cierre.** Al reabrir el intento de T020 aparece el ID de turno de T015. Una nueva pregunta con palabras propias llega al mismo `POST /api/intentos/{id}/turnos` con clave nueva. La red del navegador y la traza del revisor enlazan un turno distinto, una nueva invocación real y el pasaje correcto. [Captura del chat, petición y correlación con Qwen · pendiente](#ev-t026)
+  **Depende de** T025, T016, T020. **Referencias** FR-004, FR-010, FR-012 · E02, E06, E07 · SC-001, SC-003.
+
+  **Arranque previsto antes de Compose.** Usar el intento y los pesos de `qwen3.5:4b` conservados en T020. Si el servicio Ollama local está detenido, iniciar `ollama serve` en una terminal desde la raíz. Con Ollama disponible, usar una terminal por aplicación.
+
+  1. Desde `backend/`, ejecutar `cargo run --locked --bin sircle -- servir --db target/demo.sqlite`. La dirección predeterminada prevista para este arranque local de Axum es `127.0.0.1:8081`. El archivo debe ser el SQLite de T020. Si se guardó en otra ubicación, pasar esa ruta a `--db`.
+  2. Desde `frontend/`, ejecutar `npm ci` en la primera instalación y `npm run dev:integrado`. Este comando es un entregable de T026. Definirlo en `frontend/package.json` y configurar `frontend/scripts/dev-integrado.mjs` para compilar la interfaz, servir sus archivos públicos en `http://127.0.0.1:8080` y reenviar todo `/api/...` a Axum conservando la ruta. El navegador usa rutas relativas del mismo origen. El servidor de desarrollo reenvía `Cookie` e `Idempotency-Key` a Axum y devuelve `Set-Cookie` al navegador para mantener la sesión local HttpOnly. El comando `npm run dev:ejemplo` de T002 usa respuestas JSON de ejemplo con el backend detenido.
+
+  **Cierre.** Abrir la interfaz en `http://127.0.0.1:8080`, entrar con la identidad ficticia de T020 y elegir «En curso → Continuar». Cotejar el ID del intento con el acta de T020 y reconocer en el chat el turno de T015 por su texto e ID en la respuesta de la API. Escribir con palabras propias una pregunta sobre el inicio de los síntomas. El navegador envía un nuevo `POST /api/intentos/{id}/turnos` sin ID de sugerencia y con clave nueva. El chat muestra a LR situando el inicio hace dos días en primera persona. En la pestaña de red, identificar el intento y la operación del POST. Como revisor, consultar `GET /api/intentos/{id}/turnos/{turno}/traza` y cotejar esa operación con la nueva llamada efectiva a Qwen, el pasaje correcto y el ID del turno persistido. Al recargar como estudiante, la misma sesión recupera el turno de T015 y el nuevo con sus respectivos IDs. [Arranque, captura, petición, traza y recarga · pendiente](#ev-t026)
 
 ### Valoración e instrumentos
 
@@ -347,9 +354,13 @@ Cada agente tendrá un `README.md` en cada núcleo bajo `backend/src/agentes/{ag
 
   **Depende de** T042, T046, T056. **Referencias** FR-008, FR-009 · E10, E11, E16 · SC-005. **Cierre.** Comparar la entrada con la copia congelada. Coinciden entrega, evidencias propias y rúbrica por ID, versión y huella. Un intento abierto no dispara evaluación. Las encuestas, claves educativas y registros de otro intento quedan fuera. [Inventario autorizado y comparación con la instantánea · pendiente](#ev-t057)
 
-- [ ] T058 [US4] Generar y conservar el borrador formativo por criterio aplicable. **Rutas** `backend/src/modules/evaluacion/criterios.rs` · `backend/src/modules/evaluacion/trabajos.rs` · `backend/tests/agente_evaluador.rs` · `backend/migrations/0012_evaluacion.sql`.
+- [ ] T058 [US4] Generar y conservar el borrador formativo por criterio aplicable y enlazarlo con la operación de inferencia del evaluador. **Rutas** `backend/src/modules/evaluacion/criterios.rs` · `backend/src/modules/evaluacion/trabajos.rs` · `backend/src/shared/trazas.rs` · `backend/tests/agente_evaluador.rs` · `backend/migrations/0012_evaluacion.sql`.
 
-  **Depende de** T057. **Referencias** FR-008 · E12 · SC-001, SC-005. **Cierre.** Revisar entrevista, valoración, decisiones, evidencias e hipótesis. Cada criterio explica actuación, cita de la entrega, expectativa, juicio motivado y mejora concreta. El 100 % de los créditos propuestos llega a una evidencia del intento. Un criterio fuera de la oportunidad formativa se marca no evaluable. [Desglose, citas y recorrido de una observación a su registro · pendiente](#ev-t058)
+  **Depende de** T057. **Referencias** FR-008 · E12 · SC-001, SC-005. **Cierre.** Revisar entrevista, valoración, decisiones, evidencias e hipótesis. Cada criterio explica actuación, cita de la entrega, expectativa, juicio motivado y mejora concreta. El 100 % de los créditos propuestos llega a una evidencia del intento. Un criterio fuera de la oportunidad formativa se marca no evaluable.
+
+  Reutilizar la traza restringida del módulo. T058 podrá cerrarse con una respuesta del adaptador marcada como dato de prueba. Comprobar que una misma traza vincula el ID de entrega confirmada y la versión y huella de la rúbrica fijada al abrir el intento con la operación del evaluador, el modelo y su digest, el resultado utilizado y el ID del borrador guardado. Una lectura del servicio con el rol docente debe recuperar ese borrador y sus citas. Conservar esta comprobación en `h3/T058/criterios.json`.
+
+  T059 aportará la demostración de esa cadena con una llamada real a Ollama local y `qwen3.5:4b` durante su propia calibración. Un sondeo de salud solo acredita disponibilidad. La participación en la devolución se acreditará enlazando la respuesta de esa llamada con el contenido del borrador docente. La rectificación y la publicación corresponden a T062 y T063. [Prueba de correlación y referencia a la traza de calibración · pendiente](#ev-t058)
 
   **Datos** [`Evaluación.entrega`, `Criterio.actuación`, `Criterio.evidencia o incidencia`, `Criterio.expectativa`, `Criterio.juicio motivado`, `Criterio.mejora`](data-model.md#actividad-e-intento).
 
@@ -357,13 +368,15 @@ Cada agente tendrá un `README.md` en cada núcleo bajo `backend/src/agentes/{ag
 
 Las dos entregas de E12 tienen cuatro hipótesis para calibrar la calidad de la devolución. En la actividad ordinaria el estudiante fundamenta una hipótesis principal y la contrasta con al menos una alternativa. [Calibración de la devolución](contracts/agentes.md#pruebas-que-deciden-el-paso-al-hito-4)
 
-- [ ] T059 [US4] Ejecutar la calibración E12 con tres hipótesis justificadas de cuatro. **Rutas** `backend/tests/fixtures/evaluacion/tres_de_cuatro.json` · `backend/tests/agente_evaluador.rs`.
+- [ ] T059 [US4] Ejecutar la calibración E12 de tres hipótesis justificadas de cuatro y aportar la traza de inferencia real definida en T058. **Rutas** `backend/tests/fixtures/evaluacion/tres_de_cuatro.json` · `backend/tests/agente_evaluador.rs`.
 
-  **Depende de** T058. **Referencias** FR-008 · E12 · SC-005. **Cierre.** El borrador reconoce por separado los tres aciertos y sus evidencias. Para la cuarta hipótesis identifica el vínculo que falta y una acción concreta para revisarla. Quedan identificadas entrega y versión de la rúbrica de calibración. [Cuatro juicios, citas y acción para la cuarta hipótesis · pendiente](#ev-t059)
+  **Depende de** T058. **Referencias** FR-008 · E12 · SC-005. **Cierre.** El borrador reconoce por separado las tres hipótesis justificadas y cita la evidencia de cada acierto. Para la cuarta, identifica el vínculo que falta, señala por su ID qué turno, medición o informe de la entrega debía revisar el estudiante y propone una acción concreta para contrastar ese hallazgo con la hipótesis o explicitar qué dato le falta. Comparar los cuatro juicios con la clave de calibración por su contenido clínico y educativo, admitiendo redacciones equivalentes.
+
+  En esta misma ejecución, seguir la entrega confirmada y la versión y huella de su rúbrica desde el intento hasta una llamada real del evaluador a Ollama local con `qwen3.5:4b`. En la traza restringida registrar ID de entrega, ID de operación, modelo y digest, resultado devuelto y utilizado para elaborar los juicios, e ID del borrador persistido. Con el rol docente, recuperar el borrador por ese ID y cotejar al menos un juicio y su cita con la salida de esa llamada. Archivar los cuatro juicios en `h3/T059/tres-de-cuatro.json` y la traza en `h3/T059/traza-inferencia.json`, compartida por referencia con T058. [Crítica de las cuatro hipótesis y traza real · pendiente](#ev-t059)
 
 - [ ] T060 [US4] Ejecutar la calibración E12 con una hipótesis justificada de cuatro. **Rutas** `backend/tests/fixtures/evaluacion/uno_de_cuatro.json` · `backend/tests/agente_evaluador.rs`.
 
-  **Depende de** T058. **Referencias** FR-008 · E12 · SC-005. **Cierre.** Se reconoce un acierto y se identifican tres brechas diferentes. La clave de ensayo espera contradicción con el ECG, alternativa sin justificar y confusión entre declaración y medición. La primera corrección indicada es releer el ECG, con su evidencia y motivo. [Cuatro juicios y justificación de la mejora prioritaria · pendiente](#ev-t060)
+  **Depende de** T058. **Referencias** FR-008 · E12 · SC-005. **Cierre.** Con la segunda entrega preparada de E12 y la misma versión de rúbrica de calibración, el borrador reconoce la primera hipótesis y cita su evidencia. Para la segunda, cita el informe textual de ECG e identifica qué afirmación lo contradice. Para la tercera, señala el apartado donde la alternativa queda sin justificar y pide un hallazgo que la apoye o la debilite. Para la cuarta, cita el turno que se presentó como medición y pide distinguir lo referido de lo medido. La devolución debe priorizar releer el ECG y revisar la segunda hipótesis, explicando por qué ese hallazgo documentado exige corregir el razonamiento antes de atender las otras dos brechas. Evaluar el contenido clínico, la pertinencia de las citas y la utilidad de la corrección. Se admiten redacciones equivalentes. [Cuatro juicios, tres brechas y prioridad justificada con el ECG · pendiente](#ev-t060)
 
 - [ ] T061 [US4] Distinguir una decisión equivocada, una omisión y un acuse sin evento recuperable. **Rutas** `backend/src/modules/evaluacion/criterios.rs` · `backend/tests/agente_evaluador.rs`.
 
@@ -557,7 +570,7 @@ La raíz propuesta es `specs/001-simulacion-clinica/evidencias/`. Cada ruta de l
 | <a id="ev-t023"></a>T023 | `h2/T023/continuar.md` | Capturas de selección y respuestas del mismo intento | **pendiente** |
 | <a id="ev-t024"></a>T024 | `h2/T024/vistas.md` | Capturas y respuestas en cada fase | **pendiente** |
 | <a id="ev-t025"></a>T025 | `h2/T025/sugerencias.md` | Capturas del texto intacto y editado, peticiones y rutas | **pendiente** |
-| <a id="ev-t026"></a>T026 | `h2/T026/chat-integrado.md` | Captura del chat, petición y correlación con Qwen | **pendiente** |
+| <a id="ev-t026"></a>T026 | `h2/T026/chat-integrado.md` | Directorios, comandos, base de T020 y origen integrado. Capturas de «Continuar» y de la respuesta de LR, ID de intento y turno T015, petición nueva correlacionada con Qwen, pasaje y nuevo ID persistido. Tras recargar, registrar ambos IDs y la continuidad de la sesión. | **pendiente** |
 | <a id="ev-t027"></a>T027 | `h2/T027/brazo.md` | Pares de capturas de los estados intermedios | **pendiente** |
 | <a id="ev-t028"></a>T028 | `h2/T028/registro-presion.md` | Secuencia visual, acuses y recuentos de ficha e histórico | **pendiente** |
 | <a id="ev-t029"></a>T029 | `h2/T029/pulso-respiracion.md` | Dos pares de capturas y sus lecturas identificadas | **pendiente** |
@@ -594,9 +607,9 @@ La raíz propuesta es `specs/001-simulacion-clinica/evidencias/`. Cada ruta de l
 | <a id="ev-t055"></a>T055 | `h3/T055/intentos-v1-v2.tsv` | Asignación, peso y huellas de A y B | **pendiente** |
 | <a id="ev-t056"></a>T056 | `h3/T056/entrega.json` | Acuses, instantánea, IDs y recuentos transaccionales | **pendiente** |
 | <a id="ev-t057"></a>T057 | `h3/T057/entrada-evaluador.json` | Inventario autorizado y comparación con la instantánea | **pendiente** |
-| <a id="ev-t058"></a>T058 | `h3/T058/criterios.json` | Desglose, citas y recorrido de una observación a su registro | **pendiente** |
-| <a id="ev-t059"></a>T059 | `h3/T059/tres-de-cuatro.json` | Cuatro juicios, citas y acción para la cuarta hipótesis | **pendiente** |
-| <a id="ev-t060"></a>T060 | `h3/T060/uno-de-cuatro.json` | Cuatro juicios y justificación de la mejora prioritaria | **pendiente** |
+| <a id="ev-t058"></a>T058 | `h3/T058/criterios.json` | Desglose, citas y prueba de correlación entre entrega, rúbrica, operación, modelo/digest, resultado utilizado y borrador recuperado como docente. La [traza real de T059](#ev-t059) se incorporará por referencia al ejecutar esa calibración. | **pendiente** |
+| <a id="ev-t059"></a>T059 | `h3/T059/tres-de-cuatro.json` · `h3/T059/traza-inferencia.json` | Tres aciertos citados y, para la cuarta hipótesis, vínculo ausente, evidencia que revisar y acción de mejora. Traza restringida de la misma ejecución con ID de entrega, versión y huella de rúbrica, operación real de Ollama, modelo/digest, resultado aplicado e ID de borrador docente. Cotejo de un juicio y su cita. | **pendiente** |
+| <a id="ev-t060"></a>T060 | `h3/T060/uno-de-cuatro.json` | ID de la segunda entrega y versión de rúbrica, acierto con su cita, tres brechas con sus respectivos registros y motivo para corregir primero la contradicción con el ECG. Conservar el juicio de contenido admitiendo redacciones equivalentes. | **pendiente** |
 | <a id="ev-t061"></a>T061 | `h3/T061/incidencia.json` | Tres juicios contrastados y estado del criterio incompleto | **pendiente** |
 | <a id="ev-t062"></a>T062 | `h3/T062/revisiones.json` | Revisiones, motivo y reproducción del desglose de V1 | **pendiente** |
 | <a id="ev-t063"></a>T063 | `h3/T063/publicacion.json` | Matriz actor × estado del post × revisión | **pendiente** |
