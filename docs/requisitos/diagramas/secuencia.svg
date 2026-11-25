@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1150" viewBox="0 0 1120 1150"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#334155" stroke-width="1.4"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<rect x="8" y="25" width="204" height="68" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="110" y="67" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="110" dy="0">Estudiante</tspan></text>
+<polyline points="110,93 110,1095" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" />
+<rect x="298" y="25" width="204" height="68" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="400" y="67" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="400" dy="0">SIRCLE y módulo</tspan></text>
+<polyline points="400,93 400,1095" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" />
+<rect x="598" y="25" width="204" height="68" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="700" y="67" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="700" dy="0">Reglas del caso</tspan></text>
+<polyline points="700,93 700,1095" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" />
+<rect x="898" y="25" width="204" height="68" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="1000" y="67" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="1000" dy="0">Persistencia</tspan></text>
+<polyline points="1000,93 1000,1095" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" />
+<polyline points="110,157 400,157" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="255" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="255" dy="0">Solicitar examen</tspan></text>
+<polyline points="400,222 700,222" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="550" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="550" dy="0">Validar orden y plazo</tspan></text>
+<polyline points="700,287 1000,287" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="850" y="273" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="850" dy="0">Guardar orden pendiente</tspan></text>
+<polyline points="1000,352 400,352" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="700" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="700" dy="0">Confirmar guardado</tspan></text>
+<polyline points="400,417 110,417" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="255" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="255" dy="0">Mostrar pendiente</tspan></text>
+<polyline points="110,482 400,482" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="255" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="255" dy="0">Avanzar tres días</tspan></text>
+<polyline points="400,547 700,547" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="550" y="533" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="550" dy="0">Calcular eventos y estado</tspan></text>
+<polyline points="700,612 1000,612" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="850" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="850" dy="0">Guardar tiempo, estado e historial</tspan></text>
+<polyline points="1000,677 400,677" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="700" y="663" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="700" dy="0">Confirmar actualización</tspan></text>
+<polyline points="400,742 110,742" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="255" y="728" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="255" dy="0">Mostrar resultado disponible</tspan></text>
+<rect x="12" y="776" width="1095" height="59" rx="0" fill="#ffffff" stroke="#667482" stroke-width="2" />
+<text x="560" y="813" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="normal" fill="#17202a"><tspan x="560" dy="0">Cierre de sesión e ingreso posterior: el reloj simulado conserva su valor</tspan></text>
+<polyline points="110,891 400,891" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="255" y="877" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="255" dy="0">Retomar intento</tspan></text>
+<polyline points="400,956 1000,956" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="700" y="942" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="700" dy="0">Recuperar intento autorizado</tspan></text>
+<polyline points="1000,1021 400,1021" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="700" y="1007" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="700" dy="0">Devolver estado e historial</tspan></text>
+<polyline points="400,1086 110,1086" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="255" y="1072" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="255" dy="0">Mostrar paciente recuperado</tspan></text>
+<text x="560" y="1135" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="560" dy="0">Cada solicitud verifica permisos; un fallo conserva el último estado confirmado.</tspan></text>
+</svg>

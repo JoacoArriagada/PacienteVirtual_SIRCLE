@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="1225" viewBox="0 0 1170 1225"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#334155" stroke-width="1.4"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="585" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#17202a"><tspan x="585" dy="0">Flujos del módulo de paciente virtual</tspan></text>
+<rect x="20" y="90" width="235" height="85" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="137.5" y="126.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="137.5" dy="0">SIRCLE</tspan><tspan x="137.5" dy="28.06">Identidad y grupos</tspan></text>
+<rect x="420" y="90" width="330" height="85" rx="35" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="585" y="126.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="585" dy="0">1 Gestionar</tspan><tspan x="585" dy="28.06">el acceso</tspan></text>
+<rect x="915" y="90" width="235" height="85" rx="0" fill="#ffffff" stroke="#667482" stroke-width="2" />
+<text x="1032.5" y="126.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="1032.5" dy="0">D1 Permisos</tspan><tspan x="1032.5" dy="28.06">del módulo</tspan></text>
+<polyline points="255,115 420,115" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="335" y="99" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="335" dy="0">Identidad</tspan></text>
+<polyline points="750,115 915,115" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="831" y="99" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#17202a"><tspan x="831" dy="0">Consulta / cambio</tspan></text>
+<polyline points="915,156 750,156" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="831" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="831" dy="0">Permisos</tspan></text>
+<rect x="20" y="200" width="235" height="60" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="137.5" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="137.5" dy="0">Administrador</tspan></text>
+<polyline points="255,225 365,225 365,155 420,155" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="300" y="251" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#17202a"><tspan x="300" dy="0">Permisos</tspan></text>
+<polyline points="585,175 585,285" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="600" y="230" text-anchor="start" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="600" dy="0">Contexto autorizado</tspan></text>
+<rect x="20" y="285" width="235" height="85" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="137.5" y="335.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="137.5" dy="0">Docente</tspan></text>
+<rect x="420" y="285" width="330" height="85" rx="35" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="585" y="321.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="585" dy="0">2 Preparar y asignar</tspan><tspan x="585" dy="28.06">actividades</tspan></text>
+<rect x="915" y="285" width="235" height="85" rx="0" fill="#ffffff" stroke="#667482" stroke-width="2" />
+<text x="1032.5" y="321.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="1032.5" dy="0">D2 Casos, rúbricas</tspan><tspan x="1032.5" dy="28.06">y asignaciones</tspan></text>
+<polyline points="255,303 420,303" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="338" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="338" dy="0">Caso y grupo</tspan></text>
+<polyline points="420,349 255,349" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="335" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="335" dy="0">Validación</tspan></text>
+<polyline points="750,303 915,303" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="832" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#17202a"><tspan x="832" dy="0">Versión revisada</tspan></text>
+<polyline points="915,349 750,349" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="832" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="832" dy="0">Contenido</tspan></text>
+<polyline points="1050,370 1050,432 585,432 585,500" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="817" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="817" dy="0">Caso y objetivos asignados</tspan></text>
+<rect x="20" y="500" width="235" height="105" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="137.5" y="560.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="137.5" dy="0">Estudiante</tspan></text>
+<rect x="420" y="500" width="330" height="105" rx="35" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="585" y="546.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="585" dy="0">3 Desarrollar</tspan><tspan x="585" dy="28.06">la simulación</tspan></text>
+<rect x="915" y="500" width="235" height="105" rx="0" fill="#ffffff" stroke="#667482" stroke-width="2" />
+<text x="1032.5" y="546.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="1032.5" dy="0">D3 Intentos</tspan><tspan x="1032.5" dy="28.06">Estado e historial</tspan></text>
+<polyline points="255,518 420,518" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="337" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#17202a"><tspan x="337" dy="0">Preguntas y acciones</tspan></text>
+<polyline points="420,579 255,579" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="335" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#17202a"><tspan x="335" dy="0">Respuestas y hallazgos</tspan></text>
+<polyline points="750,518 915,518" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="832" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#17202a"><tspan x="832" dy="0">Eventos confirmados</tspan></text>
+<polyline points="915,579 750,579" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="832" y="629" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="832" dy="0">Estado previo</tspan></text>
+<rect x="420" y="702" width="330" height="87" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="585" y="739.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="585" dy="0">SIRCLE</tspan><tspan x="585" dy="28.06">Ficha vinculada</tspan></text>
+<polyline points="505,605 505,702" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="492" y="663" text-anchor="end" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="492" dy="0">Registros</tspan></text>
+<polyline points="663,702 663,605" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="675" y="663" text-anchor="start" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="675" dy="0">Datos</tspan></text>
+<polyline points="1030,605 1030,829 585,829 585,900" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="841" y="816" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="841" dy="0">Historial entregado</tspan></text>
+<rect x="20" y="900" width="235" height="105" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="137.5" y="946.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="137.5" dy="0">Estudiante</tspan><tspan x="137.5" dy="28.06">y docente</tspan></text>
+<rect x="420" y="900" width="330" height="105" rx="35" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="585" y="946.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="585" dy="0">4 Evaluar y mostrar</tspan><tspan x="585" dy="28.06">resultados</tspan></text>
+<rect x="915" y="900" width="235" height="105" rx="0" fill="#ffffff" stroke="#667482" stroke-width="2" />
+<text x="1032.5" y="946.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="1032.5" dy="0">D4 Evaluaciones</tspan><tspan x="1032.5" dy="28.06">y encuestas</tspan></text>
+<polyline points="255,920 420,920" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="337" y="876" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#17202a"><tspan x="337" dy="0">Encuestas y revisión</tspan></text>
+<polyline points="420,978 255,978" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="335" y="1033" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#17202a"><tspan x="335" dy="0">Devolución y reportes</tspan></text>
+<polyline points="750,920 915,920" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="832" y="876" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="832" dy="0">Resultados</tspan></text>
+<polyline points="915,978 750,978" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="832" y="1033" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="832" dy="0">Datos guardados</tspan></text>
+<polyline points="1150,327 1162,327 1162,1108 716,1108 716,1005" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="936" y="1097" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="936" dy="0">Rúbrica de la versión</tspan></text>
+<text x="585" y="1161" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="585" dy="0">Rectángulos grises: entidades · Redondeados: procesos · D1 a D4: almacenes</tspan></text>
+<text x="585" y="1192" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="585" dy="0">D1 se administra en RF02; la identidad y los grupos proceden de SIRCLE.</tspan></text>
+</svg>

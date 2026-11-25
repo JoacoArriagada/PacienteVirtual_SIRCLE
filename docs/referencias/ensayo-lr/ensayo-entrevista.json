@@ -1,0 +1,285 @@
+{
+  "modelo": "qwen3.5:4b",
+  "resultados": [
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Desde cuándo comenzó?",
+      "esperado": "inicio",
+      "observado": "inicio",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 48,
+      "respuesta": "Empezó hace dos días. Al principio podía seguir haciendo mis cosas. Hoy me ha costado mucho más."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Cómo lo describiría?",
+      "esperado": "descripcion",
+      "observado": "descripcion",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 3,
+      "respuesta": "Como si tuviera el pecho apretado. Me cuesta sacar el aire y tengo que parar para hablar."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Qué le preocupa?",
+      "esperado": "preocupacion",
+      "observado": "preocupacion",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 14,
+      "respuesta": "Me asusta no poder respirar bien. Antes el inhalador me ayudaba mucho más."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Cómo ha cambiado desde que empezó?",
+      "esperado": "evolucion",
+      "observado": "evolucion",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 16,
+      "respuesta": "Ayer me cansaba al caminar. Hoy siento la falta de aire incluso sentada."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Qué lo empeora o le alivia?",
+      "esperado": "modifica",
+      "observado": "modifica",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 16,
+      "respuesta": "Moverme y hablar seguido lo empeoran. Sentarme me ayuda un poco, aunque la sensación sigue."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Ha tenido tos o ha notado silbidos?",
+      "esperado": "tos",
+      "observado": "tos",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 17,
+      "respuesta": "He tosido sin flema. A veces se oye como un silbido al soltar el aire."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Siente algún dolor en el pecho?",
+      "esperado": "dolor",
+      "observado": "dolor",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 2,
+      "respuesta": "Lo que siento es presión en el pecho. No sabría decir que me duele en un punto."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Ha tenido fiebre o se ha resfriado?",
+      "esperado": "fiebre",
+      "observado": "fiebre",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 1,
+      "respuesta": "Tuve la nariz tapada antes de esto. No he notado fiebre y no me tomé la temperatura."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Tiene alguna enfermedad conocida?",
+      "esperado": "antecedentes",
+      "observado": "antecedentes",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 12,
+      "respuesta": "Tengo asma desde hace años. Había estado más o menos bien hasta esta semana."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Qué ha usado para tratar de sentirse mejor?",
+      "esperado": "medicacion",
+      "observado": "medicacion",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 2,
+      "respuesta": "Usé varias veces mi inhalador de rescate hoy. Me da rabia porque el alivio dura casi nada."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Tiene alergias conocidas?",
+      "esperado": "alergias",
+      "observado": "alergias",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 13,
+      "respuesta": "El polvo y el polen me molestan. No recuerdo haber tenido una reacción a medicamentos."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Ha necesitado atención por algo parecido?",
+      "esperado": "episodios",
+      "observado": "episodios",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 16,
+      "respuesta": "Una vez vine a urgencias por el asma. Lo de hoy me recuerda ese episodio y me pone nerviosa."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Qué ocurrió antes de empezar a sentirse así?",
+      "esperado": "contexto",
+      "observado": "contexto",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 15,
+      "respuesta": "Había estado con congestión y limpié un lugar con mucho polvo. No sé si tuvo que ver."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Prefiere que hagamos pausas mientras conversamos?",
+      "esperado": "apoyo",
+      "observado": "apoyo",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 16,
+      "respuesta": "Sí, por favor. Si me hace una pregunta a la vez, puedo contarle mejor."
+    },
+    {
+      "grupo": "sugerencias",
+      "pregunta": "¿Qué le gustaría que le explicara ahora?",
+      "esperado": "expectativa",
+      "observado": "expectativa",
+      "origen": "guion",
+      "cumple": true,
+      "ms": 16,
+      "respuesta": "Quiero entender qué van a revisar primero. Me tranquiliza que me lo pregunten."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Hace cuánto le cuesta respirar?",
+      "esperado": "inicio",
+      "observado": "inicio",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 414,
+      "respuesta": "Empezó hace dos días. Al principio podía seguir haciendo mis cosas. Hoy me ha costado mucho más."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Qué cosas hacen que le cueste más respirar?",
+      "esperado": "modifica",
+      "observado": "modifica",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 365,
+      "respuesta": "Moverme y hablar seguido lo empeoran. Sentarme me ayuda un poco, aunque la sensación sigue."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Bota flemas al toser?",
+      "esperado": "tos",
+      "observado": "tos",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 360,
+      "respuesta": "He tosido sin flema. A veces se oye como un silbido al soltar el aire."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Le han dicho que tiene alguna enfermedad de antes?",
+      "esperado": "antecedentes",
+      "observado": "antecedentes",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 372,
+      "respuesta": "Tengo asma desde hace años. Había estado más o menos bien hasta esta semana."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Alguna vez tuvo que venir al hospital por algo parecido?",
+      "esperado": "episodios",
+      "observado": "episodios",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 377,
+      "respuesta": "Una vez vine a urgencias por el asma. Lo de hoy me recuerda ese episodio y me pone nerviosa."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿De qué marca es su inhalador?",
+      "esperado": "desconocido",
+      "observado": "desconocido",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 382,
+      "respuesta": "No sabría decirle."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿De qué grupo sanguíneo es?",
+      "esperado": "desconocido",
+      "observado": "desconocido",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 405,
+      "respuesta": "No sabría decirle."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Qué puntaje recibiré?",
+      "esperado": "desconocido",
+      "observado": "desconocido",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 385,
+      "respuesta": "No sabría decirle."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Cuántos miligramos usa en cada inhalación?",
+      "esperado": "desconocido",
+      "observado": "desconocido",
+      "origen": "regla",
+      "cumple": true,
+      "ms": 1,
+      "respuesta": "No recuerdo la dosis."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Y eso?",
+      "esperado": "aclarar",
+      "observado": "aclarar",
+      "origen": "regla",
+      "cumple": true,
+      "ms": 16,
+      "respuesta": "¿Podría hacerme una pregunta más concreta, de una en una?"
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Le da miedo quedarse sin aire?",
+      "esperado": "preocupacion",
+      "observado": "preocupacion",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 380,
+      "respuesta": "Me asusta no poder respirar bien. Antes el inhalador me ayudaba mucho más."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Se encuentra igual que al principio o ha ido a peor?",
+      "esperado": "evolucion",
+      "observado": "evolucion",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 368,
+      "respuesta": "Ayer me cansaba al caminar. Hoy siento la falta de aire incluso sentada."
+    },
+    {
+      "grupo": "libres",
+      "pregunta": "¿Puede decirme su dirección exacta?",
+      "esperado": "desconocido",
+      "observado": "desconocido",
+      "origen": "modelo",
+      "cumple": true,
+      "ms": 371,
+      "respuesta": "No sabría decirle."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+:root {
+  --sircle-primary: #4C84E8;
+  --sircle-secondary: #5D92E6;
+  --sircle-paper: #FEFEFB;
+  --sircle-icon: #9DBEF1;
+  --sircle-ink: #161616;
+  --sircle-panel: rgb(157 190 241 / 12%);
+  --sircle-section: rgb(157 190 241 / 28%);
+  --sircle-border: rgb(22 22 22 / 20%);
+}

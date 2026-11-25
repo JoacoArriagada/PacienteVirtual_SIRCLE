@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="320" viewBox="0 0 1220 320"><defs><marker id="arrow" markerWidth="10" markerHeight="9" refX="9" refY="4" orient="auto"><path d="M0 0 L9 4 L0 8" fill="none" stroke="#343a40" stroke-width="1.3"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<rect x="190" y="25" width="1000" height="265" fill="#edf5ef" stroke="#65766c" stroke-width="2"/>
+<text x="690" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#17202a"><tspan x="690" dy="0">Paciente virtual</tspan></text>
+<circle cx="75" cy="105" r="15" fill="#f8dedb" stroke="#343a40" stroke-width="2"/>
+<polyline points="75,120 75,165" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="47,137 103,137" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="75,165 53,193" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="75,165 97,193" fill="none" stroke="#343a40" stroke-width="2"  />
+<text x="75" y="224" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#17202a"><tspan x="75" dy="0">Estudiante</tspan></text>
+<ellipse cx="430" cy="175" rx="205" ry="57" fill="#fff4ce" stroke="#5f6266" stroke-width="2"/>
+<text x="430" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#17202a"><tspan x="430" dy="0">CU04</tspan><tspan x="430" dy="28.799999999999997">Iniciar o retomar</tspan><tspan x="430" dy="28.799999999999997">un caso</tspan></text>
+<ellipse cx="970" cy="175" rx="200" ry="57" fill="#dce7f7" stroke="#5f6266" stroke-width="2"/>
+<text x="970" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#17202a"><tspan x="970" dy="0">CU11</tspan><tspan x="970" dy="28.799999999999997">Conservar el avance</tspan><tspan x="970" dy="28.799999999999997">del intento</tspan></text>
+<polyline points="103,137 225,175" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="635,175 770,175" fill="none" stroke="#343a40" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<rect x="627.5" y="143" width="150" height="27" fill="#edf5ef"/>
+<text x="702.5" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#17202a"><tspan x="702.5" dy="0">&lt;&lt;include&gt;&gt;</tspan></text>
+</svg>

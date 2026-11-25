@@ -1,0 +1,12 @@
+# Conserva la huella de los originales al clonar en Windows o Linux.
+datos/medsp1000/** -text
+datos/adaptaciones/lr/entrevista-lr.json -text
+docs/referencias/html-semana5/** -text
+recursos-audiovisuales/** -text
+docs/requisitos/diagramas/** -text
+docs/referencias/interfaz/recursos/** -text
+docs/referencias/ensayo-lr/ensayo-entrevista.json -text
+*.docx binary
+*.png binary
+*.webp binary
+*.woff2 binary

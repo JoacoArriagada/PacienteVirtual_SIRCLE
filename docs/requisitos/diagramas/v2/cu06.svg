@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="625" viewBox="0 0 1220 625"><defs><marker id="arrow" markerWidth="10" markerHeight="9" refX="9" refY="4" orient="auto"><path d="M0 0 L9 4 L0 8" fill="none" stroke="#343a40" stroke-width="1.3"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<rect x="185" y="20" width="1010" height="583" fill="#edf5ef" stroke="#65766c" stroke-width="2"/>
+<text x="690" y="54" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#17202a"><tspan x="690" dy="0">Paciente virtual integrado en SIRCLE</tspan></text>
+<circle cx="73" cy="172.5" r="15" fill="#f8dedb" stroke="#343a40" stroke-width="2"/>
+<polyline points="73,187.5 73,232.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="45,204.5 101,204.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="73,232.5 51,260.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="73,232.5 95,260.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<text x="73" y="291.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#17202a"><tspan x="73" dy="0">Estudiante</tspan></text>
+<ellipse cx="420" cy="227.5" rx="205" ry="57" fill="#fff4ce" stroke="#5f6266" stroke-width="2"/>
+<text x="420" y="207.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#17202a"><tspan x="420" dy="0">CU06</tspan><tspan x="420" dy="28.799999999999997">Registrar decisiones</tspan><tspan x="420" dy="28.799999999999997">y realizar seguimiento</tspan></text>
+<polyline points="101,204.5 215,227.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<ellipse cx="970" cy="125" rx="200" ry="57" fill="#dce7f7" stroke="#5f6266" stroke-width="2"/>
+<text x="970" y="105" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#17202a"><tspan x="970" dy="0">CU10</tspan><tspan x="970" dy="28.799999999999997">Verificar sesión</tspan><tspan x="970" dy="28.799999999999997">y autorización</tspan></text>
+<polyline points="590.2877485731764,195.76455594772622 802.6107804310111,156.19526364694792" fill="none" stroke="#343a40" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<rect x="621.4492645020937" y="143.9799097973371" width="150" height="27" fill="#edf5ef"/>
+<text x="696.4492645020937" y="163.9799097973371" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#17202a"><tspan x="696.4492645020937" dy="0">&lt;&lt;include&gt;&gt;</tspan></text>
+<ellipse cx="970" cy="295" rx="200" ry="57" fill="#dce7f7" stroke="#5f6266" stroke-width="2"/>
+<text x="970" y="275" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#17202a"><tspan x="970" dy="0">CU11</tspan><tspan x="970" dy="28.799999999999997">Conservar el avance</tspan><tspan x="970" dy="28.799999999999997">del intento</tspan></text>
+<polyline points="607.543526487217,250.5167055234312 786.3076521407124,272.45593912636014" fill="none" stroke="#343a40" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<rect x="621.9255893139648" y="229.4863223248957" width="150" height="27" fill="#edf5ef"/>
+<text x="696.9255893139648" y="249.4863223248957" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#17202a"><tspan x="696.9255893139648" dy="0">&lt;&lt;include&gt;&gt;</tspan></text>
+<ellipse cx="420" cy="525" rx="205" ry="57" fill="#f0dceb" stroke="#5f6266" stroke-width="2"/>
+<text x="420" y="505" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#17202a"><tspan x="420" dy="0">CU14</tspan><tspan x="420" dy="28.799999999999997">Avanzar el tiempo</tspan><tspan x="420" dy="28.799999999999997">simulado</tspan></text>
+<polyline points="420,468 420,284.5" fill="none" stroke="#343a40" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<rect x="445" y="347.25" width="150" height="53" fill="#edf5ef"/>
+<text x="520" y="367.25" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#17202a"><tspan x="520" dy="0">&lt;&lt;extend&gt;&gt;</tspan></text>
+<text x="520" y="393.25" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="520" dy="0">PE06</tspan></text>
+</svg>

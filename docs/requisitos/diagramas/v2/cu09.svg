@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="345" viewBox="0 0 1220 345"><defs><marker id="arrow" markerWidth="10" markerHeight="9" refX="9" refY="4" orient="auto"><path d="M0 0 L9 4 L0 8" fill="none" stroke="#343a40" stroke-width="1.3"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<rect x="185" y="20" width="1010" height="303" fill="#edf5ef" stroke="#65766c" stroke-width="2"/>
+<text x="690" y="54" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#17202a"><tspan x="690" dy="0">Paciente virtual integrado en SIRCLE</tspan></text>
+<circle cx="73" cy="87.5" r="15" fill="#f8dedb" stroke="#343a40" stroke-width="2"/>
+<polyline points="73,102.5 73,147.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="45,119.5 101,119.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="73,147.5 51,175.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<polyline points="73,147.5 95,175.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<text x="73" y="206.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#17202a"><tspan x="73" dy="0">Estudiante</tspan></text>
+<ellipse cx="420" cy="142.5" rx="205" ry="57" fill="#fff4ce" stroke="#5f6266" stroke-width="2"/>
+<text x="420" y="136.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#17202a"><tspan x="420" dy="0">CU09</tspan><tspan x="420" dy="28.799999999999997">Responder encuestas</tspan></text>
+<polyline points="101,119.5 215,142.5" fill="none" stroke="#343a40" stroke-width="2"  />
+<ellipse cx="970" cy="125" rx="200" ry="57" fill="#dce7f7" stroke="#5f6266" stroke-width="2"/>
+<text x="970" y="105" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#17202a"><tspan x="970" dy="0">CU10</tspan><tspan x="970" dy="28.799999999999997">Verificar sesión</tspan><tspan x="970" dy="28.799999999999997">y autorización</tspan></text>
+<polyline points="623.670792946798,136.0195656789655 771.2348783896932,131.32434477850975" fill="none" stroke="#343a40" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<rect x="622.4528356682456" y="101.67195522873763" width="150" height="27" fill="#edf5ef"/>
+<text x="697.4528356682456" y="121.67195522873763" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#17202a"><tspan x="697.4528356682456" dy="0">&lt;&lt;include&gt;&gt;</tspan></text>
+</svg>

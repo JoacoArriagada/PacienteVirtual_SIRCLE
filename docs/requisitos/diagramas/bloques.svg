@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="990" viewBox="0 0 1060 990"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#334155" stroke-width="1.4"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<rect x="100" y="30" width="860" height="140" rx="0" fill="#e9eef3" stroke="#667482" stroke-width="2" />
+<text x="530" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="530" dy="0">SIRCLE existente</tspan><tspan x="530" dy="28.06">Ingreso y navegación · Formularios y ficha ficticia</tspan></text>
+<polyline points="530,170 530,222" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="545" y="202" text-anchor="start" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#17202a"><tspan x="545" dy="0">Sesión y registros</tspan></text>
+<rect x="155" y="224" width="750" height="108" rx="0" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="530" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="530" dy="0">Integración del módulo</tspan><tspan x="530" dy="28.06">Identidad · Permisos · Relación ficha e intento</tspan></text>
+<polyline points="530,332 530,395" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<rect x="50" y="395" width="960" height="545" rx="0" fill="#ffffff" stroke="#667482" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="75" y="427" text-anchor="start" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#17202a"><tspan x="75" dy="0">Paciente virtual</tspan></text>
+<rect x="100" y="461" width="360" height="105" rx="0" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="280" y="507.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="280" dy="0">Interacción</tspan><tspan x="280" dy="28.06">Entrevista y valoración</tspan></text>
+<rect x="600" y="461" width="360" height="105" rx="0" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="780" y="507.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="780" dy="0">Reglas de evolución</tspan><tspan x="780" dy="28.06">Acciones y tiempo</tspan></text>
+<polyline points="460,514 600,514" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="530" y="488" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="530" dy="0">Acción</tspan></text>
+<rect x="100" y="654" width="360" height="100" rx="0" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="280" y="698" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="280" dy="0">Contexto de conversación</tspan><tspan x="280" dy="28.06">Datos permitidos del caso</tspan></text>
+<rect x="600" y="654" width="360" height="100" rx="0" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="780" y="698" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="780" dy="0">Registro persistente</tspan><tspan x="780" dy="28.06">Estado e historial</tspan></text>
+<polyline points="280,654 280,566" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="290" y="610" text-anchor="start" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="290" dy="0">Contexto</tspan></text>
+<polyline points="780,566 780,654" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="794" y="611" text-anchor="start" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="794" dy="0">Eventos</tspan></text>
+<polyline points="600,706 460,706" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="530" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#17202a"><tspan x="530" dy="0">Estado</tspan></text>
+<rect x="260" y="827" width="540" height="77" rx="0" fill="#f2f5f8" stroke="#667482" stroke-width="2" />
+<text x="530" y="873.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#17202a"><tspan x="530" dy="0">Evaluación y vista docente</tspan></text>
+<polyline points="780,754 780,792 700,792 700,827" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="790" y="812" text-anchor="start" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#17202a"><tspan x="790" dy="0">Evidencia</tspan></text>
+<text x="530" y="974" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#17202a"><tspan x="530" dy="0">Componentes lógicos; tecnología y alojamiento por acordar con SIRCLE.</tspan></text>
+</svg>

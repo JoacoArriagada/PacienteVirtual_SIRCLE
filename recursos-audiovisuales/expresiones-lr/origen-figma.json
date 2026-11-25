@@ -1,0 +1,52 @@
+[
+  {
+    "archivo": "originales/01_neutral_atento.png",
+    "nodo": "66:17308",
+    "imagen": "a9f30d415092e403f4827397bb6d41a76ba39ad2"
+  },
+  {
+    "archivo": "originales/02_preocupacion.png",
+    "nodo": "66:17311",
+    "imagen": "54cf5bba589eb27f9c15efd6a70b4a647e36f4d1"
+  },
+  {
+    "archivo": "originales/03_duda.png",
+    "nodo": "66:17314",
+    "imagen": "94aa38661def0bfb88873bc17e150f3ec2fd12a9"
+  },
+  {
+    "archivo": "originales/04_miedo.png",
+    "nodo": "66:17326",
+    "imagen": "10d20dabcda19c6074b8760ddeb9ec26b340e26e"
+  },
+  {
+    "archivo": "originales/05_dolor.png",
+    "nodo": "66:17317",
+    "imagen": "01c5f33cfd0cdcd9aa43921ec7c4601f2c75534c"
+  },
+  {
+    "archivo": "originales/06_tristeza.png",
+    "nodo": "66:17320",
+    "imagen": "eefd90b9bd5525f912ea6208d14c873fd7608c20"
+  },
+  {
+    "archivo": "originales/07_frustracion.png",
+    "nodo": "66:17329",
+    "imagen": "03aecc01d32e8a93b906a8657fa16d19d5c71fff"
+  },
+  {
+    "archivo": "originales/08_cansancio.png",
+    "nodo": "66:17323",
+    "imagen": "5a0702bd7d2bb1aec2fbe33f44fb3464de4c5110"
+  },
+  {
+    "archivo": "originales/09_confianza.png",
+    "nodo": "66:17335",
+    "imagen": "4b00b0344ec699404cdf6289cc6f255ef1b5934d"
+  },
+  {
+    "archivo": "originales/10_alivio.png",
+    "nodo": "66:17332",
+    "imagen": "2ba681adcff2fd385e98ffff36da9db42a2e8a6e"
+  }
+]
