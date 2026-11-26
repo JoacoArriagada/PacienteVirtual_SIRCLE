@@ -1,0 +1,9 @@
+{
+  "estacion": "Desarrollo, Intel Core i3-7020U, Intel HD Graphics 620 sin acceso GPU desde Docker",
+  "docker": "Docker version 29.10.1, build c48360f",
+  "conflicto_8080": "agentnexo-frontend-1 127.0.0.1:8080->80/tcp",
+  "aislamiento": "unshare -Urn, loopback propio y puente Unix dedicado hacia el Ollama local",
+  "modelo": "qwen3.5:4b",
+  "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "proceso": "NAME          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL              \nqwen3.5:4b    d8b0f5e9760c    3.1 GB    100% CPU     2048       llamacpp    9 minutes from now"
+}

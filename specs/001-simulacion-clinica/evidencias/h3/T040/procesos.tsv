@@ -1,0 +1,5 @@
+pid_api	agente	pid	canal	ollama	modelo	digest
+1130413	lr	1130416	stdin/stdout:lr	http://127.0.0.1:11434	qwen3.5:4b	d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04
+1130413	nannu	1130420	stdin/stdout:nannu	http://127.0.0.1:11434	qwen3.5:4b	d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04
+1130413	dan_sparks	1130424	stdin/stdout:dan_sparks	http://127.0.0.1:11434	qwen3.5:4b	d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04
+1130413	evaluador	1130428	stdin/stdout:evaluador	http://127.0.0.1:11434	qwen3.5:4b	d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04

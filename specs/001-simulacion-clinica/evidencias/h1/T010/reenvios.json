@@ -1,0 +1,104 @@
+{
+  "tarea": "T010",
+  "fecha": "2026-11-25 21:00 -0300",
+  "rama": "feature/prototipo",
+  "revision_base": "fbc3f1ca608d34482d19d72c32bb06dce796a185",
+  "identidad": "estudiante-lr en SQLite temporal",
+  "intento_demostracion_separado": "c1aaccc1b05db9c4cc6cb572ddad196e",
+  "procedimiento": [
+    "Desde backend/: cargo test --locked --test valoracion reenvios_simultaneos -- --nocapture",
+    "Crear otro intento en SQLite temporal con el pre omitido.",
+    "Solapar dos POST de toma completa con la misma clave y consultar el histórico.",
+    "Enviar una toma nueva con otra clave y luego reutilizar la primera con un contenido distinto.",
+    "Cambiar de fase solo en la prueba, reenviar la primera toma y consultar el histórico final."
+  ],
+  "esperado": "201 y 200 con el mismo ID y una lectura. 201 con ID diferente al usar clave nueva. 409 para la clave reutilizada con otro contenido.",
+  "observado": {
+    "intento_id": "33ef83d85ef7e437419713e5fd6b9550",
+    "lecturas_finales": 2,
+    "lecturas_iniciales": 0,
+    "lecturas_tras_reenviar": 1,
+    "misma_clave_otro_contenido": {
+      "cuerpo": {
+        "mensaje": "La clave ya se usó con otro contenido."
+      },
+      "http": 409
+    },
+    "nueva": {
+      "acuse": {
+        "accion": "toma_completa",
+        "en_ficha": false,
+        "fase": "inicial",
+        "instrumento": "presion",
+        "intento_id": "33ef83d85ef7e437419713e5fd6b9550",
+        "medicion_id": "8e3fa5f2c459aa230afd622a9d209b3b",
+        "momento": "2026-11-26T00:00:22.985Z",
+        "revision": 3,
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      },
+      "clave": "nueva-toma",
+      "http": 201
+    },
+    "original": {
+      "acuse": {
+        "accion": "toma_completa",
+        "en_ficha": false,
+        "fase": "inicial",
+        "instrumento": "presion",
+        "intento_id": "33ef83d85ef7e437419713e5fd6b9550",
+        "medicion_id": "b92883a1d04d35233f03ff2321b8ec75",
+        "momento": "2026-11-26T00:00:22.977Z",
+        "revision": 2,
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      },
+      "clave": "misma-toma",
+      "http": 201
+    },
+    "reenvio": {
+      "acuse": {
+        "accion": "toma_completa",
+        "en_ficha": false,
+        "fase": "inicial",
+        "instrumento": "presion",
+        "intento_id": "33ef83d85ef7e437419713e5fd6b9550",
+        "medicion_id": "b92883a1d04d35233f03ff2321b8ec75",
+        "momento": "2026-11-26T00:00:22.977Z",
+        "revision": 2,
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      },
+      "clave": "misma-toma",
+      "http": 200
+    },
+    "reenvio_tras_cambio_fase": {
+      "acuse": {
+        "accion": "toma_completa",
+        "en_ficha": false,
+        "fase": "inicial",
+        "instrumento": "presion",
+        "intento_id": "33ef83d85ef7e437419713e5fd6b9550",
+        "medicion_id": "b92883a1d04d35233f03ff2321b8ec75",
+        "momento": "2026-11-26T00:00:22.977Z",
+        "revision": 2,
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      },
+      "http": 200
+    }
+  },
+  "respaldo": "backend/tests/valoracion.rs y migración 0004a_operaciones.sql. Cada acuse y su medición se confirman juntos."
+}

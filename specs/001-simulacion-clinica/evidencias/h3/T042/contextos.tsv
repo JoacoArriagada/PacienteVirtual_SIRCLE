@@ -1,0 +1,5 @@
+estudiante	intento	agente	caso	version	fase	hablante	turnos	hechos
+estudiante-lr	0cd64163bf2975a952f0f79beb4528d5	lr	P01	ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69	inicial	LR	b4405370a57099190167f02795835d45	lr-antecedentes-familiares,lr-inicio
+estudiante-sin-asignacion	16911c8a61d39671eaa33adc02135861	lr	P01	ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69	inicial	LR	bec055eca07b697d69ec47edad1ab1c0	lr-antecedentes-familiares,lr-inicio
+estudiante-lr	630f41d461959da7be39fb16983ba28a	nannu	P02	ensayo-contexto-p02-v1	inicial	Nannu	p02-habla-nannu	p02-dolor-t042
+estudiante-lr	630f41d461959da7be39fb16983ba28a	nannu	P02	ensayo-contexto-p02-v1	inicial	Acompañante	p02-habla-acompanante	p02-tos-t042

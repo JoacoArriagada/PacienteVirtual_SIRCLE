@@ -1,0 +1,89 @@
+{
+  "actividad_inhabilitada_http": 403,
+  "antes_de_confirmar": {
+    "llamadas_chat": 0,
+    "turnos": 0
+  },
+  "antes_de_pruebas_de_acceso": {
+    "llamadas_chat": 1,
+    "turnos": 1
+  },
+  "despues_de_pruebas_de_acceso": {
+    "llamadas_chat": 1,
+    "turnos": 1
+  },
+  "intento": "d25f363050b31607d76b3c02368f16fd",
+  "matriz": [
+    {
+      "actor": "titular",
+      "leer": 200,
+      "leer_traza": 403,
+      "operacion_nueva": null,
+      "recuentos": {
+        "llamadas_chat": 1,
+        "turnos": 1
+      },
+      "reenviar": 200
+    },
+    {
+      "actor": "estudiante ajeno",
+      "leer": 403,
+      "leer_traza": 403,
+      "operacion_nueva": 403,
+      "recuentos": {
+        "llamadas_chat": 1,
+        "turnos": 1
+      },
+      "reenviar": 403
+    },
+    {
+      "actor": "docente asignado",
+      "leer": 403,
+      "leer_traza": 200,
+      "operacion_nueva": 403,
+      "recuentos": {
+        "llamadas_chat": 1,
+        "turnos": 1
+      },
+      "reenviar": 403
+    },
+    {
+      "actor": "docente ajeno",
+      "leer": 403,
+      "leer_traza": 403,
+      "operacion_nueva": 403,
+      "recuentos": {
+        "llamadas_chat": 1,
+        "turnos": 1
+      },
+      "reenviar": 403
+    },
+    {
+      "actor": "sin sesion",
+      "leer": 401,
+      "leer_traza": 401,
+      "operacion_nueva": 401,
+      "recuentos": {
+        "llamadas_chat": 1,
+        "turnos": 1
+      },
+      "reenviar": 401
+    }
+  ],
+  "motor": "doble HTTP con contador de peticiones efectivas a /api/chat",
+  "operacion_tardia_http": 409,
+  "pre_http": 409,
+  "rol_cambiado_http": 403,
+  "turno_propio": {
+    "agente": "lr",
+    "hablante": "LR",
+    "intento_id": "d25f363050b31607d76b3c02368f16fd",
+    "operacion_id": "0b08931ef92cc216e271568da7224888",
+    "orden": 1,
+    "pregunta": "¿Desde cuándo te cuesta respirar?",
+    "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+    "revision": 2,
+    "tipo_respuesta": "hecho",
+    "turno_id": "973dfd3568b1d414c5df530e15ddea16"
+  }
+}

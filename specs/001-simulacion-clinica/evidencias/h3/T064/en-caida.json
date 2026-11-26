@@ -1,0 +1,66 @@
+{
+  "antes": {
+    "tomas": [
+      "f48bb352faa49be7cfbc77928457d2e6"
+    ],
+    "entrega": {
+      "id": "40aabd14f4b4f3a26e65274cc1436e7e",
+      "revision": 3
+    },
+    "trabajo": {
+      "entrega_id": "40aabd14f4b4f3a26e65274cc1436e7e",
+      "estado": "pendiente",
+      "creado_en": "2026-11-26T12:41:22.057Z",
+      "toma_id": null,
+      "vence": null,
+      "reintentar_desde": 1795696897,
+      "ultimo_error": "inferencia_o_validacion"
+    },
+    "post": "omitido",
+    "evaluaciones": [],
+    "acuses_entrega": 1
+  },
+  "toma": {
+    "medicion_id": "f48bb352faa49be7cfbc77928457d2e6",
+    "intento_id": "3a1199a211c920499615f60b38a676f0",
+    "instrumento": "presion",
+    "accion": "toma_completa",
+    "fase": "inicial",
+    "valor": {
+      "diastolica": 85,
+      "sistolica": 148
+    },
+    "unidad": "mmHg",
+    "momento": "2026-11-26T12:41:21.963Z",
+    "en_ficha": false,
+    "revision": 2
+  },
+  "borrador": {
+    "revision": 3,
+    "hipotesis": [
+      {
+        "rol": "principal",
+        "titulo": "Presión sistólica elevada en esta toma",
+        "explicacion": "La lectura instrumental es 148/85 mmHg y permite describir la toma actual.",
+        "evidencias": [
+          {
+            "tipo": "medicion",
+            "origen_id": "f48bb352faa49be7cfbc77928457d2e6"
+          }
+        ]
+      }
+    ]
+  },
+  "entrega": {
+    "entrega_id": "40aabd14f4b4f3a26e65274cc1436e7e",
+    "intento_id": "3a1199a211c920499615f60b38a676f0",
+    "revision": 3,
+    "rubrica_id": 1,
+    "version_rubrica": "1",
+    "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+    "confirmada_en": "2026-11-26T12:41:22.057Z",
+    "estado_evaluacion": "pendiente",
+    "post": "pendiente"
+  },
+  "reenvio_http": 200
+}

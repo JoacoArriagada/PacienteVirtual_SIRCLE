@@ -1,0 +1,64 @@
+{
+  "navegador": "156.0.8078.4",
+  "dimensiones": {
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "deviceScaleFactor": 1
+  },
+  "pendiente": {
+    "intento_id": "fe03b25bd45a7f43265a600c3b9baa98",
+    "actividad_id": "lr-ensayo",
+    "estudiante_id": "estudiante-lr",
+    "tipo": "ensayo",
+    "caso": "P01",
+    "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+    "version_rubrica": "rubrica-ensayo-v1",
+    "version_instrumento": "instrumento-ensayo-v1",
+    "pre": "pendiente",
+    "fase": "inicial",
+    "estado": "pre_pendiente",
+    "revision": 0
+  },
+  "contenido": {
+    "intento_id": "fe03b25bd45a7f43265a600c3b9baa98",
+    "actividad_id": "lr-ensayo",
+    "estudiante_id": "estudiante-lr",
+    "tipo": "ensayo",
+    "caso": "P01",
+    "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+    "version_rubrica": "rubrica-ensayo-v1",
+    "version_instrumento": "instrumento-ensayo-v1",
+    "pre": "omitido",
+    "fase": "inicial",
+    "estado": "atencion",
+    "revision": 1,
+    "introduccion": {
+      "contexto": "Servicio de urgencias. Práctica técnica con material de ensayo.",
+      "edad": 34,
+      "motivo": "Falta de aire",
+      "paciente": "LR"
+    },
+    "ficha": {
+      "datos": [
+        {
+          "etiqueta": "Presión inicial",
+          "valor": "148/85 mmHg"
+        }
+      ],
+      "fase": "inicial",
+      "fuente": "Triaje de ensayo de LR"
+    },
+    "indicaciones": [
+      "Entrevista a LR y registra las mediciones que realices.",
+      "Vincula los hallazgos que sustenten tu hipótesis."
+    ],
+    "ayuda": {
+      "origen": "docente",
+      "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+    },
+    "mediciones": [],
+    "turnos": []
+  }
+}

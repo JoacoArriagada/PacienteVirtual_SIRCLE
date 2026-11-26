@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paciente Virtual SIRCLE</title>
+    <link rel="stylesheet" href="/app/ejemplo.css">
+  </head>
+  <body>
+    <main>
+      <h1>Paciente Virtual SIRCLE</h1>
+      <p>Demostración con datos de ejemplo.</p>
+      <p data-estado role="status">Cargando la interfaz…</p>
+      <section id="valoracion" aria-labelledby="presion-titulo" hidden>
+        <h2 id="presion-titulo">Medir presión arterial</h2>
+        <img id="brazo" src="/recursos/presion.webp" alt="Brazo de LR preparado para colocar el brazalete">
+        <p id="presion-estado" role="status">Prepara el brazalete para iniciar.</p>
+        <div class="controles">
+          <button type="button" data-accion="preparar">Preparar brazalete</button>
+          <button type="button" data-accion="colocar" disabled>Colocar brazalete</button>
+          <button type="button" data-accion="tomar" disabled>Tomar presión</button>
+          <button type="button" data-accion="registrar" disabled>Registrar en ficha</button>
+        </div>
+        <h3>Histórico</h3>
+        <ul id="presion-historico"></ul>
+      </section>
+    </main>
+    <script type="module" src="/app/ejemplo.js"></script>
+  </body>
+</html>

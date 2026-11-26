@@ -1,0 +1,61 @@
+T002 · 2026-11-25 20:40 -0300 · feature/prototipo · revisión base fbc3f1ca608d34482d19d72c32bb06dce796a185
+Identidad: navegador sin sesión, interfaz de ejemplo.
+Esperado: instalar, probar y compilar desde frontend, y ver en navegador el estado
+generado por JavaScript con el backend detenido.
+
+Procedimiento desde frontend/
+  npm ci && npm test && npm run build
+  curl --max-time 2 http://127.0.0.1:8081/api/estado
+  npm run dev:ejemplo
+  curl -i http://127.0.0.1:4173/
+  curl -i http://127.0.0.1:4173/app/ejemplo.css
+  curl -i http://127.0.0.1:4173/app/ejemplo.js
+  curl -i http://127.0.0.1:4173/api/estado
+  Abrir http://127.0.0.1:4173 en Chromium a 1280x800, zoom 100 %, escala 1.
+  Se usó --headless --dump-dom y luego --headless --screenshot con
+  --window-size=1280,800 --force-device-scale-factor=1 y perfil temporal.
+
+Observado
+  Node v24.18.0 · npm 11.16.0 · Google Chrome for Testing 156.0.8078.4
+  npm ci, npm test y npm run build: cada comando con salida 0.
+  Backend: conexión rechazada en http://127.0.0.1:8081/api/estado.
+  HTTP 200 para HTML, CSS y JS. HTTP 404 para /api/estado en el frontend.
+  DOM de Chromium: «Interfaz de ejemplo disponible.» generado por JavaScript.
+  Captura: arranque.png · SHA-256 f6c7b0a1b6fcb743b164499a0619787dadf4b317b92dc193da076d1b8c0a4715.
+  Diagnóstico: el primer arranque usó 8080, ocupado por otro servidor. Se asignó
+  4173 a dev:ejemplo, se confirmó que estaba libre y se repitió la prueba.
+
+Salida de npm ci && npm test && npm run build
+added 1 package, and audited 2 packages in 866ms
+
+found 0 vulnerabilities
+
+> sircle-frontend@0.1.0 test
+> npm run build && node --test
+
+
+> sircle-frontend@0.1.0 build
+> node scripts/build.mjs
+
+✔ la compilación de ejemplo enlaza CSS y muestra su estado sin backend (12.94024ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 276.214376
+
+> sircle-frontend@0.1.0 build
+> node scripts/build.mjs
+
+Salida de npm run dev:ejemplo
+> sircle-frontend@0.1.0 dev:ejemplo
+> npm run build && node scripts/dev-ejemplo.mjs
+
+
+> sircle-frontend@0.1.0 build
+> node scripts/build.mjs
+
+Frontend de ejemplo disponible en http://127.0.0.1:4173

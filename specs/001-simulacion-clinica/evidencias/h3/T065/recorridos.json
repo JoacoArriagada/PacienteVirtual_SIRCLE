@@ -1,0 +1,162 @@
+{
+  "fallo_de_atribucion": {
+    "rechazo": {
+      "adaptador": "fixture-t050",
+      "candidato_cruzado": "p02-tos-productiva",
+      "intentado": {
+        "agente": "nannu",
+        "caso": "P02",
+        "fase": "inicial",
+        "hablante": "Nannu",
+        "intento_id": "46cf5e3eaba89bcf2c9108f8dee05388",
+        "operacion_id": "t050-cruce",
+        "version": "ensayo-originales-26b3b8a91e9d873f81243b197ff413ace6615003c78f49a9a38881accba3db7c"
+      },
+      "motivo": "seleccion_fuera_de_hablante",
+      "origen_candidato": {
+        "condicion": "El acompañante responde por Nannu. Aplica si se pregunta por tos con flema, por tos productiva o si ha visto a la paciente toser o expulsar flema.",
+        "escenario": "P02",
+        "fase": "inicial",
+        "fuente": "mep_2374-8265.10924-s001/scenario3/sp_actor/C. Pneumonia with Septic Shock.md",
+        "hablante": "Acompañante",
+        "id": "p02-tos-productiva",
+        "linea": 5,
+        "pasaje": "Family will say she has had a productive cough.",
+        "respuesta": "Ha estado tosiendo y ha expulsado flema.",
+        "revision_fuente_id": 8,
+        "version": "ensayo-originales-26b3b8a91e9d873f81243b197ff413ace6615003c78f49a9a38881accba3db7c"
+      },
+      "turnos": 0
+    },
+    "fuente": "datos/medsp1000/mep_2374-8265.10924-s001/scenario3/sp_actor/C. Pneumonia with Septic Shock.md",
+    "linea": 5,
+    "pasaje": "Family will say she has had a productive cough.",
+    "nucleo": "backend/src/agentes/nannu/08_observabilidad_regresion/README.md",
+    "control": "backend/src/agentes/nannu/entrevista.rs",
+    "regresion": "backend/tests/agente_nannu.rs::localiza_fallo_de_atribucion",
+    "confirmacion_real_de_la_voz": {
+      "mensaje": {
+        "agente": "nannu",
+        "caso": "P02",
+        "fase": "inicial",
+        "hablante": "Acompañante",
+        "intento_id": "f2d9eb36f72455e0663eb9a22bee1ca2",
+        "operacion_id": "3806ca1894b9b5bd6968e3d0c3799c32",
+        "version": "ensayo-originales-26b3b8a91e9d873f81243b197ff413ace6615003c78f49a9a38881accba3db7c"
+      },
+      "hecho": {
+        "condicion": "El acompañante responde por Nannu. Aplica si se pregunta por tos con flema, por tos productiva o si ha visto a la paciente toser o expulsar flema.",
+        "escenario": "P02",
+        "fase": "inicial",
+        "fuente": "mep_2374-8265.10924-s001/scenario3/sp_actor/C. Pneumonia with Septic Shock.md",
+        "hablante": "Acompañante",
+        "id": "p02-tos-productiva",
+        "linea": 5,
+        "pasaje": "Family will say she has had a productive cough.",
+        "respuesta": "Ha estado tosiendo y ha expulsado flema.",
+        "revision_fuente_id": 8,
+        "version": "ensayo-originales-26b3b8a91e9d873f81243b197ff413ace6615003c78f49a9a38881accba3db7c"
+      },
+      "modelo": "qwen3.5:4b",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "sha256_instrucciones": "fd7b04bea019e8884cf97d8e5012c3ce9bd57306da4f0c77147abdef3dc549da"
+    }
+  },
+  "criterio": {
+    "entrega": {
+      "caso": "P01",
+      "confirmada": true,
+      "id": "779a59ba16c1d1d29dfa0e742c4a290c",
+      "intento_id": "4bf9c36f4b2f175548fec3f0fa5c6547",
+      "revision": 6,
+      "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    "evaluacion_id": "22a1210083db8cb3854c87cd20dc5617",
+    "mensaje": {
+      "agente": "evaluador",
+      "caso": "P01",
+      "fase": "entregado",
+      "hablante": "Evaluador",
+      "intento_id": "4bf9c36f4b2f175548fec3f0fa5c6547",
+      "operacion_id": "1cff2c67299f1374e11e8404a1dff3f9",
+      "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    "rubrica": {
+      "criterios": [
+        {
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "id": "entrevista"
+        },
+        {
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "id": "valoracion"
+        },
+        {
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "id": "decisiones"
+        },
+        {
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "id": "evidencias"
+        },
+        {
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "id": "hipotesis-1"
+        },
+        {
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "id": "hipotesis-2"
+        },
+        {
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "id": "hipotesis-3"
+        },
+        {
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "id": "hipotesis-4"
+        }
+      ],
+      "id": "1",
+      "nivel": "pregrado_avanzado",
+      "sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+      "version": "1"
+    },
+    "observacion": {
+      "actuacion": "Cotejar afirmación fundamento y cita",
+      "criterio_id": "hipotesis-2",
+      "evidencias": [
+        "e1271e1d5b88f6daaf22e806b223c50a"
+      ],
+      "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+      "explicacion": "La afirmación de fibrilación auricular es falsa. Afirmación de la hipótesis 2: «El ECG inicial demuestra fibrilación auricular». Informe citado: «taquicardia sinusal».",
+      "juicio": "error",
+      "mejora": "El informe dice taquicardia sinusal no fibrilación."
+    },
+    "informe": {
+      "informe_id": "e1271e1d5b88f6daaf22e806b223c50a",
+      "intento_id": "4bf9c36f4b2f175548fec3f0fa5c6547",
+      "orden_id": "b38351e710beaf647c15eb2e0be15100",
+      "origen": "Electrocardiograma inicial",
+      "resultado": "taquicardia sinusal"
+    },
+    "fuente": "datos/medsp1000/mededportal_10181/scenario1/environment_controller/Case A-Asthma.md",
+    "linea": 4,
+    "pasaje": "initial EKG (sinus tachycardia)",
+    "nucleo": "backend/src/agentes/evaluador/08_observabilidad_regresion/README.md",
+    "control": "backend/src/modules/evaluacion/criterios.rs",
+    "regresion": "backend/tests/agente_evaluador.rs::calibra_uno_de_cuatro_y_prioriza_ecg_con_qwen",
+    "salida": {
+      "a": "Cotejar afirmación fundamento y cita",
+      "e": [
+        "e1271e1d5b88f6daaf22e806b223c50a"
+      ],
+      "j": "error",
+      "m": "El informe dice taquicardia sinusal no fibrilación.",
+      "x": "La afirmación de fibrilación auricular es falsa."
+    },
+    "modelo": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "sha256_instrucciones": "37e9f787f8946e813a3942c30250aec6b35523764e167a4647ac945c6df13030",
+    "duracion_ms": 351836
+  }
+}

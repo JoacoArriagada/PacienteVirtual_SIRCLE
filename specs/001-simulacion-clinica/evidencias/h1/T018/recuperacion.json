@@ -1,0 +1,112 @@
+{
+  "tarea": "T018",
+  "fecha": "2026-11-25 21:39 -0300",
+  "revision_base": "fbc3f1ca608d34482d19d72c32bb06dce796a185",
+  "rama": "feature/prototipo",
+  "identidad": "estudiante-lr",
+  "procedimiento": [
+    "docker start sircle-ollama-h1 y esperar GET /api/tags disponible con el digest de T013.",
+    "POST /api/generate con los parámetros archivados en generacion_de_comprobacion.",
+    "Desde backend/: target/debug/sircle servir --db target/demo.sqlite",
+    "cargo test --locked --test entrevista_indisponible la_clave_fallida -- --ignored --nocapture",
+    "Cotejar la clave y los IDs con T017 y comprobar una única llamada de entrevista."
+  ],
+  "esperado": "Una generación real, HTTP 201 para el reintento y 200 con el mismo acuse para su repetición. Un solo turno en el intento para dicha clave.",
+  "observado": {
+    "clave": "t017-recuperacion-qwen",
+    "pares_confirmados_para_la_operacion": 1,
+    "primera_confirmacion": {
+      "acuse": {
+        "agente": "lr",
+        "hablante": "LR",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "operacion_id": "334af59d6db1e3b8479f16b20249b519",
+        "orden": 2,
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "revision": 3,
+        "tipo_respuesta": "hecho",
+        "turno_id": "5a78b658b439c08502ac429585974d62"
+      },
+      "http": 201
+    },
+    "reenvio": {
+      "acuse": {
+        "agente": "lr",
+        "hablante": "LR",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "operacion_id": "334af59d6db1e3b8479f16b20249b519",
+        "orden": 2,
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "revision": 3,
+        "tipo_respuesta": "hecho",
+        "turno_id": "5a78b658b439c08502ac429585974d62"
+      },
+      "http": 200
+    },
+    "turnos_antes": [
+      "15d81d67da3ce808602bfaaa840a20fa"
+    ],
+    "turnos_despues": [
+      "15d81d67da3ce808602bfaaa840a20fa",
+      "5a78b658b439c08502ac429585974d62"
+    ]
+  },
+  "generacion_de_comprobacion": {
+    "peticion": {
+      "model": "qwen3.5:4b",
+      "prompt": "Responde únicamente OK",
+      "stream": false,
+      "think": false,
+      "keep_alive": "10m",
+      "options": {
+        "num_ctx": 2048,
+        "temperature": 0,
+        "num_predict": 12
+      }
+    },
+    "respuesta": {
+      "model": "qwen3.5:4b",
+      "created_at": "2026-11-26T00:38:38.562830457Z",
+      "response": "OK",
+      "done": true,
+      "done_reason": "stop",
+      "context": [
+        248045,
+        846,
+        198,
+        1026,
+        72494,
+        200974,
+        10092,
+        248046,
+        198,
+        248045,
+        74455,
+        198,
+        248068,
+        271,
+        248069,
+        271,
+        3793
+      ],
+      "total_duration": 26277323544,
+      "load_duration": 24267810136,
+      "prompt_eval_count": 16,
+      "prompt_eval_cached_count": 0,
+      "prompt_eval_duration": 1786531000,
+      "eval_count": 2,
+      "eval_duration": 218611000
+    }
+  },
+  "motor": {
+    "estacion": "Desarrollo, i3-7020U",
+    "residente": true,
+    "modelo": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "proceso": "NAME          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL              \nqwen3.5:4b    d8b0f5e9760c    3.1 GB    100% CPU     2048       llamacpp    9 minutes from now"
+  },
+  "incidencia_resuelta": "El primer sondeo HTTP tras arrancar el contenedor recibió conexión restablecida. Al esperar disponibilidad de /api/tags, la generación y el recorrido pasaron.",
+  "respaldo": "../T017/caida.json y target/t018-axum.log"
+}

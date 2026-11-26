@@ -1,0 +1,93 @@
+{
+  "duracion_invocacion_ms": 343704,
+  "cotejo": [
+    {
+      "cita_coincide": true,
+      "clave": {
+        "contenido": "Relato con inicio hace dos días y empeoramiento hoy",
+        "criterio": "hipotesis-1",
+        "juicio": "acierto",
+        "registro": "inicio"
+      },
+      "juicio_coincide": true,
+      "observacion": {
+        "actuacion": "Fundó hipótesis sobre empeoramiento respiratorio.",
+        "criterio_id": "hipotesis-1",
+        "evidencias": [
+          "131cf0be84db4f983afeb34f6bbb6ea5"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "explicacion": "El turno respalda la hipótesis planteada.",
+        "juicio": "acierto",
+        "mejora": "Repetir cita para asegurar el vínculo."
+      },
+      "registro_esperado": "131cf0be84db4f983afeb34f6bbb6ea5"
+    },
+    {
+      "cita_coincide": true,
+      "clave": {
+        "contenido": "Ritmo rápido de origen sinusal según el informe",
+        "criterio": "hipotesis-2",
+        "juicio": "acierto",
+        "registro": "ecg"
+      },
+      "juicio_coincide": true,
+      "observacion": {
+        "actuacion": "Fundó hipótesis sobre origen sinusal del ritmo.",
+        "criterio_id": "hipotesis-2",
+        "evidencias": [
+          "289831fdc6f7a717e874f76a0a5386c9"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "explicacion": "El informe confirma la hipótesis planteada.",
+        "juicio": "acierto",
+        "mejora": "Repetir cita para asegurar el vínculo."
+      },
+      "registro_esperado": "289831fdc6f7a717e874f76a0a5386c9"
+    },
+    {
+      "cita_coincide": true,
+      "clave": {
+        "contenido": "148/85 mmHg en una toma sin inferir hipertensión sostenida",
+        "criterio": "hipotesis-3",
+        "juicio": "acierto",
+        "registro": "presion"
+      },
+      "juicio_coincide": true,
+      "observacion": {
+        "actuacion": "Fundó hipótesis sobre presión sistólica elevada.",
+        "criterio_id": "hipotesis-3",
+        "evidencias": [
+          "c91027bddc25d13ea85fa127370e9ed4"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "explicacion": "La medición respalda la hipótesis planteada.",
+        "juicio": "acierto",
+        "mejora": "Repetir cita para asegurar el vínculo."
+      },
+      "registro_esperado": "c91027bddc25d13ea85fa127370e9ed4"
+    },
+    {
+      "cita_coincide": true,
+      "clave": {
+        "contenido": "Falta vincular el empeoramiento con esfuerzo previo. Revisar el turno de inicio y preguntar qué hacía al agravarse la disnea",
+        "criterio": "hipotesis-4",
+        "juicio": "omision",
+        "registro": "inicio"
+      },
+      "juicio_coincide": true,
+      "observacion": {
+        "actuacion": "No fundó hipótesis sobre esfuerzo previo.",
+        "criterio_id": "hipotesis-4",
+        "evidencias": [
+          "131cf0be84db4f983afeb34f6bbb6ea5"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "explicacion": "El turno no menciona el esfuerzo previo.",
+        "juicio": "omision",
+        "mejora": "Falta vínculo con registro de esfuerzo."
+      },
+      "registro_esperado": "131cf0be84db4f983afeb34f6bbb6ea5"
+    }
+  ]
+}

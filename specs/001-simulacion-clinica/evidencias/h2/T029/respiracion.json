@@ -1,0 +1,59 @@
+{
+  "navegador": "156.0.8078.4",
+  "id": "respiracion",
+  "intento": "6c451ceb7450b91f72ec0f849bcd7d98",
+  "comparacion": {
+    "original": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "bcfac13ad72f040690f298d70f5a64a6fc9e959dfb0d0c5d1c0ac1fad5d402ed",
+      "posicion": "true",
+      "gesto": 1
+    },
+    "extraccion": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "bcfac13ad72f040690f298d70f5a64a6fc9e959dfb0d0c5d1c0ac1fad5d402ed",
+      "posicion": "true",
+      "gesto": 1
+    }
+  },
+  "lectura": {
+    "medicion_id": "cc79b27b1f4b020765da624d92fa172c",
+    "intento_id": "6c451ceb7450b91f72ec0f849bcd7d98",
+    "instrumento": "respiracion",
+    "accion": "toma_completa",
+    "fase": "inicial",
+    "valor": {
+      "ciclos": 3,
+      "frecuencia": 26,
+      "segundos_reales": 24,
+      "segundos_simulados": 60
+    },
+    "unidad": "resp/min",
+    "momento": "2026-11-26T02:28:46.514Z",
+    "en_ficha": false,
+    "revision": 2,
+    "origen": "Observación y conteo del estudiante"
+  },
+  "historico": [
+    {
+      "medicion_id": "cc79b27b1f4b020765da624d92fa172c",
+      "intento_id": "6c451ceb7450b91f72ec0f849bcd7d98",
+      "instrumento": "respiracion",
+      "accion": "toma_completa",
+      "fase": "inicial",
+      "valor": {
+        "ciclos": 3,
+        "frecuencia": 26,
+        "segundos_reales": 24,
+        "segundos_simulados": 60
+      },
+      "unidad": "resp/min",
+      "momento": "2026-11-26T02:28:46.514Z",
+      "en_ficha": false,
+      "revision": 2,
+      "origen": "Observación y conteo del estudiante"
+    }
+  ]
+}

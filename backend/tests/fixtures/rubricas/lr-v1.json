@@ -1,0 +1,47 @@
+{
+  "contenido": {
+    "codigo": "lr-pregrado",
+    "version": "1",
+    "actividad": "lr-ensayo",
+    "caso": "P01",
+    "nivel": "pregrado_avanzado",
+    "criterios": [
+      {
+        "id": "entrevista",
+        "ambito": "entrevista",
+        "peso": 20,
+        "evidencias": ["turno"],
+        "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio."
+      },
+      {
+        "id": "valoracion",
+        "ambito": "valoracion",
+        "peso": 20,
+        "evidencias": ["medicion", "hallazgo"],
+        "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido."
+      },
+      {
+        "id": "decisiones",
+        "ambito": "decisiones",
+        "peso": 20,
+        "evidencias": ["orden", "informe"],
+        "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual."
+      },
+      {
+        "id": "evidencias",
+        "ambito": "uso_de_evidencias",
+        "peso": 20,
+        "evidencias": ["turno", "medicion", "informe"],
+        "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento."
+      },
+      {
+        "id": "hipotesis",
+        "ambito": "hipotesis",
+        "peso": 20,
+        "evidencias": ["turno", "medicion", "informe"],
+        "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten."
+      }
+    ],
+    "regla": "suma_ponderada_normalizada"
+  }
+}

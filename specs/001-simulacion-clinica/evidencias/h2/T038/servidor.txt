@@ -1,0 +1,4 @@
+cargo test --locked --offline --manifest-path backend/Cargo.toml --test visibilidad -- --nocapture
+T038 · bdf7ee374b3db6af5ad05548e5063ed0: pre 200, atención 200, traza estudiante 403, traza docente 200, ECG reservado 404, ajena 403, antes de publicar 200
+test proyecta_solo_registros_de_la_fase_y_el_propietario ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out

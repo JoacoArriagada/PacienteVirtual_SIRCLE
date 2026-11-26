@@ -1,0 +1,36 @@
+{
+  "rubrica_sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+  "hipotesis": [
+    {
+      "rol": "principal",
+      "titulo": "Dificultad respiratoria progresiva en dos días",
+      "explicacion": "LR refiere inicio hace dos días y empeoramiento hoy. El turno apoya esa cronología.",
+      "registros": ["inicio"]
+    },
+    {
+      "rol": "alternativa",
+      "titulo": "El ECG inicial demuestra fibrilación auricular",
+      "explicacion": "Fundamento esta afirmación en el informe del ECG, que registra taquicardia sinusal.",
+      "registros": ["ecg"]
+    },
+    {
+      "rol": "alternativa",
+      "titulo": "El episodio se explica por hipertensión sostenida",
+      "explicacion": "",
+      "registros": []
+    },
+    {
+      "rol": "alternativa",
+      "titulo": "La frecuencia respiratoria medida fue de 30 por minuto",
+      "explicacion": "Conté como medición la frase de LR «Hoy me ha costado mucho más», del turno sobre el inicio de la disnea.",
+      "registros": ["inicio"]
+    }
+  ],
+  "clave": [
+    {"criterio": "hipotesis-1", "juicio": "acierto", "registro": "inicio", "contenido": "Inicio de la disnea hace dos días y empeoramiento hoy"},
+    {"criterio": "hipotesis-2", "juicio": "error", "registro": "ecg", "contenido": "El informe registra taquicardia sinusal y contradice la afirmación de fibrilación auricular"},
+    {"criterio": "hipotesis-3", "juicio": "omision", "registro": "presion", "contenido": "La tercera hipótesis carece de fundamento. Buscar qué hallazgo apoyaría o debilitaría hipertensión sostenida"},
+    {"criterio": "hipotesis-4", "juicio": "error", "registro": "inicio", "contenido": "El relato de la disnea no es una medición de frecuencia respiratoria y no informa el valor 30"}
+  ],
+  "prioridad": "hipotesis-2"
+}

@@ -1,0 +1,156 @@
+{
+  "http": 201,
+  "peticion": {
+    "revision_esperada": 2,
+    "motivo": "Calibración de navegador de la valoración inicial parcial.",
+    "cambios": [
+      {
+        "criterio_id": "valoracion",
+        "juicio": "acierto",
+        "credito": 50,
+        "actuacion": "Midió la presión arterial.",
+        "explicacion": "La presión tiene un registro válido. Faltó completar la valoración inicial.",
+        "mejora": "Registra también la frecuencia respiratoria.",
+        "evidencias": [
+          "fe5eba4d8feefa2d28915fc14fc1ed67"
+        ]
+      }
+    ]
+  },
+  "rectificacion": {
+    "revision": 3,
+    "anterior": 2,
+    "autor_id": "docente-demo",
+    "motivo": "Calibración de navegador de la valoración inicial parcial.",
+    "momento": "2026-11-26T12:30:38.441Z",
+    "resultado": {
+      "entrega_id": "4d00b1fccf5c04c4a69a316d92de1ace",
+      "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+      "observaciones": [
+        {
+          "criterio_id": "entrevista",
+          "actuacion": "No se registraron preguntas.",
+          "evidencias": [],
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "juicio": "omision",
+          "explicacion": "Faltó precisar el inicio de la falta de aire.",
+          "mejora": "Pregunta cuándo empezó y si se agravó."
+        },
+        {
+          "criterio_id": "valoracion",
+          "actuacion": "Midió la presión arterial.",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "juicio": "acierto",
+          "explicacion": "La presión tiene un registro válido. Faltó completar la valoración inicial.",
+          "mejora": "Registra también la frecuencia respiratoria."
+        },
+        {
+          "criterio_id": "decisiones",
+          "actuacion": "No confirmó el ECG en esta oportunidad.",
+          "evidencias": [],
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "juicio": "omision",
+          "explicacion": "El registro íntegro carece de orden confirmada.",
+          "mejora": "Confirma la orden y consulta su informe cuando se habilite."
+        },
+        {
+          "criterio_id": "evidencias",
+          "actuacion": "Vinculó el registro de presión.",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "juicio": "acierto",
+          "explicacion": "La cita de la medición es recuperable.",
+          "mejora": "Distingue además los datos de una declaración del paciente."
+        },
+        {
+          "criterio_id": "hipotesis",
+          "actuacion": "Guardó una hipótesis parcial.",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten.",
+          "juicio": "omision",
+          "explicacion": "Falta explicar el vínculo y contrastar una alternativa.",
+          "mejora": "Compara la presión registrada con una hipótesis alternativa."
+        }
+      ]
+    },
+    "puntaje": {
+      "peso_aplicable": 100,
+      "total_centesimas": 3000,
+      "criterios": [
+        {
+          "criterio_id": "entrevista",
+          "juicio": "omision",
+          "peso": 20,
+          "credito": 0,
+          "puntos_ponderados": 0
+        },
+        {
+          "criterio_id": "valoracion",
+          "juicio": "acierto",
+          "peso": 20,
+          "credito": 50,
+          "puntos_ponderados": 1000
+        },
+        {
+          "criterio_id": "decisiones",
+          "juicio": "omision",
+          "peso": 20,
+          "credito": 0,
+          "puntos_ponderados": 0
+        },
+        {
+          "criterio_id": "evidencias",
+          "juicio": "acierto",
+          "peso": 20,
+          "credito": 100,
+          "puntos_ponderados": 2000
+        },
+        {
+          "criterio_id": "hipotesis",
+          "juicio": "omision",
+          "peso": 20,
+          "credito": 0,
+          "puntos_ponderados": 0
+        }
+      ]
+    },
+    "diferencias": [
+      {
+        "criterio_id": "valoracion",
+        "antes": {
+          "criterio_id": "valoracion",
+          "actuacion": "Midió la presión arterial.",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "juicio": "acierto",
+          "explicacion": "La presión tiene un registro válido. Faltó completar la valoración inicial.",
+          "mejora": "Registra también la frecuencia respiratoria."
+        },
+        "despues": {
+          "criterio_id": "valoracion",
+          "actuacion": "Midió la presión arterial.",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "juicio": "acierto",
+          "explicacion": "La presión tiene un registro válido. Faltó completar la valoración inicial.",
+          "mejora": "Registra también la frecuencia respiratoria."
+        },
+        "credito_anterior": 75,
+        "credito_nuevo": 50
+      }
+    ]
+  },
+  "reabierta": 3,
+  "total_reabierto": 30
+}

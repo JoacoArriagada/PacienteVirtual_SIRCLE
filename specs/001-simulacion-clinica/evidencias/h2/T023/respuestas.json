@@ -1,0 +1,256 @@
+{
+  "navegador": "156.0.8078.4",
+  "dimensiones": {
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "deviceScaleFactor": 1
+  },
+  "original": [
+    {
+      "selector": "#page-title",
+      "clase": "",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "34.4px",
+      "fondo": "rgba(0, 0, 0, 0)",
+      "ancho": 212
+    },
+    {
+      "selector": ".catalog-toolbar",
+      "clase": "catalog-toolbar",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "16px",
+      "fondo": "rgba(0, 0, 0, 0)",
+      "ancho": 1194.25
+    },
+    {
+      "selector": "#patient-search",
+      "clase": "",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "16px",
+      "fondo": "rgb(255, 255, 255)",
+      "ancho": 300
+    },
+    {
+      "selector": ".patient-card",
+      "clase": "patient-card",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "16px",
+      "fondo": "rgb(255, 255, 255)",
+      "ancho": 294
+    },
+    {
+      "selector": ".card-cta .button",
+      "clase": "button primary",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "14.4px",
+      "fondo": "rgb(47, 101, 196)",
+      "ancho": 220
+    }
+  ],
+  "implementacion": [
+    {
+      "selector": "#page-title",
+      "clase": "",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "34.4px",
+      "fondo": "rgba(0, 0, 0, 0)",
+      "ancho": 212
+    },
+    {
+      "selector": ".catalog-toolbar",
+      "clase": "catalog-toolbar",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "16px",
+      "fondo": "rgba(0, 0, 0, 0)",
+      "ancho": 1194.25
+    },
+    {
+      "selector": "#patient-search",
+      "clase": "",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "16px",
+      "fondo": "rgb(255, 255, 255)",
+      "ancho": 300
+    },
+    {
+      "selector": ".patient-card",
+      "clase": "patient-card",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "16px",
+      "fondo": "rgb(255, 255, 255)",
+      "ancho": 294
+    },
+    {
+      "selector": ".card-cta .button",
+      "clase": "button primary",
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "tamano": "14.4px",
+      "fondo": "rgb(47, 101, 196)",
+      "ancho": 220
+    }
+  ],
+  "antes": {
+    "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+    "actividad_id": "lr-ensayo",
+    "estudiante_id": "estudiante-lr",
+    "tipo": "ensayo",
+    "caso": "P01",
+    "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+    "version_rubrica": "rubrica-ensayo-v1",
+    "version_instrumento": "instrumento-ensayo-v1",
+    "pre": "omitido",
+    "fase": "inicial",
+    "estado": "atencion",
+    "revision": 6,
+    "mediciones": [
+      {
+        "medicion_id": "0fccd2ee381de9720e814a3a2caa8b08",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "instrumento": "presion",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        },
+        "unidad": "mmHg",
+        "momento": "2026-11-26T00:43:54.765Z",
+        "en_ficha": false,
+        "revision": 6
+      }
+    ],
+    "turnos": [
+      {
+        "turno_id": "15d81d67da3ce808602bfaaa840a20fa",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "orden": 1,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "2c57671ea869d4251e793fbb0f9d7d32",
+        "revision": 2
+      },
+      {
+        "turno_id": "5a78b658b439c08502ac429585974d62",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "orden": 2,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "334af59d6db1e3b8479f16b20249b519",
+        "revision": 3
+      },
+      {
+        "turno_id": "e5f74d4be5da3118dd2b5e967cec08d1",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "orden": 3,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "50c4ae60d333c2d2b97dc0f46b0849c2",
+        "revision": 4
+      },
+      {
+        "turno_id": "f9e8571aa43df4452b69aaaa074106f2",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "orden": 4,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "9ca3b0f43e5f882511e86cd1341696bf",
+        "revision": 5
+      }
+    ]
+  },
+  "despues": {
+    "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+    "actividad_id": "lr-ensayo",
+    "estudiante_id": "estudiante-lr",
+    "tipo": "ensayo",
+    "caso": "P01",
+    "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+    "version_rubrica": "rubrica-ensayo-v1",
+    "version_instrumento": "instrumento-ensayo-v1",
+    "pre": "omitido",
+    "fase": "inicial",
+    "estado": "atencion",
+    "revision": 6,
+    "mediciones": [
+      {
+        "medicion_id": "0fccd2ee381de9720e814a3a2caa8b08",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "instrumento": "presion",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        },
+        "unidad": "mmHg",
+        "momento": "2026-11-26T00:43:54.765Z",
+        "en_ficha": false,
+        "revision": 6
+      }
+    ],
+    "turnos": [
+      {
+        "turno_id": "15d81d67da3ce808602bfaaa840a20fa",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "orden": 1,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "2c57671ea869d4251e793fbb0f9d7d32",
+        "revision": 2
+      },
+      {
+        "turno_id": "5a78b658b439c08502ac429585974d62",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "orden": 2,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "334af59d6db1e3b8479f16b20249b519",
+        "revision": 3
+      },
+      {
+        "turno_id": "e5f74d4be5da3118dd2b5e967cec08d1",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "orden": 3,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "50c4ae60d333c2d2b97dc0f46b0849c2",
+        "revision": 4
+      },
+      {
+        "turno_id": "f9e8571aa43df4452b69aaaa074106f2",
+        "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "orden": 4,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "9ca3b0f43e5f882511e86cd1341696bf",
+        "revision": 5
+      }
+    ]
+  }
+}

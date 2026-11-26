@@ -1,0 +1,93 @@
+{
+  "navegador": "156.0.8078.4",
+  "escena": {
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "deviceScaleFactor": 1
+  },
+  "intento": "38646289daf9398bc308362cd447d7a3",
+  "pre": {
+    "http": 404,
+    "cuerpo": {
+      "mensaje": "El informe está reservado hasta confirmar la orden de este intento."
+    }
+  },
+  "reservado": {
+    "http": 404,
+    "cuerpo": {
+      "mensaje": "El informe está reservado hasta confirmar la orden de este intento."
+    }
+  },
+  "sinConfirmar": {
+    "http": 422,
+    "cuerpo": {
+      "mensaje": "Confirma una orden de ECG inicial."
+    }
+  },
+  "ordenesAntes": [],
+  "creada": {
+    "http": 201,
+    "cuerpo": {
+      "orden_id": "503de611206e9309c3ad87d09cb226cf",
+      "intento_id": "38646289daf9398bc308362cd447d7a3",
+      "examen": "ecg-inicial",
+      "fase": "inicial",
+      "momento": "2026-11-26T02:51:54.433Z",
+      "revision": 2
+    }
+  },
+  "informe": {
+    "http": 200,
+    "cuerpo": {
+      "informe_id": "0c40faabbd54bf9c731abdc7079a8ffc",
+      "orden_id": "503de611206e9309c3ad87d09cb226cf",
+      "intento_id": "38646289daf9398bc308362cd447d7a3",
+      "resultado": "taquicardia sinusal",
+      "origen": "Electrocardiograma inicial"
+    }
+  },
+  "reenvio": {
+    "http": 200,
+    "cuerpo": {
+      "orden_id": "503de611206e9309c3ad87d09cb226cf",
+      "intento_id": "38646289daf9398bc308362cd447d7a3",
+      "examen": "ecg-inicial",
+      "fase": "inicial",
+      "momento": "2026-11-26T02:51:54.433Z",
+      "revision": 2
+    }
+  },
+  "otroEnvio": {
+    "http": 200,
+    "cuerpo": {
+      "orden_id": "503de611206e9309c3ad87d09cb226cf",
+      "intento_id": "38646289daf9398bc308362cd447d7a3",
+      "examen": "ecg-inicial",
+      "fase": "inicial",
+      "momento": "2026-11-26T02:51:54.433Z",
+      "revision": 2
+    }
+  },
+  "ordenesDespues": [
+    {
+      "orden_id": "503de611206e9309c3ad87d09cb226cf",
+      "intento_id": "38646289daf9398bc308362cd447d7a3",
+      "examen": "ecg-inicial",
+      "fase": "inicial",
+      "momento": "2026-11-26T02:51:54.433Z",
+      "revision": 2
+    }
+  ],
+  "reanudado": {
+    "http": 200,
+    "cuerpo": {
+      "informe_id": "0c40faabbd54bf9c731abdc7079a8ffc",
+      "orden_id": "503de611206e9309c3ad87d09cb226cf",
+      "intento_id": "38646289daf9398bc308362cd447d7a3",
+      "resultado": "taquicardia sinusal",
+      "origen": "Electrocardiograma inicial"
+    }
+  }
+}

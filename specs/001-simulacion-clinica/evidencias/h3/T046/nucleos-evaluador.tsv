@@ -1,0 +1,9 @@
+núcleo	ficha	implementación	prueba	caso	aceptación
+01_rol_objetivo_modelo	backend/src/agentes/evaluador/01_rol_objetivo_modelo/README.md	backend/src/agentes/evaluador/perfil.rs	backend/tests/agente_evaluador.rs	evalua_solo_entrega_confirmada	prueba actual
+02_fuentes_recuperacion_memoria	backend/src/agentes/evaluador/02_fuentes_recuperacion_memoria/README.md	backend/src/agentes/evaluador/perfil.rs	backend/tests/agente_evaluador.rs	cita_la_entrega_y_su_version	prueba actual
+03_herramientas_mcp	backend/src/agentes/evaluador/03_herramientas_mcp/README.md	backend/src/shared/autorizacion.rs	backend/tests/agente_evaluador.rs	propuesta_no_publica	prueba actual
+04_identidad_acceso	backend/src/agentes/evaluador/04_identidad_acceso/README.md	backend/src/agentes/evaluador/perfil.rs	backend/tests/agente_evaluador.rs	excluye_entregas_y_encuestas_ajenas	prueba actual
+05_controles_entrada_contexto_salida	backend/src/agentes/evaluador/05_controles_entrada_contexto_salida/README.md	backend/src/agentes/evaluador/perfil.rs	backend/tests/agente_evaluador.rs	valida_cinco_partes_de_la_observacion	calibrar_aciertos_omisiones_e_incidencias T059 a T061
+06_cache	backend/src/agentes/evaluador/06_cache/README.md	backend/src/agentes/evaluador/perfil.rs	backend/tests/agente_evaluador.rs	solo_correlaciona_borrador_con_su_entrega	recupera_resultado_de_la_misma_entrega T058 y T064
+07_enrutamiento	backend/src/agentes/evaluador/07_enrutamiento/README.md	backend/src/agentes/mensajes.rs	backend/tests/agente_evaluador.rs	correlaciona_el_evaluador	persiste_una_evaluacion_tras_recuperacion T064
+08_observabilidad_regresion	backend/src/agentes/evaluador/08_observabilidad_regresion/README.md	backend/src/shared/trazas.rs	backend/tests/agente_evaluador.rs	conserva_referencias_para_revision	rastrear_criterio_a_evidencia_y_regresion T060 y T065

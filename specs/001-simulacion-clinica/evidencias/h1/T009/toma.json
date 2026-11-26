@@ -1,0 +1,98 @@
+{
+  "tarea": "T009",
+  "fecha": "2026-11-25 20:58 -0300",
+  "rama": "feature/prototipo",
+  "revision_base": "fbc3f1ca608d34482d19d72c32bb06dce796a185",
+  "identidad": "estudiante-lr en SQLite temporal",
+  "procedimiento": [
+    "Desde backend/: cargo test --locked --test valoracion guarda_solo_una_toma_completa_en_fase_autorizada -- --nocapture",
+    "Crear el intento de ensayo. Enviar una toma antes del pre y verificar que no hay lecturas.",
+    "Resolver el pre de ensayo, enviar POST de una toma completa y luego de una incompleta.",
+    "Fijar fase posterior solo en la base temporal, intentar otra toma y consultar el histórico y la vista del intento."
+  ],
+  "esperado": "HTTP 201 con ID, 148/85 mmHg y momento. Los tres rechazos dejan una sola lectura y los dos GET coinciden.",
+  "observado": {
+    "fase_posterior_http": 409,
+    "historico": [
+      {
+        "accion": "toma_completa",
+        "en_ficha": false,
+        "fase": "inicial",
+        "instrumento": "presion",
+        "intento_id": "002e725221860acc75996c64bde0298f",
+        "medicion_id": "8e61be6d7da5bfaefdff9165d7d56e82",
+        "momento": "2026-11-25T23:58:48.892Z",
+        "revision": 2,
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      }
+    ],
+    "intento_id": "002e725221860acc75996c64bde0298f",
+    "pre_pendiente_http": 409,
+    "toma_completa": {
+      "acuse": {
+        "accion": "toma_completa",
+        "en_ficha": false,
+        "fase": "inicial",
+        "instrumento": "presion",
+        "intento_id": "002e725221860acc75996c64bde0298f",
+        "medicion_id": "8e61be6d7da5bfaefdff9165d7d56e82",
+        "momento": "2026-11-25T23:58:48.892Z",
+        "revision": 2,
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      },
+      "clave": "presion-1",
+      "http": 201,
+      "peticion": {
+        "accion": "toma_completa",
+        "instrumento": "presion"
+      }
+    },
+    "toma_incompleta": {
+      "http": 422,
+      "peticion": {
+        "accion": "toma_incompleta",
+        "instrumento": "presion"
+      }
+    },
+    "vista_del_intento": {
+      "actividad_id": "lr-ensayo",
+      "caso": "P01",
+      "estado": "atencion",
+      "estudiante_id": "estudiante-lr",
+      "fase": "posterior",
+      "intento_id": "002e725221860acc75996c64bde0298f",
+      "mediciones": [
+        {
+          "accion": "toma_completa",
+          "en_ficha": false,
+          "fase": "inicial",
+          "instrumento": "presion",
+          "intento_id": "002e725221860acc75996c64bde0298f",
+          "medicion_id": "8e61be6d7da5bfaefdff9165d7d56e82",
+          "momento": "2026-11-25T23:58:48.892Z",
+          "revision": 2,
+          "unidad": "mmHg",
+          "valor": {
+            "diastolica": 85,
+            "sistolica": 148
+          }
+        }
+      ],
+      "pre": "omitido",
+      "revision": 2,
+      "tipo": "ensayo",
+      "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+      "version_instrumento": "instrumento-ensayo-v1",
+      "version_rubrica": "rubrica-ensayo-v1"
+    }
+  },
+  "respaldo": "backend/tests/valoracion.rs y migración 0004_mediciones.sql. La lectura de ensayo enlaza la revisión de la fuente sp_actor de P01."
+}

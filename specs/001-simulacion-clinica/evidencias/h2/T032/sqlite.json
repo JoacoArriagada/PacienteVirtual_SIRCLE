@@ -1,0 +1,42 @@
+[
+  [
+    "0e4c05d6e993310703a03725de852d2e",
+    "inspeccion",
+    "frontal",
+    "2026-11-26T02:41:14.283Z",
+    "24a645f0d3707622c2f4ea9e3d00963d",
+    "mededportal_10181/scenario1/examinee/Case A-Asthma.md",
+    "b13f04c4f3b00028982a71cf0ac20d8aed84f8dbf1fb013d44429ce9203720ca",
+    null
+  ],
+  [
+    "ce65e8db66402014a27919e5172cf8b8",
+    "inspeccion",
+    "posterior",
+    "2026-11-26T02:41:15.528Z",
+    null,
+    null,
+    null,
+    null
+  ],
+  [
+    "9d349328024cfdbd457b972f68fa6106",
+    "palpacion",
+    "central",
+    "2026-11-26T02:41:16.827Z",
+    "298132d5a00901cdbfdc965473a39934",
+    "mededportal_10181/scenario1/sp_actor/Case A-Asthma.md",
+    "d8f99a42e1d27ccef03a8d3056360635f2a58a313ea1d506c5c7a60ea634befb",
+    "{\"localizacion\":\"CASES.lr.exam.central\",\"naturaleza\":\"dato de ensayo\",\"ruta\":\"docs/referencias/html-semana5/Paciente_Virtual.html\",\"sha256\":\"ff9dea8958759550c5241ab9f0560c46f2726bf04ba1d46f927fb9febfeee032\"}"
+  ],
+  [
+    "6f9f10f8fb23d021eba18af9bde3010f",
+    "palpacion",
+    "extremidad",
+    "2026-11-26T02:41:18.043Z",
+    null,
+    null,
+    null,
+    null
+  ]
+]

@@ -1,0 +1,510 @@
+{
+  "navegador": "156.0.8078.4",
+  "viewport": "1280x900",
+  "referencia": {
+    "nombre": "original",
+    "datos": {
+      "pantalla": "Mis pacientes",
+      "pacientes": 3,
+      "zoom": "1",
+      "escala": 1,
+      "roboto": true
+    },
+    "controles": [
+      {
+        "selector": ".masthead",
+        "caja": {
+          "x": 0,
+          "y": 0,
+          "ancho": 1280,
+          "alto": 260
+        },
+        "clases": "masthead",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(76, 132, 232)",
+        "texto": "rgb(255, 255, 255)",
+        "borde": "rgb(255, 255, 255)"
+      },
+      {
+        "selector": ".head-button.account-role",
+        "caja": {
+          "x": 1058,
+          "y": 28,
+          "ancho": 112,
+          "alto": 33
+        },
+        "clases": "head-button account-role",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "14px",
+        "peso": "500",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(255, 255, 255)",
+        "borde": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "#module-nav",
+        "caja": {
+          "x": 32,
+          "y": 122,
+          "ancho": 1216,
+          "alto": 106
+        },
+        "clases": "module-nav",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(255, 255, 255)",
+        "borde": "rgb(255, 255, 255)"
+      },
+      {
+        "selector": "main",
+        "caja": {
+          "x": 0,
+          "y": 260,
+          "ancho": 1280,
+          "alto": 654.09375
+        },
+        "clases": null,
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(255, 255, 255)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(39, 43, 53)"
+      },
+      {
+        "selector": ".view.catalog",
+        "caja": {
+          "x": 0,
+          "y": 260,
+          "ancho": 1280,
+          "alto": 654.09375
+        },
+        "clases": "view catalog",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(39, 43, 53)"
+      },
+      {
+        "selector": "#page-title",
+        "caja": {
+          "x": 42.875,
+          "y": 329.984375,
+          "ancho": 212,
+          "alto": 41.96875
+        },
+        "clases": null,
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "34.4px",
+        "peso": "700",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(37, 50, 75)",
+        "borde": "rgb(37, 50, 75)"
+      },
+      {
+        "selector": ".heading-actions .button",
+        "caja": {
+          "x": 1134.9375,
+          "y": 303.515625,
+          "ancho": 102.1875,
+          "alto": 42
+        },
+        "clases": "button ",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "600",
+        "fondo": "rgb(255, 255, 255)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(123, 129, 142)"
+      },
+      {
+        "selector": ".tab",
+        "caja": {
+          "x": 42.875,
+          "y": 431.28125,
+          "ancho": 98,
+          "alto": 42.5625
+        },
+        "clases": "tab",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "15.04px",
+        "peso": "600",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(37, 50, 75)",
+        "borde": "rgb(37, 50, 75) rgb(37, 50, 75) rgb(76, 132, 232)"
+      },
+      {
+        "selector": "#patient-search",
+        "caja": {
+          "x": 937.125,
+          "y": 429.84375,
+          "ancho": 300,
+          "alto": 44
+        },
+        "clases": null,
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(255, 255, 255)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(123, 129, 142)"
+      },
+      {
+        "selector": ".patient-card",
+        "caja": {
+          "x": 42.875,
+          "y": 520.40625,
+          "ancho": 294,
+          "alto": 357.6875
+        },
+        "clases": "patient-card",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(255, 255, 255)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(123, 129, 142)"
+      },
+      {
+        "selector": ".patient-card .portrait",
+        "caja": {
+          "x": 53.875,
+          "y": 531.40625,
+          "ancho": 272,
+          "alto": 204
+        },
+        "clases": "portrait ",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(219, 230, 239)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(39, 43, 53)"
+      },
+      {
+        "selector": ".patient-name-line h2",
+        "caja": {
+          "x": 53.875,
+          "y": 749.125,
+          "ancho": 26,
+          "alto": 26.546875
+        },
+        "clases": null,
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "21.76px",
+        "peso": "700",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(37, 50, 75)",
+        "borde": "rgb(37, 50, 75)"
+      },
+      {
+        "selector": ".patient-card .state",
+        "caja": {
+          "x": 53.875,
+          "y": 789.40625,
+          "ancho": 69,
+          "alto": 25.6875
+        },
+        "clases": "state",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "13.12px",
+        "peso": "600",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(39, 43, 53)"
+      },
+      {
+        "selector": ".card-cta .button",
+        "caja": {
+          "x": 105.875,
+          "y": 825.09375,
+          "ancho": 220,
+          "alto": 42
+        },
+        "clases": "button primary",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "14.4px",
+        "peso": "600",
+        "fondo": "rgb(47, 101, 196)",
+        "texto": "rgb(255, 255, 255)",
+        "borde": "rgb(47, 101, 196)"
+      },
+      {
+        "selector": ".app-footer",
+        "caja": {
+          "x": 0,
+          "y": 914.09375,
+          "ancho": 1280,
+          "alto": 63
+        },
+        "clases": "app-footer",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "13.6px",
+        "peso": "400",
+        "fondo": "rgb(243, 246, 252)",
+        "texto": "rgb(83, 89, 102)",
+        "borde": "rgb(207, 215, 230) rgb(83, 89, 102) rgb(83, 89, 102)"
+      }
+    ],
+    "sha256": "591cb681ba1c51c82509627ccef60bd450fa2f152ce721fb1d5c27b2beac8ce7"
+  },
+  "extraccion": {
+    "nombre": "extraccion",
+    "datos": {
+      "pantalla": "Mis pacientes",
+      "pacientes": 3,
+      "zoom": "1",
+      "escala": 1,
+      "roboto": true
+    },
+    "controles": [
+      {
+        "selector": ".masthead",
+        "caja": {
+          "x": 0,
+          "y": 0,
+          "ancho": 1280,
+          "alto": 260
+        },
+        "clases": "masthead",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(76, 132, 232)",
+        "texto": "rgb(255, 255, 255)",
+        "borde": "rgb(255, 255, 255)"
+      },
+      {
+        "selector": ".head-button.account-role",
+        "caja": {
+          "x": 1058,
+          "y": 28,
+          "ancho": 112,
+          "alto": 33
+        },
+        "clases": "head-button account-role",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "14px",
+        "peso": "500",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(255, 255, 255)",
+        "borde": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "#module-nav",
+        "caja": {
+          "x": 32,
+          "y": 122,
+          "ancho": 1216,
+          "alto": 106
+        },
+        "clases": "module-nav",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(255, 255, 255)",
+        "borde": "rgb(255, 255, 255)"
+      },
+      {
+        "selector": "main",
+        "caja": {
+          "x": 0,
+          "y": 260,
+          "ancho": 1280,
+          "alto": 654.09375
+        },
+        "clases": null,
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(255, 255, 255)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(39, 43, 53)"
+      },
+      {
+        "selector": ".view.catalog",
+        "caja": {
+          "x": 0,
+          "y": 260,
+          "ancho": 1280,
+          "alto": 654.09375
+        },
+        "clases": "view catalog",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(39, 43, 53)"
+      },
+      {
+        "selector": "#page-title",
+        "caja": {
+          "x": 42.875,
+          "y": 329.984375,
+          "ancho": 212,
+          "alto": 41.96875
+        },
+        "clases": null,
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "34.4px",
+        "peso": "700",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(37, 50, 75)",
+        "borde": "rgb(37, 50, 75)"
+      },
+      {
+        "selector": ".heading-actions .button",
+        "caja": {
+          "x": 1134.9375,
+          "y": 303.515625,
+          "ancho": 102.1875,
+          "alto": 42
+        },
+        "clases": "button ",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "600",
+        "fondo": "rgb(255, 255, 255)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(123, 129, 142)"
+      },
+      {
+        "selector": ".tab",
+        "caja": {
+          "x": 42.875,
+          "y": 431.28125,
+          "ancho": 98,
+          "alto": 42.5625
+        },
+        "clases": "tab",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "15.04px",
+        "peso": "600",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(37, 50, 75)",
+        "borde": "rgb(37, 50, 75) rgb(37, 50, 75) rgb(76, 132, 232)"
+      },
+      {
+        "selector": "#patient-search",
+        "caja": {
+          "x": 937.125,
+          "y": 429.84375,
+          "ancho": 300,
+          "alto": 44
+        },
+        "clases": null,
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(255, 255, 255)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(123, 129, 142)"
+      },
+      {
+        "selector": ".patient-card",
+        "caja": {
+          "x": 42.875,
+          "y": 520.40625,
+          "ancho": 294,
+          "alto": 357.6875
+        },
+        "clases": "patient-card",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(255, 255, 255)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(123, 129, 142)"
+      },
+      {
+        "selector": ".patient-card .portrait",
+        "caja": {
+          "x": 53.875,
+          "y": 531.40625,
+          "ancho": 272,
+          "alto": 204
+        },
+        "clases": "portrait ",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "16px",
+        "peso": "400",
+        "fondo": "rgb(219, 230, 239)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(39, 43, 53)"
+      },
+      {
+        "selector": ".patient-name-line h2",
+        "caja": {
+          "x": 53.875,
+          "y": 749.125,
+          "ancho": 26,
+          "alto": 26.546875
+        },
+        "clases": null,
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "21.76px",
+        "peso": "700",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(37, 50, 75)",
+        "borde": "rgb(37, 50, 75)"
+      },
+      {
+        "selector": ".patient-card .state",
+        "caja": {
+          "x": 53.875,
+          "y": 789.40625,
+          "ancho": 69,
+          "alto": 25.6875
+        },
+        "clases": "state",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "13.12px",
+        "peso": "600",
+        "fondo": "rgba(0, 0, 0, 0)",
+        "texto": "rgb(39, 43, 53)",
+        "borde": "rgb(39, 43, 53)"
+      },
+      {
+        "selector": ".card-cta .button",
+        "caja": {
+          "x": 105.875,
+          "y": 825.09375,
+          "ancho": 220,
+          "alto": 42
+        },
+        "clases": "button primary",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "14.4px",
+        "peso": "600",
+        "fondo": "rgb(47, 101, 196)",
+        "texto": "rgb(255, 255, 255)",
+        "borde": "rgb(47, 101, 196)"
+      },
+      {
+        "selector": ".app-footer",
+        "caja": {
+          "x": 0,
+          "y": 914.09375,
+          "ancho": 1280,
+          "alto": 63
+        },
+        "clases": "app-footer",
+        "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+        "tamano": "13.6px",
+        "peso": "400",
+        "fondo": "rgb(243, 246, 252)",
+        "texto": "rgb(83, 89, 102)",
+        "borde": "rgb(207, 215, 230) rgb(83, 89, 102) rgb(83, 89, 102)"
+      }
+    ],
+    "sha256": "591cb681ba1c51c82509627ccef60bd450fa2f152ce721fb1d5c27b2beac8ce7"
+  }
+}

@@ -1,0 +1,121 @@
+     Running unittests src/lib.rs (backend/target/debug/build/sircle/c67de04ff6c8ef89/out/sircle-c67de04ff6c8ef89)
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+     Running unittests src/bin/sircle.rs (backend/target/debug/build/sircle/a07f78c9918d8ccb/out/sircle-a07f78c9918d8ccb)
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+     Running tests/acceso.rs (backend/target/debug/build/sircle/8c81387a024316d0/out/acceso-8c81387a024316d0)
+test el_pre_pendiente_muestra_solo_la_actividad_asignada ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+     Running tests/agente_dan_sparks.rs (backend/target/debug/build/sircle/f818e0aac2282d31/out/agente_dan_sparks-f818e0aac2282d31)
+test protege_informe_del_controlador ... ok
+test excluye_contexto_de_p01 ... ok
+test mantiene_identidad_despues_de_lr ... ok
+test alterna_cronologias_y_reabre_cada_intento_propio ... ok
+test rastrear_cronologia_de_dan ... ok
+test recupera_cuatro_horas_de_p03 ... ok
+test rechaza_hecho_ajeno_o_imagen_ausente ... ok
+test separa_relato_e_informe ... ok
+test sugerencia_literal_respeta_p03 ... ok
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.08s
+     Running tests/agente_evaluador.rs (backend/target/debug/build/sircle/ac7301c7430c13a1/out/agente_evaluador-ac7301c7430c13a1)
+test calibra_tres_de_cuatro_con_qwen ... ignored, requiere Ollama local y qwen3.5:4b en CPU
+test calibra_uno_de_cuatro_y_prioriza_ecg_con_qwen ... ignored, requiere Ollama local y qwen3.5:4b en CPU
+test cita_la_entrega_y_su_version ... ok
+test conserva_referencias_para_revision ... ok
+test correlaciona_el_evaluador ... ok
+test bloquea_publicacion_de_la_incidencia_t061 ... ok
+test evalua_solo_entrega_confirmada ... ok
+test excluye_entregas_y_encuestas_ajenas ... ok
+test escenario_sin_examen_no_evaluable ... ok
+test propuesta_no_publica ... ok
+test calcula_los_intentos_retenidos_de_t055_y_t056_con_su_version ... ok
+test distingue_error_omision_y_acuse_sin_evento ... ok
+test reconstruye_desde_una_entrega_y_su_rubrica_congeladas ... ok
+test solo_correlaciona_borrador_con_su_entrega ... ok
+test valida_cinco_partes_de_la_observacion ... ok
+test rastrear_criterio_a_evidencia_y_regresion ... ok
+test publica_revision_elegida_y_reserva_devolucion_hasta_cerrar_post ... ok
+test rectifica_con_motivo_y_reproduce_desglose_de_v1_despues_de_v2 ... ok
+test result: ok. 16 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 1.56s
+     Running tests/agente_lr.rs (backend/target/debug/build/sircle/eb1b4c373b359904/out/agente_lr-eb1b4c373b359904)
+test aisla_dos_preguntas_simultaneas ... ignored, requiere Axum con los cuatro trabajadores y Ollama local
+test cita_desconocimiento_familiar ... ok
+test confirma_solo_hechos_vigentes_pertinentes_y_del_actor_lr ... ok
+test aisla_dos_sugerencias_simultaneas ... ok
+test localiza_origen_de_turno_lr ... ok
+test mantiene_voz_de_lr ... ok
+test distingue_sugerencia_y_texto_editado ... ok
+test distingue_los_limites_del_relato ... ok
+test preguntar_por_presion_no_mide ... ok
+test pide_referente_sin_crear_hallazgo ... ok
+test sugerencia_exacta_con_motor_caido ... ok
+test separa_turno_medicion_y_orden ... ok
+test result: ok. 11 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.26s
+     Running tests/agente_nannu.rs (backend/target/debug/build/sircle/55678c34834bdd6a/out/agente_nannu-55678c34834bdd6a)
+test consulta_al_acompanante ... ok
+test atribuye_el_dolor_y_la_tos ... ok
+test cambiar_hablante_conserva_propietario ... ok
+test confirma_turnos_de_ambas_voces_por_http ... ok
+test localiza_pasaje_del_acompanante ... ok
+test mantiene_paciente_y_acompanante ... ok
+test retoma_turno_del_familiar ... ignored, requiere Axum de ensayo con cuatro trabajadores y Ollama local
+test localiza_fallo_de_atribucion ... ok
+test rechaza_atribucion_incorrecta ... ok
+test separa_sugerencias_por_hablante ... ok
+test recupera_ruta_del_acompanante ... ok
+test result: ok. 10 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.07s
+     Running tests/autorizacion.rs (backend/target/debug/build/sircle/c8d7c0cad129dae8/out/autorizacion-c8d7c0cad129dae8)
+test impide_lectura_reenvio_e_inferencia_ajenos_antes_de_enrutar ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.37s
+     Running tests/contexto.rs (backend/target/debug/build/sircle/baf1fd900767ba0b/out/contexto-baf1fd900767ba0b)
+test reconstruye_memoria_por_estudiante_intento_agente_y_voz ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.45s
+     Running tests/entregas.rs (backend/target/debug/build/sircle/bd371d7629e176ea/out/entregas-bd371d7629e176ea)
+test congela_a_con_v1_revierte_un_fallo_y_descarta_respuesta_tardia ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.29s
+     Running tests/entrevista_http.rs (backend/target/debug/build/sircle/ffc14d4c70b0f0fd/out/entrevista_http-ffc14d4c70b0f0fd)
+test mide_la_pregunta_en_frio_y_caliente ... ignored, requiere Axum y Ollama reales y descarga previa del modelo
+test una_parafrasis_inedita_confirma_y_recupera_un_turno_real_de_lr ... ignored, requiere Axum y Ollama reales y el intento de ensayo de T008
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+     Running tests/entrevista_indisponible.rs (backend/target/debug/build/sircle/26e38c047fd72d86/out/entrevista_indisponible-26e38c047fd72d86)
+test la_clave_fallida_se_recupera_una_vez_y_reenvia_el_mismo_acuse ... ignored, requiere Axum real y Ollama recuperado después de T017
+test una_pregunta_nueva_sin_motor_devuelve_503_y_preserva_el_historial ... ignored, requiere Axum real, el turno T015 y Ollama detenido
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+     Running tests/fuentes.rs (backend/target/debug/build/sircle/a706726fca6f647c/out/fuentes-a706726fca6f647c)
+test aplica_la_migracion_una_vez_y_enlaza_una_version_con_su_fuente ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+     Running tests/hechos_lr.rs (backend/target/debug/build/sircle/9cd4d22ac3c24529/out/hechos_lr-9cd4d22ac3c24529)
+test los_dos_candidatos_pertenecen_al_actor_y_a_la_fase_del_intento ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+     Running tests/intentos.rs (backend/target/debug/build/sircle/d55a4d2eedf69eee/out/intentos-d55a4d2eedf69eee)
+test reabre_y_reenvia_el_mismo_intento_tecnico_con_pre_resuelto ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+     Running tests/mensajes.rs (backend/target/debug/build/sircle/6452c203c6131bc2/out/mensajes-6452c203c6131bc2)
+test correlaciona_el_mensaje_y_descarta_cruces_sin_cambiar_el_historial ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+     Running tests/preparacion.rs (backend/target/debug/build/sircle/c34d5208b1f43699/out/preparacion-c34d5208b1f43699)
+test una_preparacion_invalida_conserva_el_catalogo_anterior ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+     Running tests/recuperacion_e22.rs (backend/target/debug/build/sircle/caf3dccd8563ec0a/out/recuperacion_e22-caf3dccd8563ec0a)
+test descarta_resultado_tardio_de_toma_vencida_y_confirma_una_evaluacion ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.33s
+     Running tests/router.rs (backend/target/debug/build/sircle/ef30e4bc071ac436/out/router-ef30e4bc071ac436)
+test el_router_responde_json_sin_frontend_ni_inferencia ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+     Running tests/rubricas.rs (backend/target/debug/build/sircle/513b86b9932ccd8c/out/rubricas-513b86b9932ccd8c)
+test rechaza_constancia_desvinculada_o_de_docente_ajeno ... ok
+test carga_borrador_y_constancia_de_ensayo_sin_sustituir_version ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.18s
+     Running tests/trabajadores.rs (backend/target/debug/build/sircle/6830ccbd013628ef/out/trabajadores-6830ccbd013628ef)
+test inicia_cuatro_canales_y_cada_uno_responde_con_su_identidad ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+     Running tests/valoracion.rs (backend/target/debug/build/sircle/be8a9a7f0e398bac/out/valoracion-be8a9a7f0e398bac)
+test guarda_solo_una_toma_completa_en_fase_autorizada ... ok
+test reenvios_simultaneos_conservan_un_acuse_y_una_toma_nueva_agrega_otra ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+     Running tests/version_rubrica.rs (backend/target/debug/build/sircle/c90757742e169847/out/version_rubrica-c90757742e169847)
+test reabre_a_con_v1_y_b_con_v2_aunque_cambie_la_rubrica_configurada ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+     Running tests/visibilidad.rs (backend/target/debug/build/sircle/06c80aabe4c3310b/out/visibilidad-06c80aabe4c3310b)
+test proyecta_solo_registros_de_la_fase_y_el_propietario ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

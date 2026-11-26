@@ -1,0 +1,23 @@
+{
+  "cronologia": {
+    "condicion": "Pregunta a Dan cuándo comenzó a faltarle el aire o qué estaba haciendo cuando empezó.",
+    "escenario": "P03",
+    "fase": "inicial",
+    "fuente": "mededportal_3171/scenario1/sp_actor/Pulmonary Embolism Case Description.md",
+    "hablante": "Dan Sparks",
+    "id": "p03-inicio",
+    "linea": 29,
+    "pasaje": "4 hours prior to arrival Setting – began light yard work but had to stop due to shortness of breath.",
+    "respuesta": "Me empezó a faltar el aire hace cuatro horas, mientras trabajaba en el jardín.",
+    "revision_fuente_id": 14,
+    "version": "ensayo-originales-85626c6a63b9e2c0768c6ccb385641c81fbd5ff4d6f79095c37491ced202d174"
+  },
+  "intento": "f4d6d998bfd643b796bb423d0cfa0f22",
+  "medio_ecg": {
+    "disponibilidad": "indisponible",
+    "examen": "ecg",
+    "fuente": "mededportal_3171/scenario1/environment_controller/Pulmonary Embolism EKG.md",
+    "medio": "images/047845787e84209b58bd90e6ef9038a55f0376927d746af425b54bda63c4720d.jpg",
+    "revision_fuente_id": 10
+  }
+}

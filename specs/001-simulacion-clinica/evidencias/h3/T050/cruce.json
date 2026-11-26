@@ -1,0 +1,14 @@
+{
+  "candidato_cruzado": "p02-tos-productiva",
+  "intentado": {
+    "agente": "nannu",
+    "caso": "P02",
+    "fase": "inicial",
+    "hablante": "Nannu",
+    "intento_id": "d65e41a5526222035a43f7fba4711990",
+    "operacion_id": "t050-cruce",
+    "version": "ensayo-originales-26b3b8a91e9d873f81243b197ff413ace6615003c78f49a9a38881accba3db7c"
+  },
+  "motivo": "seleccion_fuera_de_hablante",
+  "turnos": 0
+}

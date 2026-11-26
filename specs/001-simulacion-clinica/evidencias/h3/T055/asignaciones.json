@@ -1,0 +1,75 @@
+{
+  "activar_borrador_codigo": 1,
+  "activar_borrador_error": "Error: Solo se puede habilitar una rúbrica aprobada para una actividad de ensayo preparada",
+  "copia": "/home/joaco/Downloads/2026-2/Practicas/PacienteVirtual_SIRCLE/backend/target/t055-calibracion.sqlite",
+  "intentos": [
+    {
+      "estudiante": "estudiante-lr",
+      "intento": "869373ac01e08ea285fb55ca37582517",
+      "lectura_ajena_http": 403,
+      "peso_entrevista": 20,
+      "reabierto_http": 200,
+      "reenvio_http": 200,
+      "rubrica": {
+        "codigo": "lr-pregrado",
+        "estado": "aprobada",
+        "id": 1,
+        "sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+        "version": "1"
+      }
+    },
+    {
+      "estudiante": "estudiante-t055-b",
+      "intento": "2578f7bca92ebb7149af49df903e93a1",
+      "lectura_ajena_http": 403,
+      "peso_entrevista": 30,
+      "reabierto_http": 200,
+      "reenvio_http": 200,
+      "rubrica": {
+        "codigo": "lr-pregrado",
+        "estado": "aprobada",
+        "id": 2,
+        "sha256": "4acfc458e7007b9bea652f94aec744e6f9fdf4ebc6d9cc7995d8c9c48fc9c1d9",
+        "version": "2"
+      }
+    }
+  ],
+  "copia_actividad_activa": 2,
+  "copia_consulta": [
+    [
+      "869373ac01e08ea285fb55ca37582517",
+      "lr-ensayo",
+      "estudiante-lr",
+      1,
+      "1",
+      "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7"
+    ],
+    [
+      "2578f7bca92ebb7149af49df903e93a1",
+      "lr-ensayo",
+      "estudiante-t055-b",
+      2,
+      "2",
+      "4acfc458e7007b9bea652f94aec744e6f9fdf4ebc6d9cc7995d8c9c48fc9c1d9"
+    ]
+  ],
+  "base_previa_migrada": {
+    "intentos": [
+      [
+        "c1aaccc1b05db9c4cc6cb572ddad196e",
+        "lr-ensayo",
+        "estudiante-lr",
+        null,
+        "rubrica-ensayo-v1",
+        null
+      ]
+    ],
+    "turnos_preservados": [
+      "15d81d67da3ce808602bfaaa840a20fa",
+      "5a78b658b439c08502ac429585974d62",
+      "c7a1704021ba501f5cc18b133bf5c43b",
+      "e5f74d4be5da3118dd2b5e967cec08d1",
+      "f9e8571aa43df4452b69aaaa074106f2"
+    ]
+  }
+}

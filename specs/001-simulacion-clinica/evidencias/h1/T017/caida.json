@@ -1,0 +1,41 @@
+{
+  "tarea": "T017",
+  "fecha": "2026-11-25 21:36 -0300",
+  "revision_base": "fbc3f1ca608d34482d19d72c32bb06dce796a185",
+  "rama": "feature/prototipo",
+  "identidad": "estudiante-lr",
+  "procedimiento": [
+    "docker stop sircle-ollama-h1",
+    "Desde backend/: target/debug/sircle servir --db target/demo.sqlite",
+    "cargo test --locked --test entrevista_indisponible sin_motor -- --ignored --nocapture",
+    "Comparar el histórico recuperado antes y después del POST con una clave nueva."
+  ],
+  "esperado": "HTTP 503 con indicación de reintento y exactamente los mismos turnos y revisión.",
+  "observado": {
+    "clave": "t017-recuperacion-qwen",
+    "http": 503,
+    "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+    "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+    "respuesta": {
+      "mensaje": "Entrevista temporalmente indisponible. Reintenta cuando se recupere el modelo local."
+    },
+    "revision": 2,
+    "turnos_antes": [
+      "15d81d67da3ce808602bfaaa840a20fa"
+    ],
+    "turnos_despues": [
+      "15d81d67da3ce808602bfaaa840a20fa"
+    ],
+    "turnos_nuevos": 0
+  },
+  "motor": {
+    "estado_contenedor": "exited",
+    "estado_api": "conexión rechazada",
+    "modelo": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "residente": false,
+    "equipo": "Desarrollo, i3-7020U"
+  },
+  "registro_restringido": "Ollama · ab2c1c39721cae10a83bccee324ac020 · error sending request for url (http://127.0.0.1:11434/api/tags): client error (Connect): tcp connect error: Connection refused (os error 111)",
+  "respaldo": "backend/tests/entrevista_indisponible.rs y backend/target/t017-axum.log"
+}

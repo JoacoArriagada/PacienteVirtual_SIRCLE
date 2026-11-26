@@ -2,6 +2,7 @@
 datos/medsp1000/** -text
 datos/adaptaciones/lr/entrevista-lr.json -text
 docs/referencias/html-semana5/** -text
+frontend/referencia/semana5/** -text
 recursos-audiovisuales/** -text
 docs/requisitos/diagramas/** -text
 docs/referencias/interfaz/recursos/** -text

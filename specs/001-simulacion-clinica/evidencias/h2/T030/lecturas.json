@@ -1,0 +1,170 @@
+{
+  "navegador": "156.0.8078.4",
+  "intento": "4423950488513757fe5fb18359e3702a",
+  "lecturas": {
+    "temperatura": {
+      "comparacion": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "sha256": "c19d9756a6861b96864556773a33cc7b01f129a75b3d8199065d215210d9d4d8"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "sha256": "c19d9756a6861b96864556773a33cc7b01f129a75b3d8199065d215210d9d4d8"
+        }
+      },
+      "lectura": {
+        "medicion_id": "a1d54729d0bd20dd46b1c6cca86543d2",
+        "intento_id": "4423950488513757fe5fb18359e3702a",
+        "instrumento": "temperatura",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "lectura": 36.6
+        },
+        "unidad": "°C",
+        "momento": "2026-11-26T02:32:08.369Z",
+        "en_ficha": false,
+        "revision": 2,
+        "origen": "Termómetro frontal simulado"
+      },
+      "acuse": {
+        "medicion_id": "a1d54729d0bd20dd46b1c6cca86543d2",
+        "intento_id": "4423950488513757fe5fb18359e3702a",
+        "instrumento": "temperatura",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "lectura": 36.6
+        },
+        "unidad": "°C",
+        "momento": "2026-11-26T02:32:08.369Z",
+        "en_ficha": true,
+        "revision": 3,
+        "origen": "Termómetro frontal simulado"
+      },
+      "historico": [
+        {
+          "medicion_id": "a1d54729d0bd20dd46b1c6cca86543d2",
+          "intento_id": "4423950488513757fe5fb18359e3702a",
+          "instrumento": "temperatura",
+          "accion": "toma_completa",
+          "fase": "inicial",
+          "valor": {
+            "lectura": 36.6
+          },
+          "unidad": "°C",
+          "momento": "2026-11-26T02:32:08.369Z",
+          "en_ficha": true,
+          "revision": 3,
+          "origen": "Termómetro frontal simulado"
+        }
+      ]
+    },
+    "saturacion": {
+      "comparacion": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "sha256": "182fa9ceabb3f2a7753475c9498fc907e8ad4861da74b222d2b79f52bf508459"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "sha256": "182fa9ceabb3f2a7753475c9498fc907e8ad4861da74b222d2b79f52bf508459"
+        }
+      },
+      "lectura": {
+        "medicion_id": "470ed31274d5f31089c3d803884739dc",
+        "intento_id": "4423950488513757fe5fb18359e3702a",
+        "instrumento": "saturacion",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "lectura": 84
+        },
+        "unidad": "%",
+        "momento": "2026-11-26T02:32:09.681Z",
+        "en_ficha": false,
+        "revision": 4,
+        "origen": "Pulsioxímetro simulado"
+      },
+      "acuse": {
+        "medicion_id": "470ed31274d5f31089c3d803884739dc",
+        "intento_id": "4423950488513757fe5fb18359e3702a",
+        "instrumento": "saturacion",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "lectura": 84
+        },
+        "unidad": "%",
+        "momento": "2026-11-26T02:32:09.681Z",
+        "en_ficha": true,
+        "revision": 5,
+        "origen": "Pulsioxímetro simulado"
+      },
+      "historico": [
+        {
+          "medicion_id": "470ed31274d5f31089c3d803884739dc",
+          "intento_id": "4423950488513757fe5fb18359e3702a",
+          "instrumento": "saturacion",
+          "accion": "toma_completa",
+          "fase": "inicial",
+          "valor": {
+            "lectura": 84
+          },
+          "unidad": "%",
+          "momento": "2026-11-26T02:32:09.681Z",
+          "en_ficha": true,
+          "revision": 5,
+          "origen": "Pulsioxímetro simulado"
+        }
+      ]
+    }
+  },
+  "ficha": {
+    "datos": [
+      {
+        "etiqueta": "Presión inicial",
+        "valor": "148/85 mmHg"
+      }
+    ],
+    "fase": "inicial",
+    "fuente": "Triaje de ensayo de LR",
+    "hallazgos": [
+      {
+        "accion": "toma_completa",
+        "en_ficha": true,
+        "fase": "inicial",
+        "instrumento": "temperatura",
+        "intento_id": "4423950488513757fe5fb18359e3702a",
+        "medicion_id": "a1d54729d0bd20dd46b1c6cca86543d2",
+        "momento": "2026-11-26T02:32:08.369Z",
+        "origen": "Termómetro frontal simulado",
+        "revision": 3,
+        "unidad": "°C",
+        "valor": {
+          "lectura": 36.6
+        }
+      },
+      {
+        "accion": "toma_completa",
+        "en_ficha": true,
+        "fase": "inicial",
+        "instrumento": "saturacion",
+        "intento_id": "4423950488513757fe5fb18359e3702a",
+        "medicion_id": "470ed31274d5f31089c3d803884739dc",
+        "momento": "2026-11-26T02:32:09.681Z",
+        "origen": "Pulsioxímetro simulado",
+        "revision": 5,
+        "unidad": "%",
+        "valor": {
+          "lectura": 84
+        }
+      }
+    ]
+  }
+}

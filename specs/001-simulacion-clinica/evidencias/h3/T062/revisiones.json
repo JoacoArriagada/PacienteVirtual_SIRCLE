@@ -1,0 +1,569 @@
+{
+  "serie_nueva": {
+    "a": "457bb5e90dabc2109b28460ee22d09e0",
+    "b": "ac96ed354b4c6503f0643a395518630f",
+    "copia": "/home/joaco/Downloads/2026-2/Practicas/PacienteVirtual_SIRCLE/backend/target/t062-revisiones.sqlite",
+    "entrega": {
+      "confirmada_en": "2026-11-26T12:29:46.819Z",
+      "entrega_id": "4d00b1fccf5c04c4a69a316d92de1ace",
+      "estado_evaluacion": "pendiente",
+      "intento_id": "457bb5e90dabc2109b28460ee22d09e0",
+      "post": "pendiente",
+      "revision": 2,
+      "rubrica_id": 1,
+      "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+      "version_rubrica": "1"
+    },
+    "evaluacion_id": "86bb7f0c9bd8dfd6e1c97a6c5b6592c6",
+    "inicial_antes_de_v2": {
+      "anterior": null,
+      "autor_id": null,
+      "diferencias": [],
+      "momento": "2026-11-26T12:29:46.912Z",
+      "motivo": "Borrador del evaluador",
+      "puntaje": {
+        "criterios": [
+          {
+            "credito": 0,
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "valoracion",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "evidencias",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          }
+        ],
+        "peso_aplicable": 100,
+        "total_centesimas": 4000
+      },
+      "resultado": {
+        "entrega_id": "4d00b1fccf5c04c4a69a316d92de1ace",
+        "observaciones": [
+          {
+            "actuacion": "No se registraron preguntas.",
+            "criterio_id": "entrevista",
+            "evidencias": [],
+            "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+            "explicacion": "Faltó precisar el inicio de la falta de aire.",
+            "juicio": "omision",
+            "mejora": "Pregunta cuándo empezó y si se agravó."
+          },
+          {
+            "actuacion": "Midió la presión.",
+            "criterio_id": "valoracion",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+            "explicacion": "La presión tiene valor y unidad instrumentales.",
+            "juicio": "acierto",
+            "mejora": "Añade frecuencia respiratoria en la próxima valoración."
+          },
+          {
+            "actuacion": "No confirmó el ECG en esta oportunidad.",
+            "criterio_id": "decisiones",
+            "evidencias": [],
+            "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+            "explicacion": "El registro íntegro carece de orden confirmada.",
+            "juicio": "omision",
+            "mejora": "Confirma la orden y consulta su informe cuando se habilite."
+          },
+          {
+            "actuacion": "Vinculó el registro de presión.",
+            "criterio_id": "evidencias",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+            "explicacion": "La cita de la medición es recuperable.",
+            "juicio": "acierto",
+            "mejora": "Distingue además los datos de una declaración del paciente."
+          },
+          {
+            "actuacion": "Guardó una hipótesis parcial.",
+            "criterio_id": "hipotesis",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten.",
+            "explicacion": "Falta explicar el vínculo y contrastar una alternativa.",
+            "juicio": "omision",
+            "mejora": "Compara la presión registrada con una hipótesis alternativa."
+          }
+        ],
+        "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7"
+      },
+      "revision": 1
+    },
+    "obsoleta_http": 409,
+    "rectificacion": {
+      "anterior": 1,
+      "autor_id": "docente-demo",
+      "diferencias": [
+        {
+          "antes": {
+            "actuacion": "Midió la presión.",
+            "criterio_id": "valoracion",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+            "explicacion": "La presión tiene valor y unidad instrumentales.",
+            "juicio": "acierto",
+            "mejora": "Añade frecuencia respiratoria en la próxima valoración."
+          },
+          "credito_anterior": 100,
+          "credito_nuevo": 75,
+          "criterio_id": "valoracion",
+          "despues": {
+            "actuacion": "Midió la presión arterial.",
+            "criterio_id": "valoracion",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+            "explicacion": "La presión tiene un registro válido. Faltó completar la valoración inicial.",
+            "juicio": "acierto",
+            "mejora": "Registra también la frecuencia respiratoria."
+          }
+        }
+      ],
+      "momento": "2026-11-26T12:29:47.068Z",
+      "motivo": "La toma consta, pero la valoración inicial fue parcial.",
+      "puntaje": {
+        "criterios": [
+          {
+            "credito": 0,
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 75,
+            "criterio_id": "valoracion",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 1500
+          },
+          {
+            "credito": 0,
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "evidencias",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          }
+        ],
+        "peso_aplicable": 100,
+        "total_centesimas": 3500
+      },
+      "resultado": {
+        "entrega_id": "4d00b1fccf5c04c4a69a316d92de1ace",
+        "observaciones": [
+          {
+            "actuacion": "No se registraron preguntas.",
+            "criterio_id": "entrevista",
+            "evidencias": [],
+            "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+            "explicacion": "Faltó precisar el inicio de la falta de aire.",
+            "juicio": "omision",
+            "mejora": "Pregunta cuándo empezó y si se agravó."
+          },
+          {
+            "actuacion": "Midió la presión arterial.",
+            "criterio_id": "valoracion",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+            "explicacion": "La presión tiene un registro válido. Faltó completar la valoración inicial.",
+            "juicio": "acierto",
+            "mejora": "Registra también la frecuencia respiratoria."
+          },
+          {
+            "actuacion": "No confirmó el ECG en esta oportunidad.",
+            "criterio_id": "decisiones",
+            "evidencias": [],
+            "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+            "explicacion": "El registro íntegro carece de orden confirmada.",
+            "juicio": "omision",
+            "mejora": "Confirma la orden y consulta su informe cuando se habilite."
+          },
+          {
+            "actuacion": "Vinculó el registro de presión.",
+            "criterio_id": "evidencias",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+            "explicacion": "La cita de la medición es recuperable.",
+            "juicio": "acierto",
+            "mejora": "Distingue además los datos de una declaración del paciente."
+          },
+          {
+            "actuacion": "Guardó una hipótesis parcial.",
+            "criterio_id": "hipotesis",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten.",
+            "explicacion": "Falta explicar el vínculo y contrastar una alternativa.",
+            "juicio": "omision",
+            "mejora": "Compara la presión registrada con una hipótesis alternativa."
+          }
+        ],
+        "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7"
+      },
+      "revision": 2
+    },
+    "reenvio_http": 200,
+    "reproducida_despues_de_v2": {
+      "anterior": null,
+      "autor_id": null,
+      "diferencias": [],
+      "momento": "2026-11-26T12:29:46.912Z",
+      "motivo": "Borrador del evaluador",
+      "puntaje": {
+        "criterios": [
+          {
+            "credito": 0,
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "valoracion",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "evidencias",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          }
+        ],
+        "peso_aplicable": 100,
+        "total_centesimas": 4000
+      },
+      "resultado": {
+        "entrega_id": "4d00b1fccf5c04c4a69a316d92de1ace",
+        "observaciones": [
+          {
+            "actuacion": "No se registraron preguntas.",
+            "criterio_id": "entrevista",
+            "evidencias": [],
+            "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+            "explicacion": "Faltó precisar el inicio de la falta de aire.",
+            "juicio": "omision",
+            "mejora": "Pregunta cuándo empezó y si se agravó."
+          },
+          {
+            "actuacion": "Midió la presión.",
+            "criterio_id": "valoracion",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+            "explicacion": "La presión tiene valor y unidad instrumentales.",
+            "juicio": "acierto",
+            "mejora": "Añade frecuencia respiratoria en la próxima valoración."
+          },
+          {
+            "actuacion": "No confirmó el ECG en esta oportunidad.",
+            "criterio_id": "decisiones",
+            "evidencias": [],
+            "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+            "explicacion": "El registro íntegro carece de orden confirmada.",
+            "juicio": "omision",
+            "mejora": "Confirma la orden y consulta su informe cuando se habilite."
+          },
+          {
+            "actuacion": "Vinculó el registro de presión.",
+            "criterio_id": "evidencias",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+            "explicacion": "La cita de la medición es recuperable.",
+            "juicio": "acierto",
+            "mejora": "Distingue además los datos de una declaración del paciente."
+          },
+          {
+            "actuacion": "Guardó una hipótesis parcial.",
+            "criterio_id": "hipotesis",
+            "evidencias": [
+              "fe5eba4d8feefa2d28915fc14fc1ed67"
+            ],
+            "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten.",
+            "explicacion": "Falta explicar el vínculo y contrastar una alternativa.",
+            "juicio": "omision",
+            "mejora": "Compara la presión registrada con una hipótesis alternativa."
+          }
+        ],
+        "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7"
+      },
+      "revision": 1
+    },
+    "rubrica_v1": {
+      "codigo": "lr-pregrado",
+      "estado": "aprobada",
+      "id": 1,
+      "sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+      "version": "1"
+    },
+    "rubrica_v2": {
+      "codigo": "lr-pregrado",
+      "estado": "aprobada",
+      "id": 2,
+      "sha256": "4acfc458e7007b9bea652f94aec744e6f9fdf4ebc6d9cc7995d8c9c48fc9c1d9",
+      "version": "2"
+    },
+    "revisiones_en_sqlite": [
+      {
+        "revision": 1,
+        "anterior": null,
+        "autor": null,
+        "motivo": "Borrador del evaluador",
+        "puntaje": {
+          "peso_aplicable": 100,
+          "total_centesimas": 4000,
+          "criterios": [
+            {
+              "criterio_id": "entrevista",
+              "juicio": "omision",
+              "peso": 20,
+              "credito": 0,
+              "puntos_ponderados": 0
+            },
+            {
+              "criterio_id": "valoracion",
+              "juicio": "acierto",
+              "peso": 20,
+              "credito": 100,
+              "puntos_ponderados": 2000
+            },
+            {
+              "criterio_id": "decisiones",
+              "juicio": "omision",
+              "peso": 20,
+              "credito": 0,
+              "puntos_ponderados": 0
+            },
+            {
+              "criterio_id": "evidencias",
+              "juicio": "acierto",
+              "peso": 20,
+              "credito": 100,
+              "puntos_ponderados": 2000
+            },
+            {
+              "criterio_id": "hipotesis",
+              "juicio": "omision",
+              "peso": 20,
+              "credito": 0,
+              "puntos_ponderados": 0
+            }
+          ]
+        }
+      },
+      {
+        "revision": 2,
+        "anterior": 1,
+        "autor": "docente-demo",
+        "motivo": "La toma consta, pero la valoración inicial fue parcial.",
+        "puntaje": {
+          "peso_aplicable": 100,
+          "total_centesimas": 3500,
+          "criterios": [
+            {
+              "criterio_id": "entrevista",
+              "juicio": "omision",
+              "peso": 20,
+              "credito": 0,
+              "puntos_ponderados": 0
+            },
+            {
+              "criterio_id": "valoracion",
+              "juicio": "acierto",
+              "peso": 20,
+              "credito": 75,
+              "puntos_ponderados": 1500
+            },
+            {
+              "criterio_id": "decisiones",
+              "juicio": "omision",
+              "peso": 20,
+              "credito": 0,
+              "puntos_ponderados": 0
+            },
+            {
+              "criterio_id": "evidencias",
+              "juicio": "acierto",
+              "peso": 20,
+              "credito": 100,
+              "puntos_ponderados": 2000
+            },
+            {
+              "criterio_id": "hipotesis",
+              "juicio": "omision",
+              "peso": 20,
+              "credito": 0,
+              "puntos_ponderados": 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "intentos_t055_t056": [
+    {
+      "id": "869373ac01e08ea285fb55ca37582517",
+      "puntaje": {
+        "criterios": [
+          {
+            "credito": 0,
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "valoracion",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "evidencias",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          }
+        ],
+        "peso_aplicable": 100,
+        "total_centesimas": 4000
+      },
+      "version": "1"
+    },
+    {
+      "id": "2578f7bca92ebb7149af49df903e93a1",
+      "puntaje": {
+        "criterios": [
+          {
+            "credito": 0,
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 30,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "valoracion",
+            "juicio": "acierto",
+            "peso": 10,
+            "puntos_ponderados": 1000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "evidencias",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          }
+        ],
+        "peso_aplicable": 100,
+        "total_centesimas": 3000
+      },
+      "version": "2"
+    }
+  ]
+}

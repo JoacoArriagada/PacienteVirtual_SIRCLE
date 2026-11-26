@@ -1,0 +1,29 @@
+T005 · 2026-11-25 20:47 -0300 · feature/prototipo · revisión base fbc3f1ca608d34482d19d72c32bb06dce796a185
+Esperado: 14 originales y tres versiones, cotejo por archivo y base disponible
+en el modo servir. Las dos fuentes EKG conservan identidades propias.
+
+Procedimiento desde backend/
+  cargo run --locked --bin sircle -- preparar --db target/demo.sqlite --fuentes ../datos > inventario.tsv
+  sqlite3 target/demo.sqlite y ejecutar la consulta de abajo.
+  Por cada ruta, comparar el BLOB extraído con los bytes de ../datos/medsp1000
+  y cotejar con SHA-256. El cotejo de esta ejecución usó sqlite3 y hashlib de Python.
+  target/debug/sircle servir --db target/demo.sqlite
+  curl -i http://127.0.0.1:8081/api/estado
+
+Observado
+  preparar: salida 0. P01=4, P02=4, P03=6.
+  14 de 14 pares de ruta, rol, bytes, SHA-256, ID y versión coinciden.
+  Las tres versiones originales figuran como pendientes.
+  EKG de P03: IDs 10 y 12, roles y rutas distintos, bytes y SHA-256 iguales.
+  SIRCLE API en http://127.0.0.1:8081
+  HTTP 200 {"base":{"disponible":true},"modelo":{"disponible":false},"servicio":"sircle"}
+  Respaldo: inventario.tsv y target/demo.sqlite (base local ignorada por Git).
+
+Consulta
+SELECT f.escenario_id, f.id, r.id, v.id, v.version, f.rol, f.ruta, r.sha256, r.contenido, v.estado
+FROM versiones_fuentes AS vf
+JOIN fuentes AS f ON f.id = vf.fuente_id
+JOIN revisiones_fuente AS r ON r.id = vf.revision_fuente_id
+JOIN versiones_clinicas AS v ON v.id = vf.version_clinica_id
+WHERE v.version LIKE 'originales-%'
+ORDER BY f.escenario_id, f.ruta;

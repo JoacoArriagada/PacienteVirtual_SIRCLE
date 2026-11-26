@@ -1,0 +1,14 @@
+[
+  {
+    "id": "lr-inicio",
+    "condicion": "Pregunta sobre cuándo empezó la falta de aire o cuánto tiempo lleva.",
+    "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+    "pasaje": "Breathing problems started 2 days ago initially with runny nose and cough. Now feeling more short of breath. Has been using her albuterol inhaler every hour without relief."
+  },
+  {
+    "id": "lr-antecedentes-familiares",
+    "condicion": "Pregunta por enfermedades o antecedentes médicos de su familia biológica.",
+    "respuesta": "No conozco los antecedentes de mi familia biológica porque fui adoptada.",
+    "pasaje": "Family Hx: unknown, patient was adopted."
+  }
+]

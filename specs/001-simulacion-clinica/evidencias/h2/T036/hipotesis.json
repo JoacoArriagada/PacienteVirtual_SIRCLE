@@ -1,0 +1,154 @@
+{
+  "navegador": "156.0.8078.4",
+  "intento": "808b751a54baa3787c853414475eab8e",
+  "intentoAjeno": "991c41b2c4a9367498b92f1a9059e6ca",
+  "parcial": {
+    "http": 200,
+    "cuerpo": {
+      "revision": 5,
+      "hipotesis": [
+        {
+          "rol": "principal",
+          "titulo": "Hipótesis principal de ensayo",
+          "explicacion": "",
+          "evidencias": []
+        }
+      ]
+    },
+    "clave": "6b9fd8bb-a9a3-402a-a9fa-f76e21d8ce76",
+    "entrada": {
+      "revision_esperada": 4,
+      "hipotesis": [
+        {
+          "rol": "principal",
+          "titulo": "Hipótesis principal de ensayo",
+          "explicacion": "",
+          "evidencias": []
+        }
+      ]
+    }
+  },
+  "confirmada": {
+    "http": 200,
+    "cuerpo": {
+      "revision": 6,
+      "hipotesis": [
+        {
+          "rol": "principal",
+          "titulo": "Hipótesis principal de ensayo",
+          "explicacion": "Relaciono el motivo de consulta con el relato y registro la presión medida.",
+          "evidencias": [
+            {
+              "tipo": "turno",
+              "origen_id": "26fecf76d509638210c382f60a216c5b"
+            },
+            {
+              "tipo": "medicion",
+              "origen_id": "eae159cf9a97c960588f89508576e462"
+            }
+          ]
+        },
+        {
+          "rol": "alternativa",
+          "titulo": "Alternativa de ensayo",
+          "explicacion": "Contrasto la alternativa con el resultado descrito en el ECG inicial.",
+          "evidencias": [
+            {
+              "tipo": "informe",
+              "origen_id": "03c803161f0c0ff7233cb9d41b113b72"
+            }
+          ]
+        }
+      ]
+    },
+    "clave": "ce23e599-2adb-4238-b2ba-d8df04c682a1",
+    "entrada": {
+      "revision_esperada": 5,
+      "hipotesis": [
+        {
+          "rol": "principal",
+          "titulo": "Hipótesis principal de ensayo",
+          "explicacion": "Relaciono el motivo de consulta con el relato y registro la presión medida.",
+          "evidencias": [
+            {
+              "tipo": "turno",
+              "origen_id": "26fecf76d509638210c382f60a216c5b"
+            },
+            {
+              "tipo": "medicion",
+              "origen_id": "eae159cf9a97c960588f89508576e462"
+            }
+          ]
+        },
+        {
+          "rol": "alternativa",
+          "titulo": "Alternativa de ensayo",
+          "explicacion": "Contrasto la alternativa con el resultado descrito en el ECG inicial.",
+          "evidencias": [
+            {
+              "tipo": "informe",
+              "origen_id": "03c803161f0c0ff7233cb9d41b113b72"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ajena": {
+    "http": 422,
+    "cuerpo": {
+      "mensaje": "Selecciona evidencias disponibles y distintas de este intento."
+    }
+  },
+  "obsoleta": {
+    "http": 409,
+    "cuerpo": {
+      "mensaje": "El intento cambió. Revisa la última versión guardada."
+    }
+  },
+  "reenvio": {
+    "http": 200,
+    "cuerpo": {
+      "revision": 5,
+      "hipotesis": [
+        {
+          "rol": "principal",
+          "titulo": "Hipótesis principal de ensayo",
+          "explicacion": "",
+          "evidencias": []
+        }
+      ]
+    }
+  },
+  "ultima": {
+    "revision": 6,
+    "hipotesis": [
+      {
+        "rol": "principal",
+        "titulo": "Hipótesis principal de ensayo",
+        "explicacion": "Relaciono el motivo de consulta con el relato y registro la presión medida.",
+        "evidencias": [
+          {
+            "tipo": "turno",
+            "origen_id": "26fecf76d509638210c382f60a216c5b"
+          },
+          {
+            "tipo": "medicion",
+            "origen_id": "eae159cf9a97c960588f89508576e462"
+          }
+        ]
+      },
+      {
+        "rol": "alternativa",
+        "titulo": "Alternativa de ensayo",
+        "explicacion": "Contrasto la alternativa con el resultado descrito en el ECG inicial.",
+        "evidencias": [
+          {
+            "tipo": "informe",
+            "origen_id": "03c803161f0c0ff7233cb9d41b113b72"
+          }
+        ]
+      }
+    ]
+  }
+}

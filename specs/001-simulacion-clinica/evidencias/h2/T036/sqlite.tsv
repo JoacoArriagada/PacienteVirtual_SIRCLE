@@ -1,0 +1,5 @@
+revision	rol	titulo	explicacion	tipo	origen_id
+5	principal	Hipótesis principal de ensayo			
+6	principal	Hipótesis principal de ensayo	Relaciono el motivo de consulta con el relato y registro la presión medida.	turno	26fecf76d509638210c382f60a216c5b
+6	principal	Hipótesis principal de ensayo	Relaciono el motivo de consulta con el relato y registro la presión medida.	medicion	eae159cf9a97c960588f89508576e462
+6	alternativa	Alternativa de ensayo	Contrasto la alternativa con el resultado descrito en el ECG inicial.	informe	03c803161f0c0ff7233cb9d41b113b72

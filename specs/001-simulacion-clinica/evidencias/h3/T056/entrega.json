@@ -1,0 +1,104 @@
+{
+  "acuse": {
+    "confirmada_en": "2026-11-26T11:01:07.339Z",
+    "entrega_id": "2f23037bb84d8385343ad4ba6dcc577c",
+    "estado_evaluacion": "pendiente",
+    "intento_id": "869373ac01e08ea285fb55ca37582517",
+    "post": "pendiente",
+    "revision": 4,
+    "rubrica_id": 1,
+    "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+    "version_rubrica": "1"
+  },
+  "copia": "/home/joaco/Downloads/2026-2/Practicas/PacienteVirtual_SIRCLE/backend/target/t056-calibracion.sqlite",
+  "fallo_http": 500,
+  "final": {
+    "acuses": 1,
+    "entregas": 1,
+    "estado": "entregado",
+    "revision": 5,
+    "trabajos": 1,
+    "turnos": 0
+  },
+  "informe_tardio_http": 409,
+  "instantanea": {
+    "borrador": {
+      "hipotesis": [
+        {
+          "evidencias": [
+            {
+              "origen_id": "8e87937fd99049b98099a97ac78e9f8e",
+              "tipo": "medicion"
+            }
+          ],
+          "explicacion": "",
+          "rol": "principal",
+          "titulo": "Hipótesis parcial de ensayo"
+        }
+      ],
+      "revision": 4
+    },
+    "evidencias": [
+      {
+        "autor": "estudiante-lr",
+        "categoria": "medicion",
+        "instrumento": "presion",
+        "intento_id": "869373ac01e08ea285fb55ca37582517",
+        "momento": "2026-11-26T11:01:07.302Z",
+        "origen": "Valoración instrumental",
+        "origen_id": "8e87937fd99049b98099a97ac78e9f8e",
+        "tipo": "medicion",
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      }
+    ],
+    "exploraciones": [],
+    "ordenes": [
+      {
+        "examen": "ecg-inicial",
+        "fase": "inicial",
+        "intento_id": "869373ac01e08ea285fb55ca37582517",
+        "momento": "2026-11-26T11:01:07.307Z",
+        "orden_id": "b1b87322cc562b46d2241487b801516b",
+        "revision": 3
+      }
+    ],
+    "turnos": []
+  },
+  "reenvio_clave_nueva_http": 200,
+  "respuesta_tardia_http": 409,
+  "revertido": {
+    "acuses": 0,
+    "entregas": 0,
+    "estado": "atencion",
+    "revision": 4,
+    "trabajos": 0,
+    "turnos": 0
+  },
+  "rubrica_activa": "2",
+  "trabajo": "pendiente",
+  "base_retenida": [
+    [
+      "estudiante-lr",
+      "869373ac01e08ea285fb55ca37582517",
+      "1",
+      "entregado"
+    ],
+    [
+      "estudiante-t055-b",
+      "2578f7bca92ebb7149af49df903e93a1",
+      "2",
+      "pre_pendiente"
+    ]
+  ],
+  "entregas_y_trabajos": [
+    [
+      "2f23037bb84d8385343ad4ba6dcc577c",
+      "869373ac01e08ea285fb55ca37582517",
+      "pendiente"
+    ]
+  ]
+}

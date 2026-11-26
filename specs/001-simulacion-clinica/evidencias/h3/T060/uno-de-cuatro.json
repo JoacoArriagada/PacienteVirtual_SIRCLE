@@ -1,0 +1,1036 @@
+{
+  "acuse": {
+    "confirmada_en": "2026-11-26T12:10:58.112Z",
+    "entrega_id": "024ec1c7fc81cc2649d4a357f687f8f6",
+    "estado_evaluacion": "pendiente",
+    "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+    "post": "pendiente",
+    "revision": 6,
+    "rubrica_id": 1,
+    "rubrica_sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+    "version_rubrica": "1"
+  },
+  "cotejo": [
+    {
+      "cita_coincide": true,
+      "clave": {
+        "contenido": "Inicio de la disnea hace dos días y empeoramiento hoy",
+        "criterio": "hipotesis-1",
+        "juicio": "acierto",
+        "registro": "inicio"
+      },
+      "juicio_coincide": true,
+      "observacion": {
+        "actuacion": "Fundó hipótesis con turno.",
+        "criterio_id": "hipotesis-1",
+        "evidencias": [
+          "e34538fea0afb57a68c2d8725db0e867"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "explicacion": "Turno apoya inicio hace dos días.",
+        "juicio": "acierto",
+        "mejora": "Usar turno para cronología clínica."
+      },
+      "registro_esperado": "e34538fea0afb57a68c2d8725db0e867"
+    },
+    {
+      "cita_coincide": true,
+      "clave": {
+        "contenido": "El informe registra taquicardia sinusal y contradice la afirmación de fibrilación auricular",
+        "criterio": "hipotesis-2",
+        "juicio": "error",
+        "registro": "ecg"
+      },
+      "juicio_coincide": true,
+      "observacion": {
+        "actuacion": "Contradijo informe sobre fibrilación.",
+        "criterio_id": "hipotesis-2",
+        "evidencias": [
+          "5efffb55d1581754f6881dc1ad0892ff"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "explicacion": "Informe muestra taquicardia sinusal. Afirmación de la hipótesis 2: «El ECG inicial demuestra fibrilación auricular». Informe citado: «taquicardia sinusal».",
+        "juicio": "error",
+        "mejora": "Verificar texto informe ECG inicial."
+      },
+      "registro_esperado": "5efffb55d1581754f6881dc1ad0892ff"
+    },
+    {
+      "cita_coincide": true,
+      "clave": {
+        "contenido": "La tercera hipótesis carece de fundamento. Buscar qué hallazgo apoyaría o debilitaría hipertensión sostenida",
+        "criterio": "hipotesis-3",
+        "juicio": "omision",
+        "registro": "presion"
+      },
+      "juicio_coincide": true,
+      "observacion": {
+        "actuacion": "Propuso hipótesis sin evidencia.",
+        "criterio_id": "hipotesis-3",
+        "evidencias": [
+          "71fb9cbe2b26e4a38ecd10cc82f5400e"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "explicacion": "Falta vínculo con hipertensión sostenida.",
+        "juicio": "omision",
+        "mejora": "Citar registro para fundamentar afirmación. Revisa el registro citado y anota si documenta el dato que falta. Indica qué hallazgo apoyaría o debilitaría esta hipótesis."
+      },
+      "registro_esperado": "71fb9cbe2b26e4a38ecd10cc82f5400e"
+    },
+    {
+      "cita_coincide": true,
+      "clave": {
+        "contenido": "El relato de la disnea no es una medición de frecuencia respiratoria y no informa el valor 30",
+        "criterio": "hipotesis-4",
+        "juicio": "error",
+        "registro": "inicio"
+      },
+      "juicio_coincide": true,
+      "observacion": {
+        "actuacion": "Interpretó frase como medición.",
+        "criterio_id": "hipotesis-4",
+        "evidencias": [
+          "e34538fea0afb57a68c2d8725db0e867"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "explicacion": "Frase es opinión no medición.",
+        "juicio": "error",
+        "mejora": "Distinguir declaración de datos medidos. Distingue en la ficha lo referido en el turno de lo medido con un instrumento."
+      },
+      "registro_esperado": "e34538fea0afb57a68c2d8725db0e867"
+    }
+  ],
+  "entradas_clinicas": {
+    "informe": {
+      "informe_id": "5efffb55d1581754f6881dc1ad0892ff",
+      "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+      "orden_id": "fc1243eaa549621934316a0e6f01c71d",
+      "origen": "Electrocardiograma inicial",
+      "resultado": "taquicardia sinusal"
+    },
+    "medicion": {
+      "accion": "toma_completa",
+      "en_ficha": false,
+      "fase": "inicial",
+      "instrumento": "presion",
+      "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+      "medicion_id": "71fb9cbe2b26e4a38ecd10cc82f5400e",
+      "momento": "2026-11-26T12:10:58.085Z",
+      "revision": 3,
+      "unidad": "mmHg",
+      "valor": {
+        "diastolica": 85,
+        "sistolica": 148
+      }
+    },
+    "turno": {
+      "agente": "lr",
+      "hablante": "LR",
+      "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+      "operacion_id": "0832a6fc6256de9c18e97da78335e9cd",
+      "orden": 1,
+      "pregunta": "¿Desde cuándo comenzó?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "revision": 2,
+      "tipo_respuesta": "hecho",
+      "turno_id": "e34538fea0afb57a68c2d8725db0e867"
+    }
+  },
+  "ollama_ps": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen35"
+      ],
+      "family": "qwen35",
+      "format": "gguf",
+      "parameter_size": "4.2B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "expires_at": "2026-11-26T12:26:33.440428128Z",
+    "model": "qwen3.5:4b",
+    "name": "qwen3.5:4b",
+    "runner": "llamacpp",
+    "size": 3146734631,
+    "size_vram": 0
+  },
+  "resultado": {
+    "borrador": {
+      "entrega_id": "024ec1c7fc81cc2649d4a357f687f8f6",
+      "observaciones": [
+        {
+          "actuacion": "Precisó cronología falta aire.",
+          "criterio_id": "entrevista",
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867"
+          ],
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "explicacion": "LR refiere inicio hace dos días.",
+          "juicio": "acierto",
+          "mejora": "Preguntar inicio exacto de síntomas."
+        },
+        {
+          "actuacion": "Valoró inicial sin distinguir tipos.",
+          "criterio_id": "valoracion",
+          "evidencias": [
+            "71fb9cbe2b26e4a38ecd10cc82f5400e"
+          ],
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "explicacion": "Presión sistólica no es hallazgo.",
+          "juicio": "error",
+          "mejora": "Diferenciar dato medido de hallazgo."
+        },
+        {
+          "actuacion": "Confirmó orden ECG inicial.",
+          "criterio_id": "decisiones",
+          "evidencias": [
+            "fc1243eaa549621934316a0e6f01c71d"
+          ],
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "explicacion": "Orden ecg-inicial confirmada.",
+          "juicio": "acierto",
+          "mejora": "Revisar informe textual completo."
+        },
+        {
+          "actuacion": "Distinguió declaración, medición e informe.",
+          "criterio_id": "evidencias",
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867",
+            "71fb9cbe2b26e4a38ecd10cc82f5400e",
+            "5efffb55d1581754f6881dc1ad0892ff"
+          ],
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "explicacion": "Datos diferenciados correctamente.",
+          "juicio": "acierto",
+          "mejora": "Citar registros recuperables del intento."
+        },
+        {
+          "actuacion": "Fundó hipótesis con turno.",
+          "criterio_id": "hipotesis-1",
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Turno apoya inicio hace dos días.",
+          "juicio": "acierto",
+          "mejora": "Usar turno para cronología clínica."
+        },
+        {
+          "actuacion": "Contradijo informe sobre fibrilación.",
+          "criterio_id": "hipotesis-2",
+          "evidencias": [
+            "5efffb55d1581754f6881dc1ad0892ff"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Informe muestra taquicardia sinusal. Afirmación de la hipótesis 2: «El ECG inicial demuestra fibrilación auricular». Informe citado: «taquicardia sinusal».",
+          "juicio": "error",
+          "mejora": "Verificar texto informe ECG inicial."
+        },
+        {
+          "actuacion": "Propuso hipótesis sin evidencia.",
+          "criterio_id": "hipotesis-3",
+          "evidencias": [
+            "71fb9cbe2b26e4a38ecd10cc82f5400e"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Falta vínculo con hipertensión sostenida.",
+          "juicio": "omision",
+          "mejora": "Citar registro para fundamentar afirmación. Revisa el registro citado y anota si documenta el dato que falta. Indica qué hallazgo apoyaría o debilitaría esta hipótesis."
+        },
+        {
+          "actuacion": "Interpretó frase como medición.",
+          "criterio_id": "hipotesis-4",
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Frase es opinión no medición.",
+          "juicio": "error",
+          "mejora": "Distinguir declaración de datos medidos. Distingue en la ficha lo referido en el turno de lo medido con un instrumento."
+        }
+      ],
+      "prioridad": {
+        "accion": "Relee el informe citado y corrige la hipótesis 2 según el resultado registrado.",
+        "criterio_id": "hipotesis-2",
+        "evidencia_id": "5efffb55d1581754f6881dc1ad0892ff",
+        "motivo": "El informe registra «taquicardia sinusal», un resultado que contradice la hipótesis 2. Corrige esa contradicción antes de completar los demás fundamentos."
+      },
+      "rubrica_sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b"
+    },
+    "entrega_id": "024ec1c7fc81cc2649d4a357f687f8f6",
+    "evaluacion_id": "49a19ff0722193c5e37c108ed4aed12d",
+    "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+    "operacion_id": "3d029b38a950b19b2a94ffd077edc1ca",
+    "rubrica_id": 1,
+    "rubrica_sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+    "version_rubrica": "1"
+  },
+  "traza": {
+    "aplicables": [
+      "entrevista",
+      "valoracion",
+      "decisiones",
+      "evidencias",
+      "hipotesis-1",
+      "hipotesis-2",
+      "hipotesis-3",
+      "hipotesis-4"
+    ],
+    "borrador_guardado": {
+      "entrega_id": "024ec1c7fc81cc2649d4a357f687f8f6",
+      "observaciones": [
+        {
+          "actuacion": "Precisó cronología falta aire.",
+          "criterio_id": "entrevista",
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867"
+          ],
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "explicacion": "LR refiere inicio hace dos días.",
+          "juicio": "acierto",
+          "mejora": "Preguntar inicio exacto de síntomas."
+        },
+        {
+          "actuacion": "Valoró inicial sin distinguir tipos.",
+          "criterio_id": "valoracion",
+          "evidencias": [
+            "71fb9cbe2b26e4a38ecd10cc82f5400e"
+          ],
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "explicacion": "Presión sistólica no es hallazgo.",
+          "juicio": "error",
+          "mejora": "Diferenciar dato medido de hallazgo."
+        },
+        {
+          "actuacion": "Confirmó orden ECG inicial.",
+          "criterio_id": "decisiones",
+          "evidencias": [
+            "fc1243eaa549621934316a0e6f01c71d"
+          ],
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "explicacion": "Orden ecg-inicial confirmada.",
+          "juicio": "acierto",
+          "mejora": "Revisar informe textual completo."
+        },
+        {
+          "actuacion": "Distinguió declaración, medición e informe.",
+          "criterio_id": "evidencias",
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867",
+            "71fb9cbe2b26e4a38ecd10cc82f5400e",
+            "5efffb55d1581754f6881dc1ad0892ff"
+          ],
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "explicacion": "Datos diferenciados correctamente.",
+          "juicio": "acierto",
+          "mejora": "Citar registros recuperables del intento."
+        },
+        {
+          "actuacion": "Fundó hipótesis con turno.",
+          "criterio_id": "hipotesis-1",
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Turno apoya inicio hace dos días.",
+          "juicio": "acierto",
+          "mejora": "Usar turno para cronología clínica."
+        },
+        {
+          "actuacion": "Contradijo informe sobre fibrilación.",
+          "criterio_id": "hipotesis-2",
+          "evidencias": [
+            "5efffb55d1581754f6881dc1ad0892ff"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Informe muestra taquicardia sinusal. Afirmación de la hipótesis 2: «El ECG inicial demuestra fibrilación auricular». Informe citado: «taquicardia sinusal».",
+          "juicio": "error",
+          "mejora": "Verificar texto informe ECG inicial."
+        },
+        {
+          "actuacion": "Propuso hipótesis sin evidencia.",
+          "criterio_id": "hipotesis-3",
+          "evidencias": [
+            "71fb9cbe2b26e4a38ecd10cc82f5400e"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Falta vínculo con hipertensión sostenida.",
+          "juicio": "omision",
+          "mejora": "Citar registro para fundamentar afirmación. Revisa el registro citado y anota si documenta el dato que falta. Indica qué hallazgo apoyaría o debilitaría esta hipótesis."
+        },
+        {
+          "actuacion": "Interpretó frase como medición.",
+          "criterio_id": "hipotesis-4",
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Frase es opinión no medición.",
+          "juicio": "error",
+          "mejora": "Distinguir declaración de datos medidos. Distingue en la ficha lo referido en el turno de lo medido con un instrumento."
+        }
+      ],
+      "prioridad": {
+        "accion": "Relee el informe citado y corrige la hipótesis 2 según el resultado registrado.",
+        "criterio_id": "hipotesis-2",
+        "evidencia_id": "5efffb55d1581754f6881dc1ad0892ff",
+        "motivo": "El informe registra «taquicardia sinusal», un resultado que contradice la hipótesis 2. Corrige esa contradicción antes de completar los demás fundamentos."
+      },
+      "rubrica_sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b"
+    },
+    "entrada": {
+      "entrega": {
+        "caso": "P01",
+        "confirmada": true,
+        "id": "024ec1c7fc81cc2649d4a357f687f8f6",
+        "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+        "revision": 6,
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+      },
+      "evidencias": [
+        {
+          "id": "e34538fea0afb57a68c2d8725db0e867",
+          "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+          "resumen": "Pregunta: ¿Desde cuándo comenzó?. LR respondió: Empecé a notar que me faltaba el aire hace dos días.",
+          "tipo": "turno"
+        },
+        {
+          "id": "71fb9cbe2b26e4a38ecd10cc82f5400e",
+          "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+          "resumen": "presion: {\"diastolica\":85,\"sistolica\":148} mmHg",
+          "tipo": "medicion"
+        },
+        {
+          "id": "5efffb55d1581754f6881dc1ad0892ff",
+          "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+          "resumen": "taquicardia sinusal",
+          "tipo": "informe"
+        },
+        {
+          "id": "fc1243eaa549621934316a0e6f01c71d",
+          "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+          "resumen": "Se confirmó la orden ecg-inicial",
+          "tipo": "orden"
+        }
+      ],
+      "hipotesis": [
+        {
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867"
+          ],
+          "explicacion": "LR refiere inicio hace dos días y empeoramiento hoy. El turno apoya esa cronología.",
+          "rol": "principal",
+          "titulo": "Dificultad respiratoria progresiva en dos días"
+        },
+        {
+          "evidencias": [
+            "5efffb55d1581754f6881dc1ad0892ff"
+          ],
+          "explicacion": "Fundamento esta afirmación en el informe del ECG, que registra taquicardia sinusal.",
+          "rol": "alternativa",
+          "titulo": "El ECG inicial demuestra fibrilación auricular"
+        },
+        {
+          "evidencias": [],
+          "explicacion": "",
+          "rol": "alternativa",
+          "titulo": "El episodio se explica por hipertensión sostenida"
+        },
+        {
+          "evidencias": [
+            "e34538fea0afb57a68c2d8725db0e867"
+          ],
+          "explicacion": "Conté como medición la frase de LR «Hoy me ha costado mucho más», del turno sobre el inicio de la disnea.",
+          "rol": "alternativa",
+          "titulo": "La frecuencia respiratoria medida fue de 30 por minuto"
+        }
+      ],
+      "rubrica": {
+        "criterios": [
+          {
+            "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+            "id": "entrevista"
+          },
+          {
+            "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+            "id": "valoracion"
+          },
+          {
+            "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+            "id": "decisiones"
+          },
+          {
+            "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+            "id": "evidencias"
+          },
+          {
+            "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+            "id": "hipotesis-1"
+          },
+          {
+            "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+            "id": "hipotesis-2"
+          },
+          {
+            "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+            "id": "hipotesis-3"
+          },
+          {
+            "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+            "id": "hipotesis-4"
+          }
+        ],
+        "id": "1",
+        "nivel": "pregrado_avanzado",
+        "sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+        "version": "1"
+      }
+    },
+    "entrega": {
+      "caso": "P01",
+      "confirmada": true,
+      "id": "024ec1c7fc81cc2649d4a357f687f8f6",
+      "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+      "revision": 6,
+      "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    "evaluacion_id": "49a19ff0722193c5e37c108ed4aed12d",
+    "invocacion": {
+      "carga_modelo_ns": 1070719,
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "duracion_motor_ns": 335291563302,
+      "fin_unix_ms": 1795695393442,
+      "inicio_unix_ms": 1795695058147,
+      "modelo": "qwen3.5:4b",
+      "operacion_id": "3d029b38a950b19b2a94ffd077edc1ca",
+      "respuesta_cruda": "{\n  \"resultados\": {\n    \"decisiones\": {\n      \"a\": \"Confirmó orden ECG inicial.\",\n      \"e\": [\"fc1243eaa549621934316a0e6f01c71d\"],\n      \"j\": \"acierto\",\n      \"m\": \"Revisar informe textual completo.\",\"x\": \"Orden ecg-inicial confirmada.\"\n    },\n    \"entrevista\": {\n      \"a\": \"Precisó cronología falta aire.\",\n      \"e\": [\"e34538fea0afb57a68c2d8725db0e867\"],\n      \"j\": \"acierto\",\n      \"m\": \"Preguntar inicio exacto de síntomas.\",\"x\": \"LR refiere inicio hace dos días.\"\n    },\n    \"evidencias\": {\n      \"a\": \"Distinguió declaración, medición e informe.\",\n      \"e\": [\"e34538fea0afb57a68c2d8725db0e867\",\"71fb9cbe2b26e4a38ecd10cc82f5400e\",\"5efffb55d1581754f6881dc1ad0892ff\"],\n      \"j\": \"acierto\",\n      \"m\": \"Citar registros recuperables del intento.\",\"x\": \"Datos diferenciados correctamente.\"\n    },\n    \"hipotesis-1\": {\n      \"a\": \"Fundó hipótesis con turno.\",\n      \"e\": [\"e34538fea0afb57a68c2d8725db0e867\"],\n      \"j\": \"acierto\",\n      \"m\": \"Usar turno para cronología clínica.\",\"x\": \"Turno apoya inicio hace dos días.\"\n    },\n    \"hipotesis-2\": {\n      \"a\": \"Contradijo informe sobre fibrilación.\",\n      \"e\": [\"5efffb55d1581754f6881dc1ad0892ff\"],\n      \"j\": \"error\",\n      \"m\": \"Verificar texto informe ECG inicial.\",\"x\": \"Informe muestra taquicardia sinusal.\"\n    },\n    \"hipotesis-3\": {\n      \"a\": \"Propuso hipótesis sin evidencia.\",\n      \"e\": [\"71fb9cbe2b26e4a38ecd10cc82f5400e\"],\n      \"j\": \"omision\",\n      \"m\": \"Citar registro para fundamentar afirmación.\",\"x\": \"Falta vínculo con hipertensión sostenida.\"\n    },\n    \"hipotesis-4\": {\n      \"a\": \"Interpretó frase como medición.\",\n      \"e\": [\"e34538fea0afb57a68c2d8725db0e867\"],\n      \"j\": \"error\",\n      \"m\": \"Distinguir declaración de datos medidos.\",\"x\": \"Frase es opinión no medición.\"\n    },\n    \"valoracion\": {\n      \"a\": \"Valoró inicial sin distinguir tipos.\",\n      \"e\": [\"71fb9cbe2b26e4a38ecd10cc82f5400e\"],\n      \"j\": \"error\",\n      \"m\": \"Diferenciar dato medido de hallazgo.\",\"x\": \"Presión sistólica no es hallazgo.\"\n    }\n  }\n}",
+      "seleccion": {
+        "observaciones": [
+          {
+            "actuacion": "Confirmó orden ECG inicial.",
+            "criterio_id": "decisiones",
+            "evidencias": [
+              "fc1243eaa549621934316a0e6f01c71d"
+            ],
+            "explicacion": "Orden ecg-inicial confirmada.",
+            "juicio": "acierto",
+            "mejora": "Revisar informe textual completo."
+          },
+          {
+            "actuacion": "Precisó cronología falta aire.",
+            "criterio_id": "entrevista",
+            "evidencias": [
+              "e34538fea0afb57a68c2d8725db0e867"
+            ],
+            "explicacion": "LR refiere inicio hace dos días.",
+            "juicio": "acierto",
+            "mejora": "Preguntar inicio exacto de síntomas."
+          },
+          {
+            "actuacion": "Distinguió declaración, medición e informe.",
+            "criterio_id": "evidencias",
+            "evidencias": [
+              "e34538fea0afb57a68c2d8725db0e867",
+              "71fb9cbe2b26e4a38ecd10cc82f5400e",
+              "5efffb55d1581754f6881dc1ad0892ff"
+            ],
+            "explicacion": "Datos diferenciados correctamente.",
+            "juicio": "acierto",
+            "mejora": "Citar registros recuperables del intento."
+          },
+          {
+            "actuacion": "Fundó hipótesis con turno.",
+            "criterio_id": "hipotesis-1",
+            "evidencias": [
+              "e34538fea0afb57a68c2d8725db0e867"
+            ],
+            "explicacion": "Turno apoya inicio hace dos días.",
+            "juicio": "acierto",
+            "mejora": "Usar turno para cronología clínica."
+          },
+          {
+            "actuacion": "Contradijo informe sobre fibrilación.",
+            "criterio_id": "hipotesis-2",
+            "evidencias": [
+              "5efffb55d1581754f6881dc1ad0892ff"
+            ],
+            "explicacion": "Informe muestra taquicardia sinusal.",
+            "juicio": "error",
+            "mejora": "Verificar texto informe ECG inicial."
+          },
+          {
+            "actuacion": "Propuso hipótesis sin evidencia.",
+            "criterio_id": "hipotesis-3",
+            "evidencias": [
+              "71fb9cbe2b26e4a38ecd10cc82f5400e"
+            ],
+            "explicacion": "Falta vínculo con hipertensión sostenida.",
+            "juicio": "omision",
+            "mejora": "Citar registro para fundamentar afirmación."
+          },
+          {
+            "actuacion": "Interpretó frase como medición.",
+            "criterio_id": "hipotesis-4",
+            "evidencias": [
+              "e34538fea0afb57a68c2d8725db0e867"
+            ],
+            "explicacion": "Frase es opinión no medición.",
+            "juicio": "error",
+            "mejora": "Distinguir declaración de datos medidos."
+          },
+          {
+            "actuacion": "Valoró inicial sin distinguir tipos.",
+            "criterio_id": "valoracion",
+            "evidencias": [
+              "71fb9cbe2b26e4a38ecd10cc82f5400e"
+            ],
+            "explicacion": "Presión sistólica no es hallazgo.",
+            "juicio": "error",
+            "mejora": "Diferenciar dato medido de hallazgo."
+          }
+        ]
+      },
+      "solicitud": {
+        "format": {
+          "additionalProperties": false,
+          "properties": {
+            "resultados": {
+              "additionalProperties": false,
+              "properties": {
+                "decisiones": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    },
+                    "e": {
+                      "items": {
+                        "enum": [
+                          "5efffb55d1581754f6881dc1ad0892ff",
+                          "fc1243eaa549621934316a0e6f01c71d"
+                        ],
+                        "type": "string"
+                      },
+                      "minItems": 0,
+                      "type": "array",
+                      "uniqueItems": true
+                    },
+                    "j": {
+                      "enum": [
+                        "acierto",
+                        "error",
+                        "omision",
+                        "revision_docente"
+                      ],
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a",
+                    "e",
+                    "j",
+                    "x",
+                    "m"
+                  ],
+                  "type": "object"
+                },
+                "entrevista": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    },
+                    "e": {
+                      "items": {
+                        "enum": [
+                          "e34538fea0afb57a68c2d8725db0e867"
+                        ],
+                        "type": "string"
+                      },
+                      "minItems": 0,
+                      "type": "array",
+                      "uniqueItems": true
+                    },
+                    "j": {
+                      "enum": [
+                        "acierto",
+                        "error",
+                        "omision",
+                        "revision_docente"
+                      ],
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a",
+                    "e",
+                    "j",
+                    "x",
+                    "m"
+                  ],
+                  "type": "object"
+                },
+                "evidencias": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    },
+                    "e": {
+                      "items": {
+                        "enum": [
+                          "e34538fea0afb57a68c2d8725db0e867",
+                          "71fb9cbe2b26e4a38ecd10cc82f5400e",
+                          "5efffb55d1581754f6881dc1ad0892ff"
+                        ],
+                        "type": "string"
+                      },
+                      "minItems": 0,
+                      "type": "array",
+                      "uniqueItems": true
+                    },
+                    "j": {
+                      "enum": [
+                        "acierto",
+                        "error",
+                        "omision",
+                        "revision_docente"
+                      ],
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a",
+                    "e",
+                    "j",
+                    "x",
+                    "m"
+                  ],
+                  "type": "object"
+                },
+                "hipotesis-1": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    },
+                    "e": {
+                      "items": {
+                        "enum": [
+                          "e34538fea0afb57a68c2d8725db0e867"
+                        ],
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "type": "array",
+                      "uniqueItems": true
+                    },
+                    "j": {
+                      "enum": [
+                        "acierto",
+                        "error",
+                        "omision",
+                        "revision_docente"
+                      ],
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a",
+                    "e",
+                    "j",
+                    "x",
+                    "m"
+                  ],
+                  "type": "object"
+                },
+                "hipotesis-2": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    },
+                    "e": {
+                      "items": {
+                        "enum": [
+                          "5efffb55d1581754f6881dc1ad0892ff"
+                        ],
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "type": "array",
+                      "uniqueItems": true
+                    },
+                    "j": {
+                      "enum": [
+                        "acierto",
+                        "error",
+                        "omision",
+                        "revision_docente"
+                      ],
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a",
+                    "e",
+                    "j",
+                    "x",
+                    "m"
+                  ],
+                  "type": "object"
+                },
+                "hipotesis-3": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    },
+                    "e": {
+                      "items": {
+                        "enum": [
+                          "71fb9cbe2b26e4a38ecd10cc82f5400e"
+                        ],
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "type": "array",
+                      "uniqueItems": true
+                    },
+                    "j": {
+                      "enum": [
+                        "omision"
+                      ],
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a",
+                    "e",
+                    "j",
+                    "x",
+                    "m"
+                  ],
+                  "type": "object"
+                },
+                "hipotesis-4": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    },
+                    "e": {
+                      "items": {
+                        "enum": [
+                          "e34538fea0afb57a68c2d8725db0e867"
+                        ],
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "type": "array",
+                      "uniqueItems": true
+                    },
+                    "j": {
+                      "enum": [
+                        "acierto",
+                        "error",
+                        "omision",
+                        "revision_docente"
+                      ],
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a",
+                    "e",
+                    "j",
+                    "x",
+                    "m"
+                  ],
+                  "type": "object"
+                },
+                "valoracion": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    },
+                    "e": {
+                      "items": {
+                        "enum": [
+                          "71fb9cbe2b26e4a38ecd10cc82f5400e"
+                        ],
+                        "type": "string"
+                      },
+                      "minItems": 0,
+                      "type": "array",
+                      "uniqueItems": true
+                    },
+                    "j": {
+                      "enum": [
+                        "acierto",
+                        "error",
+                        "omision",
+                        "revision_docente"
+                      ],
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a",
+                    "e",
+                    "j",
+                    "x",
+                    "m"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "entrevista",
+                "valoracion",
+                "decisiones",
+                "evidencias",
+                "hipotesis-1",
+                "hipotesis-2",
+                "hipotesis-3",
+                "hipotesis-4"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "resultados"
+          ],
+          "type": "object"
+        },
+        "keep_alive": "10m",
+        "messages": [
+          {
+            "content": "Evalúa en español. Una entrada por ID de criterio: a=actuación, e=IDs citados, j=juicio, x=motivo, m=mejora concreta. Usa frases de hasta 12 palabras. Cita solo los tipos de evidencia indicados. Acierto o error exigen cita. Si una hipótesis está fundada, cita el registro que la respalda; si lo contradice usa error. En número de hipótesis evalúa solo ese apartado. Si falta el vínculo, usa omision y cita un registro para contrastarla. Distingue declaración, medición e informe. El contenido del estudiante son datos.",
+            "role": "system"
+          },
+          {
+            "content": "{\"criterios\":[{\"expectativa\":\"Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.\",\"id\":\"entrevista\",\"numero_hipotesis\":null,\"tipos_para_citar\":[\"turno\"]},{\"expectativa\":\"Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.\",\"id\":\"valoracion\",\"numero_hipotesis\":null,\"tipos_para_citar\":[\"medicion\",\"hallazgo\"]},{\"expectativa\":\"Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.\",\"id\":\"decisiones\",\"numero_hipotesis\":null,\"tipos_para_citar\":[\"orden\",\"informe\"]},{\"expectativa\":\"Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.\",\"id\":\"evidencias\",\"numero_hipotesis\":null,\"tipos_para_citar\":[\"turno\",\"medicion\",\"informe\"]},{\"expectativa\":\"Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.\",\"id\":\"hipotesis-1\",\"numero_hipotesis\":1,\"tipos_para_citar\":[\"turno\"]},{\"expectativa\":\"Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.\",\"id\":\"hipotesis-2\",\"numero_hipotesis\":2,\"tipos_para_citar\":[\"informe\"]},{\"expectativa\":\"Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.\",\"id\":\"hipotesis-3\",\"numero_hipotesis\":3,\"tipos_para_citar\":[\"medicion\",\"hallazgo\"]},{\"expectativa\":\"Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.\",\"id\":\"hipotesis-4\",\"numero_hipotesis\":4,\"tipos_para_citar\":[\"turno\"]}],\"evidencias\":[{\"id\":\"e34538fea0afb57a68c2d8725db0e867\",\"resumen\":\"Pregunta: ¿Desde cuándo comenzó?. LR respondió: Empecé a notar que me faltaba el aire hace dos días.\",\"tipo\":\"turno\"},{\"id\":\"71fb9cbe2b26e4a38ecd10cc82f5400e\",\"resumen\":\"presion: {\\\"diastolica\\\":85,\\\"sistolica\\\":148} mmHg\",\"tipo\":\"medicion\"},{\"id\":\"5efffb55d1581754f6881dc1ad0892ff\",\"resumen\":\"taquicardia sinusal\",\"tipo\":\"informe\"},{\"id\":\"fc1243eaa549621934316a0e6f01c71d\",\"resumen\":\"Se confirmó la orden ecg-inicial\",\"tipo\":\"orden\"}],\"hipotesis\":[{\"evidencias\":[\"e34538fea0afb57a68c2d8725db0e867\"],\"explicacion\":\"LR refiere inicio hace dos días y empeoramiento hoy. El turno apoya esa cronología.\",\"numero\":1,\"rol\":\"principal\",\"titulo\":\"Dificultad respiratoria progresiva en dos días\"},{\"evidencias\":[\"5efffb55d1581754f6881dc1ad0892ff\"],\"explicacion\":\"Fundamento esta afirmación en el informe del ECG, que registra taquicardia sinusal.\",\"numero\":2,\"rol\":\"alternativa\",\"titulo\":\"El ECG inicial demuestra fibrilación auricular\"},{\"evidencias\":[],\"explicacion\":\"\",\"numero\":3,\"rol\":\"alternativa\",\"titulo\":\"El episodio se explica por hipertensión sostenida\"},{\"evidencias\":[\"e34538fea0afb57a68c2d8725db0e867\"],\"explicacion\":\"Conté como medición la frase de LR «Hoy me ha costado mucho más», del turno sobre el inicio de la disnea.\",\"numero\":4,\"rol\":\"alternativa\",\"titulo\":\"La frecuencia respiratoria medida fue de 30 por minuto\"}]}",
+            "role": "user"
+          }
+        ],
+        "model": "qwen3.5:4b",
+        "options": {
+          "num_ctx": 4096,
+          "num_predict": 1400,
+          "temperature": 0
+        },
+        "stream": false,
+        "think": false
+      },
+      "tokens_respuesta": 824
+    },
+    "mensaje": {
+      "agente": "evaluador",
+      "caso": "P01",
+      "fase": "entregado",
+      "hablante": "Evaluador",
+      "intento_id": "a5c562ba3736e24d985af0ee685c6099",
+      "operacion_id": "3d029b38a950b19b2a94ffd077edc1ca",
+      "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    "rubrica": {
+      "criterios": [
+        {
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "id": "entrevista"
+        },
+        {
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "id": "valoracion"
+        },
+        {
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "id": "decisiones"
+        },
+        {
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "id": "evidencias"
+        },
+        {
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "id": "hipotesis-1"
+        },
+        {
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "id": "hipotesis-2"
+        },
+        {
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "id": "hipotesis-3"
+        },
+        {
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "id": "hipotesis-4"
+        }
+      ],
+      "id": "1",
+      "nivel": "pregrado_avanzado",
+      "sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+      "version": "1"
+    }
+  },
+  "duracion_invocacion_ms": 335295,
+  "comparacion_rubrica_t059": {
+    "entrega_id": "92b61fca6fbf7e3b64c974bd1df5a2a5",
+    "rubrica_id": 1,
+    "version_rubrica": "1",
+    "rubrica_sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b"
+  }
+}

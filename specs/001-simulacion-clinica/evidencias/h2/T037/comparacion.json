@@ -1,0 +1,358 @@
+{
+  "navegador": "156.0.8078.4",
+  "entorno": {
+    "original": {
+      "ancho": 1280,
+      "alto": 900,
+      "dpr": 1,
+      "zoom": 1
+    },
+    "extraccion": {
+      "ancho": 1280,
+      "alto": 900,
+      "dpr": 1,
+      "zoom": 1
+    }
+  },
+  "referenciaSha256": "ff9dea8958759550c5241ab9f0560c46f2726bf04ba1d46f927fb9febfeee032",
+  "estiloChat": {
+    "original": {
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "fuenteMensaje": "14.72px",
+      "alineacion": "flex-end",
+      "fondo": "rgb(233, 240, 255)",
+      "radio": "8px",
+      "espacio": "7px",
+      "alto": "180px"
+    },
+    "extraccion": {
+      "fuente": "\"Sircle Roboto\", Roboto, \"Segoe UI\", Arial, sans-serif",
+      "fuenteMensaje": "14.72px",
+      "alineacion": "flex-end",
+      "fondo": "rgb(233, 240, 255)",
+      "radio": "8px",
+      "espacio": "7px",
+      "alto": "180px"
+    }
+  },
+  "estados": {
+    "original": {
+      "seleccion": {
+        "ancho": 294,
+        "alto": 357.6875,
+        "huella": "895795843797798d9645873e5195c7567a5c9245b21cc6c33481c7f51d108d7c"
+      },
+      "chat": {
+        "ancho": 452.90625,
+        "alto": 562.828125,
+        "huella": "161fa41de2bf60a8ed6c550e0598a16bdc1aef1edeb6e65ab4b46c651688f35a"
+      },
+      "brazo": {
+        "ancho": 540,
+        "alto": 360,
+        "huella": "ceb789ae7c8f773d9bde5a24d01000620a7635759751dc87cc7bf618818abdc4"
+      },
+      "preparacion": {
+        "ancho": 461.859375,
+        "alto": 307.90625,
+        "huella": "48077bc4c858b177559a2112f012fa0fcc37a20bb37742903fce98acb7cbda5f"
+      },
+      "colocado": {
+        "ancho": 461.859375,
+        "alto": 307.90625,
+        "huella": "72ecf17634bcee062f0a71779c989ae1fed5a59418fb91d3afdff15b2ca1f09c"
+      },
+      "toma": {
+        "ancho": 626.828125,
+        "alto": 172.078125,
+        "huella": "23769b5618545578b8b8d766df2096ad3b9dc9ceb77612591c86d752bcea803d"
+      },
+      "resultado": {
+        "ancho": 626.828125,
+        "alto": 76.5625,
+        "huella": "116c5fd5fc05eee2eca74b9f74351249ddb7bd44208d1d4e5788146e7a163eeb"
+      },
+      "historico-grafica": {
+        "ancho": 1194.25,
+        "alto": 622.640625,
+        "huella": "f2263ba1ab6d2c7b719a8faae75ee12c4d1d23a73cb22558f0f53b17d6c3fecd"
+      },
+      "historico-tabla": {
+        "ancho": 1194.25,
+        "alto": 378.34375,
+        "huella": "6e495f50d7ca6d31245c8fb74c026e773ea5a2d1259cff1fab26aafdd297374d"
+      }
+    },
+    "extraccion": {
+      "seleccion": {
+        "ancho": 294,
+        "alto": 357.6875,
+        "huella": "c7ca5553660b0e872a778d925d4033791fbb71e1a523545856c31b353f58cb79"
+      },
+      "chat": {
+        "ancho": 452.90625,
+        "alto": 517.34375,
+        "huella": "43d7f77122769a659772f72c219df44de07eb35810b46e713dd0f84088781851"
+      },
+      "brazo": {
+        "ancho": 540,
+        "alto": 360,
+        "huella": "ceb789ae7c8f773d9bde5a24d01000620a7635759751dc87cc7bf618818abdc4"
+      },
+      "preparacion": {
+        "ancho": 461.859375,
+        "alto": 307.90625,
+        "huella": "48077bc4c858b177559a2112f012fa0fcc37a20bb37742903fce98acb7cbda5f"
+      },
+      "colocado": {
+        "ancho": 461.859375,
+        "alto": 307.90625,
+        "huella": "72ecf17634bcee062f0a71779c989ae1fed5a59418fb91d3afdff15b2ca1f09c"
+      },
+      "toma": {
+        "ancho": 626.828125,
+        "alto": 172.078125,
+        "huella": "7ce87527894f993fc0fdd36974831bbfecec90d6d9d2f7691ec97c9ed669242c"
+      },
+      "resultado": {
+        "ancho": 626.828125,
+        "alto": 76.5625,
+        "huella": "54d9d13c4878d263a48dcbc45453f9f2ab311e4e31f52ad742983ba310177463"
+      },
+      "historico-grafica": {
+        "ancho": 1194.25,
+        "alto": 680.890625,
+        "huella": "8693c63eae9b1c64d5240e1adf91c20c7ea099652949beb34740c2f53f5011d6"
+      },
+      "historico-tabla": {
+        "ancho": 1194.25,
+        "alto": 444.65625,
+        "huella": "aeabfcd2aeefe90e5da4501213cc69ca1bca9f1e834b0bf153080f1b18b68bc6"
+      }
+    }
+  },
+  "teclado": {
+    "original": [
+      {
+        "accion": "Preparar brazalete",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "Preparar el brazalete",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Seleccionar brazalete",
+        "pasosTab": 0,
+        "foco": {
+          "selector": "step-0",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Colocar brazalete",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "step-1",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Confirmar posición",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "step-2",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Medir presión",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "procedure-start",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Leer resultado y registrar",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "Registrar en ficha",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Abrir histórico",
+        "pasosTab": 2,
+        "foco": {
+          "selector": "Histórico",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Consultar tabla",
+        "pasosTab": 3,
+        "foco": {
+          "selector": "tab-history-mode-table",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      }
+    ],
+    "extraccion": [
+      {
+        "accion": "Preparar brazalete",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "Preparar el brazalete",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Seleccionar brazalete",
+        "pasosTab": 0,
+        "foco": {
+          "selector": "step-0",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Colocar brazalete",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "step-1",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Confirmar posición",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "step-2",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Medir presión",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "procedure-start",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Leer resultado y registrar",
+        "pasosTab": 1,
+        "foco": {
+          "selector": "Registrar en ficha",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Abrir histórico",
+        "pasosTab": 2,
+        "foco": {
+          "selector": "Histórico",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      },
+      {
+        "accion": "Consultar tabla",
+        "pasosTab": 3,
+        "foco": {
+          "selector": "Tabla",
+          "visible": true,
+          "estilo": "solid",
+          "ancho": "3px",
+          "contraste": "rgb(40, 90, 176)",
+          "desplazamiento": "3px"
+        }
+      }
+    ]
+  },
+  "lecturas": {
+    "original": [
+      128,
+      78,
+      112
+    ],
+    "extraccion": [
+      148,
+      85
+    ]
+  },
+  "pulsoExtraido": {
+    "medicion_id": "791aaa3d245c84aeb563e4f02defc611",
+    "intento_id": "06586ad54790a79edf7f6cf73254d540",
+    "instrumento": "pulso",
+    "accion": "toma_completa",
+    "fase": "inicial",
+    "valor": {
+      "frecuencia": 102
+    },
+    "unidad": "lpm",
+    "momento": "2026-11-26T03:10:59.349Z",
+    "en_ficha": false,
+    "revision": 5,
+    "origen": "Pulsioxímetro simulado"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "navegador": "Chromium 156.0.8078.4",
+  "backend": "conexión rechazada",
+  "resolucion": "1280x900",
+  "escala": 1,
+  "encuadre_brazo": {
+    "x": 256,
+    "y": 339.421875,
+    "width": 768,
+    "height": 290
+  },
+  "lectura": {
+    "medicion_id": "presion-lr-ejemplo-v1",
+    "valor": {
+      "sistolica": 148,
+      "diastolica": 85
+    },
+    "unidad": "mmHg",
+    "fuente": "Lectura de ensayo de LR, fase inicial"
+  },
+  "primerRegistro": 1,
+  "segundoRegistro": 1,
+  "solicitudesApi": []
+}

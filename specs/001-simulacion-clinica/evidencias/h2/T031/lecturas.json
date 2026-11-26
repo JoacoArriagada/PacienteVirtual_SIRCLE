@@ -1,0 +1,94 @@
+{
+  "navegador": "156.0.8078.4",
+  "intento": "246c268a71f26012613865859c63149f",
+  "lecturas": {
+    "peso": {
+      "comparacion": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "sha256": "67a42730b9981d2bf64cf6ad6398b16012970819a9d9bd28b642823fa981ce7a"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "sha256": "67a42730b9981d2bf64cf6ad6398b16012970819a9d9bd28b642823fa981ce7a"
+        }
+      },
+      "lectura": {
+        "medicion_id": "889521da9f14a0b58eb370ba067b6ec2",
+        "intento_id": "246c268a71f26012613865859c63149f",
+        "instrumento": "peso",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "lectura": 64.3
+        },
+        "unidad": "kg",
+        "momento": "2026-11-26T02:34:51.813Z",
+        "en_ficha": false,
+        "revision": 2,
+        "origen": "Báscula de ensayo, Semana 5"
+      },
+      "acuse": {
+        "medicion_id": "889521da9f14a0b58eb370ba067b6ec2",
+        "intento_id": "246c268a71f26012613865859c63149f",
+        "instrumento": "peso",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "lectura": 64.3
+        },
+        "unidad": "kg",
+        "momento": "2026-11-26T02:34:51.813Z",
+        "en_ficha": true,
+        "revision": 3,
+        "origen": "Báscula de ensayo, Semana 5"
+      },
+      "historico": [
+        {
+          "medicion_id": "889521da9f14a0b58eb370ba067b6ec2",
+          "intento_id": "246c268a71f26012613865859c63149f",
+          "instrumento": "peso",
+          "accion": "toma_completa",
+          "fase": "inicial",
+          "valor": {
+            "lectura": 64.3
+          },
+          "unidad": "kg",
+          "momento": "2026-11-26T02:34:51.813Z",
+          "en_ficha": true,
+          "revision": 3,
+          "origen": "Báscula de ensayo, Semana 5"
+        }
+      ]
+    }
+  },
+  "ficha": {
+    "datos": [
+      {
+        "etiqueta": "Presión inicial",
+        "valor": "148/85 mmHg"
+      }
+    ],
+    "fase": "inicial",
+    "fuente": "Triaje de ensayo de LR",
+    "hallazgos": [
+      {
+        "accion": "toma_completa",
+        "en_ficha": true,
+        "fase": "inicial",
+        "instrumento": "peso",
+        "intento_id": "246c268a71f26012613865859c63149f",
+        "medicion_id": "889521da9f14a0b58eb370ba067b6ec2",
+        "momento": "2026-11-26T02:34:51.813Z",
+        "origen": "Báscula de ensayo, Semana 5",
+        "revision": 3,
+        "unidad": "kg",
+        "valor": {
+          "lectura": 64.3
+        }
+      }
+    ]
+  }
+}

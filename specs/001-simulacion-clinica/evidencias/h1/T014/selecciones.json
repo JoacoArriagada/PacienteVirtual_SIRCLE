@@ -1,0 +1,109 @@
+{
+  "tarea": "T014",
+  "fecha": "2026-11-25 21:27 -0300",
+  "rama": "feature/prototipo",
+  "revision_base": "fbc3f1ca608d34482d19d72c32bb06dce796a185",
+  "identidad": "estudiante-lr, contexto aislado",
+  "procedimiento": [
+    "Desde backend/: cargo test --locked --test agente_lr -- --nocapture",
+    "Confirmar el hecho lr-inicio de la ficha P01, con una selección de prueba.",
+    "Simular selección de otro caso, fase y hablante, un ID ajeno y un hecho permitido pero no pertinente.",
+    "Entregar mientras la selección sigue en tránsito y volver a intentar confirmarla.",
+    "Recuperar el intento por HTTP y comprobar que solo conserva el primer turno."
+  ],
+  "esperado": "Una confirmación, HTTP 503 para selecciones no válidas y HTTP 409 para el contexto cerrado.",
+  "observado": {
+    "confirmado": {
+      "agente": "lr",
+      "hablante": "LR",
+      "intento_id": "05176c90d548643a264affbbb387f598",
+      "operacion_id": "valido",
+      "orden": 1,
+      "pregunta": "¿Desde cuándo te cuesta respirar?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "revision": 2,
+      "tipo_respuesta": "hecho",
+      "turno_id": "41734c3fc0b82b185dae9def17e857c4"
+    },
+    "historial_final": [
+      {
+        "agente": "lr",
+        "hablante": "LR",
+        "intento_id": "05176c90d548643a264affbbb387f598",
+        "operacion_id": "valido",
+        "orden": 1,
+        "pregunta": "¿Desde cuándo te cuesta respirar?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "revision": 2,
+        "tipo_respuesta": "hecho",
+        "turno_id": "41734c3fc0b82b185dae9def17e857c4"
+      }
+    ],
+    "intento_id": "05176c90d548643a264affbbb387f598",
+    "rechazos": [
+      {
+        "caso": "otro_caso",
+        "http": 503,
+        "mensaje": "No se pudo confirmar la respuesta de LR. Reintenta la pregunta."
+      },
+      {
+        "caso": "otra_fase",
+        "http": 503,
+        "mensaje": "No se pudo confirmar la respuesta de LR. Reintenta la pregunta."
+      },
+      {
+        "caso": "otro_hablante",
+        "http": 503,
+        "mensaje": "No se pudo confirmar la respuesta de LR. Reintenta la pregunta."
+      },
+      {
+        "caso": "id_ausente",
+        "http": 503,
+        "mensaje": "No se pudo confirmar la respuesta de LR. Reintenta la pregunta."
+      },
+      {
+        "caso": "no_pertinente",
+        "http": 503,
+        "mensaje": "No se pudo confirmar la respuesta de LR. Reintenta la pregunta."
+      },
+      {
+        "caso": "cierre-durante-llamada",
+        "http": 409,
+        "mensaje": "El intento cambió durante la entrevista. Recarga su estado."
+      }
+    ]
+  },
+  "registro_restringido": [
+    {
+      "motivo": "caso_fase_o_hablante_invalido",
+      "operacion_id": "otro_caso",
+      "seleccion": "lr-inicio"
+    },
+    {
+      "motivo": "caso_fase_o_hablante_invalido",
+      "operacion_id": "otra_fase",
+      "seleccion": "lr-inicio"
+    },
+    {
+      "motivo": "caso_fase_o_hablante_invalido",
+      "operacion_id": "otro_hablante",
+      "seleccion": "lr-inicio"
+    },
+    {
+      "motivo": "seleccion_fuera_del_contexto",
+      "operacion_id": "id_ausente",
+      "seleccion": "fuera-de-la-ficha"
+    },
+    {
+      "motivo": "seleccion_no_pertinente",
+      "operacion_id": "no_pertinente",
+      "seleccion": "lr-antecedentes-familiares"
+    },
+    {
+      "motivo": "contexto_obsoleto",
+      "operacion_id": "cierre-durante-llamada",
+      "seleccion": "lr-inicio"
+    }
+  ],
+  "respaldo": "backend/tests/agente_lr.rs. Usa selecciones simuladas para forzar rechazos. La invocación real se acredita en T013."
+}

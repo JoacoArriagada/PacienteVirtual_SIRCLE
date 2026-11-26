@@ -1,0 +1,29 @@
+{
+  "dolor": {
+    "condicion": "Pregunta a la paciente por su dolor en el pecho o su relación con la respiración.",
+    "escenario": "P02",
+    "fase": "inicial",
+    "fuente": "mep_2374-8265.10924-s001/scenario3/sp_actor/C. Pneumonia with Septic Shock.md",
+    "hablante": "Nannu",
+    "id": "p02-dolor",
+    "linea": 5,
+    "pasaje": "R sided chest pain when breathing.",
+    "respuesta": "Me duele el lado derecho del pecho cuando respiro.",
+    "revision_fuente_id": 8,
+    "version": "ensayo-originales-26b3b8a91e9d873f81243b197ff413ace6615003c78f49a9a38881accba3db7c"
+  },
+  "intento": "d4f61113d76f601c9483e00886128ff4",
+  "tos": {
+    "condicion": "Pregunta al acompañante si la paciente tiene tos productiva o expulsa flema.",
+    "escenario": "P02",
+    "fase": "inicial",
+    "fuente": "mep_2374-8265.10924-s001/scenario3/sp_actor/C. Pneumonia with Septic Shock.md",
+    "hablante": "Acompañante",
+    "id": "p02-tos-productiva",
+    "linea": 5,
+    "pasaje": "Family will say she has had a productive cough.",
+    "respuesta": "Ha estado tosiendo y ha expulsado flema.",
+    "revision_fuente_id": 8,
+    "version": "ensayo-originales-26b3b8a91e9d873f81243b197ff413ace6615003c78f49a9a38881accba3db7c"
+  }
+}

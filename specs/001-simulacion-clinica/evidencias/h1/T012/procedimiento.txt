@@ -1,0 +1,17 @@
+T012 · 2026-11-25 21:07 -0300 · feature/prototipo · revisión base fbc3f1ca608d34482d19d72c32bb06dce796a185
+Identidad: estudiante-lr en un intento de ensayo temporal.
+Esperado: cero candidatos con pre pendiente y, al resolverlo, dos candidatos
+de LR/P01 en la fase inicial, con condición y pasaje comprobables.
+
+Procedimiento desde backend/
+  cargo test --locked --test hechos_lr -- --nocapture
+  cargo test --locked
+  La prueba crea el intento, compara la lista antes y después de resolver el pre y
+  coteja cada pasaje con la línea indicada de Case A-Asthma.md del rol sp_actor.
+
+Observado
+  Cero candidatos antes del pre, dos después. Ambos pertenecen a P01, a su misma
+  versión de ensayo y a la voz de LR. La línea 7 sitúa el inicio hace dos días.
+  La línea 17 indica desconocimiento familiar por adopción. El conjunto no contiene
+  candidatos de P02 ni P03. La prueba focalizada y la suite completa pasaron.
+  Respaldo: hechos.tsv, backend/tests/hechos_lr.rs y backend/tests/fixtures/lr/hechos_iniciales.json.

@@ -1,0 +1,78 @@
+{
+  "antes": {
+    "tomas": [
+      "f48bb352faa49be7cfbc77928457d2e6"
+    ],
+    "entrega": {
+      "id": "40aabd14f4b4f3a26e65274cc1436e7e",
+      "revision": 3
+    },
+    "trabajo": {
+      "entrega_id": "40aabd14f4b4f3a26e65274cc1436e7e",
+      "estado": "pendiente",
+      "creado_en": "2026-11-26T12:41:22.057Z",
+      "toma_id": null,
+      "vence": null,
+      "reintentar_desde": 1795696897,
+      "ultimo_error": "inferencia_o_validacion"
+    },
+    "post": "omitido",
+    "evaluaciones": [],
+    "acuses_entrega": 1
+  },
+  "despues": {
+    "tomas": [
+      "f48bb352faa49be7cfbc77928457d2e6"
+    ],
+    "entrega": {
+      "id": "40aabd14f4b4f3a26e65274cc1436e7e",
+      "revision": 3
+    },
+    "trabajo": {
+      "entrega_id": "40aabd14f4b4f3a26e65274cc1436e7e",
+      "estado": "terminado",
+      "creado_en": "2026-11-26T12:41:22.057Z",
+      "toma_id": null,
+      "vence": null,
+      "reintentar_desde": 0,
+      "ultimo_error": null
+    },
+    "post": "omitido",
+    "evaluaciones": [
+      {
+        "id": "cc0cfaeb524c657d8f8334aaa3589c44",
+        "operacion_id": "20402c8f017bb06ef75a8fba6945b7f8"
+      }
+    ],
+    "acuses_entrega": 1
+  },
+  "recuentos_finales": {
+    "mediciones": 1,
+    "entregas": 1,
+    "trabajos": 1,
+    "evaluaciones": 1,
+    "trazas": 1,
+    "revisiones": 1,
+    "post_ensayo": 1
+  },
+  "generacion_recuperada": "Listo",
+  "toma_vencida": {
+    "entrega_id": "15df2392adb3c1622c6eb0c406e56904",
+    "evaluacion_id": "84e60679c7fcd446c490cab8495d0959",
+    "evaluaciones": 1,
+    "resultado_tardio": "descartado",
+    "toma_recuperada": "1dc700ed73853c8f55ce98cb36c45b54",
+    "toma_vencida": "ae2462fcebbe32cac620e39e8f4b82ab",
+    "trabajo": "terminado",
+    "trazas": 1,
+    "vencimiento_nuevo": 1795697283,
+    "vencimiento_original": 1795697283,
+    "marcas": [
+      "SIRCLE_EVALUACION_TOMA {\"entrega_id\":\"15df2392adb3c1622c6eb0c406e56904\",\"toma_id\":\"ae2462fcebbe32cac620e39e8f4b82ab\"}",
+      "SIRCLE_EVALUACION_TOMA {\"entrega_id\":\"15df2392adb3c1622c6eb0c406e56904\",\"toma_id\":\"1dc700ed73853c8f55ce98cb36c45b54\"}",
+      "SIRCLE_EVALUACION_DESCARTADA {\"entrega_id\":\"15df2392adb3c1622c6eb0c406e56904\",\"motivo\":\"toma_vencida_o_reemplazada\",\"toma_id\":\"ae2462fcebbe32cac620e39e8f4b82ab\"}",
+      "SIRCLE_EVALUACION_CONFIRMADA {\"entrega_id\":\"15df2392adb3c1622c6eb0c406e56904\",\"evaluacion_id\":\"84e60679c7fcd446c490cab8495d0959\",\"toma_id\":\"1dc700ed73853c8f55ce98cb36c45b54\"}"
+    ]
+  },
+  "detalle_ollama": "recuperacion-real.json"
+}

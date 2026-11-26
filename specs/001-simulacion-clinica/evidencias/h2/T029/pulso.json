@@ -1,0 +1,53 @@
+{
+  "navegador": "156.0.8078.4",
+  "id": "pulso",
+  "intento": "4adbebc3331517154bdd40458af55ed1",
+  "comparacion": {
+    "original": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "182fa9ceabb3f2a7753475c9498fc907e8ad4861da74b222d2b79f52bf508459",
+      "posicion": "true",
+      "gesto": 1
+    },
+    "extraccion": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "182fa9ceabb3f2a7753475c9498fc907e8ad4861da74b222d2b79f52bf508459",
+      "posicion": "true",
+      "gesto": 1
+    }
+  },
+  "lectura": {
+    "medicion_id": "33124be94ed0b8028a4591859673f7ce",
+    "intento_id": "4adbebc3331517154bdd40458af55ed1",
+    "instrumento": "pulso",
+    "accion": "toma_completa",
+    "fase": "inicial",
+    "valor": {
+      "frecuencia": 102
+    },
+    "unidad": "lpm",
+    "momento": "2026-11-26T02:28:37.711Z",
+    "en_ficha": false,
+    "revision": 2,
+    "origen": "Pulsioxímetro simulado"
+  },
+  "historico": [
+    {
+      "medicion_id": "33124be94ed0b8028a4591859673f7ce",
+      "intento_id": "4adbebc3331517154bdd40458af55ed1",
+      "instrumento": "pulso",
+      "accion": "toma_completa",
+      "fase": "inicial",
+      "valor": {
+        "frecuencia": 102
+      },
+      "unidad": "lpm",
+      "momento": "2026-11-26T02:28:37.711Z",
+      "en_ficha": false,
+      "revision": 2,
+      "origen": "Pulsioxímetro simulado"
+    }
+  ]
+}

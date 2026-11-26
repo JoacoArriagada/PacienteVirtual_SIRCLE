@@ -1,0 +1,73 @@
+{
+  "navegador": "156.0.8078.4",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "escala": 1,
+  "zoom": 100,
+  "original": {
+    "brazo": {
+      "ancho": 540,
+      "alto": 360,
+      "sha256": "ceb789ae7c8f773d9bde5a24d01000620a7635759751dc87cc7bf618818abdc4"
+    },
+    "pasos": [
+      "Selecciona el brazalete disponible para el escenario.",
+      "Coloca el brazalete y apoya el brazo.",
+      "Confirma que el brazo permanece en posición."
+    ],
+    "preparacion": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "48077bc4c858b177559a2112f012fa0fcc37a20bb37742903fce98acb7cbda5f"
+    },
+    "colocado": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "72ecf17634bcee062f0a71779c989ae1fed5a59418fb91d3afdff15b2ca1f09c"
+    },
+    "ajustado": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "72ecf17634bcee062f0a71779c989ae1fed5a59418fb91d3afdff15b2ca1f09c"
+    },
+    "habilitacion": {
+      "preparacion": false,
+      "colocado": false,
+      "ajustado": true
+    }
+  },
+  "extraccion": {
+    "brazo": {
+      "ancho": 540,
+      "alto": 360,
+      "sha256": "ceb789ae7c8f773d9bde5a24d01000620a7635759751dc87cc7bf618818abdc4"
+    },
+    "pasos": [
+      "Selecciona el brazalete disponible para el escenario.",
+      "Coloca el brazalete y apoya el brazo.",
+      "Confirma que el brazo permanece en posición."
+    ],
+    "preparacion": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "48077bc4c858b177559a2112f012fa0fcc37a20bb37742903fce98acb7cbda5f"
+    },
+    "colocado": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "72ecf17634bcee062f0a71779c989ae1fed5a59418fb91d3afdff15b2ca1f09c"
+    },
+    "ajustado": {
+      "ancho": 461.859375,
+      "alto": 307.90625,
+      "sha256": "72ecf17634bcee062f0a71779c989ae1fed5a59418fb91d3afdff15b2ca1f09c"
+    },
+    "habilitacion": {
+      "preparacion": false,
+      "colocado": false,
+      "ajustado": true
+    }
+  }
+}

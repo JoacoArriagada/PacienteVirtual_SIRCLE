@@ -1,0 +1,9 @@
+núcleo	ficha	implementación	prueba	caso	aceptación
+01_rol_objetivo_modelo	backend/src/agentes/lr/01_rol_objetivo_modelo/README.md	backend/src/agentes/lr/perfil.rs	backend/tests/agente_lr.rs	mantiene_voz_de_lr	prueba actual
+02_fuentes_recuperacion_memoria	backend/src/agentes/lr/02_fuentes_recuperacion_memoria/README.md	backend/src/shared/contexto.rs	backend/tests/agente_lr.rs	cita_desconocimiento_familiar	prueba actual
+03_herramientas_mcp	backend/src/agentes/lr/03_herramientas_mcp/README.md	backend/src/shared/operaciones.rs	backend/tests/agente_lr.rs	preguntar_por_presion_no_mide	prueba actual
+04_identidad_acceso	backend/src/agentes/lr/04_identidad_acceso/README.md	backend/src/shared/autorizacion.rs	backend/tests/agente_lr.rs	aisla_dos_sugerencias_simultaneas	aisla_dos_preguntas_simultaneas T052 con preguntas libres
+05_controles_entrada_contexto_salida	backend/src/agentes/lr/05_controles_entrada_contexto_salida/README.md	backend/src/agentes/lr/entrevista.rs	backend/tests/agente_lr.rs	distingue_sugerencia_y_texto_editado	distingue_los_limites_del_relato T047 a T049
+06_cache	backend/src/agentes/lr/06_cache/README.md	backend/src/shared/ficha_aprobada.rs	backend/tests/agente_lr.rs	sugerencia_exacta_con_motor_caido	prueba actual
+07_enrutamiento	backend/src/agentes/lr/07_enrutamiento/README.md	backend/src/agentes/lr/enrutamiento.rs	backend/tests/agente_lr.rs	separa_turno_medicion_y_orden	prueba actual
+08_observabilidad_regresion	backend/src/agentes/lr/08_observabilidad_regresion/README.md	backend/src/shared/trazas.rs	backend/tests/agente_lr.rs	localiza_origen_de_turno_lr	prueba actual

@@ -1,0 +1,334 @@
+{
+  "matriz": {
+    "a": "457bb5e90dabc2109b28460ee22d09e0",
+    "acceso_cruzado_http": 403,
+    "antes_publicar": {
+      "estado": "post_pendiente"
+    },
+    "b": "ac96ed354b4c6503f0643a395518630f",
+    "idempotencia_http": 200,
+    "post_omitido_publicada": {
+      "estado": "publicada",
+      "observaciones": [
+        {
+          "actuacion": "No se registraron preguntas.",
+          "criterio_id": "entrevista",
+          "evidencias": [],
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "explicacion": "Faltó precisar el inicio de la falta de aire.",
+          "juicio": "omision",
+          "mejora": "Pregunta cuándo empezó y si se agravó."
+        },
+        {
+          "actuacion": "No registró evidencia para este criterio.",
+          "criterio_id": "valoracion",
+          "evidencias": [],
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "explicacion": "El intento cerró sin esa actuación.",
+          "juicio": "omision",
+          "mejora": "Incorpora la actuación y un vínculo recuperable."
+        },
+        {
+          "actuacion": "No confirmó el ECG en esta oportunidad.",
+          "criterio_id": "decisiones",
+          "evidencias": [],
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "explicacion": "El registro íntegro carece de orden confirmada.",
+          "juicio": "omision",
+          "mejora": "Confirma la orden y consulta su informe cuando se habilite."
+        },
+        {
+          "actuacion": "No registró evidencia para este criterio.",
+          "criterio_id": "evidencias",
+          "evidencias": [],
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "explicacion": "El intento cerró sin esa actuación.",
+          "juicio": "omision",
+          "mejora": "Incorpora la actuación y un vínculo recuperable."
+        },
+        {
+          "actuacion": "No registró evidencia para este criterio.",
+          "criterio_id": "hipotesis",
+          "evidencias": [],
+          "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten.",
+          "explicacion": "El intento cerró sin esa actuación.",
+          "juicio": "omision",
+          "mejora": "Incorpora la actuación y un vínculo recuperable."
+        }
+      ],
+      "prioridad": null,
+      "publicada_en": "2026-11-26T12:36:12.866Z",
+      "puntaje": {
+        "criterios": [
+          {
+            "credito": 0,
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 30,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 0,
+            "criterio_id": "valoracion",
+            "juicio": "omision",
+            "peso": 10,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 0,
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 0,
+            "criterio_id": "evidencias",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 0,
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          }
+        ],
+        "peso_aplicable": 100,
+        "total_centesimas": 0
+      },
+      "revision": 1
+    },
+    "post_omitido_sin_publicacion": {
+      "estado": "pendiente"
+    },
+    "post_respondido": {
+      "estado": "publicada",
+      "observaciones": [
+        {
+          "actuacion": "No se registraron preguntas.",
+          "criterio_id": "entrevista",
+          "evidencias": [],
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "explicacion": "Faltó precisar el inicio de la falta de aire.",
+          "juicio": "omision",
+          "mejora": "Pregunta cuándo empezó y si se agravó."
+        },
+        {
+          "actuacion": "Midió la presión.",
+          "criterio_id": "valoracion",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "explicacion": "La presión tiene valor y unidad instrumentales.",
+          "juicio": "acierto",
+          "mejora": "Añade frecuencia respiratoria en la próxima valoración."
+        },
+        {
+          "actuacion": "No confirmó el ECG en esta oportunidad.",
+          "criterio_id": "decisiones",
+          "evidencias": [],
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "explicacion": "El registro íntegro carece de orden confirmada.",
+          "juicio": "omision",
+          "mejora": "Confirma la orden y consulta su informe cuando se habilite."
+        },
+        {
+          "actuacion": "Vinculó el registro de presión.",
+          "criterio_id": "evidencias",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "explicacion": "La cita de la medición es recuperable.",
+          "juicio": "acierto",
+          "mejora": "Distingue además los datos de una declaración del paciente."
+        },
+        {
+          "actuacion": "Guardó una hipótesis parcial.",
+          "criterio_id": "hipotesis",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten.",
+          "explicacion": "Falta explicar el vínculo y contrastar una alternativa.",
+          "juicio": "omision",
+          "mejora": "Compara la presión registrada con una hipótesis alternativa."
+        }
+      ],
+      "prioridad": null,
+      "publicada_en": "2026-11-26T12:36:12.564Z",
+      "puntaje": {
+        "criterios": [
+          {
+            "credito": 0,
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "valoracion",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "evidencias",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          }
+        ],
+        "peso_aplicable": 100,
+        "total_centesimas": 4000
+      },
+      "revision": 1
+    },
+    "publicacion_con_post_pendiente": {
+      "docente_id": "docente-demo",
+      "evaluacion_id": "86bb7f0c9bd8dfd6e1c97a6c5b6592c6",
+      "numero": 1,
+      "publicada_en": "2026-11-26T12:36:12.564Z",
+      "revision": 1
+    },
+    "publicacion_rectificacion": {
+      "docente_id": "docente-demo",
+      "evaluacion_id": "86bb7f0c9bd8dfd6e1c97a6c5b6592c6",
+      "numero": 2,
+      "publicada_en": "2026-11-26T12:36:12.661Z",
+      "revision": 2
+    },
+    "visible_rectificada": {
+      "estado": "publicada",
+      "observaciones": [
+        {
+          "actuacion": "No se registraron preguntas.",
+          "criterio_id": "entrevista",
+          "evidencias": [],
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "explicacion": "Faltó precisar el inicio de la falta de aire.",
+          "juicio": "omision",
+          "mejora": "Pregunta cuándo empezó y si se agravó."
+        },
+        {
+          "actuacion": "Midió la presión arterial.",
+          "criterio_id": "valoracion",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "explicacion": "La presión tiene un registro válido. Faltó completar la valoración inicial.",
+          "juicio": "acierto",
+          "mejora": "Registra también la frecuencia respiratoria."
+        },
+        {
+          "actuacion": "No confirmó el ECG en esta oportunidad.",
+          "criterio_id": "decisiones",
+          "evidencias": [],
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "explicacion": "El registro íntegro carece de orden confirmada.",
+          "juicio": "omision",
+          "mejora": "Confirma la orden y consulta su informe cuando se habilite."
+        },
+        {
+          "actuacion": "Vinculó el registro de presión.",
+          "criterio_id": "evidencias",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "explicacion": "La cita de la medición es recuperable.",
+          "juicio": "acierto",
+          "mejora": "Distingue además los datos de una declaración del paciente."
+        },
+        {
+          "actuacion": "Guardó una hipótesis parcial.",
+          "criterio_id": "hipotesis",
+          "evidencias": [
+            "fe5eba4d8feefa2d28915fc14fc1ed67"
+          ],
+          "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten.",
+          "explicacion": "Falta explicar el vínculo y contrastar una alternativa.",
+          "juicio": "omision",
+          "mejora": "Compara la presión registrada con una hipótesis alternativa."
+        }
+      ],
+      "prioridad": null,
+      "publicada_en": "2026-11-26T12:36:12.661Z",
+      "puntaje": {
+        "criterios": [
+          {
+            "credito": 0,
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 75,
+            "criterio_id": "valoracion",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 1500
+          },
+          {
+            "credito": 0,
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          },
+          {
+            "credito": 100,
+            "criterio_id": "evidencias",
+            "juicio": "acierto",
+            "peso": 20,
+            "puntos_ponderados": 2000
+          },
+          {
+            "credito": 0,
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "puntos_ponderados": 0
+          }
+        ],
+        "peso_aplicable": 100,
+        "total_centesimas": 3500
+      },
+      "revision": 2
+    },
+    "vista_pendiente": {
+      "estado": "post_pendiente"
+    }
+  },
+  "bloqueo": {
+    "cuerpo": {
+      "mensaje": "Resuelve los criterios pendientes de revisión antes de publicar."
+    },
+    "evaluacion_id": "854ef869c8196a213243a8f5f77aecdc",
+    "http": 409,
+    "publicaciones": 0,
+    "usa_base_t061": true
+  }
+}

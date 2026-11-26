@@ -1,0 +1,21 @@
+T006 · 2026-11-25 20:49 -0300 · feature/prototipo · revisión base fbc3f1ca608d34482d19d72c32bb06dce796a185
+Procedimiento desde backend/
+  cargo test --locked --test preparacion -- --nocapture
+  La prueba usa un directorio temporal para copiar los originales y crear SQLite.
+  Invoca preparar dos veces, retira el EKG de evaluador y repite. Luego escribe un
+  byte no UTF-8 en esa misma ruta y vuelve a ejecutar preparar.
+
+Esperado
+  Dos preparaciones idénticas y un solo inventario válido. Cada fallo identifica
+  la ruta afectada y la base conserva el inventario previo.
+
+Observado
+  Las dos primeras invocaciones devolvieron código 0 y el mismo inventario TSV.
+  Las dos inválidas devolvieron error. Las cuatro consultas confirmaron 3 casos,
+  14 fuentes, 14 revisiones, 3 versiones y 14 vínculos con los mismos IDs y huellas.
+  Prueba independiente y suite completa aprobadas.
+  Respaldo: reimportacion.tsv con los cuatro inventarios.
+
+Errores identificados
+ausente · Error: No se pudo leer /tmp/.tmpOMZ3k0/datos/medsp1000/mededportal_3171/scenario1/evaluator/Pulmonary Embolism EKG.md
+invalida · Error: /tmp/.tmpOMZ3k0/datos/medsp1000/mededportal_3171/scenario1/evaluator/Pulmonary Embolism EKG.md no contiene texto UTF-8 válido

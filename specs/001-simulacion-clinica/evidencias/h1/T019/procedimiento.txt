@@ -1,0 +1,25 @@
+T019 · 2026-11-25 21:42 -0300 · feature/prototipo · revisión base fbc3f1ca608d34482d19d72c32bb06dce796a185
+Equipo: Intel Core i3-7020U (2 núcleos, 4 hilos), 11.6 GiB de RAM,
+Intel HD Graphics 620 integrada, sin acceso GPU desde Docker.
+Motor: Ollama 0.40.18 y Qwen 3.5:4b Q4_K_M, contexto máximo 2048 tokens,
+un proceso residente y concurrencia configurada en 1. Identidad estudiante-lr.
+
+Procedimiento desde backend/
+  target/debug/sircle servir --db target/demo.sqlite
+  cargo test --locked --test entrevista_http mide_la_pregunta -- --ignored --nocapture
+  La prueba descarga de memoria el modelo con keep_alive=0, verifica inventario
+  y /api/ps, y mide la pregunta T015 por HTTP con una clave nueva por muestra.
+  En caliente mantiene el mismo modelo residente, con VRAM cero.
+  Cotejar las operaciones con los registros de Axum y docker exec
+  sircle-ollama-h1 ollama ps.
+
+Resultado
+  Se esperaban dos respuestas confirmadas, una por estado y con claves distintas.
+  Frío (modelo descargado y fuera de memoria): 79798.518 ms.
+  Caliente (modelo residente): 5147.611 ms.
+  HTTP 201 en ambos estados. Una muestra por estado, de carácter exploratorio.
+  Repetir en el computador del profesor en la primera oportunidad.
+  Respaldo: latencias.tsv, backend/tests/entrevista_http.rs y target/t019-axum.log.
+
+NAME          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL              
+qwen3.5:4b    d8b0f5e9760c    3.1 GB    100% CPU     2048       llamacpp    9 minutes from now

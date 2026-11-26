@@ -1,0 +1,34 @@
+{
+  "hipotesis": [
+    {
+      "rol": "principal",
+      "titulo": "Dificultad respiratoria progresiva en dos días",
+      "explicacion": "LR refiere que empezó hace dos días y que hoy le cuesta más. El relato permite hablar de empeoramiento, sin establecer todavía la causa.",
+      "registros": ["inicio"]
+    },
+    {
+      "rol": "alternativa",
+      "titulo": "El ritmo rápido del ECG es sinusal",
+      "explicacion": "El informe del ECG identifica taquicardia sinusal y respalda el origen sinusal del ritmo rápido.",
+      "registros": ["ecg"]
+    },
+    {
+      "rol": "alternativa",
+      "titulo": "Presión sistólica elevada durante la valoración",
+      "explicacion": "Medí 148/85 mmHg. La cifra muestra elevación sistólica en esta toma, sin confirmar hipertensión sostenida.",
+      "registros": ["presion"]
+    },
+    {
+      "rol": "alternativa",
+      "titulo": "El esfuerzo inmediatamente previo explica el aumento de la disnea",
+      "explicacion": "",
+      "registros": []
+    }
+  ],
+  "clave": [
+    {"criterio": "hipotesis-1", "juicio": "acierto", "registro": "inicio", "contenido": "Relato con inicio hace dos días y empeoramiento hoy"},
+    {"criterio": "hipotesis-2", "juicio": "acierto", "registro": "ecg", "contenido": "Ritmo rápido de origen sinusal según el informe"},
+    {"criterio": "hipotesis-3", "juicio": "acierto", "registro": "presion", "contenido": "148/85 mmHg en una toma sin inferir hipertensión sostenida"},
+    {"criterio": "hipotesis-4", "juicio": "omision", "registro": "inicio", "contenido": "Falta vincular el empeoramiento con esfuerzo previo. Revisar el turno de inicio y preguntar qué hacía al agravarse la disnea"}
+  ]
+}

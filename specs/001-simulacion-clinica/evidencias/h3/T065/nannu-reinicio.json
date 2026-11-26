@@ -1,0 +1,117 @@
+{
+  "acuse_recuperado": {
+    "agente": "nannu",
+    "hablante": "Acompañante",
+    "intento_id": "c88503448133df415ddd6d4d1f8b8bcc",
+    "operacion_id": "26b32eb74ccf3543878823872bdb1fde",
+    "orden": 1,
+    "pregunta": "¿La ha visto toser y expulsar flema?",
+    "respuesta": "Ha estado tosiendo y ha expulsado flema.",
+    "revision": 2,
+    "tipo_respuesta": "hecho",
+    "turno_id": "64475ab3d626dd80c648e9c708467fdc"
+  },
+  "arranque_recuperado": {
+    "agente": "nannu",
+    "canal": "stdin/stdout:nannu",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "modelo": "qwen3.5:4b",
+    "ollama": "http://127.0.0.1:11434",
+    "pid": 1636307
+  },
+  "envio_interrumpido": {
+    "agente": "nannu",
+    "inicio_unix_ms": 1795697565030,
+    "intento_id": "c88503448133df415ddd6d4d1f8b8bcc",
+    "operacion_id": "26b32eb74ccf3543878823872bdb1fde",
+    "pid": 1634660
+  },
+  "envio_recuperado": {
+    "agente": "nannu",
+    "inicio_unix_ms": 1795697602775,
+    "intento_id": "c88503448133df415ddd6d4d1f8b8bcc",
+    "operacion_id": "26b32eb74ccf3543878823872bdb1fde",
+    "pid": 1636307
+  },
+  "interrupcion_cuerpo": {
+    "mensaje": "Entrevista temporalmente indisponible. Reintenta cuando se recupere el modelo local."
+  },
+  "interrupcion_http": 503,
+  "inventario_previo": [
+    {
+      "agente": "lr",
+      "canal": "stdin/stdout:lr",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "modelo": "qwen3.5:4b",
+      "ollama": "http://127.0.0.1:11434",
+      "pid": 1634656
+    },
+    {
+      "agente": "nannu",
+      "canal": "stdin/stdout:nannu",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "modelo": "qwen3.5:4b",
+      "ollama": "http://127.0.0.1:11434",
+      "pid": 1634660
+    },
+    {
+      "agente": "dan_sparks",
+      "canal": "stdin/stdout:dan_sparks",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "modelo": "qwen3.5:4b",
+      "ollama": "http://127.0.0.1:11434",
+      "pid": 1634664
+    },
+    {
+      "agente": "evaluador",
+      "canal": "stdin/stdout:evaluador",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "modelo": "qwen3.5:4b",
+      "ollama": "http://127.0.0.1:11434",
+      "pid": 1634668
+    }
+  ],
+  "otros_durante_interrupcion": {
+    "agente": "lr",
+    "inicio_unix_ms": 1795697565090,
+    "intento_id": "a265186eea604231b2a3572bec500923",
+    "operacion_id": "14e2ba9942133570bb9d294bd6d801f0",
+    "pid": 1634656
+  },
+  "reenvio_http": 200,
+  "turno_lr": {
+    "agente": "lr",
+    "hablante": "LR",
+    "intento_id": "a265186eea604231b2a3572bec500923",
+    "operacion_id": "14e2ba9942133570bb9d294bd6d801f0",
+    "orden": 1,
+    "pregunta": "¿Desde cuándo comenzó la falta de aire?",
+    "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+    "revision": 2,
+    "tipo_respuesta": "hecho",
+    "turno_id": "da301bc9b5f9b704e7737f86d070ee0f"
+  },
+  "turnos_tras_interrupcion": 0,
+  "turnos_tras_reintento": 1,
+  "regresion_rust": "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 10 filtered out; finished in 59.39s",
+  "modelo_cpu": {
+    "name": "qwen3.5:4b",
+    "model": "qwen3.5:4b",
+    "size": 3077528615,
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M"
+    },
+    "expires_at": "2026-11-26T13:03:44.35119666Z",
+    "size_vram": 0,
+    "context_length": 2048,
+    "runner": "llamacpp"
+  }
+}

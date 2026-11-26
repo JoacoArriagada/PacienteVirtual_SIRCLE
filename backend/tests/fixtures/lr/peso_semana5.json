@@ -1,0 +1,10 @@
+{
+  "valor": { "lectura": 64.3 },
+  "unidad": "kg",
+  "procedencia": {
+    "ruta": "docs/referencias/html-semana5/Paciente_Virtual.html",
+    "sha256": "ff9dea8958759550c5241ab9f0560c46f2726bf04ba1d46f927fb9febfeee032",
+    "localizacion": "CASES.lr.triaje, último argumento de metric, campo kg",
+    "naturaleza": "dato de ensayo"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "borrador": {
+    "cabecera": {
+      "agente": "evaluador",
+      "caso": "P01",
+      "fase": "entregado",
+      "hablante": "Evaluador",
+      "intento_id": "intento-ensayo",
+      "operacion_id": "evaluacion-ensayo",
+      "version": "caso-ensayo-v1"
+    },
+    "resultado": {
+      "entrega_id": "entrega-ensayo",
+      "observaciones": [
+        {
+          "actuacion": "Relacionó su hipótesis con el relato.",
+          "criterio_id": "fundamento",
+          "evidencias": [
+            "turno-ensayo"
+          ],
+          "expectativa": "Explicitar qué hallazgo respalda la hipótesis.",
+          "explicacion": "El registro tiene su origen indicado.",
+          "juicio": "acierto",
+          "mejora": "Explicitar qué cambiaría su hipótesis."
+        }
+      ],
+      "rubrica_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "tipo": "evaluacion"
+  },
+  "entrada": {
+    "cabecera": {
+      "agente": "evaluador",
+      "caso": "P01",
+      "fase": "entregado",
+      "hablante": "Evaluador",
+      "intento_id": "intento-ensayo",
+      "operacion_id": "evaluacion-ensayo",
+      "version": "caso-ensayo-v1"
+    },
+    "contenido": {
+      "entrega": {
+        "caso": "P01",
+        "confirmada": true,
+        "id": "entrega-ensayo",
+        "intento_id": "intento-ensayo",
+        "revision": 4,
+        "version_caso": "caso-ensayo-v1"
+      },
+      "evidencias": [
+        {
+          "id": "turno-ensayo",
+          "intento_id": "intento-ensayo",
+          "resumen": "Declaración de ensayo sobre la cronología.",
+          "tipo": "turno"
+        }
+      ],
+      "hipotesis": [
+        {
+          "evidencias": [
+            "turno-ensayo"
+          ],
+          "explicacion": "Relaciono el relato registrado con el inicio.",
+          "rol": "principal",
+          "titulo": "Hipótesis de ensayo"
+        }
+      ],
+      "rubrica": {
+        "criterios": [
+          {
+            "expectativa": "Explicitar qué hallazgo respalda la hipótesis.",
+            "id": "fundamento"
+          }
+        ],
+        "id": "rubrica-ensayo",
+        "nivel": "pregrado_avanzado",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "version": "1"
+      }
+    }
+  },
+  "origen": "fixture de contrato"
+}

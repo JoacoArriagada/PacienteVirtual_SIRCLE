@@ -1,0 +1,116 @@
+{
+  "entrada_congelada": {
+    "entrega": {
+      "caso": "P01",
+      "confirmada": true,
+      "id": "2f23037bb84d8385343ad4ba6dcc577c",
+      "intento_id": "869373ac01e08ea285fb55ca37582517",
+      "revision": 4,
+      "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    "evidencias": [
+      {
+        "id": "8e87937fd99049b98099a97ac78e9f8e",
+        "intento_id": "869373ac01e08ea285fb55ca37582517",
+        "resumen": "presion: {\"diastolica\":85,\"sistolica\":148} mmHg",
+        "tipo": "medicion"
+      },
+      {
+        "id": "b1b87322cc562b46d2241487b801516b",
+        "intento_id": "869373ac01e08ea285fb55ca37582517",
+        "resumen": "Se confirmó la orden ecg-inicial",
+        "tipo": "orden"
+      }
+    ],
+    "hipotesis": [
+      {
+        "evidencias": [
+          "8e87937fd99049b98099a97ac78e9f8e"
+        ],
+        "explicacion": "",
+        "rol": "principal",
+        "titulo": "Hipótesis parcial de ensayo"
+      }
+    ],
+    "rubrica": {
+      "criterios": [
+        {
+          "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio.",
+          "id": "entrevista"
+        },
+        {
+          "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido.",
+          "id": "valoracion"
+        },
+        {
+          "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+          "id": "decisiones"
+        },
+        {
+          "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento.",
+          "id": "evidencias"
+        },
+        {
+          "expectativa": "Fundamentar la hipótesis principal y contrastarla con al menos una alternativa mediante evidencias que la apoyen o debiliten.",
+          "id": "hipotesis"
+        }
+      ],
+      "id": "1",
+      "nivel": "pregrado_avanzado",
+      "sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+      "version": "1"
+    }
+  },
+  "instantanea": {
+    "borrador": {
+      "hipotesis": [
+        {
+          "evidencias": [
+            {
+              "origen_id": "8e87937fd99049b98099a97ac78e9f8e",
+              "tipo": "medicion"
+            }
+          ],
+          "explicacion": "",
+          "rol": "principal",
+          "titulo": "Hipótesis parcial de ensayo"
+        }
+      ],
+      "revision": 4
+    },
+    "evidencias": [
+      {
+        "autor": "estudiante-lr",
+        "categoria": "medicion",
+        "instrumento": "presion",
+        "intento_id": "869373ac01e08ea285fb55ca37582517",
+        "momento": "2026-11-26T11:01:07.302Z",
+        "origen": "Valoración instrumental",
+        "origen_id": "8e87937fd99049b98099a97ac78e9f8e",
+        "tipo": "medicion",
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      }
+    ],
+    "exploraciones": [],
+    "ordenes": [
+      {
+        "examen": "ecg-inicial",
+        "fase": "inicial",
+        "intento_id": "869373ac01e08ea285fb55ca37582517",
+        "momento": "2026-11-26T11:01:07.307Z",
+        "orden_id": "b1b87322cc562b46d2241487b801516b",
+        "revision": 3
+      }
+    ],
+    "turnos": []
+  },
+  "intento_b": "2578f7bca92ebb7149af49df903e93a1",
+  "invariancia_tras_mutar_registro_vivo": true,
+  "rubrica_alterada": "La huella de la rúbrica congelada no coincide",
+  "testigos_ausentes": 4,
+  "trabajos_intento_abierto": 0
+}

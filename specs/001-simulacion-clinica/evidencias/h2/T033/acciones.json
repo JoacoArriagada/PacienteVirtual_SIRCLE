@@ -1,0 +1,95 @@
+{
+  "navegador": "156.0.8078.4",
+  "intento": "97b07dcf74319fdf35a3cd113e9cbff4",
+  "registros": [
+    {
+      "zona": "postLeft",
+      "estados": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "016e4ddec9809a89d85a943fc8a2a2d7496b1459c98ef2c8644944891ef579ac"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "016e4ddec9809a89d85a943fc8a2a2d7496b1459c98ef2c8644944891ef579ac"
+        }
+      },
+      "ondas": {
+        "original": {
+          "rms": 0.01693690004532447,
+          "frecuencia": 48000,
+          "ganancia": 0.23999999463558197,
+          "segundos": 2.4,
+          "huella": "ac1e356eee9569e681c78de98c55e9965fc2c64fa9f81eebb83515390093e1e4"
+        },
+        "extraccion": {
+          "rms": 0.01693690004532447,
+          "frecuencia": 48000,
+          "ganancia": 0.23999999463558197,
+          "segundos": 2.4,
+          "huella": "ac1e356eee9569e681c78de98c55e9965fc2c64fa9f81eebb83515390093e1e4"
+        }
+      },
+      "acuse": {
+        "exploracion_id": "d90bcfe003929ed1f5f221fe3fa822e2",
+        "intento_id": "97b07dcf74319fdf35a3cd113e9cbff4",
+        "instrumento": "auscultacion",
+        "zona": "postLeft",
+        "etiqueta": "Base izquierda",
+        "fase": "inicial",
+        "momento": "2026-11-26T02:48:22.258Z",
+        "revision": 2,
+        "estado": "habilitado",
+        "hallazgo": {
+          "hallazgo_id": "d00261eabced80ba950b1d4b08b3b9df",
+          "texto": "Se oyen silbidos al final de la espiración y la entrada de aire está disminuida.",
+          "origen": "Versión de ensayo de LR"
+        }
+      }
+    },
+    {
+      "zona": "mitral",
+      "estados": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "dcf58e1ce55fd9df140ea16e771d36229a05ff18348f92d29e133e38cc7beff7"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "dcf58e1ce55fd9df140ea16e771d36229a05ff18348f92d29e133e38cc7beff7"
+        }
+      },
+      "ondas": {
+        "original": {
+          "rms": 0.008257262533003582,
+          "frecuencia": 48000,
+          "ganancia": 0.23999999463558197,
+          "segundos": 0.82,
+          "huella": "9b90c2c01151b4d5da83ff046a8a8159bccfc4b237e151569315f645f5066b9b"
+        },
+        "extraccion": {
+          "rms": 0.008257262533003582,
+          "frecuencia": 48000,
+          "ganancia": 0.23999999463558197,
+          "segundos": 0.82,
+          "huella": "9b90c2c01151b4d5da83ff046a8a8159bccfc4b237e151569315f645f5066b9b"
+        }
+      },
+      "acuse": {
+        "exploracion_id": "d3b09d1bce0721eeb97fadee83ec2313",
+        "intento_id": "97b07dcf74319fdf35a3cd113e9cbff4",
+        "instrumento": "auscultacion",
+        "zona": "mitral",
+        "etiqueta": "Foco mitral",
+        "fase": "inicial",
+        "momento": "2026-11-26T02:48:24.973Z",
+        "revision": 3,
+        "estado": "pendiente"
+      }
+    }
+  ]
+}

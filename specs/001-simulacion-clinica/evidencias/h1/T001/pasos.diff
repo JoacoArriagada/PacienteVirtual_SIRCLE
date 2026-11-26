@@ -1,0 +1,20 @@
+# T001 · 2026-11-25 20:37 -0300 · feature/prototipo · revisión base fbc3f1ca608d34482d19d72c32bb06dce796a185
+# Procedimiento
+#   git diff --unified=0 fbc3f1ca608d34482d19d72c32bb06dce796a185 -- specs/001-simulacion-clinica/spec.md
+#   git diff --check fbc3f1ca608d34482d19d72c32bb06dce796a185 -- specs/001-simulacion-clinica/spec.md
+#   Cotejar las dos filas con «Criterio de avance técnico» y «Se avanza» en plan.md.
+# Esperado: modificar las dos filas, conservar medición, preparación, paridad y reserva,
+# e incorporar la entrevista libre con Qwen por HTTP y su repetición desde el chat.
+# Observado: dos filas modificadas y git diff --check pasó.
+# H1 → H2 conserva la toma y el inventario e incorpora HTTP, pasaje, 503 y tiempos.
+# H2 → H3 conserva la paridad y reserva e incorpora el mismo endpoint y una nueva traza.
+# Respaldo: el diff adjunto identifica ambas filas en spec.md.
+diff --git a/specs/001-simulacion-clinica/spec.md b/specs/001-simulacion-clinica/spec.md
+index 0c51eb09..c57fad52 100644
+--- a/specs/001-simulacion-clinica/spec.md
++++ b/specs/001-simulacion-clinica/spec.md
+@@ -225,2 +225,2 @@ Los resultados se comprobarán en la implementación. Las primeras mediciones de
+-| **Hito 1 → Hito 2** | Ambas aplicaciones se instalan, ejecutan y prueban por separado. Se demuestra la operación de ejemplo desde la interfaz y su registro independiente sin navegador. El inventario de dos preparaciones muestra las mismas 14 fuentes, tres casos y el intento de muestra conservado (E19, E20). |
+-| **Hito 2 → Hito 3** | El inventario y las huellas acreditan que la copia inicial en el área de trabajo del frontend coincide con la referencia. Las capturas a igual resolución, el recorrido por teclado y el histórico acreditan la paridad en selección, chat, brazo ampliado y brazalete hasta su histórico. La revisión de recursos públicos demuestra que la versión extraída respeta los datos reservados (E07, E08, E10). En este hito los estados y las respuestas pueden ser de ejemplo. En el hito 4 se repite la comprobación de acceso con los datos servidos al estudiante. |
++| **Hito 1 → Hito 2** | Ambas aplicaciones se instalan, ejecutan y prueban por separado. Se demuestra la toma de ejemplo desde la interfaz y se reenvía por HTTP sin navegador. Una pregunta libre por HTTP, distinta de las sugerencias literales, obtiene de LR una respuesta en primera persona que sitúa el inicio hace dos días. La traza enlaza el intento, el turno, la llamada real a Ollama con Qwen y el pasaje de origen. Con el motor detenido, una operación nueva devuelve 503 sin agregar turnos. Se registran los tiempos en frío y en caliente. Dos preparaciones recuperan las mismas 14 fuentes, tres casos y el intento de muestra con su turno y una única medición (E06, E07, E19, E20). |
++| **Hito 2 → Hito 3** | El inventario y las huellas acreditan que la copia inicial en el área de trabajo del frontend coincide con la referencia. Las capturas a igual resolución, el recorrido por teclado y el histórico acreditan la paridad en selección, chat, brazo ampliado y brazalete hasta su histórico. Cancelar deja cero lecturas y reenviar el registro conserva una. Desde el chat se recupera la conversación del mismo intento y se formula una nueva pregunta libre mediante el endpoint de Hito 1, con una llamada real a Qwen, traza y turno persistido. La revisión de recursos públicos demuestra que la versión extraída respeta los datos reservados. La comparación visual puede usar material de prueba (E06, E07, E08, E10). En el hito 4 se repite la comprobación de acceso con los datos servidos al estudiante. |

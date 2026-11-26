@@ -1,0 +1,38 @@
+{
+  "name": "sircle-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:ejemplo": "node scripts/build.mjs --ejemplo",
+    "test": "npm run build:ejemplo && node --test",
+    "dev:ejemplo": "npm run build:ejemplo && node scripts/dev-ejemplo.mjs",
+    "dev:integrado": "npm run build && node scripts/dev-integrado.mjs",
+    "test:navegador:brazalete": "node scripts/verificar-brazalete.mjs",
+    "test:navegador:semana5": "node scripts/verificar-semana5.mjs",
+    "test:navegador:seleccion": "node scripts/verificar-seleccion.mjs",
+    "test:navegador:ficha": "node scripts/verificar-ficha.mjs",
+    "test:navegador:sugerencias": "node scripts/verificar-sugerencias.mjs",
+    "test:navegador:chat": "node scripts/verificar-chat-integrado.mjs",
+    "test:navegador:brazo": "node scripts/verificar-brazo.mjs",
+    "test:navegador:presion": "node scripts/verificar-presion.mjs",
+    "test:navegador:ritmos": "node scripts/verificar-ritmos.mjs",
+    "test:navegador:sensores": "node scripts/verificar-sensores.mjs",
+    "test:navegador:exploraciones": "node scripts/verificar-exploraciones.mjs",
+    "test:navegador:auscultacion": "node scripts/verificar-auscultacion.mjs",
+    "test:navegador:ecg": "node scripts/verificar-orden-ecg.mjs",
+    "test:navegador:apuntes": "node scripts/verificar-apuntes.mjs",
+    "test:navegador:hipotesis": "node scripts/verificar-hipotesis.mjs",
+    "test:navegador:entrega": "node scripts/verificar-entrega.mjs",
+    "test:navegador:revision-docente": "node scripts/verificar-revision-docente.mjs",
+    "test:navegador:publicacion": "node scripts/verificar-publicacion.mjs",
+    "test:navegador:paridad": "sh -c 'SIRCLE_PARIDAD_EVIDENCIA=\"$1\" SIRCLE_PARIDAD_DB=\"$2\" node --test tests/paridad_semana5.test.ts' paridad",
+    "test:navegador:reserva": "sh -c 'SIRCLE_RESERVA_EVIDENCIA=\"$1\" SIRCLE_RESERVA_DB=\"$2\" node --test tests/reserva_publica.test.ts' reserva",
+    "test:navegador:dato-ausente": "node scripts/verificar-dato-ausente.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.64.1",
+    "typescript": "5.9.3"
+  }
+}

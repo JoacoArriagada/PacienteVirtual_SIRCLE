@@ -1,0 +1,122 @@
+{
+  "tarea": "T008",
+  "fecha": "2026-11-25 20:56 -0300",
+  "rama": "feature/prototipo",
+  "revision_base": "fbc3f1ca608d34482d19d72c32bb06dce796a185",
+  "procedimiento": [
+    "Desde backend/: cargo test --locked --test intentos -- --nocapture",
+    "cargo run --locked --bin sircle -- preparar --db target/demo.sqlite --fuentes ../datos",
+    "target/debug/sircle servir --db target/demo.sqlite",
+    "POST /api/sesiones con identidad estudiante-lr. Con la cookie, POST /api/intentos con actividad_id lr-ensayo e Idempotency-Key alta-lr-ensayo.",
+    "target/debug/sircle resolver-pre-ensayo --db target/demo.sqlite --intento <intento_id>",
+    "DELETE /api/sesiones, volver a entrar, GET /api/intentos/<intento_id> y reenviar POST con la misma clave."
+  ],
+  "esperado": "El pre queda omitido en ensayo. Reabrir y reenviar conserva ID, titular, actividad, fase y las tres versiones.",
+  "observado_prueba": {
+    "actividad_reabierta": {
+      "actividad_id": "lr-ensayo",
+      "intento_id": "e283ef96e7c50fe2ac09e22e6f444c0e",
+      "nombre": "Práctica técnica de LR",
+      "pre": "omitido",
+      "tipo": "ensayo"
+    },
+    "alta": {
+      "clave": "alta-lr-ensayo",
+      "cuerpo": {
+        "actividad_id": "lr-ensayo",
+        "caso": "P01",
+        "estado": "pre_pendiente",
+        "estudiante_id": "estudiante-lr",
+        "fase": "inicial",
+        "intento_id": "e283ef96e7c50fe2ac09e22e6f444c0e",
+        "pre": "pendiente",
+        "revision": 0,
+        "tipo": "ensayo",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "version_rubrica": "rubrica-ensayo-v1"
+      },
+      "http": 201
+    },
+    "antes_de_salir": {
+      "actividad_id": "lr-ensayo",
+      "caso": "P01",
+      "estado": "atencion",
+      "estudiante_id": "estudiante-lr",
+      "fase": "inicial",
+      "intento_id": "e283ef96e7c50fe2ac09e22e6f444c0e",
+      "pre": "omitido",
+      "revision": 1,
+      "tipo": "ensayo",
+      "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+      "version_instrumento": "instrumento-ensayo-v1",
+      "version_rubrica": "rubrica-ensayo-v1"
+    },
+    "sesion_cerrada_http": 401,
+    "tras_reabrir": {
+      "actividad_id": "lr-ensayo",
+      "caso": "P01",
+      "estado": "atencion",
+      "estudiante_id": "estudiante-lr",
+      "fase": "inicial",
+      "intento_id": "e283ef96e7c50fe2ac09e22e6f444c0e",
+      "pre": "omitido",
+      "revision": 1,
+      "tipo": "ensayo",
+      "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+      "version_instrumento": "instrumento-ensayo-v1",
+      "version_rubrica": "rubrica-ensayo-v1"
+    },
+    "tras_reenviar": {
+      "cuerpo": {
+        "actividad_id": "lr-ensayo",
+        "caso": "P01",
+        "estado": "atencion",
+        "estudiante_id": "estudiante-lr",
+        "fase": "inicial",
+        "intento_id": "e283ef96e7c50fe2ac09e22e6f444c0e",
+        "pre": "omitido",
+        "revision": 1,
+        "tipo": "ensayo",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "version_rubrica": "rubrica-ensayo-v1"
+      },
+      "http": 200
+    },
+    "vista_ajena_http": 403
+  },
+  "observado_http_local": {
+    "alta_http": 201,
+    "antes_de_resolver_pre": {
+      "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+      "actividad_id": "lr-ensayo",
+      "estudiante_id": "estudiante-lr",
+      "tipo": "ensayo",
+      "caso": "P01",
+      "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+      "version_rubrica": "rubrica-ensayo-v1",
+      "version_instrumento": "instrumento-ensayo-v1",
+      "pre": "pendiente",
+      "fase": "inicial",
+      "estado": "pre_pendiente",
+      "revision": 0
+    },
+    "reabierto": {
+      "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+      "actividad_id": "lr-ensayo",
+      "estudiante_id": "estudiante-lr",
+      "tipo": "ensayo",
+      "caso": "P01",
+      "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+      "version_rubrica": "rubrica-ensayo-v1",
+      "version_instrumento": "instrumento-ensayo-v1",
+      "pre": "omitido",
+      "fase": "inicial",
+      "estado": "atencion",
+      "revision": 1
+    },
+    "reenvio_http": 200
+  },
+  "respaldo": "backend/tests/intentos.rs y backend/target/demo.sqlite. El intento HTTP local se conserva para las pruebas del hito 1."
+}

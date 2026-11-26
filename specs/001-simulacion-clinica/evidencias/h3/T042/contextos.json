@@ -1,0 +1,166 @@
+{
+  "contextos_antes_y_despues": [
+    {
+      "agente": "lr",
+      "candidatos": [
+        {
+          "condicion": "Pregunta por enfermedades o antecedentes médicos de su familia biológica.",
+          "escenario": "P01",
+          "fase": "inicial",
+          "fuente": "mededportal_10181/scenario1/sp_actor/Case A-Asthma.md",
+          "hablante": "LR",
+          "id": "lr-antecedentes-familiares",
+          "linea": 17,
+          "pasaje": "Family Hx: unknown, patient was adopted.",
+          "respuesta": "No conozco los antecedentes de mi familia biológica porque fui adoptada.",
+          "revision_fuente_id": 4,
+          "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+        },
+        {
+          "condicion": "Pregunta sobre cuándo empezó la falta de aire o cuánto tiempo lleva.",
+          "escenario": "P01",
+          "fase": "inicial",
+          "fuente": "mededportal_10181/scenario1/sp_actor/Case A-Asthma.md",
+          "hablante": "LR",
+          "id": "lr-inicio",
+          "linea": 7,
+          "pasaje": "Breathing problems started 2 days ago initially with runny nose and cough. Now feeling more short of breath. Has been using her albuterol inhaler every hour without relief.",
+          "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+          "revision_fuente_id": 4,
+          "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+        }
+      ],
+      "caso": "P01",
+      "estudiante_id": "estudiante-lr",
+      "fase": "inicial",
+      "hablante": "LR",
+      "intento_id": "0cd64163bf2975a952f0f79beb4528d5",
+      "memoria": [
+        {
+          "hablante": "LR",
+          "pregunta": "¿Desde cuándo comenzó?",
+          "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+          "turno_id": "b4405370a57099190167f02795835d45"
+        }
+      ],
+      "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    {
+      "agente": "lr",
+      "candidatos": [
+        {
+          "condicion": "Pregunta por enfermedades o antecedentes médicos de su familia biológica.",
+          "escenario": "P01",
+          "fase": "inicial",
+          "fuente": "mededportal_10181/scenario1/sp_actor/Case A-Asthma.md",
+          "hablante": "LR",
+          "id": "lr-antecedentes-familiares",
+          "linea": 17,
+          "pasaje": "Family Hx: unknown, patient was adopted.",
+          "respuesta": "No conozco los antecedentes de mi familia biológica porque fui adoptada.",
+          "revision_fuente_id": 4,
+          "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+        },
+        {
+          "condicion": "Pregunta sobre cuándo empezó la falta de aire o cuánto tiempo lleva.",
+          "escenario": "P01",
+          "fase": "inicial",
+          "fuente": "mededportal_10181/scenario1/sp_actor/Case A-Asthma.md",
+          "hablante": "LR",
+          "id": "lr-inicio",
+          "linea": 7,
+          "pasaje": "Breathing problems started 2 days ago initially with runny nose and cough. Now feeling more short of breath. Has been using her albuterol inhaler every hour without relief.",
+          "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+          "revision_fuente_id": 4,
+          "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+        }
+      ],
+      "caso": "P01",
+      "estudiante_id": "estudiante-sin-asignacion",
+      "fase": "inicial",
+      "hablante": "LR",
+      "intento_id": "16911c8a61d39671eaa33adc02135861",
+      "memoria": [
+        {
+          "hablante": "LR",
+          "pregunta": "¿Desde cuándo comenzó?",
+          "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+          "turno_id": "bec055eca07b697d69ec47edad1ab1c0"
+        }
+      ],
+      "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    {
+      "agente": "nannu",
+      "candidatos": [
+        {
+          "condicion": "Condición de ensayo",
+          "escenario": "P02",
+          "fase": "inicial",
+          "fuente": "mep_2374-8265.10924-s001/scenario3/sp_actor/C. Pneumonia with Septic Shock.md",
+          "hablante": "Nannu",
+          "id": "p02-dolor-t042",
+          "linea": 5,
+          "pasaje": "R sided chest pain when breathing.",
+          "respuesta": "Respuesta de ensayo",
+          "revision_fuente_id": 8,
+          "version": "ensayo-contexto-p02-v1"
+        }
+      ],
+      "caso": "P02",
+      "estudiante_id": "estudiante-lr",
+      "fase": "inicial",
+      "hablante": "Nannu",
+      "intento_id": "630f41d461959da7be39fb16983ba28a",
+      "memoria": [
+        {
+          "hablante": "Nannu",
+          "pregunta": "Pregunta de ensayo",
+          "respuesta": "Respuesta de ensayo",
+          "turno_id": "p02-habla-nannu"
+        }
+      ],
+      "version": "ensayo-contexto-p02-v1"
+    },
+    {
+      "agente": "nannu",
+      "candidatos": [
+        {
+          "condicion": "Condición de ensayo",
+          "escenario": "P02",
+          "fase": "inicial",
+          "fuente": "mep_2374-8265.10924-s001/scenario3/sp_actor/C. Pneumonia with Septic Shock.md",
+          "hablante": "Acompañante",
+          "id": "p02-tos-t042",
+          "linea": 5,
+          "pasaje": "Family will say she has had a productive cough.",
+          "respuesta": "Respuesta de ensayo",
+          "revision_fuente_id": 8,
+          "version": "ensayo-contexto-p02-v1"
+        }
+      ],
+      "caso": "P02",
+      "estudiante_id": "estudiante-lr",
+      "fase": "inicial",
+      "hablante": "Acompañante",
+      "intento_id": "630f41d461959da7be39fb16983ba28a",
+      "memoria": [
+        {
+          "hablante": "Acompañante",
+          "pregunta": "Pregunta de ensayo",
+          "respuesta": "Respuesta de ensayo",
+          "turno_id": "p02-habla-acompanante"
+        }
+      ],
+      "version": "ensayo-contexto-p02-v1"
+    }
+  ],
+  "origen_p02": "material identificable de ensayo, perfiles clínicos en T044",
+  "rechazados": [
+    "p02-fase-ajena",
+    "p02-version-ajena",
+    "p02-fase-posterior",
+    "p02-agente-ajeno"
+  ],
+  "reinicio_iguales": true
+}

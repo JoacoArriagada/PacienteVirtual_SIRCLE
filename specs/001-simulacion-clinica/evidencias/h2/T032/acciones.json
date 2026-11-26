@@ -1,0 +1,120 @@
+{
+  "navegador": "156.0.8078.4",
+  "intento": "2f367e67826527c06ef428c3fe0b5f5e",
+  "registros": [
+    {
+      "zona": "frontal",
+      "estados": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "2dc876c85d032fd7970a67de4084a2e22b77d6b2b11e3b42d0a0964a7e4e56c7"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "2dc876c85d032fd7970a67de4084a2e22b77d6b2b11e3b42d0a0964a7e4e56c7"
+        }
+      },
+      "acuse": {
+        "exploracion_id": "0e4c05d6e993310703a03725de852d2e",
+        "intento_id": "2f367e67826527c06ef428c3fe0b5f5e",
+        "instrumento": "inspeccion",
+        "zona": "frontal",
+        "etiqueta": "Tórax anterior",
+        "fase": "inicial",
+        "momento": "2026-11-26T02:41:14.283Z",
+        "revision": 2,
+        "estado": "habilitado",
+        "hallazgo": {
+          "hallazgo_id": "24a645f0d3707622c2f4ea9e3d00963d",
+          "texto": "Se observa esfuerzo respiratorio con uso de musculatura accesoria. LR habla en frases cortas.",
+          "origen": "Versión de ensayo de LR"
+        }
+      }
+    },
+    {
+      "zona": "posterior",
+      "estados": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "0c0e29a3a0b1f75800d8fecf3999e7a997c47c23533fba42a971fb57202ced13"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "0c0e29a3a0b1f75800d8fecf3999e7a997c47c23533fba42a971fb57202ced13"
+        }
+      },
+      "acuse": {
+        "exploracion_id": "ce65e8db66402014a27919e5172cf8b8",
+        "intento_id": "2f367e67826527c06ef428c3fe0b5f5e",
+        "instrumento": "inspeccion",
+        "zona": "posterior",
+        "etiqueta": "Tórax posterior",
+        "fase": "inicial",
+        "momento": "2026-11-26T02:41:15.528Z",
+        "revision": 3,
+        "estado": "pendiente"
+      }
+    },
+    {
+      "zona": "central",
+      "estados": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "2dc876c85d032fd7970a67de4084a2e22b77d6b2b11e3b42d0a0964a7e4e56c7"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "2dc876c85d032fd7970a67de4084a2e22b77d6b2b11e3b42d0a0964a7e4e56c7"
+        }
+      },
+      "acuse": {
+        "exploracion_id": "9d349328024cfdbd457b972f68fa6106",
+        "intento_id": "2f367e67826527c06ef428c3fe0b5f5e",
+        "instrumento": "palpacion",
+        "zona": "central",
+        "etiqueta": "Tórax anterior",
+        "fase": "inicial",
+        "momento": "2026-11-26T02:41:16.827Z",
+        "revision": 4,
+        "estado": "habilitado",
+        "hallazgo": {
+          "hallazgo_id": "298132d5a00901cdbfdc965473a39934",
+          "texto": "Expansión palpable en ambos lados. No refiere dolor localizado con el contacto superficial.",
+          "origen": "Semana 5, material de ensayo"
+        }
+      }
+    },
+    {
+      "zona": "extremidad",
+      "estados": {
+        "original": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "119a14450225206bb6a8bf6bb2eeb908792abc288aeff8d7e5801aa08f8aa5fa"
+        },
+        "extraccion": {
+          "ancho": 461.859375,
+          "alto": 307.90625,
+          "huella": "119a14450225206bb6a8bf6bb2eeb908792abc288aeff8d7e5801aa08f8aa5fa"
+        }
+      },
+      "acuse": {
+        "exploracion_id": "6f9f10f8fb23d021eba18af9bde3010f",
+        "intento_id": "2f367e67826527c06ef428c3fe0b5f5e",
+        "instrumento": "palpacion",
+        "zona": "extremidad",
+        "etiqueta": "Pantorrilla derecha",
+        "fase": "inicial",
+        "momento": "2026-11-26T02:41:18.043Z",
+        "revision": 5,
+        "estado": "pendiente"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "tarea": "T015",
+  "fecha": "2026-11-25 21:30 -0300",
+  "revision_base": "fbc3f1ca608d34482d19d72c32bb06dce796a185",
+  "rama": "feature/prototipo",
+  "rol": "estudiante ficticio estudiante-lr",
+  "procedimiento": [
+    "Arrancar el contenedor Ollama de T013.",
+    "Desde backend/: cargo run --locked --bin sircle -- preparar --db target/demo.sqlite --fuentes ../datos",
+    "cargo run --locked --bin sircle -- servir --db target/demo.sqlite",
+    "En otra terminal: cargo test --locked --test entrevista_http -- --ignored --nocapture"
+  ],
+  "esperado": "Una paráfrasis ajena al desplegable obtiene 201 en la primera ejecución y un turno de LR en primera persona sobre el inicio hace dos días. El GET recupera el mismo turno.",
+  "observado": {
+    "acuse": {
+      "agente": "lr",
+      "hablante": "LR",
+      "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+      "operacion_id": "2c57671ea869d4251e793fbb0f9d7d32",
+      "orden": 1,
+      "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "revision": 2,
+      "tipo_respuesta": "hecho",
+      "turno_id": "15d81d67da3ce808602bfaaa840a20fa"
+    },
+    "clave": "t015-parafrasis-inicio",
+    "http": 201,
+    "numero_de_sugerencias_cotejadas": 15,
+    "peticion": {
+      "texto": "¿Hace cuánto empezaste a sentir que te faltaba el aire?"
+    },
+    "recuento_posterior": 1,
+    "recuento_previo": 0,
+    "ruta": "http://127.0.0.1:8081/api/intentos/c1aaccc1b05db9c4cc6cb572ddad196e/turnos",
+    "turno_recuperado": {
+      "agente": "lr",
+      "hablante": "LR",
+      "intento_id": "c1aaccc1b05db9c4cc6cb572ddad196e",
+      "operacion_id": "2c57671ea869d4251e793fbb0f9d7d32",
+      "orden": 1,
+      "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "revision": 2,
+      "tipo_respuesta": "hecho",
+      "turno_id": "15d81d67da3ce808602bfaaa840a20fa"
+    }
+  },
+  "motor": {
+    "equipo": "Desarrollo, i3-7020U, 11.6 GiB RAM, HD 620 sin montar",
+    "modelo": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "residente_antes": true,
+    "residente_despues": true,
+    "proceso": "NAME          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL              \nqwen3.5:4b    d8b0f5e9760c    3.1 GB    100% CPU     2048       llamacpp    9 minutes from now"
+  },
+  "respaldo": "backend/tests/entrevista_http.rs, target/demo.sqlite con el intento T008 y target/t015-axum.log con la operación correlacionada"
+}

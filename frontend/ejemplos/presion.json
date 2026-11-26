@@ -1,0 +1,6 @@
+{
+  "medicion_id": "presion-lr-ejemplo-v1",
+  "valor": { "sistolica": 148, "diastolica": 85 },
+  "unidad": "mmHg",
+  "fuente": "Lectura de ensayo de LR, fase inicial"
+}

@@ -1,0 +1,93 @@
+{
+  "contenido": {
+    "codigo": "lr-calibracion-e12",
+    "version": "1",
+    "actividad": "lr-ensayo",
+    "caso": "P01",
+    "nivel": "pregrado_avanzado",
+    "criterios": [
+      {
+        "id": "entrevista",
+        "ambito": "entrevista",
+        "peso": 15,
+        "evidencias": [
+          "turno"
+        ],
+        "expectativa": "Precisar la cronología de la falta de aire con una pregunta que permita identificar su inicio."
+      },
+      {
+        "id": "valoracion",
+        "ambito": "valoracion",
+        "peso": 15,
+        "evidencias": [
+          "medicion",
+          "hallazgo"
+        ],
+        "expectativa": "Completar una valoración inicial y distinguir el dato medido o el hallazgo observado de lo referido."
+      },
+      {
+        "id": "decisiones",
+        "ambito": "decisiones",
+        "peso": 15,
+        "evidencias": [
+          "orden",
+          "informe"
+        ],
+        "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual."
+      },
+      {
+        "id": "evidencias",
+        "ambito": "uso_de_evidencias",
+        "peso": 15,
+        "evidencias": [
+          "turno",
+          "medicion",
+          "informe"
+        ],
+        "expectativa": "Distinguir declaración, medición e informe. Citar registros recuperables del propio intento."
+      },
+      {
+        "id": "hipotesis-1",
+        "ambito": "hipotesis",
+        "peso": 10,
+        "evidencias": [
+          "turno"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "hipotesis_posicion": 1
+      },
+      {
+        "id": "hipotesis-2",
+        "ambito": "hipotesis",
+        "peso": 10,
+        "evidencias": [
+          "informe"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "hipotesis_posicion": 2
+      },
+      {
+        "id": "hipotesis-3",
+        "ambito": "hipotesis",
+        "peso": 10,
+        "evidencias": [
+          "medicion",
+          "hallazgo"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "hipotesis_posicion": 3
+      },
+      {
+        "id": "hipotesis-4",
+        "ambito": "hipotesis",
+        "peso": 10,
+        "evidencias": [
+          "turno"
+        ],
+        "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+        "hipotesis_posicion": 4
+      }
+    ],
+    "regla": "suma_ponderada_normalizada"
+  }
+}

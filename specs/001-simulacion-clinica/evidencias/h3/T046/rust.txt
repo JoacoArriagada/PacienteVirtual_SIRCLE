@@ -1,0 +1,13 @@
+test conserva_referencias_para_revision ... ok
+test evalua_solo_entrega_confirmada ... ok
+test cita_la_entrega_y_su_version ... ok
+test excluye_entregas_y_encuestas_ajenas ... ok
+test correlaciona_el_evaluador ... ok
+test solo_correlaciona_borrador_con_su_entrega ... ok
+test valida_cinco_partes_de_la_observacion ... ok
+test propuesta_no_publica ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+test inicia_cuatro_canales_y_cada_uno_responde_con_su_identidad ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test proyecta_solo_registros_de_la_fase_y_el_propietario ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s

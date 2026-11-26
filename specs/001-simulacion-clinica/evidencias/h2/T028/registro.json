@@ -1,0 +1,111 @@
+{
+  "id": "bdb5df84a6a543ddd733a7609cb4e31f",
+  "navegador": "156.0.8078.4",
+  "cancelada": {
+    "peticiones": 0,
+    "historico": []
+  },
+  "completa": {
+    "http": 201,
+    "clave": "5601ce51-76b0-4f46-b4f7-b4f0d531c496",
+    "lectura": {
+      "medicion_id": "08fd0eef579ee6110a5cd3fc369eca5b",
+      "intento_id": "bdb5df84a6a543ddd733a7609cb4e31f",
+      "instrumento": "presion",
+      "accion": "toma_completa",
+      "fase": "inicial",
+      "valor": {
+        "diastolica": 85,
+        "sistolica": 148
+      },
+      "unidad": "mmHg",
+      "momento": "2026-11-26T02:21:55.180Z",
+      "en_ficha": false,
+      "revision": 2
+    }
+  },
+  "acuses": [
+    {
+      "http": 200,
+      "clave": "cf959169-55ae-44db-b904-682659b3bc86",
+      "cuerpo": {
+        "medicion_id": "08fd0eef579ee6110a5cd3fc369eca5b",
+        "intento_id": "bdb5df84a6a543ddd733a7609cb4e31f",
+        "instrumento": "presion",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        },
+        "unidad": "mmHg",
+        "momento": "2026-11-26T02:21:55.180Z",
+        "en_ficha": true,
+        "revision": 3
+      }
+    },
+    {
+      "http": 200,
+      "clave": "cf959169-55ae-44db-b904-682659b3bc86",
+      "cuerpo": {
+        "medicion_id": "08fd0eef579ee6110a5cd3fc369eca5b",
+        "intento_id": "bdb5df84a6a543ddd733a7609cb4e31f",
+        "instrumento": "presion",
+        "accion": "toma_completa",
+        "fase": "inicial",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        },
+        "unidad": "mmHg",
+        "momento": "2026-11-26T02:21:55.180Z",
+        "en_ficha": true,
+        "revision": 3
+      }
+    }
+  ],
+  "historico": [
+    {
+      "medicion_id": "08fd0eef579ee6110a5cd3fc369eca5b",
+      "intento_id": "bdb5df84a6a543ddd733a7609cb4e31f",
+      "instrumento": "presion",
+      "accion": "toma_completa",
+      "fase": "inicial",
+      "valor": {
+        "diastolica": 85,
+        "sistolica": 148
+      },
+      "unidad": "mmHg",
+      "momento": "2026-11-26T02:21:55.180Z",
+      "en_ficha": true,
+      "revision": 3
+    }
+  ],
+  "ficha": {
+    "datos": [
+      {
+        "etiqueta": "Presión inicial",
+        "valor": "148/85 mmHg"
+      }
+    ],
+    "fase": "inicial",
+    "fuente": "Triaje de ensayo de LR",
+    "hallazgos": [
+      {
+        "accion": "toma_completa",
+        "en_ficha": true,
+        "fase": "inicial",
+        "instrumento": "presion",
+        "intento_id": "bdb5df84a6a543ddd733a7609cb4e31f",
+        "medicion_id": "08fd0eef579ee6110a5cd3fc369eca5b",
+        "momento": "2026-11-26T02:21:55.180Z",
+        "revision": 3,
+        "unidad": "mmHg",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        }
+      }
+    ]
+  }
+}

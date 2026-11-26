@@ -1,0 +1,22 @@
+test rastrear_cronologia_de_dan ... ok
+test excluye_contexto_de_p01 ... ok
+test protege_informe_del_controlador ... ok
+test mantiene_identidad_despues_de_lr ... ok
+test recupera_cuatro_horas_de_p03 ... ok
+test separa_relato_e_informe ... ok
+test sugerencia_literal_respeta_p03 ... ok
+test rechaza_hecho_ajeno_o_imagen_ausente ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.49s
+test consulta_al_acompanante ... ok
+test localiza_pasaje_del_acompanante ... ok
+test atribuye_el_dolor_y_la_tos ... ok
+test cambiar_hablante_conserva_propietario ... ok
+test mantiene_paciente_y_acompanante ... ok
+test rechaza_atribucion_incorrecta ... ok
+test recupera_ruta_del_acompanante ... ok
+test separa_sugerencias_por_hablante ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.58s
+test reconstruye_memoria_por_estudiante_intento_agente_y_voz ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+test una_preparacion_invalida_conserva_el_catalogo_anterior ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s

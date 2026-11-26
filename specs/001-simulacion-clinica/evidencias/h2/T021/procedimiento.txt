@@ -1,0 +1,15 @@
+T021 · 2026-11-25 21:44 -0300 · feature/prototipo · revisión base fbc3f1ca608d34482d19d72c32bb06dce796a185
+Esperado: original íntegro y copia privada con rutas y bytes idénticos.
+
+Procedimiento desde la raíz
+  mkdir -p frontend/referencia/semana5
+  cp -p docs/referencias/html-semana5/Paciente_Virtual.html frontend/referencia/semana5/
+  cp -a docs/referencias/html-semana5/recursos frontend/referencia/semana5/
+  En cada carpeta, ejecutar find . -type f -print0 | sort -z | xargs -0 sha256sum.
+  Comparar ambos inventarios por ruta relativa y SHA-256 antes de editar.
+  git diff --exit-code HEAD -- docs/referencias/html-semana5
+
+Observado
+  Coinciden 29 rutas, el HTML y 28 recursos. No hubo rutas faltantes, sobrantes
+  ni huellas distintas. El original mantuvo SHA-256 ff9dea8958759550c5241ab9f0560c46f2726bf04ba1d46f927fb9febfeee032.
+  Respaldo: inventarios.tsv, ordenado por ruta.

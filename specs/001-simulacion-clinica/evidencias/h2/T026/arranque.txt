@@ -1,0 +1,13 @@
+
+> sircle-frontend@0.1.0 dev:integrado
+> npm run build && node scripts/dev-integrado.mjs
+
+
+> sircle-frontend@0.1.0 build
+> node scripts/build.mjs
+
+Frontend integrado disponible en http://127.0.0.1:8080
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.29s
+     Running `target/debug/sircle servir --db target/demo.sqlite`
+SIRCLE API en http://127.0.0.1:8081

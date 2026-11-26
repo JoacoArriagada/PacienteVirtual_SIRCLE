@@ -1,0 +1,143 @@
+{
+  "cabecera_en_traza_docente": {
+    "agente": "lr",
+    "caso": "P01",
+    "fase": "inicial",
+    "hablante": "LR",
+    "intento_id": "f91bcdb75616a7da17739a0f188e058e",
+    "operacion_id": "t039-valida",
+    "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+  },
+  "descartes": [
+    {
+      "campo": "/cabecera/operacion_id",
+      "motivo_guardado": "operacion_no_coincide",
+      "operacion_id": "t039-operacion_no_coincide",
+      "recibido": "otra-operacion",
+      "turnos": 1
+    },
+    {
+      "campo": "/cabecera/intento_id",
+      "motivo_guardado": "intento_no_coincide",
+      "operacion_id": "t039-intento_no_coincide",
+      "recibido": "otro-intento",
+      "turnos": 1
+    },
+    {
+      "campo": "/cabecera/agente",
+      "motivo_guardado": "agente_no_coincide",
+      "operacion_id": "t039-agente_no_coincide",
+      "recibido": "nannu",
+      "turnos": 1
+    },
+    {
+      "campo": "/cabecera/caso",
+      "motivo_guardado": "caso_no_coincide",
+      "operacion_id": "t039-caso_no_coincide",
+      "recibido": "P02",
+      "turnos": 1
+    },
+    {
+      "campo": "/cabecera/version",
+      "motivo_guardado": "version_no_coincide",
+      "operacion_id": "t039-version_no_coincide",
+      "recibido": "otra-revision",
+      "turnos": 1
+    },
+    {
+      "campo": "/cabecera/fase",
+      "motivo_guardado": "fase_no_coincide",
+      "operacion_id": "t039-fase_no_coincide",
+      "recibido": "posterior",
+      "turnos": 1
+    },
+    {
+      "campo": "/cabecera/hablante",
+      "motivo_guardado": "hablante_no_coincide",
+      "operacion_id": "t039-hablante_no_coincide",
+      "recibido": "acompañante",
+      "turnos": 1
+    },
+    {
+      "campo": "/tipo",
+      "motivo_guardado": "tipo_no_coincide",
+      "operacion_id": "t039-tipo_no_coincide",
+      "recibido": "evaluacion",
+      "turnos": 1
+    },
+    {
+      "campo": "/resultado/operacion_id",
+      "motivo_guardado": "invocacion_no_coincide",
+      "operacion_id": "t039-invocacion_no_coincide",
+      "recibido": "invocacion-ajena",
+      "turnos": 1
+    }
+  ],
+  "respuesta": {
+    "cabecera": {
+      "agente": "lr",
+      "caso": "P01",
+      "fase": "inicial",
+      "hablante": "LR",
+      "intento_id": "f91bcdb75616a7da17739a0f188e058e",
+      "operacion_id": "t039-valida",
+      "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    "resultado": {
+      "carga_modelo_ns": null,
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "duracion_motor_ns": null,
+      "fin_unix_ms": 1001,
+      "inicio_unix_ms": 1000,
+      "modelo": "qwen3.5:4b",
+      "operacion_id": "t039-valida",
+      "respuesta_cruda": "{\"hecho_id\":\"lr-inicio\"}",
+      "seleccion": {
+        "hecho_id": "lr-inicio"
+      },
+      "solicitud": {
+        "pregunta": "¿Desde cuándo te cuesta respirar?"
+      },
+      "tokens_respuesta": null
+    },
+    "tipo": "seleccion"
+  },
+  "solicitud": {
+    "cabecera": {
+      "agente": "lr",
+      "caso": "P01",
+      "fase": "inicial",
+      "hablante": "LR",
+      "intento_id": "f91bcdb75616a7da17739a0f188e058e",
+      "operacion_id": "t039-valida",
+      "version": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69"
+    },
+    "contenido": {
+      "candidatos": [
+        {
+          "condicion": "Pregunta por enfermedades o antecedentes médicos de su familia biológica.",
+          "id": "lr-antecedentes-familiares"
+        },
+        {
+          "condicion": "Pregunta sobre cuándo empezó la falta de aire o cuánto tiempo lleva.",
+          "id": "lr-inicio"
+        }
+      ],
+      "texto": "¿Desde cuándo te cuesta respirar?"
+    }
+  },
+  "total_descartes": 9,
+  "turno": {
+    "agente": "lr",
+    "hablante": "LR",
+    "intento_id": "f91bcdb75616a7da17739a0f188e058e",
+    "operacion_id": "t039-valida",
+    "orden": 1,
+    "pregunta": "¿Desde cuándo te cuesta respirar?",
+    "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+    "revision": 2,
+    "tipo_respuesta": "hecho",
+    "turno_id": "3e8d0eee9f481cc51823000ddbe48a3f"
+  },
+  "turnos_antes": 1
+}

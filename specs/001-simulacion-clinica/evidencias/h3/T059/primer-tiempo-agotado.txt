@@ -1,0 +1,7 @@
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 1127
+slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1123, progress = 1.00, t = 104.66 s / 10.73 tokens per second
+slot   operator(): id  0 | task 0 | cached n_tokens = 1123, memory_seq_rm [1123, end)
+slot create_check: id  0 | task 0 | created context checkpoint 2 of 32 (pos_min = 1122, pos_max = 1122, n_tokens = 1123, size = 50.251 MiB)
+[GIN] 2026/11/26 - 11:32:15 | 500 |     5m0s |      172.17.0.1 | POST     "/api/chat"
+slot      release: id  0 | task 0 | stop processing: n_tokens = 1723, truncated = 0

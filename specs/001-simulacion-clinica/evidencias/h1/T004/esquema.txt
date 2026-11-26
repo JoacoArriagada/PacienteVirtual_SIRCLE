@@ -1,0 +1,73 @@
+T004 · 2026-11-25 20:45 -0300 · feature/prototipo · revisión base fbc3f1ca608d34482d19d72c32bb06dce796a185
+Esperado: instalar una sola vez el esquema en una base vacía, conservar la cadena
+de procedencia y rechazar altas con referencias inexistentes o de otro escenario.
+
+Procedimiento desde backend/
+  cargo test --locked --test fuentes -- --nocapture
+  sqlite3 :memory: '.read migrations/0001_fuentes.sql' '.schema'
+
+Observado
+  La versión de esquema pasó de 0 a 1 y quedó en 1 al repetir.
+  foreign_keys=1 en la conexión de la aplicación.
+  P01 enlazó fuente 10, revisión 20 y versión 30.
+  SQLite rechazó dos escrituras, por fuente inexistente y por cruce P01/P02.
+  La suite completa, incluida T003, pasó con 2 pruebas y 0 fallos.
+
+Salida de la prueba en SQLite en memoria
+Finished `test` profile [unoptimized + debuginfo] target(s) in 0.09s
+     Running tests/fuentes.rs (target/debug/build/sircle/3a2a3955eaae613f/out/fuentes-3a2a3955eaae613f)
+
+running 1 test
+user_version 0 → 1 → 1 · foreign_keys=1 · cadena=("P01", 10, 20, 30)
+INSERT INTO revisiones_fuente VALUES (21, 999, printf('%064d', 1), X'4c52'); → FOREIGN KEY constraint failed
+INSERT INTO versiones_fuentes VALUES ('P02', 31, 10, 20); → FOREIGN KEY constraint failed
+test aplica_la_migracion_una_vez_y_enlaza_una_version_con_su_fuente ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+Esquema observado usando la CLI SQLite
+CREATE TABLE escenarios (
+    id TEXT PRIMARY KEY NOT NULL,
+    paciente TEXT NOT NULL CHECK (length(paciente) > 0)
+) STRICT;
+CREATE TABLE fuentes (
+    id INTEGER PRIMARY KEY,
+    escenario_id TEXT NOT NULL REFERENCES escenarios(id),
+    rol TEXT NOT NULL CHECK (rol IN ('sp_actor', 'examinee', 'evaluator', 'environment_controller')),
+    ruta TEXT NOT NULL CHECK (length(ruta) > 0),
+    UNIQUE (escenario_id, rol, ruta),
+    UNIQUE (escenario_id, id)
+) STRICT;
+CREATE TABLE revisiones_fuente (
+    id INTEGER PRIMARY KEY,
+    fuente_id INTEGER NOT NULL REFERENCES fuentes(id),
+    sha256 TEXT NOT NULL CHECK (length(sha256) = 64 AND sha256 NOT GLOB '*[^0-9a-f]*'),
+    contenido BLOB NOT NULL,
+    UNIQUE (fuente_id, sha256),
+    UNIQUE (fuente_id, id)
+) STRICT;
+CREATE TABLE versiones_clinicas (
+    id INTEGER PRIMARY KEY,
+    escenario_id TEXT NOT NULL REFERENCES escenarios(id),
+    version TEXT NOT NULL CHECK (length(version) > 0),
+    estado TEXT NOT NULL CHECK (estado IN ('pendiente', 'ensayo', 'aprobada')),
+    autorizada_por TEXT,
+    autorizada_en TEXT,
+    motivo_autorizacion TEXT,
+    CHECK (
+        (estado = 'aprobada' AND autorizada_por IS NOT NULL AND autorizada_en IS NOT NULL AND motivo_autorizacion IS NOT NULL)
+        OR (estado <> 'aprobada' AND autorizada_por IS NULL AND autorizada_en IS NULL AND motivo_autorizacion IS NULL)
+    ),
+    UNIQUE (escenario_id, version),
+    UNIQUE (escenario_id, id)
+) STRICT;
+CREATE TABLE versiones_fuentes (
+    escenario_id TEXT NOT NULL,
+    version_clinica_id INTEGER NOT NULL,
+    fuente_id INTEGER NOT NULL,
+    revision_fuente_id INTEGER NOT NULL,
+    PRIMARY KEY (version_clinica_id, fuente_id),
+    FOREIGN KEY (escenario_id, version_clinica_id) REFERENCES versiones_clinicas(escenario_id, id),
+    FOREIGN KEY (escenario_id, fuente_id) REFERENCES fuentes(escenario_id, id),
+    FOREIGN KEY (fuente_id, revision_fuente_id) REFERENCES revisiones_fuente(fuente_id, id)
+) STRICT;

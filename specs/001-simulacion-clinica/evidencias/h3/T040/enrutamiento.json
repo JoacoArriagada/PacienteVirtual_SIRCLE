@@ -1,0 +1,65 @@
+{
+  "canal_equivocado": {
+    "datos": {
+      "mensaje": "El canal no corresponde a la entrevista"
+    },
+    "tipo": "error"
+  },
+  "inventario": [
+    {
+      "agente": "lr",
+      "canal": "stdin/stdout:lr",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "modelo": "qwen3.5:4b",
+      "ollama": "http://127.0.0.1:11434",
+      "pid": 862
+    },
+    {
+      "agente": "nannu",
+      "canal": "stdin/stdout:nannu",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "modelo": "qwen3.5:4b",
+      "ollama": "http://127.0.0.1:11434",
+      "pid": 866
+    },
+    {
+      "agente": "dan_sparks",
+      "canal": "stdin/stdout:dan_sparks",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "modelo": "qwen3.5:4b",
+      "ollama": "http://127.0.0.1:11434",
+      "pid": 870
+    },
+    {
+      "agente": "evaluador",
+      "canal": "stdin/stdout:evaluador",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "modelo": "qwen3.5:4b",
+      "ollama": "http://127.0.0.1:11434",
+      "pid": 874
+    }
+  ],
+  "pruebas_de_enrutamiento": [
+    {
+      "agente": "lr",
+      "operacion_id": "t040-prueba-lr",
+      "pid": 862
+    },
+    {
+      "agente": "nannu",
+      "operacion_id": "t040-prueba-nannu",
+      "pid": 866
+    },
+    {
+      "agente": "dan_sparks",
+      "operacion_id": "t040-prueba-dan_sparks",
+      "pid": 870
+    },
+    {
+      "agente": "evaluador",
+      "operacion_id": "t040-prueba-evaluador",
+      "pid": 874
+    }
+  ],
+  "trabajadores_tras_cierre": 0
+}

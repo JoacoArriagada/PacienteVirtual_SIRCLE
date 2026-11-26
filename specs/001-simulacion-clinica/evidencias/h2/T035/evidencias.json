@@ -1,0 +1,126 @@
+{
+  "navegador": "156.0.8078.4",
+  "intentoA": {
+    "id": "88416e506c40efaf23bdb71720902788",
+    "apunte": {
+      "apunte_id": "284a5de20f802926acc4b2dfcaf842f3",
+      "intento_id": "88416e506c40efaf23bdb71720902788",
+      "autor_id": "estudiante-lr",
+      "intencion": "solicitaría el ECG",
+      "momento": "2026-11-26T02:56:24.516Z",
+      "revision": 2
+    },
+    "ordenes": [],
+    "reservado": {
+      "mensaje": "El informe está reservado hasta confirmar la orden de este intento."
+    }
+  },
+  "intentoB": {
+    "id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+    "turno": {
+      "turno_id": "153a6334834a4d0f43cdacabcbdf44e2",
+      "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+      "orden": 1,
+      "agente": "lr",
+      "hablante": "LR",
+      "pregunta": "¿Desde cuándo comenzó?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "tipo_respuesta": "hecho",
+      "operacion_id": "97902cb69f03f6d52f10092a40482d6f",
+      "revision": 2
+    },
+    "medicion": {
+      "medicion_id": "0daaf60f472cbc5022b19df4dc6256b0",
+      "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+      "instrumento": "presion",
+      "accion": "toma_completa",
+      "fase": "inicial",
+      "valor": {
+        "diastolica": 85,
+        "sistolica": 148
+      },
+      "unidad": "mmHg",
+      "momento": "2026-11-26T02:56:26.267Z",
+      "en_ficha": false,
+      "revision": 3
+    },
+    "orden": {
+      "orden_id": "8aadc5027d435a78e467902159be2ce0",
+      "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+      "examen": "ecg-inicial",
+      "fase": "inicial",
+      "momento": "2026-11-26T02:56:26.604Z",
+      "revision": 5
+    },
+    "informe": {
+      "informe_id": "70286ad41bd18d8deb0ea4cf867c8439",
+      "orden_id": "8aadc5027d435a78e467902159be2ce0",
+      "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+      "resultado": "taquicardia sinusal",
+      "origen": "Electrocardiograma inicial"
+    },
+    "apunte": {
+      "apunte_id": "a72edd2b8c3325e4cd745ac3df2132c7",
+      "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+      "autor_id": "estudiante-sin-asignacion",
+      "intencion": "Interpreto la presión junto con lo que refirió LR.",
+      "momento": "2026-11-26T02:56:26.823Z",
+      "revision": 6
+    },
+    "evidencias": [
+      {
+        "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+        "tipo": "orientacion",
+        "origen_id": "orientacion-inicial-lr",
+        "categoria": "orientacion",
+        "autor": "docente",
+        "origen": "Ayuda de la actividad",
+        "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+      },
+      {
+        "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+        "tipo": "turno",
+        "origen_id": "153a6334834a4d0f43cdacabcbdf44e2",
+        "categoria": "declaracion",
+        "autor": "LR",
+        "origen": "Entrevista",
+        "texto": "Empecé a notar que me faltaba el aire hace dos días."
+      },
+      {
+        "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+        "tipo": "medicion",
+        "origen_id": "0daaf60f472cbc5022b19df4dc6256b0",
+        "categoria": "medicion",
+        "autor": "estudiante-sin-asignacion",
+        "origen": "Valoración instrumental",
+        "instrumento": "presion",
+        "valor": {
+          "diastolica": 85,
+          "sistolica": 148
+        },
+        "unidad": "mmHg",
+        "momento": "2026-11-26T02:56:26.267Z"
+      },
+      {
+        "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+        "tipo": "informe",
+        "origen_id": "70286ad41bd18d8deb0ea4cf867c8439",
+        "categoria": "informe",
+        "autor": "simulacion",
+        "origen": "Electrocardiograma inicial",
+        "texto": "taquicardia sinusal",
+        "momento": "2026-11-26T02:56:26.671Z"
+      },
+      {
+        "intento_id": "1a4089db66d8b2dbbd0e562e668bf1e1",
+        "tipo": "apunte",
+        "origen_id": "a72edd2b8c3325e4cd745ac3df2132c7",
+        "categoria": "interpretacion",
+        "autor": "estudiante-sin-asignacion",
+        "origen": "Apunte del estudiante",
+        "texto": "Interpreto la presión junto con lo que refirió LR.",
+        "momento": "2026-11-26T02:56:26.823Z"
+      }
+    ]
+  }
+}

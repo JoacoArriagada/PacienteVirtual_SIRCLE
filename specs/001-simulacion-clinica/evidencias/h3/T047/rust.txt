@@ -1,0 +1,13 @@
+test distingue_sugerencia_y_texto_editado ... ok
+test cita_desconocimiento_familiar ... ok
+test confirma_solo_hechos_vigentes_pertinentes_y_del_actor_lr ... ok
+test aisla_dos_sugerencias_simultaneas ... ok
+test mantiene_voz_de_lr ... ok
+test localiza_origen_de_turno_lr ... ok
+test preguntar_por_presion_no_mide ... ok
+test pide_referente_sin_crear_hallazgo ... ok
+test sugerencia_exacta_con_motor_caido ... ok
+test separa_turno_medicion_y_orden ... ok
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+test correlaciona_el_mensaje_y_descarta_cruces_sin_cambiar_el_historial ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s

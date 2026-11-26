@@ -1,0 +1,143 @@
+{
+  "evaluaciones": [
+    {
+      "evaluacion_id": "08ef76415590578aaff99a65907d3b16",
+      "revision": 1,
+      "juicio": "omision",
+      "puntaje": {
+        "peso_aplicable": 100,
+        "total_centesimas": 0,
+        "criterios": [
+          {
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "valoracion",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "decisiones",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "evidencias",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          }
+        ]
+      }
+    },
+    {
+      "evaluacion_id": "3eeda2239e21b1f06308722ce8cd6563",
+      "revision": 1,
+      "juicio": "error",
+      "puntaje": {
+        "peso_aplicable": 100,
+        "total_centesimas": 0,
+        "criterios": [
+          {
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "valoracion",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "decisiones",
+            "juicio": "error",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "evidencias",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          }
+        ]
+      }
+    },
+    {
+      "evaluacion_id": "854ef869c8196a213243a8f5f77aecdc",
+      "revision": 1,
+      "juicio": "revision_docente",
+      "puntaje": {
+        "peso_aplicable": 80,
+        "total_centesimas": null,
+        "criterios": [
+          {
+            "criterio_id": "entrevista",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "valoracion",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "decisiones",
+            "juicio": "revision_docente",
+            "peso": 20,
+            "credito": null,
+            "puntos_ponderados": null
+          },
+          {
+            "criterio_id": "evidencias",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          },
+          {
+            "criterio_id": "hipotesis",
+            "juicio": "omision",
+            "peso": 20,
+            "credito": 0,
+            "puntos_ponderados": 0
+          }
+        ]
+      }
+    }
+  ],
+  "incidente": "854ef869c8196a213243a8f5f77aecdc"
+}

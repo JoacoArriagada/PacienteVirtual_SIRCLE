@@ -1,0 +1,41 @@
+{
+  "acuses": [
+    {
+      "http": 201,
+      "cuerpo": {
+        "entrega_id": "ec042638200505d7246b3b8858806a65",
+        "intento_id": "869373ac01e08ea285fb55ca37582517",
+        "revision": 1,
+        "rubrica_id": 1,
+        "version_rubrica": "1",
+        "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+        "confirmada_en": "2026-11-26T11:03:08.604Z",
+        "estado_evaluacion": "pendiente",
+        "post": "pendiente"
+      },
+      "clave": "be0a9791-e1c9-479d-8bda-53e13bf0be5a",
+      "peticion": {
+        "revision_esperada": 1
+      }
+    },
+    {
+      "http": 200,
+      "cuerpo": {
+        "entrega_id": "ec042638200505d7246b3b8858806a65",
+        "intento_id": "869373ac01e08ea285fb55ca37582517",
+        "revision": 1,
+        "rubrica_id": 1,
+        "version_rubrica": "1",
+        "rubrica_sha256": "3ecb5239435a5869ed9f434bc6437c7dd5e03db1c862a2a1ce861962866964c7",
+        "confirmada_en": "2026-11-26T11:03:08.604Z",
+        "estado_evaluacion": "pendiente",
+        "post": "pendiente"
+      },
+      "clave": "be0a9791-e1c9-479d-8bda-53e13bf0be5a",
+      "peticion": {
+        "revision_esperada": 1
+      }
+    }
+  ],
+  "reabierta": "ec042638200505d7246b3b8858806a65"
+}

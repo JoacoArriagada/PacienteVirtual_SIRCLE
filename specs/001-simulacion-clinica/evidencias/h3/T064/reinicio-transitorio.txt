@@ -1,0 +1,3 @@
+1:Ollama detenido y puerto local indisponible.
+2:Una toma, un acuse, post de ensayo omitido y un trabajo pendiente.
+43:ConnectionResetError: [Errno 104] Connection reset by peer

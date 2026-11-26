@@ -1,0 +1,2 @@
+SIRCLE_EVALUACION_FALLO 407a571cbf352d330406469aeeaffbc6 · El resultado repite un criterio
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 11 filtered out; finished in 271.91s

@@ -1,0 +1,75 @@
+{
+  "tarea": "T007",
+  "fecha": "2026-11-25 20:52 -0300",
+  "rama": "feature/prototipo",
+  "revision_base": "fbc3f1ca608d34482d19d72c32bb06dce796a185",
+  "procedimiento": [
+    "Desde backend/: cargo test --locked --test acceso -- --nocapture",
+    "Sin cookie, GET /api/actividades.",
+    "Por cada una de estudiante-lr y estudiante-sin-asignacion, POST /api/sesiones con {identidad: <id>}.",
+    "Con cada cookie, GET /api/actividades y GET /api/actividades/lr-ensayo."
+  ],
+  "esperado": "El titular ve la actividad sin información clínica antes del pre. La otra identidad no tiene asignaciones y su acceso directo recibe 403.",
+  "observado": {
+    "cookies": {
+      "HttpOnly": true,
+      "SameSite": "Strict",
+      "distintas": true
+    },
+    "sin_asignacion": {
+      "detalle": {
+        "cuerpo": {
+          "mensaje": "Esta actividad no está asignada a tu identidad."
+        },
+        "http": 403
+      },
+      "lista": {
+        "cuerpo": [],
+        "http": 200
+      },
+      "sesion": {
+        "cuerpo": {
+          "id": "estudiante-sin-asignacion",
+          "rol": "estudiante"
+        },
+        "http": 201
+      }
+    },
+    "sin_sesion": {
+      "cuerpo": {
+        "mensaje": "Selecciona una identidad ficticia disponible."
+      },
+      "http": 401
+    },
+    "titular": {
+      "detalle": {
+        "cuerpo": {
+          "actividad_id": "lr-ensayo",
+          "nombre": "Práctica técnica de LR",
+          "pre": "pendiente",
+          "tipo": "ensayo"
+        },
+        "http": 200
+      },
+      "lista": {
+        "cuerpo": [
+          {
+            "actividad_id": "lr-ensayo",
+            "nombre": "Práctica técnica de LR",
+            "pre": "pendiente",
+            "tipo": "ensayo"
+          }
+        ],
+        "http": 200
+      },
+      "sesion": {
+        "cuerpo": {
+          "id": "estudiante-lr",
+          "rol": "estudiante"
+        },
+        "http": 201
+      }
+    }
+  },
+  "respaldo": "backend/tests/acceso.rs, SQLite temporal con el catálogo importado. Los valores de las cookies se omiten."
+}

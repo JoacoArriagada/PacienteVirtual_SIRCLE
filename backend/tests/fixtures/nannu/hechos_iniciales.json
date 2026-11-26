@@ -1,0 +1,16 @@
+[
+  {
+    "id": "p02-dolor",
+    "hablante": "Nannu",
+    "condicion": "Pregunta a la paciente por su dolor en el pecho o su relación con la respiración.",
+    "respuesta": "Me duele el lado derecho del pecho cuando respiro.",
+    "pasaje": "R sided chest pain when breathing."
+  },
+  {
+    "id": "p02-tos-productiva",
+    "hablante": "Acompañante",
+    "condicion": "El acompañante responde por Nannu. Aplica si se pregunta por tos con flema, por tos productiva o si ha visto a la paciente toser o expulsar flema.",
+    "respuesta": "Ha estado tosiendo y ha expulsado flema.",
+    "pasaje": "Family will say she has had a productive cough."
+  }
+]

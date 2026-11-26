@@ -1,0 +1,170 @@
+{
+  "acto_erroneo": {
+    "apunte_id": "3ade22b0d252a00f915a6d1ff78d2263",
+    "autor_id": "estudiante-lr",
+    "intencion": "Decidí interpretar el ECG como fibrilación auricular.",
+    "intento_id": "6365e0d193e983c756f8d45349afe4df",
+    "momento": "2026-11-26T12:20:55.392Z",
+    "revision": 4
+  },
+  "acuse_sin_orden": {
+    "examen": "ecg-inicial",
+    "fase": "inicial",
+    "intento_id": "efb20537cebc5a22230aa3563cd7f528",
+    "momento": "2026-11-26T12:20:55.533Z",
+    "orden_id": "c721404a22e42c9ed5b78c5ea965c74b",
+    "revision": 2
+  },
+  "copia": "/home/joaco/Downloads/2026-2/Practicas/PacienteVirtual_SIRCLE/backend/target/t061-incidencia.sqlite",
+  "informe": {
+    "informe_id": "babe84434b66e9e7f96ddcca05a7abe3",
+    "intento_id": "6365e0d193e983c756f8d45349afe4df",
+    "orden_id": "b5951a5483a0607c6959823f603ec8bc",
+    "origen": "Electrocardiograma inicial",
+    "resultado": "taquicardia sinusal"
+  },
+  "regresion_incidente": [
+    {
+      "acuses_sin_evento": [],
+      "aplicables": [
+        "entrevista",
+        "valoracion",
+        "decisiones",
+        "evidencias",
+        "hipotesis"
+      ],
+      "decision": {
+        "actuacion": "Registró la decisión de interpretar el ECG como fibrilación auricular.",
+        "criterio_id": "decisiones",
+        "evidencias": [
+          "3ade22b0d252a00f915a6d1ff78d2263",
+          "babe84434b66e9e7f96ddcca05a7abe3"
+        ],
+        "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+        "explicacion": "El informe documentó taquicardia sinusal.",
+        "juicio": "error",
+        "mejora": "Contrasta la decisión con el informe y corrige la interpretación."
+      },
+      "entrega": {
+        "confirmada_en": "2026-11-26T12:20:55.430Z",
+        "entrega_id": "866f376e46b56701251ecf8502265993",
+        "estado_evaluacion": "pendiente",
+        "intento_id": "6365e0d193e983c756f8d45349afe4df",
+        "post": "pendiente",
+        "revision": 4,
+        "rubrica_id": 1,
+        "rubrica_sha256": "932ed07e646d58446a81e821a0d8c66f7bc13dbe520f3288e679d4c06d304822",
+        "version_rubrica": "1"
+      },
+      "evaluacion_id": "3eeda2239e21b1f06308722ce8cd6563"
+    },
+    {
+      "acuses_sin_evento": [],
+      "aplicables": [
+        "entrevista",
+        "valoracion",
+        "decisiones",
+        "evidencias",
+        "hipotesis"
+      ],
+      "decision": {
+        "actuacion": "No confirmó el ECG en esta oportunidad.",
+        "criterio_id": "decisiones",
+        "evidencias": [],
+        "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+        "explicacion": "El registro íntegro carece de orden confirmada.",
+        "juicio": "omision",
+        "mejora": "Confirma la orden y consulta su informe cuando se habilite."
+      },
+      "entrega": {
+        "confirmada_en": "2026-11-26T12:20:55.498Z",
+        "entrega_id": "d0c9a540adf04e13bc3f272729c0b26c",
+        "estado_evaluacion": "pendiente",
+        "intento_id": "e59110587554a90a210570ae7d72d362",
+        "post": "pendiente",
+        "revision": 1,
+        "rubrica_id": 1,
+        "rubrica_sha256": "932ed07e646d58446a81e821a0d8c66f7bc13dbe520f3288e679d4c06d304822",
+        "version_rubrica": "1"
+      },
+      "evaluacion_id": "08ef76415590578aaff99a65907d3b16"
+    },
+    {
+      "acuses_sin_evento": [
+        {
+          "clave": "t061-orden",
+          "referencia": "c721404a22e42c9ed5b78c5ea965c74b",
+          "tipo": "orden"
+        }
+      ],
+      "aplicables": [
+        "entrevista",
+        "valoracion",
+        "evidencias",
+        "hipotesis"
+      ],
+      "decision": {
+        "actuacion": "El servicio confirmó una acción cuyo evento no está en la entrega.",
+        "criterio_id": "decisiones",
+        "evidencias": [],
+        "expectativa": "Confirmar la orden de ECG inicial cuando corresponda y consultar su informe textual.",
+        "explicacion": "Falta el evento asociado al acuse. La actuación queda pendiente de revisión docente.",
+        "incidencia": {
+          "acuses": [
+            {
+              "clave": "t061-orden",
+              "referencia": "c721404a22e42c9ed5b78c5ea965c74b",
+              "tipo": "orden"
+            }
+          ],
+          "descuento_automatico": 0,
+          "motivo": "acuse_sin_evento"
+        },
+        "juicio": "revision_docente",
+        "mejora": "Coteja el acuse con el registro del intento y resuelve la incidencia antes de calificar."
+      },
+      "entrega": {
+        "confirmada_en": "2026-11-26T12:20:55.575Z",
+        "entrega_id": "54d63d12330948ec84e08d1f47f9722e",
+        "estado_evaluacion": "pendiente",
+        "intento_id": "efb20537cebc5a22230aa3563cd7f528",
+        "post": "pendiente",
+        "revision": 2,
+        "rubrica_id": 1,
+        "rubrica_sha256": "932ed07e646d58446a81e821a0d8c66f7bc13dbe520f3288e679d4c06d304822",
+        "version_rubrica": "1"
+      },
+      "evaluacion_id": "854ef869c8196a213243a8f5f77aecdc"
+    }
+  ],
+  "base_retenida": [
+    {
+      "evaluacion_id": "3eeda2239e21b1f06308722ce8cd6563",
+      "estado": "terminado",
+      "juicio": "error",
+      "incidencia": null
+    },
+    {
+      "evaluacion_id": "08ef76415590578aaff99a65907d3b16",
+      "estado": "terminado",
+      "juicio": "omision",
+      "incidencia": null
+    },
+    {
+      "evaluacion_id": "854ef869c8196a213243a8f5f77aecdc",
+      "estado": "terminado",
+      "juicio": "revision_docente",
+      "incidencia": {
+        "acuses": [
+          {
+            "clave": "t061-orden",
+            "referencia": "c721404a22e42c9ed5b78c5ea965c74b",
+            "tipo": "orden"
+          }
+        ],
+        "descuento_automatico": 0,
+        "motivo": "acuse_sin_evento"
+      }
+    }
+  ]
+}
