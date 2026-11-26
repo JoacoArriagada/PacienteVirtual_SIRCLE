@@ -12,7 +12,8 @@ const archivos = new Map([
 ]);
 for (const carpeta of ["app", "modules", "recursos/semana5"]) {
   for (const nombre of await readdir(new URL("../dist/" + carpeta, import.meta.url), { recursive: true })) {
-    archivos.set("/" + carpeta + "/" + nombre, carpeta + "/" + nombre);
+    const ruta = carpeta + "/" + nombre.replaceAll("\\", "/");
+    archivos.set("/" + ruta, ruta);
   }
 }
 const servidor = createServer((peticion, respuesta) => {

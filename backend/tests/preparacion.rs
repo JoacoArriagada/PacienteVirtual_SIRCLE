@@ -3,6 +3,8 @@ use std::{fs, path::Path, process::Command};
 use sircle::sqlite;
 
 const FUENTE: &str = "medsp1000/mededportal_3171/scenario1/evaluator/Pulmonary Embolism EKG.md";
+const LR_ACTOR: &str = "medsp1000/mededportal_10181/scenario1/sp_actor/Case A-Asthma.md";
+const LR_CONTROLADOR: &str = "medsp1000/mededportal_10181/scenario1/environment_controller/Case A-Asthma.md";
 
 #[test]
 fn una_preparacion_invalida_conserva_el_catalogo_anterior() {
@@ -36,12 +38,13 @@ fn una_preparacion_invalida_conserva_el_catalogo_anterior() {
     registrar("repeticion", &repeticion);
 
     let archivo = datos.join(FUENTE);
+    let contenido = fs::read(&archivo).unwrap();
     fs::remove_file(&archivo).unwrap();
     for (estado, motivo) in [("ausente", "No se pudo leer"), ("invalida", "no contiene texto UTF-8 válido")] {
         let fallo = preparar();
         assert!(!fallo.status.success());
         let error = String::from_utf8(fallo.stderr).unwrap();
-        assert!(error.contains(FUENTE) && error.contains(motivo), "{error}");
+        assert!(error.replace('\\', "/").contains(FUENTE) && error.contains(motivo), "{error}");
         println!("ERROR\t{estado}\t{}", error.lines().next().unwrap());
 
         let despues = inventario(&db);
@@ -50,6 +53,24 @@ fn una_preparacion_invalida_conserva_el_catalogo_anterior() {
         if estado == "ausente" {
             fs::write(&archivo, [0xff]).unwrap();
         }
+    }
+    fs::write(&archivo, contenido).unwrap();
+
+    for (fuente, pasaje, motivo) in [
+        (LR_ACTOR, "Vitals: BP 148/85 HR 102", "No se encontró el triaje inicial"),
+        (LR_CONTROLADOR, "initial EKG (sinus tachycardia)", "No se encontró el pasaje del ECG inicial"),
+        (LR_ACTOR, "Family Hx: unknown, patient was adopted.", "Falta el pasaje del hecho"),
+    ] {
+        let ruta = datos.join(fuente);
+        let original = fs::read_to_string(&ruta).unwrap();
+        assert!(original.contains(pasaje), "{fuente}");
+        fs::write(&ruta, original.replace(pasaje, "Pasaje omitido para la prueba")).unwrap();
+        let fallo = preparar();
+        assert!(!fallo.status.success(), "Se activó una versión incompleta de {fuente}");
+        let error = String::from_utf8(fallo.stderr).unwrap();
+        assert!(error.replace('\\', "/").contains(fuente) && error.contains(motivo), "{error}");
+        assert_eq!(inventario(&db), antes);
+        fs::write(ruta, original).unwrap();
     }
 }
 

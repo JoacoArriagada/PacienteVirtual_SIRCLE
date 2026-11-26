@@ -6,3 +6,4 @@ pub mod rubricas;
 pub mod revisiones;
 pub mod criterios;
 pub mod trabajos;
+pub mod traza;

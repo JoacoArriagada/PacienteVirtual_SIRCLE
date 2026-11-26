@@ -1,4 +1,4 @@
-use std::time::{SystemTime, UNIX_EPOCH};
+use std::{io::{self, Write}, time::{SystemTime, UNIX_EPOCH}};
 
 use rusqlite::{Transaction, params};
 use serde_json::Value;
@@ -7,6 +7,16 @@ use crate::app::errores::ErrorApi;
 
 pub fn ahora_ms() -> u64 {
     SystemTime::now().duration_since(UNIX_EPOCH).unwrap_or_default().as_millis() as u64
+}
+
+pub fn evento(nombre: &str, detalle: &Value) {
+    registro(&format!("{nombre} {detalle}"));
+}
+
+pub fn registro(mensaje: &str) {
+    // El servidor y sus trabajadores comparten el destino de stderr.
+    let linea = format!("{mensaje}\n");
+    let _ = io::stderr().lock().write_all(linea.as_bytes());
 }
 
 pub fn guardar_turno(

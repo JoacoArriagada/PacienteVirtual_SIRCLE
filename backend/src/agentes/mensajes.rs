@@ -94,10 +94,17 @@ pub fn discrepancia(esperada: &Cabecera, recibida: &Cabecera) -> Option<&'static
 }
 
 pub fn registrar_rechazo(db: &Connection, esperada: &Cabecera, motivo: &str) -> rusqlite::Result<()> {
+    registrar_rechazo_con_evidencia(db, esperada, motivo, serde_json::Value::Null)
+}
+
+pub(crate) fn registrar_rechazo_con_evidencia(
+    db: &Connection, esperada: &Cabecera, motivo: &str, evidencia: serde_json::Value,
+) -> rusqlite::Result<()> {
+    let detalle = serde_json::json!({ "mensaje": esperada, "evidencia": evidencia });
     db.execute(
-        "INSERT INTO rechazos_mensajes (intento_id, operacion_id, agente, motivo, momento)
-         VALUES (?1, ?2, ?3, ?4, strftime('%Y-%m-%dT%H:%M:%fZ','now'))",
-        params![esperada.intento_id, esperada.operacion_id, esperada.agente.id(), motivo],
+        "INSERT INTO rechazos_mensajes (intento_id, operacion_id, agente, motivo, momento, detalle)
+         VALUES (?1, ?2, ?3, ?4, strftime('%Y-%m-%dT%H:%M:%fZ','now'), ?5)",
+        params![esperada.intento_id, esperada.operacion_id, esperada.agente.id(), motivo, detalle.to_string()],
     )?;
     eprintln!("SIRCLE_MENSAJE_RECHAZADO {}", serde_json::json!({
         "operacion_id": esperada.operacion_id, "agente": esperada.agente.id(), "motivo": motivo,

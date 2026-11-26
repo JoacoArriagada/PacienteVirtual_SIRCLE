@@ -1,3 +1,4 @@
+use anyhow::Context;
 use axum::{
     Json,
     extract::{Path, Query, State},
@@ -8,6 +9,7 @@ use serde::{Deserialize, Serialize};
 use serde_json::Value;
 
 use crate::{
+    agentes::lr::perfil::FUENTE_ACTOR,
     app::{errores::ErrorApi, estado::Estado},
     modules::intentos::intento::Intento,
     shared::{autorizacion, operaciones::Operacion},
@@ -43,17 +45,22 @@ pub struct Medicion {
     origen: Option<String>,
 }
 
-pub(crate) fn preparar_presion_lr(db: &Transaction<'_>) -> rusqlite::Result<()> {
-    db.execute(
-        "INSERT INTO lecturas_versionadas (version_caso_id, fase, instrumento, valor, unidad, revision_fuente_id)
-         SELECT c.version_caso_id, 'inicial', 'presion', '{\"sistolica\":148,\"diastolica\":85}', 'mmHg', r.id
+pub(crate) fn preparar_presion_lr(db: &Transaction<'_>) -> anyhow::Result<()> {
+    let (version, revision_fuente): (i64, i64) = db.query_row(
+        "SELECT c.version_caso_id, r.id
          FROM configuraciones_ensayo c
          JOIN versiones_fuentes vf ON vf.version_clinica_id=c.version_caso_id
          JOIN fuentes f ON f.id=vf.fuente_id AND f.rol='sp_actor'
          JOIN revisiones_fuente r ON r.id=vf.revision_fuente_id
-         WHERE c.actividad_id='lr-ensayo' AND instr(CAST(r.contenido AS TEXT), 'Vitals: BP 148/85 HR 102') > 0
+         WHERE c.actividad_id='lr-ensayo' AND f.ruta=?1
+           AND instr(CAST(r.contenido AS TEXT), 'Vitals: BP 148/85 HR 102') > 0",
+        [FUENTE_ACTOR], |fila| Ok((fila.get(0)?, fila.get(1)?)),
+    ).with_context(|| format!("No se encontró el triaje inicial en medsp1000/{FUENTE_ACTOR}"))?;
+    db.execute(
+        "INSERT INTO lecturas_versionadas (version_caso_id, fase, instrumento, valor, unidad, revision_fuente_id)
+         VALUES (?1, 'inicial', 'presion', '{\"sistolica\":148,\"diastolica\":85}', 'mmHg', ?2)
          ON CONFLICT(version_caso_id, fase, instrumento) DO NOTHING",
-        [],
+        params![version, revision_fuente],
     )?;
     Ok(())
 }
@@ -181,6 +188,7 @@ pub(crate) fn por_id(db: &Connection, intento_id: &str, id: &str) -> Result<Medi
 fn leer_medicion(fila: &Row<'_>) -> rusqlite::Result<Medicion> {
     let instrumento: String = fila.get(2)?;
     let origen = match instrumento.as_str() {
+        "presion" => Some("Brazalete simulado, triaje inicial de LR".to_owned()),
         "pulso" | "saturacion" => Some("Pulsioxímetro simulado".to_owned()),
         "temperatura" => Some("Termómetro frontal simulado".to_owned()),
         "peso" => Some("Báscula de ensayo, Semana 5".to_owned()),

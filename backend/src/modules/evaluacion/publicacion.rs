@@ -89,7 +89,7 @@ pub async fn leer(
         let Some(evaluacion) = evaluacion.filter(|_| intento.estado == "entregado") else {
             return Ok(Json(Devolucion::NoDisponible));
         };
-        if estado_post(&tx, &id)? == "pendiente" {
+        if intento.post == "pendiente" {
             return Ok(Json(Devolucion::PostPendiente));
         }
         let Some(evaluacion) = evaluacion else { return Ok(Json(Devolucion::Pendiente)) };
@@ -115,11 +115,6 @@ fn desde_fila(r: &Row<'_>) -> rusqlite::Result<Publicacion> {
     Ok(Publicacion { evaluacion_id:r.get(0)?, numero:r.get(1)?, revision:r.get(2)?, docente_id:r.get(3)?, publicada_en:r.get(4)? })
 }
 
-pub(crate) fn estado_post(db: &Connection, intento: &str) -> rusqlite::Result<String> {
-    Ok(db.query_row("SELECT estado FROM post_ensayo WHERE intento_id=?1", [intento], |r| r.get(0))
-        .optional()?.unwrap_or_else(|| "pendiente".into()))
-}
-
 pub fn resolver_post_ensayo(db: &mut Connection, intento: &str, estado: &str) -> Result<()> {
     ensure!(matches!(estado, "respondido" | "omitido"), "Indica respondido u omitido");
     let tx = db.transaction_with_behavior(TransactionBehavior::Immediate)?;
@@ -130,7 +125,7 @@ pub fn resolver_post_ensayo(db: &mut Connection, intento: &str, estado: &str) ->
         [intento], |r| r.get(0),
     )?;
     ensure!(autorizada, "Solo se puede resolver el post de una entrega de ensayo");
-    let anterior = estado_post(&tx, intento)?;
+    let anterior = crate::modules::encuestas::respuestas::estado_post(&tx, intento)?;
     ensure!(anterior == "pendiente" || anterior == estado, "El post de ensayo ya está resuelto");
     tx.execute(
         "INSERT INTO post_ensayo (intento_id,estado,momento)

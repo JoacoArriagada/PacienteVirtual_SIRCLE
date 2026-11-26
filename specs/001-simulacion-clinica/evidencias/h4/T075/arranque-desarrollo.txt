@@ -1,0 +1,13 @@
+T075 | Ensayo de desarrollo del 2026-11-26
+Git base: 08a90308 + cambios locales
+Motor Docker 29.9.3; Docker Compose version v5.7.1
+Comando: docker compose -p sircle-modulo01-ensayo up --build -d
+Perfil Docker de ensayo con auths vacío. Se descargaron las imágenes públicas y el modelo.
+Resultado: SQLite concluyó con código 0 y Nginx respondió en el único puerto publicado, 127.0.0.1:8080. El proceso de carga de Qwen fue terminado por falta de memoria en la VM Docker.
+El estado siguiente se registró después de detener inferencia para el ensayo E22. El arranque desde un clon limpio en el equipo docente queda pendiente.
+
+NAME                                   IMAGE                                                                     COMMAND                  SERVICE       CREATED          STATUS                     PORTS
+sircle-modulo01-ensayo-backend-1       sircle-backend:local                                                      "sircle servir --db …"   backend       7 minutes ago    Up 7 minutes (healthy)     
+sircle-modulo01-ensayo-frontend-1      sircle-modulo01-ensayo-frontend                                           "/docker-entrypoint.…"   frontend      7 minutes ago    Up 7 minutes               127.0.0.1:8080->8080/tcp
+sircle-modulo01-ensayo-inferencia-1    sha256:7908d73af122b77342d4bcc0493f2d712a5998bf52b2d4833beb43a256f621ae   "/bin/sh /usr/local/…"   inferencia    12 minutes ago   Exited (0) 2 minutes ago   
+sircle-modulo01-ensayo-sqlite-init-1   sircle-backend:local                                                      "sircle preparar --d…"   sqlite-init   7 minutes ago    Exited (0) 7 minutes ago   

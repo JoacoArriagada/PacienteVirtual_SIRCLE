@@ -27,6 +27,7 @@ async fn guarda_solo_una_toma_completa_en_fase_autorizada() {
     assert_eq!(toma.cuerpo["instrumento"], "presion");
     assert_eq!(toma.cuerpo["valor"], json!({"sistolica": 148, "diastolica": 85}));
     assert_eq!(toma.cuerpo["unidad"], "mmHg");
+    assert_eq!(toma.cuerpo["origen"], "Brazalete simulado, triaje inicial de LR");
     assert_eq!(toma.cuerpo["fase"], "inicial");
     assert_eq!(toma.cuerpo["en_ficha"], false);
     assert_eq!(toma.cuerpo["revision"], 2);

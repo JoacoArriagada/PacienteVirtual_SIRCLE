@@ -414,43 +414,43 @@ Tras T065, sustituir los estados educativos de ensayo por el pre y el post opera
 
 ### Encuestas e informe educativo
 
-- [ ] T066 [US5] Implementar el pre opcional de cinco preguntas en la interfaz y la API. **Rutas** `frontend/src/modules/encuestas/pre.ts` · `backend/src/modules/encuestas/respuestas.rs` · `backend/migrations/0014_encuestas.sql`.
+- [X] T066 [US5] Implementar el pre opcional de cinco preguntas en la interfaz y la API. **Rutas** `frontend/src/modules/encuestas/pre.ts` · `backend/src/modules/encuestas/respuestas.rs` · `backend/migrations/0014_encuestas.sql`.
 
-  **Depende de** T065, T024. **Referencias** FR-002, FR-003 · E01, E14, E15 · SC-004. **Cierre.** La forma contiene tres ítems de percepción con igual texto, orden y escala 1–5 que el post previsto, y dos de razonamiento. Antes de responder u omitir se reserva el caso. Cualquiera de las dos decisiones habilita la práctica, se conserva al reanudar y cierra la edición del pre. [Dos recorridos por interfaz, acuses y decisión reabierta · pendiente](#ev-t066)
+  **Depende de** T065, T024. **Referencias** FR-002, FR-003 · E01, E14, E15 · SC-004. **Cierre.** La forma contiene tres ítems de percepción con igual texto, orden y escala 1–5 que el post previsto, y dos de razonamiento. Antes de responder u omitir se reserva el caso. Cualquiera de las dos decisiones habilita la práctica, se conserva al reanudar y cierra la edición del pre. [Dos recorridos por interfaz, acuses y decisión reabierta · verificado](#ev-t066)
 
   **Datos** [`Instrumento educativo.versión`, `Instrumento educativo.enunciados`, `Instrumento educativo.orden`, `Instrumento educativo.anclajes de percepción`, `Instrumento educativo.formas A/B`, `Instrumento educativo.alternativas`, `Instrumento educativo.claves`](data-model.md#fuentes-y-versiones) · [`Pre y post.intento`, `Pre y post.momento`, `Pre y post.versión`, `Pre y post.estado`, `Pre y post.forma asignada`](data-model.md#actividad-e-intento).
 
-- [ ] T067 [US5] Implementar el post opcional de siete preguntas y conectarlo a la publicación real. **Rutas** `frontend/src/modules/encuestas/post.ts` · `backend/src/modules/encuestas/respuestas.rs`.
+- [X] T067 [US5] Implementar el post opcional de siete preguntas y conectarlo a la publicación real. **Rutas** `frontend/src/modules/encuestas/post.ts` · `backend/src/modules/encuestas/respuestas.rs`.
 
-  **Depende de** T066, T056, T063. **Referencias** FR-002, FR-003, FR-008 · E13, E14, E15 · SC-004, SC-005. **Cierre.** Tras la entrega se ofrecen tres ítems de percepción, dos de razonamiento y dos de utilidad, aun con evaluación pendiente. Por interfaz, tanto responder como omitir habilita la lectura si ya hay publicación. Antes de entregar se rechaza el post y tras ver la devolución se rechaza un post retroactivo. Repetir el envío conserva un único acuse. [Capturas y acuses por orden de post y publicación · pendiente](#ev-t067)
+  **Depende de** T066, T056, T063. **Referencias** FR-002, FR-003, FR-008 · E13, E14, E15 · SC-004, SC-005. **Cierre.** Tras la entrega se ofrecen tres ítems de percepción, dos de razonamiento y dos de utilidad, aun con evaluación pendiente. Por interfaz, tanto responder como omitir habilita la lectura si ya hay publicación. Antes de entregar se rechaza el post y tras ver la devolución se rechaza un post retroactivo. Repetir el envío conserva un único acuse. [Capturas y acuses por orden de post y publicación · verificado](#ev-t067)
 
   **Datos** [`Instrumento educativo.ítems exclusivos del post`](data-model.md#fuentes-y-versiones).
 
-- [ ] T068 [US5] Asignar las dos secuencias A→B y B→A de forma alternada y persistente. **Rutas** `backend/src/modules/encuestas/formas.rs` · `backend/src/modules/intentos/intento.rs`.
+- [X] T068 [US5] Asignar las dos secuencias A→B y B→A de forma alternada y persistente. **Rutas** `backend/src/modules/encuestas/formas.rs` · `backend/src/modules/intentos/intento.rs`.
 
-  **Depende de** T066, T067. **Referencias** FR-002, FR-003, FR-010 · E02, E14, E15 · SC-004. **Cierre.** Al abrir dos intentos consecutivos de la misma actividad y versión de instrumento reciben órdenes opuestos. Una creación reenviada no consume otra asignación. Reanudar mantiene forma, orden y momento. Dos altas concurrentes conservan la alternancia transaccional. [IDs, contador, versiones y formas antes y después · pendiente](#ev-t068)
+  **Depende de** T066, T067. **Referencias** FR-002, FR-003, FR-010 · E02, E14, E15 · SC-004. **Cierre.** Al abrir dos intentos consecutivos de la misma actividad y versión de instrumento reciben órdenes opuestos. Una creación reenviada no consume otra asignación. Reanudar mantiene forma, orden y momento. Dos altas concurrentes conservan la alternancia transaccional. [IDs, contador, versiones y formas antes y después · verificado](#ev-t068)
 
   **Datos** [`Intento.secuencia educativa`, `Intento.actividad`, `Intento.versión de instrumento`](data-model.md#actividad-e-intento).
 
-- [ ] T069 [US5] Generar el informe educativo y comprobar E14 y E15 por separado de la nota clínica. **Rutas** `backend/src/modules/encuestas/informe.rs` · `frontend/src/modules/encuestas/informe.ts`.
+- [X] T069 [US5] Generar el informe educativo y comprobar E14 y E15 por separado de la nota clínica. **Rutas** `backend/src/modules/encuestas/informe.rs` · `frontend/src/modules/encuestas/informe.ts`.
 
-  **Depende de** T067, T068, T062. **Referencias** FR-002, FR-003 · E14, E15 · SC-004. **Cierre.** En E14 el primero completa ambos y reenvía el post, el segundo omite el pre y el tercero reanuda y omite el post. Deben constar tres invitados, dos pre, dos post y un par completo. Variar la encuesta conserva la nota clínica. En un par, 1/2 a 2/2 equivale a +50 puntos porcentuales. E15 compara ambas secuencias completas, percepción por ítem, razonamiento por forma y orden, y utilidad aparte. Informar faltantes sin convertirlos en errores. Calcular el razonamiento sobre dos solo cuando se hayan respondido ambos ejercicios. [Recuentos, puntajes por medida y nota clínica contrastada · pendiente](#ev-t069)
+  **Depende de** T067, T068, T062. **Referencias** FR-002, FR-003 · E14, E15 · SC-004. **Cierre.** En E14 el primero completa ambos y reenvía el post, el segundo omite el pre y el tercero reanuda y omite el post. Deben constar tres invitados, dos pre, dos post y un par completo. Variar la encuesta conserva la nota clínica. En un par, 1/2 a 2/2 equivale a +50 puntos porcentuales. E15 compara ambas secuencias completas, percepción por ítem, razonamiento por forma y orden, y utilidad aparte. Informar faltantes sin convertirlos en errores. Calcular el razonamiento sobre dos solo cuando se hayan respondido ambos ejercicios. [Recuentos, puntajes por medida y nota clínica contrastada · verificado](#ev-t069)
 
   **Datos** [`Reporte.actividad`, `Reporte.estudiante`, `Reporte.intento`, `Reporte.versión`, `Reporte.pares completos`, `Reporte.faltantes`](data-model.md#reporte-educativo).
 
 ### Servicios, persistencia y recuperación en Compose
 
-- [ ] T070 [US7] Preparar el servicio frontend para servir su compilación y reenviar `/api` al backend. **Rutas** `frontend/Dockerfile` · `frontend/servidor.conf` · `compose.yaml`.
+- [X] T070 [US7] Preparar el servicio frontend para servir su compilación y reenviar `/api` al backend. **Rutas** `frontend/Dockerfile` · `frontend/servidor.conf` · `compose.yaml`.
 
-  **Depende de** T065, T038. **Referencias** FR-009, FR-011 · E10, E19, E21 · SC-005, SC-006. **Cierre.** Con un backend de ensayo accesible en su red, la página abre en `127.0.0.1:8080` y una petición desde ella llega a Axum por el mismo origen. El servidor publica únicamente los archivos permitidos. La comprobación completa de servicios corresponde a T075. [Dirección local, captura y respuesta de red del mismo origen · pendiente](#ev-t070)
+  **Depende de** T065, T038. **Referencias** FR-009, FR-011 · E10, E19, E21 · SC-005, SC-006. **Cierre.** Con un backend de ensayo accesible en su red, la página abre en `127.0.0.1:8080` y una petición desde ella llega a Axum por el mismo origen. El servidor publica únicamente los archivos permitidos. La comprobación completa de servicios corresponde a T075. [Dirección local, captura y respuesta de red del mismo origen · verificado](#ev-t070)
 
-- [ ] T071 [US7] Preparar `sqlite-init` como servicio temporal con la imagen del backend. **Rutas** `backend/Dockerfile` · `backend/src/bin/sircle.rs` · `compose.yaml`.
+- [X] T071 [US7] Preparar `sqlite-init` como servicio temporal con la imagen del backend. **Rutas** `backend/Dockerfile` · `backend/src/bin/sircle.rs` · `compose.yaml`.
 
-  **Depende de** T070, T006, T054. **Referencias** FR-010, FR-011 · E20, E21 · SC-006. **Cierre.** Con volumen vacío se crea `/var/lib/sircle/sircle.sqlite`, se importan tres escenarios y 14 fuentes y el inicializador termina con código cero. Una segunda ejecución sobre `sircle-datos` recupera los mismos IDs. El modo de preparación y el de servicio usan la misma imagen Rust. [Estado de salida, imagen, volumen e inventarios · pendiente](#ev-t071)
+  **Depende de** T070, T006, T054. **Referencias** FR-010, FR-011 · E20, E21 · SC-006. **Cierre.** Con volumen vacío se crea `/var/lib/sircle/sircle.sqlite`, se importan tres escenarios y 14 fuentes y el inicializador termina con código cero. Una segunda ejecución sobre `sircle-datos` recupera los mismos IDs. El modo de preparación y el de servicio usan la misma imagen Rust. [Estado de salida, imagen, volumen e inventarios · verificado](#ev-t071)
 
-- [ ] T072 [US7] Preparar el servicio backend para esperar la inicialización correcta de SQLite. **Rutas** `compose.yaml` · `backend/src/app/estado.rs`.
+- [X] T072 [US7] Preparar el servicio backend para esperar la inicialización correcta de SQLite. **Rutas** `compose.yaml` · `backend/src/app/estado.rs`.
 
-  **Depende de** T071, T064. **Referencias** FR-010, FR-011 · E20, E21, E22 · SC-006. **Cierre.** Con preparación fallida la API no arranca sobre una base incompleta. Tras salida correcta de `sqlite-init` se habilita aun con inferencia indisponible. `GET /api/estado` distingue base y modelo. Una toma y una entrega nuevas reciben acuse con la evaluación pendiente. [Dependencia de arranque, estados y dos acuses · pendiente](#ev-t072)
+  **Depende de** T071, T064. **Referencias** FR-010, FR-011 · E20, E21, E22 · SC-006. **Cierre.** Con preparación fallida la API no arranca sobre una base incompleta. Tras salida correcta de `sqlite-init` se habilita aun con inferencia indisponible. `GET /api/estado` distingue base y modelo. Una toma y una entrega nuevas reciben acuse con la evaluación pendiente. [Dependencia de arranque, estados y dos acuses · verificado](#ev-t072)
 
 - [ ] T073 [US7] Preparar el servicio permanente de inferencia con su volumen de pesos y verificación del modelo. **Rutas** `inferencia/Dockerfile` · `inferencia/preparar.sh` · `compose.yaml`.
 
@@ -534,7 +534,7 @@ Las flechas muestran dónde se reúnen los resultados. Un intervalo agrupa tarea
 
 ## Índice de evidencias
 
-La raíz propuesta es `specs/001-simulacion-clinica/evidencias/`. Cada ruta de la tabla se refiere a esa raíz. La implementación incorporará los archivos y enlazará los anexos de captura, consulta, traza o decisión desde su registro. En cada entrada se completarán revisión Git, pasos, esperado, observado y ubicación conforme al protocolo anterior. Todas las entradas están **pendientes** en esta edición documental.
+Las rutas de los registros parten de `specs/001-simulacion-clinica/evidencias/`. El estado de cada tarea corresponde a su comprobación y a los anexos indicados en el índice. La auditoría técnica coteja los registros y documenta las correcciones y los cierres pendientes. [Acta de auditoría](evidencias/auditoria-modulo01/acta.md)
 
 ### Evidencias del hito 1
 
@@ -620,18 +620,18 @@ La raíz propuesta es `specs/001-simulacion-clinica/evidencias/`. Cada ruta de l
 
 | Tarea | Registro previsto | Observación que se archivará | Estado |
 | --- | --- | --- | --- |
-| <a id="ev-t066"></a>T066 | `h4/T066/pre.md` | Dos recorridos por interfaz, acuses y decisión reabierta | **pendiente** |
-| <a id="ev-t067"></a>T067 | `h4/T067/post.md` | Capturas y acuses por orden de post y publicación | **pendiente** |
-| <a id="ev-t068"></a>T068 | `h4/T068/secuencias.tsv` | IDs, contador, versiones y formas antes y después | **pendiente** |
-| <a id="ev-t069"></a>T069 | `h4/T069/informe.tsv` | Recuentos, puntajes por medida y nota clínica contrastada | **pendiente** |
-| <a id="ev-t070"></a>T070 | `h4/T070/origen.md` | Dirección local, captura y respuesta de red del mismo origen | **pendiente** |
-| <a id="ev-t071"></a>T071 | `h4/T071/sqlite-init.txt` | Estado de salida, imagen, volumen e inventarios | **pendiente** |
-| <a id="ev-t072"></a>T072 | `h4/T072/backend-disponible.json` | Dependencia de arranque, estados y dos acuses | **pendiente** |
-| <a id="ev-t073"></a>T073 | `h4/T073/modelo.json` | Etiqueta, digest esperado y local, prueba de generación y estado | **pendiente** |
-| <a id="ev-t074"></a>T074 | `h4/T074/reintentos.txt` | Conteo por ciclo, aviso, recuperación y mismo intento | **pendiente** |
-| <a id="ev-t075"></a>T075 | `h4/T075/arranque.txt` | Revisión del clon, comando, estados de los cuatro servicios y puertos | **pendiente** |
-| <a id="ev-t076"></a>T076 | `h4/T076/restauracion.tsv` | Inventarios antes, tras reinicio y en la copia restaurada | **pendiente** |
-| <a id="ev-t077"></a>T077 | `h4/T077/e22-compose.json` | Comparación de IDs y recuentos durante y después de la caída | **pendiente** |
+| <a id="ev-t066"></a>T066 | [Pre](evidencias/h4/T066/pre.md) | Dos recorridos por interfaz, acuses y decisión reabierta | **verificado** |
+| <a id="ev-t067"></a>T067 | [Post](evidencias/h4/T067/post.md) | Capturas y acuses por orden de post y publicación | **verificado** |
+| <a id="ev-t068"></a>T068 | [Secuencias](evidencias/h4/T068/secuencias.tsv) | IDs, versiones, forma y momento | **verificado** |
+| <a id="ev-t069"></a>T069 | [Informe](evidencias/h4/T069/informe.tsv) | Recuentos, puntajes por medida y nota clínica contrastada en la prueba de publicación | **verificado** |
+| <a id="ev-t070"></a>T070 | [Origen](evidencias/h4/T070/origen.md) | Dirección local, captura y respuesta de red del mismo origen | **verificado** |
+| <a id="ev-t071"></a>T071 | [Inicialización](evidencias/h4/T071/sqlite-init.txt) | Estado de salida, imagen, volumen e inventarios | **verificado** |
+| <a id="ev-t072"></a>T072 | [Arranque y estados de la API](evidencias/h4/T072/backend-disponible.json) · [Acuses con Ollama detenido](evidencias/h4/T077/durante-caida-compose.json) | Dependencia de arranque, estados y dos acuses | **verificado** |
+| <a id="ev-t073"></a>T073 | [Inventario y carga del modelo](evidencias/h4/T073/modelo.json) | Etiqueta, digest esperado y local, prueba de generación y estado | **pendiente la generación en Docker** |
+| <a id="ev-t074"></a>T074 | [Reintentos en Compose](evidencias/h4/T074/reintentos.txt) · [Servidor simulado](evidencias/h4/T074/reintentos-local.txt) | Tres intentos, aviso, mismas operaciones y descarga recuperada | **pendiente la generación tras recuperar** |
+| <a id="ev-t075"></a>T075 | [Arranque de desarrollo](evidencias/h4/T075/arranque-desarrollo.txt) | Compilación con imágenes públicas, SQLite y único puerto publicado | **pendiente en el equipo docente** |
+| <a id="ev-t076"></a>T076 | [Restauración durante la caída](evidencias/h4/T076/restauracion-durante-caida.json) · [Restauración de una revisión publicada](evidencias/auditoria-modulo01/recorrido/restauracion-compose.json) | Vista, fuentes y devolución de ensayo recuperadas en otro volumen | **pendiente la reutilización del modelo en el equipo docente** |
+| <a id="ev-t077"></a>T077 | [Caída en Compose](evidencias/h4/T077/durante-caida-compose.json) · [Recuperación local](evidencias/h4/T077/e22-local.json) | Acuses, post e IDs verificados en Compose mientras Ollama está detenido | **pendiente la evaluación tras recuperar Ollama en Compose** |
 | <a id="ev-t078"></a>T078 | `h4/T078/aprobaciones.md` | Acta docente restringida y correspondencia con las versiones cargadas | **pendiente** |
 | <a id="ev-t079"></a>T079 | `h4/T079/recorrido.md` | Secuencia por rol, IDs, captura de la devolución y tiempos del equipo docente | **pendiente** |
 | <a id="ev-t080"></a>T080 | `h4/T080/acta.md` | Decisión de aceptación y referencias a cada evidencia | **pendiente** |

@@ -1,4 +1,4 @@
-use std::{path::Path, time::Duration};
+use std::{fs, path::Path, time::Duration};
 
 use rusqlite::{Connection, Error, OpenFlags, Result, TransactionBehavior};
 
@@ -25,8 +25,13 @@ const MIGRACIONES: &[&str] = &[
     include_str!("../migrations/0012_evaluacion.sql"),
     include_str!("../migrations/0013_revisiones.sql"),
     include_str!("../migrations/0013a_publicacion.sql"),
+    include_str!("../migrations/0014_encuestas.sql"),
+    include_str!("../migrations/0015_actividad_formal.sql"),
+    include_str!("../migrations/0016_trazas_rechazos.sql"),
+    include_str!("../migrations/0017_reservas_operaciones.sql"),
 ];
 const VERSION_REVISIONES: usize = 21;
+const VERSION_ENCUESTAS: usize = 23;
 
 pub fn abrir(ruta: impl AsRef<Path>) -> Result<Connection> {
     configurar(Connection::open(ruta)?)
@@ -56,6 +61,22 @@ pub fn migrar(conexion: &mut Connection) -> Result<()> {
         crate::modules::evaluacion::revisiones::inicializar_existentes(&transaccion)
             .map_err(|error| Error::ToSqlConversionFailure(error.into()))?;
     }
+    if actual < VERSION_ENCUESTAS {
+        use crate::modules::encuestas::instrumento::{Instrumento, guardar};
+        Instrumento::ensayo().and_then(|instrumento| guardar(&transaccion, &instrumento, None))
+            .map_err(|error| Error::ToSqlConversionFailure(error.into()))?;
+    }
     transaccion.pragma_update(None, "user_version", MIGRACIONES.len())?;
     transaccion.commit()
+}
+
+pub fn respaldar(db: &Path, destino: &Path) -> anyhow::Result<()> {
+    let conexion = abrir_existente(db)?;
+    let ruta = destino.to_str().ok_or_else(|| anyhow::anyhow!("La ruta de destino debe ser UTF-8"))?;
+    fs::OpenOptions::new().write(true).create_new(true).open(destino)?;
+    if let Err(error) = conexion.execute("VACUUM INTO ?1", [ruta]) {
+        let _ = fs::remove_file(destino);
+        return Err(error.into());
+    }
+    Ok(())
 }

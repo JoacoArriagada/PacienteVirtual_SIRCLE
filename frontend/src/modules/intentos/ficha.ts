@@ -17,12 +17,14 @@ import { montarEcg, type Orden } from "../examenes/ecg.js";
 import { montarApuntes, type Apunte, type Evidencia } from "../razonamiento/apuntes.js";
 import { montarHipotesis, type Borrador } from "../razonamiento/hipotesis.js";
 import { montarEntrega, mostrarAcuse, type AcuseEntrega } from "../razonamiento/entrega.js";
+import { mostrarPre } from "../encuestas/pre.js";
 
 export interface VistaIntento {
   intento_id: string;
   actividad_id: string;
   version_caso: string;
   pre: string;
+  post: string;
   estado: string;
   fase: string;
   revision: number;
@@ -41,7 +43,8 @@ export interface VistaIntento {
   respiraciones_simuladas?: number;
 }
 
-export function mostrarFicha(main: HTMLElement, intento: VistaIntento, volver: () => void): void {
+export function mostrarFicha(main: HTMLElement, intento: VistaIntento, volver: () => void, vigente: () => boolean): void {
+  if (!vigente()) return;
   main.dataset.view = "intento";
   main.innerHTML = `
     <section class="view" aria-labelledby="page-title">
@@ -55,7 +58,7 @@ export function mostrarFicha(main: HTMLElement, intento: VistaIntento, volver: (
   const panel = main.querySelector<HTMLElement>("[data-contenido-intento]")!;
   const { introduccion, ficha, indicaciones, ayuda } = intento;
   if (intento.pre === "pendiente") {
-    panel.textContent = "Pre pendiente.";
+    mostrarPre(panel, intento.intento_id, (actual) => mostrarFicha(main, actual, volver, vigente));
   } else if (introduccion && ficha && indicaciones && ayuda) {
     panel.classList.add("intro-grid");
     panel.innerHTML = `
@@ -97,7 +100,7 @@ export function mostrarFicha(main: HTMLElement, intento: VistaIntento, volver: (
     for (const medicion of ficha.hallazgos ?? []) {
       const fila = document.createElement("li");
       fila.dataset.medicionId = medicion.medicion_id;
-      fila.textContent = textoMedicion(medicion) + " · " + medicion.momento;
+      fila.textContent = [textoMedicion(medicion), medicion.origen, medicion.momento].filter(Boolean).join(" · ");
       registrados.append(fila);
     }
     const lista = panel.querySelector("[data-indicaciones]")!;
@@ -132,11 +135,13 @@ export function mostrarFicha(main: HTMLElement, intento: VistaIntento, volver: (
       atencion.querySelector("[data-pie-paciente]")!.textContent = introduccion.motivo;
       const valoracion = atencion.querySelector<HTMLElement>("[data-valoracion]")!;
       const volverAtencion = async () => {
+        const procedimiento = main.firstElementChild;
+        const sigueAbierto = () => vigente() && main.firstElementChild === procedimiento;
         try {
           const actual = await api<VistaIntento>("/intentos/" + encodeURIComponent(intento.intento_id));
-          mostrarFicha(main, actual, volver);
+          if (sigueAbierto()) mostrarFicha(main, actual, volver, vigente);
         } catch {
-          volver();
+          if (sigueAbierto()) volver();
         }
       };
       const instrumentos = [pulso, temperatura, saturacion, peso];
@@ -168,12 +173,12 @@ export function mostrarFicha(main: HTMLElement, intento: VistaIntento, volver: (
         acciones.className = "button-row";
         razonamiento.append(acciones);
         montarEntrega(acciones, main.querySelector<HTMLElement>(".view")!, intento.intento_id,
-          cambiosSinGuardar, (actual) => mostrarFicha(main, actual, volver));
+          cambiosSinGuardar, (actual) => mostrarFicha(main, actual, volver, vigente));
       }
     }
   } else {
     panel.textContent = "La ficha no está disponible en esta fase.";
   }
-  if (intento.entrega) mostrarAcuse(main.querySelector<HTMLElement>(".view")!, intento.entrega, intento.intento_id);
+  if (intento.entrega) mostrarAcuse(main.querySelector<HTMLElement>(".view")!, intento.entrega, intento);
   main.querySelector<HTMLElement>("#page-title")?.focus();
 }

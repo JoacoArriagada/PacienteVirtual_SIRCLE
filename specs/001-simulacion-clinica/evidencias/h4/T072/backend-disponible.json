@@ -1,0 +1,50 @@
+{
+  "tarea": "T072",
+  "fecha": "2026-11-26",
+  "revision": "08a90308 + cambios locales",
+  "proyecto": "sircle-modulo01-sqlite",
+  "reproduccion": "Cambiar --fuentes por /catalogo-ausente en sqlite-init y ejecutar docker compose up --no-build -d backend. Restaurar el comando original y repetir con --wait.",
+  "error": [
+    " Network sircle-modulo01-sqlite_default Creating ",
+    " Volume sircle-modulo01-sqlite_sircle-datos Creating ",
+    " Volume sircle-modulo01-sqlite_sircle-datos Created ",
+    " Network sircle-modulo01-sqlite_default Created ",
+    " Container sircle-modulo01-sqlite-sqlite-init-1 Creating ",
+    " Container sircle-modulo01-sqlite-sqlite-init-1 Created ",
+    " Container sircle-modulo01-sqlite-backend-1 Creating ",
+    " Container sircle-modulo01-sqlite-backend-1 Created ",
+    " Container sircle-modulo01-sqlite-sqlite-init-1 Starting ",
+    " Container sircle-modulo01-sqlite-sqlite-init-1 Started ",
+    " Container sircle-modulo01-sqlite-sqlite-init-1 Waiting ",
+    " Container sircle-modulo01-sqlite-sqlite-init-1 Error service \"sqlite-init\" didn't complete successfully: exit 1",
+    " Container sircle-modulo01-sqlite-backend-1 not started: condition \"service_completed_successfully\" of service \"sqlite-init\" not met ",
+    "service \"sqlite-init\" didn't complete successfully: exit 1"
+  ],
+  "codigo": 1,
+  "contenedoresDuranteFallo": [
+    {
+      "Service": "backend",
+      "State": "created",
+      "ExitCode": 0
+    },
+    {
+      "Service": "sqlite-init",
+      "State": "exited",
+      "ExitCode": 1
+    }
+  ],
+  "estadoSinOllama": {
+    "base": {
+      "disponible": true
+    },
+    "modelo": {
+      "aviso": "La inferencia aún no está disponible. Si la preparación falló, revisa los registros de inferencia y reinicia el servicio.",
+      "contexto_entrevista": 2048,
+      "digest_esperado": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "disponible": false,
+      "nombre": "qwen3.5:4b"
+    },
+    "servicio": "sircle"
+  },
+  "acuses": "../T077/durante-caida-compose.json"
+}

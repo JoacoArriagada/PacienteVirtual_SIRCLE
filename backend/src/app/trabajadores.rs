@@ -8,7 +8,7 @@ use crate::{
         supervisor::{self, Acuse, Peticion, Supervisor},
     },
     modules::entrevista::ollama::Ollama,
-    shared::{contexto, trazas::ahora_ms},
+    shared::{contexto, trazas},
 };
 
 pub async fn iniciar(url: &str) -> Result<Supervisor> {
@@ -43,9 +43,9 @@ async fn procesar(agente: Agente, pid: u32, motor: &Ollama, peticion: Peticion) 
             ensure!(agente == solicitud.cabecera.agente
                 && contexto::voz_autorizada(agente, &solicitud.cabecera.caso, &solicitud.cabecera.hablante),
                 "El canal no corresponde a la entrevista");
-            eprintln!("SIRCLE_TRABAJADOR_OPERACION {}", serde_json::json!({
+            trazas::evento("SIRCLE_TRABAJADOR_OPERACION", &serde_json::json!({
                 "pid": pid, "agente": agente.id(), "operacion_id": solicitud.cabecera.operacion_id,
-                "intento_id": solicitud.cabecera.intento_id, "inicio_unix_ms": ahora_ms(),
+                "intento_id": solicitud.cabecera.intento_id, "inicio_unix_ms": trazas::ahora_ms(),
             }));
             Ok(Acuse::Entrevista(mensajes::entrevistar(motor, solicitud).await?))
         }

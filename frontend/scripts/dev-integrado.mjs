@@ -3,12 +3,14 @@ import { createServer, request } from "node:http";
 import { extname } from "node:path";
 import { servirArchivo, tipos } from "./estaticos.mjs";
 
-const backend = "http://127.0.0.1:8081";
+const puertoFrontend = Number(process.env.SIRCLE_PUERTO_FRONTEND ?? 8080);
+const puertoBackend = Number(process.env.SIRCLE_PUERTO_BACKEND ?? 8081);
+const backend = "http://127.0.0.1:" + puertoBackend;
 const archivos = new Map([["/", "index.html"]]);
 for (const carpeta of ["app", "modules", "recursos"]) {
   for (const nombre of await readdir(new URL("../dist/" + carpeta, import.meta.url), { recursive: true })) {
     if (tipos.has(extname(nombre))) {
-      const ruta = carpeta + "/" + nombre;
+      const ruta = carpeta + "/" + nombre.replaceAll("\\", "/");
       archivos.set("/" + ruta, ruta);
     }
   }
@@ -47,6 +49,6 @@ const servidor = createServer((peticion, respuesta) => {
     void servirArchivo(peticion, respuesta, archivos.get(ruta));
   }
 });
-servidor.listen(8080, "127.0.0.1", () => {
-  console.log("Frontend integrado disponible en http://127.0.0.1:8080");
+servidor.listen(puertoFrontend, "127.0.0.1", () => {
+  console.log("Frontend integrado disponible en http://127.0.0.1:" + servidor.address().port);
 });

@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { chromium } from "playwright-core";
@@ -37,12 +36,13 @@ try {
   for (const seccion of ["introduccion", "ficha", "indicaciones", "ayuda", "turnos", "mediciones"]) {
     assert.equal(pendiente[seccion], undefined, seccion);
   }
-  await pagina.getByText("Pre pendiente.", { exact: true }).waitFor();
+  await pagina.getByRole("heading", { name: "Antes de la práctica" }).waitFor();
   assert.equal(await pagina.locator("summary").count(), 0);
   assert.equal(await pagina.getByText("Falta de aire", { exact: true }).count(), 0);
   if (destino) await pagina.screenshot({ path: resolve(destino, "pre-pendiente.png"), fullPage: true });
 
-  execFileSync("../backend/target/debug/sircle", ["resolver-pre-ensayo", "--db", base, "--intento", id]);
+  await pagina.getByRole("button", { name: "Omitir encuesta", exact: true }).click();
+  await pagina.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
   await pagina.getByRole("button", { name: "Volver a mis pacientes", exact: true }).click();
   const [resuelta] = await Promise.all([
     pagina.waitForResponse(frontend + ruta),
@@ -55,7 +55,7 @@ try {
   assert.equal(contenido.fase, "inicial");
   assert.equal(contenido.ayuda.origen, "docente");
   assert.deepEqual(contenido.mediciones, []);
-  await pagina.getByText("Falta de aire", { exact: true }).waitFor();
+  await pagina.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
   for (const parte of ["Ficha inicial", "Indicaciones", "Ayuda"]) {
     await pagina.locator("main").getByText(parte, { exact: true }).click();
   }

@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
@@ -8,19 +7,27 @@ import { chromium, type Locator, type Page } from "playwright-core";
 
 const base = process.env.SIRCLE_PARIDAD_DB;
 const destino = process.env.SIRCLE_PARIDAD_EVIDENCIA;
-const sitio = "http://127.0.0.1:8080";
+const sitio = "http://127.0.0.1:" + (process.env.SIRCLE_PUERTO_FRONTEND ?? "8080");
 const dimensiones = { viewport: { width: 1280, height: 900 }, deviceScaleFactor: 1 };
 const fuente = new URL("../../docs/referencias/html-semana5/Paciente_Virtual.html", import.meta.url);
 const copia = new URL("../referencia/semana5/Paciente_Virtual.html", import.meta.url);
 const boton = (pagina: Page, name: string) => pagina.locator("main").getByRole("button", { name, exact: true });
 const huella = (archivo: Buffer) => createHash("sha256").update(archivo).digest("hex");
 
+interface Captura {
+  ancho: number;
+  alto: number;
+  radios: string[];
+  huella: string;
+}
+
 test("Semana 5 permite comparar selección, chat, brazo, presión e histórico por teclado", { skip: !base }, async () => {
   if (destino) await mkdir(destino, { recursive: true });
   const html = await readFile(fuente);
   assert.equal(huella(html), huella(await readFile(copia)));
   const navegador = await chromium.launch({ executablePath: process.env.SIRCLE_CHROMIUM });
-  const evidencias: Record<string, Record<string, unknown>> = { original: {}, extraccion: {} };
+  const evidencias: Record<string, Record<string, Captura>> = { original: {}, extraccion: {} };
+  const escenas: Record<string, Map<string, Buffer>> = { original: new Map(), extraccion: new Map() };
   const teclado: Record<string, unknown[]> = { original: [], extraccion: [] };
 
   async function capturar(pagina: Page, interfaz: string, estado: string, region: Locator): Promise<void> {
@@ -28,7 +35,12 @@ test("Semana 5 permite comparar selección, chat, brazo, presión e histórico p
     const png = await region.screenshot({ animations: "disabled" });
     const caja = await region.boundingBox();
     assert.ok(caja);
-    evidencias[interfaz][estado] = { ancho: caja.width, alto: caja.height, huella: huella(png) };
+    const radios = await region.evaluate((elemento) => {
+      const estilo = getComputedStyle(elemento);
+      return [estilo.borderTopLeftRadius, estilo.borderTopRightRadius, estilo.borderBottomRightRadius, estilo.borderBottomLeftRadius];
+    });
+    evidencias[interfaz][estado] = { ancho: caja.width, alto: caja.height, radios, huella: huella(png) };
+    if (["brazo", "preparacion", "colocado"].includes(estado)) escenas[interfaz].set(estado, png);
     if (destino) {
       await writeFile(resolve(destino, interfaz + "-" + estado + "-detalle.png"), png);
       await pagina.screenshot({ path: resolve(destino, interfaz + "-" + estado + ".png"), animations: "disabled" });
@@ -92,9 +104,7 @@ test("Semana 5 permite comparar selección, chat, brazo, presión e histórico p
         assert.equal(alta.status(), 201);
         const { intento_id } = await alta.json();
         rutas.intento = rutaIntencion + "/" + intento_id;
-        execFileSync("../backend/target/debug/sircle", ["resolver-pre-ensayo", "--db", base!, "--intento", intento_id]);
-        await boton(pagina, "Volver a mis pacientes").click();
-        await boton(pagina, "Continuar").click();
+        await boton(pagina, "Omitir encuesta").click();
       }
 
       if ((await pagina.locator("#questions").getAttribute("open")) === null) {
@@ -170,8 +180,20 @@ test("Semana 5 permite comparar selección, chat, brazo, presión e histórico p
     assert.deepEqual(estadosVentana.original, estadosVentana.extraccion);
     assert.deepEqual(estadosVentana.original, { ancho: 1280, alto: 900, dpr: 1, zoom: 1 });
     assert.deepEqual(estiloChat.original, estiloChat.extraccion);
-    for (const estado of ["brazo", "preparacion", "colocado"]) {
-      assert.deepEqual(evidencias.original[estado], evidencias.extraccion[estado], estado);
+    const rasterizacion: Record<string, Awaited<ReturnType<typeof compararPixeles>>> = {};
+    for (const [estado, foto] of escenas.original) {
+      const original = evidencias.original[estado];
+      const extraida = evidencias.extraccion[estado];
+      assert.deepEqual([original.ancho, original.alto], [extraida.ancho, extraida.alto], estado);
+      assert.deepEqual(original.radios, extraida.radios, estado);
+      const radios = original.radios.map((radio) => {
+        assert.match(radio, /^\d+(?:\.\d+)?px$/);
+        return Number.parseFloat(radio);
+      });
+      const diferencia = await compararPixeles(extraccion, foto, escenas.extraccion.get(estado)!, radios);
+      assert.ok(diferencia.deltaInterior <= 1 && diferencia.deltaContorno <= 8,
+        JSON.stringify({ estado, diferencia }));
+      rasterizacion[estado] = diferencia;
     }
     assert.deepEqual(lecturas.original, [128, 78, 112]);
     assert.deepEqual(lecturas.extraccion, [148, 85]);
@@ -183,7 +205,7 @@ test("Semana 5 permite comparar selección, chat, brazo, presión e histórico p
     const pulso = await respuesta.json();
     assert.equal(pulso.valor.frecuencia, 102);
     const observado = { navegador: navegador.version(), entorno: estadosVentana, referenciaSha256: huella(html),
-      estiloChat, estados: evidencias, teclado, lecturas, pulsoExtraido: pulso };
+      estiloChat, estados: evidencias, rasterizacion, teclado, lecturas, pulsoExtraido: pulso };
     if (destino) await writeFile(resolve(destino, "comparacion.json"), JSON.stringify(observado, null, 2) + "\n");
     console.log(JSON.stringify({ navegador: navegador.version(), interfaz: estadosVentana,
       pares: Object.keys(evidencias.original).length, hitosTeclado: teclado.original.length, lecturas }));
@@ -191,3 +213,40 @@ test("Semana 5 permite comparar selección, chat, brazo, presión e histórico p
     await navegador.close();
   }
 });
+
+function compararPixeles(pagina: Page, original: Buffer, extraccion: Buffer, radios: number[]) {
+  return pagina.evaluate(async ({ capturas, radios }) => {
+    const pixeles = await Promise.all(capturas.map(async (base64) => {
+      const bytes = Uint8Array.from(atob(base64), (caracter) => caracter.charCodeAt(0));
+      const imagen = await createImageBitmap(new Blob([bytes], { type: "image/png" }));
+      const canvas = new OffscreenCanvas(imagen.width, imagen.height);
+      const ctx = canvas.getContext("2d")!;
+      ctx.drawImage(imagen, 0, 0);
+      return ctx.getImageData(0, 0, canvas.width, canvas.height);
+    }));
+    const [a, b] = pixeles;
+    if (a.width !== b.width || a.height !== b.height) throw new Error("Las capturas tienen dimensiones distintas");
+    let diferentes = 0;
+    let deltaInterior = 0;
+    let deltaContorno = 0;
+    let deltaMaximo = 0;
+    for (let i = 0; i < a.data.length; i += 4) {
+      const delta = Math.max(...[0, 1, 2, 3].map((canal) => Math.abs(a.data[i + canal] - b.data[i + canal])));
+      if (delta === 0) continue;
+      diferentes++;
+      deltaMaximo = Math.max(deltaMaximo, delta);
+      const x = (i / 4) % a.width + 0.5;
+      const y = Math.floor(i / 4 / a.width) + 0.5;
+      const distancias = [[x, y], [a.width - x, y], [a.width - x, a.height - y], [x, a.height - y]];
+      // El margen de un píxel y medio contempla el redondeo del recorte y el antialias del arco.
+      const enContorno = radios.some((radio, esquina) => {
+        const [dx, dy] = distancias[esquina];
+        return radio > 0 && dx <= radio && dy <= radio
+          && Math.abs(Math.hypot(radio - dx, radio - dy) - radio) <= 1.5;
+      });
+      if (enContorno) deltaContorno = Math.max(deltaContorno, delta);
+      else deltaInterior = Math.max(deltaInterior, delta);
+    }
+    return { diferentes, deltaInterior, deltaContorno, deltaMaximo, fraccion: diferentes / (a.width * a.height) };
+  }, { capturas: [original, extraccion].map((imagen) => imagen.toString("base64")), radios });
+}

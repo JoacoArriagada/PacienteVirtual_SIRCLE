@@ -1,0 +1,138 @@
+{
+  "fecha": "2026-11-26",
+  "equipo": "Estación Windows de desarrollo",
+  "motor": "Ollama 0.40.5 en CPU",
+  "comando": "Binario de prueba agente_evaluador --ignored --test-threads=1 --nocapture, con SIRCLE_OLLAMA_URL apuntando al motor de ensayo.",
+  "resultados": [
+    {
+      "intento": "da9ade78763013a155f5fb0bad24a5bc",
+      "entrega": "f315172e0ea283c12eb02c2ec7d7a7aa",
+      "evaluacion": "8b954599d66112fa4a54fe9674ff25eb",
+      "operacion": "ab9fc97adcd728a687a5e0f2d24fe771",
+      "modelo": "qwen3.5:4b",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "duracion_ns": 189069223200,
+      "tokens": 870,
+      "rubrica": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+      "prioridad": null,
+      "cotejo": [
+        {
+          "criterio": "hipotesis-1",
+          "esperado": "acierto",
+          "observado": "acierto",
+          "registro": "dc7d701d0709aa227d24f554e4f395bd",
+          "citas": [
+            "dc7d701d0709aa227d24f554e4f395bd"
+          ],
+          "citaCoincide": true,
+          "juicioCoincide": true,
+          "mejora": "Repetir cita para contrastar con registro."
+        },
+        {
+          "criterio": "hipotesis-2",
+          "esperado": "acierto",
+          "observado": "acierto",
+          "registro": "07165a3d908ed8bb4980f12291067aea",
+          "citas": [
+            "07165a3d908ed8bb4980f12291067aea"
+          ],
+          "citaCoincide": true,
+          "juicioCoincide": true,
+          "mejora": "Repetir cita para contrastar con informe."
+        },
+        {
+          "criterio": "hipotesis-3",
+          "esperado": "acierto",
+          "observado": "acierto",
+          "registro": "f65757c748d2a52cd320e811ed3220de",
+          "citas": [
+            "f65757c748d2a52cd320e811ed3220de"
+          ],
+          "citaCoincide": true,
+          "juicioCoincide": true,
+          "mejora": "Repetir cita para contrastar con medición."
+        },
+        {
+          "criterio": "hipotesis-4",
+          "esperado": "omision",
+          "observado": "omision",
+          "registro": "dc7d701d0709aa227d24f554e4f395bd",
+          "citas": [
+            "dc7d701d0709aa227d24f554e4f395bd"
+          ],
+          "citaCoincide": true,
+          "juicioCoincide": true,
+          "mejora": "Falta vínculo; citar registro para contrastar. Revisa el registro citado y anota si documenta el dato que falta. Indica qué hallazgo apoyaría o debilitaría esta hipótesis."
+        }
+      ]
+    },
+    {
+      "intento": "5e69ea6e43a9c2377a90ccbf0e591d09",
+      "entrega": "fd9c8461cf878496349abaaeb3cc4102",
+      "evaluacion": "2d77b890cf2245e53ad06d1dd64e1d42",
+      "operacion": "34c8f49ef1c646d7d6e0a43f6f7bdf6f",
+      "modelo": "qwen3.5:4b",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "duracion_ns": 206130127400,
+      "tokens": 860,
+      "rubrica": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+      "prioridad": {
+        "accion": "Relee el informe citado y corrige la hipótesis 2 según el resultado registrado.",
+        "criterio_id": "hipotesis-2",
+        "evidencia_id": "36319c58546e983acd4668b8cebba002",
+        "motivo": "El informe registra «taquicardia sinusal», un resultado que contradice la hipótesis 2. Corrige esa contradicción antes de completar los demás fundamentos."
+      },
+      "cotejo": [
+        {
+          "criterio": "hipotesis-1",
+          "esperado": "acierto",
+          "observado": "acierto",
+          "registro": "98537afdd03428d62f6bfe08b8646868",
+          "citas": [
+            "98537afdd03428d62f6bfe08b8646868"
+          ],
+          "citaCoincide": true,
+          "juicioCoincide": true,
+          "mejora": "Citar el registro que respalda la hipótesis."
+        },
+        {
+          "criterio": "hipotesis-2",
+          "esperado": "error",
+          "observado": "error",
+          "registro": "36319c58546e983acd4668b8cebba002",
+          "citas": [
+            "36319c58546e983acd4668b8cebba002"
+          ],
+          "citaCoincide": true,
+          "juicioCoincide": true,
+          "mejora": "Revisar el informe para evitar errores."
+        },
+        {
+          "criterio": "hipotesis-3",
+          "esperado": "omision",
+          "observado": "omision",
+          "registro": "4c58a0b97dad558397c90a56c239eb77",
+          "citas": [
+            "4c58a0b97dad558397c90a56c239eb77"
+          ],
+          "citaCoincide": true,
+          "juicioCoincide": true,
+          "mejora": "Buscar registro que contraste la hipótesis. Revisa el registro citado y anota si documenta el dato que falta. Indica qué hallazgo apoyaría o debilitaría esta hipótesis."
+        },
+        {
+          "criterio": "hipotesis-4",
+          "esperado": "error",
+          "observado": "error",
+          "registro": "98537afdd03428d62f6bfe08b8646868",
+          "citas": [
+            "98537afdd03428d62f6bfe08b8646868"
+          ],
+          "citaCoincide": true,
+          "juicioCoincide": true,
+          "mejora": "Distinguir datos medidos de declaraciones. Distingue en la ficha lo referido en el turno de lo medido con un instrumento."
+        }
+      ]
+    }
+  ],
+  "reproduccion": "cargo test --locked --offline --test agente_evaluador -- --ignored --test-threads=1 --nocapture"
+}

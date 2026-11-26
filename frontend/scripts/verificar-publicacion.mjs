@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { chromium } from "playwright-core";
@@ -33,20 +32,20 @@ try {
 
   const titular = await sesion("estudiante-lr");
   const [pendiente] = await Promise.all([
-    titular.waitForResponse((r) => r.url().endsWith("/devolucion")),
+    titular.waitForResponse((r) => r.url().endsWith("/encuestas/post")),
     titular.getByRole("button", { name: "Ver entrega", exact: true }).click(),
   ]);
-  assert.deepEqual(await pendiente.json(), { estado: "post_pendiente" });
-  await titular.getByText("Resuelve el post para consultar la devolución.", { exact: true }).waitFor();
+  const post = await pendiente.json();
+  assert.equal(post.estado, "pendiente");
+  assert.equal(post.items.length, 7);
+  await titular.getByRole("heading", { name: "Después de entregar" }).waitFor();
   assert.equal(await titular.getByRole("heading", { name: "Tu devolución" }).count(), 0);
   await titular.screenshot({ path: resolve(destino, "post-pendiente.png") });
-  const intento = pendiente.url().match(/\/api\/intentos\/([^/]+)\/devolucion$/)?.[1];
-  assert.ok(intento);
-  execFileSync("../backend/target/debug/sircle", ["resolver-post-ensayo", "--db", db,
-    "--intento", intento, "--estado", "omitido"]);
+  const oculto = await titular.request.get(sitio + "/api/intentos/" + post.intento_id + "/devolucion");
+  assert.deepEqual(await oculto.json(), { estado: "post_pendiente" });
   const [visible] = await Promise.all([
     titular.waitForResponse((r) => r.url().endsWith("/devolucion")),
-    titular.reload(),
+    titular.getByRole("button", { name: "Omitir encuesta", exact: true }).click(),
   ]);
   const devolucion = await visible.json();
   assert.equal(devolucion.estado, "publicada");

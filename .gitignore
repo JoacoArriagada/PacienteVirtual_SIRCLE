@@ -14,3 +14,4 @@ Thumbs.db
 *.swp
 .idea/
 .vscode/
+/datos/adaptaciones/lr/actividad-formal.local.json

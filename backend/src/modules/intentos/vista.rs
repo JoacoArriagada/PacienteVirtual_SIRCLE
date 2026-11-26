@@ -5,7 +5,7 @@ use serde_json::{Value, json};
 
 use crate::{
     app::{errores::ErrorApi, estado::Estado},
-    modules::{entrevista::{hechos, turnos}, evaluacion::entregas, examenes::ordenes,
+    modules::{entrevista::{hechos, turnos}, escenarios::formal::FichaLr, evaluacion::entregas, examenes::ordenes,
         razonamiento::{evidencias, hipotesis}, valoracion::{hallazgos, mediciones}},
     shared::autorizacion,
     shared::ficha_aprobada::{self, Orientacion, Sugerencia},
@@ -41,7 +41,7 @@ pub struct VistaIntento {
 struct SeccionesClinicas {
     introduccion: Value,
     ficha: Value,
-    indicaciones: Vec<&'static str>,
+    indicaciones: Vec<String>,
     ayuda: Orientacion,
     sugerencias: Vec<Sugerencia>,
     respiraciones_simuladas: Option<i64>,
@@ -77,7 +77,7 @@ fn vista_inicial_lr(
 ) -> Result<Option<SeccionesClinicas>, ErrorApi> {
     let triaje: Option<(String, String)> = db.query_row(
         "SELECT l.valor, l.unidad FROM intentos i
-         JOIN versiones_clinicas v ON v.id=i.version_caso_id AND v.estado='ensayo'
+         JOIN versiones_clinicas v ON v.id=i.version_caso_id AND v.estado IN ('ensayo','aprobada')
          JOIN lecturas_versionadas l ON l.version_caso_id=v.id AND l.fase=i.fase
          JOIN revisiones_fuente r ON r.id=l.revision_fuente_id
          WHERE i.id=?1 AND l.instrumento='presion'
@@ -87,6 +87,16 @@ fn vista_inicial_lr(
         |fila| Ok((fila.get(0)?, fila.get(1)?)),
     ).optional()?;
     let Some((presion, unidad)) = triaje else { return Ok(None) };
+    let ficha = if intento.tipo == "formal" {
+        let contenido: String = db.query_row(
+            "SELECT json_extract(a.contenido,'$.ficha') FROM aprobaciones_clinicas a
+             JOIN intentos i ON i.version_caso_id=a.version_id WHERE i.id=?1",
+            [&intento.intento_id], |fila| fila.get(0),
+        )?;
+        serde_json::from_str::<FichaLr>(&contenido).map_err(ErrorApi::interno)?
+    } else {
+        FichaLr::inicial("Servicio de urgencias. Práctica técnica con material de ensayo.", "Triaje de ensayo de LR")
+    };
     let presion: Value = serde_json::from_str(&presion).map_err(ErrorApi::interno)?;
     let lectura = format!("{}/{} {unidad}", presion["sistolica"], presion["diastolica"]);
     let respiraciones_simuladas = db.query_row(
@@ -98,18 +108,14 @@ fn vista_inicial_lr(
     ).optional()?;
     Ok(Some(SeccionesClinicas {
         introduccion: json!({
-            "paciente": "LR", "edad": 34, "motivo": "Falta de aire",
-            "contexto": "Servicio de urgencias. Práctica técnica con material de ensayo.",
+            "paciente": ficha.paciente, "edad": ficha.edad, "motivo": ficha.motivo, "contexto": ficha.contexto,
         }),
         ficha: json!({
-            "fuente": "Triaje de ensayo de LR", "fase": "inicial",
+            "fuente": ficha.fuente, "fase": "inicial",
             "datos": [{ "etiqueta": "Presión inicial", "valor": lectura }],
             "hallazgos": mediciones.iter().filter(|medicion| medicion.en_ficha).collect::<Vec<_>>(),
         }),
-        indicaciones: vec![
-            "Entrevista a LR y registra las mediciones que realices.",
-            "Vincula los hallazgos que sustenten tu hipótesis.",
-        ],
+        indicaciones: ficha.indicaciones,
         ayuda: ficha_aprobada::ORIENTACION_INICIAL_LR,
         sugerencias: ficha_aprobada::sugerencias(&hechos::candidatos_lr(db, intento)?),
         respiraciones_simuladas,

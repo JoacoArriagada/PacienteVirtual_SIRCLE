@@ -1,0 +1,51 @@
+# Auditoría técnica del módulo 01
+
+Se revisó la implementación de la rama `feature/prototipo` con base en `08a90308` y se incorporaron correcciones sobre los cambios de trabajo. El alcance comprende la especificación funcional, el contrato HTTP, el modelo de datos, los cuatro hitos y los perfiles de capacidad. Las pruebas de esta acta usan identidades ficticias y se ejecutaron en la estación Windows de desarrollo el 26 de noviembre de 2026. [Especificación](../../spec.md) · [Contrato HTTP](../../contracts/api.md) · [Tareas](../../tasks.md)
+
+## Estructura y trazabilidad
+
+El frontend HTML, CSS y TypeScript y el backend Rust y Axum mantienen sus propias entradas de compilación y prueba. Los módulos del backend concentran la autorización, la validación de fase y las escrituras. Cuatro trabajadores con canales separados comparten Ollama. SQLite conserva el catálogo versionado, los intentos y sus operaciones. En Compose, Nginx publica el frontend y reenvía la API por el mismo origen. [Plan](../../plan.md) · [Matriz de los 32 núcleos](../h3/T065/matriz.tsv) · [Prueba del origen](../h4/T070/origen.md)
+
+La revisión del inventario inicial comprobó 84 tareas y sus 84 filas de evidencia. Las 72 marcas de cierre coincidían con el índice y sus dependencias. Se revisaron 708 enlaces locales, 167 rutas declaradas por tareas cerradas y 92 JSON de evidencia. Los 32 README de agentes enlazan código y pruebas existentes. Las 14 huellas de las fuentes originales y las 29 de la referencia de Semana 5 coincidieron con los inventarios. [Fuentes](../h1/T005/) · [Referencia y copia](../h2/T021/)
+
+El análisis estructural de Graphify extrajo 1.194 nodos y 2.286 relaciones de 111 archivos de código. La revisión de requisitos y resultados se hizo contra las rutas y los ensayos de la tabla. [Resumen del grafo y revisión de archivos](revision.json)
+
+## Correcciones y comprobaciones
+
+| Requisito | Resultado observado | Evidencia |
+| --- | --- | --- |
+| FR-001 · Acceso y reanudación | La sesión ficticia recupera el intento propio con la misma versión. La interfaz descarta respuestas tardías después de cerrar o cambiar de sesión. | [Acceso](../../../../backend/tests/acceso.rs) · [Intentos](../../../../backend/tests/intentos.rs) |
+| FR-002 · Pre y post | El pre presenta cinco ítems y el post siete. La decisión queda vinculada al intento. Si el docente publica primero, el titular resuelve el post antes de leer la devolución. | [Pre](../h4/T066/pre.md) · [Post](../h4/T067/post.md) |
+| FR-003 · Informe educativo | E14 conserva dos pre, dos post y un par. E15 conserva las secuencias A→B y B→A y el informe independiente de la nota clínica. | [Regresiones E14 y E15](../../../../backend/tests/encuestas.rs) · [Informe](../h4/T069/informe.tsv) |
+| FR-004 · Entrevista | Una reserva transaccional evita repetir la inferencia con la misma clave. El reenvío recibe 202 mientras espera y la interfaz conserva la pregunta y la clave. LR distingue un dato ausente de una respuesta técnica inválida. | [Reenvío y recuperación](../../../../backend/tests/turnos_reenvio.rs) · [Límites del relato](../../../../backend/tests/agente_lr.rs) |
+| FR-005 · Instrumentos | La toma y la ficha recuperan la procedencia de la presión. Se mantienen 148/85 mmHg y 102/min en los instrumentos del caso de ensayo. | [Valoración](../../../../backend/tests/valoracion.rs) · [Paridad visual](paridad.json) |
+| FR-006 · Ficha, ayuda y ECG | El informe textual permanece reservado hasta confirmar la orden. Reenviar la confirmación y reabrir el caso recuperan el mismo informe. | [Verificación del ECG](../../../../frontend/scripts/verificar-orden-ecg.mjs) |
+| FR-007 · Razonamiento y entrega | Los apuntes conservan su tipo. La hipótesis principal y la alternativa citan registros propios. La confirmación conserva su acuse al reenviar aun durante la caída de Qwen. | [Hipótesis](../../../../frontend/scripts/verificar-hipotesis.mjs) · [Caída en Compose](../h4/T077/durante-caida-compose.json) |
+| FR-008 · Evaluación y revisión | Qwen volvió a obtener tres y un acierto en los dos casos de E12. El docente puede seguir los registros citados, rectificar con motivo y publicar. El titular ve actuación, expectativa, juicio, explicación y mejora del criterio publicado. | [Dos calibraciones reales](e12-real.json) · [Batería del evaluador](../../../../backend/tests/agente_evaluador.rs) |
+| FR-009 · Reserva de contenido | Se verificó la huella de los archivos servidos y se inspeccionó la red antes del pre, durante la atención y antes de publicar. Las trazas detalladas requieren el docente asignado. | [Inventario público](inventario-publico.tsv) · [Respuestas inspeccionadas](reserva-publica.json) |
+| FR-010 · Persistencia | La preparación rechaza una revisión de fuente que pierde un pasaje obligatorio y conserva el catálogo anterior. Se comprobó la migración 25→26 sobre una copia y se recuperó la misma revisión publicada tras restaurar la práctica y reiniciar el backend en Docker. | [Regresiones del catálogo](../../../../backend/tests/preparacion.rs) · [Restauración de la revisión publicada](recorrido/restauracion-compose.json) |
+| FR-011 · Arranque y recuperación | Docker levantó el frontend y el backend con 14 fuentes. Chrome confirmó medición, entrega y post durante la caída. El preparador conserva el motivo que informa Ollama cuando falla la generación. La activación y recuperación de Qwen con la configuración ordinaria de Compose quedan pendientes en esta VM. | [Arranque](../h4/T075/arranque-desarrollo.txt) · [Caída](../h4/T077/durante-caida-compose.json) · [Prueba con 2 GB](modelo-con-2gb.json) |
+| FR-012 · Fidelidad de Semana 5 | Chrome comparó nueve estados y ocho pasos de teclado a 1280 × 900 y escala 1. Las dimensiones y los cuatro radios de 5 px coincidieron en las tres vistas del gesto. El máximo observado fue una unidad por canal en el interior y cinco en el antialias del contorno. | [Comparación](paridad.json) |
+| FR-013 · Capacidad | Los ejecutores distinguen los estados de una operación, conservan la clave al recuperar, verifican titularidad y correlacionan los intervalos observados. Se probaron los tres perfiles con cuatro identidades y un doble de Ollama. | [Regresión de los perfiles](../../../../pruebas/capacidad/perfiles.test.ts) |
+
+## Recorrido con Qwen real
+
+El verificador de Chrome recorrió desde el pre hasta la publicación con la versión de ensayo. La pregunta libre llegó a Qwen 3.5 4B y se confirmó en 14,1 s. La traza restringida enlazó la operación con el pasaje de LR. El estudiante tomó la presión y el pulso, confirmó la orden de ECG, guardó una hipótesis principal y una alternativa con dos citas cada una y reenvió la entrega. El evaluador terminó en 131,8 s. El usuario docente de ensayo siguió una cita, rectificó el criterio de valoración y publicó la revisión 2. El titular recibió `post_pendiente` hasta omitir el post y luego leyó la revisión publicada con 80 puntos de 100. [Acuses y trazas](recorrido/recorrido.json) · [Entrevista](recorrido/entrevista.png) · [Presión](recorrido/presion.png) · [Revisión docente](recorrido/revision-docente.png) · [Devolución](recorrido/devolucion.png)
+
+Una copia consistente de esa base se restauró en `sircle-auditoria-restauracion_sircle-datos`. Tras iniciar y reiniciar el backend de Compose se recuperaron las 14 fuentes, el mismo intento, turno, orden, mediciones, entrega y revisión publicada. [Restauración y recuentos](recorrido/restauracion-compose.json)
+
+En el ensayo HTTP independiente, las dos preguntas de titulares distintos se solaparon 4,47 s y ambas lecturas cruzadas devolvieron 403. En una serie separada, la pregunta libre tardó 14,32 s en frío y 7,82 s en caliente. Al detener la instancia local de Ollama, la operación nueva devolvió 503 y conservó los turnos. Al arrancarla otra vez, la misma clave confirmó un único turno y devolvió el mismo acuse en el reenvío. [Aislamiento, latencias y recuperación](entrevista-real.json)
+
+La demostración local quedó disponible en `http://127.0.0.1:8086` con una base nueva de ensayo. El frontend respondió HTTP 200 y `/api/estado` confirmó SQLite y Qwen. El recorrido de esta acta usa otra base de prueba para que la demostración abra una práctica nueva.
+
+## Baterías ejecutadas
+
+- La batería de Rust con `cargo test --locked --offline --jobs 4 --no-fail-fast` pasó 70 pruebas. Los otros siete casos habilitados para Windows pasaron por separado con Qwen real y sus bases preparadas. [Calibraciones](e12-real.json) · [Entrevista, aislamiento y recuperación](entrevista-real.json)
+- `npm test` con Chrome pasó siete pruebas, incluidas cinco regresiones de interfaz. El cotejo visual y la reserva de contenido se ejecutaron con frontend y API activos. `npm run build` y las compilaciones de las imágenes de frontend, backend e inferencia terminaron con código cero. [Comparación](paridad.json) · [Tráfico inspeccionado](reserva-publica.json)
+- `node --test pruebas/capacidad/perfiles.test.ts` pasó la regresión de recuperación y aislamiento. Los tres ensayos de humo con cuatro identidades conciliaron los historiales. [Prueba de los perfiles](../../../../pruebas/capacidad/perfiles.test.ts)
+
+## Pendientes de aceptación
+
+- T073–T077 requieren completar el arranque y la recuperación con el motor real en Compose. La VM de desarrollo dispone de 2 GB. Con carga mapeada en un contenedor aislado, la prueba breve respondió en 45,8 s y una selección estructurada en 107,1 s. La aprobación docente y el arranque desde el clon del equipo docente mantienen sus propios criterios de cierre. [Medición Docker](modelo-con-2gb.json) · [Guía de aceptación](../../quickstart.md#4-aceptar-la-demostración-en-el-equipo-del-profesor)
+- T078–T080 requieren las constancias clínica, educativa y de rúbrica, el recorrido de la actividad autorizada y el acta del docente. La prueba de integración verifica el bloqueo y la fijación de versiones con constancias de prueba. [Prueba de actividad formal](../../../../backend/tests/actividad_formal.rs)
+- T081–T084 requieren las corridas de 20 y 100 usuarios, el equipo docente identificado y la ratificación de umbrales por perfil para repetir la medición. [Perfiles y criterios](../../tasks.md#estudios-posteriores-de-capacidad)

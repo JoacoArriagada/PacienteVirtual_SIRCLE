@@ -1,0 +1,83 @@
+{
+  "entorno": "Compose",
+  "sitio": "http://127.0.0.1:8080",
+  "antesDeCaida": null,
+  "arranque": {
+    "base": {
+      "disponible": true
+    },
+    "modelo": {
+      "aviso": "La inferencia aún no está disponible. Si la preparación falló, revisa los registros de inferencia y reinicia el servicio.",
+      "contexto_entrevista": 2048,
+      "digest_esperado": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "disponible": false,
+      "nombre": "qwen3.5:4b"
+    },
+    "servicio": "sircle"
+  },
+  "pre": {
+    "intento_id": "aa5478d65cfa8ca3b9573ae1455d28cf",
+    "version": "instrumento-ensayo-v1",
+    "momento": "pre",
+    "forma": "A",
+    "estado": "respondido",
+    "instante": "2026-11-26T15:09:33.316Z"
+  },
+  "post": {
+    "intento_id": "aa5478d65cfa8ca3b9573ae1455d28cf",
+    "version": "instrumento-ensayo-v1",
+    "momento": "post",
+    "forma": "B",
+    "estado": "omitido",
+    "instante": "2026-11-26T15:09:35.850Z"
+  },
+  "turno": {
+    "turno_id": "66e1762d6efcd5f0471923bb39ad98e6",
+    "intento_id": "aa5478d65cfa8ca3b9573ae1455d28cf",
+    "orden": 1,
+    "agente": "lr",
+    "hablante": "LR",
+    "pregunta": "¿Desde cuándo comenzó?",
+    "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+    "tipo_respuesta": "hecho",
+    "operacion_id": "c81577eee6f6f8f9aa4e875bff402c9b",
+    "revision": 2
+  },
+  "medicion": {
+    "medicion_id": "854e76eac341671d576a80ff6a58bf19",
+    "intento_id": "aa5478d65cfa8ca3b9573ae1455d28cf",
+    "instrumento": "presion",
+    "accion": "toma_completa",
+    "fase": "inicial",
+    "valor": {
+      "diastolica": 85,
+      "sistolica": 148
+    },
+    "unidad": "mmHg",
+    "momento": "2026-11-26T15:09:35.475Z",
+    "en_ficha": false,
+    "revision": 3
+  },
+  "entrega": {
+    "entrega_id": "f87448a7d2401e4a9819fc94ca413b62",
+    "intento_id": "aa5478d65cfa8ca3b9573ae1455d28cf",
+    "revision": 4,
+    "rubrica_id": 1,
+    "version_rubrica": "1",
+    "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+    "confirmada_en": "2026-11-26T15:09:35.493Z",
+    "estado_evaluacion": "pendiente",
+    "post": "pendiente"
+  },
+  "antes": [
+    {
+      "entrega_id": "f87448a7d2401e4a9819fc94ca413b62",
+      "estudiante_id": "estudiante-lr",
+      "intento_id": "aa5478d65cfa8ca3b9573ae1455d28cf",
+      "confirmada_en": "2026-11-26T15:09:35.493Z",
+      "estado": "pendiente",
+      "evaluacion_id": null
+    }
+  ],
+  "despues": null
+}

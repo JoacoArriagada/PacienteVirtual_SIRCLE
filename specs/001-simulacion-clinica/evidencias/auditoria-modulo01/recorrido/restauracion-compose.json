@@ -1,0 +1,19 @@
+{
+  "fecha": "2026-11-26",
+  "origen": "Recorrido publicado de ensayo en Windows con Qwen real",
+  "volumen": "sircle-auditoria-restauracion_sircle-datos",
+  "fuentes": 14,
+  "intento": "dd1ea27578eed62b30c94d26cae0cf09",
+  "turno": "d388ddb094fa5f28019fd21501f11063",
+  "orden": "14fcbb04c34f0685cf8dfce9246b0767",
+  "mediciones": [
+    "8714d2d670fc6ee9351a2d39797b3865",
+    "550d56f4f65dd873ecd44b4c67883405"
+  ],
+  "entrega": "6eb1dc1846eb3b9d25fa3daab7d4fb3c",
+  "evaluacion": "c59a7581634fa30063236147edc54bf7",
+  "post": "omitido",
+  "revision_publicada": 2,
+  "puntaje_centesimas": 8000,
+  "recuperacion_identica": true
+}

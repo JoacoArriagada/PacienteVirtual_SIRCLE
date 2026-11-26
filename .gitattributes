@@ -11,3 +11,4 @@ docs/referencias/ensayo-lr/ensayo-entrevista.json -text
 *.png binary
 *.webp binary
 *.woff2 binary
+inferencia/*.sh text eol=lf

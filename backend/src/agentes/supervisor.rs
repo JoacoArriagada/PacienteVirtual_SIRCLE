@@ -119,9 +119,14 @@ impl Supervisor {
 
 impl Proceso {
     async fn iniciar(ejecutable: &Path, agente: Agente, ollama: &str) -> Result<Self> {
-        let mut hijo = Command::new(ejecutable)
-            .arg("trabajador").arg("--agente").arg(agente.id()).arg("--ollama-url").arg(ollama)
-            .env_clear()
+        let mut comando = Command::new(ejecutable);
+        comando.arg("trabajador").arg("--agente").arg(agente.id()).arg("--ollama-url").arg(ollama).env_clear();
+        #[cfg(windows)]
+        if let Some(raiz) = std::env::var_os("SystemRoot") {
+            // Winsock usa SystemRoot para cargar sus proveedores.
+            comando.env("SystemRoot", raiz);
+        }
+        let mut hijo = comando
             .stdin(Stdio::piped()).stdout(Stdio::piped()).stderr(Stdio::inherit())
             .kill_on_drop(true).spawn().with_context(|| format!("No se inició {}", agente.id()))?;
         let pid = hijo.id().context("El trabajador no tiene PID")?;

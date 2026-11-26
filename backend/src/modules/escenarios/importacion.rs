@@ -6,7 +6,10 @@ use sha2::{Digest, Sha256};
 
 use crate::{modules::{acceso::actividades, entrevista::hechos, intentos::intento, valoracion::{hallazgos, mediciones}}, sqlite};
 use crate::modules::examenes::{medios, ordenes};
+use crate::modules::evaluacion::rubricas;
 use crate::agentes::{dan_sparks::perfil as dan, nannu::perfil as nannu};
+
+use super::formal;
 
 const ROLES: &[&str] = &["environment_controller", "evaluator", "examinee", "sp_actor"];
 
@@ -64,6 +67,12 @@ pub struct FilaInventario {
 }
 
 pub fn preparar(db: &Path, datos: &Path) -> Result<Vec<FilaInventario>> {
+    preparar_con_material(db, datos, false, None)
+}
+
+pub fn preparar_con_material(
+    db: &Path, datos: &Path, rubrica_ensayo: bool, actividad_formal: Option<&Path>,
+) -> Result<Vec<FilaInventario>> {
     let catalogo = datos.join("medsp1000");
     let entradas = ESCENARIOS
         .iter()
@@ -106,6 +115,13 @@ pub fn preparar(db: &Path, datos: &Path) -> Result<Vec<FilaInventario>> {
     hechos::preparar_nannu(&transaccion).context("No se prepararon los hechos de ensayo de Nannu")?;
     hechos::preparar_dan(&transaccion).context("No se prepararon los hechos de ensayo de Dan")?;
     medios::preparar_dan(&transaccion, &catalogo).context("No se catalogó la disponibilidad del ECG de Dan")?;
+    formal::preparar_asignacion(&transaccion)?;
+    if rubrica_ensayo {
+        rubricas::preparar_demo(&transaccion)?;
+    }
+    if let Some(archivo) = actividad_formal {
+        formal::cargar(&transaccion, archivo).context("No se pudo preparar la actividad formal de LR")?;
+    }
     transaccion.commit()?;
     Ok(inventario)
 }

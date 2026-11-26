@@ -48,6 +48,7 @@ async fn confirma_solo_hechos_vigentes_pertinentes_y_del_actor_lr() {
         ("otro_hablante", vec![otra_voz], "lr-inicio"),
         ("id_ausente", permitidos.clone(), "fuera-de-la-ficha"),
         ("no_pertinente", permitidos.clone(), "lr-antecedentes-familiares"),
+        ("omision_del_hecho_disponible", permitidos.clone(), "sin_hecho"),
     ] {
         let tx = db.transaction_with_behavior(TransactionBehavior::Immediate).unwrap();
         let resultado = entrevista::confirmar(&tx, &actual, &conjunto, PREGUNTA, &invocacion(caso, seleccionado));
@@ -283,10 +284,13 @@ async fn pide_referente_sin_crear_hallazgo() {
 
 #[tokio::test]
 async fn distingue_los_limites_del_relato() {
-    for (pregunta, seleccionado, voz, tipo, nuevas) in [
-        ("¿Y eso?", "sin_hecho", "LR", "aclaracion", 0),
-        ("¿Conoces los antecedentes de tu familia?", "lr-antecedentes-familiares", "LR", "hecho", 1),
-        ("¿Cuál es su grupo sanguíneo?", "sin_hecho", "Sistema", "dato_ausente", 0),
+    for (pregunta, seleccionado, voz, tipo, nuevas, aviso) in [
+        ("¿Y eso?", "sin_hecho", "LR", "aclaracion", 0, None),
+        ("¿Conoces los antecedentes de tu familia?", "lr-antecedentes-familiares", "LR", "hecho", 1, None),
+        ("¿Cuál es su grupo sanguíneo?", "sin_hecho", "Sistema", "dato_ausente", 0,
+            Some("El grupo sanguíneo no está disponible en este escenario.")),
+        ("¿Cuál es tu color favorito?", "sin_hecho", "Sistema", "dato_ausente", 0,
+            Some("Ese dato no está disponible en este escenario.")),
     ] {
         let servidor = Servidor::nuevo();
         let (cookie, id) = abrir_lr(&servidor, intento_lr::ESTUDIANTE_LR).await;
@@ -303,8 +307,8 @@ async fn distingue_los_limites_del_relato() {
         assert_eq!(despues.cuerpo["turnos"], json!([turno]));
         assert_eq!(despues.cuerpo["ficha"], antes.cuerpo["ficha"]);
         assert_eq!(despues.cuerpo["evidencias"].as_array().unwrap().len() - antes.cuerpo["evidencias"].as_array().unwrap().len(), nuevas);
-        if tipo == "dato_ausente" {
-            assert_eq!(turno.respuesta, "El grupo sanguíneo no está disponible en este escenario.");
+        if let Some(aviso) = aviso {
+            assert_eq!(turno.respuesta, aviso);
             let (docente, _) = servidor.entrar("docente-demo").await;
             let detalle = servidor.consultar("GET", &format!("{ruta}/turnos/{}/traza", turno.turno_id), Some(&docente), None).await;
             assert_eq!(detalle.cuerpo["motivo"], "dato_no_registrado");

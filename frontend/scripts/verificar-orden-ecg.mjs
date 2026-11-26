@@ -1,13 +1,11 @@
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { chromium } from "playwright-core";
 
-const [destino, base] = process.argv.slice(2);
-assert.ok(base, "Indica la ruta absoluta de una base nueva de ensayo.");
+const [destino] = process.argv.slice(2);
 if (destino) await mkdir(destino, { recursive: true });
-const sitio = "http://127.0.0.1:8080";
+const sitio = "http://127.0.0.1:" + (process.env.SIRCLE_PUERTO_FRONTEND ?? "8080");
 const navegador = await chromium.launch({ executablePath: process.env.SIRCLE_CHROMIUM });
 const escena = { viewport: { width: 1280, height: 900 }, deviceScaleFactor: 1 };
 const boton = (pagina, name) => pagina.locator("main").getByRole("button", { name, exact: true });
@@ -30,9 +28,7 @@ try {
   const pre = await observacion(await pagina.request.get(alias));
   assert.equal(pre.http, 404);
   assert.doesNotMatch(JSON.stringify(pre), /taquicardia sinusal/i);
-  execFileSync("../backend/target/debug/sircle", ["resolver-pre-ensayo", "--db", base, "--intento", id]);
-  await boton(pagina, "Volver a mis pacientes").click();
-  await boton(pagina, "Continuar").click();
+  await boton(pagina, "Omitir encuesta").click();
 
   const panel = pagina.getByRole("region", { name: "Exámenes" });
   const captura = async (nombre) => {

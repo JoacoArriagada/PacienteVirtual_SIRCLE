@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-11-26",
+  "etiqueta": "qwen3.5:4b",
+  "vm_ram_bytes": 2056458240,
+  "volumen": "sircle-modulo01-ensayo_sircle-pesos",
+  "configuracion": {
+    "LLAMA_ARG_LOAD_MODE": "mmap",
+    "use_mmap": true,
+    "num_ctx": 2048,
+    "OLLAMA_NUM_PARALLEL": "1",
+    "num_batch": 32,
+    "LLAMA_ARG_REPACK": "0"
+  },
+  "generacion": {
+    "respuesta": "OK",
+    "total_ns": 45770910500,
+    "carga_ns": 28790482400
+  },
+  "chat": {
+    "tokens_salida": 10,
+    "respuesta": {
+      "hecho_id": "lr-inicio"
+    },
+    "total_ns": 107102500800
+  }
+}

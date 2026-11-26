@@ -82,6 +82,10 @@ impl Ollama {
         self.invocar(cabecera, solicitud(cabecera, texto, hechos, memoria)).await
     }
 
+    pub async fn disponible(&self) -> bool {
+        tokio::time::timeout(Duration::from_secs(2), self.modelo()).await.is_ok_and(|modelo| modelo.is_ok())
+    }
+
     pub(crate) async fn invocar<T: serde::de::DeserializeOwned>(
         &self, cabecera: &Cabecera, solicitud: Value,
     ) -> Result<Invocacion<T>> {

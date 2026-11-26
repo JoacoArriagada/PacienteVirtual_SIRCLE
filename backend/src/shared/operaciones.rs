@@ -1,9 +1,11 @@
 use axum::http::{HeaderMap, StatusCode};
-use rusqlite::{OptionalExtension, Transaction, params};
+use rusqlite::{Connection, OptionalExtension, Transaction, params};
 use serde::{Serialize, de::DeserializeOwned};
 use sha2::{Digest, Sha256};
 
 use crate::app::errores::ErrorApi;
+
+const SEGUNDOS_RESERVA: u64 = 30;
 
 pub struct Operacion<'a> {
     identidad: &'a str,
@@ -28,16 +30,54 @@ impl<'a> Operacion<'a> {
 
     pub fn recuperar<T: DeserializeOwned>(&self, db: &Transaction<'_>) -> Result<Option<T>, ErrorApi> {
         let anterior = db.query_row(
-            "SELECT huella, respuesta FROM operaciones WHERE identidad_id=?1 AND ambito=?2 AND clave=?3",
+            "SELECT huella, respuesta FROM operaciones WHERE identidad_id=?1 AND ambito=?2 AND clave=?3
+             UNION ALL SELECT huella, NULL FROM reservas_operaciones WHERE identidad_id=?1 AND ambito=?2 AND clave=?3",
             params![self.identidad, self.ambito, self.clave],
-            |fila| Ok((fila.get::<_, String>(0)?, fila.get::<_, String>(1)?)),
+            |fila| Ok((fila.get::<_, String>(0)?, fila.get::<_, Option<String>>(1)?)),
         ).optional()?;
-        anterior.map(|(huella, respuesta)| {
+        if let Some((huella, respuesta)) = anterior {
             if huella != self.huella {
                 return Err(ErrorApi::nuevo(StatusCode::CONFLICT, "La clave ya se usó con otro contenido."));
             }
-            serde_json::from_str(&respuesta).map_err(ErrorApi::interno)
-        }).transpose()
+            return respuesta
+                .map(|respuesta| serde_json::from_str(&respuesta).map_err(ErrorApi::interno))
+                .transpose();
+        }
+        Ok(None)
+    }
+
+    pub(crate) fn reservar(&self, db: &Transaction<'_>) -> rusqlite::Result<Option<String>> {
+        db.query_row(
+            "INSERT INTO reservas_operaciones VALUES (?1,?2,?3,?4,lower(hex(randomblob(16))),unixepoch()+?5)
+             ON CONFLICT(identidad_id,ambito,clave) DO UPDATE SET toma_id=excluded.toma_id,vence=excluded.vence
+             WHERE reservas_operaciones.vence<=unixepoch() AND reservas_operaciones.huella=excluded.huella
+             RETURNING toma_id",
+            params![self.identidad, self.ambito, self.clave, self.huella, SEGUNDOS_RESERVA],
+            |fila| fila.get(0),
+        ).optional()
+    }
+
+    pub(crate) fn renovar_reserva(db: &Connection, toma: &str) -> rusqlite::Result<bool> {
+        let filas = db.execute(
+            "UPDATE reservas_operaciones SET vence=unixepoch()+?2 WHERE toma_id=?1 AND vence>unixepoch()",
+            params![toma, SEGUNDOS_RESERVA],
+        )?;
+        Ok(filas == 1)
+    }
+
+    pub(crate) fn liberar_reserva(db: &Connection, toma: &str) -> rusqlite::Result<()> {
+        db.execute("UPDATE reservas_operaciones SET vence=0 WHERE toma_id=?1", [toma])?;
+        Ok(())
+    }
+
+    pub(crate) fn confirmar_reserva(
+        &self, db: &Transaction<'_>, toma: &str, respuesta: &impl Serialize,
+    ) -> Result<(), ErrorApi> {
+        let filas = db.execute("DELETE FROM reservas_operaciones WHERE toma_id=?1 AND vence>unixepoch()", [toma])?;
+        if filas == 0 {
+            return Err(ErrorApi::nuevo(StatusCode::SERVICE_UNAVAILABLE, "La operación venció. Reintenta con la misma clave."));
+        }
+        self.confirmar(db, respuesta)
     }
 
     pub fn id(&self) -> String {

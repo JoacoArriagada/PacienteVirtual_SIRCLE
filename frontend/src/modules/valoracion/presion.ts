@@ -8,6 +8,7 @@ export interface MedicionPresion {
   valor: { sistolica: number; diastolica: number };
   unidad: string;
   momento: string;
+  origen?: string;
   en_ficha: boolean;
 }
 
@@ -137,7 +138,7 @@ export function prepararPresion(intento: string, vista: VistaPresion) {
         ${metricasPresion(lectura)}
         <p class="state" role="status" data-registro></p>
       </div>
-      <p class="small-text muted">Lectura del triaje simulado de LR.</p>
+      <p class="small-text muted" data-origen></p>
       <div class="button-row">
         <button class="button primary" type="button" data-registrar>Registrar en ficha</button>
         <button class="button" type="button" data-nueva>Repetir toma</button>
@@ -145,6 +146,7 @@ export function prepararPresion(intento: string, vista: VistaPresion) {
       </div>`;
     controles.querySelector<HTMLElement>("[data-momento]")!.textContent =
       [lectura.medicion_id, lectura.momento, "Brazalete y monitor"].join(" · ");
+    controles.querySelector("[data-origen]")!.textContent = lectura.origen ?? "Lectura del triaje simulado de LR.";
     const estadoRegistro = controles.querySelector<HTMLElement>("[data-registro]")!;
     const registrar = controles.querySelector<HTMLButtonElement>("[data-registrar]")!;
     const clave = crypto.randomUUID();

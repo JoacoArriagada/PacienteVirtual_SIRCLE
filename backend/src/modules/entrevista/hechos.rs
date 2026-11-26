@@ -56,9 +56,8 @@ fn preparar_actor(db: &Transaction<'_>, actividad: &str, ruta: &str, voz: &str, 
     ).with_context(|| format!("No se encontró el guion del actor de {actividad}"))?;
     let original = std::str::from_utf8(&original)?;
     for hecho in serde_json::from_str::<Vec<HechoEnsayo>>(ficha)? {
-        let Some(linea) = original.lines().position(|linea| linea.contains(&hecho.pasaje)) else {
-            continue;
-        };
+        let linea = original.lines().position(|linea| linea.contains(&hecho.pasaje))
+            .with_context(|| format!("Falta el pasaje del hecho {} en medsp1000/{ruta}", hecho.id))?;
         db.execute(
             "INSERT INTO hechos VALUES (?1, ?2, ?3, 'inicial', ?4, ?5, ?6, ?7, ?8, ?9, ?10)
              ON CONFLICT(version_clinica_id, fase, hablante, id) DO NOTHING",

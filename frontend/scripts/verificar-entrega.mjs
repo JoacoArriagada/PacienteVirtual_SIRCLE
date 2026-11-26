@@ -53,7 +53,7 @@ try {
   });
   await confirmar.click();
   await pagina.getByRole("heading", { name: "Entrega confirmada" }).waitFor();
-  await pagina.getByText("Resuelve el post para consultar la devolución.", { exact: true }).waitFor();
+  await pagina.getByRole("heading", { name: "Después de entregar" }).waitFor();
   assert.equal(await boton("Revisar entrega").count(), 0);
   assert.deepEqual(acuses.map(({ http }) => http), [201, 200]);
   assert.deepEqual(acuses[0].cuerpo, acuses[1].cuerpo);

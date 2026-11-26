@@ -38,31 +38,36 @@ fn confirmar_respuesta(
     let operacion = &invocacion.operacion_id;
     let seleccion = &invocacion.seleccion.hecho_id;
     let actual = validar_contexto(db, contexto, operacion, seleccion)?;
+    let vigentes = hechos::candidatos_lr(db, &actual)?;
     let mut detalle = json!({ "invocacion": invocacion, "origen": "ollama" });
     if let Some(cabecera) = cabecera {
         detalle["mensaje"] = serde_json::to_value(cabecera).map_err(ErrorApi::interno)?;
     }
     if seleccion == "sin_hecho" {
-        if sin_referente(db, &actual, texto)? {
+        let pregunta = texto.trim_matches(|letra: char| letra.is_whitespace() || matches!(letra, '¿' | '?' | '.'));
+        let alusion = pregunta.eq_ignore_ascii_case("y eso");
+        if alusion && !hay_turno_del_actor(db, &actual)? {
             detalle["motivo"] = json!("referente_ambiguo");
             return turnos::guardar(db, &actual, Salida {
                 agente: perfil::AGENTE, hablante: perfil::HABLANTE, texto: "¿A qué te refieres con eso?", tipo: "aclaracion",
             }, texto, operacion, &detalle);
         }
-        let consulta = normalizar(texto);
-        if ["grupo sanguineo", "tipo de sangre", "tipo sanguineo"].iter().any(|dato| consulta.contains(dato)) {
-            detalle["motivo"] = json!("dato_no_registrado");
-            return turnos::guardar(db, &actual, Salida {
-                agente: perfil::AGENTE,
-                hablante: "Sistema",
-                texto: "El grupo sanguíneo no está disponible en este escenario.",
-                tipo: "dato_ausente",
-            }, texto, operacion, &detalle);
+        if alusion || vigentes.iter().any(|hecho| pertinente(&hecho.id, texto)) {
+            return Err(rechazar(operacion, seleccion, StatusCode::SERVICE_UNAVAILABLE, "respuesta_sin_hecho_pertinente"));
         }
+        let consulta = normalizar(texto);
+        let aviso = if ["grupo sanguineo", "tipo de sangre", "tipo sanguineo"].iter().any(|dato| consulta.contains(dato)) {
+            "El grupo sanguíneo no está disponible en este escenario."
+        } else {
+            "Ese dato no está disponible en este escenario."
+        };
+        detalle["motivo"] = json!("dato_no_registrado");
+        return turnos::guardar(db, &actual, Salida {
+            agente: perfil::AGENTE, hablante: "Sistema", texto: aviso, tipo: "dato_ausente",
+        }, texto, operacion, &detalle);
     }
     let elegido = candidatos.iter().find(|hecho| hecho.id == invocacion.seleccion.hecho_id)
         .ok_or_else(|| rechazar(operacion, seleccion, StatusCode::SERVICE_UNAVAILABLE, "seleccion_fuera_del_contexto"))?;
-    let vigentes = hechos::candidatos_lr(db, &actual)?;
     if !vigentes.contains(elegido) {
         return Err(rechazar(operacion, seleccion, StatusCode::SERVICE_UNAVAILABLE, "caso_fase_o_hablante_invalido"));
     }
@@ -97,16 +102,11 @@ fn validar_contexto(
     })
 }
 
-fn sin_referente(db: &Transaction<'_>, intento: &Intento, texto: &str) -> Result<bool, ErrorApi> {
-    let pregunta = texto.trim_matches(|letra: char| letra.is_whitespace() || matches!(letra, '¿' | '?' | '.'));
-    if !pregunta.eq_ignore_ascii_case("y eso") {
-        return Ok(false);
-    }
-    let hay_turno = db.query_row(
+fn hay_turno_del_actor(db: &Transaction<'_>, intento: &Intento) -> Result<bool, ErrorApi> {
+    Ok(db.query_row(
         "SELECT EXISTS(SELECT 1 FROM turnos WHERE intento_id=?1 AND agente=?2 AND fase=?3 AND hablante=?4)",
         params![intento.intento_id, perfil::AGENTE.id(), intento.fase, perfil::HABLANTE], |fila| fila.get::<_, bool>(0),
-    )?;
-    Ok(!hay_turno)
+    )?)
 }
 
 fn pertinente(id: &str, texto: &str) -> bool {

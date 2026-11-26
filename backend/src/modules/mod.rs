@@ -1,4 +1,5 @@
 pub mod acceso;
+pub mod encuestas;
 pub mod entrevista;
 pub mod escenarios;
 pub mod evaluacion;

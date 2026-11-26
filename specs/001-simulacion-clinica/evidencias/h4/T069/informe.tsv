@@ -1,0 +1,19 @@
+prueba	medida	valor
+E14	invitados	3
+E14	sin_intento	0
+E14	pre_respondidos	2
+E14	post_respondidos	2
+E14	pares_completos	1
+E14	percepcion	"[{""cambio"":{""2"":1},""enunciado"":""Me siento capaz de ordenar las preguntas de una entrevista sobre dificultad respiratoria."",""faltantes_post"":1,""faltantes_pre"":1,""post"":{""3"":1,""4"":1},""pre"":{""2"":2}},{""cambio"":{""0"":1},""enunciado"":""Al entrevistar sin supervisión directa a una persona con dificultad respiratoria, siento que puedo mantener la calma."",""faltantes_post"":2,""faltantes_pre"":1,""post"":{""3"":1},""pre"":{""3"":2}},{""cambio"":{""1"":1},""enunciado"":""Me siento preparado/a para justificar una hipótesis inicial con los hallazgos que recoja."",""faltantes_post"":2,""faltantes_pre"":1,""post"":{""5"":1},""pre"":{""4"":2}}]"
+E14	utilidad	"[{""enunciado"":""Después de esta simulación, me siento mejor preparado/a para entrevistar a una persona con un cuadro similar."",""faltantes_post"":2,""post"":{""5"":1}},{""enunciado"":""El ejercicio me permitió identificar un aspecto concreto de mi valoración clínica que necesito reforzar."",""faltantes_post"":3,""post"":{}}]"
+E14	razonamiento	"[{""faltantes_por_item"":[0,0],""forma"":""A"",""momento"":""pre"",""porcentaje"":{""50"":2},""secuencia"":""A→B""},{""faltantes_por_item"":[1,1],""forma"":""B"",""momento"":""post"",""porcentaje"":{""100"":1},""secuencia"":""A→B""},{""faltantes_por_item"":[1,1],""forma"":""B"",""momento"":""pre"",""porcentaje"":{},""secuencia"":""B→A""},{""faltantes_por_item"":[0,1],""forma"":""A"",""momento"":""post"",""porcentaje"":{},""secuencia"":""B→A""}]"
+E14	cambio_razonamiento	"{""50"":1}"
+E15	invitados	2
+E15	sin_intento	0
+E15	pre_respondidos	2
+E15	post_respondidos	2
+E15	pares_completos	2
+E15	percepcion	"[{""cambio"":{""0"":2},""enunciado"":""Me siento capaz de ordenar las preguntas de una entrevista sobre dificultad respiratoria."",""faltantes_post"":0,""faltantes_pre"":0,""post"":{""3"":2},""pre"":{""3"":2}},{""cambio"":{""0"":2},""enunciado"":""Al entrevistar sin supervisión directa a una persona con dificultad respiratoria, siento que puedo mantener la calma."",""faltantes_post"":0,""faltantes_pre"":0,""post"":{""3"":2},""pre"":{""3"":2}},{""cambio"":{""0"":2},""enunciado"":""Me siento preparado/a para justificar una hipótesis inicial con los hallazgos que recoja."",""faltantes_post"":0,""faltantes_pre"":0,""post"":{""3"":2},""pre"":{""3"":2}}]"
+E15	utilidad	"[{""enunciado"":""Después de esta simulación, me siento mejor preparado/a para entrevistar a una persona con un cuadro similar."",""faltantes_post"":2,""post"":{}},{""enunciado"":""El ejercicio me permitió identificar un aspecto concreto de mi valoración clínica que necesito reforzar."",""faltantes_post"":2,""post"":{}}]"
+E15	razonamiento	"[{""faltantes_por_item"":[0,0],""forma"":""A"",""momento"":""pre"",""porcentaje"":{""100"":1},""secuencia"":""A→B""},{""faltantes_por_item"":[0,0],""forma"":""B"",""momento"":""post"",""porcentaje"":{""100"":1},""secuencia"":""A→B""},{""faltantes_por_item"":[0,0],""forma"":""B"",""momento"":""pre"",""porcentaje"":{""100"":1},""secuencia"":""B→A""},{""faltantes_por_item"":[0,0],""forma"":""A"",""momento"":""post"",""porcentaje"":{""100"":1},""secuencia"":""B→A""}]"
+E15	cambio_razonamiento	"{""0"":2}"

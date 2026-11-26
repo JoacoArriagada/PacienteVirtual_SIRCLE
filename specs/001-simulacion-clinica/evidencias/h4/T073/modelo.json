@@ -1,0 +1,24 @@
+{
+  "tarea": "T073",
+  "fecha": "2026-11-26",
+  "revision": "08a90308 + cambios locales",
+  "etiqueta": "qwen3.5:4b",
+  "digestEsperado": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "digestLocal": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "cuantizacion": "Q4_K_M",
+  "bytesModelo": 3324173934,
+  "volumen": "sircle-pesos:/root/.ollama",
+  "puertosPublicados": [],
+  "bytesRamVm": 2056458240,
+  "generacionConfirmada": false,
+  "disponible": false,
+  "registros": [
+    "time=2026-11-26T15:04:57.759Z level=INFO source=sched.go:692 msg=\"Load failed\" model=/root/.ollama/models/blobs/sha256-a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50 error=\"llama-server process has terminated: signal: killed\"",
+    "[GIN] 2026/11/26 - 15:04:57 | 500 |     8.914333s |       127.0.0.1 | POST     \"/api/generate\"",
+    "time=2026-11-26T15:05:11.158Z level=INFO source=sched.go:692 msg=\"Load failed\" model=/root/.ollama/models/blobs/sha256-a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50 error=\"llama-server process has terminated: signal: killed\"",
+    "[GIN] 2026/11/26 - 15:05:11 | 500 |   11.3095908s |       127.0.0.1 | POST     \"/api/generate\"",
+    "time=2026-11-26T15:05:23.821Z level=INFO source=sched.go:692 msg=\"Load failed\" model=/root/.ollama/models/blobs/sha256-a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50 error=\"llama-server process has terminated: signal: killed\"",
+    "[GIN] 2026/11/26 - 15:05:23 | 500 |    8.5997945s |       127.0.0.1 | POST     \"/api/generate\"",
+    "inferencia qwen3.5:4b · no disponible. Verifica el acceso a registry.ollama.ai y que sircle-pesos contenga la versión indicada. Después ejecuta docker compose restart inferencia."
+  ]
+}

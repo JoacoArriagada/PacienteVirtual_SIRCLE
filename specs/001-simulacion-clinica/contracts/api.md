@@ -21,6 +21,7 @@ La interfaz llama a `/api` en su propio origen. El servicio frontend reenvía a 
 | `GET /api/evaluaciones/{id}/traza` | El docente asignado recupera la entrega, la rúbrica, la operación del evaluador, la invocación del modelo y el borrador guardado. |
 | `GET /api/docente/actividades` · `GET /api/evaluaciones/{id}/revisiones/{revision}` | La supervisión lista las actividades a cargo del docente. Una revisión histórica conserva su propio autor, motivo, juicios, citas, créditos y total. |
 | `GET /api/evaluaciones/{id}/criterios/{criterio}/traza` · `GET /api/intentos/{id}/turnos/{turno}/traza` | El revisor autorizado obtiene la cadena desde la cita hasta el evento y la versión de la fuente, el agente y la regresión asociada. Una incidencia indica qué evidencia se esperaba y permite localizar su registro técnico. |
+| `GET /api/intentos/{id}/trazas-rechazadas` | El docente asignado recupera los rechazos del intento con su operación, agente, motivo y los datos de inferencia y procedencia disponibles. |
 | `GET /api/actividades/{id}/resultados-educativos` | El docente asignado recibe invitados, pares completos, faltantes, percepción por ítem y razonamiento por forma, secuencia y momento. Las ponderaciones de la nota clínica proceden exclusivamente de la rúbrica. |
 | `GET /api/estado` | Comunica por separado disponibilidad de la base y del modelo, junto con una indicación comprensible de recuperación. El servicio mantiene las operaciones respaldadas por SQLite durante un fallo de inferencia. |
 
@@ -29,6 +30,8 @@ La interfaz llama a `/api` en su propio origen. El servicio frontend reenvía a 
 Con sesión ficticia, caso P01 y pre cerrado, el ensayo enviará a `POST /api/intentos/{id}/turnos` un cuerpo como `{"texto":"¿Cuándo empezaste a notar que te faltaba el aire?"}`, sin identificador de sugerencia y con `Idempotency-Key` nueva. Se espera un turno de ese intento, atribuido a LR en primera persona, que sitúe el inicio hace dos días. El revisor correlacionará la operación, la llamada completada a Ollama, el modelo y el hecho con su versión y pasaje. La vista estudiantil mostrará la pregunta, la respuesta autorizada y el hablante. El detalle de la invocación quedará en la traza restringida. [Ensayo de avance técnico](../quickstart.md#conversación-libre-con-lr-por-http)
 
 Durante la caída, repetir el mismo texto como **otra operación**, con clave nueva, debe devolver 503 y dejar intacto el historial confirmado. El acuse de una operación ya completada seguiría disponible por idempotencia. Al reintentar la operación fallida tras la recuperación, su clave deberá producir un solo turno. Esta regla se aplica tanto a la petición directa como al chat.
+
+Si llega un reenvío mientras el turno sigue en curso, el servidor devuelve HTTP 202 con `{"estado":"en_curso","operacion_id":"<id>"}` y `Retry-After: 1`. Pasado ese intervalo, el cliente consulta el acuse con el mismo POST, cuerpo y clave. La misma clave con contenido diferente devuelve 409.
 
 En un intento P02 de ensayo, `destinatario` admite `Nannu` o `Acompañante`. Omitirlo dirige la pregunta a Nannu. El servidor filtra hechos y memoria por la voz elegida y conserva el hablante en el turno. La clave de operación identifica también el destinatario cuando se envía.
 

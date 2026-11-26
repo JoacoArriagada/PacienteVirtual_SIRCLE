@@ -1,0 +1,69 @@
+{
+  "entorno": "procesos locales",
+  "arranque": {
+    "base": {
+      "disponible": true
+    },
+    "modelo": {
+      "aviso": "La inferencia aún no está disponible. Si la preparación falló, revisa los registros de inferencia y reinicia el servicio.",
+      "contexto_entrevista": 2048,
+      "digest_esperado": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "disponible": false,
+      "nombre": "qwen3.5:4b"
+    },
+    "servicio": "sircle"
+  },
+  "pre": {
+    "intento_id": "650d290519d404df339b4c6a3f0be956",
+    "version": "instrumento-ensayo-v1",
+    "momento": "pre",
+    "forma": "A",
+    "estado": "omitido",
+    "instante": "2026-11-26T14:14:12.583Z"
+  },
+  "post": {
+    "intento_id": "650d290519d404df339b4c6a3f0be956",
+    "version": "instrumento-ensayo-v1",
+    "momento": "post",
+    "forma": "B",
+    "estado": "respondido",
+    "instante": "2026-11-26T14:14:15.247Z"
+  },
+  "medicion": {
+    "medicion_id": "6fab899e6358d0f8f4e02b7fec737b96",
+    "intento_id": "650d290519d404df339b4c6a3f0be956",
+    "instrumento": "presion",
+    "accion": "toma_completa",
+    "fase": "inicial",
+    "valor": {
+      "diastolica": 85,
+      "sistolica": 148
+    },
+    "unidad": "mmHg",
+    "momento": "2026-11-26T14:14:14.774Z",
+    "en_ficha": false,
+    "revision": 2
+  },
+  "entrega": {
+    "entrega_id": "ddaa6e0979491b078db7ce4eb5ce5d99",
+    "intento_id": "650d290519d404df339b4c6a3f0be956",
+    "revision": 3,
+    "rubrica_id": 1,
+    "version_rubrica": "1",
+    "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+    "confirmada_en": "2026-11-26T14:14:14.797Z",
+    "estado_evaluacion": "pendiente",
+    "post": "pendiente"
+  },
+  "antes": [
+    {
+      "entrega_id": "ddaa6e0979491b078db7ce4eb5ce5d99",
+      "estudiante_id": "estudiante-lr",
+      "intento_id": "650d290519d404df339b4c6a3f0be956",
+      "confirmada_en": "2026-11-26T14:14:14.797Z",
+      "estado": "en_curso",
+      "evaluacion_id": null
+    }
+  ],
+  "despues": null
+}

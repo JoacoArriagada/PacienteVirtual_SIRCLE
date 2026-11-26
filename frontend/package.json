@@ -27,9 +27,10 @@
     "test:navegador:entrega": "node scripts/verificar-entrega.mjs",
     "test:navegador:revision-docente": "node scripts/verificar-revision-docente.mjs",
     "test:navegador:publicacion": "node scripts/verificar-publicacion.mjs",
-    "test:navegador:paridad": "sh -c 'SIRCLE_PARIDAD_EVIDENCIA=\"$1\" SIRCLE_PARIDAD_DB=\"$2\" node --test tests/paridad_semana5.test.ts' paridad",
-    "test:navegador:reserva": "sh -c 'SIRCLE_RESERVA_EVIDENCIA=\"$1\" SIRCLE_RESERVA_DB=\"$2\" node --test tests/reserva_publica.test.ts' reserva",
-    "test:navegador:dato-ausente": "node scripts/verificar-dato-ausente.mjs"
+    "test:navegador:paridad": "node scripts/verificar-evidencia.mjs paridad",
+    "test:navegador:reserva": "node scripts/verificar-evidencia.mjs reserva",
+    "test:navegador:dato-ausente": "node scripts/verificar-dato-ausente.mjs",
+    "test:navegador:encuestas": "node scripts/verificar-encuestas.mjs"
   },
   "devDependencies": {
     "playwright-core": "1.64.1",

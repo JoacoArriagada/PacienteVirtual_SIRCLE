@@ -1,0 +1,1720 @@
+{
+  "navegador": "158.0.8127.88",
+  "htmlPrivado": {
+    "bytes": 5276297,
+    "sha256": "ff9dea8958759550c5241ab9f0560c46f2726bf04ba1d46f927fb9febfeee032"
+  },
+  "testigos": [
+    "clave",
+    "rubrica",
+    "borrador_docente",
+    "borrador_ajeno",
+    "hecho",
+    "traza",
+    "clave_documentada",
+    "codigo_original"
+  ],
+  "examinadas": [
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/api/sesiones",
+      "http": 401,
+      "bytes": 59,
+      "cuerpo": {
+        "mensaje": "Selecciona una identidad ficticia disponible."
+      }
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "POST",
+      "ruta": "/api/sesiones",
+      "http": 201,
+      "bytes": 41,
+      "cuerpo": {
+        "id": "estudiante-lr",
+        "rol": "estudiante"
+      }
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/api/sesiones",
+      "http": 200,
+      "bytes": 41,
+      "cuerpo": {
+        "id": "estudiante-lr",
+        "rol": "estudiante"
+      }
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/api/actividades",
+      "http": 200,
+      "bytes": 118,
+      "cuerpo": [
+        {
+          "actividad_id": "lr-ensayo",
+          "nombre": "Práctica técnica de LR",
+          "tipo": "ensayo",
+          "pre": "pendiente",
+          "intento_id": null
+        }
+      ]
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "POST",
+      "ruta": "/api/intentos",
+      "http": 201,
+      "bytes": 496,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "actividad_id": "lr-ensayo",
+        "estudiante_id": "estudiante-lr",
+        "tipo": "ensayo",
+        "caso": "P01",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_rubrica": "1",
+        "rubrica_id": 1,
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "pre": "pendiente",
+        "post": "pendiente",
+        "fase": "inicial",
+        "estado": "pre_pendiente",
+        "revision": 0
+      }
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/referencia/semana5/Paciente_Virtual.html",
+      "http": 404,
+      "bytes": 0
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/docs/referencias/html-semana5/Paciente_Virtual.html",
+      "http": 404,
+      "bytes": 0
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/docs/modulo-01/instrumento-pre-post.md",
+      "http": 404,
+      "bytes": 0
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/ejemplos/presion.json",
+      "http": 404,
+      "bytes": 0
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/encuestas/pre",
+      "http": 200,
+      "bytes": 1595,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "version": "instrumento-ensayo-v1",
+        "momento": "pre",
+        "forma": "B",
+        "estado": "pendiente",
+        "instante": null,
+        "items": [
+          {
+            "id": "P1",
+            "tipo": "percepcion",
+            "enunciado": "Me siento capaz de ordenar las preguntas de una entrevista sobre dificultad respiratoria.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "P2",
+            "tipo": "percepcion",
+            "enunciado": "Al entrevistar sin supervisión directa a una persona con dificultad respiratoria, siento que puedo mantener la calma.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "P3",
+            "tipo": "percepcion",
+            "enunciado": "Me siento preparado/a para justificar una hipótesis inicial con los hallazgos que recoja.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "R1",
+            "tipo": "razonamiento",
+            "enunciado": "Ya se completó el triaje. Necesitas ubicar el inicio de un episodio de tos. ¿Qué pregunta responde a ese objetivo?",
+            "opciones": [
+              "¿En qué momento empezó a toser?",
+              "¿Qué le preocupa de la tos?",
+              "¿Qué actividades le dificulta hoy?"
+            ]
+          },
+          {
+            "id": "R2",
+            "tipo": "razonamiento",
+            "enunciado": "La persona dice que sintió palpitaciones al subir una escalera. El registro aún carece de un pulso medido en ese momento. ¿Qué afirmación puedes fundamentar?",
+            "opciones": [
+              "Se registró una frecuencia cardíaca elevada.",
+              "La persona refiere palpitaciones al subir la escalera.",
+              "Se identificó el mecanismo que las causó."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/tests/fixtures/reserva-publica.json",
+      "http": 404,
+      "bytes": 0
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/app/api.js",
+      "http": 200,
+      "bytes": 965
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/app/semana5.css",
+      "http": 200,
+      "bytes": 129762
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/app/semana5.js",
+      "http": 200,
+      "bytes": 94
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/",
+      "http": 200,
+      "bytes": 17639
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/devolucion/publicacion.js",
+      "http": 200,
+      "bytes": 5781
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/devolucion/revision.js",
+      "http": 200,
+      "bytes": 14555
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/encuestas/formulario.js",
+      "http": 200,
+      "bytes": 5071
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/encuestas/informe.js",
+      "http": 200,
+      "bytes": 3459
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/encuestas/post.js",
+      "http": 200,
+      "bytes": 169
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/encuestas/pre.js",
+      "http": 200,
+      "bytes": 357
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/entrevista/chat.js",
+      "http": 200,
+      "bytes": 1847
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/entrevista/sugerencias.js",
+      "http": 200,
+      "bytes": 3234
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/examenes/ecg.js",
+      "http": 200,
+      "bytes": 3713
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/intentos/ficha.js",
+      "http": 200,
+      "bytes": 8714
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/intentos/seleccion.js",
+      "http": 200,
+      "bytes": 12274
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/razonamiento/apuntes.js",
+      "http": 200,
+      "bytes": 5472
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/razonamiento/entrega.js",
+      "http": 200,
+      "bytes": 7539
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/razonamiento/hipotesis.js",
+      "http": 200,
+      "bytes": 8440
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/audio-auscultacion.js",
+      "http": 200,
+      "bytes": 2032
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/auscultacion.js",
+      "http": 200,
+      "bytes": 1489
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/brazalete.js",
+      "http": 200,
+      "bytes": 6496
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/brazo.js",
+      "http": 200,
+      "bytes": 2823
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/exploracion.js",
+      "http": 200,
+      "bytes": 11283
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/historico-presion.js",
+      "http": 200,
+      "bytes": 2455
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/inspeccion.js",
+      "http": 200,
+      "bytes": 648
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/instrumento.js",
+      "http": 200,
+      "bytes": 12869
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/palpacion.js",
+      "http": 200,
+      "bytes": 755
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/peso.js",
+      "http": 200,
+      "bytes": 564
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/presion.js",
+      "http": 200,
+      "bytes": 12295
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/pulso.js",
+      "http": 200,
+      "bytes": 585
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/respiracion.js",
+      "http": 200,
+      "bytes": 554
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/saturacion.js",
+      "http": 200,
+      "bytes": 600
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/modules/valoracion/temperatura.js",
+      "http": 200,
+      "bytes": 651
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/account-26c5a8f3ba.svg",
+      "http": 200,
+      "bytes": 1148
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/cancelar-d939d1e1f0.svg",
+      "http": 200,
+      "bytes": 488
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/confirmar-entrega.svg",
+      "http": 200,
+      "bytes": 622
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/continuar-conversacion.svg",
+      "http": 200,
+      "bytes": 737
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/deshacer-977cf98cdd.svg",
+      "http": 200,
+      "bytes": 719
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/evolucion-79080282c5.svg",
+      "http": 200,
+      "bytes": 336
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/examenes-09e7adc493.svg",
+      "http": 200,
+      "bytes": 450
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/ficha-clinica.svg",
+      "http": 200,
+      "bytes": 618
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/fonendoscopio.webp",
+      "http": 200,
+      "bytes": 26278
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-04a6e2ffa2.svg",
+      "http": 200,
+      "bytes": 980
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-2657f2a2d6.svg",
+      "http": 200,
+      "bytes": 805
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-2a92072f82.svg",
+      "http": 200,
+      "bytes": 672
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-44143830e7.svg",
+      "http": 200,
+      "bytes": 1454
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-4d600703b7.svg",
+      "http": 200,
+      "bytes": 1168
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-635c127665.svg",
+      "http": 200,
+      "bytes": 831
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-65720ceb75.svg",
+      "http": 200,
+      "bytes": 1076
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-b7ba201924.svg",
+      "http": 200,
+      "bytes": 1174
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-bdf2965940.svg",
+      "http": 200,
+      "bytes": 914
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-d9c7c127d3.svg",
+      "http": 200,
+      "bytes": 1402
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/icono-f8099d20f0.svg",
+      "http": 200,
+      "bytes": 1569
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/informacion-bf3b68e942.svg",
+      "http": 200,
+      "bytes": 492
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/instrumento-auscultacion.svg",
+      "http": 200,
+      "bytes": 675
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/instrumento-inspeccion.svg",
+      "http": 200,
+      "bytes": 740
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/instrumento-palpacion.svg",
+      "http": 200,
+      "bytes": 450
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/instrumento-peso.svg",
+      "http": 200,
+      "bytes": 439
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/instrumento-presion.svg",
+      "http": 200,
+      "bytes": 466
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/instrumento-saturacion.svg",
+      "http": 200,
+      "bytes": 486
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/instrumento-temperatura.svg",
+      "http": 200,
+      "bytes": 410
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/logout-aa2fefee96.svg",
+      "http": 200,
+      "bytes": 755
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/lr-espalda.webp",
+      "http": 200,
+      "bytes": 35812
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/lr-frente.webp",
+      "http": 200,
+      "bytes": 34810
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/lr-mano.webp",
+      "http": 200,
+      "bytes": 27730
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/lr-pantorrilla.webp",
+      "http": 200,
+      "bytes": 24908
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/lr-peso-listo.webp",
+      "http": 200,
+      "bytes": 24886
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/lr-peso.webp",
+      "http": 200,
+      "bytes": 31958
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/lr-presion-colocada.webp",
+      "http": 200,
+      "bytes": 43112
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/lr-presion.webp",
+      "http": 200,
+      "bytes": 41986
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/palpacion.webp",
+      "http": 200,
+      "bytes": 24086
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/pulsioximetro.webp",
+      "http": 200,
+      "bytes": 11560
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/respiracion-8e093006df.svg",
+      "http": 200,
+      "bytes": 429
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/retrato-de-lr-865a70387a.webp",
+      "http": 200,
+      "bytes": 90134
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/signos-vitales-2aafb5e9fd.svg",
+      "http": 200,
+      "bytes": 1099
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/termometro.webp",
+      "http": 200,
+      "bytes": 29600
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/vista-ampliar.svg",
+      "http": 200,
+      "bytes": 491
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/vista-brazo.svg",
+      "http": 200,
+      "bytes": 365
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/recursos/semana5/vista-volver.svg",
+      "http": 200,
+      "bytes": 248
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4",
+      "http": 200,
+      "bytes": 496,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "actividad_id": "lr-ensayo",
+        "estudiante_id": "estudiante-lr",
+        "tipo": "ensayo",
+        "caso": "P01",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_rubrica": "1",
+        "rubrica_id": 1,
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "pre": "pendiente",
+        "post": "pendiente",
+        "fase": "inicial",
+        "estado": "pre_pendiente",
+        "revision": 0
+      }
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/ordenes/ecg-inicial",
+      "http": 404,
+      "bytes": 82,
+      "cuerpo": {
+        "mensaje": "El informe está reservado hasta confirmar la orden de este intento."
+      }
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/api/intentos/6a42c2e440b5901ec8e4b3c8841d5b0c",
+      "http": 403,
+      "bytes": 62,
+      "cuerpo": {
+        "mensaje": "Esta actividad no está asignada a tu identidad."
+      }
+    },
+    {
+      "fase": "antes_del_pre",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/encuestas/pre",
+      "http": 200,
+      "bytes": 1595,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "version": "instrumento-ensayo-v1",
+        "momento": "pre",
+        "forma": "B",
+        "estado": "pendiente",
+        "instante": null,
+        "items": [
+          {
+            "id": "P1",
+            "tipo": "percepcion",
+            "enunciado": "Me siento capaz de ordenar las preguntas de una entrevista sobre dificultad respiratoria.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "P2",
+            "tipo": "percepcion",
+            "enunciado": "Al entrevistar sin supervisión directa a una persona con dificultad respiratoria, siento que puedo mantener la calma.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "P3",
+            "tipo": "percepcion",
+            "enunciado": "Me siento preparado/a para justificar una hipótesis inicial con los hallazgos que recoja.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "R1",
+            "tipo": "razonamiento",
+            "enunciado": "Ya se completó el triaje. Necesitas ubicar el inicio de un episodio de tos. ¿Qué pregunta responde a ese objetivo?",
+            "opciones": [
+              "¿En qué momento empezó a toser?",
+              "¿Qué le preocupa de la tos?",
+              "¿Qué actividades le dificulta hoy?"
+            ]
+          },
+          {
+            "id": "R2",
+            "tipo": "razonamiento",
+            "enunciado": "La persona dice que sintió palpitaciones al subir una escalera. El registro aún carece de un pulso medido en ese momento. ¿Qué afirmación puedes fundamentar?",
+            "opciones": [
+              "Se registró una frecuencia cardíaca elevada.",
+              "La persona refiere palpitaciones al subir la escalera.",
+              "Se identificó el mecanismo que las causó."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "PUT",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/encuestas/pre",
+      "http": 200,
+      "bytes": 168,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "version": "instrumento-ensayo-v1",
+        "momento": "pre",
+        "forma": "B",
+        "estado": "omitido",
+        "instante": "2026-11-26T15:47:32.856Z"
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4",
+      "http": 200,
+      "bytes": 1615,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "actividad_id": "lr-ensayo",
+        "estudiante_id": "estudiante-lr",
+        "tipo": "ensayo",
+        "caso": "P01",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_rubrica": "1",
+        "rubrica_id": 1,
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "pre": "omitido",
+        "post": "pendiente",
+        "fase": "inicial",
+        "estado": "atencion",
+        "revision": 1,
+        "introduccion": {
+          "contexto": "Servicio de urgencias. Práctica técnica con material de ensayo.",
+          "edad": 34,
+          "motivo": "Falta de aire",
+          "paciente": "LR"
+        },
+        "ficha": {
+          "datos": [
+            {
+              "etiqueta": "Presión inicial",
+              "valor": "148/85 mmHg"
+            }
+          ],
+          "fase": "inicial",
+          "fuente": "Triaje de ensayo de LR",
+          "hallazgos": []
+        },
+        "indicaciones": [
+          "Entrevista a LR y registra las mediciones que realices.",
+          "Vincula los hallazgos que sustenten tu hipótesis."
+        ],
+        "ayuda": {
+          "orientacion_id": "orientacion-inicial-lr",
+          "origen": "docente",
+          "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+        },
+        "sugerencias": [
+          {
+            "id": "inicio",
+            "texto": "¿Desde cuándo comenzó?"
+          }
+        ],
+        "respiraciones_simuladas": 26,
+        "mediciones": [],
+        "turnos": [],
+        "exploraciones": [],
+        "ordenes": [],
+        "apuntes": [],
+        "evidencias": [
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "orientacion",
+            "origen_id": "orientacion-inicial-lr",
+            "categoria": "orientacion",
+            "autor": "docente",
+            "origen": "Ayuda de la actividad",
+            "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+          }
+        ]
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "POST",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/turnos",
+      "http": 201,
+      "bytes": 331,
+      "cuerpo": {
+        "turno_id": "7a5baed5b03262d4fb3e303f27efcf33",
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "orden": 1,
+        "agente": "lr",
+        "hablante": "LR",
+        "pregunta": "¿Desde cuándo comenzó?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "tipo_respuesta": "hecho",
+        "operacion_id": "d5a6e274c25667761e12688b3c74112a",
+        "revision": 2
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/turnos/7a5baed5b03262d4fb3e303f27efcf33/traza",
+      "http": 403,
+      "bytes": 66,
+      "cuerpo": {
+        "mensaje": "La revisión está reservada al docente responsable."
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/ordenes/ecg-inicial",
+      "http": 404,
+      "bytes": 82,
+      "cuerpo": {
+        "mensaje": "El informe está reservado hasta confirmar la orden de este intento."
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4",
+      "http": 200,
+      "bytes": 2184,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "actividad_id": "lr-ensayo",
+        "estudiante_id": "estudiante-lr",
+        "tipo": "ensayo",
+        "caso": "P01",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_rubrica": "1",
+        "rubrica_id": 1,
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "pre": "omitido",
+        "post": "pendiente",
+        "fase": "inicial",
+        "estado": "atencion",
+        "revision": 2,
+        "introduccion": {
+          "contexto": "Servicio de urgencias. Práctica técnica con material de ensayo.",
+          "edad": 34,
+          "motivo": "Falta de aire",
+          "paciente": "LR"
+        },
+        "ficha": {
+          "datos": [
+            {
+              "etiqueta": "Presión inicial",
+              "valor": "148/85 mmHg"
+            }
+          ],
+          "fase": "inicial",
+          "fuente": "Triaje de ensayo de LR",
+          "hallazgos": []
+        },
+        "indicaciones": [
+          "Entrevista a LR y registra las mediciones que realices.",
+          "Vincula los hallazgos que sustenten tu hipótesis."
+        ],
+        "ayuda": {
+          "orientacion_id": "orientacion-inicial-lr",
+          "origen": "docente",
+          "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+        },
+        "sugerencias": [
+          {
+            "id": "inicio",
+            "texto": "¿Desde cuándo comenzó?"
+          }
+        ],
+        "respiraciones_simuladas": 26,
+        "mediciones": [],
+        "turnos": [
+          {
+            "turno_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "orden": 1,
+            "agente": "lr",
+            "hablante": "LR",
+            "pregunta": "¿Desde cuándo comenzó?",
+            "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+            "tipo_respuesta": "hecho",
+            "operacion_id": "d5a6e274c25667761e12688b3c74112a",
+            "revision": 2
+          }
+        ],
+        "exploraciones": [],
+        "ordenes": [],
+        "apuntes": [],
+        "evidencias": [
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "orientacion",
+            "origen_id": "orientacion-inicial-lr",
+            "categoria": "orientacion",
+            "autor": "docente",
+            "origen": "Ayuda de la actividad",
+            "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+          },
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "turno",
+            "origen_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "categoria": "declaracion",
+            "autor": "LR",
+            "origen": "Entrevista",
+            "texto": "Empecé a notar que me faltaba el aire hace dos días."
+          }
+        ]
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4",
+      "http": 200,
+      "bytes": 2184,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "actividad_id": "lr-ensayo",
+        "estudiante_id": "estudiante-lr",
+        "tipo": "ensayo",
+        "caso": "P01",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_rubrica": "1",
+        "rubrica_id": 1,
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "pre": "omitido",
+        "post": "pendiente",
+        "fase": "inicial",
+        "estado": "atencion",
+        "revision": 2,
+        "introduccion": {
+          "contexto": "Servicio de urgencias. Práctica técnica con material de ensayo.",
+          "edad": 34,
+          "motivo": "Falta de aire",
+          "paciente": "LR"
+        },
+        "ficha": {
+          "datos": [
+            {
+              "etiqueta": "Presión inicial",
+              "valor": "148/85 mmHg"
+            }
+          ],
+          "fase": "inicial",
+          "fuente": "Triaje de ensayo de LR",
+          "hallazgos": []
+        },
+        "indicaciones": [
+          "Entrevista a LR y registra las mediciones que realices.",
+          "Vincula los hallazgos que sustenten tu hipótesis."
+        ],
+        "ayuda": {
+          "orientacion_id": "orientacion-inicial-lr",
+          "origen": "docente",
+          "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+        },
+        "sugerencias": [
+          {
+            "id": "inicio",
+            "texto": "¿Desde cuándo comenzó?"
+          }
+        ],
+        "respiraciones_simuladas": 26,
+        "mediciones": [],
+        "turnos": [
+          {
+            "turno_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "orden": 1,
+            "agente": "lr",
+            "hablante": "LR",
+            "pregunta": "¿Desde cuándo comenzó?",
+            "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+            "tipo_respuesta": "hecho",
+            "operacion_id": "d5a6e274c25667761e12688b3c74112a",
+            "revision": 2
+          }
+        ],
+        "exploraciones": [],
+        "ordenes": [],
+        "apuntes": [],
+        "evidencias": [
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "orientacion",
+            "origen_id": "orientacion-inicial-lr",
+            "categoria": "orientacion",
+            "autor": "docente",
+            "origen": "Ayuda de la actividad",
+            "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+          },
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "turno",
+            "origen_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "categoria": "declaracion",
+            "autor": "LR",
+            "origen": "Entrevista",
+            "texto": "Empecé a notar que me faltaba el aire hace dos días."
+          }
+        ]
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "PUT",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/razonamiento",
+      "http": 200,
+      "bytes": 214,
+      "cuerpo": {
+        "apunte_id": "0bbcee346b63ec79fde5c938b150eb43",
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "autor_id": "estudiante-lr",
+        "intencion": "T038_APUNTE_PROPIO_VISIBLE",
+        "momento": "2026-11-26T15:47:33.047Z",
+        "revision": 3
+      }
+    },
+    {
+      "fase": "atencion",
+      "metodo": "GET",
+      "ruta": "/api/intentos/6a42c2e440b5901ec8e4b3c8841d5b0c",
+      "http": 403,
+      "bytes": 62,
+      "cuerpo": {
+        "mensaje": "Esta actividad no está asignada a tu identidad."
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4",
+      "http": 200,
+      "bytes": 2671,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "actividad_id": "lr-ensayo",
+        "estudiante_id": "estudiante-lr",
+        "tipo": "ensayo",
+        "caso": "P01",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_rubrica": "1",
+        "rubrica_id": 1,
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "pre": "omitido",
+        "post": "pendiente",
+        "fase": "inicial",
+        "estado": "atencion",
+        "revision": 3,
+        "introduccion": {
+          "contexto": "Servicio de urgencias. Práctica técnica con material de ensayo.",
+          "edad": 34,
+          "motivo": "Falta de aire",
+          "paciente": "LR"
+        },
+        "ficha": {
+          "datos": [
+            {
+              "etiqueta": "Presión inicial",
+              "valor": "148/85 mmHg"
+            }
+          ],
+          "fase": "inicial",
+          "fuente": "Triaje de ensayo de LR",
+          "hallazgos": []
+        },
+        "indicaciones": [
+          "Entrevista a LR y registra las mediciones que realices.",
+          "Vincula los hallazgos que sustenten tu hipótesis."
+        ],
+        "ayuda": {
+          "orientacion_id": "orientacion-inicial-lr",
+          "origen": "docente",
+          "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+        },
+        "sugerencias": [
+          {
+            "id": "inicio",
+            "texto": "¿Desde cuándo comenzó?"
+          }
+        ],
+        "respiraciones_simuladas": 26,
+        "mediciones": [],
+        "turnos": [
+          {
+            "turno_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "orden": 1,
+            "agente": "lr",
+            "hablante": "LR",
+            "pregunta": "¿Desde cuándo comenzó?",
+            "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+            "tipo_respuesta": "hecho",
+            "operacion_id": "d5a6e274c25667761e12688b3c74112a",
+            "revision": 2
+          }
+        ],
+        "exploraciones": [],
+        "ordenes": [],
+        "apuntes": [
+          {
+            "apunte_id": "0bbcee346b63ec79fde5c938b150eb43",
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "autor_id": "estudiante-lr",
+            "intencion": "T038_APUNTE_PROPIO_VISIBLE",
+            "momento": "2026-11-26T15:47:33.047Z",
+            "revision": 3
+          }
+        ],
+        "evidencias": [
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "orientacion",
+            "origen_id": "orientacion-inicial-lr",
+            "categoria": "orientacion",
+            "autor": "docente",
+            "origen": "Ayuda de la actividad",
+            "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+          },
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "turno",
+            "origen_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "categoria": "declaracion",
+            "autor": "LR",
+            "origen": "Entrevista",
+            "texto": "Empecé a notar que me faltaba el aire hace dos días."
+          },
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "apunte",
+            "origen_id": "0bbcee346b63ec79fde5c938b150eb43",
+            "categoria": "interpretacion",
+            "autor": "estudiante-lr",
+            "origen": "Apunte del estudiante",
+            "texto": "T038_APUNTE_PROPIO_VISIBLE",
+            "momento": "2026-11-26T15:47:33.047Z"
+          }
+        ]
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "POST",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/entrega",
+      "http": 201,
+      "bytes": 325,
+      "cuerpo": {
+        "entrega_id": "9daf859bcd083606bce09e0ea5239a7f",
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "revision": 3,
+        "rubrica_id": 1,
+        "version_rubrica": "1",
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "confirmada_en": "2026-11-26T15:47:33.099Z",
+        "estado_evaluacion": "pendiente",
+        "post": "pendiente"
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4",
+      "http": 200,
+      "bytes": 2957,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "actividad_id": "lr-ensayo",
+        "estudiante_id": "estudiante-lr",
+        "tipo": "ensayo",
+        "caso": "P01",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_rubrica": "1",
+        "rubrica_id": 1,
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "pre": "omitido",
+        "post": "pendiente",
+        "fase": "inicial",
+        "estado": "entregado",
+        "revision": 4,
+        "introduccion": {
+          "contexto": "Servicio de urgencias. Práctica técnica con material de ensayo.",
+          "edad": 34,
+          "motivo": "Falta de aire",
+          "paciente": "LR"
+        },
+        "ficha": {
+          "datos": [
+            {
+              "etiqueta": "Presión inicial",
+              "valor": "148/85 mmHg"
+            }
+          ],
+          "fase": "inicial",
+          "fuente": "Triaje de ensayo de LR",
+          "hallazgos": []
+        },
+        "indicaciones": [
+          "Entrevista a LR y registra las mediciones que realices.",
+          "Vincula los hallazgos que sustenten tu hipótesis."
+        ],
+        "ayuda": {
+          "orientacion_id": "orientacion-inicial-lr",
+          "origen": "docente",
+          "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+        },
+        "sugerencias": [],
+        "respiraciones_simuladas": 26,
+        "mediciones": [],
+        "turnos": [
+          {
+            "turno_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "orden": 1,
+            "agente": "lr",
+            "hablante": "LR",
+            "pregunta": "¿Desde cuándo comenzó?",
+            "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+            "tipo_respuesta": "hecho",
+            "operacion_id": "d5a6e274c25667761e12688b3c74112a",
+            "revision": 2
+          }
+        ],
+        "exploraciones": [],
+        "ordenes": [],
+        "apuntes": [
+          {
+            "apunte_id": "0bbcee346b63ec79fde5c938b150eb43",
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "autor_id": "estudiante-lr",
+            "intencion": "T038_APUNTE_PROPIO_VISIBLE",
+            "momento": "2026-11-26T15:47:33.047Z",
+            "revision": 3
+          }
+        ],
+        "evidencias": [
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "orientacion",
+            "origen_id": "orientacion-inicial-lr",
+            "categoria": "orientacion",
+            "autor": "docente",
+            "origen": "Ayuda de la actividad",
+            "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+          },
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "turno",
+            "origen_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "categoria": "declaracion",
+            "autor": "LR",
+            "origen": "Entrevista",
+            "texto": "Empecé a notar que me faltaba el aire hace dos días."
+          },
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "apunte",
+            "origen_id": "0bbcee346b63ec79fde5c938b150eb43",
+            "categoria": "interpretacion",
+            "autor": "estudiante-lr",
+            "origen": "Apunte del estudiante",
+            "texto": "T038_APUNTE_PROPIO_VISIBLE",
+            "momento": "2026-11-26T15:47:33.047Z"
+          }
+        ],
+        "entrega": {
+          "entrega_id": "9daf859bcd083606bce09e0ea5239a7f",
+          "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+          "revision": 3,
+          "rubrica_id": 1,
+          "version_rubrica": "1",
+          "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+          "confirmada_en": "2026-11-26T15:47:33.099Z",
+          "estado_evaluacion": "pendiente",
+          "post": "pendiente"
+        }
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4",
+      "http": 200,
+      "bytes": 2957,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "actividad_id": "lr-ensayo",
+        "estudiante_id": "estudiante-lr",
+        "tipo": "ensayo",
+        "caso": "P01",
+        "version_caso": "ensayo-originales-e4bbd7046ad5752ef50a0df4212be7d6873220bc1a3773029806ebdde49fdd69",
+        "version_rubrica": "1",
+        "rubrica_id": 1,
+        "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+        "version_instrumento": "instrumento-ensayo-v1",
+        "pre": "omitido",
+        "post": "pendiente",
+        "fase": "inicial",
+        "estado": "entregado",
+        "revision": 4,
+        "introduccion": {
+          "contexto": "Servicio de urgencias. Práctica técnica con material de ensayo.",
+          "edad": 34,
+          "motivo": "Falta de aire",
+          "paciente": "LR"
+        },
+        "ficha": {
+          "datos": [
+            {
+              "etiqueta": "Presión inicial",
+              "valor": "148/85 mmHg"
+            }
+          ],
+          "fase": "inicial",
+          "fuente": "Triaje de ensayo de LR",
+          "hallazgos": []
+        },
+        "indicaciones": [
+          "Entrevista a LR y registra las mediciones que realices.",
+          "Vincula los hallazgos que sustenten tu hipótesis."
+        ],
+        "ayuda": {
+          "orientacion_id": "orientacion-inicial-lr",
+          "origen": "docente",
+          "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+        },
+        "sugerencias": [],
+        "respiraciones_simuladas": 26,
+        "mediciones": [],
+        "turnos": [
+          {
+            "turno_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "orden": 1,
+            "agente": "lr",
+            "hablante": "LR",
+            "pregunta": "¿Desde cuándo comenzó?",
+            "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+            "tipo_respuesta": "hecho",
+            "operacion_id": "d5a6e274c25667761e12688b3c74112a",
+            "revision": 2
+          }
+        ],
+        "exploraciones": [],
+        "ordenes": [],
+        "apuntes": [
+          {
+            "apunte_id": "0bbcee346b63ec79fde5c938b150eb43",
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "autor_id": "estudiante-lr",
+            "intencion": "T038_APUNTE_PROPIO_VISIBLE",
+            "momento": "2026-11-26T15:47:33.047Z",
+            "revision": 3
+          }
+        ],
+        "evidencias": [
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "orientacion",
+            "origen_id": "orientacion-inicial-lr",
+            "categoria": "orientacion",
+            "autor": "docente",
+            "origen": "Ayuda de la actividad",
+            "texto": "Orienta la entrevista al inicio de los síntomas y su evolución. Vincula tus observaciones con los registros de tu intento."
+          },
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "turno",
+            "origen_id": "7a5baed5b03262d4fb3e303f27efcf33",
+            "categoria": "declaracion",
+            "autor": "LR",
+            "origen": "Entrevista",
+            "texto": "Empecé a notar que me faltaba el aire hace dos días."
+          },
+          {
+            "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+            "tipo": "apunte",
+            "origen_id": "0bbcee346b63ec79fde5c938b150eb43",
+            "categoria": "interpretacion",
+            "autor": "estudiante-lr",
+            "origen": "Apunte del estudiante",
+            "texto": "T038_APUNTE_PROPIO_VISIBLE",
+            "momento": "2026-11-26T15:47:33.047Z"
+          }
+        ],
+        "entrega": {
+          "entrega_id": "9daf859bcd083606bce09e0ea5239a7f",
+          "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+          "revision": 3,
+          "rubrica_id": 1,
+          "version_rubrica": "1",
+          "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+          "confirmada_en": "2026-11-26T15:47:33.099Z",
+          "estado_evaluacion": "pendiente",
+          "post": "pendiente"
+        }
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/encuestas/post",
+      "http": 200,
+      "bytes": 2146,
+      "cuerpo": {
+        "intento_id": "effa87a8686a8c51ec6c8d9e104221b4",
+        "version": "instrumento-ensayo-v1",
+        "momento": "post",
+        "forma": "A",
+        "estado": "pendiente",
+        "instante": null,
+        "items": [
+          {
+            "id": "P1",
+            "tipo": "percepcion",
+            "enunciado": "Me siento capaz de ordenar las preguntas de una entrevista sobre dificultad respiratoria.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "P2",
+            "tipo": "percepcion",
+            "enunciado": "Al entrevistar sin supervisión directa a una persona con dificultad respiratoria, siento que puedo mantener la calma.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "P3",
+            "tipo": "percepcion",
+            "enunciado": "Me siento preparado/a para justificar una hipótesis inicial con los hallazgos que recoja.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "R1",
+            "tipo": "razonamiento",
+            "enunciado": "Ya se completó el triaje. Tu objetivo inmediato es precisar el comienzo de la falta de aire. ¿Qué preguntarías primero?",
+            "opciones": [
+              "¿Qué es lo que más le preocupa hoy?",
+              "¿Cuándo notó por primera vez que le faltaba el aire?",
+              "¿Qué actividad le resulta más difícil ahora?"
+            ]
+          },
+          {
+            "id": "R2",
+            "tipo": "razonamiento",
+            "enunciado": "Consta un turno en que la persona refiere falta de aire al caminar. Aún no hay medición de saturación. ¿Qué afirmación puedes fundamentar?",
+            "opciones": [
+              "La saturación descendió durante la marcha.",
+              "Se confirmó la causa del síntoma.",
+              "La persona refiere falta de aire asociada a caminar."
+            ]
+          },
+          {
+            "id": "U1",
+            "tipo": "utilidad",
+            "enunciado": "Después de esta simulación, me siento mejor preparado/a para entrevistar a una persona con un cuadro similar.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          },
+          {
+            "id": "U2",
+            "tipo": "utilidad",
+            "enunciado": "El ejercicio me permitió identificar un aspecto concreto de mi valoración clínica que necesito reforzar.",
+            "opciones": [
+              "Muy en desacuerdo",
+              "En desacuerdo",
+              "Ni de acuerdo ni en desacuerdo",
+              "De acuerdo",
+              "Muy de acuerdo"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/turnos/7a5baed5b03262d4fb3e303f27efcf33/traza",
+      "http": 403,
+      "bytes": 66,
+      "cuerpo": {
+        "mensaje": "La revisión está reservada al docente responsable."
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "GET",
+      "ruta": "/api/intentos/6a42c2e440b5901ec8e4b3c8841d5b0c",
+      "http": 403,
+      "bytes": 62,
+      "cuerpo": {
+        "mensaje": "Esta actividad no está asignada a tu identidad."
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "GET",
+      "ruta": "/api/intentos/effa87a8686a8c51ec6c8d9e104221b4/devolucion",
+      "http": 200,
+      "bytes": 27,
+      "cuerpo": {
+        "estado": "post_pendiente"
+      }
+    },
+    {
+      "fase": "antes_de_publicar",
+      "metodo": "GET",
+      "ruta": "/api/evaluaciones/ensayo-t038",
+      "http": 403,
+      "bytes": 68,
+      "cuerpo": {
+        "mensaje": "La evaluación está reservada al docente responsable."
+      }
+    }
+  ]
+}

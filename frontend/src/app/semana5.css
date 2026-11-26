@@ -2365,3 +2365,13 @@ tbody tr:hover {
   }
 }
     
+.encuesta fieldset {
+  margin: 0;
+  padding: 0.75rem;
+  min-width: 0;
+  border: 1px solid currentColor;
+  border-radius: 0.4rem;
+}
+
+.encuesta legend { font-weight: 600; }
+.encuesta label { display: flex; gap: 0.5rem; align-items: baseline; padding: 0.3rem; }

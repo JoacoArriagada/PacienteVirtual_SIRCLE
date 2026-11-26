@@ -13,3 +13,10 @@
 **/*.sqlite*
 frontend/referencia/
 specs/
+dataset/
+datos/*
+!datos/medsp1000/
+!datos/medsp1000/**
+docs/
+recursos-audiovisuales/
+graphify-out/

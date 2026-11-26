@@ -1,6 +1,6 @@
 # Paciente Virtual SIRCLE
 
-Propuesta del módulo 01 para discutir con el profesor. El repositorio reúne el prototipo visual de referencia, los casos originales seleccionados, los recursos del proyecto y los documentos para especificar la futura aplicación.
+El módulo 01 implementa la práctica de LR con entrevista local, valoración, razonamiento, evaluación docente y encuestas opcionales. El repositorio conserva las fuentes clínicas y la referencia visual de Semana 5.
 
 | Para revisar | Abrir |
 |---|---|
@@ -17,4 +17,4 @@ Propuesta del módulo 01 para discutir con el profesor. El repositorio reúne el
 
 Desde una copia local se puede abrir el HTML en el navegador conservando a su lado la carpeta `recursos/`. La referencia utiliza datos de demostración. El diseño del módulo identifica cuáles debe aprobar el docente antes de activar un caso. Las referencias históricas que pertenecen a iteraciones anteriores se identifican como tales.
 
-En esta etapa se puede revisar el material del proyecto directamente desde el repositorio. El diseño describe la implementación prevista con HTML, CSS y TypeScript, Rust con Axum, SQLite y Qwen3.5-4B. La construcción de las aplicaciones, la generación de la base SQLite y la puesta en marcha de Compose corresponden a la etapa de desarrollo.
+Para la demostración técnica, ejecutar `docker compose up --build` desde la raíz y abrir `http://127.0.0.1:8080`. La guía explica cómo comprobar la preparación, ensayar la recuperación y registrar la aprobación docente que habilita la actividad formal. [Guía de arranque y aceptación](specs/001-simulacion-clinica/quickstart.md#4-aceptar-la-demostración-en-el-equipo-del-profesor)

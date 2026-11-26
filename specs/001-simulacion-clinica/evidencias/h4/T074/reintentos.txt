@@ -1,0 +1,22 @@
+T074 | Ensayo Compose del 2026-11-26
+Git base: 08a90308 + cambios locales
+Proyecto: sircle-modulo01-red
+Se inició inferencia con el volumen de pesos vacío, en una red Docker marcada internal. Se arrancó el backend en la red del proyecto y se sondeó /api/estado tres veces.
+Se observaron tres intentos totales, tres llamadas a /api/pull y la indicación de reinicio.
+Esperas en segundos: 2,001151, 4,0009076
+Intento antes y después: 8e1735a57d795415a2859867a36dd506
+Se añadió la red normal del proyecto con docker network connect --alias inferencia y se ejecutó docker compose restart inferencia.
+Digest de la descarga recuperada: d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04
+
+Registros de la preparación
+2026-11-26T15:04:03.759313600Z inferencia qwen3.5:4b · intento 1/3
+2026-11-26T15:04:05.787466500Z inferencia qwen3.5:4b · intento 2/3
+2026-11-26T15:04:09.808906800Z inferencia qwen3.5:4b · intento 3/3
+2026-11-26T15:04:09.834513300Z inferencia qwen3.5:4b · no disponible. Verifica el acceso a registry.ollama.ai y que sircle-pesos contenga la versión indicada. Después ejecuta docker compose restart inferencia.
+2026-11-26T15:06:19.935940600Z inferencia qwen3.5:4b · intento 1/3
+2026-11-26T15:07:19.777759000Z inferencia qwen3.5:4b · no se pudo verificar una generación breve con el modelo
+2026-11-26T15:07:21.782189400Z inferencia qwen3.5:4b · intento 2/3
+2026-11-26T15:07:38.763065000Z inferencia qwen3.5:4b · no se pudo verificar una generación breve con el modelo
+2026-11-26T15:07:42.765028800Z inferencia qwen3.5:4b · intento 3/3
+2026-11-26T15:07:52.515267200Z inferencia qwen3.5:4b · no se pudo verificar una generación breve con el modelo
+2026-11-26T15:07:52.515412500Z inferencia qwen3.5:4b · no disponible. Verifica el acceso a registry.ollama.ai y que sircle-pesos contenga la versión indicada. Después ejecuta docker compose restart inferencia.

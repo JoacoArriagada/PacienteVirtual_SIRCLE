@@ -1,6 +1,7 @@
 import { api, escribir } from "../../app/api.js";
 import { iconoValoracion } from "../valoracion/brazo.js";
-import { montarPublicacion, tituloCriterio, type Publicacion } from "./publicacion.js";
+import { JUICIOS, montarPublicacion, tituloCriterio, tituloJuicio, type Publicacion } from "./publicacion.js";
+import { mostrarInforme } from "../encuestas/informe.js";
 
 interface Actividad { actividad_id: string; nombre: string }
 interface Entrega { estudiante_id: string; intento_id: string; estado: string; evaluacion_id: string | null }
@@ -35,18 +36,11 @@ interface Evaluacion {
   publicacion: Publicacion | null;
 }
 
-const JUICIOS = {
-  acierto: "Acierto",
-  error: "Error",
-  omision: "Omisión",
-  no_evaluable: "No evaluable",
-  revision_docente: "Pendiente de revisión docente",
-};
-
 const mensaje = (error: unknown): string => error instanceof Error ? error.message : "No se pudo cargar la revisión.";
 const formato = new Intl.NumberFormat("es-CL", { maximumFractionDigits: 2 });
 
-export async function mostrarSupervision(main: HTMLElement): Promise<void> {
+export async function mostrarSupervision(main: HTMLElement, vigente: () => boolean): Promise<void> {
+  if (!vigente()) return;
   history.replaceState(null, "", "#supervision");
   main.dataset.view = "supervision";
   main.innerHTML = `
@@ -59,16 +53,41 @@ export async function mostrarSupervision(main: HTMLElement): Promise<void> {
           <tbody></tbody>
         </table></div>
         <p role="status" data-aviso></p>
+        <details data-resultados>
+          <summary>Resultados educativos de la actividad</summary>
+          <div data-informe class="stack"></div>
+        </details>
       </div>
     </section>`;
   const raiz = main.querySelector<HTMLElement>("[data-listado]")!;
   const selector = raiz.querySelector<HTMLSelectElement>("select")!;
   const aviso = raiz.querySelector<HTMLElement>("[data-aviso]")!;
   const cuerpo = raiz.querySelector("tbody")!;
-  const actividades = await api<Actividad[]>("/docente/actividades");
-  if (!raiz.isConnected) return;
+  const resultados = raiz.querySelector<HTMLDetailsElement>("[data-resultados]")!;
+  const informe = raiz.querySelector<HTMLElement>("[data-informe]")!;
+  let cargaActual = 0;
+  let actividades: Actividad[];
+  try {
+    actividades = await api<Actividad[]>("/docente/actividades");
+  } catch (error) {
+    if (vigente() && raiz.isConnected) aviso.textContent = mensaje(error);
+    return;
+  }
+  if (!vigente() || !raiz.isConnected) return;
   selector.replaceChildren(...actividades.map((a) => new Option(a.nombre, a.actividad_id)));
-  selector.addEventListener("change", () => { void cargar(); });
+  selector.addEventListener("change", () => {
+    resultados.open = false;
+    informe.replaceChildren();
+    void cargar();
+  });
+  resultados.addEventListener("toggle", () => {
+    if (resultados.open && selector.value) {
+      const panel = document.createElement("div");
+      panel.className = "stack";
+      informe.replaceChildren(panel);
+      void mostrarInforme(panel, selector.value);
+    }
+  });
   main.querySelector<HTMLElement>("#page-title")?.focus();
   if (actividades.length) await cargar();
   else aviso.textContent = "Sin actividades asignadas.";
@@ -76,11 +95,13 @@ export async function mostrarSupervision(main: HTMLElement): Promise<void> {
   async function cargar(): Promise<void> {
     const elegida = selector.value;
     const actividad = selector.selectedOptions[0]?.textContent ?? "";
+    const carga = ++cargaActual;
+    const sigueAbierta = () => vigente() && raiz.isConnected && carga === cargaActual;
     cuerpo.replaceChildren();
     aviso.textContent = "";
     try {
       const lista = await api<Entrega[]>(`/actividades/${encodeURIComponent(elegida)}/entregas`);
-      if (!raiz.isConnected || selector.value !== elegida) return;
+      if (!sigueAbierta()) return;
       for (const entrega of lista) {
         const fila = cuerpo.insertRow();
         fila.insertCell().textContent = entrega.estudiante_id;
@@ -97,9 +118,9 @@ export async function mostrarSupervision(main: HTMLElement): Promise<void> {
             boton.disabled = true;
             try {
               const evaluacion = await api<Evaluacion>("/evaluaciones/" + encodeURIComponent(id));
-              if (raiz.isConnected) mostrarRevision(main, entrega, evaluacion);
+              if (sigueAbierta()) mostrarRevision(main, entrega, evaluacion, vigente);
             } catch (error) {
-              aviso.textContent = mensaje(error);
+              if (sigueAbierta()) aviso.textContent = mensaje(error);
             } finally {
               boton.disabled = false;
             }
@@ -109,12 +130,14 @@ export async function mostrarSupervision(main: HTMLElement): Promise<void> {
       }
       if (!lista.length) aviso.textContent = "Aún no hay entregas confirmadas.";
     } catch (error) {
-      aviso.textContent = mensaje(error);
+      if (sigueAbierta()) aviso.textContent = mensaje(error);
     }
   }
 }
 
-function mostrarRevision(main: HTMLElement, entrega: Entrega, evaluacion: Evaluacion, guardada = false): void {
+function mostrarRevision(
+  main: HTMLElement, entrega: Entrega, evaluacion: Evaluacion, vigente: () => boolean, guardada = false,
+): void {
   main.dataset.view = "revision";
   const revision = evaluacion.revision_actual;
   main.innerHTML = `
@@ -158,6 +181,10 @@ function mostrarRevision(main: HTMLElement, entrega: Entrega, evaluacion: Evalua
     : `Puntaje ${formato.format(total / 100)} de 100.`;
   main.querySelector("[data-estudiante]")!.textContent = entrega.estudiante_id;
   main.querySelector("[data-datos]")!.textContent = `Rúbrica V${evaluacion.version_rubrica} · Revisión ${revision.revision}`;
+  const huella = document.createElement("p");
+  huella.className = "small-text muted preserve-lines";
+  huella.textContent = "SHA-256 de la rúbrica · " + evaluacion.rubrica_sha256;
+  main.querySelector("[data-datos]")!.after(huella);
   if (revision.autor_id) {
     const historial = document.createElement("p");
     historial.className = "small-text muted";
@@ -172,7 +199,14 @@ function mostrarRevision(main: HTMLElement, entrega: Entrega, evaluacion: Evalua
   const criterios = main.querySelector("[data-criterios]")!;
   const editores = revision.resultado.observaciones.map((obs, indice) => {
     const nota = revision.puntaje.criterios.find((c) => c.criterio_id === obs.criterio_id)!;
-    return editarCriterio(criterios, obs, nota, indice, evaluacion.evidencias, revision.puntaje.peso_aplicable);
+    const leer = editarCriterio(criterios, obs, nota, indice, evaluacion.evidencias, revision.puntaje.peso_aplicable);
+    const traza = document.createElement("a");
+    traza.href = `/api${ruta}/criterios/${encodeURIComponent(obs.criterio_id)}/traza?revision=${revision.revision}`;
+    traza.target = "_blank";
+    traza.rel = "noopener";
+    traza.textContent = "Consultar traza de " + tituloCriterio(obs.criterio_id).toLocaleLowerCase("es-CL");
+    criterios.lastElementChild?.append(traza);
+    return leer;
   });
   const formulario = main.querySelector("form")!;
   const motivo = main.querySelector<HTMLTextAreaElement>("#motivo-rectificacion")!;
@@ -181,7 +215,7 @@ function mostrarRevision(main: HTMLElement, entrega: Entrega, evaluacion: Evalua
   montarPublicacion(formulario.querySelector(".button-row")!, ruta, revision, evaluacion.publicacion);
   let pendiente: { serializado: string; clave: string } | undefined;
   if (guardada) aviso.textContent = "Revisión guardada.";
-  main.querySelector("[data-volver]")!.addEventListener("click", () => { void mostrarSupervision(main); });
+  main.querySelector("[data-volver]")!.addEventListener("click", () => { void mostrarSupervision(main, vigente); });
   main.querySelector<HTMLElement>("#page-title")?.focus();
   formulario.addEventListener("submit", async (evento) => {
     evento.preventDefault();
@@ -195,10 +229,10 @@ function mostrarRevision(main: HTMLElement, entrega: Entrega, evaluacion: Evalua
     if (pendiente?.serializado !== serializado) pendiente = { serializado, clave: crypto.randomUUID() };
     boton.disabled = true;
     try {
-      const siguiente = await api<Revision>(ruta, escribir("PATCH", peticion, pendiente.clave));
-      if (formulario.isConnected) {
+      await api<Revision>(ruta, escribir("PATCH", peticion, pendiente.clave));
+      if (vigente() && formulario.isConnected) {
         const actual = await api<Evaluacion>(ruta);
-        if (formulario.isConnected) mostrarRevision(main, entrega, { ...actual, revision_actual: siguiente }, true);
+        if (vigente() && formulario.isConnected) mostrarRevision(main, entrega, actual, vigente, true);
       }
     } catch (error) {
       aviso.textContent = mensaje(error);
@@ -228,7 +262,7 @@ function editarCriterio(
     </fieldset>`;
   const etiqueta = tituloCriterio(obs.criterio_id);
   const aporte = nota.puntos_ponderados === null || pesoTotal === 0 ? "" : ` · ${formato.format(nota.puntos_ponderados / pesoTotal)} puntos`;
-  fila.querySelector("summary")!.textContent = `${etiqueta} · ${JUICIOS[obs.juicio as keyof typeof JUICIOS]} · ${nota.peso} %${aporte}`;
+  fila.querySelector("summary")!.textContent = `${etiqueta} · ${tituloJuicio(obs.juicio)} · ${nota.peso} %${aporte}`;
   fila.querySelector("legend")!.textContent = etiqueta;
   fila.querySelector("[data-expectativa]")!.textContent = obs.expectativa;
   const selector = fila.querySelector("select")!;

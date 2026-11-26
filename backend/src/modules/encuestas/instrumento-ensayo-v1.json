@@ -1,0 +1,41 @@
+{
+  "version": "instrumento-ensayo-v1",
+  "escala": ["Muy en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Muy de acuerdo"],
+  "percepcion": [
+    "Me siento capaz de ordenar las preguntas de una entrevista sobre dificultad respiratoria.",
+    "Al entrevistar sin supervisión directa a una persona con dificultad respiratoria, siento que puedo mantener la calma.",
+    "Me siento preparado/a para justificar una hipótesis inicial con los hallazgos que recoja."
+  ],
+  "a": [
+    {
+      "pregunta": "Ya se completó el triaje. Tu objetivo inmediato es precisar el comienzo de la falta de aire. ¿Qué preguntarías primero?",
+      "opciones": ["¿Qué es lo que más le preocupa hoy?", "¿Cuándo notó por primera vez que le faltaba el aire?", "¿Qué actividad le resulta más difícil ahora?"],
+      "clave": 2,
+      "justificacion": "Obtiene el inicio. Las otras opciones exploran preocupación o limitación actual."
+    },
+    {
+      "pregunta": "Consta un turno en que la persona refiere falta de aire al caminar. Aún no hay medición de saturación. ¿Qué afirmación puedes fundamentar?",
+      "opciones": ["La saturación descendió durante la marcha.", "Se confirmó la causa del síntoma.", "La persona refiere falta de aire asociada a caminar."],
+      "clave": 3,
+      "justificacion": "Conserva el origen del hallazgo y el grado de certeza."
+    }
+  ],
+  "b": [
+    {
+      "pregunta": "Ya se completó el triaje. Necesitas ubicar el inicio de un episodio de tos. ¿Qué pregunta responde a ese objetivo?",
+      "opciones": ["¿En qué momento empezó a toser?", "¿Qué le preocupa de la tos?", "¿Qué actividades le dificulta hoy?"],
+      "clave": 1,
+      "justificacion": "Obtiene el inicio. Las otras opciones exploran preocupación o limitación actual."
+    },
+    {
+      "pregunta": "La persona dice que sintió palpitaciones al subir una escalera. El registro aún carece de un pulso medido en ese momento. ¿Qué afirmación puedes fundamentar?",
+      "opciones": ["Se registró una frecuencia cardíaca elevada.", "La persona refiere palpitaciones al subir la escalera.", "Se identificó el mecanismo que las causó."],
+      "clave": 2,
+      "justificacion": "Distingue el síntoma referido de la medición y su interpretación."
+    }
+  ],
+  "utilidad": [
+    "Después de esta simulación, me siento mejor preparado/a para entrevistar a una persona con un cuadro similar.",
+    "El ejercicio me permitió identificar un aspecto concreto de mi valoración clínica que necesito reforzar."
+  ]
+}

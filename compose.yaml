@@ -1,0 +1,54 @@
+name: sircle
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  sqlite-init:
+    image: sircle-backend:local
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    command: ["preparar", "--db", "/var/lib/sircle/sircle.sqlite", "--fuentes", "/datos", "--rubrica-ensayo"]
+    volumes:
+      - sircle-datos:/var/lib/sircle
+
+  backend:
+    image: sircle-backend:local
+    pull_policy: never
+    command: ["servir", "--db", "/var/lib/sircle/sircle.sqlite", "--direccion", "0.0.0.0:8081"]
+    environment:
+      OLLAMA_URL: http://inferencia:11434
+    volumes:
+      - sircle-datos:/var/lib/sircle
+    depends_on:
+      sqlite-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS --max-time 5 http://127.0.0.1:8081/api/estado | jq -e '.base.disponible == true'"]
+      interval: 5s
+      timeout: 6s
+      retries: 12
+
+  inferencia:
+    build:
+      context: .
+      dockerfile: inferencia/Dockerfile
+    volumes:
+      - sircle-pesos:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "--max-time", "3", "http://127.0.0.1:11434/api/version"]
+      interval: 10s
+      timeout: 4s
+      retries: 3
+
+volumes:
+  sircle-datos:
+  sircle-pesos:

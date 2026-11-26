@@ -28,7 +28,7 @@ struct Toma {
 pub async fn cola(app: Estado) {
     loop {
         if let Err(error) = procesar_siguiente(&app).await {
-            eprintln!("Error en la cola de evaluación: {}", error.mensaje);
+            trazas::registro(&format!("Error en la cola de evaluación: {}", error.mensaje));
         }
         tokio::time::sleep(Duration::from_secs(1)).await;
     }
@@ -40,7 +40,9 @@ pub async fn procesar_siguiente(app: &Estado) -> Result<bool, ErrorApi> {
         return Ok(false);
     }
     let Some(toma) = app.consultar(tomar).await? else { return Ok(false) };
-    eprintln!("SIRCLE_EVALUACION_TOMA {}", json!({"entrega_id":toma.entrega_id,"toma_id":toma.operacion_id}));
+    trazas::evento("SIRCLE_EVALUACION_TOMA", &json!({
+        "entrega_id":toma.entrega_id, "toma_id":toma.operacion_id, "inicio_unix_ms":trazas::ahora_ms(),
+    }));
     let entrega = toma.entrega_id.clone();
     let preparado = app.consultar(move |db| {
         let tx = db.transaction()?;
@@ -59,7 +61,7 @@ pub async fn procesar_siguiente(app: &Estado) -> Result<bool, ErrorApi> {
     match inferir(supervisor, &toma, contexto, aplicables).await {
         Ok((borrador, detalle)) => app.consultar(move |db| guardar(db, toma, borrador, detalle)).await,
         Err(error) => {
-            eprintln!("SIRCLE_EVALUACION_FALLO {} · {error:#}", toma.operacion_id);
+            trazas::registro(&format!("SIRCLE_EVALUACION_FALLO {} · {error:#}", toma.operacion_id));
             reprogramar(app, toma, "inferencia_o_validacion").await?;
             Ok(false)
         }
@@ -121,6 +123,10 @@ async fn inferir(supervisor: &Supervisor, toma: &Toma, contexto: Contexto, aplic
         ensure!(mensajes::discrepancia(&cabecera, &respuesta.cabecera).is_none()
             && respuesta.tipo == TipoResultado::Evaluacion && r.operacion_id == toma.operacion_id
             && r.modelo == MODELO && r.digest == DIGEST_MODELO, "La respuesta no corresponde a la operación de evaluación");
+        trazas::evento("SIRCLE_INFERENCIA_EVALUACION", &json!({
+            "entrega_id":toma.entrega_id, "operacion_id":r.operacion_id,
+            "inicio_unix_ms":r.inicio_unix_ms, "fin_unix_ms":r.fin_unix_ms,
+        }));
         let invocacion = serde_json::to_value(r)?;
         (respuesta.resultado.seleccion, invocacion)
     };
@@ -141,7 +147,7 @@ fn guardar(db: &mut Connection, toma: Toma, borrador: Borrador, mut detalle: Val
         params![toma.entrega_id, toma.operacion_id],
     )?;
     if filas == 0 {
-        eprintln!("SIRCLE_EVALUACION_DESCARTADA {}", json!({
+        trazas::evento("SIRCLE_EVALUACION_DESCARTADA", &json!({
             "entrega_id":toma.entrega_id,"toma_id":toma.operacion_id,"motivo":"toma_vencida_o_reemplazada",
         }));
         return Ok(false);
@@ -157,7 +163,7 @@ fn guardar(db: &mut Connection, toma: Toma, borrador: Borrador, mut detalle: Val
     detalle["borrador_guardado"] = datos;
     trazas::guardar_evaluacion(&tx, &id, &toma.operacion_id, &detalle)?;
     tx.commit()?;
-    eprintln!("SIRCLE_EVALUACION_CONFIRMADA {}", json!({"entrega_id":toma.entrega_id,"toma_id":toma.operacion_id,"evaluacion_id":id}));
+    trazas::evento("SIRCLE_EVALUACION_CONFIRMADA", &json!({"entrega_id":toma.entrega_id,"toma_id":toma.operacion_id,"evaluacion_id":id}));
     Ok(true)
 }
 

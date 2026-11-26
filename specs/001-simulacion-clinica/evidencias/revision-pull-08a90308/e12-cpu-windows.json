@@ -1,0 +1,211 @@
+[
+  {
+    "prueba": "calibra_tres_de_cuatro_con_qwen",
+    "entrega_id": "90c21992dbf492e209b0813933a61c0e",
+    "evaluacion_id": "19d7d7d3ac1ea14cc29a394b975faf40",
+    "rubrica_sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+    "operacion_id": "5611ce4d9b06feb167ab765787f3ea7c",
+    "modelo": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "vram_bytes": 0,
+    "contexto": 4096,
+    "cotejo": [
+      {
+        "cita_coincide": true,
+        "clave": {
+          "contenido": "Relato con inicio hace dos días y empeoramiento hoy",
+          "criterio": "hipotesis-1",
+          "juicio": "acierto",
+          "registro": "inicio"
+        },
+        "juicio_coincide": true,
+        "observacion": {
+          "actuacion": "Fundó hipótesis con relato de LR.",
+          "criterio_id": "hipotesis-1",
+          "evidencias": [
+            "d956c3f156846ce4fa61c6e0850eeda3"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Cumplió expectativa de hipótesis.",
+          "juicio": "acierto",
+          "mejora": "Contrastar causa del empeoramiento."
+        },
+        "registro_esperado": "d956c3f156846ce4fa61c6e0850eeda3"
+      },
+      {
+        "cita_coincide": true,
+        "clave": {
+          "contenido": "Ritmo rápido de origen sinusal según el informe",
+          "criterio": "hipotesis-2",
+          "juicio": "acierto",
+          "registro": "ecg"
+        },
+        "juicio_coincide": true,
+        "observacion": {
+          "actuacion": "Fundó ritmo sinusal con informe ECG.",
+          "criterio_id": "hipotesis-2",
+          "evidencias": [
+            "8f7379cbf753ac019a6e2d6b8503570c"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Cumplió expectativa de hipótesis.",
+          "juicio": "acierto",
+          "mejora": "Buscar registro de confirmación previa."
+        },
+        "registro_esperado": "8f7379cbf753ac019a6e2d6b8503570c"
+      },
+      {
+        "cita_coincide": true,
+        "clave": {
+          "contenido": "148/85 mmHg en una toma sin inferir hipertensión sostenida",
+          "criterio": "hipotesis-3",
+          "juicio": "acierto",
+          "registro": "presion"
+        },
+        "juicio_coincide": true,
+        "observacion": {
+          "actuacion": "Fundó presión alta con medición.",
+          "criterio_id": "hipotesis-3",
+          "evidencias": [
+            "3cbe5f339adc3004a8e1d59cd757ee56"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Cumplió expectativa de hipótesis.",
+          "juicio": "acierto",
+          "mejora": "Verificar sostenibilidad de la cifra."
+        },
+        "registro_esperado": "3cbe5f339adc3004a8e1d59cd757ee56"
+      },
+      {
+        "cita_coincide": true,
+        "clave": {
+          "contenido": "Falta vincular el empeoramiento con esfuerzo previo. Revisar el turno de inicio y preguntar qué hacía al agravarse la disnea",
+          "criterio": "hipotesis-4",
+          "juicio": "omision",
+          "registro": "inicio"
+        },
+        "juicio_coincide": true,
+        "observacion": {
+          "actuacion": "Omitió vínculo para esfuerzo previo.",
+          "criterio_id": "hipotesis-4",
+          "evidencias": [
+            "d956c3f156846ce4fa61c6e0850eeda3"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Falta contraste con registro.",
+          "juicio": "omision",
+          "mejora": "Citar registro de actividad física. Revisa el registro citado y anota si documenta el dato que falta. Indica qué hallazgo apoyaría o debilitaría esta hipótesis."
+        },
+        "registro_esperado": "d956c3f156846ce4fa61c6e0850eeda3"
+      }
+    ],
+    "prioridad": null
+  },
+  {
+    "prueba": "calibra_uno_de_cuatro_y_prioriza_ecg_con_qwen",
+    "entrega_id": "d3ebf9a061a392d6c10dbb3e5563b3c7",
+    "evaluacion_id": "42a447b562eb99410458a769f7b76736",
+    "rubrica_sha256": "20ff3e9b8cf0afc3c3ef0d47b8766319eea392b98af4c889c56815d3c6b0728b",
+    "operacion_id": "528c8efa890a5e363a463a1443ee878a",
+    "modelo": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "vram_bytes": 0,
+    "contexto": 4096,
+    "cotejo": [
+      {
+        "cita_coincide": true,
+        "clave": {
+          "contenido": "Inicio de la disnea hace dos días y empeoramiento hoy",
+          "criterio": "hipotesis-1",
+          "juicio": "acierto",
+          "registro": "inicio"
+        },
+        "juicio_coincide": true,
+        "observacion": {
+          "actuacion": "Fundamentó afirmación con turno.",
+          "criterio_id": "hipotesis-1",
+          "evidencias": [
+            "9733c6b3751451c82211a69136bc5c46"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "El turno apoya la cronología.",
+          "juicio": "acierto",
+          "mejora": "Citar registro que respalda hipótesis."
+        },
+        "registro_esperado": "9733c6b3751451c82211a69136bc5c46"
+      },
+      {
+        "cita_coincide": true,
+        "clave": {
+          "contenido": "El informe registra taquicardia sinusal y contradice la afirmación de fibrilación auricular",
+          "criterio": "hipotesis-2",
+          "juicio": "error",
+          "registro": "ecg"
+        },
+        "juicio_coincide": true,
+        "observacion": {
+          "actuacion": "Contradice informe al citar fibrilación.",
+          "criterio_id": "hipotesis-2",
+          "evidencias": [
+            "1c7fd6c468de287b18371bcf8476256a"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "El informe muestra taquicardia sinusal. Afirmación de la hipótesis 2: «El ECG inicial demuestra fibrilación auricular». Informe citado: «taquicardia sinusal».",
+          "juicio": "error",
+          "mejora": "Citar registro que refuta la afirmación."
+        },
+        "registro_esperado": "1c7fd6c468de287b18371bcf8476256a"
+      },
+      {
+        "cita_coincide": true,
+        "clave": {
+          "contenido": "La tercera hipótesis carece de fundamento. Buscar qué hallazgo apoyaría o debilitaría hipertensión sostenida",
+          "criterio": "hipotesis-3",
+          "juicio": "omision",
+          "registro": "presion"
+        },
+        "juicio_coincide": true,
+        "observacion": {
+          "actuacion": "Propuso explicación por hipertensión.",
+          "criterio_id": "hipotesis-3",
+          "evidencias": [
+            "d5f07c25927a04ddc33aa59a8bfc832f"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "Falta vínculo con datos de presión.",
+          "juicio": "omision",
+          "mejora": "Citar registro para contrastar hipótesis. Revisa el registro citado y anota si documenta el dato que falta. Indica qué hallazgo apoyaría o debilitaría esta hipótesis."
+        },
+        "registro_esperado": "d5f07c25927a04ddc33aa59a8bfc832f"
+      },
+      {
+        "cita_coincide": true,
+        "clave": {
+          "contenido": "El relato de la disnea no es una medición de frecuencia respiratoria y no informa el valor 30",
+          "criterio": "hipotesis-4",
+          "juicio": "error",
+          "registro": "inicio"
+        },
+        "juicio_coincide": true,
+        "observacion": {
+          "actuacion": "Contó frase como medición de frecuencia.",
+          "criterio_id": "hipotesis-4",
+          "evidencias": [
+            "9733c6b3751451c82211a69136bc5c46"
+          ],
+          "expectativa": "Coteja afirmación, fundamento y cita. Si falta un vínculo, propón cómo contrastarla con un registro.",
+          "explicacion": "La frase no es una medición objetiva.",
+          "juicio": "error",
+          "mejora": "Citar registro que mide la frecuencia. Distingue en la ficha lo referido en el turno de lo medido con un instrumento."
+        },
+        "registro_esperado": "9733c6b3751451c82211a69136bc5c46"
+      }
+    ],
+    "prioridad": {
+      "accion": "Relee el informe citado y corrige la hipótesis 2 según el resultado registrado.",
+      "criterio_id": "hipotesis-2",
+      "evidencia_id": "1c7fd6c468de287b18371bcf8476256a",
+      "motivo": "El informe registra «taquicardia sinusal», un resultado que contradice la hipótesis 2. Corrige esa contradicción antes de completar los demás fundamentos."
+    }
+  }
+]

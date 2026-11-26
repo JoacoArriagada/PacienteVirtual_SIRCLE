@@ -1,4 +1,6 @@
-use axum::{Json, extract::{Path, State}, http::{HeaderMap, StatusCode}};
+use std::time::Duration;
+
+use axum::{Json, extract::{Path, State}, http::{HeaderMap, StatusCode, header}, response::{IntoResponse, Response}};
 use rusqlite::{Connection, Row, Transaction, TransactionBehavior, params};
 use serde::{Deserialize, Serialize};
 use serde_json::{Value, json};
@@ -18,6 +20,8 @@ use crate::{
 
 use super::hechos;
 use super::ollama::Invocacion;
+
+const INTERVALO_RESERVA: Duration = Duration::from_secs(10);
 
 #[derive(Clone, Deserialize, Serialize)]
 #[serde(deny_unknown_fields)]
@@ -54,7 +58,15 @@ pub struct Turno {
 
 enum Inicio {
     Reenvio(Turno),
-    Nueva { intento: intento::Intento, contexto: ContextoEntrevista, operacion_id: String },
+    EnCurso(String),
+    Nueva(EntrevistaPreparada),
+}
+
+struct EntrevistaPreparada {
+    intento: intento::Intento,
+    contexto: ContextoEntrevista,
+    operacion_id: String,
+    toma_id: String,
 }
 
 pub async fn crear(
@@ -62,13 +74,19 @@ pub async fn crear(
     Path(id): Path<String>,
     cabeceras: HeaderMap,
     Json(pregunta): Json<Pregunta>,
-) -> Result<(StatusCode, Json<Turno>), ErrorApi> {
+) -> Result<Response, ErrorApi> {
     let recibido_ms = trazas::ahora_ms();
-    let texto = pregunta.texto.trim().to_owned();
+    // Conserva la reserva y el acuse aunque el cliente cierre la conexión.
+    tokio::spawn(procesar(app, id, cabeceras, pregunta, recibido_ms)).await.map_err(ErrorApi::interno)?
+}
+
+async fn procesar(
+    app: Estado, id: String, cabeceras: HeaderMap, pregunta: Pregunta, recibido_ms: u64,
+) -> Result<Response, ErrorApi> {
     let pregunta_inicial = pregunta.clone();
     let cabeceras_iniciales = cabeceras.clone();
     let inicio = app.consultar(move |db| {
-        let tx = db.transaction()?;
+        let tx = db.transaction_with_behavior(TransactionBehavior::Immediate)?;
         let (identidad, contexto) = autorizacion::intento_propio(&tx, &cabeceras_iniciales, &id)?;
         autorizacion::pre_resuelto(&contexto)?;
         let texto_inicial = pregunta_inicial.texto.trim();
@@ -79,50 +97,72 @@ pub async fn crear(
         if let Some(turno) = operacion.recuperar(&tx)? {
             return Ok(Inicio::Reenvio(turno));
         }
+        let operacion_id = operacion.id();
+        let Some(toma_id) = operacion.reservar(&tx)? else {
+            return Ok(Inicio::EnCurso(operacion_id));
+        };
         let (agente, hablante) = destino(&contexto, pregunta_inicial.destinatario.as_deref())?;
         let entorno = contexto::entrevista(&tx, &contexto, agente, hablante)?;
         if entorno.candidatos.is_empty() {
             return Err(ErrorApi::nuevo(StatusCode::CONFLICT, "La ficha de la fase actual todavía no permite entrevistar."));
         }
-        let operacion_id = operacion.id();
-        Ok(Inicio::Nueva { intento: contexto, contexto: entorno, operacion_id })
+        tx.commit()?;
+        Ok(Inicio::Nueva(EntrevistaPreparada { intento: contexto, contexto: entorno, operacion_id, toma_id }))
     }).await?;
-    let (intento, contexto, operacion_id) = match inicio {
-        Inicio::Reenvio(turno) => return Ok((StatusCode::OK, Json(turno))),
-        Inicio::Nueva { intento, contexto, operacion_id } => (intento, contexto, operacion_id),
+    let preparada = match inicio {
+        Inicio::Reenvio(turno) => return Ok((StatusCode::OK, Json(turno)).into_response()),
+        Inicio::EnCurso(operacion_id) => return Ok((
+            StatusCode::ACCEPTED, [(header::RETRY_AFTER, "1")],
+            Json(json!({"estado":"en_curso","operacion_id":operacion_id})),
+        ).into_response()),
+        Inicio::Nueva(preparada) => preparada,
     };
+    let toma = preparada.toma_id.clone();
+    let resultado = confirmar_turno(&app, preparada, cabeceras, pregunta, recibido_ms).await;
+    if resultado.is_err() {
+        if let Err(error) = app.consultar(move |db| Ok(Operacion::liberar_reserva(db, &toma)?)).await {
+            trazas::registro(&format!("No se pudo liberar la reserva del turno · {}", error.mensaje));
+        }
+    }
+    Ok(resultado?.into_response())
+}
+
+async fn confirmar_turno(
+    app: &Estado, preparada: EntrevistaPreparada, cabeceras: HeaderMap, pregunta: Pregunta, recibido_ms: u64,
+) -> Result<(StatusCode, Json<Turno>), ErrorApi> {
+    let EntrevistaPreparada { intento, contexto, operacion_id, toma_id } = preparada;
+    let texto = pregunta.texto.trim().to_owned();
     let candidatos = contexto.candidatos;
     let literal = ficha_aprobada::literal(pregunta.sugerencia_id.as_deref(), &pregunta.texto, &candidatos);
     let cabecera = Cabecera {
         operacion_id: operacion_id.clone(), intento_id: contexto.intento_id, agente: contexto.agente,
         caso: contexto.caso, version: contexto.version, fase: contexto.fase, hablante: contexto.hablante,
     };
-    eprintln!("SIRCLE_TURNO_RECIBIDO {}", json!({
+    trazas::evento("SIRCLE_TURNO_RECIBIDO", &json!({
         "operacion_id": operacion_id, "intento_id": intento.intento_id,
         "agente": cabecera.agente.id(), "recibido_unix_ms": recibido_ms,
     }));
     let respuesta = if literal.is_none() {
-        let trabajadores = app.trabajadores.as_ref().ok_or_else(inferencia_indisponible)?;
         let solicitud = Solicitud {
             cabecera: cabecera.clone(),
             contenido: mensajes::Pregunta { texto: texto.clone(), candidatos: candidatos.iter().map(Into::into).collect(),
                 memoria: contexto.memoria },
         };
-        let acuse = trabajadores.enviar(cabecera.agente, Peticion::Entrevistar(solicitud)).await
-            .map_err(|error| {
-                eprintln!("Ollama · {operacion_id} · {error:#}");
-                inferencia_indisponible()
-            })?;
+        let acuse = enviar_con_reserva(app, &toma_id, solicitud).await?;
         let respuesta = match acuse {
             Acuse::Entrevista(respuesta) => respuesta,
             Acuse::Error { mensaje } => {
-                eprintln!("Ollama · {operacion_id} · {mensaje}");
+                trazas::registro(&format!("Ollama · {operacion_id} · {mensaje}"));
                 return Err(inferencia_indisponible());
             }
             _ => return Err(inferencia_indisponible()),
         };
-        let registro = serde_json::to_string(&respuesta.resultado).map_err(ErrorApi::interno)?;
-        eprintln!("SIRCLE_INFERENCIA {registro}");
+        let invocacion = &respuesta.resultado;
+        trazas::evento("SIRCLE_INFERENCIA", &json!({
+            "operacion_id": invocacion.operacion_id, "modelo": invocacion.modelo, "digest": invocacion.digest,
+            "inicio_unix_ms": invocacion.inicio_unix_ms, "fin_unix_ms": invocacion.fin_unix_ms,
+            "seleccion": invocacion.seleccion,
+        }));
         Some(respuesta)
     } else {
         None
@@ -149,16 +189,40 @@ pub async fn crear(
             tx.commit()?;
             return Err(inferencia_indisponible());
         };
-        operacion.confirmar(&tx, &turno)?;
+        operacion.confirmar_reserva(&tx, &toma_id, &turno)?;
         tx.commit()?;
         Ok((StatusCode::CREATED, Json(turno)))
     }).await?;
     let (estado, Json(turno)) = &resultado;
-    eprintln!("SIRCLE_TURNO_CONFIRMADO {}", json!({
+    trazas::evento("SIRCLE_TURNO_CONFIRMADO", &json!({
         "operacion_id": turno.operacion_id, "intento_id": turno.intento_id, "turno_id": turno.turno_id,
         "http": estado.as_u16(), "confirmado_unix_ms": trazas::ahora_ms(),
     }));
     Ok(resultado)
+}
+
+async fn enviar_con_reserva(
+    app: &Estado, toma: &str, solicitud: Solicitud<mensajes::Pregunta>,
+) -> Result<Acuse, ErrorApi> {
+    let trabajadores = app.trabajadores.as_ref().ok_or_else(inferencia_indisponible)?;
+    let operacion_id = solicitud.cabecera.operacion_id.clone();
+    let envio = trabajadores.enviar(solicitud.cabecera.agente, Peticion::Entrevistar(solicitud));
+    tokio::pin!(envio);
+    let mut renovacion = tokio::time::interval_at(tokio::time::Instant::now() + INTERVALO_RESERVA, INTERVALO_RESERVA);
+    loop {
+        tokio::select! {
+            acuse = &mut envio => return acuse.map_err(|error| {
+                trazas::registro(&format!("Ollama · {operacion_id} · {error:#}"));
+                inferencia_indisponible()
+            }),
+            _ = renovacion.tick() => {
+                let toma = toma.to_owned();
+                if !app.consultar(move |db| Ok(Operacion::renovar_reserva(db, &toma)?)).await? {
+                    return Err(inferencia_indisponible());
+                }
+            }
+        }
+    }
 }
 
 pub fn confirmar_mensaje(
@@ -173,7 +237,16 @@ pub fn confirmar_mensaje(
         return Ok(None);
     }
     match esperada.agente {
-        Agente::Lr => entrevista::confirmar_correlacionada(db, contexto, candidatos, texto, &recibida.resultado, esperada).map(Some),
+        Agente::Lr => {
+            match entrevista::confirmar_correlacionada(db, contexto, candidatos, texto, &recibida.resultado, esperada) {
+                Ok(turno) => Ok(Some(turno)),
+                Err(error) if error.estado == StatusCode::SERVICE_UNAVAILABLE => {
+                    rechazo_inferencia(db, esperada, "seleccion_lr_rechazada", &recibida.resultado, candidatos)?;
+                    Ok(None)
+                }
+                Err(error) => Err(error),
+            }
+        }
         Agente::Nannu | Agente::DanSparks => confirmar_actor(db, contexto, esperada, candidatos, texto, &recibida.resultado),
         Agente::Evaluador => Err(inferencia_indisponible()),
     }
@@ -204,7 +277,7 @@ fn confirmar_actor(
     let contexto = contexto::entrevista(db, &actual, cabecera.agente, &cabecera.hablante)?;
     let Ok(hecho) = hecho_de_actor(&contexto, &invocacion.seleccion.hecho_id) else {
         let motivo = if cabecera.agente == Agente::Nannu { "seleccion_fuera_de_hablante" } else { "seleccion_fuera_contexto_p03" };
-        mensajes::registrar_rechazo(db, cabecera, motivo)?;
+        rechazo_inferencia(db, cabecera, motivo, invocacion, candidatos)?;
         return Ok(None);
     };
     let pertinente = match cabecera.agente {
@@ -213,11 +286,24 @@ fn confirmar_actor(
         _ => false,
     };
     if !candidatos.contains(hecho) || !pertinente {
-        mensajes::registrar_rechazo(db, cabecera, "seleccion_no_pertinente")?;
+        rechazo_inferencia(db, cabecera, "seleccion_no_pertinente", invocacion, candidatos)?;
         return Ok(None);
     }
     let detalle = json!({"hecho": hecho, "origen": "ollama", "invocacion": invocacion, "mensaje": cabecera});
     guardar(db, &actual, Salida::hecho(cabecera.agente, hecho), pregunta, &cabecera.operacion_id, &detalle).map(Some)
+}
+
+fn rechazo_inferencia(
+    db: &Connection, cabecera: &Cabecera, motivo: &str, invocacion: &Invocacion, candidatos: &[hechos::Hecho],
+) -> rusqlite::Result<()> {
+    let fuentes: Vec<_> = candidatos.iter().map(|hecho| json!({
+        "id": hecho.id, "fuente": hecho.fuente, "linea": hecho.linea, "pasaje": hecho.pasaje,
+        "revision_fuente_id": hecho.revision_fuente_id,
+    })).collect();
+    mensajes::registrar_rechazo_con_evidencia(db, cabecera, motivo, json!({
+        "seleccion": invocacion.seleccion, "modelo": invocacion.modelo, "digest": invocacion.digest,
+        "inicio_unix_ms": invocacion.inicio_unix_ms, "fin_unix_ms": invocacion.fin_unix_ms, "fuentes": fuentes,
+    }))
 }
 
 fn confirmar_literal_actor(

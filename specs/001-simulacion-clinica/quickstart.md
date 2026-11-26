@@ -43,6 +43,20 @@ En la preparación de prueba, cargar la rúbrica V1 sin constancia de aprobació
 
 **Antes de habilitar la actividad formal.** El docente deberá aprobar la ficha española y la versión de los hechos e instrumentos disponibles para la fase inicial, con 148/85 mmHg y pulso de 102/min, y la redacción del informe textual del ECG. Revisará la rúbrica de pregrado avanzado y sus ponderaciones, y las claves, distractores y equivalencia esperada de las formas A/B. Comprobar en SQLite que la actividad fija las versiones aprobadas y que la huella de la rúbrica coincide con la de la aprobación. La comparabilidad observada de A/B se revisará después del piloto.
 
+### Preparar el material para aprobación
+
+1. Obtener el borrador y sus huellas con `docker compose exec -T backend sircle material-formal --db /var/lib/sircle/sircle.sqlite`. El resultado incluye `actividad`, `rubrica` y `huellas`. La ficha española se puede ajustar en el borrador. Los hechos, lecturas y el informe del catálogo conservan su vínculo con las fuentes revisadas.
+2. Guardar el objeto `actividad` como `datos/adaptaciones/lr/actividad-formal.local.json` y el objeto `rubrica` en `datos/adaptaciones/lr/rubricas/<version>.json`, donde `<version>` corresponde a `version_rubrica`. Tras editar, copiar ambos archivos con los tres primeros comandos del bloque siguiente y ejecutar `docker compose exec -T backend sircle huellas-formales --archivo /tmp/aprobacion-lr/actividad-formal.local.json`. Usar las huellas posteriores a la revisión docente.
+3. Registrar las constancias del docente responsable en `clinica.aprobacion`, `instrumento.aprobacion` y `aprobacion` de la rúbrica. Cada constancia contiene `tipo` con valor `formal`, `docente_id`, `fecha` UTC en formato `AAAA-MM-DDTHH:MM:SSZ`, `motivo`, `codigo`, `version` y `sha256`. Usar las huellas posteriores a la revisión docente.
+4. Con las tres constancias registradas, copiar los archivos aprobados y ejecutar el preparador en el servicio backend. El preparador valida las constancias y actualiza la actividad en una transacción. Los intentos previos conservan las versiones con las que se abrieron.
+
+   ```sh
+   docker compose exec -T backend mkdir -p /tmp/aprobacion-lr/rubricas
+   docker compose cp datos/adaptaciones/lr/actividad-formal.local.json backend:/tmp/aprobacion-lr/
+   docker compose cp "datos/adaptaciones/lr/rubricas/<version>.json" backend:/tmp/aprobacion-lr/rubricas/
+   docker compose exec -T backend sircle preparar --db /var/lib/sircle/sircle.sqlite --fuentes /datos --actividad-formal /tmp/aprobacion-lr/actividad-formal.local.json
+   ```
+
 | Paso en la estación | Resultado observable |
 | --- | --- |
 | Elegir LR con identidad ficticia, responder u omitir las cinco preguntas y abrir la introducción. Guardar un apunte, salir y retomar desde «En curso». | La información clínica se revela después de resolver el pre. La versión, la secuencia de formas y el historial se conservan. |
@@ -53,8 +67,20 @@ En la preparación de prueba, cargar la rúbrica V1 sin constancia de aprobació
 
 **Caída de Qwen, E22.** Con un intento abierto, ejecutar `docker compose stop inferencia`. Registrar una **medición nueva**, incorporarla a la hipótesis, confirmar la entrega y reenviar esa confirmación. Resolver el post. Antes de recuperar el modelo deben constar una medición nueva, un acuse, un trabajo pendiente y cero evaluaciones terminadas. Ejecutar `docker compose start inferencia`. Tras la verificación del modelo y el reprocesamiento del trabajo deben quedar los mismos identificadores de medición y entrega y **exactamente una evaluación terminada**, también al repetir el cierre del trabajo. La devolución espera la publicación docente.
 
+El verificador de navegador ejecuta el recorrido técnico en un proyecto Compose de ensayo con volúmenes nuevos. Configurar `SIRCLE_CHROMIUM` con el ejecutable de Chromium y `SIRCLE_E22_COMPOSE_PROJECT` con el nombre del proyecto. Desde `frontend/`, ejecutar `npm ci` y `npm run test:navegador:encuestas -- <destino> respondido omitido`. El verificador detiene y recupera `inferencia` en ese proyecto. El resultado incluye los acuses, los identificadores y capturas de pre, post e informe.
+
+Si Ollama ya está detenido, añadir `--solo-caida` después de las decisiones para comprobar la medición, la entrega y el post durante la caída.
+
 **Pesos ausentes y reinicio.** En una instalación de prueba con volúmenes nuevos y el puerto local libre, interrumpir el acceso al registro público hasta agotar los reintentos. Comprobar el aviso, reponer conectividad y ejecutar `docker compose restart inferencia` para iniciar una nueva preparación. Verificar el digest y una respuesta breve del modelo. En la instalación con datos, `docker compose stop` y `docker compose up -d` deben conservar el intento y sus fuentes. Restaurar una copia consistente en otro volumen de prueba y abrir el mismo intento y su devolución. [Política de preparación y recuperación](research.md#preparación-del-modelo)
+
+Si `docker compose logs inferencia` indica que se terminó el proceso de Qwen por falta de memoria, comprobar la RAM asignada a Docker con `docker info --format '{{.MemTotal}}'`. El ensayo de desarrollo con 2 GB verificó la descarga, pero esa asignación resultó insuficiente para generar una respuesta. [Registro de carga de Qwen](evidencias/h4/T073/modelo.json)
+
+Crear el respaldo con `docker compose exec backend sircle respaldar --db /var/lib/sircle/sircle.sqlite --destino /var/lib/sircle/respaldo-h4.sqlite`. SQLite toma una copia consistente y el comando exige un nombre de destino nuevo. Copiar el respaldo al volumen separado como `sircle.sqlite` y comprobar allí el inventario y el intento.
 
 **Evidencia de aceptación formal.** El acta deberá identificar el computador del profesor, el clon y las versiones clínicas, de rúbrica y de instrumento que aprobó el docente. Adjuntar el intento completo de LR con los identificadores del turno, la medición y la orden de ECG, los vínculos a las evidencias citadas al contrastar las hipótesis, el acuse de entrega, la decisión sobre el post, la revisión docente y la devolución publicada que puede leer el estudiante. Desde una observación, el docente deberá llegar a la evidencia citada y a la ponderación de esa entrega. Adjuntar el informe pre/post separado de la nota clínica y los identificadores y recuentos de E22 antes y después de recuperar Qwen. Los materiales de ejemplo de los hitos anteriores se identificarán en sus respectivas actas.
 
+**Recorrido técnico reproducible.** Preparar una base nueva con `sircle preparar --db <base-de-ensayo> --fuentes datos --rubrica-ensayo` desde la raíz. Levantar la aplicación y comprobar que `/api/estado` indica SQLite y Qwen disponibles. Configurar `SIRCLE_CHROMIUM` con el ejecutable de Chromium y ejecutar `node scripts/verificar-recorrido-modulo01.mjs <destino>` desde `frontend/`. El ensayo registra los acuses por rol, las citas, la revisión visible y cuatro capturas. [Recorrido observado y auditoría](evidencias/auditoria-modulo01/acta.md#recorrido-con-qwen-real)
+
 **Capacidad posterior.** La demostración individual registra tiempos en frío y en caliente. En otro estudio se ensayarán 20 usuarios durante 15 minutos según la propuesta RR01, 100 sesiones abiertas con mezcla de actividades y una ráfaga de 100 preguntas simultáneas. Registrar hardware, modelo, cuantización, contexto, concurrencia efectiva, p50/p95 de espera y respuesta, errores, RAM/VRAM, contención de SQLite y recuperación. Cada perfil tendrá su informe exploratorio. La aceptación de capacidad requiere umbrales ratificados y mediciones frente a ellos. [Requisitos de rendimiento](<../../docs/requisitos/Documento de requerimientos - Paciente virtual en SIRCLE.md>)
+
+Con Node 24 en el equipo docente, ejecutar `node pruebas/capacidad/<perfil>.ts --base <sqlite-de-ensayo> --url <api-local> --log <registro-axum> --ollama-url <ollama-local> --salida <informe.json>`. Ejecutar `rr01_20`, `sesiones_abiertas` y `preguntas_simultaneas` por separado. Cada perfil incorpora identidades ficticias a la base que también lee la API. Usar una copia de la base con la rúbrica de ensayo habilitada. El informe conserva peticiones y estados conciliados. El registro puede incluir prefijos y marcas temporales de Compose. La URL de Ollama permite sondear el uso de VRAM durante la corrida.

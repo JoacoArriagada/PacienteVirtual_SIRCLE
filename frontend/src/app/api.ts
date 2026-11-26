@@ -6,6 +6,9 @@ export class ErrorHttp extends Error {
 
 export async function api<T>(ruta: string, opciones?: RequestInit): Promise<T> {
   const respuesta = await fetch("/api" + ruta, { cache: "no-store", ...opciones });
+  if (respuesta.status === 202) {
+    throw new ErrorHttp(202, "La solicitud sigue en curso. Vuelve a enviarla para consultar la confirmación.");
+  }
   if (!respuesta.ok) {
     const error: { mensaje?: string } = await respuesta.json().catch(() => ({}));
     throw new ErrorHttp(respuesta.status, error.mensaje ?? "No se pudo completar la solicitud.");

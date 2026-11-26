@@ -11,24 +11,52 @@ interface Actividad {
   estado?: string;
 }
 
+interface Disponibilidad {
+  base: { disponible: boolean };
+  modelo: { disponible: boolean; aviso?: string };
+}
+
 const main = document.querySelector<HTMLElement>("#main")!;
 const guardarEstado = document.querySelector<HTMLElement>("#storage-status")!;
+const rolActual = document.querySelector<HTMLElement>("#role-label")!;
+const cambiarRol = document.querySelector<HTMLButtonElement>("#role-button")!;
+let vistaActiva = 0;
+let cambiandoSesion = false;
+
+function iniciarVista(): () => boolean {
+  const actual = ++vistaActiva;
+  return () => actual === vistaActiva;
+}
+
+function mostrarRol(rol: string): void {
+  rolActual.textContent = rol === "docente" ? "Docente" : "Estudiante";
+  cambiarRol.setAttribute("aria-label", "Cambiar rol. Rol actual: " + rolActual.textContent);
+}
 
 export async function iniciarSeleccion(): Promise<void> {
   const dialogo = document.querySelector<HTMLDialogElement>("#dialog")!;
   dialogo.querySelector("[data-do=close]")?.addEventListener("click", () => dialogo.close());
-  document.querySelector('[data-do="roles"]')?.addEventListener("click", vistaAcceso);
-  document.querySelector('[data-do="exit"]')?.addEventListener("click", async () => {
+  document.querySelector('[data-do="service-status"]')?.addEventListener("click", () => mostrarDisponibilidad(dialogo));
+  cambiarRol.addEventListener("click", () => { if (!cambiandoSesion) vistaAcceso(); });
+  const salir = document.querySelector<HTMLButtonElement>('[data-do="exit"]')!;
+  salir.addEventListener("click", async () => {
+    if (cambiandoSesion) return;
+    cambiandoSesion = true;
+    vistaAcceso();
+    const entrar = main.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+    entrar.disabled = true;
     try {
       await api<void>("/sesiones", { method: "DELETE" });
-      vistaAcceso();
     } catch (error) {
       aviso(error);
+    } finally {
+      cambiandoSesion = false;
+      entrar.disabled = false;
     }
   });
   document.querySelector('[data-do="home"]')?.addEventListener("click", (evento) => {
     evento.preventDefault();
-    void cargarCatalogo();
+    if (!cambiandoSesion) void cargarCatalogo();
   });
   document.querySelector('[data-do="toggle-nav"]')?.addEventListener("click", (evento) => {
     const boton = evento.currentTarget as HTMLButtonElement;
@@ -38,10 +66,13 @@ export async function iniciarSeleccion(): Promise<void> {
   });
   const intento = location.hash.match(/^#intento\/([0-9a-z-]+)$/i)?.[1];
   if (intento) {
+    const vigente = iniciarVista();
     try {
-      abrirVista(await api<VistaIntento>("/intentos/" + encodeURIComponent(intento)));
+      const actual = await api<VistaIntento>("/intentos/" + encodeURIComponent(intento));
+      if (vigente()) abrirVista(actual, vigente);
       return;
     } catch (error) {
+      if (!vigente()) return;
       if (!(error instanceof ErrorHttp && [401, 403].includes(error.estado))) {
         vistaAcceso();
         aviso(error);
@@ -53,23 +84,29 @@ export async function iniciarSeleccion(): Promise<void> {
 }
 
 async function cargarCatalogo(): Promise<void> {
+  const vigente = iniciarVista();
   try {
     const sesion = await api<{ rol: string }>("/sesiones");
-    document.querySelector<HTMLElement>("#role-label")!.textContent = sesion.rol === "docente" ? "Docente" : "Estudiante";
+    if (!vigente()) return;
+    mostrarRol(sesion.rol);
     if (sesion.rol === "docente") {
-      await mostrarSupervision(main);
+      await mostrarSupervision(main, vigente);
       return;
     }
     const actividades = await api<Actividad[]>("/actividades");
+    if (!vigente()) return;
     history.replaceState(null, "", "#pacientes");
     vistaCatalogo(actividades);
   } catch (error) {
+    if (!vigente()) return;
     vistaAcceso();
     if (!(error instanceof ErrorHttp && error.estado === 401)) aviso(error);
   }
 }
 
 function vistaAcceso(): void {
+  iniciarVista();
+  mostrarRol("estudiante");
   history.replaceState(null, "", "#pacientes");
   guardarEstado.textContent = "";
   main.dataset.view = "acceso";
@@ -92,18 +129,22 @@ function vistaAcceso(): void {
   const formulario = main.querySelector("form")!;
   formulario.addEventListener("submit", async (evento) => {
     evento.preventDefault();
+    if (cambiandoSesion) return;
+    cambiandoSesion = true;
+    iniciarVista();
     const boton = formulario.querySelector("button")!;
     boton.disabled = true;
     try {
       const identidad = new FormData(formulario).get("identidad");
-      const sesion = await api<{ rol: string }>("/sesiones", escribir("POST", { identidad }));
-      document.querySelector<HTMLElement>("#role-label")!.textContent = sesion.rol === "docente" ? "Docente" : "Estudiante";
-      await cargarCatalogo();
+      await api("/sesiones", escribir("POST", { identidad }));
     } catch (error) {
       aviso(error);
+      return;
     } finally {
+      cambiandoSesion = false;
       boton.disabled = false;
     }
+    await cargarCatalogo();
   });
   enfocarTitulo();
 }
@@ -124,6 +165,7 @@ function vistaCatalogo(actividades: Actividad[]): void {
   error.dataset.aviso = "";
   raiz.append(error);
   let vista = "all";
+  const altas = new Map<string, string>();
   guardarEstado.textContent = "Sesión local";
 
   function pintar(): void {
@@ -142,6 +184,10 @@ function vistaCatalogo(actividades: Actividad[]): void {
     const tarjeta = datos.content.cloneNode(true) as DocumentFragment;
     const accion = tarjeta.querySelector<HTMLButtonElement>(".card-cta .primary")!;
     const estado = tarjeta.querySelector<HTMLElement>(".state")!;
+    const titulo = tarjeta.querySelector("h2")!;
+    titulo.id = "card-" + actividad.actividad_id;
+    tarjeta.querySelector("article")!.setAttribute("aria-labelledby", titulo.id);
+    if (actividades.length > 1) titulo.textContent = actividad.nombre;
     if (actividad.intento_id) {
       const entregada = actividad.estado === "entregado";
       estado.textContent = entregada ? "Entregado" : "En curso";
@@ -154,14 +200,18 @@ function vistaCatalogo(actividades: Actividad[]): void {
       mostrarDialogo(dialogo, "Información de LR", actividad.nombre + " · " + (estado.textContent ?? ""));
     });
     accion.addEventListener("click", async () => {
+      if (cambiandoSesion) return;
+      const vigente = iniciarVista();
       accion.disabled = true;
+      const clave = altas.get(actividad.actividad_id) ?? crypto.randomUUID();
+      altas.set(actividad.actividad_id, clave);
       try {
         const intento = actividad.intento_id
           ? await api<VistaIntento>("/intentos/" + encodeURIComponent(actividad.intento_id))
-          : await api<VistaIntento>("/intentos", escribir("POST", { actividad_id: actividad.actividad_id }, crypto.randomUUID()));
-        abrirVista(intento);
+          : await api<VistaIntento>("/intentos", escribir("POST", { actividad_id: actividad.actividad_id }, clave));
+        if (vigente()) abrirVista(intento, vigente);
       } catch (error) {
-        aviso(error);
+        if (vigente()) aviso(error);
       } finally {
         accion.disabled = false;
       }
@@ -187,9 +237,53 @@ function mostrarDialogo(dialogo: HTMLDialogElement, titulo: string, texto: strin
   dialogo.showModal();
 }
 
-function abrirVista(intento: VistaIntento): void {
+function mostrarDisponibilidad(dialogo: HTMLDialogElement): void {
+  mostrarDialogo(dialogo, "Estado de la práctica", "");
+  const informe = document.createElement("div");
+  informe.setAttribute("aria-live", "polite");
+  const actualizar = document.createElement("button");
+  actualizar.type = "button";
+  actualizar.className = "button";
+  actualizar.textContent = "Actualizar estado";
+  dialogo.querySelector("#dialog-body")!.replaceChildren(informe, actualizar);
+  actualizar.addEventListener("click", () => { void consultar(); });
+  void consultar();
+
+  async function consultar(): Promise<void> {
+    actualizar.disabled = true;
+    informe.textContent = "Consultando disponibilidad…";
+    try {
+      const estado = await api<Disponibilidad>("/estado");
+      if (!informe.isConnected || !dialogo.open) return;
+      const practica = estado.base.disponible;
+      const inferencia = practica && estado.modelo.disponible;
+      const lista = document.createElement("ul");
+      for (const texto of [
+        "Práctica · " + (practica ? "Disponible" : "No disponible"),
+        "Diálogo libre · " + (inferencia ? "Disponible" : "No disponible"),
+        "Evaluación · " + (inferencia ? "Disponible" : practica ? "En espera de inferencia" : "No disponible"),
+      ]) {
+        const linea = document.createElement("li");
+        linea.textContent = texto;
+        lista.append(linea);
+      }
+      informe.replaceChildren(lista);
+      if (estado.modelo.aviso && !estado.modelo.disponible) {
+        const aviso = document.createElement("p");
+        aviso.textContent = estado.modelo.aviso;
+        informe.append(aviso);
+      }
+    } catch (error) {
+      if (informe.isConnected) informe.textContent = error instanceof Error ? error.message : "No se pudo consultar el estado.";
+    } finally {
+      actualizar.disabled = false;
+    }
+  }
+}
+
+function abrirVista(intento: VistaIntento, vigente: () => boolean): void {
   history.replaceState(null, "", "#intento/" + encodeURIComponent(intento.intento_id));
-  mostrarFicha(main, intento, () => { void cargarCatalogo(); });
+  mostrarFicha(main, intento, () => { if (vigente()) void cargarCatalogo(); }, vigente);
 }
 
 function aviso(error: unknown): void {

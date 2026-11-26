@@ -1,0 +1,6 @@
+prueba	estudiante_id	intento_id	version	orden	pre	post	pre_en	post_en
+E14	estudiante-lr	9c0c7feb84142a1026f6775ad798dadb	instrumento-ensayo-v1	A→B	respondido	respondido	2026-11-26T14:25:28.547Z	2026-11-26T14:25:28.627Z
+E14	estudiante-2	c4c5bf195d59f8446ce58ceee3f7cfee	instrumento-ensayo-v1	B→A	omitido	respondido	2026-11-26T14:25:28.574Z	2026-11-26T14:25:28.641Z
+E14	estudiante-3	71f1453938a0993ec90f240326c638e6	instrumento-ensayo-v1	A→B	respondido	omitido	2026-11-26T14:25:28.602Z	2026-11-26T14:25:28.655Z
+E15	estudiante-lr	e93db4a3b154cfc27ecb4a956c7e6e2e	instrumento-ensayo-v1	A→B	respondido	respondido	2026-11-26T14:25:28.525Z	2026-11-26T14:25:28.544Z
+E15	estudiante-t055-b	527da1a1a433716d9a03374a88d739ea	instrumento-ensayo-v1	B→A	respondido	respondido	2026-11-26T14:25:28.555Z	2026-11-26T14:25:28.573Z

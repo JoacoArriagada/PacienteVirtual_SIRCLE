@@ -1,0 +1,22 @@
+{
+  "tarea": "T076",
+  "fecha": "2026-11-26",
+  "revision": "08a90308 + cambios locales",
+  "origen": "sircle-modulo01-ensayo",
+  "volumenRestaurado": "sircle-modulo01-restaurado_sircle-datos",
+  "procedimiento": [
+    "Guardar una copia con sircle respaldar dentro del backend de ensayo.",
+    "Reiniciar backend y comparar la vista del intento.",
+    "Copiar el respaldo como /var/lib/sircle/sircle.sqlite a sqlite-init en el proyecto separado.",
+    "Iniciar backend en el proyecto restaurado y comparar la vista y el inventario."
+  ],
+  "coincideVista": true,
+  "fuentes": 14,
+  "mismoInventario": true,
+  "intento": "aa5478d65cfa8ca3b9573ae1455d28cf",
+  "turno": "66e1762d6efcd5f0471923bb39ad98e6",
+  "medicion": "854e76eac341671d576a80ff6a58bf19",
+  "entrega": "f87448a7d2401e4a9819fc94ca413b62",
+  "post": "omitido",
+  "estadoEvaluacion": "pendiente"
+}

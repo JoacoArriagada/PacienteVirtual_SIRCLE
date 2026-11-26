@@ -1,0 +1,95 @@
+{
+  "la_clave_fallida_se_recupera_una_vez_y_reenvia_el_mismo_acuse": {
+    "clave": "t017-recuperacion-qwen",
+    "pares_confirmados_para_la_operacion": 1,
+    "primera_confirmacion": {
+      "acuse": {
+        "agente": "lr",
+        "hablante": "LR",
+        "intento_id": "73e6200047a91219cb2117b6fd41e241",
+        "operacion_id": "6007a36395d46af5880f37610046426c",
+        "orden": 2,
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "revision": 3,
+        "tipo_respuesta": "hecho",
+        "turno_id": "e6c99f9fa40df2801e44689e18a8d3d2"
+      },
+      "http": 201
+    },
+    "reenvio": {
+      "acuse": {
+        "agente": "lr",
+        "hablante": "LR",
+        "intento_id": "73e6200047a91219cb2117b6fd41e241",
+        "operacion_id": "6007a36395d46af5880f37610046426c",
+        "orden": 2,
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "revision": 3,
+        "tipo_respuesta": "hecho",
+        "turno_id": "e6c99f9fa40df2801e44689e18a8d3d2"
+      },
+      "http": 200
+    },
+    "turnos_antes": [
+      "6d1adfeb9cb62b6504417a0141aa13aa"
+    ],
+    "turnos_despues": [
+      "6d1adfeb9cb62b6504417a0141aa13aa",
+      "e6c99f9fa40df2801e44689e18a8d3d2"
+    ]
+  },
+  "una_parafrasis_inedita_confirma_y_recupera_un_turno_real_de_lr": {
+    "acuse": {
+      "agente": "lr",
+      "hablante": "LR",
+      "intento_id": "73e6200047a91219cb2117b6fd41e241",
+      "operacion_id": "2ea8424ee5cee935edccb97a1ed65eaf",
+      "orden": 1,
+      "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "revision": 2,
+      "tipo_respuesta": "hecho",
+      "turno_id": "6d1adfeb9cb62b6504417a0141aa13aa"
+    },
+    "clave": "t015-parafrasis-inicio",
+    "http": 201,
+    "numero_de_sugerencias_cotejadas": 15,
+    "peticion": {
+      "texto": "¿Hace cuánto empezaste a sentir que te faltaba el aire?"
+    },
+    "recuento_posterior": 1,
+    "recuento_previo": 0,
+    "ruta": "http://127.0.0.1:18082/api/intentos/73e6200047a91219cb2117b6fd41e241/turnos",
+    "turno_recuperado": {
+      "agente": "lr",
+      "hablante": "LR",
+      "intento_id": "73e6200047a91219cb2117b6fd41e241",
+      "operacion_id": "2ea8424ee5cee935edccb97a1ed65eaf",
+      "orden": 1,
+      "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "revision": 2,
+      "tipo_respuesta": "hecho",
+      "turno_id": "6d1adfeb9cb62b6504417a0141aa13aa"
+    }
+  },
+  "una_pregunta_nueva_sin_motor_devuelve_503_y_preserva_el_historial": {
+    "clave": "t017-recuperacion-qwen",
+    "http": 503,
+    "intento_id": "73e6200047a91219cb2117b6fd41e241",
+    "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+    "respuesta": {
+      "mensaje": "Entrevista temporalmente indisponible. Reintenta cuando se recupere el modelo local."
+    },
+    "revision": 2,
+    "turnos_antes": [
+      "6d1adfeb9cb62b6504417a0141aa13aa"
+    ],
+    "turnos_despues": [
+      "6d1adfeb9cb62b6504417a0141aa13aa"
+    ],
+    "turnos_nuevos": 0
+  }
+}

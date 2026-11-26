@@ -1,0 +1,196 @@
+{
+  "motor": "Ollama 0.40.5, qwen3.5:4b en CPU",
+  "equipo": "Windows de desarrollo",
+  "fecha": "2026-11-26",
+  "aislamiento": {
+    "solapamiento_ms": 4467,
+    "operaciones": [
+      {
+        "turno": {
+          "agente": "lr",
+          "hablante": "LR",
+          "intento_id": "48875b1c6f018294e0c883b22a8d2d6f",
+          "operacion_id": "a729f3d44c866709acc2c40e32a21ae2",
+          "orden": 1,
+          "pregunta": "¿Desde cuándo comenzó la falta de aire?",
+          "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+          "revision": 2,
+          "tipo_respuesta": "hecho",
+          "turno_id": "81e633edd8b1066a47b8b996868dc56f"
+        },
+        "recibida_ms": 1795708282058,
+        "confirmada_ms": 1795708286525,
+        "modelo": "qwen3.5:4b",
+        "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "seleccion": {
+          "hecho_id": "lr-inicio"
+        },
+        "lectura_ajena_http": 403
+      },
+      {
+        "turno": {
+          "agente": "lr",
+          "hablante": "LR",
+          "intento_id": "79d9692011ad1493d88eff2099af1e4e",
+          "operacion_id": "d249d385a95d34ea57872670b34734aa",
+          "orden": 1,
+          "pregunta": "¿Conoce sus antecedentes familiares?",
+          "respuesta": "No conozco los antecedentes de mi familia biológica porque fui adoptada.",
+          "revision": 2,
+          "tipo_respuesta": "hecho",
+          "turno_id": "8121d41201425bfac179e84f961eb66c"
+        },
+        "recibida_ms": 1795708282058,
+        "confirmada_ms": 1795708291771,
+        "modelo": "qwen3.5:4b",
+        "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "seleccion": {
+          "hecho_id": "lr-antecedentes-familiares"
+        },
+        "lectura_ajena_http": 403
+      }
+    ]
+  },
+  "parafrasis": {
+    "acuse": {
+      "agente": "lr",
+      "hablante": "LR",
+      "intento_id": "48875b1c6f018294e0c883b22a8d2d6f",
+      "operacion_id": "4b901e83781056f13d0d21b9064a4159",
+      "orden": 2,
+      "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "revision": 3,
+      "tipo_respuesta": "hecho",
+      "turno_id": "39d290512c4e46931becc2fc507400cb"
+    },
+    "clave": "t015-parafrasis-inicio",
+    "http": 201,
+    "numero_de_sugerencias_cotejadas": 15,
+    "peticion": {
+      "texto": "¿Hace cuánto empezaste a sentir que te faltaba el aire?"
+    },
+    "recuento_posterior": 2,
+    "recuento_previo": 1,
+    "ruta": "http://127.0.0.1:18081/api/intentos/48875b1c6f018294e0c883b22a8d2d6f/turnos",
+    "turno_recuperado": {
+      "agente": "lr",
+      "hablante": "LR",
+      "intento_id": "48875b1c6f018294e0c883b22a8d2d6f",
+      "operacion_id": "4b901e83781056f13d0d21b9064a4159",
+      "orden": 2,
+      "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+      "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+      "revision": 3,
+      "tipo_respuesta": "hecho",
+      "turno_id": "39d290512c4e46931becc2fc507400cb"
+    }
+  },
+  "caida": {
+    "clave": "t017-recuperacion-qwen",
+    "http": 503,
+    "intento_id": "48875b1c6f018294e0c883b22a8d2d6f",
+    "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+    "respuesta": {
+      "mensaje": "Entrevista temporalmente indisponible. Reintenta cuando se recupere el modelo local."
+    },
+    "revision": 5,
+    "turnos_antes": [
+      "81e633edd8b1066a47b8b996868dc56f",
+      "39d290512c4e46931becc2fc507400cb",
+      "2097742b66492cbbea21d23d7662b167",
+      "3fbc26b2c08c07df508572e68010bb26"
+    ],
+    "turnos_despues": [
+      "81e633edd8b1066a47b8b996868dc56f",
+      "39d290512c4e46931becc2fc507400cb",
+      "2097742b66492cbbea21d23d7662b167",
+      "3fbc26b2c08c07df508572e68010bb26"
+    ],
+    "turnos_nuevos": 0
+  },
+  "recuperacion": {
+    "clave": "t017-recuperacion-qwen",
+    "pares_confirmados_para_la_operacion": 1,
+    "primera_confirmacion": {
+      "acuse": {
+        "agente": "lr",
+        "hablante": "LR",
+        "intento_id": "48875b1c6f018294e0c883b22a8d2d6f",
+        "operacion_id": "f8db0d1b9e98147efa2271d6bf357ee5",
+        "orden": 5,
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "revision": 6,
+        "tipo_respuesta": "hecho",
+        "turno_id": "5c6bb684210b5ce38e388ef13d912193"
+      },
+      "http": 201
+    },
+    "reenvio": {
+      "acuse": {
+        "agente": "lr",
+        "hablante": "LR",
+        "intento_id": "48875b1c6f018294e0c883b22a8d2d6f",
+        "operacion_id": "f8db0d1b9e98147efa2271d6bf357ee5",
+        "orden": 5,
+        "pregunta": "¿Hace cuánto empezaste a sentir que te faltaba el aire?",
+        "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+        "revision": 6,
+        "tipo_respuesta": "hecho",
+        "turno_id": "5c6bb684210b5ce38e388ef13d912193"
+      },
+      "http": 200
+    },
+    "turnos_antes": [
+      "81e633edd8b1066a47b8b996868dc56f",
+      "39d290512c4e46931becc2fc507400cb",
+      "2097742b66492cbbea21d23d7662b167",
+      "3fbc26b2c08c07df508572e68010bb26"
+    ],
+    "turnos_despues": [
+      "81e633edd8b1066a47b8b996868dc56f",
+      "39d290512c4e46931becc2fc507400cb",
+      "2097742b66492cbbea21d23d7662b167",
+      "3fbc26b2c08c07df508572e68010bb26",
+      "5c6bb684210b5ce38e388ef13d912193"
+    ]
+  },
+  "latencias": [
+    {
+      "estado": "frio",
+      "residente_antes": false,
+      "latencia_http_ms": 14323.595,
+      "http": 201,
+      "turno_id": "2097742b66492cbbea21d23d7662b167",
+      "proceso_antes": null
+    },
+    {
+      "estado": "caliente",
+      "residente_antes": true,
+      "latencia_http_ms": 7821.258999999999,
+      "http": 201,
+      "turno_id": "3fbc26b2c08c07df508572e68010bb26",
+      "proceso_antes": {
+        "context_length": 2048,
+        "details": {
+          "families": [
+            "qwen35"
+          ],
+          "family": "qwen35",
+          "format": "gguf",
+          "parameter_size": "4.2B",
+          "parent_model": "",
+          "quantization_level": "Q4_K_M"
+        },
+        "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "expires_at": "2026-11-26T13:01:52.1157554-03:00",
+        "model": "qwen3.5:4b",
+        "name": "qwen3.5:4b",
+        "runner": "llamacpp",
+        "size": 3077528615,
+        "size_vram": 0
+      }
+    }
+  ]
+}

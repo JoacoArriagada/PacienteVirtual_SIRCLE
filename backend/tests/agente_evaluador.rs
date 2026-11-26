@@ -180,6 +180,7 @@ async fn rastrear_criterio_a_evidencia_y_regresion() {
     assert_eq!(estado, "terminado");
     let ruta = format!("/api/evaluaciones/{id}");
     let ruta_traza = format!("{ruta}/traza");
+    let ruta_criterio = format!("{ruta}/criterios/valoracion/traza?revision=1");
     let (docente, _) = servidor.entrar("docente-demo").await;
     let (estudiante, _) = servidor.entrar(intento_lr::ESTUDIANTE_LR).await;
     db.execute("INSERT INTO identidades VALUES ('docente-ajeno-t058','docente')", []).unwrap();
@@ -188,9 +189,16 @@ async fn rastrear_criterio_a_evidencia_y_regresion() {
     let traza = servidor.consultar("GET", &ruta_traza, Some(&docente), None).await;
     assert_eq!(vista.estado, StatusCode::OK);
     assert_eq!(traza.estado, StatusCode::OK);
+    let criterio = servidor.consultar("GET", &ruta_criterio, Some(&docente), None).await;
+    assert_eq!(criterio.estado, StatusCode::OK);
+    assert_eq!(criterio.cuerpo["revision"], 1);
+    assert_eq!(criterio.cuerpo["observacion"]["criterio_id"], "valoracion");
+    assert!(criterio.cuerpo["citas"].as_array().unwrap().iter().any(|cita| {
+        cita["evidencia"]["tipo"] == "medicion" && cita["procedencia"]["sha256"].as_str().is_some()
+    }));
     let mut denegaciones = Vec::new();
     for actor in [("titular", &estudiante), ("docente ajeno", &ajeno)] {
-        for recurso in [&ruta, &ruta_traza] {
+        for recurso in [&ruta, &ruta_traza, &ruta_criterio] {
             let r = servidor.consultar("GET", recurso, Some(actor.1), None).await;
             assert_eq!(r.estado, StatusCode::FORBIDDEN);
             denegaciones.push(json!({"actor":actor.0,"ruta":recurso,"http":r.estado.as_u16()}));
@@ -552,14 +560,21 @@ async fn publica_revision_elegida_y_reserva_devolucion_hasta_cerrar_post() {
     assert_eq!(retenida.cuerpo, inicial.cuerpo);
     assert_eq!(acceso(&b_cookie, &ruta_a).await.estado, StatusCode::FORBIDDEN);
     assert_eq!(acceso(&ajeno, &doc_ruta).await.estado, StatusCode::FORBIDDEN);
-    publicacion::resolver_post_ensayo(&mut db, &a, "respondido").unwrap();
+    let post = format!("/api/intentos/{a}/encuestas/post");
+    let respondido = servidor.peticion("PUT", &post, Some(&a_cookie), Some("t063-post"), Some(json!({
+        "estado":"respondido","respuestas":{"P1":5,"P2":1},
+    }))).await;
+    assert_eq!(respondido.estado, StatusCode::OK);
     let visible_a = acceso(&a_cookie, &ruta_a).await;
     assert_eq!(visible_a.cuerpo["estado"], "publicada");
     assert_eq!(visible_a.cuerpo["revision"], 1);
     assert_eq!(visible_a.cuerpo["observaciones"], base.cuerpo["resultado"]["observaciones"]);
+    assert_eq!(visible_a.cuerpo["puntaje"], base.cuerpo["puntaje"]);
     assert!(visible_a.cuerpo.get("autor_id").is_none());
     assert!(visible_a.cuerpo.get("borrador").is_none());
     assert!(publicacion::resolver_post_ensayo(&mut db, &a, "omitido").is_err());
+    let retroactivo = servidor.peticion("PUT", &post, Some(&a_cookie), Some("t063-retroactivo"), Some(json!({"estado":"omitido"}))).await;
+    assert_eq!(retroactivo.estado, StatusCode::CONFLICT);
     let revision_nueva = if antes.cuerpo["revision_actual"]["revision"] == 1 {
         let original = &base.cuerpo["resultado"]["observaciones"][1];
         let editada = servidor.peticion("PATCH", &doc_ruta, Some(&docente), Some("t063-editar"), Some(json!({
@@ -582,6 +597,12 @@ async fn publica_revision_elegida_y_reserva_devolucion_hasta_cerrar_post() {
     let actualizada = acceso(&a_cookie, &ruta_a).await;
     assert_eq!(actualizada.cuerpo["observaciones"], revision_nueva["resultado"]["observaciones"]);
     assert_eq!(actualizada.cuerpo["revision"], 2);
+    let copia = Servidor::copiar(&servidor.db);
+    let restaurada = copia.consultar("GET", &ruta_a, Some(&a_cookie), None).await;
+    assert_eq!(restaurada.cuerpo, actualizada.cuerpo);
+    let ruta_intento = format!("/api/intentos/{a}");
+    let esperado = acceso(&a_cookie, &ruta_intento).await;
+    assert_eq!(copia.consultar("GET", &ruta_intento, Some(&a_cookie), None).await.cuerpo, esperado.cuerpo);
 
     let alta_b = intento_lr::alta(&servidor, &b_cookie).await;
     let b = alta_b.cuerpo["intento_id"].as_str().unwrap();

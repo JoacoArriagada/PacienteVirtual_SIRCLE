@@ -30,8 +30,7 @@ impl Servidor {
     pub fn copiar(base: &Path) -> Self {
         let directorio = tempfile::tempdir().unwrap();
         let db = directorio.path().join("prueba.sqlite");
-        let origen = sircle::sqlite::abrir_existente(base).unwrap();
-        origen.execute("VACUUM INTO ?1", [db.to_str().unwrap()]).unwrap();
+        sircle::sqlite::respaldar(base, &db).unwrap();
         sircle::sqlite::migrar(&mut sircle::sqlite::abrir_existente(&db).unwrap()).unwrap();
         let app = router(Estado::con_base(db.clone()).unwrap());
         Self { _directorio: directorio, db, app }

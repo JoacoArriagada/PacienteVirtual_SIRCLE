@@ -8,16 +8,16 @@ use serde::{Deserialize, Serialize};
 
 use crate::{
     app::{errores::ErrorApi, estado::Estado},
-    modules::acceso::{actividades::actividad_no_asignada, sesiones},
-    shared::operaciones,
+    modules::{acceso::{actividades::actividad_no_asignada, sesiones}, encuestas::{formas, respuestas}},
+    shared::operaciones::Operacion,
 };
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Serialize)]
 pub struct AltaIntento {
     actividad_id: String,
 }
 
-#[derive(Serialize)]
+#[derive(Deserialize, Serialize)]
 pub struct Intento {
     pub intento_id: String,
     pub actividad_id: String,
@@ -32,6 +32,7 @@ pub struct Intento {
     pub rubrica_sha256: Option<String>,
     pub version_instrumento: String,
     pub pre: String,
+    pub post: String,
     pub fase: String,
     pub estado: String,
     pub revision: i64,
@@ -84,7 +85,10 @@ pub async fn crear(
         if identidad.rol != "estudiante" || !asignada {
             return Err(actividad_no_asignada());
         }
-        operaciones::clave(&cabeceras)?;
+        let operacion = Operacion::nueva(&identidad.id, &alta.actividad_id, &cabeceras, "POST intentos", &alta)?;
+        if let Some(id) = operacion.recuperar::<String>(&tx)? {
+            return Ok((StatusCode::OK, Json(recuperar(&tx, &id, &identidad.id)?)));
+        }
 
         let nuevo = tx.execute(
             "INSERT INTO intentos (id, actividad_id, estudiante_id, escenario_id, version_caso_id,
@@ -100,6 +104,14 @@ pub async fn crear(
                AND r.caso=a.escenario_id AND r.estado='aprobada'
              WHERE a.id=?2 AND a.tipo='ensayo' AND v.estado='ensayo'
                AND (ra.rubrica_id IS NULL OR r.id IS NOT NULL)
+             UNION ALL
+             SELECT lower(hex(randomblob(16))), a.id, ?1, a.escenario_id, c.version_caso_id,
+                    r.version, c.version_instrumento, 'pendiente', 'pre_pendiente', 'inicial', 0, r.id, r.sha256
+             FROM actividades a JOIN configuraciones_formales c ON c.actividad_id=a.id
+             JOIN versiones_clinicas v ON v.id=c.version_caso_id AND v.escenario_id=a.escenario_id AND v.estado='aprobada'
+             JOIN instrumentos_educativos e ON e.version=c.version_instrumento AND e.constancia IS NOT NULL
+             JOIN rubricas r ON r.id=c.rubrica_id AND r.actividad_id=a.id AND r.caso=a.escenario_id AND r.estado='aprobada'
+             WHERE a.id=?2 AND a.tipo='formal' AND json_extract(r.constancia,'$.tipo')='formal'
              ON CONFLICT(actividad_id, estudiante_id) DO NOTHING",
             params![identidad.id, alta.actividad_id],
         )?;
@@ -111,6 +123,10 @@ pub async fn crear(
             StatusCode::CONFLICT, "La actividad todavía no tiene versiones habilitadas.",
         ))?;
         let intento = recuperar(&tx, &id, &identidad.id)?;
+        if nuevo == 1 {
+            formas::asignar(&tx, &id, &intento.actividad_id, &intento.version_instrumento)?;
+        }
+        operacion.confirmar(&tx, &id)?;
         tx.commit()?;
         let estado = if nuevo == 1 { StatusCode::CREATED } else { StatusCode::OK };
         Ok((estado, Json(intento)))
@@ -118,7 +134,7 @@ pub async fn crear(
 }
 
 pub fn recuperar(db: &Connection, id: &str, estudiante: &str) -> Result<Intento, ErrorApi> {
-    db.query_row(
+    let mut intento = db.query_row(
         "SELECT i.id, i.actividad_id, i.estudiante_id, a.tipo, i.escenario_id,
                 v.version, i.version_rubrica, i.version_instrumento, i.pre, i.fase, i.estado,
                 i.revision, i.rubrica_id, i.rubrica_sha256
@@ -132,9 +148,11 @@ pub fn recuperar(db: &Connection, id: &str, estudiante: &str) -> Result<Intento,
             tipo: fila.get(3)?, caso: fila.get(4)?, version_caso: fila.get(5)?,
             version_rubrica: fila.get(6)?, version_instrumento: fila.get(7)?, pre: fila.get(8)?,
             fase: fila.get(9)?, estado: fila.get(10)?, revision: fila.get(11)?,
-            rubrica_id: fila.get(12)?, rubrica_sha256: fila.get(13)?,
+            rubrica_id: fila.get(12)?, rubrica_sha256: fila.get(13)?, post: String::new(),
         }),
-    ).optional()?.ok_or_else(actividad_no_asignada)
+    ).optional()?.ok_or_else(actividad_no_asignada)?;
+    intento.post = respuestas::estado_post(db, id)?;
+    Ok(intento)
 }
 
 pub fn resolver_pre_ensayo(db: &mut Connection, id: &str) -> anyhow::Result<()> {

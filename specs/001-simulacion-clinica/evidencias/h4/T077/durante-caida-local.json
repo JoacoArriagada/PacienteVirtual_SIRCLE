@@ -1,0 +1,69 @@
+{
+  "entorno": "procesos locales",
+  "arranque": {
+    "base": {
+      "disponible": true
+    },
+    "modelo": {
+      "aviso": "La inferencia aún no está disponible. Si la preparación falló, revisa los registros de inferencia y reinicia el servicio.",
+      "contexto_entrevista": 2048,
+      "digest_esperado": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "disponible": false,
+      "nombre": "qwen3.5:4b"
+    },
+    "servicio": "sircle"
+  },
+  "pre": {
+    "intento_id": "7f9b75a606efaaed2610efac9663264e",
+    "version": "instrumento-ensayo-v1",
+    "momento": "pre",
+    "forma": "A",
+    "estado": "respondido",
+    "instante": "2026-11-26T14:40:38.822Z"
+  },
+  "post": {
+    "intento_id": "7f9b75a606efaaed2610efac9663264e",
+    "version": "instrumento-ensayo-v1",
+    "momento": "post",
+    "forma": "B",
+    "estado": "omitido",
+    "instante": "2026-11-26T14:40:41.378Z"
+  },
+  "medicion": {
+    "medicion_id": "1800d0e9be3aa76d5a6a9e96107728f8",
+    "intento_id": "7f9b75a606efaaed2610efac9663264e",
+    "instrumento": "presion",
+    "accion": "toma_completa",
+    "fase": "inicial",
+    "valor": {
+      "diastolica": 85,
+      "sistolica": 148
+    },
+    "unidad": "mmHg",
+    "momento": "2026-11-26T14:40:41.022Z",
+    "en_ficha": false,
+    "revision": 2
+  },
+  "entrega": {
+    "entrega_id": "bf98bcab743f32e95d82342b9420e248",
+    "intento_id": "7f9b75a606efaaed2610efac9663264e",
+    "revision": 3,
+    "rubrica_id": 1,
+    "version_rubrica": "1",
+    "rubrica_sha256": "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437",
+    "confirmada_en": "2026-11-26T14:40:41.046Z",
+    "estado_evaluacion": "pendiente",
+    "post": "pendiente"
+  },
+  "antes": [
+    {
+      "entrega_id": "bf98bcab743f32e95d82342b9420e248",
+      "estudiante_id": "estudiante-lr",
+      "intento_id": "7f9b75a606efaaed2610efac9663264e",
+      "confirmada_en": "2026-11-26T14:40:41.046Z",
+      "estado": "pendiente",
+      "evaluacion_id": null
+    }
+  ],
+  "despues": null
+}

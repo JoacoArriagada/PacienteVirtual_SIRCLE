@@ -2,7 +2,7 @@ use std::{net::SocketAddr, path::PathBuf};
 
 use clap::{Parser, Subcommand};
 use sircle::{agentes::mensajes::Agente, app::{estado::Estado, router::router, trabajadores},
-    modules::{escenarios::importacion, evaluacion::{publicacion, rubricas, trabajos}, intentos::intento}, sqlite};
+    modules::{entrevista::ollama::Ollama, escenarios::{formal, importacion}, evaluacion::{publicacion, rubricas, trabajos}, intentos::intento}, sqlite};
 use tokio::net::TcpListener;
 
 #[derive(Parser)]
@@ -27,6 +27,33 @@ enum Comando {
         db: PathBuf,
         #[arg(long)]
         fuentes: PathBuf,
+        #[arg(long)]
+        rubrica_ensayo: bool,
+        #[arg(long)]
+        actividad_formal: Option<PathBuf>,
+    },
+    /// Exportar para revisión el material clínico, educativo y la rúbrica de LR.
+    MaterialFormal {
+        #[arg(long)]
+        db: PathBuf,
+        #[arg(long, default_value = "lr-v1")]
+        version_clinica: String,
+        #[arg(long, default_value = "lr-educativo-v1")]
+        version_instrumento: String,
+        #[arg(long, default_value = "1")]
+        version_rubrica: String,
+    },
+    /// Calcular las huellas del material formal después de editar el borrador.
+    HuellasFormales {
+        #[arg(long)]
+        archivo: PathBuf,
+    },
+    /// Generar una copia consistente de SQLite, incluso con la API activa.
+    Respaldar {
+        #[arg(long)]
+        db: PathBuf,
+        #[arg(long)]
+        destino: PathBuf,
     },
     /// Omitir el pre en un intento técnico local.
     ResolverPreEnsayo {
@@ -75,7 +102,7 @@ async fn main() -> anyhow::Result<()> {
             let url = std::env::var("OLLAMA_URL").unwrap_or_else(|_| "http://127.0.0.1:11434".into());
             let listener = TcpListener::bind(direccion).await?;
             let supervisor = trabajadores::iniciar(&url).await?;
-            let estado = estado.con_trabajadores(supervisor.clone());
+            let estado = estado.con_trabajadores(supervisor.clone()).con_ollama(Ollama::nueva(&url)?);
             let cola = estado.clone();
             let cola = tokio::spawn(trabajos::cola(cola));
             println!("SIRCLE API en http://{}", listener.local_addr()?);
@@ -85,8 +112,10 @@ async fn main() -> anyhow::Result<()> {
             supervisor.apagar().await;
             resultado?;
         }
-        Comando::Preparar { db, fuentes } => {
-            let inventario = importacion::preparar(&db, &fuentes)?;
+        Comando::Preparar { db, fuentes, rubrica_ensayo, actividad_formal } => {
+            let archivo_local = fuentes.join("adaptaciones/lr/actividad-formal.local.json");
+            let actividad_formal = actividad_formal.or_else(|| archivo_local.is_file().then_some(archivo_local));
+            let inventario = importacion::preparar_con_material(&db, &fuentes, rubrica_ensayo, actividad_formal.as_deref())?;
             println!("escenario\tfuente_id\trevision_id\tversion_id\tversion\trol\truta\tsha256");
             for fila in inventario {
                 println!("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}",
@@ -94,6 +123,15 @@ async fn main() -> anyhow::Result<()> {
                     fila.version, fila.rol, fila.ruta, fila.sha256);
             }
         }
+        Comando::MaterialFormal { db, version_clinica, version_instrumento, version_rubrica } => {
+            let db = sqlite::abrir_existente(db)?;
+            let material = formal::borrador(&db, version_clinica, version_instrumento, version_rubrica)?;
+            println!("{}", serde_json::to_string_pretty(&material)?);
+        }
+        Comando::HuellasFormales { archivo } => {
+            println!("{}", serde_json::to_string_pretty(&formal::huellas(&archivo)?)?);
+        }
+        Comando::Respaldar { db, destino } => sqlite::respaldar(&db, &destino)?,
         Comando::ResolverPreEnsayo { db, intento } => {
             intento::resolver_pre_ensayo(&mut sqlite::abrir_existente(db)?, &intento)?;
             println!("Pre de ensayo resuelto para {intento}");

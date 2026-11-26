@@ -1,6 +1,7 @@
 import { api, ErrorHttp, escribir } from "../../app/api.js";
 import type { VistaIntento } from "../intentos/ficha.js";
 import { mostrarDevolucion } from "../devolucion/publicacion.js";
+import { mostrarPost } from "../encuestas/post.js";
 import { iconoValoracion, retratoLR } from "../valoracion/brazo.js";
 import { mostrarDato } from "./apuntes.js";
 
@@ -10,7 +11,7 @@ export interface AcuseEntrega {
   confirmada_en: string;
 }
 
-export function mostrarAcuse(contenedor: HTMLElement, acuse: AcuseEntrega, intento: string): void {
+export function mostrarAcuse(contenedor: HTMLElement, acuse: AcuseEntrega, intento: VistaIntento): void {
   const panel = document.createElement("section");
   panel.className = "panel stack";
   panel.dataset.entregaId = acuse.entrega_id;
@@ -21,7 +22,9 @@ export function mostrarAcuse(contenedor: HTMLElement, acuse: AcuseEntrega, inten
   devolucion.setAttribute("aria-live", "polite");
   panel.append(titulo, devolucion);
   contenedor.prepend(panel);
-  void mostrarDevolucion(devolucion, intento);
+  const continuar = () => mostrarDevolucion(devolucion, intento.intento_id, intento.evidencias ?? []);
+  if (intento.post === "pendiente") mostrarPost(devolucion, intento.intento_id, continuar);
+  else void continuar();
 }
 
 export function montarEntrega(

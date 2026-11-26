@@ -1,0 +1,1460 @@
+{
+  "fecha": "2026-11-26",
+  "rama": "feature/prototipo",
+  "revision_base": "08a90308f74e7742a78570171acb76e083497698",
+  "sha256_inventario": "cf3137304285609c1a28bcc557e2174fc1d0714c7b03199a6f63af3ba8197122",
+  "cantidad_archivos": 360,
+  "graphify": {
+    "archivos": 111,
+    "nodos": 1194,
+    "enlaces": 2286,
+    "comunidades": 80,
+    "tokens": {
+      "input": 0,
+      "output": 0
+    },
+    "revision_base": "08a90308f74e7742a78570171acb76e083497698"
+  },
+  "archivos": [
+    {
+      "ruta": ".dockerignore",
+      "sha256": "1aed10ed4de54a16976b1e74b5d778b81517a97b0e728f7accb2dbe781e4e049"
+    },
+    {
+      "ruta": ".gitattributes",
+      "sha256": "5ecff6b05ae6fdcde25921745da72007188d5de4086e7314807632cec6630823"
+    },
+    {
+      "ruta": ".gitignore",
+      "sha256": "038155ca9127128e859d558a1f41dfc9a5cc597c7dd0cba2cf100c6df647f758"
+    },
+    {
+      "ruta": "backend/Cargo.lock",
+      "sha256": "5c9eed218d8e9ea46fa166df771732496da9fba7ea19e26a1f14cfeea11815ef"
+    },
+    {
+      "ruta": "backend/Cargo.toml",
+      "sha256": "cc0c93dcd83a30a9f6c1539217d9566f8f186777b4b78362023c0f35355d6f72"
+    },
+    {
+      "ruta": "backend/Dockerfile",
+      "sha256": "0a4d60ef312b8537681fedfcbcfe70d2221a52bd9e1a373c4a6130bcfac40019"
+    },
+    {
+      "ruta": "backend/migrations/0001_fuentes.sql",
+      "sha256": "afd880c537b755ddd67a3d527a074e8d8c19658be1e8da786e9b2812b9ab370e"
+    },
+    {
+      "ruta": "backend/migrations/0002_asignaciones.sql",
+      "sha256": "75c92842cbf7000a1604bb55fc9afca8e144420213b5ac0c11ef0cafbd89675e"
+    },
+    {
+      "ruta": "backend/migrations/0003_intentos.sql",
+      "sha256": "bbeac1c9cac9badca53d50db4d53849b436bfbeb2cef28511eeb857e704d7314"
+    },
+    {
+      "ruta": "backend/migrations/0004_mediciones.sql",
+      "sha256": "c86a028b545c04ffd47ba1250060ea67a51846ffd5fee4acd8a19d5ba185bb08"
+    },
+    {
+      "ruta": "backend/migrations/0004a_operaciones.sql",
+      "sha256": "2a2e142deaa0646d98b56a9e41178c88058217e84cae2db9c3482d6db9d21423"
+    },
+    {
+      "ruta": "backend/migrations/0005_hechos.sql",
+      "sha256": "422c7f1970bb9e81c0636a61a58229b30c93f3b71a7dbbed171c65bbc83cec5e"
+    },
+    {
+      "ruta": "backend/migrations/0006_turnos.sql",
+      "sha256": "70816a54cf48bd6dd2abd14fb4750dc0d743f89ee62888ee427b8586925f2058"
+    },
+    {
+      "ruta": "backend/migrations/0007_trazas.sql",
+      "sha256": "207960b4f40f2fa87b2b6d435b3dc2ea4ff9d6a0c6c2bfab0555d8e28071ba5f"
+    },
+    {
+      "ruta": "backend/migrations/0007a_procedencia_ensayo.sql",
+      "sha256": "52118ceab4ceebdfc5b7008e52b7616b12b237273c37cc4c82ba9e01cafa69d2"
+    },
+    {
+      "ruta": "backend/migrations/0007b_exploraciones.sql",
+      "sha256": "78529199ad80ac5fbe8fd349dc80ba6c0406180fdbf6bffff3bc5b9ed37a11c6"
+    },
+    {
+      "ruta": "backend/migrations/0008_ordenes.sql",
+      "sha256": "d2f93d51b1fd1088b7c102a4f547936b2b8d09d7a9992f6427832da90d9faae0"
+    },
+    {
+      "ruta": "backend/migrations/0009_razonamiento.sql",
+      "sha256": "1df2f3a60897a2f1ca016a29081ab28489853da5b650180b934ed9069774aa1a"
+    },
+    {
+      "ruta": "backend/migrations/0010_hipotesis.sql",
+      "sha256": "b0b5cdd56985803a73f26206fa8640a954051814fc4608037e6959fda758f36a"
+    },
+    {
+      "ruta": "backend/migrations/0010_rubricas.sql",
+      "sha256": "2491182d0b2ebbb7db38ce80269fce8deea871620075e0586daf6e0e887dc9fd"
+    },
+    {
+      "ruta": "backend/migrations/0010a_mensajes.sql",
+      "sha256": "b009df6581a3182d58f991b5075ced46df46bc05c3b90584f4938ec51acc3564"
+    },
+    {
+      "ruta": "backend/migrations/0010b_memoria.sql",
+      "sha256": "355a225bdf50b80b31a6d2138d99d9fad877ca78896cf166c658ea8e62a70ac0"
+    },
+    {
+      "ruta": "backend/migrations/0010c_medios_examen.sql",
+      "sha256": "dbbc6dede4a85ed1091779ba7f70f2fef26c015b37bd2199cd5814159ee0847f"
+    },
+    {
+      "ruta": "backend/migrations/0010d_rubrica_intento.sql",
+      "sha256": "762033c334e03221d00747b52b1253599ac94c92d174823cff8a57d3652f1f73"
+    },
+    {
+      "ruta": "backend/migrations/0011_entregas.sql",
+      "sha256": "43dbf98c4c54f41f35214a1c3acbfceb891a388898feea23376599afc395c467"
+    },
+    {
+      "ruta": "backend/migrations/0012_evaluacion.sql",
+      "sha256": "84ee04e7ec881a7e02aa043a1cc44bac9a24ec9f4b72287ab7a1553652528cab"
+    },
+    {
+      "ruta": "backend/migrations/0013_revisiones.sql",
+      "sha256": "014fa7549296e704926d3b02c8212b9c0fea52cdb9fc3c9ee6ca88da0559c1f2"
+    },
+    {
+      "ruta": "backend/migrations/0013a_publicacion.sql",
+      "sha256": "c38d55813f2f144e0d76f52546e345bd8c8a646bf3a1f31cf2e29600882599b2"
+    },
+    {
+      "ruta": "backend/migrations/0014_encuestas.sql",
+      "sha256": "1a9c3c5c1e5a2eff959e2c1e556b6b9aa372fad8c106b9f4aa6a26ed15f3d146"
+    },
+    {
+      "ruta": "backend/migrations/0015_actividad_formal.sql",
+      "sha256": "dd789ac3fe22a5b0341a23e5a115f7c5e39371f4bfc732799469d4c8efbbdbb4"
+    },
+    {
+      "ruta": "backend/migrations/0016_trazas_rechazos.sql",
+      "sha256": "2e72e195b95487ad7e9b2448d8b6d29cc634cb69972b5c9a91f97ea6bb3a25d8"
+    },
+    {
+      "ruta": "backend/migrations/0017_reservas_operaciones.sql",
+      "sha256": "7e755e97f241f8efdbbcfca84f0231d4df6f0bb415c26e1018fb45755740dcf0"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/01_rol_objetivo_modelo/README.md",
+      "sha256": "467be70f68092af403f948e32c6587d76d94e5710bda1c1c0c2820950c5171ad"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/02_fuentes_recuperacion_memoria/README.md",
+      "sha256": "b0783c166c0a6eede961912c64f22b0c77a5969637cf8cd52e218e560a68addd"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/03_herramientas_mcp/README.md",
+      "sha256": "08cb5e653c53e787f03b704b044305ebbab8b14cd08f4dac9b73b669c65f6041"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/04_identidad_acceso/README.md",
+      "sha256": "57b5184a67bfd438ea887420303b0a95645befc291a640b63076b0c42ca024a4"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/05_controles_entrada_contexto_salida/README.md",
+      "sha256": "6a29b31d1026d5a74820eed6544eabdd7d8e9bf02b28b0b4a16eea2198231d89"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/06_cache/README.md",
+      "sha256": "b32e1b2d93be989486ed322a8fc484a65a9321775ad9a738117292f835b8a2b0"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/07_enrutamiento/README.md",
+      "sha256": "308a3d1d1ce735147507dfaf3c36ecf8daf8a05f4bde1ac9b9d094550713df15"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/08_observabilidad_regresion/README.md",
+      "sha256": "75e5f45fe134bb38aa413899486e0803a35c133fd087457f3314387eedc823b6"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/enrutamiento.rs",
+      "sha256": "fce9d494c4001d262369dd08a183304add086c8f61d92d7b23b918e8d7da26ec"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/entrevista.rs",
+      "sha256": "7e509138108ace54472f0c270938987a948071f36110a22142c9704b6bdfc888"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/mod.rs",
+      "sha256": "196f24c23bd61199f84a925aff64ca48af3979f39e344173b94c8f72d144f44e"
+    },
+    {
+      "ruta": "backend/src/agentes/dan_sparks/perfil.rs",
+      "sha256": "a9deaff82da6b677f423f5b069831e2fd14477893b3f27407690e72750f49c0a"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/01_rol_objetivo_modelo/README.md",
+      "sha256": "30129d7db3c2bc9be18678852da18226cbd8b683128422d5e55ef0ed2a8d679e"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/02_fuentes_recuperacion_memoria/README.md",
+      "sha256": "6657160730da347864d3345703a381fe1d12191674367c1c311e01af841bf199"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/03_herramientas_mcp/README.md",
+      "sha256": "fdf37ff94be78396216db5bcdc766fbd2de451a703582dacc6eac98f46d6c2a7"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/04_identidad_acceso/README.md",
+      "sha256": "92c06e74448cf16f65ecb7ad472a7b8ee168a4ca8425ff7fe5f2fcc5eefbcbb2"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/05_controles_entrada_contexto_salida/README.md",
+      "sha256": "45222a8df624fc87994e036a18a969f86f0f22f2ad1e500824494ddac5fe4b36"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/06_cache/README.md",
+      "sha256": "cb398bde8fdf2cb00ec6fbff4b823bc0465f7d9b84285663ffd5a71ff2e732be"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/07_enrutamiento/README.md",
+      "sha256": "69ef62a46cf3efaa2596131672cb856e853bda7e83ecb607b8d3ef623b72478e"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/08_observabilidad_regresion/README.md",
+      "sha256": "bb0740cd5e41fd6da3e86dc75d39f0575d0f372bf28c3d1e0aecf58ea0392777"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/inferencia.rs",
+      "sha256": "b1290d645620948c3bd6d07e3cf056bc002dd8f5cefd7790c4037c503a0ae083"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/mod.rs",
+      "sha256": "a71174c1ea9d1cb83b55cd76e06f19641f90ced4d4954f9cb4fc4cd6962638c9"
+    },
+    {
+      "ruta": "backend/src/agentes/evaluador/perfil.rs",
+      "sha256": "bee238d03ee963e9885551abe701c309042aeee3b5dfccb6fa7add4710bc7b1b"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/01_rol_objetivo_modelo/README.md",
+      "sha256": "b1cd0e1957a7c5771ac1a304adc666c874f6299ed1aea4f47f5e1056110f5e75"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/02_fuentes_recuperacion_memoria/README.md",
+      "sha256": "77b3bb657266da2cc86021d4c82f3623edf94d8ca6a5ba90c029ce042a67643b"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/03_herramientas_mcp/README.md",
+      "sha256": "3224e72ca27f3a46c4795c4f6d54586ec37183b46e84202386d2401bff580d91"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/04_identidad_acceso/README.md",
+      "sha256": "75ecee1bb2ae9bd619d7ee9a367016caef6b2146a418096975bffb87d34160b7"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/05_controles_entrada_contexto_salida/README.md",
+      "sha256": "3b36a6f2af6b7838ecc09711bd7543f5ad03f81575bf38fdd41856f6b7c6e702"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/06_cache/README.md",
+      "sha256": "d28979668daacd15e8d100dfaee62835b81de5597366b63f7a9db1c4c7f86bd9"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/07_enrutamiento/README.md",
+      "sha256": "43326768527cdfa6070329c68e9b9e28344d576f8e59c17472c65d19f885d2ce"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/08_observabilidad_regresion/README.md",
+      "sha256": "a7d6d46b4188e16f7ebfaf43b841999a307b08d31dc2755c422d8b7ead016698"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/enrutamiento.rs",
+      "sha256": "441a8d9d2c6710e166be8f8c6a70f55f874a8d4b0baac7359dc1d1c109377a82"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/entrevista.rs",
+      "sha256": "a89ac37bd7a8153f2677d816778409ab900cf960d7d45f94fb7f4c38a5fd26e9"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/mod.rs",
+      "sha256": "196f24c23bd61199f84a925aff64ca48af3979f39e344173b94c8f72d144f44e"
+    },
+    {
+      "ruta": "backend/src/agentes/lr/perfil.rs",
+      "sha256": "3a2a9a44c6b39f883bda1d274979300a0653e34af1b68b72683776931e548def"
+    },
+    {
+      "ruta": "backend/src/agentes/mensajes.rs",
+      "sha256": "2f93a926e96c855d8ae86aefdff19444c8e081efcc6ff6c3375d75702e462c85"
+    },
+    {
+      "ruta": "backend/src/agentes/mod.rs",
+      "sha256": "8250880a030f2874d6563a7d7c09c728c5e88061e2a5633c4ddda8ca825fd984"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/01_rol_objetivo_modelo/README.md",
+      "sha256": "e501164461bf6fe737ee260ef2dd808d013c48d48e502a03dcb36b20ecd350d7"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/02_fuentes_recuperacion_memoria/README.md",
+      "sha256": "8cc3bc9549d33d3a27cbb8981874d3cdd1a5187fc754f778df0b6a793728b307"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/03_herramientas_mcp/README.md",
+      "sha256": "9ca7cd75dbd9ff69ab15c6dfc110c9538f9d8981619a7cba755d42d33a67d1ff"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/04_identidad_acceso/README.md",
+      "sha256": "92a8df2ae47176e455392b04cc9139c64e49d7e5452da2b89adf08b715eb8a5d"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/05_controles_entrada_contexto_salida/README.md",
+      "sha256": "8a102cd9410ddcba28bafa5010d87b7fd6753375d88eb0e1226cbbeed96e5c7b"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/06_cache/README.md",
+      "sha256": "11748eaba2c28f56db1d3bcd821ccfbd5c19f7ec5d1be02339d2f5ece6fc2a3b"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/07_enrutamiento/README.md",
+      "sha256": "9b96d78e9f9f87554725dad8ab76d9ee2417462b3701e01b0515737bb87ad329"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/08_observabilidad_regresion/README.md",
+      "sha256": "5657495d46b23b2703b5d7adaa81b076715ded5918b37b9880fbb714f1b048c4"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/enrutamiento.rs",
+      "sha256": "bd3f925de631ea883a5154e7faa8077f4e7f276af0a126d8a72e10eb4cb9e209"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/entrevista.rs",
+      "sha256": "bee58b9ecb8050674abf9ee9440843c12f9672c2d1b02cae516bbb548fb64110"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/mod.rs",
+      "sha256": "196f24c23bd61199f84a925aff64ca48af3979f39e344173b94c8f72d144f44e"
+    },
+    {
+      "ruta": "backend/src/agentes/nannu/perfil.rs",
+      "sha256": "2cfa6c4fdbc00e46fed80181fe7fa4d4e67adf0ea55eb13bda6456a7004b618a"
+    },
+    {
+      "ruta": "backend/src/agentes/supervisor.rs",
+      "sha256": "a0ba54c0adced6ac0503f159d627f77b3043b4521a15d14e18f94d2dc4a2c700"
+    },
+    {
+      "ruta": "backend/src/app/errores.rs",
+      "sha256": "d41469de35d96fab35844ab0ea622633936eaaa639854dc5aac2d01572bf7269"
+    },
+    {
+      "ruta": "backend/src/app/estado.rs",
+      "sha256": "3a30c7e3d4d06b97b7f41839a4b084e83991a5e1e176d7381267ecc88c8eb86d"
+    },
+    {
+      "ruta": "backend/src/app/mod.rs",
+      "sha256": "1723912d0ded9238b53c3e92d3d9dccb40e2e73f0dbd997c2ce249f5ef8d8613"
+    },
+    {
+      "ruta": "backend/src/app/router.rs",
+      "sha256": "d100bb2f994fe357678164b3adc32e29243f1852d1cb02bfb96c922b6e9156e4"
+    },
+    {
+      "ruta": "backend/src/app/trabajadores.rs",
+      "sha256": "17c350a7d85dede716a1f027dc20c7e58623ee27b361ac7e8d89e0bdbb68f17b"
+    },
+    {
+      "ruta": "backend/src/bin/sircle.rs",
+      "sha256": "26011273aa0075c0c2139765e7773db804e8bd8a6ee2486108cdcd7fc1c0b106"
+    },
+    {
+      "ruta": "backend/src/lib.rs",
+      "sha256": "4103f7337449bd445fab414d9a79c954958f8d5a8a827a97fa8843d1aaa0e2f3"
+    },
+    {
+      "ruta": "backend/src/modules/acceso/actividades.rs",
+      "sha256": "f223d348d37f02709a05fec8964de68369e35f5379c3c3b8d6678e2cc848740e"
+    },
+    {
+      "ruta": "backend/src/modules/acceso/mod.rs",
+      "sha256": "65b5bb3c4583ba80ee1c4fc172a228c0e360cbe76ba4de0d85454b285e248ea9"
+    },
+    {
+      "ruta": "backend/src/modules/acceso/sesiones.rs",
+      "sha256": "c4393a08563d17e42ccc899e92934ea7b46bb0bdb277db002fbd2b6c009e0649"
+    },
+    {
+      "ruta": "backend/src/modules/encuestas/formas.rs",
+      "sha256": "5c567aaa18564d49add30fe3c6752f94d6cc2fd5ee62fee1f0f7a2493448e0e9"
+    },
+    {
+      "ruta": "backend/src/modules/encuestas/informe.rs",
+      "sha256": "3e9f744ffcee7de0a0c30614d4531336c689c72ac2aab7e6ba3d5e1caa001c99"
+    },
+    {
+      "ruta": "backend/src/modules/encuestas/instrumento-ensayo-v1.json",
+      "sha256": "0f3a85681e326fe462460fe327781e89a3f4f361052e75be7526bcc11404d456"
+    },
+    {
+      "ruta": "backend/src/modules/encuestas/instrumento.rs",
+      "sha256": "f5dff012dee1e4e5a2f261615a5eb6f1e32e20a01d5725b4081c1ae6125c1c2e"
+    },
+    {
+      "ruta": "backend/src/modules/encuestas/mod.rs",
+      "sha256": "9af347d8ca0a5651ee2d2b67a6b8ec544b60dbd54fe7eefd40e748c15436d9a4"
+    },
+    {
+      "ruta": "backend/src/modules/encuestas/respuestas.rs",
+      "sha256": "5dad3c1cdb51c411ad7b99b1a687b828dbbe7de5efde7df8fe3eeaa63ed805c3"
+    },
+    {
+      "ruta": "backend/src/modules/entrevista/hechos.rs",
+      "sha256": "ecafa42c434933ed90ad64f1f3738841ddb32738d592fba2e29543c695a4f021"
+    },
+    {
+      "ruta": "backend/src/modules/entrevista/mod.rs",
+      "sha256": "9ecaf91620021115cb9e8fb7e0b35729c134df25cbfef42a29e86f9b864581d8"
+    },
+    {
+      "ruta": "backend/src/modules/entrevista/ollama.rs",
+      "sha256": "9ea88a66b60833f29712a2ee5ebf1b295e5eda9124e873b400985b82fa62d65f"
+    },
+    {
+      "ruta": "backend/src/modules/entrevista/traza.rs",
+      "sha256": "d412b78fdd41b7dddb0df4dec4ba187d5186a1c1e50e04d6b357c55c89d7481a"
+    },
+    {
+      "ruta": "backend/src/modules/entrevista/turnos.rs",
+      "sha256": "e01132fc5986f5535a4bacb63c2e6e32cf5e521e0cf01164da9e4309bf20b2d5"
+    },
+    {
+      "ruta": "backend/src/modules/escenarios/formal.rs",
+      "sha256": "9e5b6fe4e7c26fe498d0bf06239ccddf79a6cc3cedce214c47841593611c26f5"
+    },
+    {
+      "ruta": "backend/src/modules/escenarios/importacion.rs",
+      "sha256": "e8e40635f1b482c1af924e685fe73a84d0804d1c064efc2f2f8525198e6969a4"
+    },
+    {
+      "ruta": "backend/src/modules/escenarios/mod.rs",
+      "sha256": "80bd1b575190b3cc48087f9f7399aeeabfbd77896b3125da945ac8a17061be9a"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/criterios.rs",
+      "sha256": "6d7c41e10eea229ea5b1ed3e93ddca4ba275ea608eef75c557f4ddabc1e639e2"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/entregas.rs",
+      "sha256": "00b68ba9631e36b4407de93457d3b4531f924f894d135de193e4a56264eb911c"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/evidencia.rs",
+      "sha256": "ab782138a8bf2fc4ce4492495da795e11c014813479d11f6ed347a76b704dccc"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/integridad.rs",
+      "sha256": "48fb22e2ebdd83aab53fac8f54753d46e9e0c4107ea35575f81629d9fbe89cc0"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/mod.rs",
+      "sha256": "95d41049d312a3f4f5f787912b1cd12e182d8f8cd1981a1707f0e6b4e4d0e84e"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/publicacion.rs",
+      "sha256": "4afb52e7787182ad294cfe2b66cff8d7f7fb8b4f05e21b8bdc701f1c7d31df59"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/revisiones.rs",
+      "sha256": "c71f562c5f4f4e045ed27ce86ba0e5d37cd78cd244c5b286435eab62cc1ba5e8"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/rubricas.rs",
+      "sha256": "46a6e47254eef7f1ed5086dd6c4219984be74fbbedca9db37ae268246088ebb1"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/trabajos.rs",
+      "sha256": "854414ce2a40d485666187493b85c18ad39b382f3d58541c55bcdde3fb5bd8e4"
+    },
+    {
+      "ruta": "backend/src/modules/evaluacion/traza.rs",
+      "sha256": "96ef6fdb1074d33a5732973e86354856b9370a24362376b9b38edceeeac623e2"
+    },
+    {
+      "ruta": "backend/src/modules/examenes/medios.rs",
+      "sha256": "1d540f55cb4d1ed75cc917b9e1140c05a5c10d198edf42e6c317b6a7d06bdb4a"
+    },
+    {
+      "ruta": "backend/src/modules/examenes/mod.rs",
+      "sha256": "bce929e11006d60e6edde46d3e9665eb2081c492921e3b2ba1559b2a6939bab4"
+    },
+    {
+      "ruta": "backend/src/modules/examenes/ordenes.rs",
+      "sha256": "68e785300ba4bc4287686643bb1a59019d93be03b1aa94faa6d03e97a5a0f175"
+    },
+    {
+      "ruta": "backend/src/modules/intentos/intento.rs",
+      "sha256": "25ab546d7e52b0538d7ecb64c2e5b668c5e889597137f7af416141735288aa02"
+    },
+    {
+      "ruta": "backend/src/modules/intentos/mod.rs",
+      "sha256": "ced192ee2e9e927a19159295ac6207ae84032586b9316ebdb1e65754c8da1e7a"
+    },
+    {
+      "ruta": "backend/src/modules/intentos/vista.rs",
+      "sha256": "0490b63cf141dd2c0814b6f28047a7c27f2f507646c616aa9db956ae6b20d6fc"
+    },
+    {
+      "ruta": "backend/src/modules/mod.rs",
+      "sha256": "bf7256e034480fbc1161d581984b1a85caee19cf061be838c21fae61462a9093"
+    },
+    {
+      "ruta": "backend/src/modules/razonamiento/escritura.rs",
+      "sha256": "96eb568573a3782f82e62a207a97f80a33accf9a5bd3aa079b9ca936ad69f4b6"
+    },
+    {
+      "ruta": "backend/src/modules/razonamiento/evidencias.rs",
+      "sha256": "2e486952cff90916d4c4afacee81e0379b883223902ed91a8c1012a73e40282f"
+    },
+    {
+      "ruta": "backend/src/modules/razonamiento/hipotesis.rs",
+      "sha256": "be95009515df0077ae05fc5a5e1a1055a87ccde72082da6d57f866e2a0024ab5"
+    },
+    {
+      "ruta": "backend/src/modules/razonamiento/mod.rs",
+      "sha256": "53bedb2dd8f3713885702f317d78749466184abf5748d2f76c7279e1a766a99a"
+    },
+    {
+      "ruta": "backend/src/modules/valoracion/ficha.rs",
+      "sha256": "12fefa0091732cc1d805ab79b6fc54194b89ede858a33d8cfdd27ae991da7a3d"
+    },
+    {
+      "ruta": "backend/src/modules/valoracion/hallazgos.rs",
+      "sha256": "bb9c646ea0bf15f2940fac7a29a1755cdaa2889f6686a5742e02c00c14bc6fca"
+    },
+    {
+      "ruta": "backend/src/modules/valoracion/mediciones.rs",
+      "sha256": "ddd2c854713587dd8c3671f24d1792c121aa087c2bf9ad0dfdde60222683e874"
+    },
+    {
+      "ruta": "backend/src/modules/valoracion/mod.rs",
+      "sha256": "b75f917772f0c69871fb045281753054834b3c159e96eacdfb0c62cc64e88410"
+    },
+    {
+      "ruta": "backend/src/shared/autorizacion.rs",
+      "sha256": "e214f0e2f52c39cb5020677737e33f50c1a54e8f0ce9fe89fab20085853b5074"
+    },
+    {
+      "ruta": "backend/src/shared/contexto.rs",
+      "sha256": "3629ab1f84dd65823a5088f3857e5361e7c4db3b1724490f59c60a88df441242"
+    },
+    {
+      "ruta": "backend/src/shared/ficha_aprobada.rs",
+      "sha256": "20d528f341f21c18b558b80bc9332c2ba5f12efde3961169a552d62097f4bbab"
+    },
+    {
+      "ruta": "backend/src/shared/mod.rs",
+      "sha256": "802e18323ed609c2d7782afb37253590b1f5ea0bfcd30800574de18788ff13b8"
+    },
+    {
+      "ruta": "backend/src/shared/operaciones.rs",
+      "sha256": "44170c88d329983242bc12375ef7fb8c0ba3872a8a063705cff69e994a48762b"
+    },
+    {
+      "ruta": "backend/src/shared/trazas.rs",
+      "sha256": "e6faa4dd1d538286fa4d8a0d4bce1869d452af9737caded5b28ec48d2ee5b118"
+    },
+    {
+      "ruta": "backend/src/sqlite.rs",
+      "sha256": "c5d6f7ee968728848d83f8e2b1bf5b07064338c341e24f134fe0d811df089742"
+    },
+    {
+      "ruta": "backend/tests/acceso.rs",
+      "sha256": "32702d9210a26343cc696fff1c601dcdcf4337822806ab961e5a1c6b85ef0176"
+    },
+    {
+      "ruta": "backend/tests/actividad_formal.rs",
+      "sha256": "923c90dd57403a2ea783f224cfa22ba19245c6f40623177573213c70c472c84c"
+    },
+    {
+      "ruta": "backend/tests/agente_dan_sparks.rs",
+      "sha256": "4feb2bd1864577351aff3122750fb65c3936c4f9b9ca4e04f99e1951203ff965"
+    },
+    {
+      "ruta": "backend/tests/agente_evaluador.rs",
+      "sha256": "1a5b65bbf83239ba5614a0ac2b8192295bada5fa6ebe1cf5943d45e409a2f376"
+    },
+    {
+      "ruta": "backend/tests/agente_lr.rs",
+      "sha256": "096f42bcb34261eecbd454d0cb0e7f89564d01824d376b81168394258a107875"
+    },
+    {
+      "ruta": "backend/tests/agente_nannu.rs",
+      "sha256": "3ebf3e6589e50904e38f3da60c7f09b96b5f8a301b4be9e8c50302574431ffe5"
+    },
+    {
+      "ruta": "backend/tests/autorizacion.rs",
+      "sha256": "9b58727de3cbf679dee58f31a4dd4e252a48c9681a1fb8a218a34a870f5b0d6a"
+    },
+    {
+      "ruta": "backend/tests/contexto.rs",
+      "sha256": "a7f9adcf9679bba52e06eb402c087d130eb9b1746c46cda4dee2ec5f23f725cc"
+    },
+    {
+      "ruta": "backend/tests/encuestas.rs",
+      "sha256": "026fb7fc342f9bf1e6cdb7ef9edafa8478fd2d81306cc562fe0db98e0f870055"
+    },
+    {
+      "ruta": "backend/tests/entregas.rs",
+      "sha256": "9d2e7d8126fd3aefad0ad62cd2a9d7f4c6451d0802ea275f9d07edf45e87902c"
+    },
+    {
+      "ruta": "backend/tests/entrevista_http.rs",
+      "sha256": "711174b5be0fdc4d1a7f7f3473117db6ea7bfedceb73ee16e30acf440708cf82"
+    },
+    {
+      "ruta": "backend/tests/entrevista_indisponible.rs",
+      "sha256": "451696fd656138ff46620e7e4b39ddcdfb6c857bac9505ef20b7c428af308e05"
+    },
+    {
+      "ruta": "backend/tests/fixtures/dan_sparks/hechos_iniciales.json",
+      "sha256": "c2589fa7dee50f7ffd19653d5bfc5f1987117610616b1971442aee65086a6ca3"
+    },
+    {
+      "ruta": "backend/tests/fixtures/ejecutar-e22.py",
+      "sha256": "13b8de6e2fd8dabdcd87cc860f2df323b5594d2203beb30e5b37a0c3592b6a59"
+    },
+    {
+      "ruta": "backend/tests/fixtures/evaluacion/tres_de_cuatro.json",
+      "sha256": "9adc11d0fa7066a6f03c0125f2e50e8f82ed86d0d91ce874a932b2190ba232e3"
+    },
+    {
+      "ruta": "backend/tests/fixtures/evaluacion/uno_de_cuatro.json",
+      "sha256": "6cf879e710c05eaec495acdbf0de0f7b21ca3a87b8f3691a81152c7c7cfce605"
+    },
+    {
+      "ruta": "backend/tests/fixtures/http_real.rs",
+      "sha256": "9f3276981b44d95589699cceb2206d36c501f6d45ca60460d646e536fa752b51"
+    },
+    {
+      "ruta": "backend/tests/fixtures/intento_lr.rs",
+      "sha256": "981cf560c30c1449711cd0962cd0f4ff02cfd99fa99bf723caa044bb0e775db4"
+    },
+    {
+      "ruta": "backend/tests/fixtures/lr/hechos_iniciales.json",
+      "sha256": "0966c45c6aa2e2650563647ff74b8b2dd71d608f1c9583cb210b7b889fea58b8"
+    },
+    {
+      "ruta": "backend/tests/fixtures/lr/peso_semana5.json",
+      "sha256": "1ab2e9a279422d7b454f4bc62a9175180e0dc8db0acbd1b051a64042148c7a71"
+    },
+    {
+      "ruta": "backend/tests/fixtures/mod.rs",
+      "sha256": "2faba9753f0f639bfad7b8df9726d3e0ee8e526e470b1cadf5fbf3e0c75efbd4"
+    },
+    {
+      "ruta": "backend/tests/fixtures/nannu/hechos_iniciales.json",
+      "sha256": "bf5012e91973e4ee5089b72830c45dca6d7f05d5f7e7f4a6f9571b54d97e3474"
+    },
+    {
+      "ruta": "backend/tests/fixtures/rubricas/lr-e12-v1.json",
+      "sha256": "6f83b65917cd31ce91c946d95b4aaef089440375e662b24889a30ba551893056"
+    },
+    {
+      "ruta": "backend/tests/fixtures/rubricas/lr-v1.json",
+      "sha256": "6381899daf93458b597df7f3a0567d065c960cb52b61d7eb328005d6eb9ede56"
+    },
+    {
+      "ruta": "backend/tests/fixtures/rubricas/lr-v2.json",
+      "sha256": "9d75edfe62c4bff6e828c5358887b3aeb4cea5171d01536a635ff7c27571d5ea"
+    },
+    {
+      "ruta": "backend/tests/fixtures/verificar-agentes-local.py",
+      "sha256": "b21c2cf9b2eb64e34ae080727318505608662cee69964b45b7374f786ee2dff9"
+    },
+    {
+      "ruta": "backend/tests/fixtures/versiones_rubrica.rs",
+      "sha256": "471da516acd98c7e7a40f921c2d8a15b36c4f91d360b237e104206aa8a1b8dca"
+    },
+    {
+      "ruta": "backend/tests/fuentes.rs",
+      "sha256": "c8c0816b6291ce042ea122e8fef59705bee9b4f74599cf29821a40bbe33c2708"
+    },
+    {
+      "ruta": "backend/tests/hechos_lr.rs",
+      "sha256": "a04ac6d7355a4f8de861c8dc96403cc5f726a7240b8cfc5e1da2810f3b61f154"
+    },
+    {
+      "ruta": "backend/tests/intentos.rs",
+      "sha256": "7ef7ba5b366c39e7b699d36e131ef59c1abfcac430efad909f3d40271bc4fb8d"
+    },
+    {
+      "ruta": "backend/tests/mensajes.rs",
+      "sha256": "7d2f022cdf3a422dad53bf52fa7e6e3f3da3d592fcd7dbb21cacd6c167bc298f"
+    },
+    {
+      "ruta": "backend/tests/preparacion.rs",
+      "sha256": "5c1deb5d40141f9d8e14c400ab8f5213134dcde03640cfe08ed8069088c19db4"
+    },
+    {
+      "ruta": "backend/tests/recuperacion_e22.rs",
+      "sha256": "870a800ea4bd152cf2e616997068bd27b8d19745444f4f76d72c9a0a03ae7443"
+    },
+    {
+      "ruta": "backend/tests/restauracion.rs",
+      "sha256": "a258ba91aaac3003a560caf7b2448ec6edd7acd6de266b497c679dff0d00f3eb"
+    },
+    {
+      "ruta": "backend/tests/router.rs",
+      "sha256": "70df6a6d9fa6745faba4471dfcb8839ae6dccc22cda4af4af100ccfce86161d9"
+    },
+    {
+      "ruta": "backend/tests/rubricas.rs",
+      "sha256": "dd376f4332b150d7ef9be0a6a63f7daae710dabfb22bdeba27f85a9974b16748"
+    },
+    {
+      "ruta": "backend/tests/trabajadores.rs",
+      "sha256": "9db873ccecc2cf02dd8d61899478147b08b4e419b0cfc9296f02bdbf57a47ef9"
+    },
+    {
+      "ruta": "backend/tests/turnos_reenvio.rs",
+      "sha256": "266cd0574b4733663a4bbdfacf5a4d71d4b88ce8a87cffc68ee2edb00547533e"
+    },
+    {
+      "ruta": "backend/tests/valoracion.rs",
+      "sha256": "519754c9cff3d9920dd74c88164ad6ac8cd6f3fce95f4bc3f6c137182d10c82e"
+    },
+    {
+      "ruta": "backend/tests/version_rubrica.rs",
+      "sha256": "b8fc89806a98caae604ad55855540df1dadf813e231d057885d591cff99a6490"
+    },
+    {
+      "ruta": "backend/tests/visibilidad.rs",
+      "sha256": "0e596ae78ac3bfcee863c19e84c3a0b81bac0bfb5bff6b64a2f6a3fb113f6725"
+    },
+    {
+      "ruta": "compose.yaml",
+      "sha256": "f835e1dcc7dd9466595f6d293c5aaf4c37c9c19feab3f602dfc23815236d4a74"
+    },
+    {
+      "ruta": "datos/medsp1000/README.md",
+      "sha256": "50e8636975cd6fb58cf35dd7acfccc8eeceaa4c1ade2a47ef169bb53cd755774"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_10181/scenario1/environment_controller/Case A-Asthma.md",
+      "sha256": "2aaaecd5124ed5b212c5565265585b7eb8b0621766f123c66374304b15dc01d5"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_10181/scenario1/evaluator/Case A-Asthma.md",
+      "sha256": "2a02cc2ad45313d58de24407f0977323932ebec2e948e27fa2b599b155bb4f97"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_10181/scenario1/examinee/Case A-Asthma.md",
+      "sha256": "b13f04c4f3b00028982a71cf0ac20d8aed84f8dbf1fb013d44429ce9203720ca"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_10181/scenario1/sp_actor/Case A-Asthma.md",
+      "sha256": "d8f99a42e1d27ccef03a8d3056360635f2a58a313ea1d506c5c7a60ea634befb"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_3171/scenario1/environment_controller/Pulmonary Embolism Case Description.md",
+      "sha256": "8f2f55ce57d1681c25e44d4c0299e6f2d37ae1c4c038c71e471b4c1141a4800a"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_3171/scenario1/environment_controller/Pulmonary Embolism EKG.md",
+      "sha256": "0ea78a56dca59855367a2ade91dc5c78e9a593d2749e5ed589af5caf9f40cfa5"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_3171/scenario1/evaluator/Pulmonary Embolism Case Description.md",
+      "sha256": "9d43944a506fca3319295eb716ae37ece59ee3b180cdc56da69d4b6a35fae25e"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_3171/scenario1/evaluator/Pulmonary Embolism EKG.md",
+      "sha256": "0ea78a56dca59855367a2ade91dc5c78e9a593d2749e5ed589af5caf9f40cfa5"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_3171/scenario1/examinee/Pulmonary Embolism Case Description.md",
+      "sha256": "356d37b1191f9f302b047a15e641555c5ad6f490e6e4ed3be7ec6749df9f818a"
+    },
+    {
+      "ruta": "datos/medsp1000/mededportal_3171/scenario1/sp_actor/Pulmonary Embolism Case Description.md",
+      "sha256": "1d2894f6a9e8da0f4cbbf4d0a0d2f03f0e20483cb1eb2a98ebc03b4c0bf1a257"
+    },
+    {
+      "ruta": "datos/medsp1000/mep_2374-8265.10924-s001/scenario3/environment_controller/C. Pneumonia with Septic Shock.md",
+      "sha256": "d8538801062551a4cd8db3f59fce3c08fd11a6b7ce71385adfa2c8af0d431b97"
+    },
+    {
+      "ruta": "datos/medsp1000/mep_2374-8265.10924-s001/scenario3/evaluator/C. Pneumonia with Septic Shock.md",
+      "sha256": "a65ff9ec2a1436def233b33aa253770384c610ad87984308eba5202c34960808"
+    },
+    {
+      "ruta": "datos/medsp1000/mep_2374-8265.10924-s001/scenario3/examinee/C. Pneumonia with Septic Shock.md",
+      "sha256": "12e238681d4b4f5fe50a68f3055299618d7d5cbb388746b50deb3de4e08d1eb0"
+    },
+    {
+      "ruta": "datos/medsp1000/mep_2374-8265.10924-s001/scenario3/sp_actor/C. Pneumonia with Septic Shock.md",
+      "sha256": "2d66213b06e33e3263043d252fcebbde478904e10b7be743e0574431ac3821cb"
+    },
+    {
+      "ruta": "frontend/Dockerfile",
+      "sha256": "df7b893295568a2d8eb1dcf6b06a224130876ec92d9e74db0ba29e6e66406b6e"
+    },
+    {
+      "ruta": "frontend/ejemplos/presion.json",
+      "sha256": "7defdf743cf69a8caa01839e1d55d223b24c3d9968f3c363032c5a1901a377be"
+    },
+    {
+      "ruta": "frontend/ejemplos/semana5.html",
+      "sha256": "d64cabc896d79ffdaed11b1dbbd79c6e590e4d62d5e8b148110c2ee2e116f42e"
+    },
+    {
+      "ruta": "frontend/ejemplos/valoracion.html",
+      "sha256": "b46a97836f753eb03408ad4977c1b510dd233a85a26ebacdd01e5b3c5dff2379"
+    },
+    {
+      "ruta": "frontend/index.html",
+      "sha256": "54972516b0bf4cdf4d3436a7b1c2e0dd9cfbc1acd06dc5fe34aa154848e0d8d1"
+    },
+    {
+      "ruta": "frontend/package-lock.json",
+      "sha256": "21a9e381990537ccbe8286d88d693b20972e2a01fbdf9759b2affab02f50b42f"
+    },
+    {
+      "ruta": "frontend/package.json",
+      "sha256": "763d2202b8235d3838482279937eba99dcd5f51e86ed13105e148009bfa33e2d"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/account-26c5a8f3ba.svg",
+      "sha256": "a90df48c2bde3293c700b68699b5fb35a1f1ce84becdebfcebe63e1309c51ba8"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/cancelar-d939d1e1f0.svg",
+      "sha256": "d939d1e1f0584034887957d05d44441e4054b6c63fe9859e8d05ef964aed5d80"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/confirmar-entrega.svg",
+      "sha256": "1fcbc6916e5294b173df65788a069f8690ff543b7331ba8d637e0cf1e6237260"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/continuar-conversacion.svg",
+      "sha256": "970cb95d96bb350b2986a2804780eaf42e599785299df1cde05e71ca264e0f2c"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/deshacer-977cf98cdd.svg",
+      "sha256": "977cf98cddb18586e8934be81b20a0d6916ee7bfcac53a0e4477986012d71a5b"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/evolucion-79080282c5.svg",
+      "sha256": "79080282c53fcbf33cb470ecfbcc9eb4c1ee56fc6a2c18e34ea35f1949a777fc"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/examenes-09e7adc493.svg",
+      "sha256": "09e7adc4939ae804d8d67d922952fe4c4f322390abb8f2de12449a7f93c40178"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/ficha-clinica.svg",
+      "sha256": "c9b15c295d5c688188614323d169222c6acc0b6d42e9ae598d75b9f933b52c3b"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/fonendoscopio.webp",
+      "sha256": "85948f274da56b17791671b2b4d6fc794b9d7af5dfb23336265ac049c28ac16b"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-04a6e2ffa2.svg",
+      "sha256": "649b8f5255ef6d8cbf5122e2c01d4508183fbd428ce25fbce2cd20de0f3b6fe9"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-2657f2a2d6.svg",
+      "sha256": "acb7038e1feda44d5337e947911be4bf6753d057ec862db6892ca0f1e4b9b66f"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-2a92072f82.svg",
+      "sha256": "13dcacd8dc7680a8ea3540bab171270a44385ad82762316033b3cdd0a46eb9d3"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-44143830e7.svg",
+      "sha256": "b119de878f964043343fc778386f8717e64a4584b9fd1b1af3efb7550b9241c1"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-4d600703b7.svg",
+      "sha256": "3c00c7e3495cf43789004f20b533fc678d3aa4eaa321c9a8260ce52d762046f4"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-635c127665.svg",
+      "sha256": "d1e14880701bc594e4661212516467e422a6bee531072d35e3d3b820047682b3"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-65720ceb75.svg",
+      "sha256": "20b7be58d8b332d3dddc30059084d17d8c500380d49e8c87dc365a1122902f66"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-b7ba201924.svg",
+      "sha256": "fa881365b922213d08291b8a0d88b23264e4427d79eadbde4ce287f45b5632b5"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-bdf2965940.svg",
+      "sha256": "bd9ab31a4fddac0ff0a56d5d4399e183cceb6875138b2e50ebc22b1c98de922f"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-d9c7c127d3.svg",
+      "sha256": "f83cbad6ec85729e9dc656d04ab8a7043f47e2d7a3f4db13787ec797d032039f"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/icono-f8099d20f0.svg",
+      "sha256": "70765cd654bcaabe163777d081d3bae2566f6df1b4ba18849c857febba1dbf22"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/informacion-bf3b68e942.svg",
+      "sha256": "bf3b68e942e94381bd6b700b34ab75b85b9843dc99e2bafa984d53eab31dcabb"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/instrumento-auscultacion.svg",
+      "sha256": "d87d5bfc86873bb75b89cbb3c9e0bab96f3c254a81ca188caae54824aa4a24a8"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/instrumento-inspeccion.svg",
+      "sha256": "bc4110b36cb3369d5ad0b80160fac4e447e5d0e4a542929c31df5a5fe539e5a6"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/instrumento-palpacion.svg",
+      "sha256": "2c19b922911af99d6757b5087d478e1e7a8f9ff87355f16fe0e2841600a9b232"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/instrumento-peso.svg",
+      "sha256": "bcf151a91a5cd849ad37702587866e5c6a888791a8216e8d6732f4aa492ecd01"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/instrumento-presion.svg",
+      "sha256": "0b8669bfa7867eb00d7330e859fba3108d3e9d9c35143646570ee55a375b3d13"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/instrumento-saturacion.svg",
+      "sha256": "39f75c74229fe00914be287aa08d9cf5c5f1d51bc77b96538a6f64a836d810cf"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/instrumento-temperatura.svg",
+      "sha256": "08b4534b19b9e5d1e61e32db29d8806df086452fbc85e2ef6ff59b0cd25cb1bf"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/logout-aa2fefee96.svg",
+      "sha256": "b18bb373aba3eeaa7c525e8e5bbb5ffb1797c6991a8ec936a77f247222e8f41f"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/lr-espalda.webp",
+      "sha256": "0b0fffcfc5f9f4f20a87bdbb2a76a336e68e12c53d15c7dbae92c073fbbe5075"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/lr-frente.webp",
+      "sha256": "47346caaffc06c533c946a81b272a80983ddfb9a0fc4f690dbc9ae05f194c6c6"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/lr-mano.webp",
+      "sha256": "96c1808aa12a97cc9a2e481ec9ea7ff4c50ec43d5522a2fbbb981d53297c5298"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/lr-pantorrilla.webp",
+      "sha256": "3ced790115d049801d38bbbc3f365d866f7c2ae65e31a02b0a56a681b7e57f35"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/lr-peso-listo.webp",
+      "sha256": "056931204b5ed5360c45104a12e05ae4549087ccdce72c7f1503b64ea6d3fb93"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/lr-peso.webp",
+      "sha256": "66a4ceb4a3b763e070a13296ab98fb39edf042fbc0e992d9feaccc320605fcf9"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/lr-presion-colocada.webp",
+      "sha256": "b8183e439c2112efac32f0b50d96258829eca180f2e8c85a642d8016837c2c81"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/lr-presion.webp",
+      "sha256": "467a31706e8237da812d92e7298fca99e93d8d917e13069e552458b2f503162f"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/palpacion.webp",
+      "sha256": "794d660e58f03ec060cd9cb02678a28da0ef3faee181dc34b091cf91e8d2c0b9"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/pulsioximetro.webp",
+      "sha256": "f0b829ed85922986c7abac0290c32262f8ed8b6846108a6d897f0b9e9efd059c"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/respiracion-8e093006df.svg",
+      "sha256": "8e093006df443ef39a17e462cb684b4862e5bd2a6805052ff4fb0c495b8cd0a2"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/retrato-de-dan-sparks-9e38a8790a.webp",
+      "sha256": "9e38a8790a1725d727a24a8feb851116a3540146eb14bf0c4a92eded07624ace"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/retrato-de-lr-865a70387a.webp",
+      "sha256": "865a70387a93e75aee461e38888184e995ba9b9f5ee205a84b587ec737c104fb"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/retrato-de-nannu-b006e30096.webp",
+      "sha256": "b006e300962c27280287613e2c589aec00201549f59a7c13454aaac0085fa0ef"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/signos-vitales-2aafb5e9fd.svg",
+      "sha256": "2aafb5e9fde9fbc35350afb36c886410c1506e1dbe43b7a746749142dae7be55"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/termometro.webp",
+      "sha256": "46adc492df369620cf056a3da96ec00a6230b8878385239f5d274a362c6e3328"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/vista-ampliar.svg",
+      "sha256": "f61e49997409a502fccb21c2cc51fd49f9d7d01348605755553971ecd8ca432b"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/vista-brazo.svg",
+      "sha256": "edf05aaa1b0b7040d1576a8ea996504cdbdb9691c63401759baa9529f4f7cb6b"
+    },
+    {
+      "ruta": "frontend/recursos/semana5/vista-volver.svg",
+      "sha256": "bd943ed74824a58ab79f0a3808e1ca44ed7be1616ff60fe2bf964e0d85563ec6"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/Paciente_Virtual.html",
+      "sha256": "ff9dea8958759550c5241ab9f0560c46f2726bf04ba1d46f927fb9febfeee032"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/dan/espalda.webp",
+      "sha256": "2aff840aed10630e613e7a98957822f55c3f7b6b4ccccee55b521f0988e963a4"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/dan/frente.webp",
+      "sha256": "54db9eb0e0412f15ed7189e84aa2fd6ba35737a4425f2a6469dd15a2731b448f"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/dan/mano.webp",
+      "sha256": "90445592cedda08d0ea5413164e54becfbcd8d2ba3bf817bbf1554fd80e44b53"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/dan/pantorrilla.webp",
+      "sha256": "dd3e326fa7fb279da6a7806a765d53908187ca4f51a3e29a3321397c584f4dd0"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/dan/peso-listo.webp",
+      "sha256": "44e298d9bb5d81b95afd46a53699035a2f7e3aa56c0faeb23be1bfa9c90d87fe"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/dan/peso.webp",
+      "sha256": "77c078b1625617de426065caf0d1b92e9a5ca94de659d5a6616a68a2c7dd5d59"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/dan/presion-colocada.webp",
+      "sha256": "3bf0f5e2ac16b6c250e1143c5a3c1f2221ef503b603ddf8146a0cd157abe9b56"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/dan/presion.webp",
+      "sha256": "31154a58c38b9807d04208134b8cfef7e5e9db2df4ad6dba5061fc5bc07d8b07"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/lr/espalda.webp",
+      "sha256": "0b0fffcfc5f9f4f20a87bdbb2a76a336e68e12c53d15c7dbae92c073fbbe5075"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/lr/frente.webp",
+      "sha256": "47346caaffc06c533c946a81b272a80983ddfb9a0fc4f690dbc9ae05f194c6c6"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/lr/mano.webp",
+      "sha256": "96c1808aa12a97cc9a2e481ec9ea7ff4c50ec43d5522a2fbbb981d53297c5298"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/lr/pantorrilla.webp",
+      "sha256": "3ced790115d049801d38bbbc3f365d866f7c2ae65e31a02b0a56a681b7e57f35"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/lr/peso-listo.webp",
+      "sha256": "056931204b5ed5360c45104a12e05ae4549087ccdce72c7f1503b64ea6d3fb93"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/lr/peso.webp",
+      "sha256": "66a4ceb4a3b763e070a13296ab98fb39edf042fbc0e992d9feaccc320605fcf9"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/lr/presion-colocada.webp",
+      "sha256": "b8183e439c2112efac32f0b50d96258829eca180f2e8c85a642d8016837c2c81"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/lr/presion.webp",
+      "sha256": "467a31706e8237da812d92e7298fca99e93d8d917e13069e552458b2f503162f"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/nannu/espalda.webp",
+      "sha256": "2039914306340efa83396fa206aefdec3d7ca6d8c4459f40210a3e7baea3b009"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/nannu/frente.webp",
+      "sha256": "e9e0fc77ecb495b7cad8d135794531321d323a7bdea2a06336c1e00415b4ed0f"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/nannu/mano.webp",
+      "sha256": "2a04f5ad03d91999525fb3f9c98b9c1f6d83ff3c44308cdb7e0e2a8246532010"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/nannu/pantorrilla.webp",
+      "sha256": "9d12d3f0a286a639bcfb080478943eada89adb23e0b814a0a9a4386eec73a59b"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/nannu/peso-listo.webp",
+      "sha256": "5c558e38abb1fac8b0cae5ea2b9c3b6b56d52d6aa32817957ab59e96f22867e7"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/nannu/peso.webp",
+      "sha256": "854a5dfff882e650044f000f1acb13be99fd0772b674d7bd780c5648b1501118"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/nannu/presion-colocada.webp",
+      "sha256": "e02b2d2526388f590820b5c11371259acfe444abe1491c4e399a6e5991fea715"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/escenas/nannu/presion.webp",
+      "sha256": "990950dcbcbb4a5680724e4ee2791af96c86c89d0d14018fcbcb70b314afc087"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/instrumentos/fonendoscopio.webp",
+      "sha256": "85948f274da56b17791671b2b4d6fc794b9d7af5dfb23336265ac049c28ac16b"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/instrumentos/palpacion.webp",
+      "sha256": "794d660e58f03ec060cd9cb02678a28da0ef3faee181dc34b091cf91e8d2c0b9"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/instrumentos/pulsioximetro.webp",
+      "sha256": "f0b829ed85922986c7abac0290c32262f8ed8b6846108a6d897f0b9e9efd059c"
+    },
+    {
+      "ruta": "frontend/referencia/semana5/recursos/instrumentos/termometro.webp",
+      "sha256": "46adc492df369620cf056a3da96ec00a6230b8878385239f5d274a362c6e3328"
+    },
+    {
+      "ruta": "frontend/scripts/build.mjs",
+      "sha256": "1920e850773428dbec92bf1a0170861d4acda41676b2258cf2831380d91a3f2d"
+    },
+    {
+      "ruta": "frontend/scripts/dev-ejemplo.mjs",
+      "sha256": "a89a9438c257a95d406afd3220e029646a858ab04666050b7462c5f4cd5962e3"
+    },
+    {
+      "ruta": "frontend/scripts/dev-integrado.mjs",
+      "sha256": "83fcbe174a4e8ccd52e474a4b9dd6af2326038718e81251cf87954fc36243842"
+    },
+    {
+      "ruta": "frontend/scripts/estaticos.mjs",
+      "sha256": "a220520876938654ef895655f199bb3b0991c883964e81d4dda79fd357b7faef"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-apuntes.mjs",
+      "sha256": "66659d6fba4bbe40c15a94cbde187506f60601d07e42996cb2b7887f57ff61d9"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-auscultacion.mjs",
+      "sha256": "00f78f8e953eadaff5280ec474d756ad378fc3c5999aec34e7c97d3c4b5c1e2d"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-brazalete.mjs",
+      "sha256": "54c32809ab2f561bd0c4e6bf4fb1237c0f9a11a5a47d8861e3a7f43ba0a1b26b"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-brazo.mjs",
+      "sha256": "5978f96919235f99e68b284147ffe814ba947cde5d3234d9dade5a5acc8f781d"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-chat-integrado.mjs",
+      "sha256": "84eba9fb9d8ccdbe13a93af95bb9eecbeb0e0ba23786b94c3b5066afaada4a14"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-dato-ausente.mjs",
+      "sha256": "2d3ab871674b100594337da749d8d29027981b7658cfb71275a2e81431db67ea"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-encuestas.mjs",
+      "sha256": "5f7f434557dae0ee3e04187402f0bdd571b5485cec7fb420f491ca56848b6d22"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-entrega.mjs",
+      "sha256": "fd62b6fbf68a80e04c72cf31d990da72bfad709d81fd9d6fd084c83260917f71"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-evidencia.mjs",
+      "sha256": "f7ea8dd08503bc80892c4b2bd4112f151d17b592aab212cad7f04933520414ec"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-exploraciones.mjs",
+      "sha256": "0ee12dbbbd6af9d7ac89606d69255d5b7007c5f105d3728c0e7a215606220ac3"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-ficha.mjs",
+      "sha256": "c23a8701e0428406c521f963eac0374ec2c70965f18d05a5222d20ccd821b96c"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-hipotesis.mjs",
+      "sha256": "dd7975e239c9f234d8e3478a35d7d4f21c3ccc90102696b99af29969de770799"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-orden-ecg.mjs",
+      "sha256": "455d1d744334fa743f3d7a82e844f9e2767537ee59720891ab6f4fdc5fa976b2"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-presion.mjs",
+      "sha256": "ec5a754b6bf488ba68e37255e77a5ab3250acfdd8a40a52b15f41689e8dad43b"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-publicacion.mjs",
+      "sha256": "9a4e274714d2b7d3cccc094147614e59f7552a18aa6f0a066452804d07007506"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-recorrido-modulo01.mjs",
+      "sha256": "643d027fe8815952f1d406e8daa311188c40c003beb6cd23f229ec428b629659"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-revision-docente.mjs",
+      "sha256": "f5698065d73bf6e1433784213832e937c69cdaa67a807d9b6781b0f8a3d0547a"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-ritmos.mjs",
+      "sha256": "9c41da23d6b12e8b76928ef107ca8e2f6d7affc21ecfb18c85443cfc9ba7bedd"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-seleccion.mjs",
+      "sha256": "c57ac22506cff10fc15dfe5e4af861bc8c0f8853d278cdd8c4bfbea159316246"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-semana5.mjs",
+      "sha256": "914d99ddea02f57eee5524d6b61eba6605c2ff508f6a6085564c85a900e5f7e8"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-sensores.mjs",
+      "sha256": "290b9688b69d285e8c5906bcc11a5e94c5bff4e1b71d38adcce6c0d815543d48"
+    },
+    {
+      "ruta": "frontend/scripts/verificar-sugerencias.mjs",
+      "sha256": "12f41d6bee0a7df3096e4869e9abd699edcf740470063e3cff2b9e1a3309b993"
+    },
+    {
+      "ruta": "frontend/servidor.conf",
+      "sha256": "b2f46765c2c5754abac608531028455dccd58d25cf32ba2e10c3c9ce4dd7a23a"
+    },
+    {
+      "ruta": "frontend/src/app/api.ts",
+      "sha256": "276f2451308beda599a52d608a1fd5568f568ad5718db41af9b7dba805aec805"
+    },
+    {
+      "ruta": "frontend/src/app/brazalete-ejemplo.ts",
+      "sha256": "26457cdf9340fcf78b77510efa284051c211c3470eb742904a30e5804f731361"
+    },
+    {
+      "ruta": "frontend/src/app/ejemplo.css",
+      "sha256": "f635dee54382ca972ceef827db0efc88d4240fb969bf12c79bed29295e6a0950"
+    },
+    {
+      "ruta": "frontend/src/app/ejemplo.ts",
+      "sha256": "027eacb17f3c59261de2b596a4cde198c527d90ba65afc2b7e1164135514c223"
+    },
+    {
+      "ruta": "frontend/src/app/semana5.css",
+      "sha256": "6a5d00cb97e4e21636a6100b0044f9f8bb03f0da7897355ecd9a4dace1bc014c"
+    },
+    {
+      "ruta": "frontend/src/app/semana5.ts",
+      "sha256": "7c31dbcd81a21ef5b0d0a33a1d14331f69e8f17118f678d3697f41eed22b5706"
+    },
+    {
+      "ruta": "frontend/src/modules/devolucion/publicacion.ts",
+      "sha256": "225f968cafcd9222c6ee5fac68221731d50fb07fa727e25c52a9261eb87c22b7"
+    },
+    {
+      "ruta": "frontend/src/modules/devolucion/revision.ts",
+      "sha256": "e35da686492e3033b67d5b97d06e88e79442d2f7462bf52a714ae355a638cd53"
+    },
+    {
+      "ruta": "frontend/src/modules/encuestas/formulario.ts",
+      "sha256": "8b95ab0d604eb38abc97a2fb02c0f2f532c3a61db0e184a5963d43ceb71205d9"
+    },
+    {
+      "ruta": "frontend/src/modules/encuestas/informe.ts",
+      "sha256": "d9e1b90e267eb0402da237b5bfe56ab8a15b3610cfdbfcb95dec015ae37c5cdb"
+    },
+    {
+      "ruta": "frontend/src/modules/encuestas/post.ts",
+      "sha256": "c1be921c096b2a23de0358d8c35330352f433bbc98c7f94f7a079f358f861d18"
+    },
+    {
+      "ruta": "frontend/src/modules/encuestas/pre.ts",
+      "sha256": "1217c9192937f73d72a8e49d94cc14a6907d1f18235111a6eedda2f0d2329ba2"
+    },
+    {
+      "ruta": "frontend/src/modules/entrevista/chat.ts",
+      "sha256": "11091e00bf6cbe2137c2ed6fe30b52fb53a5ab1623240ab65f27a554e1aac2e8"
+    },
+    {
+      "ruta": "frontend/src/modules/entrevista/sugerencias.ts",
+      "sha256": "6ea15442b434e1fcabd2fd48b8e733c8f3768b4102485ceb43c028d51b1c51af"
+    },
+    {
+      "ruta": "frontend/src/modules/examenes/ecg.ts",
+      "sha256": "0cdadbca1a3bd626649d8b2c45cb9027638c2008134d229ee9b87b9398cd8ed7"
+    },
+    {
+      "ruta": "frontend/src/modules/intentos/ficha.ts",
+      "sha256": "0d2cf74c864884484f7a803f8e07e941e532384bcd723335489be211ed96c2b8"
+    },
+    {
+      "ruta": "frontend/src/modules/intentos/seleccion.ts",
+      "sha256": "f0d28c781d46b14c066d5abc2a543ead252bd5e8bb8e61c3c123a81f0cccf592"
+    },
+    {
+      "ruta": "frontend/src/modules/razonamiento/apuntes.ts",
+      "sha256": "51e7a9c90fe69d4f22df1a363a6312ad821b6a556b0499843af5147cbff111d0"
+    },
+    {
+      "ruta": "frontend/src/modules/razonamiento/entrega.ts",
+      "sha256": "9428d6f3ac243248ce17f1ba8166c62ab4ac5ecd5b4f41ef83c1099c9b829f40"
+    },
+    {
+      "ruta": "frontend/src/modules/razonamiento/hipotesis.ts",
+      "sha256": "4778dc44cee1da67b8564d4bcf719831ef4a2cc728431b5c0bf6d1d4b1933b3a"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/audio-auscultacion.ts",
+      "sha256": "a753d940ab97631fd1f2fca288a2d6afcc5ac3025d1120b2f819ec68eaba0417"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/auscultacion.ts",
+      "sha256": "c3dae52f3a6bfa074561d45bcfcdfae034bfe150828166ecc6a0e692ea7014fe"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/brazalete.ts",
+      "sha256": "820230bb267f394293e7d672b405e3312af960110543276e6f9a399ad04b86d7"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/brazo.ts",
+      "sha256": "8dbae053fa95cd94d6068e66c79650d182f1e8eda70ffc9d60afebaa7aac60fc"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/exploracion.ts",
+      "sha256": "46b228e13c155191450b8ddec6a38ded36db7c043b58b2daf47f697f7deba4c3"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/historico-presion.ts",
+      "sha256": "76605b9aa66ef3b30e41d99db263d65aa5b2c32f1ef830bea18848aa4be64f48"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/inspeccion.ts",
+      "sha256": "056f054fe77a54b7f30d2ea15e8f7c00b3bfc936706106ab70674ea7a6f4290a"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/instrumento.ts",
+      "sha256": "5a176a9aa11146a2b58cd043dabc108a93c99297a0bd3d60d7421fd095f1b3a4"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/palpacion.ts",
+      "sha256": "c47958c66a0b8a0eb8bd58395a6b641012925446f674d8bf2cbffc670e4ce3ac"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/peso.ts",
+      "sha256": "d99bc3489e113ac214797456596a7bd89b1ab66dff942c63eb87309e313b4980"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/presion.ts",
+      "sha256": "fba736e71da0ca360796735878e613de8875dbf440c1530f7002f9fd9dba59c7"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/pulso.ts",
+      "sha256": "cf5527e1ee88d70e0cb72a75e9ba63cbf304e43c161b484881f24e32006419aa"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/respiracion.ts",
+      "sha256": "8f0dab08cccc56bc760f59a7e7d2e651161b2f521f9ed37da86c21d91825a980"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/saturacion.ts",
+      "sha256": "96cf7667d5000fb05784fb2a07cb3d856c6a61ec878fe731adec99d14600a5cd"
+    },
+    {
+      "ruta": "frontend/src/modules/valoracion/temperatura.ts",
+      "sha256": "64b1a9f7165d2877fcc693c15f713be5e293a5234f208126c19ed732bb340ffe"
+    },
+    {
+      "ruta": "frontend/tests/brazalete.test.ts",
+      "sha256": "7ab76f24e5183e99986c0095c27cb6de6a9aeb923680a89fb0dfc9468ae2bcd4"
+    },
+    {
+      "ruta": "frontend/tests/ejemplo.test.mjs",
+      "sha256": "0b5b5531f953d7120eb185a13aa0fbab5e274f6595b0402ad7b0e46bb3a10108"
+    },
+    {
+      "ruta": "frontend/tests/fixtures/reserva-publica.json",
+      "sha256": "258bf56642c301a67143230687ac8197af98657129e209caedf2dcb0766c73ea"
+    },
+    {
+      "ruta": "frontend/tests/flujo_pendiente.test.mjs",
+      "sha256": "1c8a03e777ba322c2c7b7d183712f23e39c8dd7823fcf04bda3bd94e99784768"
+    },
+    {
+      "ruta": "frontend/tests/paridad_semana5.test.ts",
+      "sha256": "89d89928317d657f242d77e4622773636ab796f974af38dbb641c563716c03fc"
+    },
+    {
+      "ruta": "frontend/tests/reserva_publica.test.ts",
+      "sha256": "bc0e981e720eeacd50c2ebd06af76dd029def6a555a934b34ddff06d9a7599ef"
+    },
+    {
+      "ruta": "frontend/tsconfig.json",
+      "sha256": "85a6b696d0df1e65748e7a65012360b0b69bc7ad799667fe639d3ad2d8c5bb82"
+    },
+    {
+      "ruta": "inferencia/Dockerfile",
+      "sha256": "616ba96894033c8efe8acf161825f26c63fb10099af86cf699f631593006266a"
+    },
+    {
+      "ruta": "inferencia/preparar.sh",
+      "sha256": "2160695eb9657dd75357320f68b83a20176bcea0372a038357ed6c004166d185"
+    },
+    {
+      "ruta": "pruebas/capacidad/perfiles.test.ts",
+      "sha256": "29d9e50d9b2a15571ee3a88165d730aa12d4c9bf4ea7b11da17251924fe32212"
+    },
+    {
+      "ruta": "pruebas/capacidad/perfiles.ts",
+      "sha256": "b5bd02e372516d03177458dfd856f30b970ec072e4664434af10c863e2dc6b42"
+    },
+    {
+      "ruta": "pruebas/capacidad/preguntas_simultaneas.ts",
+      "sha256": "9a72857bb53c5360ac601f1b033bf164cf5622e368486f04f77be23f89130387"
+    },
+    {
+      "ruta": "pruebas/capacidad/rr01_20.ts",
+      "sha256": "9c2256af4812dc4d44db2f69c116408f6928cc7557b56d4dfa02598352db7eb4"
+    },
+    {
+      "ruta": "pruebas/capacidad/sesiones_abiertas.ts",
+      "sha256": "447b4f26cf6b40b200e1f0685f5f2eb15d2c98e793d52508c6c4b8c3e1d77683"
+    },
+    {
+      "ruta": "specs/001-simulacion-clinica/contracts/agentes.md",
+      "sha256": "b58a3a0f9756d6501c1b09a2984896f5047078fd008ba6dbc663b9a4d499485d"
+    },
+    {
+      "ruta": "specs/001-simulacion-clinica/contracts/api.md",
+      "sha256": "9fdefe80c21415643fc094030e4115f7fcb3508525a240f22e0ad61dea4b070c"
+    },
+    {
+      "ruta": "specs/001-simulacion-clinica/data-model.md",
+      "sha256": "0ea0d47584dba047bd09ebf87ee2432ac6f7c40b0391b3fd866f6ab399978067"
+    },
+    {
+      "ruta": "specs/001-simulacion-clinica/plan.md",
+      "sha256": "b86ae47fdbf71efa7d96c2fdd5de3d7b209a80e44f49bf0a676b19e5464c72ba"
+    },
+    {
+      "ruta": "specs/001-simulacion-clinica/spec.md",
+      "sha256": "0eb4e4c5212fd801cf5e28f4692804e12637dde63afb9f16a8afd4b1e004ba78"
+    }
+  ]
+}

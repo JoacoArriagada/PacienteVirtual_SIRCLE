@@ -1,3 +1,4 @@
+use anyhow::Context;
 use axum::{Json, extract::{Path, State}, http::{HeaderMap, StatusCode}};
 use rusqlite::{Connection, OptionalExtension, Row, TransactionBehavior, params};
 use serde::{Deserialize, Serialize};
@@ -8,6 +9,7 @@ use crate::{
 };
 
 const ECG_INICIAL: &str = "ecg-inicial";
+const FUENTE_CONTROLADOR: &str = "mededportal_10181/scenario1/environment_controller/Case A-Asthma.md";
 const ORDEN: &str = "SELECT id, intento_id, examen, fase, momento, revision FROM ordenes";
 
 #[derive(Deserialize, Serialize)]
@@ -35,17 +37,22 @@ pub struct Informe {
     origen: String,
 }
 
-pub(crate) fn preparar_ecg_lr(db: &Connection) -> rusqlite::Result<()> {
-    db.execute(
-        "INSERT INTO examenes_versionados
-         SELECT c.version_caso_id, 'inicial', ?1, 'taquicardia sinusal', r.id
+pub(crate) fn preparar_ecg_lr(db: &Connection) -> anyhow::Result<()> {
+    let (version, revision_fuente): (i64, i64) = db.query_row(
+        "SELECT c.version_caso_id, r.id
          FROM configuraciones_ensayo c
          JOIN versiones_fuentes vf ON vf.version_clinica_id=c.version_caso_id
          JOIN fuentes f ON f.id=vf.fuente_id AND f.rol='environment_controller'
          JOIN revisiones_fuente r ON r.id=vf.revision_fuente_id
-         WHERE c.actividad_id='lr-ensayo' AND instr(CAST(r.contenido AS TEXT), 'initial EKG (sinus tachycardia)') > 0
+         WHERE c.actividad_id='lr-ensayo' AND f.ruta=?1
+           AND instr(CAST(r.contenido AS TEXT), 'initial EKG (sinus tachycardia)') > 0",
+        [FUENTE_CONTROLADOR], |fila| Ok((fila.get(0)?, fila.get(1)?)),
+    ).with_context(|| format!("No se encontró el pasaje del ECG inicial en medsp1000/{FUENTE_CONTROLADOR}"))?;
+    db.execute(
+        "INSERT INTO examenes_versionados
+         VALUES (?1, 'inicial', ?2, 'taquicardia sinusal', ?3)
          ON CONFLICT(version_caso_id, fase, examen) DO NOTHING",
-        [ECG_INICIAL],
+        params![version, ECG_INICIAL, revision_fuente],
     )?;
     Ok(())
 }
