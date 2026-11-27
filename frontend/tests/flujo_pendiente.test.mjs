@@ -178,7 +178,10 @@ test("la toma de presión y la ficha muestran el origen de la lectura", opciones
     await pagina.getByRole("button", { name: "Volver a la atención" }).click();
     await pagina.getByRole("button", { name: "Ficha clínica", exact: true }).click();
     const ficha = pagina.getByRole("dialog", { name: "Ficha clínica" });
-    assert.equal(await ficha.getByText("148/85 mmHg · " + lectura.origen + " · " + lectura.momento).count(), 1);
+    assert.equal(await ficha.getByText("148/85 mmHg · " + lectura.origen, { exact: true }).count(), 1);
+    const hora = ficha.locator("[data-hallazgos] time");
+    assert.match(await hora.textContent(), /^\d{2}:\d{2}$/);
+    assert.equal(await hora.getAttribute("datetime"), lectura.momento);
   });
 });
 

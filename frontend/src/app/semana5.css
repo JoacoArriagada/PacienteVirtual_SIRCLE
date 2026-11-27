@@ -1384,6 +1384,18 @@ details {
   color: var(--muted);
 }
 
+[data-hallazgos] > li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .25rem .75rem;
+}
+
+[data-hallazgos] time {
+  margin-inline-start: auto;
+  white-space: nowrap;
+}
+
 .mobile-tabs {
   display: none;
 }

@@ -210,7 +210,22 @@ function registrosFicha(ficha: VistaClinica["ficha"]): HTMLElement {
     for (const medicion of ficha.hallazgos) {
       const fila = document.createElement("li");
       fila.dataset.medicionId = medicion.medicion_id;
-      fila.textContent = [textoMedicion(medicion), medicion.origen, medicion.momento].filter(Boolean).join(" · ");
+      const lectura = document.createElement("span");
+      lectura.textContent = [textoMedicion(medicion), medicion.origen].filter(Boolean).join(" · ");
+      fila.append(lectura);
+
+      const instante = new Date(medicion.momento);
+      if (Number.isFinite(instante.getTime())) {
+        const hora = document.createElement("time");
+        hora.dateTime = medicion.momento;
+        hora.className = "source-label";
+        hora.textContent = instante.toLocaleTimeString("es-CL", {
+          hour: "2-digit",
+          minute: "2-digit",
+          hourCycle: "h23",
+        });
+        fila.append(hora);
+      }
       lista.append(fila);
     }
     contenido.append(titulo, lista);
