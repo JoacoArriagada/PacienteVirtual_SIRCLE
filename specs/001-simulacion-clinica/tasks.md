@@ -4,7 +4,7 @@
 
 Las tareas T001–T080 conservan los cuatro hitos del plan. T081–T084 corresponden al estudio posterior de capacidad. El índice registra el estado y la evidencia de cada tarea. [Constitución vigente](../../.specify/memory/constitution.md) · [Especificación aclarada](spec.md) · [Plan técnico revisado](plan.md)
 
-El frontend usará HTML, CSS y TypeScript sin framework. El backend usará Rust y Axum con REST/JSON, SQLite como única base y un solo motor Ollama local. LR tendrá el recorrido completo. Nannu y Dan Sparks se usarán para comprobar identidad, atribución y aislamiento. La precisión del principio I sobre las decisiones justificadas por otro requisito aprobado del módulo sigue el procedimiento de enmienda. [Contrato HTTP](contracts/api.md) · [Matriz de agentes](contracts/agentes.md) · [Modelo de datos](data-model.md) · [Decisiones de investigación](research.md) · [Guía de aceptación](quickstart.md)
+El frontend usará HTML, CSS y TypeScript sin framework. El backend usará Rust y Axum con REST/JSON, SQLite como única base y un solo motor Ollama local. LR tendrá el recorrido completo. Intercalar Nannu y Dan Sparks con los intentos de LR comprueba que el motor compartido preserva la identidad, el hablante y el historial de cada intento. [Contrato HTTP](contracts/api.md) · [Matriz de agentes](contracts/agentes.md) · [Modelo de datos](data-model.md) · [Decisiones de investigación](research.md) · [Guía de aceptación](quickstart.md)
 
 | Tramo | Tareas | Qué permite comprobar el cierre | Registro |
 | --- | --- | --- | --- |
@@ -65,7 +65,7 @@ El ensayo puede arrancar el backend y Ollama de forma independiente. Usar una id
 
   **Depende de** T004. **Referencias** FR-010 · E20 · SC-006. **Cierre.** Desde backend, `cargo run --locked --bin sircle -- preparar --db target/demo.sqlite --fuentes ../datos` prepara la base para el modo `servir`. El inventario devuelve P01=4, P02=4 y P03=6, con contenido, ruta, rol y SHA-256 cotejados contra cada archivo. Rutas o roles distintos retienen identidades distintas aunque compartan bytes. [Catorce fuentes con sus identificadores y huellas · verificado](#ev-t005)
 
-  **Datos** [`Fuente.rol de origen`, `Fuente.ruta relativa`, `Fuente.contenido original`, `Fuente.SHA-256`, `Adaptación.pasaje`, `Medio.disponibilidad`](data-model.md#fuentes-y-versiones).
+  **Datos** [`Fuente.rol de origen`, `Fuente.ruta relativa`, `Fuente.contenido original`, `Fuente.SHA-256`, `Adaptación.documento`, `Adaptación.revisión`, `Adaptación.pasaje`, `Medio.disponibilidad`](data-model.md#fuentes-y-versiones).
 
 ### Persistencia, sesión e intento de ensayo
 
@@ -242,7 +242,7 @@ Partir de T020 y de la copia privada verificada en T021. En la migración se con
 
   **Depende de** T035. **Referencias** FR-007, FR-010 · E02, E09 · SC-001. **Cierre.** Guardar un borrador incompleto y completarlo después. Al reabrir, coinciden principal, alternativa, explicaciones y referencias a turno, medición o informe propios. Una referencia ajena se rechaza y una revisión obsoleta devuelve 409 sin perder el último borrador guardado. [Dos revisiones, vínculos válidos y rechazos · verificado](#ev-t036)
 
-  **Datos** [`Hipótesis.rol`, `Hipótesis.explicación`](data-model.md#actividad-e-intento) · [`Intento.revisión esperada`](data-model.md#escrituras-caídas-y-reenvíos).
+  **Datos** [`Hipótesis.rol`, `Hipótesis.explicación`, `Intento.revisión`](data-model.md#actividad-e-intento) · [Entrada `revision_esperada`](contracts/api.md#borrador-de-hipótesis).
 
 ### Paridad y reserva
 
@@ -386,7 +386,7 @@ Las dos entregas de E12 tienen cuatro hipótesis para calibrar la calidad de la 
 
   **Depende de** T055, T058, T061. **Referencias** FR-008, FR-009, FR-010 · E11, E12, E13 · SC-005. **Cierre.** El docente asignado puede leer el desglose y rectificar con motivo. Quedan autor, revisión anterior, nueva revisión y diferencia por criterio. Una revisión obsoleta se rechaza. En una serie nueva, guardar una evaluación efectiva con V1 antes de activar V2. Tras activar V2, reproducir el total y el desglose originales con los pesos y juicios guardados de V1. [Revisiones, motivo y reproducción del desglose de V1 · verificado](#ev-t062)
 
-  **Datos** [`Revisión.responsable`, `Revisión.motivo`, `Revisión.revisión anterior`, `Revisión.créditos por criterio`, `Revisión.desglose ponderado`, `Revisión.total`](data-model.md#actividad-e-intento).
+  **Datos** [`Revisión.responsable`, `Revisión.motivo`, `Revisión.revisión anterior`, `Revisión.juicios por criterio`, `Revisión.créditos por criterio`, `Revisión.desglose ponderado`, `Revisión.total`](data-model.md#actividad-e-intento).
 
 - [X] T063 [US4] Implementar la publicación docente y la lectura de la devolución por el titular. **Rutas** `backend/src/modules/evaluacion/publicacion.rs` · `frontend/src/modules/devolucion/publicacion.ts`.
 
@@ -418,7 +418,7 @@ Tras T065, sustituir los estados educativos de ensayo por el pre y el post opera
 
   **Depende de** T065, T024. **Referencias** FR-002, FR-003 · E01, E14, E15 · SC-004. **Cierre.** La forma contiene tres ítems de percepción con igual texto, orden y escala 1–5 que el post previsto, y dos de razonamiento. Antes de responder u omitir se reserva el caso. Cualquiera de las dos decisiones habilita la práctica, se conserva al reanudar y cierra la edición del pre. [Dos recorridos por interfaz, acuses y decisión reabierta · verificado](#ev-t066)
 
-  **Datos** [`Instrumento educativo.versión`, `Instrumento educativo.enunciados`, `Instrumento educativo.orden`, `Instrumento educativo.anclajes de percepción`, `Instrumento educativo.formas A/B`, `Instrumento educativo.alternativas`, `Instrumento educativo.claves`](data-model.md#fuentes-y-versiones) · [`Pre y post.intento`, `Pre y post.momento`, `Pre y post.versión`, `Pre y post.estado`, `Pre y post.forma asignada`](data-model.md#actividad-e-intento).
+  **Datos** [`Instrumento educativo.versión`, `Instrumento educativo.enunciados`, `Instrumento educativo.orden`, `Instrumento educativo.anclajes de percepción`, `Instrumento educativo.formas A/B`, `Instrumento educativo.alternativas`, `Instrumento educativo.claves`, `Instrumento educativo.justificación de corrección`](data-model.md#fuentes-y-versiones) · [`Pre y post.intento`, `Pre y post.momento`, `Pre y post.versión`, `Pre y post.estado`, `Pre y post.forma asignada`](data-model.md#actividad-e-intento).
 
 - [X] T067 [US5] Implementar el post opcional de siete preguntas y conectarlo a la publicación real. **Rutas** `frontend/src/modules/encuestas/post.ts` · `backend/src/modules/encuestas/respuestas.rs`.
 
@@ -432,11 +432,13 @@ Tras T065, sustituir los estados educativos de ensayo por el pre y el post opera
 
   **Datos** [`Intento.secuencia educativa`, `Intento.actividad`, `Intento.versión de instrumento`](data-model.md#actividad-e-intento).
 
-- [X] T069 [US5] Generar el informe educativo y comprobar E14 y E15 por separado de la nota clínica. **Rutas** `backend/src/modules/encuestas/informe.rs` · `frontend/src/modules/encuestas/informe.ts`.
+- [X] T069 [US5] Generar el informe educativo y comprobar E14 y E15 por separado de la nota clínica. **Rutas** `backend/src/modules/encuestas/informe.rs` · `frontend/src/modules/encuestas/informe.ts` · `backend/tests/encuestas.rs`.
 
   **Depende de** T067, T068, T062. **Referencias** FR-002, FR-003 · E14, E15 · SC-004. **Cierre.** En E14 el primero completa ambos y reenvía el post, el segundo omite el pre y el tercero reanuda y omite el post. Deben constar tres invitados, dos pre, dos post y un par completo. Variar la encuesta conserva la nota clínica. En un par, 1/2 a 2/2 equivale a +50 puntos porcentuales. E15 compara ambas secuencias completas, percepción por ítem, razonamiento por forma y orden, y utilidad aparte. Informar faltantes sin convertirlos en errores. Calcular el razonamiento sobre dos solo cuando se hayan respondido ambos ejercicios. [Recuentos, puntajes por medida y nota clínica contrastada · verificado](#ev-t069)
 
-  **Datos** [`Reporte.actividad`, `Reporte.estudiante`, `Reporte.intento`, `Reporte.versión`, `Reporte.pares completos`, `Reporte.faltantes`](data-model.md#reporte-educativo).
+  **Datos** [`Reporte.actividad`, `Reporte.estudiante`, `Reporte.intento`, `Reporte.versión`, `Reporte.pares completos`, `Reporte.faltantes`, `Reporte.repeticiones`](data-model.md#reporte-educativo).
+
+  **Comprobación de repeticiones.** Abrir dos actividades del mismo escenario con el mismo estudiante. El informe de la primera actividad registra cero repeticiones y el de la segunda registra una. Reenviar cada alta conserva un único intento por actividad.
 
 ### Servicios, persistencia y recuperación en Compose
 
@@ -452,17 +454,17 @@ Tras T065, sustituir los estados educativos de ensayo por el pre y el post opera
 
   **Depende de** T071, T064. **Referencias** FR-010, FR-011 · E20, E21, E22 · SC-006. **Cierre.** Con preparación fallida la API no arranca sobre una base incompleta. Tras salida correcta de `sqlite-init` se habilita aun con inferencia indisponible. `GET /api/estado` distingue base y modelo. Una toma y una entrega nuevas reciben acuse con la evaluación pendiente. [Dependencia de arranque, estados y dos acuses · verificado](#ev-t072)
 
-- [ ] T073 [US7] Preparar el servicio permanente de inferencia con su volumen de pesos y verificación del modelo. **Rutas** `inferencia/Dockerfile` · `inferencia/preparar.sh` · `compose.yaml`.
+- [X] T073 [US7] Preparar el servicio permanente de inferencia con su volumen de pesos y verificación del modelo. **Rutas** `inferencia/Dockerfile` · `inferencia/preparar.sh` · `inferencia/servidor.conf` · `compose.yaml`.
 
-  **Depende de** T072, T013. **Referencias** FR-011 · E21, E22 · SC-006. **Cierre.** Con `sircle-pesos` en `/root/.ollama`, el preparador consulta la etiqueta pública `qwen3.5:4b`, descarga si falta, coteja el digest completo y exige una generación breve correcta antes de anunciar disponibilidad. Un digest inesperado deja incidencia. Ollama solo recibe tráfico en la red de Compose. [Etiqueta, digest esperado y local, prueba de generación y estado · pendiente](#ev-t073)
+  **Depende de** T072, T013. **Referencias** FR-011 · E21, E22 · SC-006. **Cierre.** Con `sircle-pesos` en `/root/.ollama`, el preparador consulta la etiqueta pública `qwen3.5:4b`, descarga si falta, coteja el digest completo y exige una generación breve correcta antes de anunciar disponibilidad. Un digest inesperado deja incidencia. Ollama solo recibe tráfico en la red de Compose. [Etiqueta, digest esperado y local, generación desde el backend y estado · verificado](#ev-t073)
 
-- [ ] T074 [US7] Ensayar la preparación sin pesos, el límite de reintentos y la recuperación. **Rutas** `inferencia/preparar.sh` · `specs/001-simulacion-clinica/evidencias/h4/T074/reintentos.txt`.
+- [X] T074 [US7] Ensayar la preparación sin pesos, el límite de reintentos y la recuperación. **Rutas** `inferencia/preparar.sh` · `specs/001-simulacion-clinica/evidencias/h4/T074/reintentos-fedora.txt`.
 
-  **Depende de** T073. **Referencias** FR-011 · E21, E22 · SC-006. **Cierre.** Con volumen de prueba vacío y el registro inaccesible hay tres intentos totales y esperas de dos y cuatro segundos. El aviso identifica servicio, modelo, motivo y acción. Los sondeos no reinician la descarga. Al restablecer conectividad y reiniciar inferencia se verifica el digest y una generación, conservando el intento en el volumen de datos. [Conteo por ciclo, aviso, recuperación y mismo intento · pendiente](#ev-t074)
+  **Depende de** T073. **Referencias** FR-011 · E21, E22 · SC-006. **Cierre.** Con volumen de prueba vacío y el registro inaccesible hay tres intentos totales y esperas de dos y cuatro segundos. El aviso identifica servicio, modelo, motivo y acción. Los sondeos no reinician la descarga. Al restablecer conectividad y reiniciar inferencia se verifica el digest y una generación, conservando el intento en el volumen de datos. [Conteo por ciclo, aviso, recuperación y mismo intento · verificado](#ev-t074)
 
 - [ ] T075 [US7] Arrancar desde un clon limpio en el equipo del profesor con `docker compose up --build`. **Rutas** `compose.yaml` · `specs/001-simulacion-clinica/evidencias/h4/T075/arranque.txt`.
 
-  **Depende de** T070, T071, T072, T073, T074. **Referencias** FR-011 · E21 · SC-006. **Cierre.** Con imágenes y modelo públicos y sin `docker login`, cuenta del profesor, contraseñas, tokens ni `.env` secreto, abre la interfaz en localhost. `docker compose ps -a` muestra frontend, backend e inferencia activos y `sqlite-init` finalizado con código cero. Solo el frontend tiene un puerto publicado en loopback. [Revisión del clon, comando, estados de los cuatro servicios y puertos · pendiente](#ev-t075)
+  **Depende de** T070, T071, T072, T073, T074. **Referencias** FR-011 · E21 · SC-006. **Cierre.** Con imágenes y modelo públicos y sin `docker login`, cuenta del profesor, contraseñas, tokens ni `.env` secreto, abre la interfaz en localhost. `docker compose ps -a` muestra frontend, backend e inferencia activos y `sqlite-init` finalizado con código cero. En el mismo clon, verificar una generación breve correcta con el digest fijado y que `/api/estado` devuelva `base.disponible` y `modelo.disponible` en `true`. Solo el frontend tiene un puerto publicado en loopback. [Revisión del clon, servicios, generación, estado de la API y puertos · pendiente](#ev-t075)
 
 - [ ] T076 [US7] Comprobar reinicio y restaurar una copia consistente de SQLite en un volumen de prueba separado. **Rutas** `backend/tests/restauracion.rs` · `specs/001-simulacion-clinica/evidencias/h4/T076/restauracion.tsv`.
 
@@ -470,7 +472,7 @@ Tras T065, sustituir los estados educativos de ensayo por el pre y el post opera
 
 - [ ] T077 [US7] Repetir E22 en Compose con la interfaz del post integrada. **Rutas** `compose.yaml` · `specs/001-simulacion-clinica/evidencias/h4/T077/e22-compose.json`.
 
-  **Depende de** T064, T067, T075. **Referencias** FR-007, FR-010, FR-011 · E11, E22 · SC-006. **Cierre.** Con `docker compose stop inferencia`, hacer una medición nueva, citarla, entregar, reenviar y resolver el post. Quedan una medición nueva, una entrega, un trabajo pendiente y cero evaluaciones terminadas. Tras `docker compose start inferencia` y una generación de prueba, conservar los IDs y obtener exactamente una evaluación terminada incluso al reintentar el trabajo. [Comparación de IDs y recuentos durante y después de la caída · pendiente](#ev-t077)
+  **Depende de** T064, T067, T075. **Referencias** FR-007, FR-010, FR-011 · E11, E22 · SC-006. **Cierre.** Con `docker compose stop inferencia`, hacer una medición nueva, citarla, entregar, reenviar y resolver el post. Quedan una medición nueva, una entrega, un trabajo pendiente y cero evaluaciones terminadas. Tras `docker compose start inferencia` y una generación de prueba, conservar los IDs y obtener exactamente una evaluación terminada incluso al reintentar el trabajo. [Comparación de IDs y recuentos verificada en desarrollo · pendiente en equipo docente](#ev-t077)
 
 ### Autorización y aceptación formal
 
@@ -623,16 +625,16 @@ Las rutas de los registros parten de `specs/001-simulacion-clinica/evidencias/`.
 | <a id="ev-t066"></a>T066 | [Pre](evidencias/h4/T066/pre.md) | Dos recorridos por interfaz, acuses y decisión reabierta | **verificado** |
 | <a id="ev-t067"></a>T067 | [Post](evidencias/h4/T067/post.md) | Capturas y acuses por orden de post y publicación | **verificado** |
 | <a id="ev-t068"></a>T068 | [Secuencias](evidencias/h4/T068/secuencias.tsv) | IDs, versiones, forma y momento | **verificado** |
-| <a id="ev-t069"></a>T069 | [Informe](evidencias/h4/T069/informe.tsv) | Recuentos, puntajes por medida y nota clínica contrastada en la prueba de publicación | **verificado** |
+| <a id="ev-t069"></a>T069 | [Informe](evidencias/h4/T069/informe.tsv) · [Regresión de repeticiones](../../backend/tests/encuestas.rs) | Recuentos, puntajes por medida, repeticiones y nota clínica contrastada en la prueba de publicación | **verificado** |
 | <a id="ev-t070"></a>T070 | [Origen](evidencias/h4/T070/origen.md) | Dirección local, captura y respuesta de red del mismo origen | **verificado** |
 | <a id="ev-t071"></a>T071 | [Inicialización](evidencias/h4/T071/sqlite-init.txt) | Estado de salida, imagen, volumen e inventarios | **verificado** |
 | <a id="ev-t072"></a>T072 | [Arranque y estados de la API](evidencias/h4/T072/backend-disponible.json) · [Acuses con Ollama detenido](evidencias/h4/T077/durante-caida-compose.json) | Dependencia de arranque, estados y dos acuses | **verificado** |
-| <a id="ev-t073"></a>T073 | [Inventario y carga del modelo](evidencias/h4/T073/modelo.json) | Etiqueta, digest esperado y local, prueba de generación y estado | **pendiente la generación en Docker** |
-| <a id="ev-t074"></a>T074 | [Reintentos en Compose](evidencias/h4/T074/reintentos.txt) · [Servidor simulado](evidencias/h4/T074/reintentos-local.txt) | Tres intentos, aviso, mismas operaciones y descarga recuperada | **pendiente la generación tras recuperar** |
-| <a id="ev-t075"></a>T075 | [Arranque de desarrollo](evidencias/h4/T075/arranque-desarrollo.txt) | Compilación con imágenes públicas, SQLite y único puerto publicado | **pendiente en el equipo docente** |
-| <a id="ev-t076"></a>T076 | [Restauración durante la caída](evidencias/h4/T076/restauracion-durante-caida.json) · [Restauración de una revisión publicada](evidencias/auditoria-modulo01/recorrido/restauracion-compose.json) | Vista, fuentes y devolución de ensayo recuperadas en otro volumen | **pendiente la reutilización del modelo en el equipo docente** |
-| <a id="ev-t077"></a>T077 | [Caída en Compose](evidencias/h4/T077/durante-caida-compose.json) · [Recuperación local](evidencias/h4/T077/e22-local.json) | Acuses, post e IDs verificados en Compose mientras Ollama está detenido | **pendiente la evaluación tras recuperar Ollama en Compose** |
-| <a id="ev-t078"></a>T078 | `h4/T078/aprobaciones.md` | Acta docente restringida y correspondencia con las versiones cargadas | **pendiente** |
+| <a id="ev-t073"></a>T073 | [Generación desde el backend en Fedora](evidencias/h4/T073/modelo-fedora.json) · [Ensayo previo de carga](evidencias/h4/T073/modelo.json) | Digest, generación por red de Compose, salud y puertos | **verificado** |
+| <a id="ev-t074"></a>T074 | [Reintentos y recuperación en Fedora](evidencias/h4/T074/reintentos-fedora.txt) · [Reintentos previos](evidencias/h4/T074/reintentos.txt) · [Servidor simulado](evidencias/h4/T074/reintentos-local.txt) | Tres intentos, aviso, descarga recuperada y el mismo intento | **verificado** |
+| <a id="ev-t075"></a>T075 | [Arranque en Fedora con Qwen disponible](evidencias/h4/T075/arranque-fedora.txt) · [Arranque de desarrollo previo](evidencias/h4/T075/arranque-desarrollo.txt) | Imágenes públicas, SQLite inicializado, modelo disponible y único puerto publicado | **pendiente en el equipo docente** |
+| <a id="ev-t076"></a>T076 | [Revisión publicada tras reinicio y restauración en Fedora](evidencias/h4/T076/restauracion-publicada-fedora.json) · [Cotejo de las fuentes y los registros](evidencias/h4/T076/restauracion-fedora.json) · [Restauración previa](evidencias/auditoria-modulo01/recorrido/restauracion-compose.json) | Reutilización del modelo tras reiniciar, mismos registros y devolución visible en otro volumen | **pendiente repetir en el equipo docente** |
+| <a id="ev-t077"></a>T077 | [E22 completo en Compose en Fedora](evidencias/h4/T077/e22-compose.json) · [Caída en Fedora con diálogo 503](evidencias/h4/T077/durante-caida-fedora.json) · [Recuperación local previa](evidencias/h4/T077/e22-local.json) | Misma medición y entrega, post conservado y exactamente una evaluación tras recuperar Qwen | **pendiente repetir E22 en el equipo docente** |
+| <a id="ev-t078"></a>T078 | [Respaldo del piloto](evidencias/h4/T078/respaldo-piloto.md) · `h4/T078/aprobaciones.md` | Acta docente restringida y correspondencia con las versiones cargadas | **pendientes las tres aprobaciones por versión y huella** |
 | <a id="ev-t079"></a>T079 | `h4/T079/recorrido.md` | Secuencia por rol, IDs, captura de la devolución y tiempos del equipo docente | **pendiente** |
 | <a id="ev-t080"></a>T080 | `h4/T080/acta.md` | Decisión de aceptación y referencias a cada evidencia | **pendiente** |
 

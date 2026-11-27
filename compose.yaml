@@ -44,7 +44,7 @@ services:
     volumes:
       - sircle-pesos:/root/.ollama
     healthcheck:
-      test: ["CMD", "curl", "-fsS", "--max-time", "3", "http://127.0.0.1:11434/api/version"]
+      test: ["CMD", "curl", "-fsS", "--max-time", "3", "http://inferencia:11434/api/version"]
       interval: 10s
       timeout: 4s
       retries: 3

@@ -22,7 +22,7 @@ La interfaz llama a `/api` en su propio origen. El servicio frontend reenvía a 
 | `GET /api/docente/actividades` · `GET /api/evaluaciones/{id}/revisiones/{revision}` | La supervisión lista las actividades a cargo del docente. Una revisión histórica conserva su propio autor, motivo, juicios, citas, créditos y total. |
 | `GET /api/evaluaciones/{id}/criterios/{criterio}/traza` · `GET /api/intentos/{id}/turnos/{turno}/traza` | El revisor autorizado obtiene la cadena desde la cita hasta el evento y la versión de la fuente, el agente y la regresión asociada. Una incidencia indica qué evidencia se esperaba y permite localizar su registro técnico. |
 | `GET /api/intentos/{id}/trazas-rechazadas` | El docente asignado recupera los rechazos del intento con su operación, agente, motivo y los datos de inferencia y procedencia disponibles. |
-| `GET /api/actividades/{id}/resultados-educativos` | El docente asignado recibe invitados, pares completos, faltantes, percepción por ítem y razonamiento por forma, secuencia y momento. Las ponderaciones de la nota clínica proceden exclusivamente de la rúbrica. |
+| `GET /api/actividades/{id}/resultados-educativos` | El docente asignado recibe invitados, pares completos, faltantes, percepción por ítem y razonamiento por forma, secuencia y momento. `repeticiones` cuenta los intentos cuyos estudiantes ya tenían un intento anterior del mismo escenario. Las ponderaciones de la nota clínica proceden exclusivamente de la rúbrica. |
 | `GET /api/estado` | Comunica por separado disponibilidad de la base y del modelo, junto con una indicación comprensible de recuperación. El servicio mantiene las operaciones respaldadas por SQLite durante un fallo de inferencia. |
 
 ## Pregunta libre por HTTP y desde el chat

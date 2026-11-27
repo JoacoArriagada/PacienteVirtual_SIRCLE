@@ -1,0 +1,38 @@
+{
+  "fecha": "2026-11-26T19:17:13.565904+00:00",
+  "equipo": "Desarrollo Fedora 44, Intel Core i3-7020U",
+  "revisionAplicacion": "0678c301 con corrección del proxy interno en el directorio de trabajo",
+  "volumen": "sircle-verificacion-h4_sircle-pesos",
+  "modelo": "qwen3.5:4b",
+  "digestLocal": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "digestEsperado": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "bytesModelo": 3324173934,
+  "cuantizacion": "Q4_K_M",
+  "antesProxy": {
+    "host_inferencia": 403,
+    "host_localhost": 200
+  },
+  "estado": {
+    "base": {
+      "disponible": true
+    },
+    "modelo": {
+      "contexto_entrevista": 2048,
+      "digest_esperado": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "disponible": true,
+      "nombre": "qwen3.5:4b"
+    },
+    "servicio": "sircle"
+  },
+  "saludInferencia": "healthy",
+  "puertosPublicadosInferencia": [],
+  "comprobacionDesdeBackend": {
+    "model": "qwen3.5:4b",
+    "response": "OK",
+    "done": true,
+    "total_duration": 821340436,
+    "load_duration": 906269
+  },
+  "intentoRecuperado": "edf74e5ffca0ccf5cdccc619f31553e1",
+  "vistaConservada": true
+}

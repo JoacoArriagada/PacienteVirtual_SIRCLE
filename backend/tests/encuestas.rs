@@ -143,3 +143,39 @@ async fn alterna_altas_concurrentes_y_compara_las_dos_secuencias_completas() {
     assert_eq!(informe.cuerpo["grupos"][0]["cambio_razonamiento"]["0"], 2);
     println!("E15 {}", informe.cuerpo);
 }
+
+#[tokio::test]
+async fn informa_primera_exposicion_y_repeticion_sin_contar_reenvios() {
+    let servidor = Servidor::nuevo();
+    let db = sqlite::abrir_existente(&servidor.db).unwrap();
+    db.execute_batch(
+        "INSERT INTO actividades VALUES ('lr-repeticion','P01','Repetición de ensayo','ensayo',1);
+         INSERT INTO asignaciones VALUES ('lr-repeticion','estudiante-lr','docente-demo');
+         INSERT INTO configuraciones_ensayo
+         SELECT 'lr-repeticion', escenario_id, version_caso_id, version_rubrica, version_instrumento
+         FROM configuraciones_ensayo WHERE actividad_id='lr-ensayo';",
+    ).unwrap();
+    drop(db);
+
+    let (estudiante, _) = servidor.entrar("estudiante-lr").await;
+    let (docente, _) = servidor.entrar("docente-demo").await;
+    for (actividad, repeticion) in [("lr-ensayo", false), ("lr-repeticion", true)] {
+        let datos = json!({"actividad_id":actividad});
+        let alta = servidor.peticion("POST", "/api/intentos", Some(&estudiante), Some("alta"), Some(datos.clone())).await;
+        assert_eq!(alta.estado, StatusCode::CREATED, "{}", alta.cuerpo);
+        let reenvio = servidor.peticion("POST", "/api/intentos", Some(&estudiante), Some("alta"), Some(datos)).await;
+        assert_eq!(reenvio.estado, StatusCode::OK);
+        assert_eq!(reenvio.cuerpo, alta.cuerpo);
+
+        let ruta = format!("/api/actividades/{actividad}/resultados-educativos");
+        let informe = servidor.consultar("GET", &ruta, Some(&docente), None).await;
+        assert_eq!(informe.estado, StatusCode::OK);
+        assert_eq!(informe.cuerpo["invitados"], 1);
+        assert_eq!(informe.cuerpo["repeticiones"], usize::from(repeticion));
+        let intentos = informe.cuerpo["intentos"].as_array().unwrap();
+        assert_eq!(intentos.len(), 1);
+        assert_eq!(intentos[0]["intento_id"], alta.cuerpo["intento_id"]);
+        assert_eq!(intentos[0]["repeticion"], repeticion);
+        assert_eq!(informe.cuerpo["grupos"][0]["repeticion"], repeticion);
+    }
+}

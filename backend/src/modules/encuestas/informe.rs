@@ -20,6 +20,7 @@ pub struct Informe {
     pre_respondidos: usize,
     post_respondidos: usize,
     pares_completos: usize,
+    repeticiones: usize,
     intentos: Vec<IntentoEducativo>,
     grupos: Vec<Grupo>,
 }
@@ -193,6 +194,7 @@ pub async fn leer(
             let version: String = fila.get(2)?;
             let ordinal: i64 = fila.get(3)?;
             let repeticion: bool = fila.get(10)?;
+            informe.repeticiones += usize::from(repeticion);
             let pre = leer_respuestas(fila.get(8)?)?;
             let post = leer_respuestas(fila.get(9)?)?;
             informe.pre_respondidos += usize::from(!pre.is_empty());

@@ -1,0 +1,10 @@
+T075 · arranque técnico en Fedora de desarrollo · 2026-11-26
+Se compilaron las tres imágenes y se corrigió el proxy interno de inferencia. El ensayo usó un puerto de loopback asignado por Docker porque 8080 estaba ocupado.
+sircle-verificacion-h4-backend-1 Up 2 minutes (healthy)
+sircle-verificacion-h4-sqlite-init-1 Exited (0) 2 minutes ago
+sircle-verificacion-h4-inferencia-1 Up 2 minutes (healthy) 11434/tcp
+sircle-verificacion-h4-frontend-1 Up 11 minutes 80/tcp, 127.0.0.1:32768->8080/tcp
+GET 127.0.0.1:32768/api/estado
+{"base":{"disponible":true},"modelo":{"contexto_entrevista":2048,"digest_esperado":"d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04","disponible":true,"nombre":"qwen3.5:4b"},"servicio":"sircle"}
+Generación desde el backend y huella del modelo en ../T073/modelo-fedora.json.
+Queda pendiente el arranque desde un clon limpio en el equipo del profesor.

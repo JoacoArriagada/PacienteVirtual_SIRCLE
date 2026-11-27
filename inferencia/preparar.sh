@@ -55,7 +55,7 @@ for intento in 1 2 3; do
     printf 'inferencia %s · intento %s/3\n' "$modelo" "$intento"
     if preparar; then
         printf 'inferencia %s · disponible · sha256 %s\n' "$modelo" "$digest"
-        socat TCP-LISTEN:11434,reuseaddr,fork TCP:"$interno" &
+        nginx -c /etc/nginx/sircle.conf -g 'daemon off;' &
         proxy=$!
         wait "$proxy"
         exit $?

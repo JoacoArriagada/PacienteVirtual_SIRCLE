@@ -213,7 +213,8 @@ pub fn validar_borrador(entrada: &Entrada, borrador: &Borrador) -> Result<()> {
         ensure!(entrada.rubrica.criterios.iter().any(|c| c.id == observacion.criterio_id && c.expectativa == observacion.expectativa)
             && criterios.insert(&observacion.criterio_id), "El borrador cita un criterio o expectativa que no pertenece a su rúbrica");
         ensure!([&observacion.actuacion, &observacion.explicacion, &observacion.mejora]
-            .into_iter().all(|texto| !texto.trim().is_empty()), "La observación requiere actuación, explicación y mejora");
+            .into_iter().all(|texto| !texto.trim().is_empty()),
+            "El criterio {} requiere actuación, explicación y mejora", observacion.criterio_id);
         ensure!(observacion.evidencias.iter().all(|id| ids.contains(id)), "La observación cita evidencia ajena");
         if let Some(incidencia) = &observacion.incidencia {
             ensure!(observacion.juicio == Juicio::RevisionDocente && incidencia.descuento_automatico == 0

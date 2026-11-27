@@ -41,6 +41,18 @@ En la preparación de prueba, cargar la rúbrica V1 sin constancia de aprobació
 
 **Arranque.** El equipo necesitará Docker con Compose, espacio para datos e imágenes y acceso a los registros públicos durante la primera preparación, o imágenes y pesos verificados previamente. Desde la raíz de un clon limpio ejecutar `docker compose up --build`. En otra terminal revisar `docker compose ps -a` y `docker compose logs sqlite-init`. Abrir `http://localhost:8080`. Debe haber tres servicios permanentes, un `sqlite-init` terminado con código cero y un único puerto publicado en loopback. La preparación debe funcionar sin cuentas, contraseñas, tokens, `.env` secreto ni `docker login`.
 
+Para cerrar T075, guardar el resultado de ambas comprobaciones y la línea `disponible · sha256` de `docker compose logs inferencia`, que registra el digest verificado en ese arranque.
+
+```sh
+curl -fsS http://127.0.0.1:8080/api/estado | jq -e 'select(.base.disponible and .modelo.disponible)'
+docker compose exec -T inferencia curl -fsS --max-time 150 \
+  -H 'Content-Type: application/json' \
+  -d '{"model":"qwen3.5:4b","prompt":"Responde únicamente OK","stream":false,"think":false,"options":{"temperature":0,"num_ctx":2048,"num_predict":8}}' \
+  http://127.0.0.1:11434/api/generate | jq -e 'select(.done and .model == "qwen3.5:4b" and (.response | test("^\\s*OK\\s*$"; "i")))'
+```
+
+Para reproducir también la selección de hechos de LR, usar el [ensayo de pregunta libre](#conversación-libre-con-lr-por-http). El mensaje inicial de sistema y el esquema JSON de selección están en el [adaptador de Ollama](../../backend/src/modules/entrevista/ollama.rs). El agente valida la selección y recupera la respuesta autorizada del caso.
+
 **Antes de habilitar la actividad formal.** El docente deberá aprobar la ficha española y la versión de los hechos e instrumentos disponibles para la fase inicial, con 148/85 mmHg y pulso de 102/min, y la redacción del informe textual del ECG. Revisará la rúbrica de pregrado avanzado y sus ponderaciones, y las claves, distractores y equivalencia esperada de las formas A/B. Comprobar en SQLite que la actividad fija las versiones aprobadas y que la huella de la rúbrica coincide con la de la aprobación. La comparabilidad observada de A/B se revisará después del piloto.
 
 ### Preparar el material para aprobación

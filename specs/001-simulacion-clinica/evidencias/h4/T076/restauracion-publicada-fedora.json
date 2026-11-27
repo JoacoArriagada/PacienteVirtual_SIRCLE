@@ -1,0 +1,36 @@
+{
+  "equipo": "Desarrollo Fedora 44",
+  "volumenOrigen": "sircle-verificacion-h4-e22-final-datos",
+  "volumenRestaurado": "sircle-e22-publicada-restauracion_sircle-datos",
+  "fuentes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "intento": "b2be82bd91ee1396a815520ab0d6edc1",
+  "turnos": [
+    "2b166183670dd1dfce5840af79912979"
+  ],
+  "mediciones": [
+    "9ad64bc29dee41883cbe427b75034063"
+  ],
+  "entrega": "3df33fe078a3e2118430211d99d9aa25",
+  "publicacion": {
+    "evaluacion": "5220e31076af98a8257eb2e5d1c8a87b",
+    "numero": 1,
+    "revision": 1
+  },
+  "vistaYDevolucionIgualesTrasReinicio": true,
+  "vistaYDevolucionIgualesEnVolumenSeparado": true
+}

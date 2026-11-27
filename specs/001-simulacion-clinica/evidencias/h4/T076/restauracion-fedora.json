@@ -1,0 +1,131 @@
+{
+  "equipo": "Desarrollo Fedora 44",
+  "revisionAplicacion": "0678c301",
+  "proyectoOrigen": "sircle-e22-caida",
+  "volumenOrigen": "sircle-e22-caida_sircle-datos",
+  "volumenRestaurado": "sircle-e22-restauracion_sircle-datos",
+  "integridadSQLite": true,
+  "reinicioIgual": true,
+  "restauracionIgual": true,
+  "datos": {
+    "fuentes": [
+      [
+        1,
+        1,
+        "2aaaecd5124ed5b212c5565265585b7eb8b0621766f123c66374304b15dc01d5"
+      ],
+      [
+        2,
+        2,
+        "2a02cc2ad45313d58de24407f0977323932ebec2e948e27fa2b599b155bb4f97"
+      ],
+      [
+        3,
+        3,
+        "b13f04c4f3b00028982a71cf0ac20d8aed84f8dbf1fb013d44429ce9203720ca"
+      ],
+      [
+        4,
+        4,
+        "d8f99a42e1d27ccef03a8d3056360635f2a58a313ea1d506c5c7a60ea634befb"
+      ],
+      [
+        5,
+        5,
+        "d8538801062551a4cd8db3f59fce3c08fd11a6b7ce71385adfa2c8af0d431b97"
+      ],
+      [
+        6,
+        6,
+        "a65ff9ec2a1436def233b33aa253770384c610ad87984308eba5202c34960808"
+      ],
+      [
+        7,
+        7,
+        "12e238681d4b4f5fe50a68f3055299618d7d5cbb388746b50deb3de4e08d1eb0"
+      ],
+      [
+        8,
+        8,
+        "2d66213b06e33e3263043d252fcebbde478904e10b7be743e0574431ac3821cb"
+      ],
+      [
+        9,
+        9,
+        "8f2f55ce57d1681c25e44d4c0299e6f2d37ae1c4c038c71e471b4c1141a4800a"
+      ],
+      [
+        10,
+        10,
+        "0ea78a56dca59855367a2ade91dc5c78e9a593d2749e5ed589af5caf9f40cfa5"
+      ],
+      [
+        11,
+        11,
+        "9d43944a506fca3319295eb716ae37ece59ee3b180cdc56da69d4b6a35fae25e"
+      ],
+      [
+        12,
+        12,
+        "0ea78a56dca59855367a2ade91dc5c78e9a593d2749e5ed589af5caf9f40cfa5"
+      ],
+      [
+        13,
+        13,
+        "356d37b1191f9f302b047a15e641555c5ad6f490e6e4ed3be7ec6749df9f818a"
+      ],
+      [
+        14,
+        14,
+        "1d2894f6a9e8da0f4cbbf4d0a0d2f03f0e20483cb1eb2a98ebc03b4c0bf1a257"
+      ]
+    ],
+    "intentos": [
+      [
+        "1d0c4b6bf9b95b5ed9c2d3505f126358",
+        "estudiante-lr",
+        4,
+        "respondido",
+        "entregado",
+        5
+      ]
+    ],
+    "turnos": [
+      [
+        "bd8d841f68c550bdfa352558dc0b91b8",
+        "1d0c4b6bf9b95b5ed9c2d3505f126358",
+        "22dc2ba40edcc55ad49d46ee4b3ee22c"
+      ]
+    ],
+    "mediciones": [
+      [
+        "c4162a74cb3ec1ad320d9a7591df3dc9",
+        "1d0c4b6bf9b95b5ed9c2d3505f126358",
+        "{\"sistolica\":148,\"diastolica\":85}",
+        "mmHg"
+      ]
+    ],
+    "encuestas": [
+      [
+        "1d0c4b6bf9b95b5ed9c2d3505f126358",
+        "post",
+        "omitido"
+      ],
+      [
+        "1d0c4b6bf9b95b5ed9c2d3505f126358",
+        "pre",
+        "respondido"
+      ]
+    ],
+    "entregas": [
+      [
+        "fffceee467fadf3b8c07442b9fed7a82",
+        "1d0c4b6bf9b95b5ed9c2d3505f126358",
+        4,
+        "2cd3a786b9cfac702534b1848bdbbf1574bfc9bb6cd200bf3692e305d5e8e437"
+      ]
+    ],
+    "evaluaciones": [],
+    "publicaciones": []
+  }
+}

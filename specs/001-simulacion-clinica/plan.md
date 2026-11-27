@@ -6,7 +6,7 @@
 
 El avance técnico se demostrará con material de prueba identificado. La aceptación formal exigirá el recorrido completo de LR con la versión clínica aprobada en el computador del profesor. Ambas comprobaciones están previstas. [Especificación aclarada](spec.md)
 
-El monorrepositorio usará HTML, CSS y TypeScript sin framework, Rust con Axum, una API REST con JSON, SQLite como única base y un motor Ollama local con `qwen3.5:4b`. La atribución al acompañante de Nannu responde a un requisito aprobado de P02. La precisión del principio I sigue pendiente de revisión por el procedimiento de enmienda. [Gobierno y enmiendas](../../.specify/memory/constitution.md#gobierno-y-enmiendas) · [Revisión de los seis principios](research.md#revisión-constitucional-antes-y-después-del-diseño)
+El monorrepositorio usará HTML, CSS y TypeScript sin framework, Rust con Axum, una API REST con JSON, SQLite como única base y un motor Ollama local con `qwen3.5:4b`. E16 y E17 intercalan los agentes de Nannu y Dan Sparks para comprobar el aislamiento de los hechos, el hablante y el historial que usa LR. [Revisión de los seis principios](research.md#revisión-constitucional-antes-y-después-del-diseño)
 
 ## Hito 1. Preparar aplicaciones independientes y probar la conversación libre con LR
 

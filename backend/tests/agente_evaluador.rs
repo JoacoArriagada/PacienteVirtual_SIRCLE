@@ -214,6 +214,13 @@ async fn rastrear_criterio_a_evidencia_y_regresion() {
     assert_eq!(traza.cuerpo["invocacion"]["operacion_id"], operacion);
     assert_eq!(traza.cuerpo["invocacion"]["modelo"], MODELO);
     assert_eq!(traza.cuerpo["invocacion"]["digest"], DIGEST_MODELO);
+    let criterios = traza.cuerpo["invocacion"]["solicitud"]["format"]["properties"]["resultados"]["properties"]
+        .as_object().unwrap();
+    for criterio in criterios.values() {
+        for campo in ["a", "x", "m"] {
+            assert_eq!(criterio["properties"][campo]["minLength"], 1);
+        }
+    }
     assert_eq!(traza.cuerpo["evaluacion_id"], id);
     assert_eq!(traza.cuerpo["borrador_guardado"], vista.cuerpo["borrador"]);
     {

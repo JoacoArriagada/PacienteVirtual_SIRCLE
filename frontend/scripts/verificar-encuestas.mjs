@@ -89,7 +89,13 @@ try {
   }
   const arranque = await api(estudiante, "/estado");
   assert.equal(arranque.base.disponible, true);
-  if (proyecto) assert.equal(arranque.modelo.disponible, false);
+  let dialogoDuranteCaida = null;
+  if (proyecto) {
+    assert.equal(arranque.modelo.disponible, false);
+    dialogoDuranteCaida = await api(estudiante, intento + "/turnos",
+      escribir("POST", "e22-turno-durante-caida", { texto: "¿Cuándo empezó a faltarte el aire?" }), 503);
+    assert.deepEqual((await api(estudiante, intento)).turnos.map((fila) => fila.turno_id), [turno.turno_id]);
+  }
   const medicion = await api(estudiante, intento + "/mediciones",
     escribir("POST", "e22-presion", { instrumento: "presion", accion: "toma_completa" }), 201);
   const guardado = await api(estudiante, intento + "/razonamiento",
@@ -112,7 +118,7 @@ try {
   const docente = await abrir("docente-demo");
   const rutaGrupo = "/actividades/lr-ensayo";
   await docente.getByRole("heading", { name: "Supervisión" }).waitFor();
-  const buscarEntrega = async () => (await api(docente, rutaGrupo + "/entregas"))
+  const buscarEntrega = async () => (await api(docente, rutaGrupo + "/entregas", { maxRetries: 2 }))
     .filter((fila) => fila.intento_id === id);
   let antes = await buscarEntrega();
   if (!arranque.modelo.disponible) {
@@ -131,8 +137,10 @@ try {
   await docente.getByRole("heading", { name: "Razonamiento por forma y orden" }).waitFor();
   await docente.screenshot({ path: resolve(destino, "informe.png"), fullPage: true });
 
-  let despues = null;
+  const evidencia = { entorno: proyecto ? "Compose" : "procesos locales", sitio, antesDeCaida, arranque, dialogoDuranteCaida,
+    pre: preAcuse, post: postAcuse, turno, medicion, entrega, antes, despues: null };
   if (recuperar) {
+    await writeFile(resolve(destino, "durante-caida-compose.json"), JSON.stringify(evidencia, null, 2) + "\n");
     compose("start", "inferencia");
     detener = false;
     const limite = Date.now() + 12 * 60_000;
@@ -140,11 +148,12 @@ try {
       const propia = await buscarEntrega();
       assert.equal(propia.length, 1);
       if (propia[0].estado === "terminado") {
-        despues = propia[0];
+        evidencia.despues = propia[0];
         break;
       }
       await new Promise((resolver) => setTimeout(resolver, 2000));
     }
+    const { despues } = evidencia;
     assert.ok(despues?.evaluacion_id, "No terminó la evaluación tras recuperar Ollama");
     assert.equal(despues.entrega_id, entrega.entrega_id);
     assert.deepEqual(await api(estudiante, intento + "/entrega", peticionEntrega), entrega);
@@ -155,11 +164,9 @@ try {
     assert.deepEqual(await buscarEntrega(), [despues]);
     assert.equal((await api(estudiante, "/estado")).modelo.disponible, true);
   }
-  const evidencia = { entorno: proyecto ? "Compose" : "procesos locales", sitio, antesDeCaida, arranque,
-    pre: preAcuse, post: postAcuse, turno, medicion, entrega, antes, despues };
   const nombre = recuperar ? "e22-compose.json" : proyecto ? "durante-caida-compose.json" : "encuestas.json";
   await writeFile(resolve(destino, nombre), JSON.stringify(evidencia, null, 2) + "\n");
-  console.log(JSON.stringify({ intento: id, pre, post, evaluacion: despues?.evaluacion_id }));
+  console.log(JSON.stringify({ intento: id, pre, post, evaluacion: evidencia.despues?.evaluacion_id }));
 } finally {
   try {
     if (detener) compose("start", "inferencia");

@@ -8,6 +8,7 @@ interface Informe {
   pre_respondidos: number;
   post_respondidos: number;
   pares_completos: number;
+  repeticiones: number;
   intentos: {
     estudiante_id: string;
     intento_id: string;
@@ -38,7 +39,7 @@ export async function mostrarInforme(panel: HTMLElement, actividad: string): Pro
     const informe = await api<Informe>(`/actividades/${encodeURIComponent(actividad)}/resultados-educativos`);
     if (!panel.isConnected) return;
     panel.replaceChildren();
-    texto(panel, "p", `${informe.invitados} invitados · ${informe.sin_intento} sin intento · ${informe.pre_respondidos} pre respondidos · ${informe.post_respondidos} post respondidos · ${informe.pares_completos} pares completos`);
+    texto(panel, "p", `${informe.invitados} invitados · ${informe.sin_intento} sin intento · ${informe.pre_respondidos} pre respondidos · ${informe.post_respondidos} post respondidos · ${informe.pares_completos} pares completos · ${informe.repeticiones} repeticiones`);
     if (!informe.intentos.length) return;
     tabla(panel, ["Identidad e intento", "Versión y orden", "Pre", "Post"], informe.intentos.map((intento) => [
       `${intento.estudiante_id} · ${intento.intento_id}`,
