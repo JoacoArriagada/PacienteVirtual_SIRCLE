@@ -1,0 +1,74 @@
+|  |  |
+| --- | --- |
+| **Appendix A1: MedEdPORTAL Simulation Case Template**  **SIMULATION CASE TITLE: Acute Hypoxemia in an Neonate with Transposition of the Great Arteries (TGA)**  **AUTHOR: Stacie B. Peddy, MD** – **University of Pennsylvania Perelman School of Medicine** | |
+| **PATIENT NAME: BB Azure**  **PATIENT AGE: 3 hour old infant**  **CHIEF COMPLAINT: Hypoxemia** | |
+|  | |
+| **Brief narrative description of case**  *Include the presenting patient chief complaint and overall learner goals for this case* | 3 hour old infant born at full term with a pre-natal diagnosis of TGA (no ventricular septal defect). Maternal history is unremarkable. Baby was born by spontaneous vaginal delivery with normal resuscitation in the delivery room by the NICU team. Apgars were 7 and 8. NICU team placed umbilical venous and arterial lines, as well as a peripheral IV (PIV). Pulse oximetry (sPO2) on room air was 81%. Prostaglandin infusion was started. Baby was then transferred to the ICU one hour ago.  Through the use of role-assignment and closed loop communications, the participants goals are to recognize severe hypoxemia with low cardiac output and work through a differential diagnosis. Through multi-disciplinary team work, they recognize the need for emergent balloon atrial septostomy (BAS) and state the additional personnel (interventional cardiologist) are needed for this medical emergency. In a step wise approach they medically manage the nenonate by augmenting atrial level mixing through volume resuscitation, controlled ventilation and inotropic support. |
+| **Primary Learning Objectives**  *What should the learners gain in terms of knowledge and skill from this case? Use action verbs and utilize Bloom’s Taxonomy as a conceptual guide* | Primary Objectives   1. Identify and begin treatment of cardiorespiratory compromise in a neonate with a pre-natal diagnosis of TGA 2. Recognize hypoxemia with low cardiac output and the need for emergent BAS 3. Recognize the need and demonstrate mechanisms to augment atrial level mixing, while awaiting BAS. 4. Practice effective teamwork by assigning roles early and using closed communication   Secondary Objectives   1. State the additional personnel and equipment needed for this medical emergency and initiate appropriate monitoring techniques |
+| **Critical Actions**  *List which steps the participants should take to successfully manage the simulated patient. These should be listed as concrete actions that are distinct from the overall learning objectives of the case.* | **Desired action**: Assign team roles upon arrival at the bedside and use closed communication.  If not performed, tasks will not be delegated and carried out and delay in vital information and action will occur.  **Desired Action**: Pulse oximetry probe switched from lower extremity to the right hand to document the pre-ductal saturations (the MOST deoxygenated blood would be circulating to the brain and estimated by this). If performed, severe hypoxemia will be noted.  If not preformed, the lower extremity saturations will eventually decrease to severe hypoxemia, as the blood pressure declines.  **Desired Action**: Recognize that the severe hypoxemia is out of proportion to expected degree of cyanosis for this heart defect. Order CXR to confirm no lung pathology and that the hypoxemia is due to inadequate intracirculatory mixing. Order ECHO to confirm a patent ductus arteriosus (PDA) and poor atrial level mixing via a restrictive atrial communication.  If not performed: Continued decline in sPO2 and BPs leading to development of inadequate systemic perfusion, acidosis and circulatory shock.  **Desired action**: Promote intracirculatory mixing by calling for a BAS , giving volume boluses and ensuring adequate delivery of PGE to aid with bidirectional shunting via PDA.  If not performed: Continued decline in sPO2 and BPs leading to development of inadequate systemic perfusion, acidosis and circulatory shock.  **Desired action**: Increase mixed venous oxygenation by sedation and paralysis to decrease oxygen demand and maximize oxygen delivery.  If not performed: Continued decline in sPO2 and BPs leading to development of inadequate systemic perfusion, acidosis and circulatory shock.  **Desired Action**: Maximize pulmonary vein saturations by delivering 100% FiO2 and intubation.  If not performed: Continued decline in sPO2 and BPs leading to development of inadequate systemic perfusion, acidosis and circulatory shock.  **Desired action**: Support cardiac output with initial volume resuscitation but inotropic support may be necessary.  If not performed: Continued decline in BPs can lead to development of inadequate systemic perfusion, acidosis, circulatory shock and eventual cardiac arrest. |
+| **Learner Preparation**  *What information should the learners be given prior to initiation of the case?* | PALS algorithm code cards  Review mechanics of high fidelity mannequin.  Review of the Simulation Ground Rules |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Initial vital signs** | T -36.1, HR-165, BP 63/36 RR- 50’s, sPO2 79% | | |
+| **Overall Appearance**  *What do learners see when they first enter the room?* | General: Infant on the warmer bed, on cardiorespiratory monitor and sPO2 monitor on foot, with umbilical venous and arterial lines and PIV in place Infant is ill appearing, cyanotic, with mild respiratory distress. | | |
+| **Actors and roles in the room at case start**  *Who is present at the beginning and what is their role? Who may play them?* | Simulation Technician: Adjusts the mannequin parameters during the session as interventions take place  Faculty Facilitator: As the content expert observes, but also supplies initial History and provides ancillary data/ results as requested.  Bedside nurse is at the bedside and provides history and changes in vital signs. | | |
+| **HPI**  *Please specify what info here and below must be asked vs what is volunteered by patient or other participants* | He is initially doing okay but then has a declining trend in his sPO2 and BPs and the nurse calls for the team to come to the bedside. | | |
+| **Past Medical/Surgical History** | **Medications** | **Allergies** | **Family History** |
+|  | Prostaglandin infusion running at 0.01 mcg/kg/min in PIV. | None | negative |
+| **Physical Examination** | | | |
+| **General** | Infant is limp, lying in bed with occasional cry, appears blue and is tachypneic. | | |
+| **HEENT** | Atraumatic, Pupils 4 mm and reactive bilaterally. Ears without erythema or fluid levels. Pharynx without erythema | | |
+| **Neck** | Supple, no masses or lymphadenopathy | | |
+| **Lungs** | Tachypenic but clear to auscultation bilaterally. No rales, wheeze, or rhonchi | | |
+| **Cardiovascular** | Tachycardic with poor perfusion. Cap refill 4 seconds. No murmur or rub appreciable | | |
+| **Abdomen** | Soft, non-distended, non-tender, liver is one finger breadth below the costal margin | | |
+| **Neurological** | Cries occasionally | | |
+| **Skin** | No rash | | |
+| **GU** | Normal male genitalia | | |
+| **Psychiatric** | Appropriate for age | | |
+
+|  |  |  |
+| --- | --- | --- |
+| Instructor Notes - Changes and CASE Branch Points  *This section should be a list with detailed description of each step than may happen during the case. If medications are given, what is the response? Do changes occur at certain time points? Should the nurse or other participant prompt the learners at given points? Should new actors or participants enter, and when? Are there specific things the patient will say or do at given times? There are a few examples given, but it is expected that most cases will have many more changes and potential branch points.* | | |
+| **Intervention / Time point** | **Change in Case** | **Additional Information** |
+| *Beginning of case* | Respiratory rate is increasing and sPO2 is decreasing. | BP will be 50/20 and respiration rate will be 60’s with declining sPO2.  If sPO2 on foot = 79% trending to 72%  If sPO2 on Right hand = 69% trending to 55% |
+| *Supplemental oxygen given*  *CXR ordered*  *Arterial blood gas sent* | sPO2 increases by 5%  No change in BP or tachycardia | CXR- shows umbilical lines in proper position and lung fields are clear with normal vascular markings  Blood gas shows hypoxemia and metabolic acidosis |
+| *IV bolus of saline given*  *ECHO ordered* | increase in BP to 58/32 but after 1 min trends back down to 53/23 and sPO2 continuing to decrease to 60% | If learner asks how perfusion appears then improved to cap refill of 3 seconds**.** |
+| *ECHO confirms TGA and shows large PDA but small atrial level communication* |  |  |
+| *If sodium bicarbonate given* | Heart rate 180, BP 54/27 | If learner asks how perfusion appears 4-5 seconds |
+| *BAS requested and catheterization team activated* |  |  |
+| *Decision made to intubate-*  *Atropine given* | Heart rate increases to 198, BP 54/27 | Atropine, sedation and neuromuscular blocker (NMB) is ordered.  Airway box to bedside and equipment made ready. |
+| *Sedation and NMB given* | RR declines to 0 and  HR 198, BP 55/27 |  |
+| *Bag mask ventilation is initiated* | RR increases to rate of hand ventilation  HR 198, BP 55/27  sPO2 65% (Right hand) |  |
+| *Endotracheal intubation done successfully* | RR at rate of hand ventilation or ventilator  HR 198, BP 55/27  sPO2 70% (right hand) |  |
+| *Dopamine drip started* | RR at rate of hand ventilation or ventilator  HR 198, BP 55/27 trending up to 60/31 (over 3 minutes)  sPO2 70% (right hand) trending up to 73% as BP rises |  |
+| *Catheterization team arrives to perform a BAS* |  |  |
+
+**Debriefing Questions**
+
+The facilitator leads the debriefing by first discussing the debriefing ground rules. Group and individual performance review and participant reflection and self-assessment is then reviewed using the debriefing framework which leads the participants through five phases -introduction, reactions, understanding (crisis resource and medical management) and a summary.
+
+|  |  |  |
+| --- | --- | --- |
+| **Phase** | **Inquiry/Script** | **Points to Discuss** |
+| **Introduction** | Facilitator: We are going to debrief together for about 20 minutes. During this time, I would like you to reflect on the scenario you just completed and most importantly, I would like everyone to participate in the discussion. My role is to help facilitate, but not dominate the discussion. Before we begin, we should acknowledge that this was simulation, and we may have acted differently in real life. Now, let’s focus our discussion on our team interactions and the process of care delivered to the patient. |  |
+| **Reactions** | Facilitator: How are you all feeling now that’s its over?  Facilitator: Great. Other thoughts? Let’s talk about how you addressed issues around communication during the scenario. |  |
+| **Understanding-**  **(Crisis Resource)** | Facilitator: (open-ended questions) First let’s talk about how the team worked together.  Facilitator: Great, let’s move on to discussing the medical management | What went well and what didn’t go well?  How did the team interact?  Were roles assigned clearly and early?  Was there a single leader identified?  Was closed loop communication used? |
+| **Understanding-**  **(Medical Management)** | Facilitator to the Participant #1, you were the code leader, why don’t you walk us through your thought process around the medical management of this patient? | What is the differential diagnosis for hypoxemia in this patient?  Does the location of the pulse oximeter matter?  How do we medically manage the patient as we await BAS? |
+| **Summary** | Facilitator: So to conclude, let’s identify the key learning points from this scenario.  To the group- What would you say are the 2 or 3 main take-home messages from the scenario?  Individually- Let’s go around the room and have each of you describe your main take-home message from this scenario. |  |
+
+**Ideal Scenario Flow**
+
+*Provide a detailed narrative description of the way this case should flow if participants perform in the ideal fashion.*
+
+*The learners enter the room to find a neonate with low sPO2 in the lower extremity. After completing a physical examination and obtaining an appropriate history, the pulse oximeter is changed to the pre-ductal extremity and shows profound hypoxemia, out of proportion to the known heart disease. Supplemental oxygen is applied with little effect. An IV fluid bolus is ordered with no improvement. The providers ask for an ECHO and finds that the profound hypoxemia is due to inadequate atrial level mixing. The providers continue to support intra-circulatory mixing with volume resuscitation and inotropic support. The mixed venous saturation is optimized with sedation and paralysis and the pulmonary venous saturation is maximized with intubation and delivery of 100% FiO2. The providers stabilize the patient while awaiting the interventional cardiologist to arrive to perform a BAS.*
+
+**Anticipated Management Mistakes**
+
+*Provide a list of management errors or difficulties that are commonly encountered when using this simulation case.*
+
+1. *Failure to place the pulse oximeter probe on the right upper extremity: We found when using this case learners often forgot to check where the sPO2 reading was being taken. They were falsely reassured by the low saturation given the pre-natal diagnosis of cyanotic congenital heart disease (TGA). The degree of concern and need for further intervention is marked by the degree of cyanosis. The most deoxygenated blood is circulating to the brain and is estimated by the right hand (pre-ductal) sPO2.*
+2. *Uncertainty about how to augment atrial level mixing: Some learners did not recognize how medical management can augment mixing, while they await the definitive intervention of the BAS procedure. Volume resuscitation and a widely patent PDA ensure maximal fill of the pulmonary bed and therefore, the left atrium (LA) , so as to aid in shunting of the oxygenated blood from the LA to the lower pressure right atrium (RA) to improve oxygenation of the blue blood going out to the systemic circulation (RA🡪 Right ventricle 🡪 body).*
+3. *Failure to maximize both the mixed venous and pulmonary venous saturations. Often learners are so focused on the BAS that they forget to ensure that blood returning to the both the RA and LA are as fully saturated in oxygen as possible. By decreasing oxygen consumption through sedation and paralysis and increasing the concentration of oxygen in the blood by intubation and delivery of 100% FiO2, the mixed and pulmonary venous saturations will increase, respectively, and the overall systemic oxygen level will increase as well.*

@@ -1,0 +1,11 @@
+|  |  |
+| --- | --- |
+| **PATIENT NAME: Mr. Smith**  **PATIENT AGE: 72**  **CHIEF COMPLAINT: Increased shortness of breath one hour after initiation of a rituximab infusion**  **PHYSICAL SETTING: Chemotherapy treatment unit in a cancer center** | |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Initial vital signs** | HR: 95/min  BP: 90/55  RR: 18/min  O2SAT: 94% 2L  Temp: 36.8 | | |
+| **Overall Setting and Appearance** | Prior to beginning the case, the learner is provided the following prompt:  “You (the learner) are the PGY5 resident on call carrying the first call pager for any chemotherapy reactions today. You are working with a hematologist in their clinic, with several patients being given chemotherapy on a two-day model, thus you may not be familiar with their care.  Your staff indicates that there is a new start for a mantle cell lymphoma patient today. You are given the following details about the patient.  Diagnosis: Mantle Cell lymphoma diagnosed 2 years ago after complaints of new lumps in the axillae and early satiety. He declined therapy until he had 5 pounds of unintentional weight loss in one month  Comorbidities: Dyslipidemia, HTN, obesity: BMI > 40  Home Medications: ASA, Hydrochlorothiazide, atorvastatin"  After reading the prompt, the learner receives a call from a chemotherapy nurse who asks the learner to come assess Mr. Smith the new mantle cell lymphoma patient who has developed shortness of breath 1 hour into the rituximab infusion.  The scenario occurs in a chemotherapy unit in a hematology clinic; upon entering the room learners will see a patient (computerized mannequin) as well as nurse embedded participant who is at the bedside of a patient. | | |
+| **Embedded participants (e.g., standardized participants) and their roles in the room at case start** | 1. Chemotherapy unit nurse #1: Called MD on call to assess the patient for shortness of breath. 2. Chemotherapy unit nurse #2: Is available to assist resident in gaining collateral information, obtaining vitals, administering medications. | | |
+| **HPI** | 72 year old male with increased shortness of breath one hour into a rituximab infusion. The patient was well up until 10 minutes ago. | | |

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es-CL"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="SIRCLE · práctica interactiva con tres pacientes virtuales.">
+    <title>SIRCLE · Paciente virtual</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%234c84e8'/%3E%3Cpath d='M44 20c-4-6-20-6-20 4 0 9 17 5 17 14 0 11-16 12-24 5' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/app/styles.css">
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Saltar al contenido</a>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <div class="masthead-top">
+          <a class="brand" href="#pacientes" data-do="home" aria-label="SIRCLE, volver a mis pacientes">SIRCLE</a>
+          <div class="account">
+            <button type="button" class="head-button account-role" data-do="roles" id="role-button" aria-label="Cambiar rol. Rol actual: Estudiante">
+              <span data-icon="account"><img class="asset-icon" src="/recursos/simulacion/account-26c5a8f3ba.svg" alt="" width="18" height="18" aria-hidden="true"></span>
+              <span id="role-label">Estudiante</span>
+            </button>
+            <button type="button" class="head-button exit-button" data-do="exit">
+              <span data-icon="logout"><img class="asset-icon" src="/recursos/simulacion/logout-aa2fefee96.svg" alt="" width="16" height="16" aria-hidden="true"></span>
+              <span>Salir</span>
+            </button>
+          </div>
+        </div>
+        <button type="button" class="head-button nav-toggle" aria-expanded="false" aria-controls="module-nav" data-do="toggle-nav">
+          <span data-icon="menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></span>
+          Módulos
+        </button>
+        <nav id="module-nav" class="module-nav" aria-label="Navegación clínica de SIRCLE" data-expanded="false">
+          <div id="clinical-nav-primary" class="module-row"><button type="button" class="module-button" data-do="module" data-value="admission"><img class="asset-icon" src="/recursos/simulacion/icono-2657f2a2d6.svg" alt="" width="20" height="20" aria-hidden="true"><span>Ingreso</span></button><button type="button" class="module-button" data-do="module" data-value="iaas"><img class="asset-icon" src="/recursos/simulacion/icono-65720ceb75.svg" alt="" width="20" height="20" aria-hidden="true"><span>IAAS</span></button><button type="button" class="module-button" data-do="module" data-value="invasive"><img class="asset-icon" src="/recursos/simulacion/icono-635c127665.svg" alt="" width="20" height="20" aria-hidden="true"><span>Invasivos</span></button><button type="button" class="module-button" data-do="module" data-value="instructions"><img class="asset-icon" src="/recursos/simulacion/icono-44143830e7.svg" alt="" width="20" height="20" aria-hidden="true"><span>Indicaciones</span></button><button type="button" class="module-button" data-do="module" data-value="exams"><img class="asset-icon collection-icon" data-collection-icon="examenes" src="/recursos/simulacion/examenes-09e7adc493.svg" alt="" width="20" height="20" aria-hidden="true"><span>Exámenes</span></button><button type="button" class="module-button" data-do="module" data-value="signs"><img class="asset-icon collection-icon" data-collection-icon="signos-vitales" src="/recursos/simulacion/signos-vitales-2aafb5e9fd.svg" alt="" width="20" height="20" aria-hidden="true"><span>Control de Signos</span></button><button type="button" class="module-button" data-do="module" data-value="balance"><img class="asset-icon" src="/recursos/simulacion/icono-2a92072f82.svg" alt="" width="20" height="20" aria-hidden="true"><span>Balance Hídrico</span></button><button type="button" class="module-button" data-do="module" data-value="physical"><img class="asset-icon" src="/recursos/simulacion/icono-bdf2965940.svg" alt="" width="20" height="20" aria-hidden="true"><span>Examen Físico</span></button><button type="button" class="module-button" data-do="module" data-value="plan"><img class="asset-icon" src="/recursos/simulacion/icono-d9c7c127d3.svg" alt="" width="20" height="20" aria-hidden="true"><span>Plan de Enfermería</span></button></div>
+          <div id="clinical-nav-secondary" class="module-row"><button type="button" class="module-button" data-do="module" data-value="nursing"><img class="asset-icon" src="/recursos/simulacion/icono-f8099d20f0.svg" alt="" width="20" height="20" aria-hidden="true"><span>Atención de Enfermería</span></button><button type="button" class="module-button" data-do="module" data-value="prevention"><img class="asset-icon" src="/recursos/simulacion/icono-04a6e2ffa2.svg" alt="" width="20" height="20" aria-hidden="true"><span>Prevención IAAS</span></button><button type="button" class="module-button" data-do="module" data-value="evolution"><img class="asset-icon collection-icon" data-collection-icon="evolucion" src="/recursos/simulacion/evolucion-79080282c5.svg" alt="" width="20" height="20" aria-hidden="true"><span>Evolución</span></button><button type="button" class="module-button" data-do="module" data-value="indicators"><img class="asset-icon" src="/recursos/simulacion/icono-b7ba201924.svg" alt="" width="20" height="20" aria-hidden="true"><span>Indicadores HHHA</span></button><button type="button" class="module-button" data-do="module" data-value="virtual" aria-current="page"><img class="asset-icon" src="/recursos/simulacion/icono-4d600703b7.svg" alt="" width="20" height="20" aria-hidden="true"><span>Paciente virtual</span></button></div>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1" data-view="catalog"><section class="view catalog" aria-labelledby="page-title">
+    <div class="page-heading">
+    
+    <div class="heading-copy">
+      <p class="eyebrow">Paciente virtual</p>
+      <h1 id="page-title" tabindex="-1">Mis pacientes</h1>
+      
+    </div>
+    <div class="heading-actions"><button type="button" class="button " data-do="catalog-filter" data-value=""><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 4h18l-7 8v6l-4 2v-8z"></path></svg><span>Filtros</span></button><button type="button" class="button danger small" data-do="cases-reset" data-value=""><img class="asset-icon collection-icon" data-collection-icon="deshacer" src="/recursos/simulacion/deshacer-977cf98cdd.svg" alt="" width="20" height="20" aria-hidden="true"><span>Reiniciar todos los casos</span></button></div>
+  </div>
+    <div class="catalog-toolbar">
+      <div class="tabs catalog-tabs" role="group" aria-label="Estado de los casos">
+    <button type="button" id="tab-catalog-state-all" class="tab" data-do="catalog-state" data-value="all" aria-pressed="true">Mis casos</button><button type="button" id="tab-catalog-state-paused" class="tab" data-do="catalog-state" data-value="paused" aria-pressed="false">En pausa</button><button type="button" id="tab-catalog-state-done" class="tab" data-do="catalog-state" data-value="done" aria-pressed="false">Finalizados</button>
+  </div>
+      <div class="field search-field">
+    <label for="patient-search">Buscar paciente</label>
+    <div class="search-wrap"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6"></circle><path d="m16 16 4 4"></path></svg>
+      <input id="patient-search" type="search" autocomplete="off" maxlength="120" value="" placeholder="Nombre del paciente">
+    </div>
+  </div>
+    </div>
+    <p id="catalog-count" class="catalog-results" aria-live="polite">3 pacientes</p>
+    <div class="catalog-cards" id="catalog-cards"><article class="patient-card" aria-labelledby="card-lr">
+    <img class="portrait " src="/recursos/simulacion/retrato-de-lr-865a70387a.webp" alt="Retrato de LR" decoding="async">
+    <div class="patient-name-line">
+      <h2 id="card-lr">LR</h2>
+      <span class="age">34 años</span>
+      <button type="button" class="icon-button bare" data-do="patient-info" data-value="lr" aria-label="Información de LR" title="Información de LR"><img class="asset-icon collection-icon" data-collection-icon="informacion" src="/recursos/simulacion/informacion-bf3b68e942.svg" alt="" width="20" height="20" aria-hidden="true"></button>
+    </div>
+    <span class="state" data-tone="neutral">Sin iniciar</span>
+    <div class="card-cta">
+      <button type="button" class="icon-button reason" data-do="reason" data-value="lr" aria-label="Motivo de consulta de LR" title="Motivo de consulta de LR"><img class="asset-icon collection-icon" data-collection-icon="respiracion" src="/recursos/simulacion/respiracion-8e093006df.svg" alt="" width="28" height="28" aria-hidden="true"></button>
+      <button type="button" class="button primary" data-do="patient-open" data-value="lr"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg><span>Iniciar caso</span></button>
+    </div>
+    
+    
+  </article><article class="patient-card" aria-labelledby="card-nannu">
+    <img class="portrait " src="/recursos/simulacion/retrato-de-nannu-b006e30096.webp" alt="Retrato de Nannu" decoding="async">
+    <div class="patient-name-line">
+      <h2 id="card-nannu">Nannu</h2>
+      <span class="age">61 años</span>
+      <button type="button" class="icon-button bare" data-do="patient-info" data-value="nannu" aria-label="Información de Nannu" title="Información de Nannu"><img class="asset-icon collection-icon" data-collection-icon="informacion" src="/recursos/simulacion/informacion-bf3b68e942.svg" alt="" width="20" height="20" aria-hidden="true"></button>
+    </div>
+    <span class="state" data-tone="neutral">Sin iniciar</span>
+    <div class="card-cta">
+      <button type="button" class="icon-button reason" data-do="reason" data-value="nannu" aria-label="Motivo de consulta de Nannu" title="Motivo de consulta de Nannu"><img class="asset-icon collection-icon" data-collection-icon="respiracion" src="/recursos/simulacion/respiracion-8e093006df.svg" alt="" width="28" height="28" aria-hidden="true"></button>
+      <button type="button" class="button primary" data-do="patient-open" data-value="nannu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg><span>Iniciar caso</span></button>
+    </div>
+    
+    
+  </article><article class="patient-card" aria-labelledby="card-dan">
+    <img class="portrait " src="/recursos/simulacion/retrato-de-dan-sparks-9e38a8790a.webp" alt="Retrato de Dan Sparks" decoding="async">
+    <div class="patient-name-line">
+      <h2 id="card-dan">Dan Sparks</h2>
+      <span class="age">43 años</span>
+      <button type="button" class="icon-button bare" data-do="patient-info" data-value="dan" aria-label="Información de Dan Sparks" title="Información de Dan Sparks"><img class="asset-icon collection-icon" data-collection-icon="informacion" src="/recursos/simulacion/informacion-bf3b68e942.svg" alt="" width="20" height="20" aria-hidden="true"></button>
+    </div>
+    <span class="state" data-tone="neutral">Sin iniciar</span>
+    <div class="card-cta">
+      <button type="button" class="icon-button reason" data-do="reason" data-value="dan" aria-label="Motivo de consulta de Dan Sparks" title="Motivo de consulta de Dan Sparks"><img class="asset-icon collection-icon" data-collection-icon="respiracion" src="/recursos/simulacion/respiracion-8e093006df.svg" alt="" width="28" height="28" aria-hidden="true"></button>
+      <button type="button" class="button primary" data-do="patient-open" data-value="dan"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg><span>Iniciar caso</span></button>
+    </div>
+    
+    
+  </article></div>
+  </section></main>
+    <footer class="app-footer">
+      <div class="footer-inner">
+        <p><strong>SIRCLE</strong><span aria-hidden="true"> · </span>Paciente virtual v1.0</p>
+        <p>Simulación educativa con datos ficticios</p>
+        <div class="footer-tools">
+          <button type="button" class="text-button" data-do="guide"><span data-icon="book"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h5l3 2 3-2h5v14h-5l-3 2-3-2H4zm8 2v14"></path></svg></span> Guía de uso</button>
+          <span id="storage-status" class="storage-status" aria-live="polite" data-store="local">Guardado en este navegador</span>
+        </div>
+      </div>
+    </footer>
+    <dialog id="dialog" class="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-inner">
+        <div class="dialog-head">
+          <h2 id="dialog-title"></h2>
+          <button type="button" data-do="close" class="icon-button" aria-label="Cerrar ventana">
+            <span data-icon="close"><img class="asset-icon collection-icon" data-collection-icon="cancelar" src="/recursos/simulacion/cancelar-d939d1e1f0.svg" alt="" width="20" height="20" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div id="dialog-body" class="dialog-body"></div>
+        <div id="dialog-actions" class="dialog-actions" hidden=""></div>
+      </div>
+    </dialog>
+    <div class="toast" id="toast" hidden="">
+      <span id="toast-icon" aria-hidden="true"></span>
+      <span id="toast-message"></span>
+      <button type="button" id="toast-action" hidden=""></button>
+      <button type="button" class="toast-close" data-do="dismiss-toast" aria-label="Cerrar aviso">
+        <span data-icon="close"><img class="asset-icon collection-icon" data-collection-icon="cancelar" src="/recursos/simulacion/cancelar-d939d1e1f0.svg" alt="" width="20" height="20" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div id="announcer" class="visually-hidden" role="status" aria-atomic="true"></div>
+    <noscript>
+      <p class="noscript">Activa JavaScript en el navegador para iniciar la simulación SIRCLE.</p>
+    </noscript>
+    <!--
+      Prototipo autónomo de SIRCLE, Paciente virtual v1.0.
+      Referencias de diseño: HI-FI WIREFRAMES y Propuesta visual SIRCLE v2.
+      Los guiones y valores corresponden a escenarios educativos ficticios.
+    -->
+    <!--
+Roboto, SIL Open Font License 1.1.
+Copyright 2011 The Roboto Project Authors (https://github.com/googlefonts/roboto-classic)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting — in part or in whole — any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+-->
+    <!-- Licencia de los iconos de color basados en Coolicons
+MIT License
+
+Copyright (c) 2026 Kryston Schwarze
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+    -->
+    
+  
+
+</body></html>

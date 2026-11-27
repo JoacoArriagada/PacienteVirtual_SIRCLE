@@ -1,0 +1,9 @@
+|  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Appendix A: Simulation Case Template \_ DKA in the Obstetric Population**  **SIMULATION CASE TITLE: DKA in the Obstetric Population**  **AUTHORS: Anthony C. Mueller MD, Clark J. Obr MD** | | | | | | | |
+| **PATIENT NAME: Ashley Smith**  **PATIENT AGE: 22**  **CHIEF COMPLAINT: Rupture of membranes at term – breech presentation** | | | | | | | |
+| Initial Presentation | | | | | | | |
+| **Initial vital signs** | | HR 113, BP 94/52, SpO2 97% on room air, temperature 37.6°C, RR 22 | | | | | |
+| **Overall Appearance** | | For simplicity, the learner enters the room where the operating room including the SimMan® has already been prepared. Vital signs are displayed on the monitors connected to the simulator, and the stem is given to the learner by the instructor. | | | | | |
+| **Actors and roles in the room at case start** | | In addition to the learner, the instructor stands in the room to run the simulation, and the technician is out of sight controlling the high fidelity simulator. If available, a second instructor acts as the colleague from the obstetrics department. No additional actors or agents are necessary. | | | | | |
+| **HPI** | | Ashley is a 22-year-old G1 female at approximately 38 weeks gestation by last menstrual period who presented initially with rupture of membranes. She had one obstetric visit at 16 weeks’ gestation but was lost to follow up; she states that she “can’t afford these visits” and “wouldn’t be able to pay for any medications anyway”. She has had a cold for the past several days and notes that she “doesn’t feel right”. The obstetrician on call reports breech presentation and reassuring fetal heart tones and contacts you to discuss urgent caesarean section for breech presentation. | | | | | |

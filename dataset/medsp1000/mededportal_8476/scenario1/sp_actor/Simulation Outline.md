@@ -1,0 +1,21 @@
+|  |
+| --- |
+| **Title**  **Emergency Medicine: Acute Asthma and Ventilator Management**  **Authors:**  **Jonathan Steinhofer, M.D.**  **Roderick Morrison, M.D.** |
+| **Setting**  (Community ED with most available modalities including PICU)  **Actors:**  -Parents: played by actors and/or residents. They will offer medical information as well as provide a distraction to the participants. |
+| **Text to be shown on screen prior at beginning of case:**  *“17 year old female brought in for dyspnea. The patient is in obvious respiratory distress. Parents are at bedside saying that she has a history of asthma and began feeling short of breath earlier today, receiving albuterol every 4 hours with little help”.* |
+
+|  |
+| --- |
+| **Patient Description**  Admit Date: 0 Hospital Day: 0  Name: Jill K Gender: F Age: 17 Years Race: Caucasian  Weight: 60 kg Height: 152 cm  Religion: None  Major Support: Pediatrics  Attending Physician: None  History of Present Illness (HPI):  *17 - year old female with known asthma presents to the emergency department by EMS with her parents. Parents say the patient as been battling an asthma exacerbation all day with scheduled albuterol every four hours as well as with her controller medicine (fluticasone/salmeterol). However, she has become increasingly short of breath and lethargic in the past few hours. No fever/chills and/or infectious symptoms noted.*  Review of Systems: Negative other than shortness of breath  Past Medical History:  -Asthma: 2 previous hospitalizations in the past, one ICU stay however no intubations. Last steroid burst was 3 weeks ago.  -Eczema and seasonal allergies  Medications:  -Albuterol rescue inhaler  -Fluticasone/Salmeterol controller  Allergies:  -NKA  Immunizations:  -UTD  Surgical History:  -None  GYN History:  -LMP was 2 weeks ago  Social History:  -The patient is an otherwise healthy adolescent female. She does well in school and parents deny any drug, ETOH, or tobacco use.  Family History:  -Significant for asthma, CAD, COPD  Physical Exam:  Vital Signs: HR-120; BP-110/70; RR-44; Temp-98.9; Sat-82% (room air)  Gen: Moderate to severely distressed adolescent female sitting in the tripod position.  HEENT: PERRLA  Neck: Supple, non-tender  Chest: Tachypneic, little to no air movement on exam, using accessory muscles diffusely  Cardiac: Tachycardic.  Abdomen: Soft, NT/ND BS +  Genital/Urinary: Deferred  Rectal: Deferred  Vascular: Pulses present bilaterally  Neurologic: No focal deficits, mildly lethargic  Skin: Pale, diaphoretic, with mildly cyanotic extremities |
+
+|  |
+| --- |
+| **Scenario Story Board**  **Initial Presentation of Patient:**  Vital Signs: HR-120; BP-110/70; RR-44; Temp-98.9; Sat-82% (room air)  Gen: Moderate to severely distressed adolescent female sitting in the tripod position.  HEENT: PERRLA  Neck: Supple, non-tender  Chest: Tachypneic, little to no air movement on exam, using accessory muscles diffusely  Cardiac: Tachycardic.  Abdomen: Soft, NT/ND BS +  Genital/Urinary: Deferred  Rectal: Deferred  Vascular: Pulses present bilaterally  Neurologic: No focal deficits, mildly lethargic  Skin: Pale, diaphoretic, with mildly cyanotic extremities |
+
+|  |
+| --- |
+| **Transitional Period: Pre-intubation period**  Vital Signs: HR-140; BP-100/70; RR-50; Temp-98.9; Sat-79% (room air)  Chest: Tachypneic, no air movement  Cardiac: Tachycardic  Abdomen: WNL  Neurologic: Increasingly lethargic  Skin: Cyanotic upper/lower extremities |
+
+|  |
+| --- |
+| **Conclusion**  Vital Signs: HR-110; BP-110/90; RR-12; O2-95% (100% FiO2) Temp-98.9  Cardiac: Tachycardic  Chest: Breathing 12 times/minute on the ventilator, improved air movement on exam  Abdomen: WNL  Neurologic: Intubated and Sedated, still paralyzed  Skin: Warm, dry, pink |

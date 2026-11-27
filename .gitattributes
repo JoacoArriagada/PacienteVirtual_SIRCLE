@@ -1,0 +1,6 @@
+# Conserva los bytes de las fuentes de referencia y de la hoja compartida.
+docs/referencias/prototipo-html/** -text
+docs/recursos-audiovisuales/** -text
+frontend/recursos/simulacion/** -text
+frontend/src/app/styles.css -text
+inferencia/*.sh text eol=lf

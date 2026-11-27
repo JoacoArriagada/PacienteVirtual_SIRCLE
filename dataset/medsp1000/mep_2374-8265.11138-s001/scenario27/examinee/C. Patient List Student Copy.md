@@ -1,0 +1,1 @@
+| **Name**: Johnson, Corinne  **Age/Sex**: 67yo / F  **MRN**: 2002845965  **FULL CODE** | **DOS/Room**: Day 2 / N9-12  **Dx**: R MCA CVA, tPA on admission  **Meds**: aspirin (pr), labetalol, insulin lispro SSI  **Allerg**: sulfa  **Other**: case coordination eval in AM |

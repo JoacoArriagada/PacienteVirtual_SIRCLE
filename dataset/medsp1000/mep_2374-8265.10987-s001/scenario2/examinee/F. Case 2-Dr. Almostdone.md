@@ -1,0 +1,2 @@
+* You are on Obstetrics call with a 3rd year resident last night. Dr. Almostdone calls to report on a rule out labor patient. You know she has completed her continuity of care deliveries and by chance she has actually done a lot of Obstetrics. She is known to be good at procedures and patients find her easy to talk to about whatever is needed. She is very confident.
+* GW is a 28 year old G3P2 38 5/7 weeks gestation by LMP and she presented with possible Rupture of Membranes. Dr. Almostdone would like to send her home.

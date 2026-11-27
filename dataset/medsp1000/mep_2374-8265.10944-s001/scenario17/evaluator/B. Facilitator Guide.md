@@ -1,0 +1,7 @@
+**Cross-Cover Curriculum Facilitator's Guide**
+
+1. **Page 17: Smith’s labs came back K 2.8, Mg 1.3. Asymptomatic.**
+
+Acuity:Intermediate
+
+Cross-cover to see patient:NoThese values are low for both potassium and magnesium, and put the patient at risk for cardiac events. Generally, you should obtain an EKG in this case to look for problems related to hypokalemia, including U waves, ST sagging, and T wave depression. It is important to remember that hypokalemia is even more arrhythmogenic than hyperkalemia. You should start supplementation of both magnesium and potassium. If the patient can tolerate oral medications, this can be used. However, if you need to get the electrolytes up quickly, IV formulations can be used. Generally, with potassium, 10 mEq will raise potassium level by 0.1. However, in patients with kidney disease, 10 mEq is generally expected to raise the potassium by more than 0.1. As such, you should be more cautious with potassium supplementation in these patients. Magnesium supplementation is also important here, as low magnesium levels worsen potassium excretion. Generally, IV formulations are preferred; the aim should be to get magnesium above 2. This can be accomplished with 1-2 grams of IV magnesium sulfate. Since there is usually little risk from having slightly elevated magnesium levels, generally you should use 2 grams. You should also put the patient on telemetry for these severe electrolyte disturbances.

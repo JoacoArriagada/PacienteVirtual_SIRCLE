@@ -1,0 +1,23 @@
+**SP Name:  		Date**:
+
+**Student Name:**  	
+
+<table><tr><td><h1>YES</h1></td><td><p><strong>NO</strong></p></td><td><h1>Place check mark in appropriate column </h1></td></tr><tr><td></td><td></td><td><p>1.	Did the student introduce the patientself to me?</p><p>	[Must give <strong>last name and indicate role</strong>]</p></td></tr></table>
+
+<u>**HISTORY**</u>	<u>Did the student ask</u>:
+
+<table><tr><td><h1>YES</h1></td><td><h1>NO</h1></td><td><h1>Place check mark in appropriate column</h1></td></tr><tr><td></td><td></td><td><p>2.    where the pain was initially?  </p><p>	(Indicate your mid-epigastrium:  “Here...”)</p></td></tr><tr><td></td><td></td><td><p>3.	to describe the quality of the pain? </p><p>	(“It’s sharp and hurts all the time.”)</p></td></tr><tr><td></td><td></td><td><p>4.	whether the pain is constant OR whether it comes and goes?  <br/>	(“It never goes away...”)</p></td></tr><tr><td></td><td></td><td><p>5.	if anything makes the pain better or worse?</p><p>	(“Lying still helps a little”)</p></td></tr><tr><td></td><td></td><td><p>6.	what color my stools were OR if my stools had blood in them OR if I had 	dark colored stools?  (“My stools are brown.  I didn’t see any blood.”)</p></td></tr><tr><td></td><td></td><td><p>7.	if I have had a fever or chills?</p><p>	(“I feel like I have a fever right now.”)</p></td></tr><tr><td></td><td></td><td><p>8.	have I ever had this pain before? </p><p>	(“No”)</p></td></tr></table>
+
+##### 1.1.1.1.1. <u>**PHYSICAL EXAM**</u>
+
+**\*\*Remember:	The student MUST perform all PX maneuvers with you** <u>**LAYING ON YOUR BACK**</u> **(except Item #15).**
+
+**Do NOT give any student credit for a maneuver if they do it through the fabric of your gown.**
+
+<table><tr><td><h4>Done</h4></td><td><p><strong>Done</strong></p><p><strong>Incorrectly</strong></p></td><td><p><strong>Not</strong></p><p><strong>Done</strong></p></td><td><p>Place check mark in column to show that the item was done, or was done incorrectly, or was not done.</p><p>The student:</p></td></tr><tr><td></td><td></td><td></td><td><p>9.	washed the patient's hands BEFORE doing the PX.</p></td></tr><tr><td></td><td></td><td></td><td><p>10.	appropriately draped me during the PX.</p></td></tr><tr><td></td><td></td><td></td><td><p>11.	was gentle during the abdominal exam.</p></td></tr><tr><td></td><td></td><td></td><td><p>12.	percussed/tapped my abdomen in at least ONE place. </p></td></tr><tr><td></td><td></td><td></td><td><p>13.	palpated (pressed) my abdomen ALL FOUR quadrants</p></td></tr><tr><td></td><td></td><td></td><td><p>14.	listened to my lungs at least ONCE on EACH SIDE either front OR back.</p></td></tr><tr><td></td><td></td><td></td><td><p>15.	asked about a rectal/pelvic exam. </p></td></tr></table>
+
+##### 1.1.1.1.2. <u>**PATIENT/PHYSICIAN INTERACTION**</u>
+
+<table><tr><td><p><strong>5</strong></p><p><strong>Excel-</strong></p><p><strong>lent</strong></p></td><td><p><strong>4</strong></p><p><strong>Very</strong></p><p><strong>Good</strong></p></td><td><p><strong>3</strong></p><p><strong>Good</strong></p></td><td><p><strong>2</strong></p><p><strong>Fair</strong></p></td><td><p><strong>1</strong></p><p><strong>Poor</strong></p></td><td><p><strong>Place a check mark in the appropriate column to rate the performance of the student you just saw, with 5 being the best and 1 being poor</strong></p></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td><p>16.	Consistently attentive to my comfort and discomfort  (pain, warmth) and sought my feedback about discomfort (e.g. “Please let me know if I am pressing too hard.”)</p></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td><p>17.	Asked open-ended questions, let me tell my story without interrupting, and addressed all my issues without being judgmental.</p></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td><p>18.  Explained their thoughts about my condition or situation clearly and discussed what (s)he thinks might be causing my pain (no jargon).</p></td></tr></table>
+
+<table><tr><td><p><strong>Comments from Travis on:</strong></p><ol><li><strong> Checklist items that the student did NOT perform.</strong></li><li><strong>Specific comments regarding the students interpersonal and communication skills.</strong></li></ol></td></tr></table>

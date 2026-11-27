@@ -1,0 +1,8 @@
+**Cross-Cover Curriculum Facilitator's Guide**
+
+1. **Page 18: Martin’s systolic BP is 160. Do you want me to do anything?**
+
+Acuity: Low
+
+Cross-cover to see patient: No
+Blood pressure control inpatient is a common subject of pages. In some circumstances, such as acute ischemic stroke, indeed, permissive hypertension is even encouraged. In other cases, such as hypertensive emergency, or aortic dissection, or leading up to some procedures such as renal biopsy, blood pressure needs to be rapidly lowered. In most cases, however, we are more concerned with hypotension rather than a bit of hypertension. If the patient is not experiencing symptoms due to hypertension, generally this does not require acute lowering with IV antihypertensives; you can cause more problems by rapidly lowering a patient's blood pressure. However, it may be reasonable to slightly bump up a patient’s long-acting blood pressure medications if they are on them. In this case, however, the Mr. Martin is not on home antihypertensives, so it is not needed to start them in the overnight setting. Titration can be left for the outpatient PCP or the primary team during the day. It is also helpful to think about reasons *why* the blood pressure may be elevated in the hospital so you can address the underlying cause – such as pain, anxiety, alcohol withdrawal, etc.

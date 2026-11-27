@@ -1,0 +1,1 @@
+| **Name**: Rivera, April  **Age/Sex**: 3wk / F  **MRN**: 3625984  **FULL CODE**  **Weight**: 3.6 kg | **DOS/Room**: Day 1 / B5-14  **Dx**: neonatal fever  **Meds**: ampicillin, ceftazidime, acyclovir, acetaminophen  **Allerg**: none  **Other**: waiting for culture results |

@@ -1,0 +1,117 @@
+**Additional Materials #6**
+
+**Debriefing Guide**
+
+**Background:** Medication reconciliation is not only important in the context of hospital admissions and discharges; it is also a vital component of outpatient visits as well. It is estimated that medication lists found in electronic health records are completely accurate less than 5% of the time (Bayoumi et al., 2009). Defined as a formal method to verify and construct an accurate list of medications that a patient takes, the medication reconciliation procedure also provides an opportunity for healthcare providers to critically assess the appropriateness and necessity of each of a patient’s medications. Medication reconciliation is not “just a computer issue”; the computer is only as accurate as the information that was entered and is not a substitute for good clinical judgment and effective communication between providers and patients. In addition to drugs that are listed in a patient’s medical chart, other healthcare providers, pharmacies, and especially the patient will often be able to provide additional information (e.g. other medications prescribed by different physicians, reasons the patient stopped taking certain medications, adverse effects that the patient is experiencing, etc.).
+
+Bayoumi I, Howard M, Holbrook AM, Schabort I. Interventions to improve medication reconciliation in primary care. Ann Pharmacother. 2009;43:1667-1675.
+
+**Objective 1**: Gather a medication history for a patient using available resources and synthesize an accurate medication list for a patient.
+
+When creating an accurate medication list for a patient, students should recognize that the information found in an electronic health record or a patient’s medical chart is often not completely accurate. Whenever feasible, the patient should be included in the process of reconciling medications because patients often provide additional information (e.g. over-the-counter medications, side effects that they are currently experiencing, dietary supplements that they are taking, medications that the patient decided to discontinue without telling the physician, etc.) that will not be found in a medical chart. In this scenario, the SP was only able to provide limited information so other sources were needed. The SP prompted students to speak to the doctor’s office and the pharmacist to find out which medications she was taking. Students will actively seek out information from the “pharmacy” and “nurse” about the specific medications that were included on the SP’s list or in her purse. Only the astute student will recall that the patient mentioned “sometimes using another pharmacy”, that the SP did not know if she took “over-the-counter medications”, that the SP specifically mentions having “brittle bones”, and that she indicated that she sees an “eye doctor”. These cues should prompt the wise student to ask the nurse about “any other medications that may have been filled at another pharmacy or picked up without a prescription” and should prompt students to ask the pharmacist if the patient uses “any eye drops”. Students will only be given the information that they actively seek, therefore, they must ask appropriate questions.
+
+The following is a list of medications, dosages, and instructions that the students will ideally construct, based upon the questions they have asked and the information provided by the “nurse”, “pharmacist”, and SP.
+
+1. Levothyroxine (Synthroid) 25 mcg daily
+2. Metoprolol tartrate (Lopressor) 50 mg. Take ½ tablet twice daily (Note: Patient is getting #60 tablets, but is splitting them and only using 1 tablet daily; this results in only needing refills every 2 months)
+3. Furosemide (Lasix) 20 mg once daily
+4. Warfarin (Coumadin) 2 mg: Take 2 tabs on TThSS and 1 tab on MWF
+5. Lantus insulin 20 units at bedtime
+6. Aspirin 81 mg daily
+7. Alendronate (Fosamax) 35 mg weekly
+8. Calcium three times daily with meals (Note: the patient selected a 500 mg Calcium Carbonate + Vitamin D product, which is not necessarily the best choice since she takes omeprazole).
+9. Vytorin 10/40 mg (ezetimibe/simvastatin) once daily
+10. Simvastatin (Zocor) 20 mg once daily (the doctor intended for the patient to stop this)
+11. Lovaza (omega-3-ethyl-esters) 1 tablet once daily
+12. Omeprazole (Prilosec) 20 mg daily
+13. Latanoprost 0.05% (Xalatan) One drop in left eye daily
+14. BD Needles for insulin
+
+**Objective 2.** Identify a patient’s chief complaint in the context of medication-related adverse effects.
+
+In clinical practice, patients may be prescribed new medications simply to treat adverse effects of other medications that they were taking. Similarly, substantial time and resources may be invested to “find” a new diagnosis when a patient’s chief complaint is simply attributed to a medication-related problem (e.g. adverse event, drug interaction). Students should begin to recognize that a patient’s chief complaint may be attributed to medications. In this scenario, the patient presents with bruises and complains of muscle aches. As the students synthesize the list of medications that the patient has been using, it should become apparent that medication-related problems are contributing to the adverse effects. The medications contributing to the patient’s current problems are described below:
+
+1. Muscle aches – due to simvastatin-related problems
+2. The patient is taking simvastatin 20 mg (generic Zocor) tablets plus simvastatin 40 mg (as an ingredient in the Vytorin drug samples that she was given). The therapeutic duplication of simvastatin is contributing to the muscle aches.
+3. Serum concentrations of simvastatin can also be increased by proton pump inhibitors (the patient is also taking omeprazole).
+4. Ecchymoses – due to warfarin-related drug interactions
+5. The patient’s warfarin dose was recently changed. The case does not give enough information to know if the dose was recently increased or decreased. Nonetheless, the patient has been concurrently taking a number of medications that can increase the risk of bleeding when used in combination with warfarin including: aspirin (anti-platelet effects), omeprazole (inhibits CYP2C19 which is involved in warfarin metabolism), the recent addition of Lovaza samples (prolongs INR), and the recent addition of a greater simvastatin dose than intended (INR may increase after initiating therapy with a statin) due to therapeutic duplication between simvastatin tablets and the Vytorin samples.
+
+**Objective 3**. Discuss patient-specific and system factors that impact accurate medication utilization.
+
+There are a number of factors that impact the ability of a patient to take medications as intended. Some of these include poor communication between physicians, use of multiple pharmacies, lack of documentation at pharmacy or physician office of medicinal agents that are purchased without a prescription, lack of diagnosis or explicit instructions for medications dispensed by pharmacies, poor communication between physicians and patients, and lack of patient engagement in their own healthcare. Examples of each and how it relates to the scenario are included below.
+
+1. Poor communication between physicians
+
+a. The eye doctor had prescribed latanoprost, but this was not in the patient’s record at the primary care provider’s office.
+
+b. The coagulation clinic was not communicating changes in the patient’s warfarin dose to the primary care provider in a timely manner.
+
+1. Multiple pharmacies and a lack of documentation for over-the-counter/dietary supplement medications
+2. Alendronate was called in to a “new” pharmacy so there was no record of this medication at the pharmacy where most of the prescriptions were typically filled.
+3. Omeprazole, aspirin, and calcium carbonate are over-the-counter drugs which are not always included in patients’ health records. This can be problematic since each of these medications has potential interactions with other medications.
+4. Pharmacies do not always have clear instructions or indications for all medications a patient is using.
+5. Insulin and warfarin directions were only listed as “use as directed”.
+6. Pharmacists cannot accurately counsel a patient (or contact a physician with questions about appropriateness of a medication) without knowing the indication (e.g. metoprolol has many uses).
+7. The physician’s office had failed to give the patient specific instructions for selecting an over-the-counter medication.
+8. The patient was not provided with adequate information about which calcium tablets she should take. (No instructions were provided about dose, salt form, etc. The patient’s choice of a carbonate salt – along with use of omeprazole—will negate benefits of the calcium since calcium carbonate can only be absorbed in acidic conditions.)
+9. The patient provides an inaccurate/incomplete medical history.
+10. The patient does not know the names of her medications.
+11. The patient cannot accurately describe her own medical conditions.
+12. The patient has not been engaged in her own health care process (e.g. daughter-in-law takes care of medications) and is in need of medication education.
+
+**Objective 4.** Provide patient education for each drug on the medication list to empower patient’s involvement in care.
+
+When prescribing or dispensing medications to patients, it is important that patients be engaged in the process. When patients fail to understand why a medication has been prescribed, how (or when) they should use the medication, common side effects that the medication may cause (and what do to if these unwanted effects occur), or how to tell if the medication is working as intended, patients are less engaged in the process and more likely to be non-adherent with the prescribed regimen. It benefits the patient and the entire healthcare system, if these important points are communicated to patients so they are education and empowered to continue with the prescribed therapy. Much evidence supports that patient education when added to medication reconciliation and medication optimization reduces medication errors, reduces actual and potential adverse drug events, reduces emergency department visits, decreases hospital readmission rates, reduces overall healthcare costs following hospitalizations, and boosts patient medication knowledge and adherence (Koehler et al., 2009; Jack et al., 2009; Forster et al., 2005; Halasyamani et al., 2006; Crotty et al., 2004; Schnipper et al., 2006; Dudas et al., 2001; Coleman et al. 2005; Lessard et al., 2006; Karnon et al., 2009; Nester et al., 2002; Gleason et al., 2004; Lessard et al., 2006; Karapinar-Carkit et al., 2009; Viktil et al., 2006; Kaboli et al., 2006).
+
+In working with medical students, I have repeatedly observed that without some instruction in this area, students often fail to provide *useful* information to patients about medications. A common example of what medical students tell patients about their medications sounds something like this, “The doctor has prescribed “medication X” for you; make sure that you take it every day the way that it says on the bottle.” In contrast, patients benefit from knowing exactly what the medication will do (e.g. lower blood pressure, fix irregular beats, etc.), how they will know the medication is working (monitoring), what side effects they might experience, and what can be done about those adverse effects if they should occur (e.g. reassuring patients prescribed an ACEI for the first time that there are many medications that can lower blood pressure; some people develop a cough with this one. If you develop a cough, please let your doctor know because many other options exist and can be tried. We don’t want you to any feel worse than you did before you started the medication.)
+
+During the debriefing session -- using the complete medication list that was constructed for the SP -- with the SP present in the classroom, each student takes a turn describing important medication-related information that could be shared with her to educate, empower, and encourage appropriate medication utilization. The SP asks additional questions if the information provided by the student needs further clarification. Below are some examples of helpful educational information that the patient might benefit from the students sharing with her:
+
+1. Levothyroxine. This is used to boost your low thyroid levels. It is usually taken in the morning. It is important to take this medicine on an empty stomach and you must avoid taking it at the same time as certain other medications. For example, you should not take this within 4 hours of taking calcium tablets.
+2. Metoprolol. This medication is used to treat many different problems including irregular heartbeats, high blood pressure, and heart failure. We will need some additional information from your doctor to help you understand why this medication has been prescribed and to make sure that it is the best medication for you. This medication will slow your heart rate and may make you feel fatigued or make it difficult for you to exercise.
+3. Furosemide. This is a “water pill”. It will help you get rid of excess water. The medication will cause you to urinate more often, so it is usually taken in the morning so that you do not awaken many times during the night to use the bathroom. We will need some additional information from your doctor to help you understand why this medication has been prescribed and to make sure that it is the best medication for you. This medication can lower your potassium levels. Your doctor will be checking your potassium levels periodically by a routine blood test. Some people need to take a potassium supplement along with this medication. If you notice an irregular heartbeat, it could be a sign that your potassium levels are too low and you should tell your doctor right away.
+
+1. Warfarin. This medication is often referred to as a “blood thinner”. You need to have your “bleeding times” checked weekly until they are stable and monthly thereafter. Any time you start taking a new drug or stop taking a medication, you should have your bleeding times checked again. Please tell your doctor immediately if you notice bruising, blood in your stool, a bloody nose, or notice that your gums are bleeding when you brush your teeth. Since this medication is affected by many different foods, you should avoid making any dramatic changes to your diet. It is probably best to shave with an electric razor to minimize the risk of cutting yourself.
+2. Lantus. This is a type of insulin that is very long-acting. It is usually used once daily at night time and provides long-lasting control of your blood sugar. If your blood sugar falls too low you may start to feel hungry or even nauseous like you want to vomit. You could also feel nervous or jittery. You may sweat or your skin might turn cold and clammy. You may begin to feel short-tempered, nervous, afraid, or confused. Your vision may blur. You could also feel unsteady or have trouble walking. Another symptom of low blood sugar is a rapid heartbeat, but you will not notice this since you are also taking metoprolol and that drug slows your heart rate. If you experience low blood sugar, you should eat 15 grams of glucose (tablets, candy bar, glass of milk) right away and check your blood sugar.
+3. Aspirin. The low dose that was prescribed for you is intended to prevent blood clots. You should try to take the drug with food so it does not irritate your stomach.
+
+1. Alendronate. This medication is used to treat your weakened bones. Your doctor has prescribed it to be taken just once a week. You should take it on an empty stomach, first thing in the morning, before you take any other medications, food, or drinks. You should swallow the tablet with water and stay in an up-right position for 30 minutes. This helps to prevent the medication from irritating the inside of your throat or causing ulcers. This medication should be separated from your calcium supplements by at least 2 hours.
+2. Calcium carbonate + Vitamin D. Combining vitamin D with calcium is always good, since vitamin D helps calcium be absorbed better. Calcium is available in several different forms. The carbonate form requires an acidic environment to be absorbed. However, you are taking omeprazole, which blocks your stomach from producing acid; therefore, omeprazole will prevent the calcium carbonate from working properly to build stronger bones. It would be better for you to take calcium citrate tablets because calcium citrate does not need an acidic environment for absorption. Be sure that you separate your calcium and levothyroxine (thyroid pill) by at least 4 hours so that your thyroid supplement will be absorbed and separate your calcium and your alendronate by at least 2 hours.
+3. Vytorin 10/40 mg. This medication contains 2 different ingredients to help lower your cholesterol. One of the ingredients may have been contributing to your muscle aches due to duplication with the simvastatin tablets (generic Zocor) you were also taking. Since you experienced some muscle aches, the doctor may wish to check some blood work before you continue taking this. If you ever develop pain in your upper abdomen, notice that your urine looks brown in color, or find that your skin or eyes look yellow, you should contact your doctor immediately – as this could indicate a problem with your liver – but this is rare. You should avoid eating or drinking grapefruit products while taking this mediation since the grapefruit can increase the drug levels in your body substantially, placing you at risk of serious muscle problems.
+4. Simvastatin 20 mg. Your doctor intended for you to stop this medication when he gave you samples of Vytorin. Simvastatin is one of the ingredients in Vytorin.
+5. Lovaza. This is another medication used to lower a specific type of cholesterol. It may also prevent blood clots, but this can also increase your risk of bleeding especially since you are taking warfarin. This medication is a good example of why it is important to have your bleeding times checked any time a new medication is started or stopped while you are taking warfarin. Sometimes, this medication causes people to burp or experience a “fishy” after-taste.
+6. Omeprazole. This medication prevents stomach acid from being made. It is often used to treat ulcers, reflux, or heart burn conditions. It is best to take this medication on a short-term basis or use it only intermittently; chronic use can prevent you from being able to appropriately absorb calcium, iron, or magnesium and can also increase your risk of certain types of infections.
+7. Latanoprost 0.05%. This medication lowers the pressure behind your eye and is used to treat glaucoma. When pressure in your eye is too high for long periods of time, it can lead to blindness. Your prescription indicates that you are to put one drop in your left eye only, because only your left eye has elevated pressure. However, we will talk to your eye doctor about this because the drug is known to cause the pupil of your eye to darken in color and make your eye lashes thicker. Most times, patients put drops in both eyes, even if pressure is only elevated in one eye because then the color/lash changes occur uniformly in both eyes. It is best if you keep this medication refrigerated until you use it. Once you open it, it may be stored at room temperature for up to 6 weeks.
+
+**Literature cited**:
+
+Coleman EA, Smith JD, Raha D, Min SJ. Post-hospital medication discrepancies: prevalence and contributing factors. Arch Intern Med. 2005;165(16):1842-1847.
+
+Crotty M, Rowett ID, Spurling L, Giles LC, Phillips PA. Does the addition of a pharmacist transition coordinator improve evidence-based medication management health outcomes in older adults moving from the hospital to a long term care facility? results of a randomized, controlled trial. Am J Geriatr Pharmacother. 2004;2(4):257-264.
+
+Dudas V, Bookwalter T, Kerr KM, Pantilat SZ. The impact of follow-up telephone calls to patients after hospitalization. Am J Med. 2001;111(9B):26S-30S.
+
+Forster AJ, Murff HJ, Peterson JF, Gandhi TK, Bates DW. Adverse drug events occurring following hospital discharge. J Gen Intern Med. 2005;20(4):317-323.
+
+Gleason KM, Groszek JM, Sullivan C, Rooney D, Barnard C, Noskin GA. Reconciliation of discrepancies in medication histories and admission orders of newly hospitalized patients. Am J Health System Pharm. 2004;61:1689-1695.
+
+Halasyamani L, Kripalani S, Coleman E, Schnipper J, van Walraven C, Nagamine J, et al. Transition of care for hospitalized elderly patients—development of a discharge checklist for hospitalists. J Hosp Med. 2006;1(6):354-360.
+
+Jack BW, Chetty VK, Anthony D, Greenwald JL, Sanchez GM, Johnson AE, et al. A reengineered hospital discharge program to decrease rehospitalization. Ann Intern Med. 2009;150:178-187.
+
+Kaboli PJ, Hoth AB, McClimon BJ, Schnipper JL. Clinical pharmacists and inpatient medical care. Arch Int Med. 2006;166(9):955-964.
+
+Karapinar-Carkit F, Borgsteede SD, Zoer J, Smit HJ, Egberts ACG, van den Bemt. Effect of medication reconciliation with and without patient counseling on the number of pharmaceutical interventions among patients discharged from the hospital. Ann Pharmacother. 2009;43:1001-1010.
+
+Karnon J, Campbell F, Czoski-Murray C. Model-based cost-effectiveness analysis of interventions aimed at preventing medication error at hospital admission (medicines reconciliation). J Eval Clin Pract. 2009;15:299-306.
+
+Koehler BE, Richter KM, Youngblood L, Cohen BA, Prengler ID, Cheng D, Masica AL. Reduction of 30-day postdischarge hospital readmission or emergency department (ED) visit rates in high-risk elderly medical patients through delivery of a targeted care bundle. J Hosp Med. 2009;4(4):211-218.
+
+Lessard S, DeYoung J, Vazzana N. [Medication discrepancies affecting senior patients at hospital admission.](http://www.ncbi.nlm.nih.gov/pubmed/16595814) Am J Health Syst Pharm. 2006;63:740-743.
+
+Nester TM, Hale LS. Effectiveness of a pharmacist-acquired medication history in promoting patient safety. Am J Health System Pharm. 2002;59:2221-2225.
+
+Schnipper JL, Kirwin JL, Cotugno MC, [Wahlstrom SA](http://www.ncbi.nlm.nih.gov/pubmed?term=%22Wahlstrom%20SA%22%5BAuthor%5D), [Brown BA](http://www.ncbi.nlm.nih.gov/pubmed?term=%22Brown%20BA%22%5BAuthor%5D), [Tarvin E](http://www.ncbi.nlm.nih.gov/pubmed?term=%22Tarvin%20E%22%5BAuthor%5D), [Kachalia A](http://www.ncbi.nlm.nih.gov/pubmed?term=%22Kachalia%20A%22%5BAuthor%5D), [Horng M](http://www.ncbi.nlm.nih.gov/pubmed?term=%22Horng%20M%22%5BAuthor%5D), [Roy CL](http://www.ncbi.nlm.nih.gov/pubmed?term=%22Roy%20CL%22%5BAuthor%5D), [McKean SC](http://www.ncbi.nlm.nih.gov/pubmed?term=%22McKean%20SC%22%5BAuthor%5D), [Bates DW](http://www.ncbi.nlm.nih.gov/pubmed?term=%22Bates%20DW%22%5BAuthor%5D). Role of pharmacist counseling in preventing adverse drug events after hospitalization. Arch Intern Med. 2006;166(5):565-571.
+
+Viktil KK, Blix HS, Moger TA, Reikvam A. Interview of patients by pharmacists contributes significantly to the identification of drug-related problems (DRPs). Pharmacoepidemiol Drug Saf. 2006;15:667-674.

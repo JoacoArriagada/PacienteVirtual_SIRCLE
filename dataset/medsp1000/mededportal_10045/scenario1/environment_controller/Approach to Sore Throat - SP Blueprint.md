@@ -1,0 +1,33 @@
+**Paul L. Foster School of Medicine** 
+
+**Standardized Patient Program**
+
+# 1. **Case Development Blueprint:**  <u>**Sore Throat**</u>
+
+<table><tr><td><p><strong>Case Name:</strong></p></td><td><p>Tragando</p></td></tr><tr><td><p><strong>Presenting Complaint:</strong></p></td><td><p>Sore throat for 1 day</p></td></tr><tr><td><p><strong>Gender and age:</strong></p></td><td><p>24-26 year old college student</p></td></tr><tr><td><p><strong>Length of encounter</strong></p></td><td><p>15 minutes</p></td></tr><tr><td><p><strong>Case summary:</strong></p></td><td><p>The patient comes to the clinic with a bad sore throat which started yesterday afternoon. This morning the sore throat is even worse. Feels tired and achy. The older son, who is the source of infection, has been feeling bad and has had a runny nose for the last week.</p></td></tr><tr><td><p><strong>Setting</strong></p></td><td><p>Ambulatory outpatient family medicine clinic.</p></td></tr><tr><td><p><strong>Exam room needs</strong></p></td><td><p>No special exam room equipment will be needed</p><ul><li>Hand sanitizer</li><li>Flashlight</li><li>Tongue depressors</li></ul></td></tr></table>
+
+**SP Training Notes:  Sore Throat**
+
+<table><tr><td><h1>Case Name</h1></td><td><p>Tragando</p></td></tr><tr><td><p><strong>Presenting Situation</strong></p></td><td><p>Sore throat for one day</p></td></tr><tr><td><p><strong>Psychosocial Profile</strong></p></td><td><ul><li>Well groomed</li><li>Cooperative</li><li>Appears mildly ill</li><li>Speaks sparingly as it hurts a little bit to talk</li><li>Answers questions with short sentences</li></ul></td></tr><tr><td><p><strong>Outlook and Coping</strong></p></td><td><ul><li>Not feeling good</li><li>Cooperative and pleasant</li><li>Glad to be able to get into the clinic so quickly</li></ul></td></tr><tr><td><p><strong>Opening Statement</strong></p></td><td><p>“I can barely swallow.”</p></td></tr><tr><td><p><strong>History of Present Illness</strong></p><p><strong>ROS</strong></p></td><td><p>The patient comes to the clinic with a bad sore throat.</p><p>It started yesterday afternoon, and by late afternoon was fairly severe.</p><p>Last night, there was one episode of chilling followed by a drenching sweat.</p><p>After that, there was difficulty going back to sleep.</p><p>This morning the sore throat is even worse.</p><p>It really hurts to swallow, therefore breakfast was skipped.</p><p>On a scale of 1 to 10, the throat pain is a 7.</p><p>The temperature was not measured.</p><p>The patient feels tired and wants to be in bed resting.</p><p>Muscles are achy all over.</p><p>The older son (6 years old) has been feeling bad and has had a runny nose for the last week.</p><p>Right now, there is…</p><ul><li>No nasal discharge or runny nose</li><li>No earache</li><li>No headache</li><li>No drooling</li><li>No difficulty opening the mouth wide</li><li>No sneezing</li><li>No cough</li><li>No shortness of breath</li><li>No diarrhea</li><li>No abdominal discomfort</li><li>No rash</li></ul></td></tr><tr><td><p><strong>Past Medical Hx</strong></p></td><td><p>Generally healthy</p><p>No previous medical illnesses</p><p>Gets two or three colds every year</p><p>No known medical allergies</p></td></tr><tr><td><p><strong>Social Hx</strong></p></td><td><p>Married</p><p>Married, with two boys, ages 4 and 6</p><p>Spouse works</p><p>Going to college (engineering major)</p></td></tr><tr><td><p><strong>Preventive Care</strong></p></td><td><p>Never has been a smoker</p><p>Drinks a few beers on the weekend</p><p>No recreational drug use</p><p>Two lifetime sexual partners</p><p>No oral-genital contact</p></td></tr><tr><td><p><strong>Family Medical Hx</strong></p></td><td><p>Father and mother both alive and healthy</p><p>Two siblings, both healthy</p><p>The older son has been feeling “cranky.” Has had a “runny nose” for about a week.</p></td></tr><tr><td><p><strong>Physical Exam Findings</strong></p></td><td><p>Temperature 100.4° F. (38°C.)</p><p>Pulse 88</p><p>Respirations 16/min</p><p>Alert, comfortable, cooperative</p><p>Nose – clear</p><p>Ears – no abnormality</p><p>Throat – red with exudates</p><ul><li>At this point in the encounter, tell the student that the throat is red with patchy grey exudates on the tonsils and pharynx.</li></ul><p>Neck – tender</p><ul><li>Flinch slightly and tell the student that the neck is tender to palpation over the anterior cervical area.</li></ul><p>The sinuses are not tender</p><p>Your lungs are clear (if examined).</p></td></tr><tr><td><p><strong>Additional instructions</strong></p></td><td><p>Answer the questions asked. Don’t volunteer too much detail. Let the student seek the information that they need. If they miss something, it will become clear during the debriefing following the SP encounter.</p><p>Your voice is quiet because it hurts a little bit to talk. Also minimize your talking.</p></td></tr></table>
+
+**Paul L. Foster SOM** 
+
+**Clinical Skills and Clinical Simulation Center**
+
+**Standardized Patient Program**
+
+# 2. **PRESENTING SITUATION:**  
+
+**Patient Name**:	Tragando
+
+**Setting:**		Outpatient office
+
+**Vitals**:			Temp		100.4° F. (38°C.)
+
+RR		16/min
+
+BP		134/68
+
+HR		88
+
+**Complaint**:	The patient has a severe sore throat which started yesterday.

@@ -1,0 +1,35 @@
+**Paul L. Foster School of Medicine**
+
+**Standardized Patient Program**
+
+# 1. **Case:  \_\_\_Sam Rodilla\_\_**
+
+<table><tr><td><p><strong>Presenting Complaint:</strong></p></td><td><p>New onset right knee pain</p></td></tr><tr><td><p><strong>Gender and age:</strong></p></td><td><p>33 years old</p></td></tr><tr><td><p><strong>Case Name:</strong></p></td><td><p>Sam Rodilla, 33 years old</p></td></tr><tr><td><p><strong>Brief summary:</strong></p></td><td><p>Sam Rodilla is evaluated in outpatient clinic for new-onset right knee pain. Three days ago the patient noted the onset of pain on the back of left wrist, which was worse with wrist extension. This resolved spontaneously after only one day. Yesterday morning the patient began to feel pain in the right knee, worsening with bending the knee. Yesterday the knee felt “swollen.” Now it is difficult for the patient to walk due to the pain. The patient denies fever or chills. The patient is sexually active with one partner, no protection. On physical examination, patient’s vitals are WNL, except for T 38.5 C (101.3 F). ROM of R. knee is limited because of pain. Examination of the skin reveals two small (2 mm) pustules on patient’s left palm. </p></td></tr></table>
+
+**SP Training Notes**
+
+<table><tr><td><h1>Case Name</h1></td><td><p>Sam Rodilla, 33 years old</p></td></tr><tr><td><p><strong>Presenting Situation</strong></p></td><td><p>New onset right knee pain</p></td></tr><tr><td><p><strong>Psychosocial Profile</strong></p></td><td><ul><li>Collaborative</li><li>Neat in appearance</li><li>Expresses concern about the sudden onset of joint pain</li></ul></td></tr><tr><td><p><strong>Opening Statement</strong></p></td><td><p>“Since yesterday I have pain in my right knee.”</p></td></tr><tr><td><p><strong>History of Present Illness</strong></p></td><td><ul><li>Three days ago you noticed pain on the back of left wrist, which was worse with wrist extension. This resolved spontaneously after only one day. </li><li>Yesterday morning you began to feel pain in the right knee, worsening with bending the knee. </li><li>Yesterday your right knee felt “swollen.” </li><li>Now it is difficult for you to walk due to the pain. </li><li>On a scale from 1 to 10, the pain in your right knee is 5 or 6</li><li>The pain does not go away with rest</li><li>Yesterday you took 2 tab Ibuprofen (400 mg) three times, with little effect</li><li>You have not noticed fever or chills, but have not measured your temperature</li><li>Your right knee was NOT stiff this morning</li><li>You have not had the flu this year yet (sometimes you get it but it resolves for a week)</li><li>You have NOT gotten yet your flu vaccine this year though you usually try to get it as early in the fall as possible; you are also planning to get the H1N1 vaccine this year</li><li>No weight gain or loss recently</li><li>No night sweats</li><li>No fatigue, just the pain</li><li>No allergies</li><li>No other symptoms (anything else-you do not have it!)</li></ul></td></tr><tr><td><p><strong>Past Medical Hx</strong></p></td><td><ul><li>No chronic diseases</li><li>No hospitalizations</li><li>Last year you had one urinary tract infection</li><li>Also last year, once you were treated with antibiotics (you do not remember the exact name of the medication) for urethral/vaginal discharge; at that time the discharge was whitish/yellowish looking and you felt burning during urination. With the treatment, this resolved, and since then you have been fine.</li></ul></td></tr><tr><td><p><strong>Social Hx</strong></p></td><td><ul><li>You are an accountant</li><li>You are sexually active with one partner, no protection; you consider your relationship “exclusive”; your partner is very loving and you trust them (heterosexual relationship)</li><li>You have not cheated on your partner</li><li>You have been in this committed relationship for 2.5 years now</li><li>You believe a marriage proposal will be coming soon (is “in the air”)</li><li>You and your partner do not live together, but you have discussed moving in for Christmas </li><li>Your parents and younger sister live in town; parents are teachers, and sister is studying in UTEP</li><li>You like going to the movies</li><li>You smoke 1-2 cigarettes daily (1pk/2weeks)</li><li>You like having a drink while watching TV at home with your partner</li></ul></td></tr><tr><td><p><strong>Family Medical Hx</strong></p></td><td><ul><li>No chronic diseases in the family</li><li>No Hx of cancer </li><li>Your father had an operation for right inguinal hernia repair two years ago</li></ul></td></tr><tr><td><p><strong>Physical Exam Findings:</strong></p></td><td><ul><li>T 38.5 C (101.3 F) [however, you do not feel you have fever]</li><li>HR 90/min</li><li>RR 15/min</li><li>BP 128/70 mm Hg</li><li>ROM of R. knee is limited because of pain (you cannot flex more than about 30˚). Limited ROM is on <strong>BOTH</strong> active and passive movement</li><li>You limp while walking</li><li>At the time of PE, no other joint is with limited ROM or pain</li><li>Examination of the skin reveals two small (2 mm) pustules on your left palm.</li></ul></td></tr><tr><td><p><strong>Special Instructions:</strong></p></td><td><ul><li>You are collaborative, answer all questions</li><li>You hesitate a little before answering questions about your sexual activity (you believe these are strictly private matters)</li><li>About 3-4 days ago, at the time your left wrist was hurting, you noticed two small whitish-looking pimples on your left palm; you have never had pimples on your palms before; you do NOT volunteer this information to the student – the student is expected to notice the pustules on examination; if they do not notice, you still do NOT tell; if they notice and ask, then you can give details.</li><li>At the time you were treated for urethral/vaginal discharge last year, the doctor did not tell you much more, and did not ask if your partner had similar symptoms; you honestly do not know if your partner had that too (you were ashamed to discuss that); you believed you got something from the bathrooms at the gym.</li><li><strong>If</strong> the student explains to you that this might be STD – gonorrhea, you ask, <strong>“Could I have gotten it from the bathrooms at the gym?”</strong></li></ul></td></tr></table>
+
+**Paul L. Foster School of Medicine**
+
+**Standardized Patient Program**
+
+# 2. **PRESENTING SITUATION**
+
+**Patient Name (with age)**:	 Sam Rodilla, 33 years old
+
+**Setting:**		Outpatient clinic – exam room
+
+**Vitals**:			Temp	38.5 C (101.3 F)
+
+HR	90/min
+
+BP	128/70 mm Hg
+
+RR	15/min
+
+**Complaint**:	New onset right knee pain
+
+*You have* <u>*15*</u> *minutes to complete a focused history and physical exam, and to discuss your findings and plan with your patient.* 
+
+*Upon completion of the encounter, you will have 10 minutes to complete a post-encounter note in a SOAP format.*

@@ -1,0 +1,1 @@
+<u>ECG</u> showed diffuse ST changes with T wave inversion in the lateral leads.

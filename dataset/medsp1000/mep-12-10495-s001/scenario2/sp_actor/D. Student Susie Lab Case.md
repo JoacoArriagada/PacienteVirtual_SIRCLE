@@ -1,0 +1,5 @@
+**Susie’s Sippy Cup Dilemma: Early Childhood Caries**
+
+**Part B:**
+
+Susie returns with her mother at age 12 months for her MMR (Measles, Mumps & Rubella) vaccination. She is now in the 25th percentile for growth. Susie is not walking yet, but she is crawling and will grasp onto a table and stand herself up and even let go for a moment and then fall to a sit. Susie’s mother has introduced solids and because of your earlier advice she no longer sends Susie to bed with the bottle. She has introduced Susie to a sippy cup and Susie’s favorite drink is apple juice, which she sips on happily throughout the day. Susie now has 6 teeth (teeth #D, E, F, G, O, P). Susie’s mother says Susie is brushing her own teeth twice a day. She is using non-fluoridated toothpaste. Susie’s mother has not seen a dentist. (Note: Medicaid does not cover fillings for cavities after age 18.) Sitting on the examining table in your office, Susie is very squirmy and she cries as she sits on your examination table and you examine her. It is difficult to examine herhead and neck area.

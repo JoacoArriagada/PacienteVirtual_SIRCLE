@@ -1,0 +1,1 @@
+1. You are the mother of an 8-month-old boy with fever and cough. He does not go to daycare. The fever has not improved with ibuprofen or acetaminophen at home, and you say, “So it can’t just be a virus.” You are requesting antibiotics. You have been told that the chest X-ray is negative and shows “peribronchial thickening.”

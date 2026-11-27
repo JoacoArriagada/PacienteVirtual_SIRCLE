@@ -1,0 +1,1 @@
+|  | Case 3 | The patient’s mother is Sheena Hackett. The pediatrician is reaching out to her about the abnormal lab results. When they do so, respond with the following script. **Parent script A**: “Lucindo is still vomiting and having diarrhea. He is very lethargic, has a high fever, and hasn’t eaten in days. His lips are dry and cracked.” |

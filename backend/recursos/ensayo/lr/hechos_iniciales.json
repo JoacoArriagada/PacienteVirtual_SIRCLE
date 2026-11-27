@@ -1,0 +1,152 @@
+[
+  {
+    "id": "lr-inicio",
+    "tema": "inicio",
+    "condicion": "Pregunta cuándo empezó la falta de aire o cuánto tiempo lleva.",
+    "respuesta": "Empecé a notar que me faltaba el aire hace dos días.",
+    "pasaje": "Breathing problems started 2 days ago initially with runny nose and cough.",
+    "variantes": [
+      "Hace dos días. Ahí empezó."
+    ]
+  },
+  {
+    "id": "lr-antecedentes-familiares",
+    "tema": "familia",
+    "condicion": "Pregunta por antecedentes médicos de su familia biológica o si los conoce.",
+    "respuesta": "No conozco los antecedentes de mi familia biológica porque fui adoptada.",
+    "pasaje": "Family Hx: unknown, patient was adopted.",
+    "variantes": [
+      "No los conozco. Fui adoptada."
+    ]
+  },
+  {
+    "id": "lr-asma",
+    "tema": "asma",
+    "condicion": "Pregunta por el asma de LR como antecedente. Excluye el asma de familiares y el diagnóstico del episodio.",
+    "respuesta": "Sí, tengo asma.",
+    "pasaje": "Past Medical: Seasonal allergies, asthma, hypertension; no surgeries.",
+    "variantes": [
+      "Tengo asma."
+    ]
+  },
+  {
+    "id": "lr-inhalador",
+    "tema": "inhalador",
+    "condicion": "Pregunta qué inhalador usa o usó para el episodio o por el nombre del inhalador.",
+    "respuesta": "Uso un inhalador de albuterol.",
+    "pasaje": "Has been using her albuterol inhaler every hour without relief.",
+    "variantes": [
+      "Uso albuterol."
+    ]
+  },
+  {
+    "id": "lr-identidad",
+    "tema": "identidad",
+    "condicion": "Pregunta cómo se llama o cómo pueden llamarla.",
+    "respuesta": "Puede decirme LR.",
+    "pasaje": "LR is a 34-year-old female.",
+    "variantes": [
+      "Soy LR."
+    ]
+  },
+  {
+    "id": "lr-edad",
+    "tema": "edad",
+    "condicion": "Pregunta cuántos años tiene LR.",
+    "respuesta": "Tengo 34 años.",
+    "pasaje": "LR is a 34-year-old female.",
+    "variantes": [
+      "Tengo 34."
+    ]
+  },
+  {
+    "id": "lr-motivo",
+    "tema": "inicio",
+    "condicion": "Pregunta por qué vino, qué le pasa en general o su motivo de consulta.",
+    "respuesta": "Me falta el aire.",
+    "pasaje": "Chief Complaint: Shortness of breath.",
+    "variantes": [
+      "Me cuesta respirar."
+    ]
+  },
+  {
+    "id": "lr-sintomas-iniciales",
+    "tema": "inicio",
+    "condicion": "Pregunta cómo empezó el episodio, aparte de cuándo empezó, o si tuvo tos o secreción nasal al comienzo.",
+    "respuesta": "Al principio tenía tos y me moqueaba la nariz.",
+    "pasaje": "Breathing problems started 2 days ago initially with runny nose and cough.",
+    "variantes": [
+      "Primero tuve tos. Y me moqueaba la nariz."
+    ]
+  },
+  {
+    "id": "lr-empeoramiento",
+    "tema": "inicio",
+    "condicion": "Pregunta cómo ha evolucionado la falta de aire o cómo respira ahora comparado con el inicio.",
+    "respuesta": "Ahora me cuesta más respirar.",
+    "pasaje": "Now feeling more short of breath.",
+    "variantes": [
+      "Me falta más el aire."
+    ]
+  },
+  {
+    "id": "lr-frecuencia-inhalador",
+    "tema": "inhalador",
+    "condicion": "Pregunta cuántas veces o con qué frecuencia usó el inhalador durante este episodio.",
+    "respuesta": "Lo he usado cada hora.",
+    "pasaje": "Has been using her albuterol inhaler every hour without relief.",
+    "variantes": [
+      "Cada hora lo he usado."
+    ]
+  },
+  {
+    "id": "lr-efecto-inhalador",
+    "tema": "inhalador",
+    "condicion": "Pregunta si el inhalador le ayudó o si sintió alivio tras usarlo.",
+    "respuesta": "El inhalador no me alivió.",
+    "pasaje": "Has been using her albuterol inhaler every hour without relief.",
+    "variantes": [
+      "No me alivió."
+    ]
+  },
+  {
+    "id": "lr-hipertension",
+    "tema": "antecedentes",
+    "condicion": "Pregunta si tiene hipertensión o presión alta como antecedente. Excluye el valor actual medido.",
+    "respuesta": "Tengo hipertensión.",
+    "pasaje": "Past Medical: Seasonal allergies, asthma, hypertension; no surgeries.",
+    "variantes": [
+      "Sí, tengo presión alta."
+    ]
+  },
+  {
+    "id": "lr-alergia-mariscos",
+    "tema": "alergias",
+    "condicion": "Pregunta por alergias a alimentos o por sus alergias conocidas.",
+    "respuesta": "Soy alérgica a los mariscos.",
+    "pasaje": "Allergies: Shellfish.",
+    "variantes": [
+      "A los mariscos."
+    ]
+  },
+  {
+    "id": "lr-cirugias",
+    "tema": "antecedentes",
+    "condicion": "Pregunta si ha tenido cirugías o la han operado.",
+    "respuesta": "Nunca me han operado.",
+    "pasaje": "no surgeries.",
+    "variantes": [
+      "No he tenido cirugías."
+    ]
+  },
+  {
+    "id": "lr-desencadenantes",
+    "tema": "asma",
+    "condicion": "Pregunta qué cosas suelen desencadenar su asma.",
+    "respuesta": "El polvo, los gatos y los cambios de estación me afectan.",
+    "pasaje": "Triggers include cats, change in seasons, dust",
+    "variantes": [
+      "El polvo y los gatos. También los cambios de estación."
+    ]
+  }
+]

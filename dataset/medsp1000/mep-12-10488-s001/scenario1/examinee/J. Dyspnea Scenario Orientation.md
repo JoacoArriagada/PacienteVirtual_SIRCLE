@@ -1,0 +1,12 @@
+**Appendix J: Dyspnea Scenario Orientation**
+
+Then scenario orientation should cover:
+
+|  |  |
+| --- | --- |
+| A. | **Overview of scenario:** *“In this scenario, you’ll be caring for Phil Brown, a 72 year old man admitted earlier today with a GI bleed, who is now acutely short of breath. Phil is on a medical floor, in a standard hospital room, being prepped for a colonoscopy in the morning. It is about 2300 (11 pm) shortly after change of shift for the nurses. The medical team is the cross-cover team, who got sign-out on Mr. Brown 3 hours ago.”* |
+| B. | **Overview of equipment and supplies** *“Phil is a patient-actor, in a standard hospital bed and a monitor capable of displaying simulated vitals and telemetry. This is the automated blood pressure cuff connected to the monitor. You will need to call out a request for repeat vital signs. Phil’s BP, pulse, respiratory rate, temp and O2 saturation will be displayed on the monitor and telemetry.”*  *“Phil should be examined using this special stethoscope, called a Ventriloscope®.* ***Say out loud*** *whether you are listening for respiratory or heart sounds and the corresponding sounds will be heard in the earpieces and through a speaker. The ear pieces must be seated correctly into right and left ears to be able to hear the findings and indicate if you do not hear any sound.”*  *“Use the toy cell phone and speak loudly to call the medical team room to come stat to evaluate patient.”*  *“Oxygen delivery devices, including nasal cannula and a non-rebreather mask are at the head of the bed.”* |
+| D. | **Other available data** *“The admit H&P is on the computer. The cross-cover intern will have a sign-out sheet including information on Phil Brown. The night nurse will receive a handoff sheet from the evening nurse.”* |
+| G. | **Questions? Remember: Time is compressed from 2300 to 0700.** |
+| H. | **Assign the students to scenario roles:** *“We will have students participate in the following roles”:* \_\_\_\_ Medicine floor intern cross-covering the patient \_\_\_\_ Senior resident (R3) or PA \_\_\_\_ Night shift nurse(s), primary and secondary, working as team \_\_\_\_ Hospital pharmacists, working as a team |
+| I. | **Starting the scenario:** *“The medical team, along with the night pharmacist are in the team room ‘across the hall’, where they can be called if needed. Once the medical team is out of ear-shot, they will be given the hand-off sheet (cross-cover). The scenario will start outside of Phil’s room, with the evening nurse handing his care off to the night nurse(s).”* |

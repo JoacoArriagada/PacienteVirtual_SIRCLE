@@ -1,0 +1,132 @@
+[
+  {
+    "id": "p03-inicio",
+    "tema": "inicio",
+    "condicion": "Pregunta cuándo empezó la falta de aire, cuánto tiempo lleva o qué hacía cuando comenzó.",
+    "respuesta": "Me empezó a faltar el aire hace cuatro horas, mientras trabajaba en el jardín.",
+    "pasaje": "4 hours prior to arrival Setting – began light yard work but had to stop due to shortness of breath.",
+    "variantes": [
+      "Hace cuatro horas. Estaba trabajando en el jardín."
+    ]
+  },
+  {
+    "id": "p03-identidad",
+    "tema": "identidad",
+    "condicion": "Pregunta cómo se llama o cómo pueden llamarlo.",
+    "respuesta": "Me llamo Dan Sparks.",
+    "pasaje": "Identification: Dan Sparks is a 43 year old white male",
+    "variantes": [
+      "Soy Dan Sparks."
+    ]
+  },
+  {
+    "id": "p03-edad",
+    "tema": "edad",
+    "condicion": "Pregunta cuántos años tiene Dan.",
+    "respuesta": "Tengo 43 años.",
+    "pasaje": "Identification: Dan Sparks is a 43 year old white male",
+    "variantes": [
+      "Tengo 43."
+    ]
+  },
+  {
+    "id": "p03-motivo",
+    "tema": "inicio",
+    "condicion": "Pregunta por qué vino, qué le pasa en general o su motivo de consulta.",
+    "respuesta": "Me cuesta recuperar el aliento.",
+    "pasaje": "I can't seem to catch my breath",
+    "variantes": [
+      "Me falta el aire."
+    ]
+  },
+  {
+    "id": "p03-esfuerzo",
+    "tema": "inicio",
+    "condicion": "Pregunta qué empeora la falta de aire o cómo respira con esfuerzo o en reposo.",
+    "respuesta": "Me falta más el aire si hago esfuerzo. Incluso en reposo me cuesta respirar.",
+    "pasaje": "exertion clearly worsens dyspnea but is still short of breath at rest.",
+    "variantes": [
+      "Con el esfuerzo empeora. En reposo también me falta el aire."
+    ]
+  },
+  {
+    "id": "p03-albuterol",
+    "tema": "tratamiento",
+    "condicion": "Pregunta si le ayudó el albuterol nebulizado o qué efecto tuvo el tratamiento en la ambulancia.",
+    "respuesta": "El albuterol que me dieron en la ambulancia no me ayudó.",
+    "pasaje": "The nebulized albuterol given in the ambulance did NOT help",
+    "variantes": [
+      "No me ayudó lo que me dieron en la ambulancia."
+    ]
+  },
+  {
+    "id": "p03-dolor-pantorrilla",
+    "tema": "pierna",
+    "condicion": "Pregunta por dolor en las piernas, en la pantorrilla o en la pierna derecha.",
+    "respuesta": "Me duele un poco la pantorrilla derecha.",
+    "pasaje": "Slight right calf, leg pain",
+    "variantes": [
+      "Un poco en la pantorrilla derecha."
+    ]
+  },
+  {
+    "id": "p03-tos",
+    "tema": "tos",
+    "condicion": "Pregunta si ha tosido o cómo es su tos.",
+    "respuesta": "He tosido un poco.",
+    "pasaje": "Slight cough and slight pleuritic chest pain",
+    "variantes": [
+      "Un poco de tos."
+    ]
+  },
+  {
+    "id": "p03-dolor-pecho",
+    "tema": "dolor",
+    "condicion": "Pregunta por dolor de pecho o si le duele al respirar.",
+    "respuesta": "Me duele un poco el pecho al respirar.",
+    "pasaje": "Slight cough and slight pleuritic chest pain",
+    "variantes": [
+      "Un poco. En el pecho, al respirar."
+    ]
+  },
+  {
+    "id": "p03-cirugia",
+    "tema": "antecedentes",
+    "condicion": "Pregunta qué cirugías ha tenido o si lo operaron.",
+    "respuesta": "Me operaron de apendicitis a los 13 años.",
+    "pasaje": "Appendectomy at age 13",
+    "variantes": [
+      "Me sacaron el apéndice. Tenía 13 años."
+    ]
+  },
+  {
+    "id": "p03-alergias-medicamentos",
+    "tema": "alergias",
+    "condicion": "Pregunta por alergias a medicamentos o si sabe de alguna.",
+    "respuesta": "No conozco ninguna alergia a medicamentos.",
+    "pasaje": "Allergies: NKDA",
+    "variantes": [
+      "Ninguna a medicamentos que yo sepa."
+    ]
+  },
+  {
+    "id": "p03-medicamentos-habituales",
+    "tema": "tratamiento",
+    "condicion": "Pregunta si toma medicamentos habitualmente, fuera del tratamiento de la ambulancia.",
+    "respuesta": "No tomo medicamentos habituales.",
+    "pasaje": "Medications: None",
+    "variantes": [
+      "No tomo nada habitualmente."
+    ]
+  },
+  {
+    "id": "p03-fiebre-escalofrios",
+    "tema": "fiebre",
+    "condicion": "Pregunta si ha sentido fiebre o escalofríos. Excluye una cifra del termómetro.",
+    "respuesta": "No he tenido fiebre ni escalofríos.",
+    "pasaje": "ID- No fever or chills.",
+    "variantes": [
+      "No. Ni fiebre ni escalofríos."
+    ]
+  }
+]

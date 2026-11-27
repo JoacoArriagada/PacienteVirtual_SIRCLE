@@ -1,0 +1,17 @@
+**Appendix E: Resident Facilitator Guide**
+
+**Case 1: Taylor**
+
+**Intern’s Perspective**
+
+You are an intern getting sign out for your first inpatient general pediatrics ward rotation. One of your patients is Taylor, a 3-year-old girl who is described to you as “medically complex.” She sustained hypoxic injury at birth, and has significant neurologic impairment, and requires respiratory support at baseline with CPAP for obstructive sleep apnea. Over the last 6 months, she has been hospitalized 4 separate times (for a total of about 60 days) due to respiratory illnesses resulting in complications including pneumonia and respiratory failure. She required a PICU stay for 3 of these admissions and required intubation once. At baseline, she is nonverbal and requires assistance with all ADLs. She makes few purposeful movements but will smile in response to family members.
+
+Taylor recently transferred to the pediatric floor from the PICU after an admission for pneumonia where she required escalation of her baseline respiratory support to BiPAP and vasopressors for resulting sepsis. One of the team members comments that she “doesn’t know why Taylor’s family puts her through all this.” When you received signout from the intern going off service, you were told that “Before Taylor goes home, our team needs to address her family’s goals of care for her.”
+
+***Mother’s Perspective (Resident’s Role)***
+
+*You are Taylor’s mom, Tammy. You are exhausted. Your husband works full time and is out of paid leave. You had a career as a legal assistant, but ever since Taylor was born, you’ve been home caring for her. You have 12-hours per day of skilled nursing hours through your insurance, but in reality, you only get coverage about 4 days per week—you are doing the rest. Taylor doesn’t really sleep on any kind of schedule, so you haven’t either in 3 years.*
+
+*The last 6 months you’ve really noticed a decline in Taylor’s health. She used to have so much joy- rolling on the floor, playing with her parents, reaching for toys- it seemed like she was always smiling. You’d give anything to go back to that time- when you realized just how meaningful and fulfilling life can be with a kid with special needs. Ever since that one admission last fall, Taylor just hasn’t been herself. It seems like she’ll finally start to recover from one cold, and then the next one hits, and she’s back to ground zero. The CPAP machine was a recommendation from a few admissions ago. Taylor hates it! She always fusses when it’s on, and you both seem to be sleeping even less. You’re really hopeful that something can be done to allow her to stay out of the hospital longer this time, so that she can finally get back to where she used to be. But you’re also really scared that that might no longer be possible.*
+
+***(This is background information as you get into your role as the parent. You start the conversation with the intern open to talking, but unsure why the intern is suddenly asking so many “big” questions. As you talk about these things, you are becoming defensive and sad, responding in short statements with limited information. Your voice may start to crack as you struggle to hold back tears. It is difficult to talk about this. If the intern does a good job setting an agenda, asking for permission to talk about these things, and responding to your emotion, you can gradually reveal more of your “back story,” and begin to talk more openly.)***

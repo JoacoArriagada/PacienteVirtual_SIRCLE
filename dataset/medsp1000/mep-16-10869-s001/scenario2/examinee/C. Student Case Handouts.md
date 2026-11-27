@@ -1,0 +1,3 @@
+**Case 1B. A 9- year-old boy, from a family with very high expectations for their children, presents to his PCP with progressive fatigue. He is first referred for a cardiology evaluation and found to have mild dilated cardiomyopathy. He is then sent to neurology where noted to have some muscle weakness. He is then sent to genetics where concern is raised for muscular dystrophy. After 5 months of medical appointments, the family is tired from their medical odyssey and is very focused on the cardiac disease as they had high hopes for him as an athlete.**
+
+●      Assign one person to play the role of the physician, the father, the mother and the child. Role play delivery of the information to the family.

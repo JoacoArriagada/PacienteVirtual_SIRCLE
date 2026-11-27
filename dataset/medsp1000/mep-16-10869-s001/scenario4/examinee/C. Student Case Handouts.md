@@ -1,0 +1,3 @@
+**Case 2B. A pregnant woman presents at 17 weeks gestation with a family history significant for a maternal uncle who is in a wheelchair (in home country) who passed in his late teens/early 20s and local maternal aunt with cardiomyopathy who is known to have an elevated CK. No one else in the family is known to be in a wheelchair or have known cardiomyopathy, but the patient’s maternal grandmother seems to have had progressive fatigue before dying unexpectedly.**
+
+●      Assign one person to play the role of the physician and one to play to role of the pregnant woman. Role play delivery of the information to the family.

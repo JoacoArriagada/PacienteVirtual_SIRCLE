@@ -1,0 +1,3 @@
+1. A 55-year-old man presents with chest pain. He is determined to be low risk for acute coronary syndrome. Chewable aspirin is given. There are no concerning ECG features. A chest X-ray is unremarkable. Serial cardiac enzymes are undetectable. You are discharging him home. What do you say at the close of the encounter to assure he understands his workup and follow up instructions?
+
+Facilitators: After the role play, discuss ways to discharge patients by reviewing what studies have been performed and why, what the results of the studies mean, and how to provide clear discharge instructions and return precautions. Discuss how to ensure that patients understand what is being communicated to them.

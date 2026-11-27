@@ -1,0 +1,11 @@
+<u>**SP information for portraying a parent of this infant:**</u>
+
+Mariah is a 9 month old female. Mariah had an abnormal newborn screen for hemoglobinopathies, and follow-up testing was performed at 9 months of age. Since birth, she has been growing and gaining weight well without any unusual illnesses. She has no family history of any severe anemia’s, sickle cell, or other known blood disorders. Dad and Mom deny known blood problems. Both parents are African American.
+
+**Your baby has been normal and fine. Your pediatrician sent you to the hematologist due to an abnormality on the labs that are drawn on all babies born in the state. You are not overly worried, because your pediatrician says that if the baby had a serious blood problem he would be having symptoms and problems he hasn’t had. You are mostly interested in knowing the following:**
+
+1. **What is the meaning of the abnormal test my baby had? (it means she has a trait for sickle cell anemia.)**
+2. **What is sickle cell anemia? A genetic problem with producing red blood cells that can cause many lifelong problems. Your baby does not have this disease, but she is a carrier for the gene.)**
+3. **Will she have any medical problems as a result of this? (Probably not. It is important for her to avoid dehydration, extreme cold and vigorous exercise at high altitude. A small number of patients with sickle cell trait have developed medical problems under these conditions, and we don’t know enough yet to predict who will have problems under these conditions, so we counsel avoidance in all patients with sickle cell trait. )**
+4. **Does she need any more tests? (Some debate exists about this. The practicing hematologists here would recommend retesting her to make completely sure that she has no thalassemia trait, even though it is very unlikely.)**
+5. **Could I have another baby with this problem or with worse problems? Yes, it could be possible to have an infant with true sickle cell disease or sickle cell/thalassemia which is a combination of 2 blood disorders. Many African Americans are silent carriers for these disorders, so it would be wise to test for them prior to another pregnancy. Mariah herself also needs to pursue genetic counseling prior to procreating, to prevent the same outcome.**

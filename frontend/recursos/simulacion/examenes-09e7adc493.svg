@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <title>Exámenes</title>
+  <path d="M15 11C15.552 11 16 11.448 16 12V18C16 20.209 14.209 22 12 22C9.791 22 8 20.209 8 18V12C8 11.448 8.448 11 9 11H15Z" fill="#EAD9FB"/>
+  <path d="M9 3V18C9 19.6568 10.3432 21 12 21C13.6568 21 15 19.6568 15 18V3M7 3H17M9 12H15" stroke="#7135A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

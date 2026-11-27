@@ -1,0 +1,3 @@
+1. A mom brings her 8-month-old son in for fever and cough. The child does not go to daycare but your clinical suspicion is viral upper respiratory infection. Mom says the fever has not improved with ibuprofen or acetaminophen at home, “So it can’t just be a virus.” She is requesting antibiotics. A chest X-ray is negative and shows “peribronchial thickening.”
+
+Facilitators: After the role play, discuss how to approach parents with children to do not appear to have a life-threatening emergency and who may be discharged home. Talk about ways to alleviate and/or validate parental concerns/fears about their children in the setting of reassuring ED workup.

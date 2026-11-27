@@ -1,0 +1,7 @@
+**Cross-Cover Curriculum Facilitator's Guide**
+
+1. **Page 9: FYI: Ms. Smith is having some desaturations, just put on 2L O2.**
+
+Acuity: Low
+
+Cross-cover to see patient: YesWe are told that the patient is having new desaturations, which is concerning, and that she was put on oxygen. As mentioned in a previous case, we should be most concerned when a patient's oxygen requirements are increasing rapidly (say, from 0 to 6 liters/min in a day) or if they are increasing any amount at very high levels (the change from 10 to 12 liters is more concerning than from 0 to 2 liters, as it affects the patient's ability to remain on the floor as opposed to requiring the ICU). It seems most likely that this patient is having residual effects of the volume overload she came in with, and may require some diuresis. We want to make sure that she has met her diuresis goal for the day. If she is persistent in her oxygen requirement despite additional diuresis, a search for additional causes might be needed. Given that the patient is obese, there may also be a component of sleep apnea, which might also explain her hypoxia. Some other common causes of hypoxia in hospitalized patients (besides pulmonary edema) include pulmonary embolism and pneumonia. If she were also increasingly tachycardic, this might suggest pulmonary embolism. A chest X-ray might be helpful to look for pneumonia or pulmonary edema.

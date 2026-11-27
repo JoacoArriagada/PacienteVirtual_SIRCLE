@@ -1,0 +1,3 @@
+# Context
+
+The set of complaints and prototypical diagnoses contained in this handbook were developed as part of a hypothesis-driven approach to assessing the complete, head-totoe physical exam in order to better integrate the technical and cognitive aspects of the physical examination. In a nutshell, you are asked to learn the physical exam maneuvers in the context of chief complaints, limited prototypical diagnoses, and discriminating features. When tested on your physical exam skills, you are presented with a short history and an accompanying differential diagnosis consisting of two alternative diagnoses; the history is kept short because the emphasis here is on anticipating and performing a physical exam with specific discriminating signs in mind.

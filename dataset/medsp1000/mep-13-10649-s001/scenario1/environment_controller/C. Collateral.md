@@ -1,0 +1,3 @@
+Appendix C: Collateral Information from Wife
+
+The team calls the wife, who states, “The patient drives a truck for a living and is away from home for days to weeks at a time. While at home, he drinks on most nights, several drinks per night. A few weeks ago he fell while intoxicated and injured his rib after falling off a ladder. He does not use other drugs and is otherwise a good husband and father. She is unaware of how much he drinks on the road, and when you tell her, she is surprised and very concerned. Regarding his bipolar disorder, he has been stable on lithium and overall doing well. For the past few weeks, since injuring his ribs, he has not been feeling well overall complaining of dizziness, thirst and general malaise.”

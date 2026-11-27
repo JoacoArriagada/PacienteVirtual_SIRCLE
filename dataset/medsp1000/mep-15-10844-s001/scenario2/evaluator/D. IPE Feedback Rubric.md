@@ -1,0 +1,10 @@
+**Appendix D: IPE Feedback Rubric**
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Parameter Assessed | 1 | 2 | 3 |
+| Collaborative  Teamwork | Dismissive of other team members’ roles, knowledge, and/or contributions to healthcare | Respectfully receives input, ideas, and/or opinions from other disciplines | Actively seeks to involve other disciplines by encouraging others to get involved or asking questions to learn from them |
+| Roles | Unable/unwilling to articulate anything learned from another discipline and/or ways in which this session differed by having interprofessional contributions rather than being solely uniprofessional | Limited ability to articular contributions of other disciplines. Limited or constricted viewpoint of other disciplines | Articulates something learned from another discipline and/or ways this session was different by having interprofessional contributions rather than being solely uniprofessional |
+| Communicate with Confidence | Is hesitant to contribute to discussion/activity and may need prompting | Contributes to discussion/activity with appropriate level of confidence and humility | Overly confident to the point that student appears arrogant and/or tends to dominate the activity |
+| Communicate with clarity | Does not engage in the activity to share discipline-specific information unless prompted | Shares information but uses discipline-specific terminology/jargon such that others may feel excluded | Shares information AND avoids using jargon and/or takes care to explain meanings to others. |
+| Effective Communication | Is hesitant to contribute to discussion/activity and/or dominates communication to the detriment of others | Contributes to discussion/activity with appropriate verbal and non-verbal skill. May need occasional prompt. May use occasional jargon. | Effectively uses verbal and non-verbal skills throughout activity. Does not use jargon and uses patient-friendly language |

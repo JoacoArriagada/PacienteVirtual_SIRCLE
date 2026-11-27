@@ -1,0 +1,1 @@
+1. You are a 76-year-old man who was brought in by your wife because you were “not acting right.” You feel fine and want to leave instead of staying in the hospital overnight. Your wife also does not want you to stay overnight.

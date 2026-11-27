@@ -1,0 +1,3 @@
+**Small Group Case 3**
+
+**You are an internal medicine provider about to see Cora, a 47-year-old cis-woman who has been your patient for several years. She is here for her annual visit with you. When talking to her, while she doesn’t endorse any specific complaints or reason for her visit besides her annual check-in, she doesn’t seem to be herself—she is less energetic, provides short answers, has trouble concentrating, and is less engaged overall. While you are thinking about medical conditions that may be contributing to her change in behavior, such as thyroid disorders, anemia, depression, you are also considering social contributors, or a new safety concerns in one of her relationships.**

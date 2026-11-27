@@ -1,0 +1,1 @@
+| **Name**: Breton, Mark  **Age/Sex**: 58yo / M  **MRN**: 1001265978  **FULL CODE** | **DOS/Room**: Day 2 / C12-08  **Dx**: diverticulitis  **Meds**: ciprofloxacin, metronidazole, acetaminophen, ketorolac, hydromorphone, ondansetron  **Allerg**: PCN  **Other**: back on liquids |

@@ -1,0 +1,26 @@
+|  |  |
+| --- | --- |
+| **Appendix A: MedEdPORTAL Simulation Case Template**  **SIMULATION CASE TITLE: Fever and Seizure in a Young Infant: A Simulation Case** | |
+| **PATIENT NAME: Timmy South**  **PATIENT AGE: 5 weeks**  **CHIEF COMPLAINT: Fever and lethargy** | |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Initial Presentation | | | |
+| **Initial vital signs** | ABC’s: Airway patent, Breathing spontaneously, Pulses strong  Initial Vitals:   |  |  |  |  |  | | --- | --- | --- | --- | --- | | Pulse 170 | RR 48 | BP 72/52 | Temp 38.5 | O2 Sat 98% | | | |
+| **Overall Appearance**  *What do learners see when they first enter the room?* | Baby is lying in warmer or on bed with parent bedside. He is pale and not responsive, with decreased tone. The baby is not yet on the monitor. The nurse looks worried and the parent is distraught. | | |
+| **Actors and roles in the room at case start**  *Who is present at the beginning and what is their role? Who may play them?* | -Mother: gives history, answers questions  -Nurse: assists in carrying out orders | | |
+| **HPI**  *Please specify what info here and below must be asked vs what is volunteered by patient or other participants* | Initial history freely given by parent:  It is mother’s first week back at work. She was a little concerned because the baby didn’t feed well this morning. She asked her boyfriend to watch the baby while she worked and to call if he wasn’t acting right. When she arrived home after work (9 hours later), she couldn’t wake the baby up. Her boyfriend said the baby slept most of the day. He himself was very tired, so he was happy the baby was quiet and he could sleep. The baby’s mother is angry at her boyfriend for not waking the baby up to eat and check on him. She lives just across the street so she hurried to the emergency room carrying the baby.  More history (must ask)  -Birth history? Mother is 24 years old, healthy pregnancy, no underlying health problems. First pregnancy. Gestational age 36 weeks. Birth weight 6lb 3oz (2.8kg). Water broke at home, started having contractions, came into hospital. Baby born vaginally about 10 hours later. Stayed in the hospital for 5 days working on feeding. Required phototherapy for 2 days for jaundice. Healthy and growing well since discharge. Exclusively formula feeding.  -Infectious exposures? Maternal history genital herpes prior to pregnancy- no known breakouts during pregnancy or delivery and took medicine to prevent lesions. Maternal GBS (“strep”) positive but received antibiotics for many hours (“in time” the doctors said). HIV negative at prenatal screening.  -Hydration? Not sure about wet or soiled diapers. None since she arrived home. | | |
+| **Past Medical/Surgical History** | **Medications/Allergies** | **Family History** | **Social History** |
+| Born by spontaneous vaginal delivery at 36 weeks (4 weeks early), 6lb 3oz (2800g), apgars 7,9 | none | Negative for significant illnesses in childhood | Single mother. Father of baby uninvolved. Baby cared for by mother or mother’s boyfriend. Mother works full time at dry cleaners. They live in an apartment across the street from the hospital. Mother has been in relationship with boyfriend for 6 months. Financially strained. |
+
+|  |  |  |
+| --- | --- | --- |
+| Instructor Notes - Changes and CASE Branch Points  *This section should be a list with detailed description of each step than may happen during the case. If medications are given, what is the response? Do changes occur at certain time points? Should the nurse or other participant prompt the learners at given points? Should new actors or participants enter, and when? Are there specific things the patient will say or do at given times? There are a few examples given, but it is expected that most cases will have many more changes and potential branch points..* | | |
+| **Intervention / Time point** | **Change in Case** | **Additional Information** |
+| Mother asks what is going on and is her baby going to be ok? | Student explains to mother that her baby seems to be quite sick and needs many tests right away to help figure out what is wrong with him. |  |
+| Student requests weight | Parent reports most recent weight of 8lb. (3.63kg) |  |
+| Student informs mother of the importance of performing a lumbar puncture. Student describes procedure and how it will help with potential diagnosis of meningitis. Discusses option of staying or leaving during procedure and allows mother to decide. | Mother expresses fear of procedure, doesn’t want to leave her baby, and decides to stay. |  |
+| Baby has generalized tonic clonic seizure with cyanosis | The parent says, “why is he shaking? Is he having a seizure?” |  |
+| Student decides to either perform LP or postpone it. If student performs LP, parent can stay with the baby during the procedure. | Parent can offer pacifier to baby during LP. |  |
+| Students discuss clinical scenario with parent, including need for PICU admission | Mother very worried: Is my baby going to be ok? Can I stay with him? |  |
+| Student explains to mother that the baby most likely has bacterial meningitis and discusses management plan and prognosis | Mother is very upset but appreciates care students have given |  |

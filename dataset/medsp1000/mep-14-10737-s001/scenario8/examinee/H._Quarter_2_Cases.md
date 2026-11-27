@@ -1,0 +1,1 @@
+**Case 3:** Your patient is a 26-year-old man who presents with a nailbed crush injury with underlying fracture sustained at work. His finger is washed, repaired and dressed in ED. You are concerned for a contaminated wound due to industrial machinery.

@@ -1,0 +1,1 @@
+**Neurology Case 3 (Group 3):** A 6 month old boy has had recurrent hiccups then startles and cries afterward. This started when he was 4 months old. They have worsened over time and now happen multiple times/day. His mother has a video of this to show you via telemedicine visit.

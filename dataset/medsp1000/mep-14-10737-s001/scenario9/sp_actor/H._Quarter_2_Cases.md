@@ -1,0 +1,1 @@
+**Case 4:** You are a 28-year-old woman with a history of headaches. This headache is typical of your prior headaches but worse than usual. You have had headaches for several years, though you normally do not have to come to the ED for them. This headache was gradual in onset and has slowly progressed. It is unilateral and throbbing, with phonophobia and photophobia.

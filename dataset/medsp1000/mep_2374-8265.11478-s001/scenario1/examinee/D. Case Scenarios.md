@@ -1,0 +1,7 @@
+**Health Promotion and Disease Prevention: Health Behavior Counseling Case**
+
+You are a physician treating the following patient during an office visit.
+
+Case 1: M. is a 55 year old female with diabetes, heart disease and clinical depression. During her medical visits, M. is typically quiet and passive. She is usually a compliant patient, but recently has had trouble with being able to afford all her medications. She sees multiple specialists and takes several prescription medications and complains of side effects such as diarrhea and headaches. M. has smoked cigarettes since she was 19. Her primary care physician has also encouraged her to set a smoking cessation goal. M. agrees with her doctor but struggles with quitting smoking.
+
+Address M.’s smoking cessation goal during this visit.

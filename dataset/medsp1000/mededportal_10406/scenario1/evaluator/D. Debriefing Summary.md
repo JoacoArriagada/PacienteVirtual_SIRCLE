@@ -1,0 +1,31 @@
+**Appendix D- Debriefing Summary \_ DKA in the Obstetric Population**
+
+Diabetic Ketoacidosis (DKA) is a relatively infrequent but life-threatening pathology that is sometimes seen in the obstetric population. Because of the physiologic changes of pregnancy, including changes in hormone regulation, diabetic pregnant women are predisposed to developing DKA, particularly in the second and third trimesters of pregnancy.1 As perioperative consultants, anesthesia providers are increasingly being asked to assist in the management of parturients with major comorbidities, including DKA.2 As a result, this simulation was created to help develop the skills and confidence to assist with management of DKA in the obstetric population.
+
+Diabetic ketoacidosis is a life-threatening medical emergency and needs to be treated as such. One of the key learning points from this simulation is the decision to delay non-emergent surgery for medical optimization of critical illness. The scenario for this simulation attempted to make very apparent that the cesarean section requested was not emergent (no fetal distress, no imminent risk of active labor), thereby making the decision to delay surgery for optimization of a critical, life-threatening illness (diabetic ketoacidosis) a simple one; however, in real life, the decision to proceed with or delay urgent surgery in a non-optimized patient is often not so simple. The decision needs to be made based on the risks and benefits of each possible course of action, with the best chance of a positive outcome for the patient being the motivation for the choice.
+
+Treatment of diabetic ketoacidosis is based on the principle that presenting patients are significantly dehydrated and total-body potassium depleted (though the significant acidosis causes an extracellular potassium shift, which in turn frequently causes the serum potassium concentration on presentation to initially be elevated).1 Because of this, the mainstays of therapy are fluid resuscitation with isotonic crystalloid followed by initiation of an insulin infusion and appropriate potassium supplementation. Potential useful tools in resuscitation include two large-bore IV access sites and an arterial line.
+
+Treatment will inevitably cause serum potassium levels to rapidly fall as the insulin causes an intracellular potassium shift. (Remember that insulin with dextrose is a first-line treatment for hyperglycemia.) In addition, resolution of the acidosis will remove the driving force for pathologic extracellular potassium shift. As a result, supplementation with 20 mEq per hour of potassium should begin when the serum potassium level is below 5.5. In fact, if serum potassium levels fall below 3.3, *it is recommended that insulin therapy be paused until potassium supplementation is provided to bring the serum potassium level into the normal range.*3
+
+When treating diabetic ketoacidosis with insulin, 0.14 units / kg / hour is the recommended initial infusion rate; however, the goal of treatment is to decrease the serum glucose level by 50 to 70 mg / dL / hr. As a result, the insulin infusion will need to be carefully titrated to meet this goal.3 The rationale behind this slow, measured decline in serum glucose is to prevent cerebral edema from rapid changes in serum osmolality due to changing serum glucose levels.
+
+After glucose levels fall below 250 mg / dL, fluids with 5% dextrose are added with the ultimate goal of maintaining serum glucose levels between 150 and 200 mg / dL for the duration of therapy.1,3 Resuscitation is not complete until the anion gap metabolic acidosis resolves; insulin, fluids, potassium, and dextrose are to be continued until this occurs.3
+
+When requested to assist with resuscitation of a depressed neonate in the obstetric operating theatre, it is important to recognize that the practicing anesthesia provider’s primary responsibility is the safety of the mother. Only after ensuring a plan is in place to maintain adequate care of the mother is it appropriate to assist with resuscitation of the neonate.
+
+In assessing a meconium-stained depressed neonate born to a poorly-controlled diabetic mother, a number of etiologies of neonatal depression are possible. The most important task in any depressed neonate with meconium staining is to ensure patency of the airway with as little stimulation as possible. To do so, first suction the infant’s mouth. Then, intubate the trachea and suction the patient through the endotracheal tube. Finally, ventilate the patient. (Note that, if thick meconium is obstructing the endotracheal tube, it may need to be replaced with a clean tube and re-suctioned prior to ventilation.)
+
+After the airway is secured and demonstrated to be patent, other etiologies of neonatal depression must be investigated. In infants born to poorly-controlled diabetic mothers, upregulation of insulin production secondary to hyperglycemia in utero leads to hypoglycemia after birth. As a result, hypoglycemia is relatively common in this neonatal patient population.4
+
+This simulation was designed to be difficult in order to teach management of not only diabetic ketoacidosis, but also critically ill parturients in general. The scenario also provides an opportunity to learn neonatal resuscitation skills in a simulated clinical setting. Simulation provides a realistic learning experience in a low-risk, controlled environment. Congratulations on completing the module! The lessons learned within will serve well during future patient encounters.
+
+**References**
+
+1. Sibai BM, Viteri OA. Diabetic ketoacidosis in pregnancy. Obstet Gynecol. 2014 Jan;123(1):167-78. doi: 10.1097/AOG.0000000000000060. Review. PubMed PMID: 24463678.
+
+2. Bharwani F, Macarthur A. Review of a high-risk obstetric anesthesia antepartum consult clinic. Can J Anaesth. 2014 Mar;61(3):282-3. doi: 10.1007/s12630-013-0094-5. Epub 2013 Dec 18. PubMed PMID: 24347354.
+
+3. Westerberg DP. Diabetic ketoacidosis: evaluation and treatment. Am Fam Physician. 2013 Mar 1;87(5):337-46. PubMed PMID: 23547550.
+
+4. Mitanchez D, Yzydorczyk C, Simeoni U. What neonatal complications should the pediatrician be aware of in case of maternal gestational diabetes? World J Diabetes. 2015 Jun 10;6(5):734-43. doi: 10.4239/wjd.v6.i5.734. Review. PubMed PMID: 26069722; PubMed Central PMCID: PMC4458502.

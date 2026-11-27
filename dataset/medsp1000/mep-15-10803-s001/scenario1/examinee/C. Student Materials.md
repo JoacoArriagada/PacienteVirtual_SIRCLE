@@ -1,0 +1,7 @@
+**Adverse Childhood Experiences (ACEs)**
+
+**Case Overview**
+
+Simone Baker is a 20 year-old mother of two. She has a three year-old son, Zaire, from a high school relationship, and now presents to the pediatric clinic with her 4 month old daughter, Amber. Amber was born at term at University hospital by normal spontaneous vaginal delivery weighing 7 pounds and 1 ounce. Simone had good prenatal care and had no prenatal complications. Amber did well in the neonatal period and was discharged home with her mother at 2 days of age. Simone tried to breast feed Amber, but became frustrated—she felt her milk supply was insufficient—and by two weeks of age, Amber was taking only formula. The baby has been growing well and is here for her second set of vaccines. Although the infant is doing well, mom seems very tired and has a flat affect. She says it is harder this time because she has no support at home, CJ, her boyfriend and father of Amber is working most of the time, and she has no outside support. When Zaire was born Simone was living at home with her mother and sister and they helped quite a bit and gave her a break once in a while. Simone is now living in a single room apartment with Zaire, Amber, and CJ. She had to quit working about 4 months into her pregnancy with Amber because she couldn’t stand on her feet all day long, and she doesn’t plan to go back to work until Amber is at least 6 months of age.
+
+You want to find out more about her social history, her life growing up and her past health and mental health history.

@@ -1,0 +1,3 @@
+**Sodium and fluid intake Case**
+
+Dolores Case is a 50-year-old female presenting to the clinic for a hospital follow-up visit. She has a known history of congestive heart failure and takes her medications as directed. She is feeling discouraged because she has been hospitalized 4 times this year for fluid overload, and is so tired of being in the hospital. During each hospitalization she is reminded and counseled regarding the importance of limiting salt and watching fluid intake closely to prevent re-hospitalization due to fluid overload. She is able to restrict fluids but is struggling with limiting sodium..

@@ -1,0 +1,1 @@
+Mrs. Smith is a petite, well-dressed 49-year-old woman who has been struggling with pain from an autoimmune disorder. At home she has been taking medication for her pain, but today it has not helped. She is timid and quiet, but clearly in extraordinary discomfort. She explains that the pain got out of hand last night and became “unbearable, a 10/10 pain.”

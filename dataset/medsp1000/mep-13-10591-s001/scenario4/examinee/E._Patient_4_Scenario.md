@@ -1,0 +1,14 @@
+|  |  |
+| --- | --- |
+| Appendix E: MedEdPORTAL Simulation Case  SIMULATION CASE TITLE: Multi-Patient Simulation Session: Evaluation of Six Simulated Patients with Different Shock Syndromes.  AUTHORS: Richard Lammers, MD, Philip Pazderka, MD, Maria Sheakley, PhD. | |
+| PATIENT NAME: Mark Header  PATIENT AGE: 40  CHIEF COMPLAINT: Fall 20 feet from a ladder | |
+|  | |
+| Brief narrative description of case | This patient is a 40-year-old male who fell 20 feet from a ladder one hour prior to arrival. Witnesses report loss of consciousness for an unknown length of time. Prehospital providers placed the patient in cervical spine immobilization. The patient complains of head and neck pain. He is too confused to provide a reliable history. Student teams have been informed that they are members of a shock response team. |
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| INITIAL PRESENTATION | | | |
+| Initial vital signs | Temp: 36.5o C  Pulse: 56 /minute  Blood pressure: 85/50 mm Hg  Respirations: 16/minute  Oxygen saturation: 95%  Mean Arterial Pressure (MAP): 62 mm Hg | | |
+| Overall Appearance | There is a middle-age, adult male wearing street clothes, in a cervical collar and lying supine on a backboard. He is awake, but confused. A pulse oximeter probe has been placed on a finger, and cardiac electrodes are properly placed. The vital signs monitor has been turned on. The patient is *not* receiving oxygen. Peripheral IV access has been established. The same array of treatment options for all cases in this exercise are visible on a cart, including vasopressors, an antihistamine, an antiarrhythmic, calcium and calcium channel blocker, and steroid drugs; IV fluids and blood products; airway equipment; a defibrillator; an 18-gauge angiocath needle; and a glucose measurement device. | | |
+| Actors and roles in the room at case start | A nurse at the bedside introduces the patient, hands an ED Triage Note to the team, and awaits instructions. Nurse’s Initial Script: * I’m nurse \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ . * This patient was just brought in by paramedics. * Here is my note and your chart. * It looks like he’s got a closed head injury. He can’t give much information. He just keeps repeating himself. * But, I’m more concerned about his blood pressure—it’s fairly low for brain trauma. * I placed an IV already. | | |
+| HPI | Information in ED Triage Note: Patient name: Mark Header Demographics: 40 y/o; male ED arrival information: EMS Chief complaint: Fall from ladder, height of 20 feet Significant history/details: Struck hard surface outside; current outside temperature 55oF; loss of consciousness for unknown length of time; all history from paramedics. Allergies: unknown Home medications: unknown Medical history: unknown Surgical history: unknown Social history: unknown Safety screen (Feels safe at home?): unknown Family comments: none | | |

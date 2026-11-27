@@ -1,0 +1,7 @@
+**Cross-Cover Curriculum Facilitator's Guide**
+
+1. **Page 11: STAT: Rivers just vomited up some blood.**
+
+Acuity: Very High
+
+Cross-cover to see patient: YesThis is an emergency, and requires prompt attention at the patient's bedside as well as prompt notification of your senior resident. It is important in these emergent situations to seek additional help, especially during your intern year. It is the hallmark of a good, mature physician to ask for help when they need it rather than try to be the ‘lone hero.’ Never be afraid or worried to ask for help from your senior resident, in either emergent cases or in cases where you are unsure of what to do—senior residents would rather know about a situation early rather than too late. In this case, we should be getting an updated set of vital signs, and, depending on the severity, getting additional help from the GI consult team and, if severe, consideration of transfer to the ICU. It is reasonable to send off an updated complete blood count, though always remember that the hemoglobin level on this takes time to equilibrate and may not reflect recent bleeding. If the patient does not have an active type and screen for blood (usually done every 72 hours), now is the time to do that as well. If he does not have good IV access (at least 2, eighteen-gauge peripheral IVs), it is also a good time to get new IVs placed. If the volume of blood is large, consider transfusing one unit of packed red blood cells immediately, and putting additional units on reserve.

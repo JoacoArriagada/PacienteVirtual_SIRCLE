@@ -1,0 +1,36 @@
+**WORKSHOP 3 ROLE PLAYS**
+
+**Scenario # 1: Poorly Controlled Asthma**
+
+**Doctor**:
+
+* Your next clinic patient is Ashley, a 4-year-old coming for follow up after her 3rd asthma hospitalization in 3 months.
+* In the notes from the ED there is documentation that Ashley’s mother continues to be non-adherent with the controller medication regimen prescribed.
+* You are disappointed with this non-adherence. How do you begin your conversation with Ashley’s mother?
+
+**Scenario # 1: Poorly Controlled Asthma**
+
+**Parent**:
+
+* Ms. Johnson is a single mother who cleans houses.
+* She has no one to watch Ashley.
+* One of her weekly clients smokes but she has no choice but to bring Ashley to work with her.
+* At the job, Ashley is not only exposed to second hand smoke, but the chemical odors from cleaning supplies.
+* The insurance company stopped covering the medication.
+* She has not had a chance to call you to get authorization from the insurance company so she can pick up Ashley’s medicines.
+
+**(DO NOT OFFER ANY OF THIS INFORMATION UNLESS ASKED ABOUT IT)**
+
+**Scenario # 1: Poorly Controlled Asthma**
+
+**Observer**:
+
+What language did the doctor use in their initial approach to Ashley’s mother?
+
+How did Ashley’s mother respond?
+
+What made this communication style effective? What made it less effective?
+
+Things done well:
+
+Areas for improvement:

@@ -1,0 +1,14 @@
+**Station #1A Checklist – History & Physical Exam**
+
+Resident: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Evaluator: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+|  |  |
+| --- | --- |
+| Item | Completed |
+| Elicits at least 4 of the following HPI (PC2):   * Onset of the event – 3 hours * Provocation – food * Palliation – nothing * Quality of the pain - sharp * Region – epigastric * Radiation – RUQ * Severity – 8/10 * Time - 2 weeks intermittently |  |
+| Elicits at least 4 of the following history (PC2, PC5, SBP3):   * PMHx – GERD * PSHx – Appy * FHx – Mom w/ HTN * Meds – Prevacid * Allergies – NKDA |  |
+| Elicits at least 5 of the following ROS (PC2):   * Low grade fever * Chills * Nausea * Emesis x 1 * No weight loss * No bowel symptoms (No diarrhea, no constipation, no melana, no hematochezia * No urinary symptoms (no dysuria, no frequency, no hematuria) * No MSK symptoms (no myalgias, no joint pain, no back pain) * No neurologic symptoms (no headaches, no weakness/numbness, no LOC, no dizziness, no seizure) * No psychiatric symptoms (no SI/HI, no substance abuse, no depression, no anxiety) * All other ROS negative |  |
+| Elicits cardiac/pulmonary and abdominal exam (PC2):   * For abdominal exam – does 2 of the following:   + Inspection   + Auscultation   + Percussion   + Palpation |  |
+| Demonstrates behavior that conveys caring, honesty, genuine interest and tolerance when interacting with the patient (PROF1): |  |
+| Establishes rapport with and demonstrate empathy toward the patient; Listens effectively to the patient (ICS1): |  |
+| TOTAL SCORE | /6 |

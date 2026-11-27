@@ -1,0 +1,1 @@
+**Case 1:** You are a 54-year-old man with atraumatic right shoulder pain. You appear comfortable. The pain is sharp and worse with shoulder abduction. You have been followed by an orthopedic surgeon. The shoulder pain is not new or changed. You have no sensory or motor deficits. Your orthopedist told you to come to the emergency department for pain control.

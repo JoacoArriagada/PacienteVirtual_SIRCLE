@@ -1,0 +1,5 @@
+**Case Study 4:**
+
+JB is a 42-year old man presenting to his primary care physician complaining of penile discharge. From the interview, you find out that he is married with two children, and he states he is sexually monogamous with his wife. JB reports that his symptoms started one day ago. You decided to do a STD/STI test panel, and start him on an empiric antibiotic course of Doxycycline and Ceftriaxone. A follow-up appointment and symptom recheck is scheduled for 1 week.
+
+The STD panel was positive for chlamydia, and negative for other STDs and HIV. As a part of follow-up counseling, you begin a more thorough conversation about sexual history. You also recommend he have his wife come in for testing, and offer to write an antibiotic script for her if she is showing symptoms of chlamydia. JB vehemently opposes having his wife come for testing. After reassurance of confidentiality, he reveals that he does have unprotected anal sex with men, unbeknownst to his wife. They have Illinois BlueCross BlueShield insurance through his wife’s employer.

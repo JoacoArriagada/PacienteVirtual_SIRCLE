@@ -1,0 +1,78 @@
+**The Clumsy Horse Case - Facilitator Guide**
+
+**Goal**  
+
+To understand Equine Herpes Virus-1 infection (EHV-1) and equine infectious disease prevention
+
+**Learning Objectives**
+
+- Describe the core equine vaccine guidelines and schedule
+- List the risk factors for EHV-1
+- Describe the clinical signs and symptoms of equine herpes myeloencephalopathy (EHM)
+- Explain the pathogenic mechanism for EHV-1 and how it can lead to EHM
+- Describe how EHV-1 can affect an unborn foal
+- Examine control strategies during EHV outbreaks
+
+**Case Vignette**
+
+Sully is a 12-year-old thoroughbred gelding, owned by Mrs. Matilda. He raced as a 2- and 3-year-old but is now used for dressage. Over the past year he has traveled to horse shows and been stabled in Maryland, Florida, and Wisconsin. Over the phone, Mrs. Matilda complains that Sully is clumsy when walking, has a fever, and nasal discharge.
+
+Upon arrival to the barn, the veterinarian obtains a full history from Mrs. Matilda. Sully is not completely up-to-date on all vaccines. Thirteen months ago, he received the following: Tetanus, EEE/WEE/WNV, Rabies, Equine herpesvirus, and Equine influenza virus. Two weeks ago, he was shipped home in a trailer with dressage horses (warmbloods) and young thoroughbred race horses. Since then, he hasn’t seemed himself. He is not finishing his feed, but water intake seems fairly normal. The hay feeder in his stall is currently half-full of good-quality feed. There are normal feces present, but the stall seems very clean and dry for having been mucked out yesterday.
+
+Mrs. Matilda indicates she hasn’t made any recent changes to his feed or riding routine and he has never been clumsy in the past. He is stabled in the large barn with horses from multiple owners in Northwestern Wisconsin, but all the horses have been stabled there for at least a year. Some of the other horses also have nasal discharge. There was a case of Eastern Equine Encephalitis (EEE) at this stable last September.
+
+He is stalled at night with an individual paddock off his stall that is open during the day. Most afternoons he is let out in the field with the other horses. There is standing water in the ditches along the field. The barn and paddocks are in good repair and the stable seems like a well-run operation.  The owners, Bill and Patty Matilda have run the stable for 20 years. They also own a dog kennel and raise Labrador Retrievers.
+
+**Guiding Questions:**
+
+**What is EEE/WEE/WNV?**
+
+**What vaccines are not up-to-date?**
+
+**Why is the stall dry if he is drinking water?**
+
+Physical exam reveals a temperature of 103.5°F (99-101.5), pulse 55 bpm (28-45), respiration 24 bpm (10-14), gut motility is normal in all 4 quadrants and digital pulses are within normal limits. GI structures are normal to the best of arm’s reach with an enlarged bladder. Cranial nerve function is intact, but he has a weak tail and poor anal tone, as well as 2 of 5 ataxia in front limbs and 3 of 5 ataxia in hind limbs. All other physical exam findings are within normal limits.
+
+The veterinarian orders a complete blood count, chemistry panel, and cerebrospinal fluid tap.
+
+**Guiding Questions:**
+
+**Do any of the physical exam findings help explain Sully’s symptoms?**
+
+Complete Blood Cell Count
+
+<table><tr><td></td><td><p><strong>Normal Values</strong></p></td><td><p><strong>Sully</strong></p></td></tr><tr><td><p>Hematocrit %</p></td><td><p>32-45</p></td><td><p>46</p></td></tr><tr><td><p>RBC x 10<sup>6</sup>/ul</p><p>(red blood cell count)</p></td><td><p>6.8-12.9</p></td><td><p>11.8</p></td></tr><tr><td><p>MCV fl</p><p>(mean cell volume)</p></td><td><p>34-58</p></td><td><p>39.0</p></td></tr><tr><td><p>MCH pg</p><p>(mean cell hemoglobin)</p></td><td><p>13-19</p></td><td><p>16.9</p></td></tr><tr><td><p>MCHC %</p><p>(mean cell hemoglobin concentration)</p></td><td><p>31-37</p></td><td><p>36.3</p></td></tr><tr><td><p>White Blood Cells/ul</p></td><td><p>5-12.5 x 10<sup>3</sup></p></td><td><p>13.2 x 10<sup>3</sup></p></td></tr><tr><td><p>Seg. Neutrophils/ul</p></td><td><p>2.7-6.7 x 10<sup>3</sup></p></td><td><p>9.9 x 10<sup>3</sup></p></td></tr><tr><td><p>Lymphocytes/ul</p></td><td><p>3.3-5.5 x 10<sup>3</sup></p></td><td><p>1.5 x 10<sup>3</sup></p></td></tr><tr><td><p>Platelets/ul</p></td><td><p>100,000-400,000</p></td><td><p>300,000</p></td></tr><tr><td><p>Fibrinogen mg/dl</p></td><td><p>100-400</p></td><td><p>300</p></td></tr></table>
+
+**Chemistry** Panel
+
+<table><tr><td></td><td><p><strong>Normal Values</strong></p></td><td><p><strong>Sully</strong></p></td></tr><tr><td><p>BUN                      mg/dl</p></td><td><p>9-27</p></td><td><p>28</p></td></tr><tr><td><p>Creatinine             mg/dl</p></td><td><p>0.4-1.9</p></td><td><p>2.1</p></td></tr><tr><td><p>Alk. Phos.             IU/L</p></td><td><p>86-262</p></td><td><p>123</p></td></tr><tr><td><p>SGOT (AST)        IU/L</p></td><td><p>156-597</p></td><td><p>590</p></td></tr><tr><td><p>CPK                     IU/L</p></td><td><p>96-620</p></td><td><p>600</p></td></tr><tr><td><p>GGT                     IU/L</p></td><td><p>5-51</p></td><td><p>14</p></td></tr><tr><td><p>Total bilirubin      mg/dl</p></td><td><p>0.4-3.3</p></td><td><p>4.2</p></td></tr><tr><td><p>Glucose               mg/dl</p></td><td><p>52-121</p></td><td><p>210</p></td></tr><tr><td><p>Na                       mEq/L</p></td><td><p>130-144</p></td><td><p>137</p></td></tr><tr><td><p>K                         mEq/L</p></td><td><p>2.9-5.6</p></td><td><p>4.2</p></td></tr><tr><td><p>Cl                        mEq/L</p></td><td><p>92-107</p></td><td><p>97</p></td></tr><tr><td><p>Ca                       mg/dl</p></td><td><p>10.2-13.4</p></td><td><p>11.2</p></td></tr><tr><td><p>P                         mg/dl</p></td><td><p>1.7-5.8</p></td><td><p>3.7</p></td></tr><tr><td><p>Mg                      mg/dl</p></td><td><p>1.6-2.3</p></td><td><p>1.8</p></td></tr><tr><td><p>Total protein       gm/dl</p></td><td><p>5.2-8.2</p></td><td><p>6.4</p></td></tr><tr><td><p>Albumin              gm/dl</p></td><td><p>2.8-3.8</p></td><td><p>2.9</p></td></tr><tr><td><p>Globulin              gm/dl</p></td><td><p>2.6-4.0</p></td><td><p>3.5</p></td></tr><tr><td><p>Cholesterol          mg/dl</p></td><td><p>59-125</p></td><td><p>97</p></td></tr></table>
+
+**CSF Tap**
+
+<table><tr><td></td><td><p><strong>Normal Values</strong></p></td><td><p><strong>Sully</strong></p></td></tr><tr><td><p>Protein                  mg/dl</p></td><td><p>&lt;100</p></td><td><p>150</p></td></tr><tr><td><p>Total nucleated cell count            cells/uL</p></td><td><p>0-6</p></td><td><p>10</p></td></tr><tr><td><p>RBC                   cells/uL</p></td><td><p>0</p></td><td><p>10</p></td></tr><tr><td><p>Appearance</p></td><td><p>Clear, colorless</p></td><td><p>Clear, Yellow-<br/>orange tint (xanthochromia)</p></td></tr><tr><td colspan="3"><p><strong>Comment:</strong> 30% of cells are small mononuclear cells, including a few lymphocytes; 50% of cells are large mononuclear cells, which include macrophages containing intracellular deposits of hemosiderin.</p></td></tr></table>
+
+Sully’s lab results indicate he has mild dehydration and a stress leukogram. There is evidence of previous hemorrhage and mild mononuclear inflammation in CNS, but no evidence for bacterial infection.
+
+The veterinarian performs a PCR on a nasal swab that returns positive for Equine Herpesvirus-1 (EHV-1). Sully is diagnosed with Equine Herpes Myeloencephalopathy.
+
+**Guiding Questions:**
+
+**What lab values are abnormal?**
+
+**Which lab values help explain the physical findings and symptoms?** 
+
+**What is Myeloencephalopathy?** 
+
+Sully receives supportive care including fluids, steroid anti-inflammatories, and nutrition. He is also given Acyclovir.
+
+The lab results are reported to the state veterinarian and prevention measures, including biosecurity precautions, are put into place. Sully is placed in isolation. There are 11 other horses in the barn that are monitored for fever and respiratory disease. Three additional horses with nasal discharge are isolated. There is one pregnant mare in the barn that is also put in isolation. She has no fever or respiratory disease.  The barn is quarantined.
+
+After 3 weeks Sully’s fever, respiratory disease and ataxia have improved. The rest of the horses remain asymptomatic and the barn is no longer quarantined.
+
+**Guiding Questions:**
+
+**Why is this reported to the state veterinarian?**
+
+**What are biosecurity precautions?**
+
+**Why is the pregnant mare put into isolation without any symptoms?**

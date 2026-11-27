@@ -1,0 +1,9 @@
+# PATIENT HEALTH QUESTIONNAIRE-9 (PHQ-9)
+
+<table><tr><td>Over the last 2 weeks, how often have you been bothered by any of the following problems? (Use &quot;&quot;to indicate your answer)</td><td>Several Not at all</td><td>More than half days the days</td><td></td><td>Nearly every day</td></tr><tr><td>1. Little interest or pleasure in doing things</td><td>®</td><td>1</td><td>2</td><td>3</td></tr><tr><td>2.Feeling down,depressed,or hopeless</td><td>0</td><td>0</td><td>2</td><td>3</td></tr><tr><td>3. Trouble falling or staying asleep, or sleeping too much</td><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4.Feeling tired or having litle energy</td><td>0</td><td>0</td><td>2</td><td>3</td></tr><tr><td>5.Poor appetite or overeating</td><td>0</td><td>0</td><td>2</td><td>3</td></tr><tr><td>6.Feeling bad about yourself一 or that you are a failure or have let yourself or your family down</td><td>®</td><td>1</td><td>2</td><td>3</td></tr><tr><td>7.Trouble concentrating on things,such as reading the newspaper or watching television</td><td>0</td><td>0</td><td>2</td><td>3</td></tr><tr><td>8.Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless</td><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><td>that you have been moving around a lot more than usual 9.Thoughts that you would be better off dead or of hurting yourself in some way</td><td></td><td>1</td><td>2</td><td>3</td></tr></table>
+
+FOR OFFICE CODING 0 + + + =Total Score: 4
+
+If you checked offany problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?
+
+Not difficult Somewhat Very Extremely at all difficult difficult difficult □ □ □

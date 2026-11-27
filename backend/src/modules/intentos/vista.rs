@@ -1,0 +1,170 @@
+use axum::{Json, extract::{Path, State}, http::HeaderMap};
+use rusqlite::{Connection, OptionalExtension};
+use serde::Serialize;
+use serde_json::{Value, json};
+
+use crate::{
+    agentes::{dan_sparks::perfil as dan, nannu::perfil as nannu},
+    app::{errores::ErrorApi, estado::Estado},
+    modules::{entrevista::{hechos, turnos}, escenarios::formal::FichaLr, evaluacion::entregas, examenes::ordenes,
+        razonamiento::{evidencias, hipotesis}, valoracion::{hallazgos, mediciones}},
+    shared::autorizacion,
+    shared::ficha_aprobada::{self, Orientacion, Sugerencia},
+};
+
+use super::intento::Intento;
+
+#[derive(Serialize)]
+pub struct VistaIntento {
+    #[serde(flatten)]
+    intento: Intento,
+    #[serde(flatten)]
+    contenido: Option<SeccionesClinicas>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    entrevista_tecnica: Option<EntrevistaTecnica>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    mediciones: Option<Vec<mediciones::Medicion>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    turnos: Option<Vec<turnos::Turno>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    exploraciones: Option<Vec<hallazgos::Exploracion>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    ordenes: Option<Vec<ordenes::Orden>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    apuntes: Option<Vec<evidencias::Apunte>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    evidencias: Option<Vec<evidencias::Evidencia>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    borrador: Option<hipotesis::Borrador>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    entrega: Option<entregas::Acuse>,
+}
+
+#[derive(Serialize)]
+struct SeccionesClinicas {
+    introduccion: Value,
+    ficha: Value,
+    indicaciones: Vec<String>,
+    ayuda: Orientacion,
+    sugerencias: Vec<Sugerencia>,
+    respiraciones_simuladas: Option<i64>,
+}
+
+#[derive(Serialize)]
+struct EntrevistaTecnica {
+    paciente: &'static str,
+    motivo: String,
+    voces: Vec<VozEntrevista>,
+    temperatura: bool,
+}
+
+#[derive(Serialize)]
+struct VozEntrevista {
+    hablante: &'static str,
+    sugerencias: Vec<Sugerencia>,
+}
+
+pub async fn leer(
+    State(app): State<Estado>,
+    Path(id): Path<String>,
+    cabeceras: HeaderMap,
+) -> Result<Json<VistaIntento>, ErrorApi> {
+    app.consultar(move |db| {
+        let tx = db.transaction()?;
+        let (_, intento) = autorizacion::intento_propio(&tx, &cabeceras, &id)?;
+        let abierto = intento.pre != "pendiente";
+        let mediciones = abierto.then(|| mediciones::historico(&tx, &id, None)).transpose()?;
+        let contenido = (abierto && intento.caso == "P01" && intento.fase == "inicial")
+            .then(|| vista_inicial_lr(&tx, &intento, mediciones.as_deref().unwrap_or_default())).transpose()?.flatten();
+        let entrevista_tecnica = if abierto && intento.estado == "atencion" && intento.fase == "inicial" {
+            vista_tecnica(&tx, &intento)?
+        } else {
+            None
+        };
+        let turnos = abierto.then(|| turnos::historico(&tx, &id)).transpose()?;
+        let exploraciones = abierto.then(|| hallazgos::historico(&tx, &id)).transpose()?;
+        let ordenes = abierto.then(|| ordenes::historico(&tx, &id)).transpose()?;
+        let apuntes = abierto.then(|| evidencias::apuntes(&tx, &id)).transpose()?;
+        let evidencias = abierto.then(|| evidencias::listar(
+            &tx, &id, contenido.as_ref().map(|secciones| &secciones.ayuda),
+        )).transpose()?;
+        let borrador = abierto.then(|| hipotesis::ultimo(&tx, &id)).transpose()?.flatten();
+        let entrega = entregas::recuperar_acuse(&tx, &id)?;
+        Ok(Json(VistaIntento { intento, contenido, entrevista_tecnica, mediciones, turnos, exploraciones, ordenes, apuntes, evidencias, borrador, entrega }))
+    }).await
+}
+
+fn vista_tecnica(db: &Connection, intento: &Intento) -> Result<Option<EntrevistaTecnica>, ErrorApi> {
+    let (hablantes, motivo_id): (&[&str], _) = match intento.caso.as_str() {
+        nannu::ESCENARIO => (&[nannu::PACIENTE, nannu::ACOMPANANTE], "p02-motivo"),
+        dan::ESCENARIO => (&[dan::HABLANTE], "p03-motivo"),
+        _ => return Ok(None),
+    };
+    let paciente = hablantes[0];
+    let relato = hechos::candidatos(db, intento, paciente)?;
+    let motivo = relato.iter().find(|hecho| hecho.id == motivo_id)
+        .map(|hecho| hecho.respuesta.clone()).unwrap_or_default();
+    let mut voces = vec![VozEntrevista { hablante: paciente, sugerencias: ficha_aprobada::sugerencias(&relato) }];
+    for &hablante in &hablantes[1..] {
+        voces.push(VozEntrevista {
+            hablante, sugerencias: ficha_aprobada::sugerencias(&hechos::candidatos(db, intento, hablante)?),
+        });
+    }
+    let temperatura = db.query_row(
+        "SELECT EXISTS(SELECT 1 FROM intentos i
+         JOIN lecturas_versionadas l ON l.version_caso_id=i.version_caso_id AND l.fase=i.fase
+         WHERE i.id=?1 AND l.instrumento='temperatura')",
+        [&intento.intento_id], |fila| fila.get(0),
+    )?;
+    Ok(Some(EntrevistaTecnica { paciente, motivo, voces, temperatura }))
+}
+
+fn vista_inicial_lr(
+    db: &Connection, intento: &Intento, mediciones: &[mediciones::Medicion],
+) -> Result<Option<SeccionesClinicas>, ErrorApi> {
+    let triaje: Option<(String, String)> = db.query_row(
+        "SELECT l.valor, l.unidad FROM intentos i
+         JOIN versiones_clinicas v ON v.id=i.version_caso_id AND v.estado IN ('ensayo','aprobada')
+         JOIN lecturas_versionadas l ON l.version_caso_id=v.id AND l.fase=i.fase
+         JOIN revisiones_fuente r ON r.id=l.revision_fuente_id
+         WHERE i.id=?1 AND l.instrumento='presion'
+           AND instr(CAST(r.contenido AS TEXT), 'LR is a 34-year-old female') > 0
+           AND instr(CAST(r.contenido AS TEXT), 'Chief Complaint: Shortness of breath.') > 0",
+        [&intento.intento_id],
+        |fila| Ok((fila.get(0)?, fila.get(1)?)),
+    ).optional()?;
+    let Some((presion, unidad)) = triaje else { return Ok(None) };
+    let ficha = if intento.tipo == "formal" {
+        let contenido: String = db.query_row(
+            "SELECT json_extract(a.contenido,'$.ficha') FROM aprobaciones_clinicas a
+             JOIN intentos i ON i.version_caso_id=a.version_id WHERE i.id=?1",
+            [&intento.intento_id], |fila| fila.get(0),
+        )?;
+        serde_json::from_str::<FichaLr>(&contenido).map_err(ErrorApi::interno)?
+    } else {
+        FichaLr::inicial("Servicio de urgencias. Práctica técnica con material de ensayo.", "Triaje de ensayo de LR")
+    };
+    let presion: Value = serde_json::from_str(&presion).map_err(ErrorApi::interno)?;
+    let lectura = format!("{}/{} {unidad}", presion["sistolica"], presion["diastolica"]);
+    let respiraciones_simuladas = db.query_row(
+        "SELECT json_extract(l.valor, '$.frecuencia')
+         FROM intentos i JOIN lecturas_versionadas l ON l.version_caso_id=i.version_caso_id AND l.fase=i.fase
+         WHERE i.id=?1 AND l.instrumento='respiracion'",
+        [&intento.intento_id],
+        |fila| fila.get(0),
+    ).optional()?;
+    Ok(Some(SeccionesClinicas {
+        introduccion: json!({
+            "paciente": ficha.paciente, "edad": ficha.edad, "motivo": ficha.motivo, "contexto": ficha.contexto,
+        }),
+        ficha: json!({
+            "fuente": ficha.fuente, "fase": "inicial",
+            "datos": [{ "etiqueta": "Presión inicial", "valor": lectura }],
+            "hallazgos": mediciones.iter().filter(|medicion| medicion.en_ficha).collect::<Vec<_>>(),
+        }),
+        indicaciones: ficha.indicaciones,
+        ayuda: ficha_aprobada::ORIENTACION_INICIAL_LR,
+        sugerencias: ficha_aprobada::sugerencias(&hechos::candidatos_lr(db, intento)?),
+        respiraciones_simuladas,
+    }))
+}

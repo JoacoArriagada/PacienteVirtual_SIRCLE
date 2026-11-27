@@ -1,0 +1,145 @@
+[
+  {
+    "id": "p02-dolor",
+    "hablante": "Nannu",
+    "tema": "dolor",
+    "condicion": "Pregunta a la paciente por dolor en el pecho, dónde le duele o si duele al respirar.",
+    "respuesta": "Me duele el lado derecho del pecho cuando respiro.",
+    "pasaje": "R sided chest pain when breathing.",
+    "variantes": [
+      "Me duele a la derecha del pecho, cuando respiro."
+    ]
+  },
+  {
+    "id": "p02-tos-productiva",
+    "hablante": "Acompañante",
+    "tema": "tos",
+    "condicion": "Pregunta al acompañante por tos con flema, tos productiva o si vio a la paciente toser o expulsar flema.",
+    "respuesta": "Ha estado tosiendo y ha expulsado flema.",
+    "pasaje": "Family will say she has had a productive cough.",
+    "variantes": [
+      "La he visto toser. Ha botado flema."
+    ]
+  },
+  {
+    "id": "p02-identidad",
+    "hablante": "Nannu",
+    "tema": "identidad",
+    "condicion": "Pregunta a la paciente cómo se llama o cómo pueden llamarla.",
+    "respuesta": "Me llamo Nanu.",
+    "pasaje": "PATIENT NAME: Nanu",
+    "variantes": [
+      "Puede decirme Nanu."
+    ]
+  },
+  {
+    "id": "p02-edad",
+    "hablante": "Nannu",
+    "tema": "edad",
+    "condicion": "Pregunta cuántos años tiene la paciente.",
+    "respuesta": "Tengo 61 años.",
+    "pasaje": "PATIENT AGE: 61 years old",
+    "variantes": [
+      "Tengo 61."
+    ]
+  },
+  {
+    "id": "p02-motivo",
+    "hablante": "Nannu",
+    "tema": "inicio",
+    "condicion": "Pregunta a la paciente por qué vino, qué le pasa en general o su motivo de consulta.",
+    "respuesta": "Tengo fiebre y tos.",
+    "pasaje": "chief complain is fevers and cough for 3 days",
+    "variantes": [
+      "He tenido fiebre y tos."
+    ]
+  },
+  {
+    "id": "p02-inicio",
+    "hablante": "Nannu",
+    "tema": "inicio",
+    "condicion": "Pregunta a la paciente desde cuándo tiene fiebre o tos.",
+    "respuesta": "Llevo tres días con fiebre y tos.",
+    "pasaje": "Patient has been having a cough and fever for 3 days.",
+    "variantes": [
+      "Desde hace tres días. Con tos y fiebre."
+    ]
+  },
+  {
+    "id": "p02-cefalea",
+    "hablante": "Nannu",
+    "tema": "cabeza",
+    "condicion": "Pregunta explícitamente a la paciente si le duele la cabeza o tiene cefalea.",
+    "respuesta": "No, no me duele la cabeza.",
+    "pasaje": "Patient will deny stiff neck or headache.",
+    "variantes": [
+      "No tengo dolor de cabeza."
+    ]
+  },
+  {
+    "id": "p02-rigidez-cuello",
+    "hablante": "Nannu",
+    "tema": "cuello",
+    "condicion": "Pregunta por rigidez en el cuello o si lo siente tieso.",
+    "respuesta": "No siento el cuello rígido.",
+    "pasaje": "Patient will deny stiff neck or headache.",
+    "variantes": [
+      "No, no lo siento tieso."
+    ]
+  },
+  {
+    "id": "p02-acompanante-rol",
+    "hablante": "Acompañante",
+    "tema": "identidad",
+    "condicion": "Pregunta quién es el acompañante o qué relación tiene con la paciente.",
+    "respuesta": "Soy familiar de Nanu.",
+    "pasaje": "There is a family member in room who will provide most of the history and also show concern for patient.",
+    "variantes": [
+      "La acompaño. Soy de su familia."
+    ]
+  },
+  {
+    "id": "p02-acompanante-inicio",
+    "hablante": "Acompañante",
+    "tema": "inicio",
+    "condicion": "Pregunta al acompañante por el motivo de consulta o desde cuándo tiene fiebre o tos la paciente.",
+    "respuesta": "Lleva tres días con fiebre y tos.",
+    "pasaje": "Family member and patient will tell learner that the chief complain is fevers and cough for 3 days.",
+    "variantes": [
+      "La fiebre y la tos empezaron hace tres días."
+    ]
+  },
+  {
+    "id": "p02-acompanante-evolucion",
+    "hablante": "Acompañante",
+    "tema": "inicio",
+    "condicion": "Pregunta al acompañante cómo ha evolucionado la paciente, si la ve más débil o confundida.",
+    "respuesta": "La he visto más débil y más confundida.",
+    "pasaje": "She is getting weaker and more confused.",
+    "variantes": [
+      "Está más débil. Y la noto más confundida."
+    ]
+  },
+  {
+    "id": "p02-acompanante-alergia",
+    "hablante": "Acompañante",
+    "tema": "alergias",
+    "condicion": "Pregunta al acompañante por las alergias de la paciente.",
+    "respuesta": "Es alérgica a la penicilina.",
+    "pasaje": "Penicillin | Non-contributory",
+    "variantes": [
+      "A la penicilina."
+    ]
+  },
+  {
+    "id": "p02-alergia",
+    "hablante": "Nannu",
+    "tema": "alergias",
+    "condicion": "Pregunta a la paciente por sus alergias conocidas.",
+    "respuesta": "Soy alérgica a la penicilina.",
+    "pasaje": "Penicillin | Non-contributory",
+    "variantes": [
+      "A la penicilina."
+    ]
+  }
+]

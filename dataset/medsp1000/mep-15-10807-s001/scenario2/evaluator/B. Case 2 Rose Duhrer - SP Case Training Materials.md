@@ -1,0 +1,138 @@
+**Appendix C: Case #2 Rose Duhrer - SP Case Training Materials**
+
+Name of Case: Rose Duhrer
+
+Name of educational and or assessment activity: Pediatric Motivational Interviewing Encounter
+
+Patient Name: Rose Duhrer
+
+Chief Complaint: Mother of newborn, nervous about being discharged with new baby. She is concerned
+
+because both she and her husband smoke, and she is planning on breast feeding.
+
+Most likely Diagnosis and Differential with rationale from history and/or physical exam:
+
+New born infant with exposure to second hand smoke.
+
+No physical exam to be done.
+
+Challenge question:
+
+Domains: Check all that apply
+
+* Professionalism
+* Communication and Interpersonal skills
+* Medical History
+* Physical exam
+* Shared Decision Making
+* Patient Education
+* Clinical Reasoning
+* Documentation
+* Handoff
+* Presentation
+
+X Other: Motivational Interviewing
+
+Type and level of learner:
+
+Case Objectives: please list specific objectives for each of the domains you have checked above:
+
+1. The learner will practice motivational interviewing communication skills.
+
+2. The learner will perform an appropriate interview for tobacco use in a parent of a pediatric patient.
+
+3. The learner will self-evaluate their performance using motivational interviewing skills with a tobacco
+
+using parent.
+
+|  |  |
+| --- | --- |
+| SETTING: outpatient, in patient, ED, home, nursing home, rehab, group etc. | Hospital: Resident rotating through Newborn Nursery (Well-baby nursery) |
+| PATIENT PROFILE: Information about the “patient” that helps select an SP and helps the learner get an understanding of them as a person. SP will know more information about the patient than learner will ever ask but allows SP to portray a fully developed patient personality. If none of the items below are particulars for the case please write “all may be used.” | |
+| Age range | 25 - 35 |
+| Religious/spiritual background | Any |
+| Sex (e.g., male, female, intersex, transwoman, transman) | Female |
+| Sexual Orientation (e.g., heterosexual, lesbian, gay, bisexual, pansexual, queer, asexual) | Heterosexual |
+| Gender expression (e.g., man, woman, gender queer) | Woman |
+| Race/ethnicity: | Any |
+| Physical description (e.g., BMI, height range) | Any |
+| Physical limitations | None |
+| Patient appearance (e.g., disheveled, hospital gown, business casual, casual) | Hospital gown |
+| Moulage + location (e.g., none, bruises, scars, body piercing, tattoos) | None |
+| Affect (e.g., pleasant, cooperative) | Pleasant and cooperative |
+| Family group (e.g., who is family, who they live with) | Wife/new mother (SP), husband and newborn infant |
+| Education | Associates Degree |
+| Level of health literacy | Intermediate to proficient |
+| Employment, if any - present and past, noting any current stresses | Administrative Assistant at Town Hall for 4 years |
+| Home/homeless - type of dwelling, number of stories, owned or rented | Small, comfortable single family residence |
+| Financial situation- any current stresses | No financial stresses / + stress about caring for a newborn |
+| Insurance Status (e.g., un/under/insured, public/private, HMO/PPO) | Insured |
+| Habits (i.e., diet, exercise, caffeine, smoking, alcohol, drugs) | DIET: Eats well balanced diet, avoids concentrated sweets  EXERCISE: Walks 1 – 3 miles, 4 to 5x’s/week previously  Has cut back to 0.5 – 1 mile, 2-4x’s/week in 3rd trimester  CAFFEINE: None  SMOKING: Cut down to 6-7 cigarettes/day when found out being pregnant  ETOH: 1 glass of wine 1 to 2x’s/week. None since pregnant  DRUGS: None |
+| Activities (i.e., hobbies, sports, clubs, friends) | Reading, Sewing |
+| Typical day - what is the usual daily routine | Gets up at 0700, showers, dresses, breakfast , goes to work, tries to walk on lunch break (weather permitting), comes home, dinner and bed time at 11pm |
+
+|  |  |
+| --- | --- |
+| CASE INFORMATION | |
+| Chief Concern: What the patient will say when greeted by the student. The patient’s primary reason for seeking medical care often stated in his/own words. | “I’m so happy that the baby’s here, but now I’m nervous about taking him home.” |
+| Additional Concerns: Other, if any, concerns the patient has today (i.e., symptoms, requests, expectations, etc.) that will become part of set agenda. | Concerned about breast feeding and being a smoker.  Exposing newborn to second hand smoke.  How to care for newborn. |
+|  | |
+| THE PATIENT STORY: The SP will be asked to tell their symptom story and the personal and emotion impact for each of their concerns. You will want to write this is the patient voice. The symptom story should be able to answer this question: “Tell me more about [chief concern/additional concern], starting at the beginning and bringing me up to now.”  The personal context should be able to answer questions concerning the broader personal/psychosocial context of symptoms, especially the patient beliefs/attributions.  The emotional context should be able to ask how are you doing with this, how does this make you feel, how has this affected you emotionally? IMPACT: How has this affected your life? How has this been for your family? | You are Rose Duhrer, a 26 year-old woman who has just delivered her first baby. The pregnancy was planned, uneventful and uncomplicated. You were happy when you found out you were pregnant at 10 weeks. You and your husband of two years have both been smoking since you were 14 and 15. When you found out you were pregnant, you both cut down from approximately one pack per day, to six-seven cigarettes per day, but you found it difficult to cut down more than that and you feel guilty that you weren’t able to completely stop. You had never tried to quit smoking before becoming pregnant, but this gave you a new perspective/concern, and you feel you did your best. You are relieved that your baby is healthy, as you are aware that smoking can cause some problems. You would like to fully quit, but you lack the confidence that you can, especially now that you realize that having a new baby is stressful, and you are exhausted. You would like to breast feed, but have concerns about smoking and breast-feeding. Your husband (Bob) has cut back his smoking, but hasn’t quit. You feel he may not be able to stop. |
+| HISTORY OF PRESENT ILLNESS: Although some of the HPI will be given in the patient’s symptom story, the learners will expand the story during the direct question section. Below describe the detailed history, usually about the chief concern, which the student must develop in order to make a useful assessment of the problem: | |
+|  | |
+| Onset (when; gradual or sudden) | n/a |
+| Setting (what was going on or where was patient when symptoms first noticed?) | n/a |
+| Duration (how long) | n/a |
+| Time relationships (frequency, constant or intermittent) | n/a |
+| Location | n/a |
+| Radiation | n/a |
+| Quality | n/a |
+| Amount | n/a |
+| Aggravated by what | n/a |
+| Relieved by what | n/a |
+| Associated with what | n/a |
+| Attitude (what does the patient think is the problem, and how does he/she feel about it) | Rose has both the motivation to quit, and resistance to quitting.  (She is very nervous about taking her newborn home, and smoking is the way she deals with stress).   * You are excited about being a new mother, and have lots of questions (how warm should his room be, when will the cord fall off?) * You are a little on edge (but not surprised), when the trainee asks if they can discuss smoking cessation * You feel nervous, and even worried, that you might start to smoke more, since this is your stress reliever. * You may be mildly defensive, because you’ve been asked about smoking many times. |
+| Overall course |  |
+| REVIEW OF SYSTEMS: Significant positives and negatives | |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  | |
+| Past medical history | Ø PMHx |
+| Medication allergies (Name and reaction) | None |
+| Environmental allergies (Name and reaction) | None |
+| Illnesses | None |
+| Vaccinations | Up to date |
+| Surgeries | None |
+| Accidents/ injuries/ trauma | None |
+| Hospitalization | Currently hospitalized – none prior to the birth of her child |
+|  | |
+| Inclusive sexual and reproductive history | |
+| Sexual practices  Sexual partners  Protection: Use of safer sex practices  Use of birth control if appropriate  Risk of intimate partner violence | Monogamous  2  n/a  None – was trying to conceive  Very low |
+| Ob/GYN HISTORY | Age of onset of menses 12 years old  Age of menopause Not applicable  Number of pregnancies 1  Number of live births 1  Number of miscarriages 0  Number of abortions 0 |
+| Medications | Prescription/dose/reason:  Prenatal Vitamin/ 1 tablet once daily / pregnancy  Over the counter/dose/reason: None  Herbs/supplements/dose/reason: None  Other: None |
+| Immunizations | * Tetanus   X Flu   * Hepatitis * Pneumovax * HPV   X Other Tdap |
+| Tobacco products:  X Cigarettes   * Cigar * Pipe * Chew * E-cigarettes | * Never   X Past- year started/year quit Started 2006/ ------  X Current  X Quantity: Currently smoking 6-7cigs/day  X # of years: Has smoked for 12 years  Note: Pt was previously smoking 1PPD before finding out she  was pregnant |
+| Alcohol   * Beer   X Wine   * Liquor * Other | * Never   X Past- year started/year quit: Quit 8 months ago when found out about pregnancy   * Current None   + Quantity   + # of years |
+| Drugs   * Weed * Cocaine * Heroin * Meth * Other * IV * Inhalants * Other | X Never tried any   * Past- year started/year quit * Current   + Quantity * # of years |
+| Diet (describe) | Regular balanced diet, avoids concentrated sweets |
+| Exercise (describe) | Walks 0.5 – 1 mile 2-4x’s/week (during 3rd trimester) |
+| List any other important social history or information important to this case | Rose has no history of medical problems. Until she went on maternity leave 2 weeks prior to delivering Vincent, Rose worked as an administrative assistant at her local town hall. She and her husband Bob met when they were both college students at the local Community College. Bob now works as a manager at a department store in the mall. They have been married for 7 years.  Rose and Bob are excited and nervous to bring Vincent home. Rose’s mother lives close by and will be able to help with the baby, which is reassuring to them. However, Rose’s mother also smokes and while she has made several attempts to quit, she has been unsuccessful.  Rose is interested in breast-feeding Vincent, though she does worry about smoking with breast-feeding. She realizes she has a lot of questions, despite the fact that she has read several parenting books while she was pregnant. |
+| Family history |  |
+| Mother, Father, Siblings, Grandparents, and other significant findings. | Father: Deceased two years ago at age 54 (heart attack,  +smoking history)  Mother: Alive, healthy 55, +smoker 1 PPD, with failed attempts  at quitting |
+| Physical Exam- List exam maneuvers expected for this case and any abnormal findings that SP will simulate. (tenderness, hyper-hypo reflex, rebound, weakness etc. ) | |
+| PHYSICAL EXAM FINDINGS | No Physical exam required for this case |
+| 1. Written in layman’s terms |  |
+| 1. General appearance- affect, appearance, position of patient at opening (i.e. sitting, laying down, holding abdomen etc.) |  |
+| 1. Vital signs |  |
+| 1. Specific findings and affect |  |
+| 1. Response to certain physical movements |  |
+|  |  |
+| DIAGNOSIS AND DIFFERENTIAL |  |
+| Diagnosis with support from positive and negative history and PE findings | **N/A** |
+| Differential with support from positive and negative history and PE findings | **N/A** |
+|  |  |
+| MANAGEMENT OR DIAGNOSITIC PLAN | The resident may provide information on the Quitline.  You should agree to the referral to the Quitline if the trainee has completed at least four of the following items:   * Asked you if they could speak to you about smoking/referral for the Quitline service. * Asked you to tell them about your smoking – how much, & what are the triggers (e.g.,stress), that make you want to smoke? * Empathized with difficulty of quitting * Shown you reflective listening – that is, for example: if you say “quitting smoking was just too hard for me while I was pregnant”, the trainee states “quitting smoking is hard” or “I imagine quitting smoking was hard, while you were pregnant”. * Supported you for cutting down (not been judgmental because you didn’t fully quit) * Assessed your readiness to quit (on a scale from 1 – 10) * Explain the impact of second hand and third hand smoke for children, including asthma, pneumonia, sudden infant death syndrome, ear infections, hospitalization, respiratory infections. * Summarize where they feel you are – either ready to make a change and consider referral to the Quitline, or not.   You should refuse referral to the Quitline if the trainee has not completed four items from the above list.  If you refuse referral, the trainee should leave the conversation open to restarting at a later time. |
+|  |  |
+| PROFESSIONALISM ISSUES OR CHALLENGES: | If the trainee asks you if they can discuss smoking, you respond,  “*I know smoking is bad for me, and I did try to quit. I cut down a lot… from a pack to seven cigarettes a day, in the first trimester”.*  If you are asked about quitting, respond with  *“I did cut back a lot while I was pregnant, which wasn’t easy. So yeah, I guess I’ve thought about it… but I’m not sure if I can.”*  If you asked if there is anything that “triggers” your need to smoke, reply with, *When I’m worried or stressed about something, I crave a cigarette.”*  If the resident offers information on the Quitline say,  *“Yeah—I’ve heard of the the Quitline. I don’t think I’m completely ready to quit now. I’d like to think about it.”* (You should act a little hesitant at this point.)  \*\*\*The resident should try to assess your motivation to quit at this point. They may ask/state any of the following:  **If asked about when you were able to cut down on smoking, you will reply** *“When I was pregnant, my OB doctor was very direct and scared me. My husband cut back also, and I felt supported.”* **(You can speak about how difficult it was, and how good it felt to cut back for your baby).**  If asked about your level of motivation to quit, using a numeric scale from 0 – 10 (0 having no motivation and 10 being highly motivated) you would reply. *“I would say a 5 or 6.”*  If asked what would increase your motivational level, you would reply, *“I think getting home with the baby and making a routine will help. Also,if my husband and my mother were to commit to quitting also, I know it would be a lot easier.”*  If asked if you have any concerns or questions, you respond,  *“I want to breast feed, but don’t know if I should, because I smoke. “I also have a lot of other questions.”* If the trainee asks for specific issues, say, *“when will his cord fall off, what temperature should we keep the house at…”.*  **Note: Do not accept e-cigarettes as an alternative to smoking. You can say:** *“I thought I read somewhere that those are also bad for you.”* |

@@ -1,0 +1,2 @@
+1. **Case Narrative (VERSION A)**
+   1. **General Synopsis:** You are an anesthesiologist at a small community hospital taking in-house call. The colorectal surgeon calls you about an emergent exploratory laparotomy she wants to perform. The patient, Fred DeKalb, is a 77 year old farmer who presents with left lower quadrant abdominal pain with nausea, vomiting and anorexia worsening over the past 4 days. The surgical team plans for an emergency laparotomy. He is being rushed to the operating room where you meet the team.

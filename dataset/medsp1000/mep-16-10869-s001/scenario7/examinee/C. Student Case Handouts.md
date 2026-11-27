@@ -1,0 +1,3 @@
+**Case 4A. A 36-year-old pregnant woman presents for ultrasound at 18 weeks gestation. Her fetus is noted to have findings on ultrasound. The father of the fetus has schizophrenia and a cardiac ventricular septal defect. He has hypernasal speech and required extra help in school. When the genetic counselor suggests the fetus' findings could be related to the fetus’ father’s condition, he denies that possibility and becomes enraged. The mother is very nervous about having a baby with a heart condition and possible psychiatric issues.**
+
+-Assign one person to play the role of the physician, the pregnant woman, and the father of the baby to role play delivery of the information to the couple.

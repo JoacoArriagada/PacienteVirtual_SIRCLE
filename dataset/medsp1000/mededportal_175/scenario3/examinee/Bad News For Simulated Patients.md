@@ -1,0 +1,5 @@
+# Case 3
+
+# Student instructions: Hodgkins Lymphoma
+
+Jamie Smith was diagnosed with stage IV Hodgkin's disease 3 years ago. The patient underwent radiation, chemotherapy and most recently a bone marrow transplant. All treatments were administered at the University Hospital two hours away from the patient's home town. The patient presents to your office today to learn the results of a recent scan. Your partner, the patient's primary care physician, is out of town for two weeks. You receive results showing disease progression and call the patient's oncologist at the University Hospital. The oncologist informs you that there are no additional therapeutic options and that the goals of care should be palliative, focusing on symptom control. The patient is currently asymptomatic with a life expectancy of less than 4 months. From reviewing the chart it is obvious that the patient has chosen to be very aggressive in the treatment of this disease, and you are quite sure that the patient will want additional therapy.

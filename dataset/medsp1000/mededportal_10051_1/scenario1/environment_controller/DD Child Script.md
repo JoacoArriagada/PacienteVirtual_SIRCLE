@@ -1,0 +1,10 @@
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| **Case: Child**  **Traumatic Arrest** | Parent | | Anticipated Physician | |
+|  | Verbal | Non-Verbal | Verbal | Non-Verbal |
+| 1. Entrance and short statement of events | * Simple hello | * Serious demeanor * Smiles * Expecting serious, not devastating news * Standing/Pacing | * Introduction * Less than 1 minute short statement of circumstance, “Your wife driving with your son in the car…” * Asks survivor to sit | * Appears serious not jovial * Must sit down * Makes eye contact |
+| 2. Delivers a warning shot | * Silence | * Serious/blank stare * No emotional obvious | * “I am afraid that I have bad news” * Speaks without medical jargon | * Serious, yet open posture |
+| 2. Physician discloses death | * You can’t be serious? * “I would like to go in and just talk to him now…” * Are you telling me that my child is dead? | * Begins to laugh * News not sinking in * As physician re-iterates death, patient begins to become hysterical * Begins to talk about how you spoke with your wife within the hour | * Uses word ‘dead’ * Uses patient’s name | * Sits/waits * Posture appropriate * Must make sure survivor understands * Touch if comfortable |
+| 3. Transition to tell of events | * How could this be? | * Begins to sob uncontrollably and be “unavailable” to MD briefly | * “I would like to tell you more about what we did for Andrew and what happened” * Statement about little/no suffering | * Reflect empathy |
+| 4. Information gathering | Able to answer all medical questions by script | * Tears but able to speak clearly and coherently | * “To better understand your son’s medical concerns, I need to ask you some more questions…” | * Good eye contact |
+| 5. Conclusion | ‘What do I do now? | * Crying softly/sniffling | * Words to offer help * Offer viewing of body * “I will be available to speak with you at any time….” * “I’m sorry…” | * Expression of sympathy * Offer to assist patient in some way * Able to excuse themselves sensitively |

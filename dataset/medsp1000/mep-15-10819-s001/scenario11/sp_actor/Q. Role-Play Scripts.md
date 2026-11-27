@@ -1,0 +1,15 @@
+Facilitator (to learner): Linda Patterson is your patient. She is a 64-year-old woman who was diagnosed 8 years ago with a node negative estrogen receptor positive cancer. Genomic prognostic testing indicated low-intermediate risk. After a full discussion, she declined chemotherapy (“it’s too toxic”) and took a pill (letrozole) for 5 years. She comes every 6 months for checkups. Her last checkup was 4 months ago. Tumor markers were not done, and blood work revealed an alkaline phosphatase 10 units above normal but not dissimilar from prior results.
+
+She has had a 2-month period of persistent mid back pain (“It must be a strain.”) X-rays are negative. MRI reveals two vertebral body lesions consistent with metastatic disease; biopsy reveals ER/PR positive breast cancer identical to the primary tumor. PET/CT reveals only bone metastases. You now meet with her and her husband.
+
+Linda is a retired school teacher who had no other medical illnesses prior to cancer; her husband is an accountant with multiple medical issues (obesity, HTN, DM II, on multiple meds.) They have one son who is married, two grandchildren, several close friends, and are not religious.
+
+Background information: ER positive breast cancer can return years after diagnosis. Recurrent cancer is very treatable but not curable. Treatment consists of pill therapy and an anti-bone resorptive therapy which in this context (late relapse, bone only metastases) is very effective, but again, not curative. Chemotherapy might be required at some point in the future, if desired. Multiple new therapies are on the horizon.
+
+*Note: Linda should be willing to express emotions freely – up to and including crying, self-blame, anger, regret. You thought you “beat it” because it was 8 years ago, and now you are frustrated with yourself for not taking chemotherapy. This scenario focuses more on the final S’s of MR. SPIKES, not so much on the breaking bad news portion.*
+
+Sustain hope: Indolent, new options on horizon.
+
+Survey of concerns: Linda: “My husband won’t survive without me.”
+
+Support coping. First learner should ascertain support systems: husband, son, daughter-in-law, friends; then reinforce that to patient

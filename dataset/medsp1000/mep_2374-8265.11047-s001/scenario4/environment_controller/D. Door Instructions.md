@@ -1,0 +1,31 @@
+**Telemedicine Primary Care Clerkship Simulation Session 4 – Case Intro Sheet**
+
+**Clinical Setting:**
+
+Primary Care Clinic via Telemedicine Connection
+
+**Patient Information:**
+
+Name: Alexis Gaba
+
+Age: 55
+
+Gender: Female
+
+Sex Assigned at Birth: Female
+
+Preferred Pronouns: “She/her/hers”
+
+CC: Anxiety/Depression
+
+**Student Instructions:**
+
+You are a medical student rotating on primary care at an outpatient clinic. The office you are working at has started to offer virtual visits over telemedicine to patients. This patient is calling in with an acute complaint of anxiety and depression. She lives over 2 hours away from the office and has opted to do a visit over telemedicine. Your attending asks you to see the patient via the audio/video interface and to perform a focused history and physical.
+
+You will have 15 minutes to complete the following:
+
+Conduct a focused history of the acute complaint.
+
+Conduct a focused physical exam of the acute complaint.
+
+Discuss a recommendation for the patient to the best of your ability.

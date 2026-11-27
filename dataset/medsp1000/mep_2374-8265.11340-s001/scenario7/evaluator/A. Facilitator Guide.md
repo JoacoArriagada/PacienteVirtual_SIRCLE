@@ -1,0 +1,10 @@
+**Neurology Case 3 (Group 3):** A 6 month old boy has had recurrent hiccups then startles and cries afterward. This started when he was 4 months old. They have worsened over time and now happen multiple times/day. His mother has a video of this to show you via telemedicine visit. *Concepts: dermatologic exam, neurocutaneous findings, infantile spasms*
+
+1. You plan to assess a dermatologic exam. *Be mindful of their space and privacy (where are they doing the telehealth appointment?). If able have clothing removed from child. Source of light is important. Use flashlight as a tool. Turn camera around to not “selfie” view (better camera). Family can take pictures and upload to patient portal. Can show family examples on internet by sharing your screen to confirm what you are seeing if necessary. Limitations to consider include camera quality, lack of wood’s lamp, challenging lighting, and location/privacy.*
+2. Why might this be important in this child? *Neurocutaneous stigmata can help you clue in to a diagnosis. In a child with concerns for infantile spasms, tuberous sclerosis complex would be high on the differential*
+3. What is highest on your differential diagnosis? *Infantile spasms*
+4. What should you do next? *Urgent referral to neurology and/or send them to the emergency room for evaluation. Talk with the neurology on-call attending*
+5. How do you confirm your suspected diagnosis and what is the expected finding? *EEG. It is particularly important to capture sleep (higher yield). Early EEG can be falsely reassuring and may need to be repeated if clinically concerned. Looking for characteristic hypsarrythmia pattern.*
+6. Why should this be treated early? *Higher risk of neurodevelopmental sequela if not treated early. Every 2 weeks of delayed treatment leads to a 4 point drop in VABS (Vineland Adaptive Behavior Scale) scores at 4 years*
+7. What work-up would you consider? *MRI brain epilepsy protocol, chromosome microarray and karyotype, epilepsy panel genetic testing, and considering metabolic testing*
+8. BONUS: What is the triad of West Syndrome? *Infantile spasms, developmental delay,* and *hypsarrythmia*
