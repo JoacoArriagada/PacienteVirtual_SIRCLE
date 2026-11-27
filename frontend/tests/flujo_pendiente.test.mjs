@@ -154,6 +154,10 @@ test("la toma de presión y la ficha muestran el origen de la lectura", opciones
     valor: { sistolica: 148, diastolica: 85 }, unidad: "mmHg",
     momento: "2026-11-26T15:00:00.000Z", origen: "Triaje inicial aprobado de LR", en_ficha: false,
   };
+  const peso = {
+    ...lectura, medicion_id: "peso-prueba", instrumento: "peso", valor: { lectura: 72.3 },
+    unidad: "kg", origen: "Báscula de ensayo", momento: "2026-11-26T15:02:00.000Z", en_ficha: true,
+  };
   let registrada = false;
   await enPagina({
     ["POST " + peticionIntento + "/mediciones"]: (route) => route.fulfill({ status: 201, json: lectura }),
@@ -161,10 +165,19 @@ test("la toma de presión y la ficha muestran el origen de la lectura", opciones
       registrada = true;
       return route.fulfill({ json: { ...lectura, en_ficha: true } });
     },
-    ["GET " + peticionIntento]: (route) => route.fulfill({
-      json: { ...intento, ficha: { ...intento.ficha, hallazgos: registrada ? [{ ...lectura, en_ficha: true }] : [] } },
-    }),
+    ["GET " + peticionIntento]: (route) => {
+      const mediciones = registrada ? [{ ...lectura, en_ficha: true }, peso] : [peso];
+      const evidencias = mediciones.map(({ medicion_id, instrumento, valor, unidad, momento }) => ({
+        tipo: "medicion", categoria: "medicion", origen_id: medicion_id, instrumento, valor, unidad, momento,
+        origen: "Valoración instrumental", autor: "Estudiante",
+      }));
+      return route.fulfill({ json: {
+        ...intento, mediciones, evidencias,
+        ficha: { ...intento.ficha, datos: [{ etiqueta: "Presión inicial", valor: "148/85 mmHg" }], hallazgos: mediciones },
+      } });
+    },
   }, async (pagina) => {
+    await pagina.setViewportSize({ width: 1600, height: 900 });
     await pagina.clock.install();
     await pagina.getByRole("button", { name: "Iniciar caso" }).click();
     await pagina.getByRole("button", { name: "Presión", exact: true }).click();
@@ -178,10 +191,32 @@ test("la toma de presión y la ficha muestran el origen de la lectura", opciones
     await pagina.getByRole("button", { name: "Volver a la atención" }).click();
     await pagina.getByRole("button", { name: "Ficha clínica", exact: true }).click();
     const ficha = pagina.getByRole("dialog", { name: "Ficha clínica" });
-    assert.equal(await ficha.getByText("148/85 mmHg · " + lectura.origen, { exact: true }).count(), 1);
-    const hora = ficha.locator("[data-hallazgos] time");
+    const resumen = ficha.locator(".clinical-overview");
+    const motivo = resumen.locator(".clinical-reason");
+    const inicial = resumen.locator(".clinical-baseline");
+    assert.equal(await motivo.getByText("Motivo de consulta", { exact: true }).count(), 1);
+    assert.equal(await inicial.getByText("148/85 mmHg", { exact: true }).count(), 1);
+    assert.ok((await motivo.boundingBox()).x < (await inicial.boundingBox()).x);
+    const filas = ficha.locator("[data-hallazgos] > li");
+    assert.deepEqual(await filas.locator("[data-nombre-medicion]").allTextContents(), ["Presión arterial", "Peso corporal"]);
+    assert.equal(await filas.first().getByText(lectura.origen, { exact: true }).count(), 1);
+    assert.equal(await filas.last().locator("[data-lectura]").textContent(), "72,3 kg");
+    const hora = filas.first().locator("time");
     assert.match(await hora.textContent(), /^\d{2}:\d{2}$/);
     assert.equal(await hora.getAttribute("datetime"), lectura.momento);
+    await pagina.setViewportSize({ width: 390, height: 844 });
+    assert.ok((await motivo.boundingBox()).y < (await inicial.boundingBox()).y);
+    assert.ok(await ficha.evaluate((dialogo) => dialogo.scrollWidth <= dialogo.clientWidth));
+    await ficha.getByRole("button", { name: "Cerrar ventana" }).click();
+
+    await pagina.getByRole("tab", { name: "Evidencia" }).click();
+    const tarjeta = pagina.locator(`li[data-origen-id="${peso.medicion_id}"]`);
+    assert.equal(await tarjeta.getByText(peso.origen, { exact: true }).textContent(), peso.origen);
+    await tarjeta.getByRole("button", { name: "Consultar origen" }).click();
+    const origen = pagina.getByRole("dialog", { name: "Origen de la evidencia" });
+    assert.equal(await origen.locator("[data-lectura]").textContent(), "72,3 kg");
+    assert.equal(await origen.locator("time").getAttribute("datetime"), peso.momento);
+    await origen.getByText("Valoración instrumental", { exact: true }).waitFor();
   });
 });
 

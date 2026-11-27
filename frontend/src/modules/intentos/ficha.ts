@@ -4,7 +4,8 @@ import { montarChat, type Turno } from "../entrevista/chat.js";
 import type { Sugerencia } from "../entrevista/sugerencias.js";
 import { montarExtremidad, retratoLR } from "../valoracion/brazo.js";
 import { mostrarPreparacionBrazalete } from "../valoracion/brazalete.js";
-import { mostrarInstrumento, textoMedicion, type Medicion } from "../valoracion/instrumento.js";
+import { mostrarInstrumento, type Medicion } from "../valoracion/instrumento.js";
+import { resumenMedicion } from "../valoracion/resumen-medicion.js";
 import { pulso } from "../valoracion/pulso.js";
 import { peso } from "../valoracion/peso.js";
 import { respiracion } from "../valoracion/respiracion.js";
@@ -41,6 +42,7 @@ export interface VistaIntento {
   sugerencias?: Sugerencia[];
   turnos?: Turno[];
   ordenes?: Orden[];
+  mediciones?: Medicion[];
   apuntes?: Apunte[];
   evidencias?: Evidencia[];
   borrador?: Borrador;
@@ -137,13 +139,7 @@ function montarAtencion(
   ]);
 
   function abrirFicha(): void {
-    const contenido = document.createElement("div");
-    contenido.className = "stack";
-    contenido.innerHTML = '<div class="stack tight"><h3></h3><p></p></div>';
-    contenido.querySelector("h3")!.textContent = introduccion.motivo;
-    contenido.querySelector("p")!.textContent = introduccion.contexto;
-    contenido.append(registrosFicha(intento.ficha));
-    abrirDialogo("Ficha clínica", contenido);
+    abrirDialogo("Ficha clínica", registrosFicha(intento.ficha, introduccion));
   }
   buscar("[data-abrir-ficha]").addEventListener("click", abrirFicha);
   buscar("[data-abrir-evolucion]").addEventListener("click", () => { void abrirEvolucion(intento, ruta); });
@@ -157,7 +153,7 @@ function montarAtencion(
   const irAlTurno = montarChat(buscar("#cuaderno-chat"), id, intento.turnos ?? [], intento.sugerencias ?? [], introduccion, actualizarSiVisible);
   const hipotesis = montarHipotesis(buscar("#cuaderno-hipotesis"), id, intento);
   montarApuntes(buscar("#cuaderno-notas"), id, intento, () => elegirCuaderno("cuaderno-evidencia", true), actualizarSiVisible);
-  const recargarEvidencias = montarEvidencias(panelEvidencia, id, introduccion.motivo, intento.evidencias ?? [],
+  const recargarEvidencias = montarEvidencias(panelEvidencia, id, introduccion.motivo, intento,
     () => elegirCuaderno("cuaderno-chat", true),
     () => { elegirCuaderno("cuaderno-hipotesis"); hipotesis.abrir(); },
     abrirFicha,
@@ -189,46 +185,51 @@ function montarFichaInicial(panel: HTMLElement, intento: VistaClinica): void {
   panel.querySelector("[data-orientacion]")!.append(orientacion(intento.ayuda));
 }
 
-function registrosFicha(ficha: VistaClinica["ficha"]): HTMLElement {
+function registrosFicha(ficha: VistaClinica["ficha"], introduccion?: VistaClinica["introduccion"]): HTMLElement {
   const contenido = document.createElement("div");
-  contenido.className = "stack tight";
-  contenido.innerHTML = '<dl class="pairs" data-ficha></dl><p class="muted small-text" data-fuente></p>';
+  contenido.className = "clinical-sheet";
+  contenido.innerHTML = `
+    <div class="clinical-baseline">
+      <dl class="clinical-data" data-ficha></dl>
+      <p class="source-label" data-fuente></p>
+    </div>`;
+  if (introduccion) {
+    const resumen = document.createElement("div");
+    resumen.className = "clinical-overview";
+    const motivo = document.createElement("div");
+    motivo.className = "clinical-reason";
+    motivo.innerHTML = '<p class="clinical-label">Motivo de consulta</p><h3></h3><p class="muted"></p>';
+    motivo.querySelector("h3")!.textContent = introduccion.motivo;
+    motivo.querySelector(".muted")!.textContent = introduccion.contexto;
+    resumen.append(motivo, contenido.firstElementChild!);
+    contenido.append(resumen);
+  }
   contenido.querySelector("[data-fuente]")!.textContent = ficha.fuente;
   const detalles = contenido.querySelector("dl")!;
   for (const dato of ficha.datos) {
+    const grupo = document.createElement("div");
     const termino = document.createElement("dt");
     termino.textContent = dato.etiqueta;
     const valor = document.createElement("dd");
     valor.textContent = dato.valor;
-    detalles.append(termino, valor);
+    grupo.append(termino, valor);
+    detalles.append(grupo);
   }
-  if (ficha.hallazgos?.length) {
-    const titulo = document.createElement("h3");
-    titulo.textContent = "Mediciones registradas";
-    const lista = document.createElement("ul");
+  if (introduccion || ficha.hallazgos?.length) {
+    const mediciones = document.createElement("section");
+    mediciones.className = "clinical-measurements";
+    mediciones.innerHTML = '<h3>Mediciones registradas</h3><p class="source-label">Aún no hay mediciones incorporadas a la ficha.</p><ul></ul>';
+    const lista = mediciones.querySelector("ul")!;
     lista.dataset.hallazgos = "";
-    for (const medicion of ficha.hallazgos) {
+    lista.hidden = !ficha.hallazgos?.length;
+    mediciones.querySelector("p")!.hidden = !lista.hidden;
+    for (const medicion of ficha.hallazgos ?? []) {
       const fila = document.createElement("li");
       fila.dataset.medicionId = medicion.medicion_id;
-      const lectura = document.createElement("span");
-      lectura.textContent = [textoMedicion(medicion), medicion.origen].filter(Boolean).join(" · ");
-      fila.append(lectura);
-
-      const instante = new Date(medicion.momento);
-      if (Number.isFinite(instante.getTime())) {
-        const hora = document.createElement("time");
-        hora.dateTime = medicion.momento;
-        hora.className = "source-label";
-        hora.textContent = instante.toLocaleTimeString("es-CL", {
-          hour: "2-digit",
-          minute: "2-digit",
-          hourCycle: "h23",
-        });
-        fila.append(hora);
-      }
+      fila.append(resumenMedicion(medicion));
       lista.append(fila);
     }
-    contenido.append(titulo, lista);
+    contenido.append(mediciones);
   }
   return contenido;
 }

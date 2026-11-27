@@ -1,7 +1,14 @@
 import { api } from "../../app/api.js";
 import { abrirDialogo } from "../../app/dialogo.js";
 import { iconoValoracion } from "../valoracion/brazo.js";
+import type { Medicion } from "../valoracion/instrumento.js";
+import { resumenMedicion } from "../valoracion/resumen-medicion.js";
 import { mostrarDato, type Evidencia } from "./apuntes.js";
+
+interface Registros {
+  evidencias?: Evidencia[];
+  mediciones?: Medicion[];
+}
 
 const categorias: Record<string, string> = {
   declaracion: "Declaración",
@@ -12,15 +19,41 @@ const categorias: Record<string, string> = {
   interpretacion: "Interpretación",
 };
 
-function tarjetaEvidencia(dato: Evidencia, etiqueta: "li" | "article"): HTMLElement {
-  const tarjeta = document.createElement(etiqueta);
+function tarjetaEvidencia(dato: Evidencia, medicion?: Medicion, detalle = false): HTMLElement {
+  const tarjeta = document.createElement(detalle ? "article" : "li");
   tarjeta.className = "evidence-item";
   tarjeta.dataset.origenId = dato.origen_id;
-  tarjeta.innerHTML = '<strong></strong><p class="small-text preserve-lines"></p><p class="source-label"></p>';
-  tarjeta.querySelector("strong")!.textContent = categorias[dato.categoria] ?? dato.categoria;
-  tarjeta.querySelector("p")!.textContent = mostrarDato(dato);
-  const fecha = dato.momento ? new Date(dato.momento).toLocaleString("es-CL") : "";
-  tarjeta.querySelector(".source-label")!.textContent = [dato.origen, dato.autor, fecha].filter(Boolean).join(" · ");
+
+  if (dato.tipo === "medicion" && dato.instrumento && dato.valor && dato.unidad) {
+    tarjeta.append(resumenMedicion({
+      instrumento: dato.instrumento, valor: dato.valor, unidad: dato.unidad,
+      origen: medicion?.origen ?? dato.origen, momento: dato.momento ?? medicion?.momento,
+    }));
+  } else {
+    tarjeta.innerHTML = '<strong></strong><p class="small-text preserve-lines"></p><p class="source-label"></p>';
+    tarjeta.querySelector("strong")!.textContent = categorias[dato.categoria] ?? dato.categoria;
+    tarjeta.querySelector("p")!.textContent = mostrarDato(dato);
+    tarjeta.querySelector(".source-label")!.textContent = dato.origen;
+  }
+  if (detalle) {
+    const metadatos = document.createElement("dl");
+    metadatos.className = "evidence-source";
+    const fecha = dato.momento ? new Date(dato.momento) : null;
+    const campos = [
+      ["Registro", dato.tipo === "medicion" && medicion?.origen !== dato.origen && medicion?.origen ? dato.origen : ""],
+      ["Autor", dato.autor],
+      ["Fecha de registro", fecha && Number.isFinite(fecha.getTime()) ? fecha.toLocaleDateString("es-CL") : ""],
+    ];
+    for (const [etiqueta, valor] of campos) {
+      if (!valor) continue;
+      const termino = document.createElement("dt");
+      termino.textContent = etiqueta;
+      const descripcion = document.createElement("dd");
+      descripcion.textContent = valor;
+      metadatos.append(termino, descripcion);
+    }
+    if (metadatos.childElementCount) tarjeta.append(metadatos);
+  }
   return tarjeta;
 }
 
@@ -34,14 +67,14 @@ function botonOrigen(consultar: () => void): HTMLButtonElement {
 }
 
 export function montarEvidencias(
-  panel: HTMLElement, intento: string, motivo: string, evidencias: Evidencia[],
+  panel: HTMLElement, intento: string, motivo: string, registros: Registros,
   volverAlChat: () => void, abrirHipotesis: () => void, abrirFicha: () => void, mostrarTurno: (id: string) => void,
 ): () => Promise<void> {
   panel.innerHTML = `
     <h2>Hallazgos obtenidos</h2>
     <div class="notebook-scroll stack tight">
       <article class="evidence-item" data-motivo-inicial>
-        <h3></h3><p class="source-label">Motivo de consulta · Ficha clínica</p>
+        <p class="clinical-label">Motivo de consulta</p><h3></h3>
       </article>
       <div class="inset" data-sin-mediciones>
         <h3>Mediciones por explorar</h3>
@@ -64,14 +97,17 @@ export function montarEvidencias(
   const sinMediciones = panel.querySelector<HTMLElement>("[data-sin-mediciones]")!;
   let solicitud = 0;
 
-  function pintar(datos: Evidencia[]): void {
+  function pintar(actual: Registros): void {
+    const datos = actual.evidencias ?? [];
+    const mediciones = new Map(actual.mediciones?.map((medicion) => [medicion.medicion_id, medicion]));
     lista.replaceChildren();
     lista.hidden = datos.length === 0;
     sinMediciones.hidden = datos.some((dato) => dato.tipo === "medicion");
     for (const dato of datos) {
-      const tarjeta = tarjetaEvidencia(dato, "li");
+      const medicion = dato.tipo === "medicion" ? mediciones.get(dato.origen_id) : undefined;
+      const tarjeta = tarjetaEvidencia(dato, medicion);
       tarjeta.append(botonOrigen(() => {
-        const detalle = tarjetaEvidencia(dato, "article");
+        const detalle = tarjetaEvidencia(dato, medicion, true);
         if (dato.tipo === "turno") {
           const ir = document.createElement("button");
           ir.type = "button";
@@ -89,13 +125,13 @@ export function montarEvidencias(
     }
   }
 
-  pintar(evidencias);
+  pintar(registros);
   return async () => {
     const enCurso = ++solicitud;
     try {
-      const actual = await api<{ evidencias?: Evidencia[] }>("/intentos/" + encodeURIComponent(intento));
+      const actual = await api<Registros>("/intentos/" + encodeURIComponent(intento));
       if (enCurso !== solicitud || !panel.isConnected) return;
-      pintar(actual.evidencias ?? []);
+      pintar(actual);
       carga.hidden = true;
     } catch (error) {
       if (enCurso !== solicitud || !panel.isConnected) return;

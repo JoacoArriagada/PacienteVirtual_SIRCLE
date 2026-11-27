@@ -116,7 +116,7 @@ try {
   const lista = pagina.locator("ul[data-evidencias]");
   for (const [categoria, dato] of [
     ["Declaración", clasificacion.declaracion],
-    ["Dato medido", clasificacion.medicion],
+    ["Presión arterial", clasificacion.medicion],
     ["Orientación", clasificacion.orientacion],
     ["Informe", clasificacion.informe],
     ["Interpretación", clasificacion.interpretacion],

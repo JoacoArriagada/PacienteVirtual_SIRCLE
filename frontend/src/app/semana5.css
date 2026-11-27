@@ -1384,16 +1384,122 @@ details {
   color: var(--muted);
 }
 
-[data-hallazgos] > li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: .25rem .75rem;
+.clinical-sheet {
+  display: grid;
+  gap: clamp(1rem, 2.6vw, 1.75rem);
+  overflow-wrap: anywhere;
 }
 
-[data-hallazgos] time {
-  margin-inline-start: auto;
+.clinical-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(.875rem, 2.5vw, 1.75rem);
+}
+
+.clinical-reason,
+.clinical-baseline {
+  display: grid;
+  gap: .45rem;
+}
+
+.clinical-reason h3 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.18;
+}
+
+.clinical-baseline {
+  padding: clamp(.85rem, 2vw, 1.35rem);
+  border-radius: var(--radius-card);
+  background: var(--soft);
+}
+
+.clinical-data {
+  display: grid;
+  gap: .75rem;
+}
+
+.clinical-label,
+.clinical-data dt {
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.clinical-data dd {
+  font-size: clamp(1.125rem, 2.5vw, 1.65rem);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.clinical-measurements {
+  border-block-start: 1px solid var(--line);
+  padding-block-start: clamp(.75rem, 2vw, 1.25rem);
+}
+
+.clinical-measurements > h3 {
+  margin-block-end: .35rem;
+}
+
+[data-hallazgos] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+[data-hallazgos] > li {
+  padding-block: .65rem;
+}
+
+[data-hallazgos] > li + li,
+.evidence-source {
+  border-block-start: 1px solid var(--line);
+}
+
+.measurement-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) fit-content(45%);
+  align-items: start;
+  gap: .4rem clamp(.55rem, 2vw, 1.25rem);
+  overflow-wrap: anywhere;
+}
+
+.measurement-summary strong {
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.measurement-result {
+  display: grid;
+  justify-items: end;
+  text-align: end;
+}
+
+.measurement-result time {
   white-space: nowrap;
+}
+
+.measurement-result strong {
+  font-size: clamp(.95rem, 1.5vw, 1.15rem);
+}
+
+.evidence-source {
+  display: grid;
+  grid-template-columns: fit-content(45%) minmax(0, 1fr);
+  gap: .25rem .75rem;
+  margin-block-start: .45rem;
+  padding-block-start: .6rem;
+  font-size: .84rem;
+}
+
+.evidence-source dt {
+  color: var(--muted);
+}
+
+@media (max-width: 40rem) {
+  .clinical-overview {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .mobile-tabs {
@@ -2177,6 +2283,20 @@ tbody tr:hover {
 
 .dialog.wide-dialog {
   max-width: min(900px, calc(100vw - 28px));
+}
+
+.dialog:has(#dialog-body > .clinical-sheet) {
+  max-width: min(62rem, calc(100% - clamp(1rem, 8vw, 6rem)));
+}
+
+.dialog:has(#dialog-body > .clinical-sheet) .dialog-inner {
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.dialog:has(#dialog-body > .clinical-sheet) .dialog-head {
+  margin-block-end: clamp(.875rem, 2.5vw, 1.5rem);
+  padding-block-end: clamp(.75rem, 2vw, 1.25rem);
+  border-block-end: 1px solid var(--line);
 }
 
 .dialog::backdrop {
