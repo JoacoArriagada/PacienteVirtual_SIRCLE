@@ -107,7 +107,7 @@ try {
     lecturas[sensor.id].historico = historico;
     await boton(pagina, "Volver a la atención").click();
   }
-  await pagina.getByText("Ficha inicial", { exact: true }).click();
+  await pagina.getByRole("button", { name: "Ficha clínica", exact: true }).click();
   for (const sensor of sensores) {
     const id = lecturas[sensor.id].lectura.medicion_id;
     await pagina.locator('[data-hallazgos] [data-medicion-id="' + id + '"]').waitFor();

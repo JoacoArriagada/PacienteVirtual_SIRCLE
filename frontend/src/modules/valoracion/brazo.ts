@@ -1,13 +1,14 @@
+import { abrirDialogo } from "../../app/dialogo.js";
+
 export const escenaBrazo = "/recursos/semana5/lr-presion.webp";
 export const escenaColocada = "/recursos/semana5/lr-presion-colocada.webp";
 export const retratoLR = "/recursos/semana5/retrato-de-lr-865a70387a.webp";
 
 export function montarExtremidad(
   contenedor: HTMLElement, abrirPresion: () => void,
-  instrumentos: readonly { nombre: string; icono: string; exploracion?: boolean; abrir: () => void }[],
+  instrumentos: readonly { nombre: string; etiqueta?: string; icono: string; exploracion?: boolean; abrir?: () => void }[],
 ): void {
   contenedor.innerHTML = `
-    <h2>Acciones y exámenes</h2>
     <h3>Signos vitales</h3>
     <div class="tool-grid">
       <button class="tool-button" type="button" title="Presión arterial" data-presion>
@@ -23,14 +24,23 @@ export function montarExtremidad(
     </div>`;
   contenedor.querySelector("[data-presion]")!.addEventListener("click", abrirPresion);
   const grupo = contenedor.querySelector(".tool-grid")!;
+  const exploraciones = contenedor.querySelector("[data-exploraciones]")!;
   for (const instrumento of instrumentos) {
     const boton = document.createElement("button");
     boton.className = "tool-button";
     boton.type = "button";
     boton.innerHTML = iconoValoracion(instrumento.icono, 28) + "<span></span>";
-    boton.querySelector("span")!.textContent = instrumento.nombre;
-    boton.addEventListener("click", instrumento.abrir);
-    (instrumento.exploracion ? contenedor.querySelector("[data-exploraciones]")! : grupo).append(boton);
+    boton.querySelector("span")!.textContent = instrumento.etiqueta ?? instrumento.nombre;
+    if (instrumento.abrir) {
+      boton.title = instrumento.nombre;
+      boton.addEventListener("click", instrumento.abrir);
+    } else {
+      boton.disabled = true;
+      const estado = document.createElement("small");
+      estado.textContent = "Sin datos";
+      boton.append(estado);
+    }
+    (instrumento.exploracion ? exploraciones : grupo).append(boton);
   }
   contenedor.querySelector("[data-brazo]")!.addEventListener("click", () => abrirImagen(true));
   contenedor.querySelector("[data-ampliar]")!.addEventListener("click", () => abrirImagen(false));
@@ -41,14 +51,21 @@ export function iconoValoracion(archivo: string, tamano: number): string {
 }
 
 function abrirImagen(brazo: boolean): void {
-  const dialogo = document.querySelector<HTMLDialogElement>("#dialog")!;
-  dialogo.querySelector("#dialog-title")!.textContent = brazo ? "Vista del brazo · LR" : "Paciente · LR";
-  const cuerpo = dialogo.querySelector("#dialog-body")!;
-  cuerpo.innerHTML = '<div class="image-dialog"><figure><img><figcaption class="muted"></figcaption></figure></div>';
-  const imagen = cuerpo.querySelector<HTMLImageElement>("img")!;
+  const cuerpo = document.createElement("div");
+  cuerpo.className = "image-dialog stack tight";
+  cuerpo.innerHTML = '<figure><img><figcaption class="muted"></figcaption></figure>';
+  const imagen = cuerpo.querySelector("img")!;
   imagen.src = brazo ? escenaBrazo : retratoLR;
   imagen.className = brazo ? "arm-image" : "portrait";
   imagen.alt = brazo ? "LR con el brazo apoyado" : "Retrato ampliado de LR";
   cuerpo.querySelector("figcaption")!.textContent = brazo ? "Brazo apoyado en la consulta" : "Preocupación";
-  dialogo.showModal();
+  if (!brazo) {
+    const reducir = document.createElement("button");
+    reducir.type = "button";
+    reducir.className = "button small";
+    reducir.textContent = "Reducir imagen";
+    reducir.addEventListener("click", () => dialogo.close());
+    cuerpo.append(reducir);
+  }
+  const dialogo = abrirDialogo(brazo ? "Vista del brazo · LR" : "Paciente · LR", cuerpo);
 }

@@ -1,4 +1,5 @@
 import { api, ErrorHttp, escribir } from "../../app/api.js";
+import { iconoValoracion } from "../valoracion/brazo.js";
 import { textoMedicion } from "../valoracion/instrumento.js";
 
 export interface Apunte {
@@ -25,17 +26,7 @@ export interface Evidencia {
 interface Registros {
   revision: number;
   apuntes?: Apunte[];
-  evidencias?: Evidencia[];
 }
-
-const categorias: Record<string, string> = {
-  declaracion: "Declaración",
-  medicion: "Dato medido",
-  observacion: "Observación",
-  orientacion: "Orientación",
-  informe: "Informe",
-  interpretacion: "Interpretación",
-};
 
 export function mostrarDato(evidencia: Evidencia): string {
   const { texto, instrumento, valor, unidad } = evidencia;
@@ -43,37 +34,36 @@ export function mostrarDato(evidencia: Evidencia): string {
   return texto ?? "";
 }
 
-export function montarApuntes(panel: HTMLElement, intento: string, registros: Registros): void {
+export function montarApuntes(
+  panel: HTMLElement, intento: string, registros: Registros, consultarEvidencia: () => void, alGuardar: () => void,
+): void {
   const ruta = "/intentos/" + encodeURIComponent(intento);
-  panel.className = "panel stack";
-  panel.setAttribute("aria-labelledby", "titulo-apuntes");
   panel.innerHTML = `
-    <h2 id="titulo-apuntes">Apuntes y evidencias</h2>
-    <form class="stack tight">
-      <label for="apunte">Apunte de la atención</label>
-      <textarea id="apunte" rows="3" maxlength="1500" required></textarea>
-      <div><button class="button primary" type="submit">Guardar apunte</button></div>
-    </form>
-    <p role="status" data-estado hidden></p>
-    <div class="stack tight" data-apuntes></div>
-    <details class="disclosure">
-      <summary>Evidencias del intento</summary>
-      <p role="status" data-carga hidden></p>
-      <ul class="stack tight" data-evidencias></ul>
-    </details>`;
+    <h2>Mis apuntes</h2>
+    <div class="empty" data-sin-apuntes><strong>Sin apuntes</strong>Añade tus observaciones en puntos breves.</div>
+    <div class="stack tight notebook-scroll" data-apuntes hidden></div>
+    <button class="text-button notebook-link" type="button" data-consultar-evidencia>
+      ${iconoValoracion("ficha-clinica", 20)}<span>Consultar evidencia</span>
+    </button>
+    <form class="note-form stack tight">
+      <label class="small-text" for="apunte">Añadir un punto</label>
+      <textarea id="apunte" rows="3" maxlength="1500" placeholder="Escribe una nota breve…" required></textarea>
+      <div class="button-row end"><button class="button primary small" type="submit"><span aria-hidden="true">＋</span> Añadir punto</button></div>
+      <p class="small-text" role="status" data-estado hidden></p>
+    </form>`;
   const formulario = panel.querySelector("form")!;
   const entrada = panel.querySelector("textarea")!;
   const guardar = formulario.querySelector("button")!;
   const estado = panel.querySelector<HTMLElement>("[data-estado]")!;
   const lista = panel.querySelector<HTMLElement>("[data-apuntes]")!;
-  const evidencias = panel.querySelector<HTMLElement>("[data-evidencias]")!;
-  const carga = panel.querySelector<HTMLElement>("[data-carga]")!;
-  const detalle = panel.querySelector("details")!;
+  const vacio = panel.querySelector<HTMLElement>("[data-sin-apuntes]")!;
   let apuntes: Apunte[] = registros.apuntes ?? [];
   let envio: { apunte: string; revision_esperada: number; clave: string } | undefined;
   let guardando = false;
 
   function pintarApuntes(): void {
+    vacio.hidden = apuntes.length > 0;
+    lista.hidden = apuntes.length === 0;
     lista.replaceChildren();
     for (const apunte of apuntes) {
       const fila = document.createElement("article");
@@ -82,45 +72,16 @@ export function montarApuntes(panel: HTMLElement, intento: string, registros: Re
       const texto = document.createElement("p");
       texto.className = "preserve-lines";
       texto.textContent = apunte.intencion;
-      const autor = document.createElement("p");
-      autor.className = "small-text muted";
-      autor.textContent = [apunte.autor_id, apunte.momento].join(" · ");
-      fila.append(texto, autor);
+      const momento = document.createElement("time");
+      momento.className = "source-label";
+      momento.dateTime = apunte.momento;
+      momento.textContent = new Date(apunte.momento).toLocaleString("es-CL");
+      fila.append(texto, momento);
       lista.append(fila);
     }
   }
 
-  function pintarEvidencias(elementos: Evidencia[]): void {
-    evidencias.replaceChildren();
-    for (const evidencia of elementos) {
-      const fila = document.createElement("li");
-      fila.dataset.origenId = evidencia.origen_id;
-      const categoria = document.createElement("strong");
-      categoria.textContent = categorias[evidencia.categoria] ?? evidencia.categoria;
-      const texto = document.createElement("p");
-      texto.textContent = mostrarDato(evidencia);
-      const origen = document.createElement("p");
-      origen.className = "small-text muted";
-      origen.textContent = [evidencia.origen, evidencia.autor, evidencia.origen_id].join(" · ");
-      fila.append(categoria, texto, origen);
-      evidencias.append(fila);
-    }
-  }
-
-  async function recargarEvidencias(): Promise<void> {
-    try {
-      const actual = await api<Registros>(ruta);
-      pintarEvidencias(actual.evidencias ?? []);
-      carga.hidden = true;
-    } catch (error) {
-      carga.textContent = error instanceof Error ? error.message : "No se pudieron actualizar las evidencias.";
-      carga.hidden = false;
-    }
-  }
-
-  detalle.addEventListener("toggle", () => {
-    if (detalle.open) void recargarEvidencias();
-  });
+  panel.querySelector("[data-consultar-evidencia]")!.addEventListener("click", consultarEvidencia);
   formulario.addEventListener("submit", async (evento) => {
     evento.preventDefault();
     const apunte = entrada.value.trim();
@@ -139,7 +100,7 @@ export function montarApuntes(panel: HTMLElement, intento: string, registros: Re
       entrada.value = "";
       envio = undefined;
       estado.textContent = "Apunte guardado.";
-      if (detalle.open) void recargarEvidencias();
+      alGuardar();
     } catch (error) {
       if (error instanceof ErrorHttp && error.estado === 409) envio = undefined;
       estado.textContent = error instanceof Error ? error.message : "No se pudo guardar el apunte.";
@@ -150,5 +111,4 @@ export function montarApuntes(panel: HTMLElement, intento: string, registros: Re
     }
   });
   pintarApuntes();
-  pintarEvidencias(registros.evidencias ?? []);
 }

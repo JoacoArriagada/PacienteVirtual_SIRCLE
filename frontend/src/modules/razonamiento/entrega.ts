@@ -33,10 +33,11 @@ export function montarEntrega(
 ): void {
   const ruta = "/intentos/" + encodeURIComponent(id);
   const abrir = document.createElement("button");
-  abrir.className = "button";
+  abrir.className = "text-button";
   abrir.type = "button";
-  abrir.textContent = "Revisar entrega";
+  abrir.innerHTML = '<span aria-hidden="true">→</span> Revisar entrega';
   const aviso = document.createElement("p");
+  aviso.className = "small-text";
   aviso.setAttribute("role", "status");
   acciones.append(abrir, aviso);
 
@@ -45,6 +46,7 @@ export function montarEntrega(
     aviso.textContent = "";
     try {
       const actual = await api<VistaIntento>(ruta);
+      if (!acciones.isConnected) return;
       if (actual.entrega) {
         terminar(actual);
         return;

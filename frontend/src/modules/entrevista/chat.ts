@@ -14,17 +14,19 @@ export interface Turno {
 
 export function montarChat(
   contenedor: HTMLElement, intento: string, guardados: Turno[], sugerencias: Sugerencia[],
-): void {
+  inicio: { paciente: string; motivo: string }, alResponder: () => void,
+): (id: string) => void {
   contenedor.innerHTML = `
-    <h2>Entrevista</h2>
+    <h2 class="visually-hidden">Entrevista</h2>
     <div id="chat-log" class="chat-log" tabindex="0" role="log" aria-live="polite" aria-label="Conversación con LR"></div>
     <div data-formulario></div>`;
   const lista = contenedor.querySelector<HTMLElement>("#chat-log")!;
-  const mostrados = new Set<string>();
+  const mostrados = new Map<string, HTMLElement>();
+  const motivo = inicio.motivo === "Falta de aire" ? "Me falta el aire." : inicio.motivo;
+  lista.append(burbuja("patient", inicio.paciente, motivo));
 
   function agregarTurno(turno: Turno): void {
     if (mostrados.has(turno.turno_id)) return;
-    mostrados.add(turno.turno_id);
     const intercambio = document.createElement("div");
     intercambio.dataset.turno = turno.turno_id;
     intercambio.dataset.tipoRespuesta = turno.tipo_respuesta;
@@ -33,6 +35,7 @@ export function montarChat(
       burbuja(turno.tipo_respuesta === "dato_ausente" ? "system" : "patient", turno.hablante, turno.respuesta),
     );
     lista.append(intercambio);
+    mostrados.set(turno.turno_id, intercambio);
   }
 
   guardados.forEach(agregarTurno);
@@ -41,7 +44,18 @@ export function montarChat(
     const turno = await api<Turno>(ruta, escribir("POST", pregunta, clave));
     agregarTurno(turno);
     lista.scrollTop = lista.scrollHeight;
+    alResponder();
   });
+
+  return (id) => {
+    const mensaje = mostrados.get(id)?.lastElementChild as HTMLElement | undefined;
+    if (!mensaje) return;
+    lista.querySelector(".highlighted")?.classList.remove("highlighted");
+    mensaje.classList.add("highlighted");
+    mensaje.tabIndex = -1;
+    mensaje.scrollIntoView({ block: "nearest" });
+    mensaje.focus({ preventScroll: true });
+  };
 }
 
 function burbuja(rol: string, hablante: string, texto: string): HTMLElement {

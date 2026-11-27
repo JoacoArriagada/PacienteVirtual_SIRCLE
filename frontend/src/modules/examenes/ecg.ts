@@ -3,6 +3,7 @@ import { api, escribir } from "../../app/api.js";
 export interface Orden {
   orden_id: string;
   examen: string;
+  momento?: string;
 }
 
 interface Informe {
@@ -13,23 +14,21 @@ interface Informe {
 
 const ECG_INICIAL = "ecg-inicial";
 
-export function montarEcg(panel: HTMLElement, intento: string, orden?: Orden): void {
+export function montarEcg(panel: HTMLElement, intento: string, orden: Orden | undefined, alConsultar: () => void): void {
   const ruta = "/intentos/" + encodeURIComponent(intento) + "/ordenes";
-  panel.className = "panel stack";
-  panel.setAttribute("aria-labelledby", "titulo-examenes");
   panel.innerHTML = `
-    <h2 id="titulo-examenes">Exámenes</h2>
-    <h3>Electrocardiograma inicial</h3>
-    <p role="status" data-estado></p>
+    <h4>Electrocardiograma inicial</h4>
+    <p class="small-text muted">Funcional</p>
+    <p class="small-text" role="status" data-estado></p>
     <div class="button-row">
-      <button type="button" class="button primary" data-solicitar>Solicitar ECG inicial</button>
-      <button type="button" class="button" data-consultar>Consultar informe</button>
+      <button type="button" class="text-button" data-solicitar>Solicitar ECG inicial</button>
+      <button type="button" class="text-button" data-consultar>Consultar informe</button>
     </div>
-    <div class="stack tight" data-confirmacion hidden>
+    <div class="inset stack tight" data-confirmacion hidden>
       <p>¿Confirmas la orden del ECG inicial para este intento?</p>
       <div class="button-row">
-        <button type="button" class="button primary" data-confirmar>Confirmar orden</button>
-        <button type="button" class="button" data-cancelar>Cancelar orden</button>
+        <button type="button" class="button primary small" data-confirmar>Confirmar orden</button>
+        <button type="button" class="button small" data-cancelar>Cancelar orden</button>
       </div>
     </div>
     <div class="stack tight" data-informe hidden>
@@ -80,7 +79,7 @@ export function montarEcg(panel: HTMLElement, intento: string, orden?: Orden): v
       cancelar.disabled = false;
       consultar.disabled = false;
     }
-    if (orden) consultar.focus();
+    if (orden && panel.getClientRects().length) consultar.focus();
   });
   consultar.addEventListener("click", async () => {
     consultar.disabled = true;
@@ -91,6 +90,7 @@ export function montarEcg(panel: HTMLElement, intento: string, orden?: Orden): v
       resultado.dataset.informeId = informe.informe_id;
       resultado.hidden = false;
       estado.textContent = "Informe disponible.";
+      alConsultar();
     } catch (error) {
       estado.textContent = error instanceof Error ? error.message : "No se pudo consultar el informe.";
     } finally {

@@ -103,7 +103,7 @@ try {
   const intento = await reabierto.json();
   assert.deepEqual(intento.mediciones, historico);
   assert.deepEqual(intento.ficha.hallazgos, historico);
-  await pagina.getByText("Ficha inicial", { exact: true }).click();
+  await pagina.getByRole("button", { name: "Ficha clínica", exact: true }).click();
   assert.equal(await pagina.locator("[data-hallazgos] li[data-medicion-id]").count(), 1);
   assert.equal(await pagina.locator("[data-hallazgos] li").getAttribute("data-medicion-id"), lectura.medicion_id);
   await capturar("ficha");

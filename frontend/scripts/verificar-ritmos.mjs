@@ -35,7 +35,7 @@ try {
   await boton(nueva, "Continuar").click();
   const comparacion = {};
   for (const [fuente, pagina] of [["original", original], ["extraccion", nueva]]) {
-    await boton(pagina, esPulso ? (fuente === "original" ? "Signos vitales" : "Pulso") : "Respiración").click();
+    await boton(pagina, esPulso ? "Signos vitales" : "Respiración").click();
     await boton(pagina, esPulso ? (fuente === "original" ? "Preparar signos vitales" : "Preparar el pulsioxímetro") : "Preparar el conteo").click();
     for (const casilla of await pagina.getByRole("checkbox").all()) await casilla.check();
     const escena = pagina.locator("#device-art");

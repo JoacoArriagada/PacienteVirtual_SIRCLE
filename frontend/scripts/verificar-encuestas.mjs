@@ -71,9 +71,9 @@ try {
   assert.equal((await api(estudiante, intento)).introduccion, undefined);
   assert.equal(await estudiante.getByText("Falta de aire", { exact: true }).count(), 0);
   const preAcuse = await resolver(estudiante, "pre", pre);
-  await estudiante.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
+  await estudiante.getByRole("heading", { name: "Atender y conversar", exact: true }).waitFor();
   await estudiante.reload();
-  await estudiante.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
+  await estudiante.getByRole("heading", { name: "Atender y conversar", exact: true }).waitFor();
   assert.equal((await api(estudiante, intento)).pre, pre);
 
   const medicionesIniciales = (await api(estudiante, intento)).mediciones;

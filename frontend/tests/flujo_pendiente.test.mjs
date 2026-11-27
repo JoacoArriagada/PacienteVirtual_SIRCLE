@@ -176,8 +176,87 @@ test("la toma de presión y la ficha muestran el origen de la lectura", opciones
     await pagina.getByRole("button", { name: "Registrar en ficha" }).click();
     await pagina.getByText("Registrada en ficha", { exact: true }).waitFor();
     await pagina.getByRole("button", { name: "Volver a la atención" }).click();
-    await pagina.getByText("Ficha inicial", { exact: true }).click();
-    assert.equal(await pagina.getByText("148/85 mmHg · " + lectura.origen + " · " + lectura.momento).count(), 1);
+    await pagina.getByRole("button", { name: "Ficha clínica", exact: true }).click();
+    const ficha = pagina.getByRole("dialog", { name: "Ficha clínica" });
+    assert.equal(await ficha.getByText("148/85 mmHg · " + lectura.origen + " · " + lectura.momento).count(), 1);
+  });
+});
+
+test("la atención de LR mantiene las acciones, los exámenes y el cuaderno junto al retrato", opciones, async () => {
+  const vista = { ...intento, respiraciones_simuladas: 26, turnos: [turno], evidencias: [{
+    tipo: "turno", origen_id: turno.turno_id, categoria: "declaracion", autor: "LR", origen: "Entrevista", texto: turno.respuesta,
+  }] };
+  await enPagina({
+    "POST /api/intentos": (route) => route.fulfill({ status: 201, json: vista }),
+    ["GET " + peticionIntento]: (route) => route.fulfill({ json: vista }),
+  }, async (pagina) => {
+    await pagina.setViewportSize({ width: 1231, height: 706 });
+    await pagina.getByRole("button", { name: "Iniciar caso" }).click();
+    const acciones = pagina.getByRole("region", { name: "Acciones y exámenes" });
+    const retrato = pagina.getByRole("img", { name: "Paciente LR" });
+    const cuaderno = pagina.getByRole("region", { name: "Cuaderno de atención" });
+    const izquierda = await acciones.boundingBox();
+    const centro = await retrato.boundingBox();
+    const derecha = await cuaderno.boundingBox();
+    assert.ok(izquierda && centro && derecha && izquierda.x < centro.x && centro.x < derecha.x);
+    assert.equal(izquierda.y, derecha.y);
+    assert.equal(izquierda.height, derecha.height);
+    assert.equal(await pagina.locator(".atencion-view > .panel").count(), 1);
+    const signos = acciones.getByRole("tabpanel", { name: "General" });
+    assert.equal(await signos.evaluate((panel) => panel.scrollHeight - panel.clientHeight), 0);
+    const etiquetas = await signos.locator(".tool-grid").first().getByRole("button").allTextContents();
+    assert.deepEqual(etiquetas.map((etiqueta) => etiqueta.trim()),
+      ["Presión", "Signos vitales", "Temperatura", "Respiración", "Saturación", "Peso"]);
+    const boton = (nombre) => acciones.getByRole("button", { name: nombre, exact: true });
+    for (const [control, titulo] of [["Ficha clínica", "Ficha clínica"], ["Evolución", "Evolución"],
+      ["Indicaciones", "Indicaciones"], ["Pedir ayuda", "Ayuda en la atención"], ["Ver brazo", "Vista del brazo · LR"]]) {
+      await boton(control).click();
+      await pagina.getByRole("dialog", { name: titulo }).getByRole("button", { name: "Cerrar ventana" }).click();
+    }
+    await boton("Ampliar").click();
+    await pagina.getByRole("dialog", { name: "Paciente · LR" }).getByRole("button", { name: "Reducir imagen" }).click();
+
+    await acciones.getByRole("tab", { name: "General" }).press("ArrowRight");
+    const adicionales = acciones.getByRole("tabpanel", { name: "Adicionales" });
+    await adicionales.getByLabel("Buscar examen").fill("torax");
+    await adicionales.getByRole("heading", { name: "Radiografía de tórax" }).waitFor();
+    await adicionales.getByLabel("Categoría").selectOption("Funcional");
+    await adicionales.getByText(/Sin coincidencias/).waitFor();
+    await adicionales.getByLabel("Buscar examen").clear();
+    await adicionales.getByRole("button", { name: "Solicitar ECG inicial" }).waitFor();
+    assert.ok(await boton("Ficha clínica").isVisible());
+
+    await cuaderno.getByRole("tab", { name: "Notas" }).click();
+    const notas = cuaderno.getByRole("tabpanel", { name: "Notas" });
+    await notas.getByText("Sin apuntes", { exact: true }).waitFor();
+    const entrada = notas.getByLabel("Añadir un punto");
+    await entrada.fill("Apunte todavía sin guardar");
+    await notas.getByRole("button", { name: "Consultar evidencia" }).click();
+    const evidencia = cuaderno.getByRole("tabpanel", { name: "Evidencia" });
+    await evidencia.getByRole("heading", { name: "Hallazgos obtenidos" }).waitFor();
+    await evidencia.locator("[data-origen-id]").getByRole("button", { name: "Consultar origen" }).click();
+    await pagina.getByRole("dialog", { name: "Origen de la evidencia" }).getByRole("button", { name: "Ir al mensaje" }).click();
+    const respuesta = cuaderno.locator(".bubble.highlighted");
+    assert.equal(await respuesta.locator("p").textContent(), turno.respuesta);
+    await cuaderno.getByRole("tab", { name: "Notas" }).click();
+    assert.equal(await entrada.inputValue(), "Apunte todavía sin guardar");
+    await cuaderno.getByRole("tab", { name: "Hipótesis" }).click();
+    await cuaderno.getByText("Sin hipótesis guardada", { exact: true }).waitFor();
+    await cuaderno.getByRole("button", { name: "Fundamentar hipótesis" }).click();
+    await cuaderno.getByRole("group", { name: "Hipótesis principal", exact: true }).waitFor();
+    await cuaderno.getByRole("button", { name: "Revisar entrega" }).click();
+    await pagina.getByRole("heading", { name: "Revisar antes de entregar" }).waitFor();
+    await pagina.getByRole("button", { name: "Seguir editando" }).click();
+
+    await pagina.setViewportSize({ width: 390, height: 844 });
+    assert.equal(await pagina.evaluate(() => document.documentElement.scrollWidth), 390);
+    assert.ok(await cuaderno.isVisible());
+    assert.ok(!await retrato.isVisible());
+    await pagina.getByRole("button", { name: "Paciente", exact: true }).click();
+    assert.ok(await retrato.isVisible());
+    await pagina.getByRole("button", { name: "Acciones", exact: true }).click();
+    assert.ok(await adicionales.isVisible());
+    assert.ok(!await cuaderno.isVisible());
   });
 });
 

@@ -42,7 +42,7 @@ try {
   if (destino) await pagina.screenshot({ path: resolve(destino, "pre-pendiente.png"), fullPage: true });
 
   await pagina.getByRole("button", { name: "Omitir encuesta", exact: true }).click();
-  await pagina.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
+  await pagina.getByRole("heading", { name: "Atender y conversar", exact: true }).waitFor();
   await pagina.getByRole("button", { name: "Volver a mis pacientes", exact: true }).click();
   const [resuelta] = await Promise.all([
     pagina.waitForResponse(frontend + ruta),
@@ -55,14 +55,20 @@ try {
   assert.equal(contenido.fase, "inicial");
   assert.equal(contenido.ayuda.origen, "docente");
   assert.deepEqual(contenido.mediciones, []);
-  await pagina.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
-  for (const parte of ["Ficha inicial", "Indicaciones", "Ayuda"]) {
-    await pagina.locator("main").getByText(parte, { exact: true }).click();
-  }
-  await pagina.getByText("148/85 mmHg", { exact: true }).waitFor();
-  await pagina.getByText(contenido.indicaciones[0], { exact: true }).waitFor();
-  await pagina.getByRole("heading", { name: "Orientación docente", exact: true }).waitFor();
-  assert.equal(await pagina.locator("[data-ayuda]").getAttribute("data-origen"), "docente");
+  const acciones = pagina.getByRole("region", { name: "Acciones y exámenes" });
+  const dialogo = pagina.getByRole("dialog");
+  const cerrar = () => dialogo.getByRole("button", { name: "Cerrar ventana" }).click();
+  await acciones.getByRole("button", { name: "Ficha clínica", exact: true }).click();
+  await dialogo.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
+  await dialogo.getByText("148/85 mmHg", { exact: true }).waitFor();
+  await cerrar();
+  await acciones.getByRole("button", { name: "Indicaciones", exact: true }).click();
+  await dialogo.getByText(contenido.indicaciones[0], { exact: true }).waitFor();
+  await cerrar();
+  await acciones.getByRole("button", { name: "Pedir ayuda", exact: true }).click();
+  await dialogo.getByRole("heading", { name: "Orientación docente", exact: true }).waitFor();
+  assert.equal(await dialogo.locator("[data-ayuda]").getAttribute("data-origen"), "docente");
+  await cerrar();
   if (destino) await pagina.screenshot({ path: resolve(destino, "pre-resuelto.png"), fullPage: true });
   const evidencia = { navegador: navegador.version(), dimensiones, pendiente, contenido };
   if (destino) await writeFile(resolve(destino, "respuestas.json"), JSON.stringify(evidencia, null, 2) + "\n");

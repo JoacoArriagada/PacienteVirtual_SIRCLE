@@ -75,6 +75,65 @@
     
     
   </article></template>
+    <template id="plantilla-atencion">
+      <header class="session-bar">
+        <img src="/recursos/semana5/retrato-de-lr-865a70387a.webp" class="portrait" alt="" width="44" height="44">
+        <div class="patient-name-line"><h2 data-paciente></h2><span class="age" data-edad></span></div>
+        <div class="session-buttons"><span class="state" data-tone="active">En curso</span></div>
+      </header>
+      <div class="tabs mobile-tabs" role="group" aria-label="Panel de atención">
+        <button class="tab" type="button" data-seccion="actions" aria-controls="panel-acciones" aria-pressed="false">Acciones</button>
+        <button class="tab" type="button" data-seccion="portrait" aria-controls="panel-paciente" aria-pressed="false">Paciente</button>
+        <button class="tab" type="button" data-seccion="notebook" aria-controls="panel-cuaderno" aria-pressed="true">Cuaderno</button>
+      </div>
+      <div class="clinic-grid" data-mobile="notebook">
+        <section class="clinic-card clinic-actions" id="panel-acciones" data-mobile-section="actions" aria-labelledby="tools-heading">
+          <h2 id="tools-heading">Acciones y exámenes</h2>
+          <div class="tabs" role="tablist" aria-label="Tipo de examen" data-pestanas-examenes>
+            <button class="tab" type="button" id="tab-general" role="tab" aria-selected="true" aria-controls="panel-general">General</button>
+            <button class="tab" type="button" id="tab-adicionales" role="tab" aria-selected="false" aria-controls="panel-adicionales" tabindex="-1">Adicionales</button>
+          </div>
+          <div id="panel-general" class="exam-panel" role="tabpanel" aria-labelledby="tab-general"></div>
+          <div id="panel-adicionales" class="exam-panel" role="tabpanel" aria-labelledby="tab-adicionales" hidden></div>
+          <div class="clinic-actions-footer">
+            <div class="action-pair">
+              <button class="button small" type="button" data-abrir-ficha>
+                <img class="asset-icon" src="/recursos/semana5/ficha-clinica.svg" alt="" width="20" height="20"><span>Ficha clínica</span>
+              </button>
+              <button class="button quiet small" type="button" data-abrir-evolucion>
+                <img class="asset-icon" src="/recursos/semana5/evolucion-79080282c5.svg" alt="" width="20" height="20"><span>Evolución</span>
+              </button>
+            </div>
+            <div class="action-pair">
+              <button class="button small" type="button" data-abrir-indicaciones>
+                <img class="asset-icon" src="/recursos/semana5/icono-44143830e7.svg" alt="" width="20" height="20"><span>Indicaciones</span>
+              </button>
+              <button class="button small" type="button" data-abrir-ayuda>
+                <img class="asset-icon" src="/recursos/semana5/informacion-bf3b68e942.svg" alt="" width="20" height="20"><span>Pedir ayuda</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <figure class="clinic-card clinic-portrait" id="panel-paciente" data-mobile-section="portrait">
+          <img src="/recursos/semana5/retrato-de-lr-865a70387a.webp" class="portrait" alt="Paciente LR">
+          <figcaption class="portrait-caption">Box 01 · Preocupación</figcaption>
+          <button class="button small portrait-shortcut" type="button" data-ir-cuaderno>Ir al chat</button>
+        </figure>
+        <section class="clinic-card notebook" id="panel-cuaderno" data-mobile-section="notebook" aria-label="Cuaderno de atención">
+          <div class="tabs" role="tablist" aria-label="Cuaderno de atención" data-pestanas-cuaderno>
+            <button class="tab" type="button" id="tab-chat" role="tab" aria-selected="true" aria-controls="cuaderno-chat">Chat</button>
+            <button class="tab" type="button" id="tab-notas" role="tab" aria-selected="false" aria-controls="cuaderno-notas" tabindex="-1">Notas</button>
+            <button class="tab" type="button" id="tab-evidencia" role="tab" aria-selected="false" aria-controls="cuaderno-evidencia" tabindex="-1">Evidencia</button>
+            <button class="tab" type="button" id="tab-hipotesis" role="tab" aria-selected="false" aria-controls="cuaderno-hipotesis" tabindex="-1">Hipótesis</button>
+          </div>
+          <div id="cuaderno-chat" class="notebook-panel" role="tabpanel" aria-labelledby="tab-chat"></div>
+          <div id="cuaderno-notas" class="notebook-panel" role="tabpanel" aria-labelledby="tab-notas" hidden></div>
+          <div id="cuaderno-evidencia" class="notebook-panel" role="tabpanel" aria-labelledby="tab-evidencia" hidden></div>
+          <div id="cuaderno-hipotesis" class="notebook-panel" role="tabpanel" aria-labelledby="tab-hipotesis" hidden></div>
+          <div class="notebook-end" data-revisar-entrega></div>
+        </section>
+      </div>
+    </template>
     <footer class="app-footer">
       <div class="footer-inner">
         <p><strong>SIRCLE</strong><span aria-hidden="true"> · </span>Paciente virtual v1.0</p>

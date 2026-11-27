@@ -58,14 +58,15 @@ try {
   const informe = await consulta(propio, "/ordenes/" + orden.orden_id);
   const original = await consulta(propio);
 
-  const editor = pagina.locator("details").filter({ has: pagina.getByText("Fundamentar una hipótesis", { exact: true }) });
+  const editor = pagina.getByRole("tabpanel", { name: "Hipótesis" });
   const principal = editor.getByRole("group", { name: "Hipótesis principal", exact: true });
   const alternativa = editor.getByRole("group", { name: "Alternativa", exact: true });
   const titulo = (grupo) => grupo.getByLabel("Interpretación provisional");
   const fundamento = (grupo) => grupo.getByLabel("Fundamento y límites");
   const seleccionar = async (grupo, referencia) => grupo.locator(`input[value="${referencia}"]`).check();
   async function abrirEditor() {
-    await pagina.getByText("Fundamentar una hipótesis", { exact: true }).click();
+    await pagina.getByRole("tab", { name: "Hipótesis" }).click();
+    await editor.getByRole("button", { name: /^(Fundamentar|Editar) hipótesis$/ }).click();
     await principal.locator(`input[value="${turno.turno_id}"]`).waitFor();
   }
   async function guardar() {

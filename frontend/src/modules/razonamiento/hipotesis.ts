@@ -34,12 +34,14 @@ interface Fila {
 const CLAVE = (ref: Referencia) => JSON.stringify([ref.tipo, ref.origen_id]);
 const VACIA = (rol: Hipotesis["rol"]): Hipotesis => ({ rol, titulo: "", explicacion: "", evidencias: [] });
 
-export function montarHipotesis(detalle: HTMLDetailsElement, intento: string, registros: Registros): () => boolean {
+export function montarHipotesis(panel: HTMLElement, intento: string, registros: Registros) {
   const ruta = "/intentos/" + encodeURIComponent(intento);
-  detalle.className = "disclosure";
-  detalle.innerHTML = `
-    <summary>Fundamentar una hipótesis</summary>
-    <form class="stack">
+  panel.innerHTML = `
+    <h2>Tu hipótesis</h2>
+    <div class="stack tight notebook-scroll" data-resumen-hipotesis></div>
+    <button class="button primary small" type="button" data-abrir-hipotesis>Fundamentar hipótesis</button>
+    <form class="stack notebook-scroll" hidden>
+      <button class="text-button notebook-back" type="button" data-volver-hipotesis>Volver a hipótesis</button>
       <div class="stack" data-hipotesis></div>
       <div class="button-row">
         <button class="button" type="button" data-agregar>Agregar alternativa</button>
@@ -49,7 +51,10 @@ export function montarHipotesis(detalle: HTMLDetailsElement, intento: string, re
       </div>
       <p role="status" data-estado hidden></p>
     </form>`;
-  const formulario = detalle.querySelector("form")!;
+  const resumen = panel.querySelector<HTMLElement>("[data-resumen-hipotesis]")!;
+  const editar = panel.querySelector<HTMLButtonElement>("[data-abrir-hipotesis]")!;
+  const formulario = panel.querySelector("form")!;
+  const volver = formulario.querySelector<HTMLButtonElement>("[data-volver-hipotesis]")!;
   const lista = formulario.querySelector<HTMLElement>("[data-hipotesis]")!;
   const agregar = formulario.querySelector<HTMLButtonElement>("[data-agregar]")!;
   const cargar = formulario.querySelector<HTMLButtonElement>("[data-cargar]")!;
@@ -134,6 +139,30 @@ export function montarHipotesis(detalle: HTMLDetailsElement, intento: string, re
     pintarFila(guardadas.find((item) => item.rol === "principal") ?? VACIA("principal"));
     const alternativas = guardadas.filter((item) => item.rol === "alternativa");
     for (const item of alternativas.length ? alternativas : [VACIA("alternativa")]) pintarFila(item);
+    pintarResumen();
+  }
+
+  function pintarResumen(): void {
+    const guardadas = borrador?.hipotesis ?? [];
+    editar.textContent = guardadas.length ? "Editar hipótesis" : "Fundamentar hipótesis";
+    resumen.replaceChildren();
+    if (!guardadas.length) {
+      resumen.innerHTML = `<div class="empty">
+        <strong>Sin hipótesis guardada</strong>
+        Relaciona tu interpretación con evidencia obtenida y anota qué falta por explorar.
+      </div>`;
+    }
+    for (const item of guardadas) {
+      const tarjeta = document.createElement("article");
+      tarjeta.className = "tile stack tight";
+      tarjeta.innerHTML = '<p class="source-label"></p><h3></h3><p class="preserve-lines small-text"></p><p class="source-label"></p>';
+      tarjeta.querySelector("p")!.textContent = item.rol === "principal" ? "Hipótesis principal" : "Alternativa";
+      tarjeta.querySelector("h3")!.textContent = item.titulo;
+      tarjeta.querySelector(".preserve-lines")!.textContent = item.explicacion;
+      const cantidad = item.evidencias.length;
+      tarjeta.lastElementChild!.textContent = cantidad === 1 ? "1 evidencia vinculada" : `${cantidad} evidencias vinculadas`;
+      resumen.append(tarjeta);
+    }
   }
 
   async function actualizar(cargarVersion: boolean): Promise<void> {
@@ -164,8 +193,18 @@ export function montarHipotesis(detalle: HTMLDetailsElement, intento: string, re
     }
   }
 
-  detalle.addEventListener("toggle", () => {
-    if (detalle.open) void actualizar(false);
+  function abrir(): void {
+    resumen.hidden = editar.hidden = true;
+    formulario.hidden = false;
+    volver.focus();
+    void actualizar(false);
+  }
+
+  editar.addEventListener("click", abrir);
+  volver.addEventListener("click", () => {
+    formulario.hidden = true;
+    resumen.hidden = editar.hidden = false;
+    editar.focus();
   });
   agregar.addEventListener("click", () => {
     modificada = true;
@@ -197,6 +236,7 @@ export function montarHipotesis(detalle: HTMLDetailsElement, intento: string, re
       pendiente = undefined;
       modificada = false;
       cargar.hidden = true;
+      pintarResumen();
       avisar("Hipótesis guardadas.");
     } catch (error) {
       if (error instanceof ErrorHttp && error.estado === 409) cargar.hidden = false;
@@ -207,5 +247,5 @@ export function montarHipotesis(detalle: HTMLDetailsElement, intento: string, re
     }
   });
   pintar(registros);
-  return () => modificada;
+  return { abrir, cambiosSinGuardar: () => modificada };
 }

@@ -27,7 +27,8 @@ try {
   const titulo = pagina.getByRole("heading", { name: "Revisar antes de entregar" });
   await titulo.waitFor();
   assert.ok(await titulo.evaluate((h) => document.activeElement === h));
-  assert.equal(await pagina.getByText("Sin hipótesis guardada", { exact: true }).count(), 1);
+  const revision = pagina.getByRole("region", { name: "Revisar antes de entregar" });
+  assert.equal(await revision.getByText("Sin hipótesis guardada", { exact: true }).count(), 1);
   await boton("Revisar Razonamiento").click();
   await pagina.getByRole("dialog", { name: "Razonamiento" }).waitFor();
   await pagina.getByRole("button", { name: "Cerrar ventana" }).click();

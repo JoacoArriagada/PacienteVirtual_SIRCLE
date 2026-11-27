@@ -61,7 +61,7 @@ try {
   const preAcuse = await json(await accion(estudiante, intento + "/encuestas/pre", "PUT",
     () => boton(estudiante, "Enviar respuestas").click()));
   assert.equal(preAcuse.estado, "respondido");
-  await estudiante.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
+  await estudiante.getByRole("heading", { name: "Atender y conversar", exact: true }).waitFor();
   await boton(estudiante, "Volver a mis pacientes").click();
   await boton(estudiante, "En curso").click();
   const recuperado = await json(await accion(estudiante, intento, "GET", () => boton(estudiante, "Continuar").click()));
@@ -101,12 +101,13 @@ try {
   assert.equal(registro.medicion_id, presion.medicion_id);
   await captura(estudiante, "presion");
   await boton(estudiante, "Volver a la atención").click();
-  const pulso = await medir("Pulso", "Preparar el pulsioxímetro", "Medir pulso", 25_000);
+  const pulso = await medir("Signos vitales", "Preparar el pulsioxímetro", "Medir pulso", 25_000);
   assert.equal(pulso.valor.frecuencia, 102);
   await boton(estudiante, "Volver a la atención").click();
 
   const alias = intento + "/ordenes/ecg-inicial";
   await api(estudiante, alias, 404);
+  await estudiante.getByRole("tab", { name: "Adicionales" }).click();
   await boton(estudiante, "Solicitar ECG inicial").click();
   const orden = await json(await accion(estudiante, intento + "/ordenes", "POST",
     () => boton(estudiante, "Confirmar orden").click()), 201);
@@ -115,7 +116,8 @@ try {
   assert.match(informe.resultado, /taquicardia sinusal/i);
   await estudiante.getByText(informe.resultado, { exact: true }).waitFor();
 
-  await estudiante.getByText("Fundamentar una hipótesis", { exact: true }).click();
+  await estudiante.getByRole("tab", { name: "Hipótesis" }).click();
+  await boton(estudiante, "Fundamentar hipótesis").click();
   for (const [grupo, titulo, fundamento, ids] of [
     ["Hipótesis principal", "Broncoespasmo", "La dificultad respiratoria comenzó hace dos días. Falta integrar la auscultación.", [turno.turno_id, presion.medicion_id]],
     ["Alternativa", "Origen cardíaco de la disnea", "El ECG informa taquicardia sinusal. El hallazgo permite contrastar esta alternativa junto con el pulso.", [informe.informe_id, pulso.medicion_id]],

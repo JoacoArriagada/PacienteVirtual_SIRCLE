@@ -30,7 +30,8 @@ try {
   assert.doesNotMatch(JSON.stringify(pre), /taquicardia sinusal/i);
   await boton(pagina, "Omitir encuesta").click();
 
-  const panel = pagina.getByRole("region", { name: "Exámenes" });
+  await pagina.getByRole("tab", { name: "Adicionales" }).click();
+  const panel = pagina.getByRole("tabpanel", { name: "Adicionales" });
   const captura = async (nombre) => {
     if (destino) await panel.screenshot({ path: resolve(destino, nombre + ".png") });
   };
@@ -93,6 +94,7 @@ try {
 
   await boton(pagina, "Volver a mis pacientes").click();
   await boton(pagina, "Continuar").click();
+  await pagina.getByRole("tab", { name: "Adicionales" }).click();
   assert.equal(await solicitar.isDisabled(), true);
   const [nuevaConsulta] = await Promise.all([pagina.waitForResponse(ruta), consultar.click()]);
   const reanudado = await observacion(nuevaConsulta);

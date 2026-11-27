@@ -90,7 +90,7 @@ test("la compilación y la sesión estudiantil mantienen reservado el material d
     const otra = await navegador.newPage(dimensiones);
     const ajeno = await abrir(otra, "estudiante-sin-asignacion");
     await boton(otra, "Omitir encuesta").click();
-    await otra.getByRole("heading", { name: "Falta de aire", exact: true }).waitFor();
+    await otra.getByRole("heading", { name: "Atender y conversar", exact: true }).waitFor();
     const pruebaAjena = await otra.request.put(sitio + "/api/intentos/" + ajeno + "/razonamiento", {
       headers: { "Idempotency-Key": "t038-draft-ajeno" }, data: { revision_esperada: 1,
         hipotesis: [{ rol: "principal", titulo: testigos.borrador_ajeno, explicacion: "", evidencias: [] }] },
@@ -164,8 +164,9 @@ test("la compilación y la sesión estudiantil mantienen reservado el material d
     assert.equal(abierto.introduccion.paciente, "LR");
     assert.deepEqual(abierto.turnos, [turno]);
     const apunte = "T038_APUNTE_PROPIO_VISIBLE";
-    await pagina.getByLabel("Apunte de la atención").fill(apunte);
-    await boton(pagina, "Guardar apunte").click();
+    await pagina.getByRole("tab", { name: "Notas" }).click();
+    await pagina.getByLabel("Añadir un punto").fill(apunte);
+    await boton(pagina, "Añadir punto").click();
     await pagina.getByText("Apunte guardado.", { exact: true }).waitFor();
     assert.equal(await pagina.getByText(apunte, { exact: true }).count(), 1);
     comprobar(Buffer.from(await pagina.locator("body").innerText()), fase + " DOM");

@@ -37,8 +37,9 @@ async function accion(pagina, metodo, url, control, http) {
 }
 
 async function guardarApunte({ pagina, ruta }, texto, autor) {
-  await pagina.getByLabel("Apunte de la atención").fill(texto);
-  const apunte = await accion(pagina, "PUT", ruta + "/razonamiento", "Guardar apunte", 200);
+  await pagina.getByRole("tab", { name: "Notas" }).click();
+  await pagina.getByLabel("Añadir un punto").fill(texto);
+  const apunte = await accion(pagina, "PUT", ruta + "/razonamiento", "Añadir punto", 200);
   assert.equal(apunte.intencion, texto);
   assert.equal(apunte.autor_id, autor);
   await pagina.locator(`[data-apunte-id="${apunte.apunte_id}"]`).getByText(texto, { exact: true }).waitFor();
@@ -55,7 +56,7 @@ try {
   const vistaA = await (await a.pagina.request.get(a.ruta)).json();
   assert.deepEqual(vistaA.ordenes, []);
   assert.deepEqual(vistaA.apuntes, [apunteA]);
-  if (destino) await a.pagina.getByRole("region", { name: "Apuntes y evidencias" })
+  if (destino) await a.pagina.getByRole("tabpanel", { name: "Notas" })
     .screenshot({ path: resolve(destino, "apunte-sin-orden.png") });
 
   const b = await abrir("estudiante-sin-asignacion");
@@ -77,6 +78,7 @@ try {
   const medicion = await toma.json();
   await accion(pagina, "PUT", b.ruta + "/mediciones/" + medicion.medicion_id + "/ficha", "Registrar en ficha", 200);
   await boton(pagina, "Volver a la atención").click();
+  await pagina.getByRole("tab", { name: "Adicionales" }).click();
   await boton(pagina, "Solicitar ECG inicial").click();
   const orden = await accion(pagina, "POST", b.ruta + "/ordenes", "Confirmar orden", 201);
   const antesDeConsulta = await (await pagina.request.get(b.ruta)).json();
@@ -110,7 +112,7 @@ try {
   assert.equal(clasificacion.interpretacion.texto, apunteB.intencion);
   assert.equal((await pagina.request.get(a.ruta)).status(), 403);
 
-  await pagina.getByText("Evidencias del intento", { exact: true }).click();
+  await pagina.getByRole("tab", { name: "Evidencia" }).click();
   const lista = pagina.locator("ul[data-evidencias]");
   for (const [categoria, dato] of [
     ["Declaración", clasificacion.declaracion],
